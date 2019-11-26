@@ -262,11 +262,13 @@ header{
 }
 
 #keyses{
-	background-image: url('../img/book.png');
-	background-repeat: no-repeat;
-	background-position: 72% 55px;
-	background-size: contain;
 	padding-bottom: 11.1em;
+}
+
+.keyses-bg{
+	position: absolute;
+	left: 22px;
+	top: 70px;
 }
 
 .keyses-list ul{
