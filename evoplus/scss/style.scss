@@ -114,13 +114,15 @@ header{
 	position: relative;
 	padding-top: 5.55em;
 	padding-bottom: 5.55em;
+	& .title{
+		margin-bottom: 2.4em;
+	}
 }
 
 .title{
 	font-size: 2.21em;
 	font-weight: 300;
 	line-height: 1.25;
-	margin-bottom: 2.4em;
 }
 
 .slide-item{
@@ -181,6 +183,7 @@ header{
 }
 
 .portfolio-slider{
+	border-radius: 10px;
 	box-shadow: 0px 15px 50px 0px rgba(0,0,0,.08);
 }
 
@@ -257,5 +260,62 @@ header{
 	width: 24px;
 	height: 24px;
 }
+
+#keyses{
+	background-image: url('../img/book.png');
+	background-repeat: no-repeat;
+	background-position: 20% 60%;
+	background-size: contain;
+	padding-top: 5.55em;
+	padding-bottom: 5.55em;
+}
+
+.keyses-list ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	& li{
+		font-weight: 300;
+		font-size: .89em;
+		padding-left: 25px;
+		margin-bottom: 30px;
+		position: relative;
+		&:before{
+			content: url('../img/portfolio-list-marker.png');
+			position: absolute;
+			left: 0;
+		} 
+	}
+}
+
+.keyses-form-wrap{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 15px 50px 0px rgba(0,0,0,.08);
+	padding: 9px;
+}
+
+.keyses-form-border{
+	border-radius: 10px;
+	border:1px solid #f2f3f4;
+	padding: 40px 40px;
+}
+
+.tel-input{
+	background-image: url('../img/number-prefix.png');
+	background-repeat: no-repeat;
+	background-position: 5px 2px;
+}
+
+.insta-input{
+	background-image: url('../img/url-prefix.png');
+	background-repeat: no-repeat;
+	background-position: 5px 2px;
+}
+
+ .keyses-form-wrap .btn-pink{
+ 	padding-left: 40px;
+ 	padding-right: 40px;
+ }
 
 @import "media";

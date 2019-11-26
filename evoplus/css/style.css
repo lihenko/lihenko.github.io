@@ -59,6 +59,22 @@ a {
     color: #7caed3;
     text-decoration: none; }
 
+label {
+  font-size: .78em;
+  font-weight: 300;
+  color: #e2e3e3;
+  display: block; }
+
+input {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1;
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #eaebeb;
+  padding: 0 15px 15px 40px; }
+
 .btn-white {
   font-weight: 300;
   padding: 26px 50px;
@@ -235,12 +251,13 @@ header {
   position: relative;
   padding-top: 5.55em;
   padding-bottom: 5.55em; }
+  #porfolio .title {
+    margin-bottom: 2.4em; }
 
 .title {
   font-size: 2.21em;
   font-weight: 300;
-  line-height: 1.25;
-  margin-bottom: 2.4em; }
+  line-height: 1.25; }
 
 .slide-item {
   border-radius: 10px;
@@ -290,6 +307,7 @@ header {
       left: 0; }
 
 .portfolio-slider {
+  border-radius: 10px;
   box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08); }
 
 .portfolio-slider .slick-dots {
@@ -355,6 +373,54 @@ header {
   position: absolute;
   width: 24px;
   height: 24px; }
+
+#keyses {
+  background-image: url("../img/book.png");
+  background-repeat: no-repeat;
+  background-position: 20% 60%;
+  background-size: contain;
+  padding-top: 5.55em;
+  padding-bottom: 5.55em; }
+
+.keyses-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .keyses-list ul li {
+    font-weight: 300;
+    font-size: .89em;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    position: relative; }
+    .keyses-list ul li:before {
+      content: url("../img/portfolio-list-marker.png");
+      position: absolute;
+      left: 0; }
+
+.keyses-form-wrap {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
+  padding: 9px; }
+
+.keyses-form-border {
+  border-radius: 10px;
+  border: 1px solid #f2f3f4;
+  padding: 40px 40px; }
+
+.tel-input {
+  background-image: url("../img/number-prefix.png");
+  background-repeat: no-repeat;
+  background-position: 5px 2px; }
+
+.insta-input {
+  background-image: url("../img/url-prefix.png");
+  background-repeat: no-repeat;
+  background-position: 5px 2px; }
+
+.keyses-form-wrap .btn-pink {
+  padding-left: 40px;
+  padding-right: 40px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -426,7 +492,9 @@ header {
     position: absolute;
     right: 71px;
     top: 7px;
-    width: 150px; } }
+    width: 150px; }
+  .form-title {
+    margin-right: 50px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

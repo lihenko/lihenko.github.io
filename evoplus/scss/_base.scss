@@ -58,6 +58,24 @@ a{
 	}
 }
 
+label{
+	font-size: .78em;
+	font-weight: 300;
+	color: #e2e3e3;
+	display: block;
+}
+
+input{
+	width: 100%;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1;
+	border:none;
+	outline: 0;
+	border-bottom: 1px solid #eaebeb;
+	padding: 0 15px 15px 40px;
+}
+
 .btn-white{
 	font-weight: 300;
 	padding: 26px 50px;
