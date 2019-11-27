@@ -15,6 +15,13 @@
   src: url("../fonts/ProximaNova-Bold.otf");
   font-weight: 700; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?75213756");
+  src: url("../fonts/fontello.eot?75213756#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?75213756") format("woff2"), url("../fonts/fontello.woff?75213756") format("woff"), url("../fonts/fontello.ttf?75213756") format("truetype"), url("../fonts/fontello.svg?75213756#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
   *:before, *:after {
@@ -571,6 +578,80 @@ header {
   position: absolute;
   left: -100px;
   top: 150px; }
+
+#testimonials {
+  padding-top: 5.55em;
+  padding-bottom: 5.55em; }
+
+.social-buttons a:before {
+  font-size: 16px;
+  color: #A772F6;
+  width: 36px;
+  height: 36px;
+  line-height: 33px;
+  border-radius: 50%;
+  border: 1px solid #A772F6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.social-buttons a:hover:before {
+  color: #fff;
+  background-color: #A772F6; }
+
+.testi-slide {
+  padding: 30px 7.5px; }
+
+.testi-slide-wrap {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.08);
+  padding: 33px 25px 0;
+  position: relative; }
+
+.testi-author-position {
+  font-size: .78em; }
+
+.author-ava {
+  position: absolute;
+  bottom: 0;
+  right: -10px; }
+
+.video-button {
+  position: relative;
+  margin-left: -15px; }
+
+.video-button a:before {
+  display: block;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #A772F6;
+  line-height: 60px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.video-button a:hover:before {
+  background-color: #b68af8; }
+
+#testimonials .slick-prev::before {
+  display: block;
+  content: '\f104';
+  color: #171B1E;
+  font-family: "fontello"; }
+
+#testimonials .slick-next::before {
+  display: block;
+  content: '\f104';
+  color: #171B1E;
+  font-family: "fontello";
+  -webkit-transform: rotate(180DEG);
+  -ms-transform: rotate(180DEG);
+  transform: rotate(180DEG); }
+
+.why-us-description {
+  font-weight: 300;
+  font-size: .77em; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
