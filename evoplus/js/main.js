@@ -22,6 +22,24 @@ $(document).ready(function(){
 });
 
 
+$('#tabs a').on('click', function() {
+  event.preventDefault();
+  var section = $(this).attr('id');
+  var links = $('.tabs-link');
+  var tabs = $('[class$="-tab"]');
+  
+  section = '.' + section;
+
+  tabs.hide();
+  links.removeClass('active');
+  $(this).addClass('active');
+  $(section).fadeIn('slow');
+  
+});
+
+
+
+
 $('.slider-footer-content').slick({
   autoplay:true,
   autoplaySpeed: 4000,
