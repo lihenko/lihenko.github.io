@@ -85,7 +85,7 @@ input {
 .btn-white {
   font-weight: 300;
   padding: 26px 50px;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border-radius: 35px;
   font-size: 16px;
   line-height: 1;
@@ -842,6 +842,148 @@ header {
   left: -122px;
   top: -168px; }
 
+.franchazi-title {
+  font-size: 2.33em; }
+
+.franchazi-wrap {
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
+  padding: 30px 30px 0;
+  position: relative;
+  margin-bottom: 30px;
+  height: 338px;
+  overflow: hidden; }
+
+.franchazi-wrap:last-child {
+  padding-right: 0; }
+
+.franchazi-name {
+  font-size: 1.28em;
+  margin-right: -80px;
+  position: inherit;
+  z-index: 9; }
+
+.wideo-wrap {
+  position: relative; }
+
+.play-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.play-button a:before {
+  display: block;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #A772F6;
+  line-height: 60px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.play-button a:hover:before {
+  background-color: #b68af8; }
+
+#map {
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0; }
+
+.contacts-wrap {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
+  padding: 9px; }
+
+.contacts-border {
+  border-radius: 10px;
+  border: 1px solid #f2f3f4;
+  padding: 40px 40px; }
+
+.contacts-title {
+  font-size: 2.33em; }
+
+#map-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #map-contact li {
+    position: relative;
+    padding-left: 45px;
+    padding-bottom: 30px; }
+
+.map-phone:before {
+  content: url("../img/contact-phone.png");
+  position: absolute;
+  left: 0; }
+
+.map-address:before {
+  content: url("../img/contact-address.png");
+  position: absolute;
+  left: 0; }
+
+.map-social-title {
+  font-size: 1.38em;
+  margin-bottom: 30px; }
+
+#map-social {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #map-social li {
+    position: relative;
+    padding-left: 45px;
+    padding-bottom: 30px; }
+    #map-social li a {
+      color: #171B1E;
+      border-bottom: 1px dotted #A772F6;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      #map-social li a:hover {
+        color: #A772F6; }
+
+.telegram-link:before {
+  content: url("../img/contact-telegram.png");
+  position: absolute;
+  left: 0; }
+
+.mail-link:before {
+  content: url("../img/contact-email.png");
+  position: absolute;
+  left: 0; }
+
+#questions {
+  padding-top: 82px; }
+
+.questions-form-title {
+  font-size: 1.77em; }
+
+.questons-note {
+  font-size: 1.77em; }
+
+footer {
+  padding-bottom: 30px; }
+
+.footer-brand-description {
+  font-size: .59em;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.footer-policy {
+  font-size: .59em;
+  font-weight: 300; }
+  .footer-policy a {
+    color: #171B1E;
+    text-decoration: underline; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -866,7 +1008,11 @@ header {
     top: 590px;
     left: -60px; }
   .title-column {
-    min-height: 630px; } }
+    min-height: 630px; }
+  .franchazi-wrap .social-buttons {
+    position: absolute;
+    left: 15px;
+    bottom: 30px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
