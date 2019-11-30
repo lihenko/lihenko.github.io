@@ -126,7 +126,6 @@ header{
 	border-radius: 10px;
 	border:1px solid rgba(226, 227, 230, .5);
 	overflow:hidden;
-	height: 540px;
 	padding: 9px;
 }
 
@@ -254,8 +253,8 @@ header{
 
 .keyses-bg{
 	position: absolute;
-	left: 170px;
-	top: 70px;
+	left: -160px;
+	bottom: -120px;
 }
 
 .keyses-list ul{
@@ -454,29 +453,15 @@ header{
 	}
 }
 
-.file-cover{
-	position: absolute;
-	left: 20px;
-}
-
-.hipoteza{
-	position: absolute;
-}
 
 .second-tab, .third-tab, .fourth-tab{
 	display: none;
 }
 
-.planet{
-	position: absolute;
-	left: -100px;
-	top: -45px;
-}
-
 
 #testimonials{
 	padding-top: 5.55em;
-	padding-bottom: 5.55em;
+	padding-bottom: 2.5em;
 }
 
 .social-buttons a:before{
@@ -496,7 +481,7 @@ header{
 }
 
 .testi-slide{
-	padding: 30px 7.5px;
+	padding: 40px 7.5px;
 }
 
 .testi-slide-wrap{
@@ -577,7 +562,6 @@ header{
 		display: none;
 	}
 	& .step-description{
-		display: none;
 		font-size: .77em;
 		font-weight: 300;
 		padding-left: 3.88em;
@@ -680,6 +664,7 @@ header{
 	padding: 9px;
 }
 
+
 .personal-price-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
@@ -687,8 +672,9 @@ header{
 }
 
 #report{
-	background: linear-gradient(to right, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
-	margin-bottom: 150px;
+	background: linear-gradient(to right, #14181a 0%, #14181a 100%);
+	margin-bottom: 190px;
+	padding-bottom: 250px;
 }
 
 .bg-black{
@@ -696,7 +682,7 @@ header{
 }
 
 .row.bg-black{
-	padding: 40px;
+	padding: 40px 0;
 }
 
 .report-list{
@@ -739,8 +725,8 @@ header{
 
 .month-report{
 	position: absolute;
-	left: -122px;
-	top: -168px;
+	left: 10%;
+	top: -50px;
 }
 
 .franchazi-title{
@@ -778,7 +764,7 @@ header{
 	right: 0;
 	width: 60px;
 	height: 60px;
-	top: 200px;
+	top: 30%;
 	margin-left: auto;
 	margin-right: auto;	
 }
@@ -891,6 +877,24 @@ header{
 }
 .questons-note{
 	font-size: 1.77em;
+}
+
+.head-manager{
+	margin-left: -45px;
+	margin-right: -45px;
+}
+
+.head-manager img{
+	margin-bottom: -45px;
+}
+
+.questions-bg {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    & img{
+    	max-width: 80%;
+    }
 }
 
 footer{

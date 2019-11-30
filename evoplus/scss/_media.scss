@@ -148,6 +148,63 @@
 	.report-list{
 		align-items: baseline;
 	}
+	.slide-item{
+		height: 540px;
+	}
+	.keyses-bg{
+		position: absolute;
+		left: 170px;
+		top: 70px;
+		bottom: unset;
+	}
+	.hipoteza{
+		position: absolute;
+	}
+	.planet{
+		position: absolute;
+		left: -100px;
+		top: -45px;
+	}
+	.file-cover{
+		position: absolute;
+		left: 20px;
+	}
+	#testimonials{
+		padding-bottom: 5.55em;
+	}
+	.step-item .step-description{
+		display: none;
+	}
+	.text-lg-white{
+		color: #fff;
+	}
+	.btn-pink{
+		padding: 36px 50px 35px;
+	}
+	.month-report{
+		position: absolute;
+		left: -122px;
+		top: -168px;
+	}
+	#report{
+		background: linear-gradient(to right, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
+		margin-bottom: 150px;
+		padding-bottom: 0;
+	}
+	.row.bg-black{
+		padding: 40px;
+	}
+	.questions-bg {
+	    position: absolute;
+	    bottom: 0;
+	    left: 48px;
+	    & img{
+	    	max-width: unset;
+	    }
+	}
+	.btn-white{
+		padding: 26px 50px;
+	}
 }
 
 

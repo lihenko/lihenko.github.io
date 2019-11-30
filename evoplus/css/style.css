@@ -84,7 +84,7 @@ input {
 
 .btn-white {
   font-weight: 300;
-  padding: 26px 50px;
+  padding: 26px 35px;
   background-color: #f7f7f7;
   border-radius: 35px;
   font-size: 16px;
@@ -96,7 +96,7 @@ input {
     background-color: #A772F6; }
 
 .btn-pink {
-  padding: 36px 50px 35px;
+  padding: 24px 40px 22px;
   border-radius: 45px;
   font-size: 16px;
   font-weight: 700;
@@ -268,7 +268,6 @@ header {
   border-radius: 10px;
   border: 1px solid rgba(226, 227, 230, 0.5);
   overflow: hidden;
-  height: 540px;
   padding: 9px; }
 
 .slide-border {
@@ -396,8 +395,8 @@ header {
 
 .keyses-bg {
   position: absolute;
-  left: 170px;
-  top: 70px; }
+  left: -160px;
+  bottom: -120px; }
 
 .keyses-list ul {
   list-style: none;
@@ -574,24 +573,12 @@ header {
   .tab-list ul li:last-child:after {
     display: none; }
 
-.file-cover {
-  position: absolute;
-  left: 20px; }
-
-.hipoteza {
-  position: absolute; }
-
 .second-tab, .third-tab, .fourth-tab {
   display: none; }
 
-.planet {
-  position: absolute;
-  left: -100px;
-  top: -45px; }
-
 #testimonials {
   padding-top: 5.55em;
-  padding-bottom: 5.55em; }
+  padding-bottom: 2.5em; }
 
 .social-buttons a:before {
   font-size: 16px;
@@ -609,7 +596,7 @@ header {
   background-color: #A772F6; }
 
 .testi-slide {
-  padding: 30px 7.5px; }
+  padding: 40px 7.5px; }
 
 .testi-slide-wrap {
   background-color: #fff;
@@ -695,7 +682,6 @@ header {
   .step-item .hover {
     display: none; }
   .step-item .step-description {
-    display: none;
     font-size: .77em;
     font-weight: 300;
     padding-left: 3.88em;
@@ -795,15 +781,16 @@ header {
   padding: 40px 40px; }
 
 #report {
-  background: -webkit-linear-gradient(left, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
-  background: linear-gradient(to right, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
-  margin-bottom: 150px; }
+  background: -webkit-linear-gradient(left, #14181a 0%, #14181a 100%);
+  background: linear-gradient(to right, #14181a 0%, #14181a 100%);
+  margin-bottom: 190px;
+  padding-bottom: 250px; }
 
 .bg-black {
   background-color: #14181a; }
 
 .row.bg-black {
-  padding: 40px; }
+  padding: 40px 0; }
 
 .report-list {
   position: relative;
@@ -846,8 +833,8 @@ header {
 
 .month-report {
   position: absolute;
-  left: -122px;
-  top: -168px; }
+  left: 10%;
+  top: -50px; }
 
 .franchazi-title {
   font-size: 2.33em; }
@@ -879,7 +866,7 @@ header {
   right: 0;
   width: 60px;
   height: 60px;
-  top: 200px;
+  top: 30%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -975,6 +962,20 @@ header {
 
 .questons-note {
   font-size: 1.77em; }
+
+.head-manager {
+  margin-left: -45px;
+  margin-right: -45px; }
+
+.head-manager img {
+  margin-bottom: -45px; }
+
+.questions-bg {
+  position: absolute;
+  bottom: 0;
+  left: 20px; }
+  .questions-bg img {
+    max-width: 80%; }
 
 footer {
   padding-bottom: 30px; }
@@ -1072,7 +1073,50 @@ footer {
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
     -ms-flex-align: baseline;
-    align-items: baseline; } }
+    align-items: baseline; }
+  .slide-item {
+    height: 540px; }
+  .keyses-bg {
+    position: absolute;
+    left: 170px;
+    top: 70px;
+    bottom: unset; }
+  .hipoteza {
+    position: absolute; }
+  .planet {
+    position: absolute;
+    left: -100px;
+    top: -45px; }
+  .file-cover {
+    position: absolute;
+    left: 20px; }
+  #testimonials {
+    padding-bottom: 5.55em; }
+  .step-item .step-description {
+    display: none; }
+  .text-lg-white {
+    color: #fff; }
+  .btn-pink {
+    padding: 36px 50px 35px; }
+  .month-report {
+    position: absolute;
+    left: -122px;
+    top: -168px; }
+  #report {
+    background: -webkit-linear-gradient(left, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 50%, #14181a 50%, #14181a 100%);
+    margin-bottom: 150px;
+    padding-bottom: 0; }
+  .row.bg-black {
+    padding: 40px; }
+  .questions-bg {
+    position: absolute;
+    bottom: 0;
+    left: 48px; }
+    .questions-bg img {
+      max-width: unset; }
+  .btn-white {
+    padding: 26px 50px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

@@ -14,7 +14,8 @@ $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
     arrows: true,
-    dots:true
+    dots:true,
+    adaptiveHeight: true,
 });
 
 $(document).ready(function(){
