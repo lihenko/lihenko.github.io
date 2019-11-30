@@ -328,12 +328,12 @@ header {
   box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08); }
 
 .portfolio-slider .slick-dots {
-  bottom: -50px; }
+  bottom: -35px; }
 
 .portfolio-slider .slick-prev {
   width: 61px;
   height: 30px;
-  bottom: -75px;
+  bottom: -60px;
   left: 0;
   top: unset;
   z-index: 99; }
@@ -341,7 +341,7 @@ header {
 .portfolio-slider .slick-next {
   width: 61px;
   height: 30px;
-  bottom: -75px;
+  bottom: -60px;
   right: 0;
   top: unset;
   z-index: 99; }
@@ -540,7 +540,7 @@ header {
 .tab-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px; }
+  padding: 20px 40px; }
 
 .tab-title {
   font-size: 1.77em;
@@ -569,6 +569,8 @@ header {
       width: calc(100% - 75px);
       height: 1px;
       background-color: #f2f3f4; }
+  .tab-list ul li:last-child {
+    margin-bottom: 0; }
   .tab-list ul li:last-child:after {
     display: none; }
 
