@@ -32,7 +32,7 @@ header{
 
 
 .header-title{
-	font-size: 2.21em;
+	font-size: 1.9em;
 	font-weight: 300;
 	line-height: 1.375;
 }
@@ -117,7 +117,7 @@ header{
 }
 
 .title{
-	font-size: 2.21em;
+	font-size: 1.9em;
 	font-weight: 300;
 	line-height: 1.25;
 }
@@ -133,7 +133,7 @@ header{
 .slide-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 40px 40px;
+	padding: 20px 10px;
 }
 
 .budget-title, .result-title{
@@ -276,6 +276,7 @@ header{
 }
 
 .keyses-form-wrap{
+	margin-top: -150px;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0px 15px 50px 0px rgba(0,0,0,.08);
@@ -285,7 +286,7 @@ header{
 .keyses-form-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 40px 40px;
+	padding: 20px 10px;
 }
 
 .tel-input{
@@ -301,8 +302,8 @@ header{
 }
 
  .keyses-form-wrap .btn-pink{
- 	padding-left: 40px;
- 	padding-right: 40px;
+ 	padding-left: 5px;
+ 	padding-right: 5px;
  }
 
 
@@ -411,7 +412,7 @@ header{
 .tab-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 20px 40px;
+	padding: 10px 5px;
 }
 
 .tab-title{
@@ -458,6 +459,18 @@ header{
 	display: none;
 }
 
+.hipoteza img{
+	max-width: 120%;
+}
+
+.planet img{
+	max-width: 140%;
+	margin-left: -35px;
+}
+
+.file-cover img{
+	max-width: 140%;
+}
 
 #testimonials{
 	padding-top: 5.55em;
@@ -547,14 +560,14 @@ header{
 	box-shadow: 0px 15px 50px 0px rgba(0,0,0,.08);
 	overflow: hidden;
 	border-radius: 10px;
-	margin-bottom: 30px;
+	padding: 10px;
 }
 
 .step-item{
-	min-height: 213px;
+	min-height: 165px;
+	padding: 10px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	background-color: #fff;
 	transition: all 0.3s ease-in-out;
@@ -564,27 +577,9 @@ header{
 	& .step-description{
 		font-size: .77em;
 		font-weight: 300;
-		padding-left: 3.88em;
-		padding-right: 3.88em;
 	}
 	& .step-title{
 		font-weight: 700;
-	}
-	&:hover{
-		background-color: $pink;
-		box-shadow: inset 0px 10px 15px 0px rgba(0,0,0,0.07);
-		& .step-description{
-			display: block;
-		}
-		& .hover{
-			display: block;
-		}
-		& .original{
-			display: none;
-		}
-		& .step-title{
-			color: #fff;
-		}
 	}
 }
 
@@ -603,7 +598,7 @@ header{
 .info-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 40px 40px 10px;
+	padding: 20px 10px 5px;
 }
 
 .info-bg{
@@ -668,12 +663,12 @@ header{
 .personal-price-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 40px 40px;
+	padding: 20px 10px;
 }
 
 #report{
 	background: linear-gradient(to right, #14181a 0%, #14181a 100%);
-	margin-bottom: 190px;
+	margin-bottom: 90px;
 	padding-bottom: 250px;
 }
 
@@ -727,6 +722,9 @@ header{
 	position: absolute;
 	left: 10%;
 	top: -50px;
+	& img{
+		max-width: 145%;
+	}
 }
 
 .franchazi-title{
@@ -739,7 +737,7 @@ header{
 	padding: 30px 30px 0;
 	position: relative;
 	margin-bottom: 30px;
-	height: 338px;
+	height: 395px;
 	overflow: hidden;
 }
 
@@ -747,10 +745,13 @@ header{
 	padding-right: 0;
 }
 
+.franchazi-img{
+	text-align: center;
+}
+
 .franchazi-name{
 	font-size: 1.28em;
-	margin-right: -80px;
-	position:inherit;
+	text-align: center;
 	z-index: 9;
 }
 
@@ -764,7 +765,7 @@ header{
 	right: 0;
 	width: 60px;
 	height: 60px;
-	top: 30%;
+	top: 23%;
 	margin-left: auto;
 	margin-right: auto;	
 }
@@ -790,6 +791,7 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 50px 0;
+	min-height: 510px;	
 }
 
 .contacts-wrap{
@@ -802,7 +804,7 @@ header{
 .contacts-border{
 	border-radius: 10px;
 	border:1px solid #f2f3f4;
-	padding: 40px 40px;
+	padding: 20px 10px;
 }
 
 .contacts-title{
@@ -873,10 +875,7 @@ header{
 }
 
 .questions-form-title{
-	font-size: 1.77em;
-}
-.questons-note{
-	font-size: 1.77em;
+	font-size: 1.5em;
 }
 
 .head-manager{

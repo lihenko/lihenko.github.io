@@ -96,9 +96,10 @@ input {
     background-color: #A772F6; }
 
 .btn-pink {
-  padding: 24px 40px 22px;
+  padding: 24px 25px 22px;
   border-radius: 45px;
-  font-size: 16px;
+  font-size: 13px;
+  display: block;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -182,7 +183,7 @@ header {
     color: #A772F6; }
 
 .header-title {
-  font-size: 2.21em;
+  font-size: 1.9em;
   font-weight: 300;
   line-height: 1.375; }
 
@@ -260,7 +261,7 @@ header {
   padding-bottom: 5.55em; }
 
 .title {
-  font-size: 2.21em;
+  font-size: 1.9em;
   font-weight: 300;
   line-height: 1.25; }
 
@@ -273,7 +274,7 @@ header {
 .slide-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px; }
+  padding: 20px 10px; }
 
 .budget-title, .result-title {
   color: #A772F6; }
@@ -414,6 +415,7 @@ header {
       left: 0; }
 
 .keyses-form-wrap {
+  margin-top: -150px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
@@ -422,7 +424,7 @@ header {
 .keyses-form-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px; }
+  padding: 20px 10px; }
 
 .tel-input {
   background-image: url("../img/number-prefix.png");
@@ -435,8 +437,8 @@ header {
   background-position: 5px 2px; }
 
 .keyses-form-wrap .btn-pink {
-  padding-left: 40px;
-  padding-right: 40px; }
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .checkmark-container {
   display: block;
@@ -539,7 +541,7 @@ header {
 .tab-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 20px 40px; }
+  padding: 10px 5px; }
 
 .tab-title {
   font-size: 1.77em;
@@ -575,6 +577,16 @@ header {
 
 .second-tab, .third-tab, .fourth-tab {
   display: none; }
+
+.hipoteza img {
+  max-width: 120%; }
+
+.planet img {
+  max-width: 140%;
+  margin-left: -35px; }
+
+.file-cover img {
+  max-width: 140%; }
 
 #testimonials {
   padding-top: 5.55em;
@@ -655,10 +667,11 @@ header {
   box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 30px; }
+  padding: 10px; }
 
 .step-item {
-  min-height: 213px;
+  min-height: 165px;
+  padding: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -667,10 +680,6 @@ header {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -683,22 +692,9 @@ header {
     display: none; }
   .step-item .step-description {
     font-size: .77em;
-    font-weight: 300;
-    padding-left: 3.88em;
-    padding-right: 3.88em; }
+    font-weight: 300; }
   .step-item .step-title {
     font-weight: 700; }
-  .step-item:hover {
-    background-color: #A772F6;
-    box-shadow: inset 0px 10px 15px 0px rgba(0, 0, 0, 0.07); }
-    .step-item:hover .step-description {
-      display: block; }
-    .step-item:hover .hover {
-      display: block; }
-    .step-item:hover .original {
-      display: none; }
-    .step-item:hover .step-title {
-      color: #fff; }
 
 .info-form-title {
   font-weight: 300;
@@ -713,7 +709,7 @@ header {
 .info-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px 10px; }
+  padding: 20px 10px 5px; }
 
 .info-bg {
   position: absolute;
@@ -778,12 +774,12 @@ header {
 .personal-price-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px; }
+  padding: 20px 10px; }
 
 #report {
   background: -webkit-linear-gradient(left, #14181a 0%, #14181a 100%);
   background: linear-gradient(to right, #14181a 0%, #14181a 100%);
-  margin-bottom: 190px;
+  margin-bottom: 90px;
   padding-bottom: 250px; }
 
 .bg-black {
@@ -835,6 +831,8 @@ header {
   position: absolute;
   left: 10%;
   top: -50px; }
+  .month-report img {
+    max-width: 145%; }
 
 .franchazi-title {
   font-size: 2.33em; }
@@ -845,16 +843,18 @@ header {
   padding: 30px 30px 0;
   position: relative;
   margin-bottom: 30px;
-  height: 338px;
+  height: 395px;
   overflow: hidden; }
 
 .franchazi-wrap:last-child {
   padding-right: 0; }
 
+.franchazi-img {
+  text-align: center; }
+
 .franchazi-name {
   font-size: 1.28em;
-  margin-right: -80px;
-  position: inherit;
+  text-align: center;
   z-index: 9; }
 
 .wideo-wrap {
@@ -866,7 +866,7 @@ header {
   right: 0;
   width: 60px;
   height: 60px;
-  top: 30%;
+  top: 23%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -889,7 +889,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0; }
+  padding: 50px 0;
+  min-height: 510px; }
 
 .contacts-wrap {
   background-color: #fff;
@@ -900,7 +901,7 @@ header {
 .contacts-border {
   border-radius: 10px;
   border: 1px solid #f2f3f4;
-  padding: 40px 40px; }
+  padding: 20px 10px; }
 
 .contacts-title {
   font-size: 2.33em; }
@@ -958,10 +959,7 @@ header {
   padding-top: 82px; }
 
 .questions-form-title {
-  font-size: 1.77em; }
-
-.questons-note {
-  font-size: 1.77em; }
+  font-size: 1.5em; }
 
 .head-manager {
   margin-left: -45px;
@@ -1000,8 +998,15 @@ footer {
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 /*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  #report {
+    margin-bottom: 150px; } }
+
+@media only screen and (min-width: 510px) {
+  #report {
+    margin-bottom: 180px; } }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .features-column {
@@ -1020,7 +1025,84 @@ footer {
   .franchazi-wrap .social-buttons {
     position: absolute;
     left: 15px;
-    bottom: 30px; } }
+    bottom: 30px; }
+  .header-title {
+    font-size: 2.21em; }
+  .btn-pink {
+    padding: 24px 40px 22px;
+    font-size: 16px;
+    display: inline-block; }
+  .title {
+    font-size: 2.21em; }
+  .slide-border {
+    padding: 40px 40px; }
+  .keyses-form-wrap {
+    margin-top: 0; }
+  .keyses-form-border {
+    padding: 40px; }
+  .keyses-form-wrap .btn-pink {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .tab-border {
+    padding: 20px 40px; }
+  .hipoteza img {
+    max-width: unset; }
+  .planet img {
+    max-width: unset;
+    margin-left: 0; }
+  .file-cover img {
+    max-width: unset; }
+  .step-item {
+    min-height: 213px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .step-item .step-description {
+      padding-left: 3.88em;
+      padding-right: 3.88em; }
+    .step-item .step-title {
+      font-weight: 700; }
+  .steps-wrap {
+    margin-bottom: 30px; }
+  .info-border {
+    padding: 40px 40px 10px; }
+  .personal-price-border {
+    border-radius: 10px;
+    border: 1px solid #f2f3f4;
+    padding: 40px 40px; }
+  .month-report img {
+    max-width: unset; }
+  #report {
+    margin-bottom: 190px; }
+  .franchazi-name {
+    text-align: left;
+    font-size: 1.28em;
+    margin-right: -80px;
+    position: inherit;
+    z-index: 9; }
+  .franchazi-wrap {
+    height: 338px; }
+  .play-button {
+    top: 30%; }
+  .contacts-border {
+    padding: 40px 40px; }
+  .questions-form-title {
+    font-size: 1.77em; }
+  .questons-note {
+    font-size: 1.77em; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -1092,8 +1174,21 @@ footer {
     left: 20px; }
   #testimonials {
     padding-bottom: 5.55em; }
-  .step-item .step-description {
-    display: none; }
+  .step-item {
+    min-height: 213px; }
+    .step-item .step-description {
+      display: none; }
+    .step-item:hover {
+      background-color: #A772F6;
+      box-shadow: inset 0px 10px 15px 0px rgba(0, 0, 0, 0.07); }
+      .step-item:hover .step-description {
+        display: block; }
+      .step-item:hover .hover {
+        display: block; }
+      .step-item:hover .original {
+        display: none; }
+      .step-item:hover .step-title {
+        color: #fff; }
   .text-lg-white {
     color: #fff; }
   .btn-pink {
