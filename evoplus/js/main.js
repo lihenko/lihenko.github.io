@@ -22,6 +22,7 @@ $(document).ready(function(){
   $("#keyses-phone-number").mask("+7(999) 999-99-99");
   $("#info-phone-number").mask("+7(999) 999-99-99");
   $("#questions-phone-number").mask("+7(999) 999-99-99");
+  $("#callback-phone-number").mask("+7(999) 999-99-99");
 });
 
 

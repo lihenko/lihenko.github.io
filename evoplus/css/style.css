@@ -470,7 +470,7 @@ header {
 
 .checkmark {
   position: absolute;
-  top: 0;
+  top: -4px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -971,7 +971,7 @@ header {
 .questions-bg {
   position: absolute;
   bottom: 0;
-  left: 20px; }
+  right: 0; }
   .questions-bg img {
     max-width: 80%; }
 
@@ -989,6 +989,98 @@ footer {
   .footer-policy a {
     color: #171B1E;
     text-decoration: underline; }
+
+a.dialog-close {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: .75;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+  a.dialog-close:hover {
+    color: #fff;
+    opacity: 1; }
+  a.dialog-close span {
+    font-size: 30px;
+    line-height: 1;
+    margin-top: 3px; }
+
+.modal-wrap {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.08);
+  padding: 9px;
+  position: relative; }
+
+.modal-border {
+  border-radius: 10px;
+  border: 1px solid #f2f3f4;
+  padding: 30px 35px; }
+
+.callback-title {
+  font-weight: 700;
+  font-size: 1.33em; }
+
+#getclients .modal-dialog {
+  max-width: 1170px; }
+
+#howmuch .modal-dialog {
+  max-width: 1170px; }
+
+.modal-note {
+  font-size: 1.22em;
+  font-weight: 300; }
+
+.security {
+  font-size: .66em;
+  font-weight: 300;
+  padding-left: 25px;
+  position: relative; }
+  .security:before {
+    content: url("../img/security.png");
+    position: absolute;
+    left: 0;
+    top: -5px; }
+
+.master-position {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  font-size: .77em;
+  font-weight: 300;
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+  padding: 15px 40px;
+  max-width: 270px; }
+
+.master-name {
+  background-color: #A772F6;
+  color: #fff;
+  border-radius: 10px;
+  font-size: .77em;
+  font-weight: 300;
+  position: absolute;
+  bottom: 85px;
+  right: 210px;
+  padding: 24px 30px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1211,7 +1303,22 @@ footer {
     .questions-bg img {
       max-width: unset; }
   .btn-white {
-    padding: 26px 50px; } }
+    padding: 26px 50px; }
+  .questions-bg {
+    bottom: 0;
+    left: 20px;
+    right: unset; }
+  .master-position {
+    bottom: 50px;
+    left: 60px;
+    right: unset;
+    max-width: 330px; }
+  .master-name {
+    bottom: 108px;
+    left: 30px;
+    right: unset; }
+  .security {
+    margin-left: 30px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -1315,7 +1422,9 @@ footer {
   .pen-shadow {
     position: absolute;
     top: 0;
-    right: -80px; } }
+    right: -80px; }
+  a.dialog-close {
+    right: -50px; } }
 
 @media only screen and (min-width: 1400px) {
   .plant-image {

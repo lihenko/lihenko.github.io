@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Document</title>
+	<title>EVO Plus</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
@@ -51,7 +51,7 @@
 			<div class="d-none d-md-block col-md-5 col-lg-7 my-auto text-right">
 				<div class="header-links">
 					<a href="tel:+78000000000" class="header-phone d-none d-lg-inline-block">+7 (800) 000-00-00</a>
-					<a href="#" class="btn btn-white">Заказать звонок</a>
+					<a href="#" class="btn btn-white" data-toggle="modal" data-target="#callback">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -64,7 +64,7 @@
 					Выстраиваем понятный маркетинг <span class="d-none d-lg-inline">личных и коммерческих аккаунтов</span> по всему миру с гарантией результата
 				</div>
 				<div class="header-button mb-5">
-					<a href="#" class="btn btn-pink">Получить новых клиентов</a>
+					<a href="#" class="btn btn-pink" data-toggle="modal" data-target="#getclients">Получить новых клиентов</a>
 				</div>
 			</div>
 			<div class="col-md-5 offset-md-7 col-lg-5 offset-lg-0 features-column">
@@ -205,6 +205,7 @@
 				<div class="keyses-form-wrap">
 					<div class="keyses-form-border">
 						<form action="#">
+							<input type="hidden" name="subject" value="Разбор аккаунта">
 							<div class="form-title mb-4">
 								Специалист перезвонит вам через <span class="text-nowrap">15 мин</span> и назначит точное время разбора вашего аккаунта
 							</div>
@@ -680,6 +681,7 @@
 					<div class="row">
 						<div class="col-lg-8 offset-lg-4">
 							<form action="#">
+								<input type="hidden" name="subject" value="Можно ли привлечь клиентов">
 								<div class="info-form-title mb-4">
 									Узнайте можно ли привлечь клиентов из Instagram и Facebook в ваш бизнес
 								</div>
@@ -745,7 +747,7 @@
 									<li>Продолжительность работы:<br><span class="font-weight-bold text-nowrap">7 дней</span></li>
 								</ul>
 								<div class="price-button text-center">
-									<a href="#" class="btn btn-pink">Узнать стоимость</a>
+									<a href="#" class="btn btn-pink" data-toggle="modal" data-target="#howmuch">Узнать стоимость</a>
 								</div>
 							</div>
 					</div>
@@ -775,7 +777,7 @@
 								<li>Продолжительность работы:<br><span class="font-weight-bold text-nowrap">30 дней</span></li>
 							</ul>
 							<div class="price-button text-center">
-								<a href="#" class="btn btn-pink">Узнать стоимость</a>
+								<a href="#" class="btn btn-pink" data-toggle="modal" data-target="#howmuch">Узнать стоимость</a>
 							</div>
 						</div>
 					</div>
@@ -796,6 +798,7 @@
 					<div class="row">
 						<div class="col-lg-8 offset-lg-4">
 							<form action="#">
+								<input type="hidden" name="subject" value="Персональный пакет">
 								<div class="info-form-title mb-4">
 									Пакет <span class="font-weight-bold">"Персональный"</span>
 								</div>
@@ -1063,6 +1066,7 @@
 					<div class="row">
 						<div class="col-md-7 offset-md-5">
 							<form action="#">
+								<input type="hidden" name="subject" value="Остались вопросы">
 								<div class="questions-form-title font-weight-bold">
 									Остались вопросы?
 								</div>
@@ -1123,7 +1127,7 @@
 			<div class="col-12 col-md-4 col-lg-5 my-auto text-center text-md-right">
 				<div class="header-links mb-3 mb-md-0">
 					<a href="tel:+78000000000" class="header-phone mb-3 mb-lg-0 mr-0 mr-lg-4 d-block d-md-none d-lg-inline-block">+7 (800) 000-00-00</a>
-					<a href="#" class="btn btn-white">Заказать звонок</a>
+					<a href="#" class="btn btn-white" data-toggle="modal" data-target="#callback">Заказать звонок</a>
 				</div>
 			</div>
 			<div class="d-md-none col-md-5 col-lg-3 my-auto text-center">
@@ -1134,6 +1138,180 @@
 		</div>
 	</div>
 </footer>
+<!-- Modal Callback -->
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="callbacktitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  	<div class="modal-content">
+	  	<div class="modal-wrap">
+	  		<div class="modal-border">
+	  			<a href="#" class="dialog-close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </a>
+		        <div class="callback-title text-center">
+		        	Закажите обратный звонок
+		        </div>
+		        <div class="callback-subtitle text-center mb-4">
+		        	Специалист перезвонит вам в течении 5 мин
+		        </div>
+		        <form action="#">
+		        	<input type="hidden" name="subject" value="Заказ обратного звонка">
+					<div class="row mb-3">
+						<div class="col-12 mb-4">
+							<label for="keyses-phone-number">Введите номер телефона</label>
+							<input type="tel" id="callback-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+						</div>
+						<div class="col-12 mb-3">
+							<a href="#" class="btn btn-pink d-block">Заказать звонок</a>
+						</div>
+					</div>
+					<div>
+						<label class="checkmark-container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<div class="agreement">
+							Вы соглашаетесь с <a href="#">условиями</a> обработки персональных данных
+						</div>
+					</div>
+				</form>
+	  		</div>
+	  	</div>
+  	</div>
+  </div>
+</div>
+
+<!-- Modal Get Clients -->
+<div class="modal fade" id="getclients" tabindex="-1" role="dialog" aria-labelledby="getclientstitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  	<div class="modal-content">
+  		<div class="modal-wrap">
+			<div class="questions-bg d-none d-lg-block">
+				<img src="img/ivan-ivanov.png" alt="">
+			</div>
+			<div class="questions-bg d-none d-md-block d-lg-none">
+				<img src="img/ivan-ivanov-tablets.png" alt="">
+			</div>
+			<div class="master-position d-none d-md-block">
+				Специалист по продвижению трафика из Instagram и Facebook
+			</div>
+			<div class="master-name d-none d-md-block">
+				Иван Иванов
+			</div>
+			<div class="modal-border">
+				<a href="#" class="dialog-close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </a>
+				<div class="row">
+					<div class="col-md-9 col-lg-8 offset-lg-4">
+						<form action="#">
+							<input type="hidden" name="subject" value="Получить клиентов">
+							<div class="questions-form-title font-weight-bold mb-2 mb-lg-0">
+								Получите новых клиентов<br> из Instagram и Facebook уже через 7 дней
+							</div>
+							<div class="modal-note mb-3 mb-lg-4">
+								Заполните форму и узнайте, как в вашем случае эффективно привлекать клиентов из Instagram и Facebook
+							</div>
+							<div class="security d-lg-none mb-4">Мы не рассылаем спам и рекламу</div>
+							<div class="row">
+								<div class="col-md-8 col-lg-6 mb-4">
+									<label for="keyses-phone-number">Введите номер телефона</label>
+									<input type="tel" id="questions-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+								</div>
+							</div>
+							<div class="row h-100 mb-3">
+								<div class="col-md-8 col-lg-6 mb-3 mb-lg-0">
+									<a href="#" class="btn btn-pink d-block">Получить клиентов</a>
+								</div>
+								<div class="col-md-6 my-auto">
+									<div>
+										<label class="checkmark-container">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+										</label>
+										<div class="agreement">
+											Вы соглашаетесь с <a href="#">условиями</a> обработки персональных данных
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="security d-none d-lg-block">Мы не рассылаем спам и рекламу</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+  	</div>
+  </div>
+</div>
+
+<!-- Modal How Much -->
+
+<div class="modal fade" id="howmuch" tabindex="-1" role="dialog" aria-labelledby="howmuchtitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  	<div class="modal-content">
+  		<div class="modal-wrap">
+			<div class="questions-bg d-none d-lg-block">
+				<img src="img/ivan-ivanov.png" alt="">
+			</div>
+			<div class="questions-bg d-none d-md-block d-lg-none">
+				<img src="img/ivan-ivanov-tablets.png" alt="">
+			</div>
+			<div class="master-position d-none d-md-block">
+				Специалист по продвижению трафика из Instagram и Facebook
+			</div>
+			<div class="master-name d-none d-md-block">
+				Иван Иванов
+			</div>
+			<div class="modal-border">
+				<a href="#" class="dialog-close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </a>
+				<div class="row">
+					<div class="col-md-9 col-lg-8 offset-lg-4">
+						<form action="#">
+							<input type="hidden" name="subject" value="Стоимость пакета">
+							<div class="questions-form-title font-weight-bold mb-2 mb-lg-0">
+								Узнайте точную стоимость и детали<br> пакета за 15 минут
+							</div>
+							<div class="modal-note mb-3 mb-lg-4">
+								Заполните форму и наш специалист расскажет вам<br> все детали пакета, условия работы и стоимость
+							</div>
+							<div class="security d-lg-none mb-4">Мы не рассылаем спам и рекламу</div>
+							<div class="row">
+								<div class="col-md-8 col-lg-6 mb-4">
+									<label for="keyses-phone-number">Введите номер телефона</label>
+									<input type="tel" id="questions-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+								</div>
+							</div>
+							<div class="row h-100 mb-3">
+								<div class="col-md-8 col-lg-6 mb-3 mb-lg-0">
+									<a href="#" class="btn btn-pink d-block">Узнать стоимость</a>
+								</div>
+								<div class="col-md-6 my-auto">
+									<div>
+										<label class="checkmark-container">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+										</label>
+										<div class="agreement">
+											Вы соглашаетесь с <a href="#">условиями</a> обработки персональных данных
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="security d-none d-lg-block">Мы не рассылаем спам и рекламу</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+  	</div>
+  </div>
+</div>
+
+
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/popper.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
