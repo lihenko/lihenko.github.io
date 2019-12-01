@@ -1,15 +1,3 @@
-function HeightBlock(column) {
-    var BlockHeight = 0;
-    column.each(function() {
-        CurrentHeight = $(this).height();
-        if(CurrentHeight > BlockHeight){
-            BlockHeight = CurrentHeight;
-        }
-    });
-    column.height(BlockHeight);
-        
-};
-
 $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
@@ -23,6 +11,7 @@ $(document).ready(function(){
   $("#info-phone-number").mask("+7(999) 999-99-99");
   $("#questions-phone-number").mask("+7(999) 999-99-99");
   $("#callback-phone-number").mask("+7(999) 999-99-99");
+  $("#exit-phone-number").mask("+7(999) 999-99-99");
 });
 
 
@@ -76,24 +65,9 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 });
 
 
-$(document).ready(function(){
-    var $page = $('html, body');
-    $('a[href*="#"]').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
-        return false;
-    });
-});
-
-
-
 
 $(document).ready(function(){
 
-    HeightBlock($('.plans-card-body'));
-
-    HeightBlock($('.charts-height'));
-
+  $('#exit').exitModal();
 
 });

@@ -968,6 +968,10 @@ a.dialog-close{
 	max-width: 1170px;
 }
 
+#exit .modal-dialog{
+	max-width: 1170px;
+}
+
 .modal-note{
 	font-size: 1.22em;
 	font-weight: 300;
@@ -1008,6 +1012,30 @@ a.dialog-close{
 	bottom: 85px;
 	right: 210px;
 	padding: 24px 30px;
+}
+
+.discount{
+	font-weight: 300;
+	padding-left: 60px;
+	position: relative;
+	&:before{
+		content: url('../img/icon-sale.png');
+		position: absolute;
+		left: 0;
+	}
+	& span{
+		font-weight: 700;
+	}
+}
+
+.modal-note span{
+	font-weight: 700;
+}
+
+.check-list-popup{
+	position: absolute;
+	left: 17%;
+	top: -20px;
 }
 
 @import "media";
