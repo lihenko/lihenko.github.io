@@ -591,6 +591,11 @@ header {
 #testimonials {
   padding-top: 5.55em;
   padding-bottom: 2.5em; }
+  #testimonials .slick-next {
+    right: 5px; }
+  #testimonials .slick-prev {
+    left: 5px;
+    z-index: 9; }
 
 .social-buttons a:before {
   font-size: 16px;
@@ -1286,7 +1291,12 @@ a.dialog-close {
     margin-top: -60.3px; }
   .thankyou-body {
     padding-top: 0;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  #testimonials .slick-next {
+    right: -25px; }
+  #testimonials .slick-prev {
+    left: -25px;
+    z-index: 9; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {

@@ -191,6 +191,16 @@
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	#testimonials{
+
+		& .slick-next{
+			right: -25px;
+		}
+		& .slick-prev{
+			left: -25px;
+			z-index: 9;
+		}
+	}
 }
 
 

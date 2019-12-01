@@ -475,6 +475,14 @@ header{
 #testimonials{
 	padding-top: 5.55em;
 	padding-bottom: 2.5em;
+
+	& .slick-next{
+		right: 5px;
+	}
+	& .slick-prev{
+		left: 5px;
+		z-index: 9;
+	}
 }
 
 .social-buttons a:before{

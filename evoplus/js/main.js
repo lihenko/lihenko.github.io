@@ -4,6 +4,14 @@ $('.portfolio-slider').slick({
     arrows: true,
     dots:true,
     adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        dots: false
+      }
+    }
+  ]
 });
 
 $(document).ready(function(){
@@ -53,7 +61,7 @@ $('.testi-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: true
       }
     }
   ]
