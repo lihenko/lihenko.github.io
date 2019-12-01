@@ -517,7 +517,7 @@ header{
 
 .video-button{
 	position: relative;
-	margin-left: -15px;	
+	margin-left: -15px;
 }
 
 .video-button a:before{
@@ -527,12 +527,14 @@ header{
 	height: 60px;
 	border-radius: 50%;
 	background-color: $pink;
+	background-image: -webkit-linear-gradient(45deg, rgb(155,94,247) 0%, rgb(186,141,255) 100%);
 	line-height: 60px;
 	transition: all 0.3s ease-in-out;
 }
 
 .video-button a:hover:before{
 	background-color: lighten($pink, 5%);
+	background-image: -webkit-linear-gradient(45deg, lighten(rgb(155,94,247),5%) 0%, lighten(rgb(186,141,255),5%) 100%);
 }
 
 #testimonials .slick-prev::before{
@@ -777,12 +779,14 @@ header{
 	height: 60px;
 	border-radius: 50%;
 	background-color: $pink;
+	background-image: -webkit-linear-gradient(45deg, rgb(155,94,247) 0%, rgb(186,141,255) 100%);
 	line-height: 60px;
 	transition: all 0.3s ease-in-out;
 }
 
 .play-button a:hover:before{
 	background-color: lighten($pink, 5%);
+	background-image: -webkit-linear-gradient(45deg, lighten(rgb(155,94,247),5%) 0%, lighten(rgb(186,141,255),5%) 100%);
 }
 
 #map{
@@ -897,7 +901,8 @@ header{
 }
 
 footer{
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .footer-brand-description{
@@ -1036,6 +1041,68 @@ a.dialog-close{
 	position: absolute;
 	left: 17%;
 	top: -20px;
+}
+
+.thankyou-brand-description{
+	font-size: .6em;
+	font-weight: 300;
+}
+
+.thankyou-telegram{
+	font-size: .6em;
+	font-weight: 300;
+	padding-left: 45px;
+	position: relative;
+	& a{
+		color: $black;
+		border-bottom: 1px dotted $pink;
+	}
+	&:before{
+		content: url('../img/telegram-icon-header.png');
+		position: absolute;
+		left: 0;
+	}
+}
+
+.thankyou-page header{
+	background-image: none;
+	background-color: transparent;
+}
+
+.thankyou-body{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: calc(100vh - 100px);
+	background-image: url('../img/merci.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -86px;
+	& .merci-phone{
+		min-height: calc(100vh - 100px);
+	}
+}
+
+.thankyou-title{
+	font-size: 2.44em;
+}
+
+.thankyou-subtitle{
+	position: relative;
+	font-size: 1.22em;
+	font-weight: 300;
+}
+
+.thankyou-arrow{
+	position: absolute;
+	bottom: 0;
+	right: -150px;
+}
+
+.thankyou-arrow-mobile{
+	position: absolute;
+	bottom: 38px;
+	right: 30px;
 }
 
 @import "media";

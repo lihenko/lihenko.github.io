@@ -172,6 +172,25 @@
 	.questons-note{
 		font-size: 1.77em;
 	}
+	.questions-bg {
+		left: 10px;
+		right: unset;
+	}
+	.thankyou-video-button{
+		margin-bottom: 100px;
+	}
+	.thankyou-phone img{
+		position: absolute;
+		bottom: 0;
+		left: -225px;
+	}
+	.thankyou-body{
+		margin-top: -60.3px;
+	}
+	.thankyou-body{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 
@@ -335,6 +354,14 @@
 	}
 	.security{
 		margin-left: 30px;
+	}
+	.thankyou-video-button{
+		margin-bottom: 0;
+	}
+	.thankyou-phone img{
+		position: relative;
+		bottom: unset;
+		left: unset;
 	}
 }
 
