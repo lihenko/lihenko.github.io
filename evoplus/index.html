@@ -84,10 +84,16 @@
 <section id="porfolio">
 	<div class="container">
 		<div class="row">
+
 			<div class="col-12 col-lg-10 offset-lg-1 text-lg-center">
-				<div class="title mb-2">Узнайте, за счет чего вы сможете <span class="font-weight-bold">получать больше клиентов</span> из Instagram на примере выполненных работ</div>
+
+				<div class="title mb-2">Узнайте, за счет чего вы сможете <span class="font-weight-bold">получать больше клиентов</span> из Instagram на примере выполненных работ
+				</div>
+
 			</div>
+	
 			<div class="col-12">
+
 				<div class="portfolio-slider lazyload">
 					<div class="slide-item">
 						<div class="slide-border h-100">
@@ -374,10 +380,14 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
+
 		</div>
 	</div>
 </section>
+
+
 <section id="keyses" class="lazyload">
 	<div class="container position-relative">
 		<div class="keyses-bg d-none d-md-block">
@@ -448,6 +458,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="what-you-get" class="lazyload">
 	<div class="container">
 		<div class="row">
@@ -620,6 +631,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="testimonials" class="lazyload">
 	<div class="container">
 		<div class="row">
@@ -735,6 +747,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="why-us" class="lazyload">
 	<div class="container">
 		<div class="row">
@@ -814,6 +827,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="steps" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
@@ -881,6 +895,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="info" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
@@ -927,6 +942,8 @@
 		</div>
 	</div>
 </section>
+
+
 <section id="prices" class="lazyload pt-4">
 	<div class="container">
 		<div class="row">
@@ -998,6 +1015,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="personal-price" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
@@ -1046,6 +1064,8 @@
 		</div>
 	</div>
 </section>
+
+
 <section id="report" class="lazyload mt-5">
 	<div class="container">
 		<div class="row bg-black">
@@ -1093,6 +1113,8 @@
 		</div>
 	</div>
 </section>
+
+
 <section id="franchazi" class="lazyload mb-4">
 	<div class="container">
 		<div class="row">
@@ -1190,6 +1212,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="video" class="lazyload">
 	<div class="container">
 		<div class="row">
@@ -1203,7 +1226,7 @@
 			<div class="col-12">
 				<div class="wideo-wrap text-center">
 					<div class="video-bg">
-						<img src="img/video-bg.png" alt="" class="img-fluid">
+						<img src="img/ajax-loader.gif" alt="" data-echo="img/video-bg.png" class="img-fluid">
 					</div>
 					<div class="play-button">
 						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-toggle="lightbox" class="icon-play" tabindex="0"></a>
@@ -1223,14 +1246,14 @@
 						<div class="contacts-title mb-3">
 							Контакты:
 						</div>
-						<ul id="map-contact">
+						<ul class="map-contact">
 							<li class="map-phone">+7(912) 123-45-00<br>8 (800) 123-45-67</li>
 							<li class="map-address">г.Москва, Старопименовский переулок 18, БЦ Берта-Хаус</li>
 						</ul>
 						<div class="map-social-title">
 							Напишите нам:
 						</div>
-						<ul id="map-social">
+						<ul class="map-social">
 							<li><a href="#" class="telegram-link">Telegram</a></li>
 							<li><a href="#" class="mail-link">info@pochta.com</a></li>	
 						</ul>
@@ -1249,14 +1272,14 @@
 						<div class="contacts-title mb-3">
 							Контакты:
 						</div>
-						<ul id="map-contact">
+						<ul class="map-contact">
 							<li class="map-phone">+7(912) 123-45-00<br>8 (800) 123-45-67</li>
 							<li class="map-address">г.Москва, Старопименовский переулок 18, БЦ Берта-Хаус</li>
 						</ul>
 						<div class="map-social-title">
 							Напишите нам:
 						</div>
-						<ul id="map-social">
+						<ul class="map-social">
 							<li><a href="#" class="telegram-link">Telegram</a></li>
 							<li><a href="#" class="mail-link">info@pochta.com</a></li>	
 						</ul>
@@ -1581,13 +1604,25 @@
   </div>
 </div>
 
-
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/maskinput.js"></script>
 	<script src="js/jquery.exit-modal.js"></script>
 	<script src="js/ekko-lightbox.min.js"></script>
+	<script src="js/echo.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+	  echo.init({
+	    offset: 100,
+	    throttle: 250,
+	    unload: false,
+	    callback: function (element, op) {
+	      console.log(element, 'has been', op + 'ed')
+	    }
+	  });
+
+	  // echo.render(); is also available for non-scroll callbacks
+	</script>
 </body>
 </html>

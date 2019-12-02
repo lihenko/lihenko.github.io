@@ -1,4 +1,3 @@
-
 $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
@@ -78,11 +77,14 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 
 
-$(document).ready(function(){
+
+/*$(document).ready(function(){
 
   $('#exit').exitModal();
 
-});
+});*/
+
+
 
 function submitform(formid){
   event.preventDefault();

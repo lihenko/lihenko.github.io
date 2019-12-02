@@ -192,12 +192,6 @@ header {
   font-weight: 300;
   line-height: 1.36; }
 
-.hidden, .lazyload {
-  display: none; }
-
-.hidden.visible {
-  display: block; }
-
 .features-bg {
   min-height: 580px;
   min-width: 550px;
@@ -921,11 +915,11 @@ header {
 .contacts-title {
   font-size: 2.33em; }
 
-#map-contact {
+.map-contact {
   list-style: none;
   padding: 0;
   margin: 0; }
-  #map-contact li {
+  .map-contact li {
     position: relative;
     padding-left: 45px;
     padding-bottom: 30px; }
@@ -944,20 +938,20 @@ header {
   font-size: 1.38em;
   margin-bottom: 30px; }
 
-#map-social {
+.map-social {
   list-style: none;
   padding: 0;
   margin: 0; }
-  #map-social li {
+  .map-social li {
     position: relative;
     padding-left: 45px;
     padding-bottom: 30px; }
-    #map-social li a {
+    .map-social li a {
       color: #171B1E;
       border-bottom: 1px dotted #A772F6;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      #map-social li a:hover {
+      .map-social li a:hover {
         color: #A772F6; }
 
 .telegram-link:before {
