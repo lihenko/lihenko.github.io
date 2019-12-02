@@ -1,11 +1,4 @@
 
-$(document).ready(function() {
-    $('.lazyload').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeIn',
-        offset: 100
-       });
-});
-
 $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
