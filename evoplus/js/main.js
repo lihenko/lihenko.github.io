@@ -1,3 +1,12 @@
+$('.lazyload').addClass('hidden');
+
+$(document).ready(function() {
+  $('.lazyload').viewportChecker({
+   classToRemove: 'hidden',
+   offset: 250
+  });
+});
+
 $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
@@ -17,6 +26,7 @@ $('.portfolio-slider').slick({
 $(document).ready(function(){
   $("#keyses-phone-number").mask("+7(999) 999-99-99");
   $("#info-phone-number").mask("+7(999) 999-99-99");
+  $("#price-phone-number").mask("+7(999) 999-99-99");
   $("#questions-phone-number").mask("+7(999) 999-99-99");
   $("#callback-phone-number").mask("+7(999) 999-99-99");
   $("#exit-phone-number").mask("+7(999) 999-99-99");
@@ -79,3 +89,39 @@ $(document).ready(function(){
   $('#exit').exitModal();
 
 });
+
+function submitform(formid){
+  event.preventDefault();
+  var form = '#' + formid;
+  var tel = form + ' input[name="tel"]' ;
+  var insta = form + ' input[name="insta"]' ;
+  var agree = form + ' input[name="agreement"]' ;
+
+  if ($(tel).val() == ""){
+      alert('Введите номер телефона');
+      return false;
+  }
+
+  if (form == '#free-audit'){
+      if ($(insta).val() == ""){
+        alert('Введите ссылку на свой Instagram');
+        return false;
+    }
+  }
+
+  if ($(agree).is( 
+    ":checked")) { 
+       var msg = $(form).serialize();
+  } else {
+    alert("Вы должны приять условия обработки персональных данных");
+    return false;
+  }
+  
+  $.ajax({
+      type: 'POST',
+      url: 'sendcontact.php',
+      data: msg,
+     });
+  window.location.href = "/thankyou.html";  
+  return false;
+};

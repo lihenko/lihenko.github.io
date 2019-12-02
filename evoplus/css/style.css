@@ -192,6 +192,9 @@ header {
   font-weight: 300;
   line-height: 1.36; }
 
+.hidden {
+  display: none; }
+
 .features-bg {
   min-height: 580px;
   min-width: 550px;

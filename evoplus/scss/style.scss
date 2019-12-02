@@ -43,6 +43,10 @@ header{
 	line-height: 1.36;
 }
 
+.hidden{
+	display: none;
+}
+
 .features-bg{
 	min-height: 580px;
 	min-width: 550px;
@@ -1112,5 +1116,7 @@ a.dialog-close{
 	bottom: 38px;
 	right: 30px;
 }
+
+
 
 @import "media";

@@ -88,7 +88,7 @@
 				<div class="title mb-2">Узнайте, за счет чего вы сможете <span class="font-weight-bold">получать больше клиентов</span> из Instagram на примере выполненных работ</div>
 			</div>
 			<div class="col-12">
-				<div class="portfolio-slider">
+				<div class="portfolio-slider lazyload">
 					<div class="slide-item">
 						<div class="slide-border h-100">
 							<div class="row h-100">
@@ -378,7 +378,7 @@
 		</div>
 	</div>
 </section>
-<section id="keyses">
+<section id="keyses" class="lazyload">
 	<div class="container position-relative">
 		<div class="keyses-bg d-none d-md-block">
 			<img src="img/book.png" alt="">
@@ -416,25 +416,25 @@
 			<div class="col-md-8 offset-md-4 col-lg-5 offset-lg-0">
 				<div class="keyses-form-wrap">
 					<div class="keyses-form-border">
-						<form action="#">
+						<form action="#" id="free-audit">
 							<input type="hidden" name="subject" value="Разбор аккаунта">
 							<div class="form-title mb-4">
 								Специалист перезвонит вам через <span class="text-nowrap">15 мин</span> и назначит точное время разбора вашего аккаунта
 							</div>
 							<div class="mb-4">
 								<label for="keyses-phone-number">Введите номер телефона</label>
-								<input type="tel" id="keyses-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+								<input type="tel" id="keyses-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 							</div>
 							<div class="mb-5">
 								<label for="instagram-id">Введите ссылку на ваш аккаунт в Instagram</label>
-								<input type="text" id="instagram-id" class="insta-input" placeholder="instagram.com/nickname">
+								<input type="text" id="instagram-id" name="insta" class="insta-input" placeholder="instagram.com/nickname">
 							</div>
 							<div class="mb-4">
-								<a href="#" class="btn btn-pink">Получить бесплатный аудит</a>
+								<a href="#" class="btn btn-pink" onclick="return submitform('free-audit');">Получить бесплатный аудит</a>
 							</div>
 							<div>
 								<label class="checkmark-container">
-								  <input type="checkbox">
+								  <input type="checkbox" name="agreement">
 								  <span class="checkmark"></span>
 								</label>
 								<div class="agreement">
@@ -448,7 +448,7 @@
 		</div>
 	</div>
 </section>
-<section id="what-you-get">
+<section id="what-you-get" class="lazyload">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-10 offset-lg-1">
@@ -620,7 +620,7 @@
 		</div>
 	</div>
 </section>
-<section id="testimonials">
+<section id="testimonials" class="lazyload">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3 text-center">
@@ -735,7 +735,7 @@
 		</div>
 	</div>
 </section>
-<section id="why-us">
+<section id="why-us" class="lazyload">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">
@@ -814,7 +814,7 @@
 		</div>
 	</div>
 </section>
-<section id="steps" class="mb-5">
+<section id="steps" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
@@ -881,7 +881,7 @@
 		</div>
 	</div>
 </section>
-<section id="info" class="mb-5">
+<section id="info" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -892,7 +892,7 @@
 				<div class="info-border">
 					<div class="row">
 						<div class="col-lg-8 offset-lg-4">
-							<form action="#">
+							<form action="#" id="clients-form">
 								<input type="hidden" name="subject" value="Можно ли привлечь клиентов">
 								<div class="info-form-title mb-4">
 									Узнайте можно ли привлечь клиентов из Instagram и Facebook в ваш бизнес
@@ -903,15 +903,15 @@
 								<div class="row">
 									<div class="col-md-6 mb-4">
 											<label for="keyses-phone-number">Введите номер телефона</label>
-											<input type="tel" id="info-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+											<input type="tel" id="info-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 										</div>
 										<div class="col-md-6 mb-4">
-											<a href="#" class="btn btn-pink d-block">Узнать</a>
+											<a href="#" class="btn btn-pink d-block" onclick="return submitform('clients-form');">Узнать</a>
 										</div>
 									</div>
 								<div>
 									<label class="checkmark-container">
-									  <input type="checkbox">
+									  <input type="checkbox" name="agreement">
 									  <span class="checkmark"></span>
 									</label>
 									<div class="agreement">
@@ -927,7 +927,7 @@
 		</div>
 	</div>
 </section>
-<section id="prices" class="pt-4">
+<section id="prices" class="lazyload pt-4">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-10 offset-lg-1 text-lg-center">
@@ -998,7 +998,7 @@
 		</div>
 	</div>
 </section>
-<section id="personal-price" class="mb-5">
+<section id="personal-price" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 mb-5">
@@ -1009,7 +1009,7 @@
 				<div class="personal-price-border">
 					<div class="row">
 						<div class="col-lg-8 offset-lg-4">
-							<form action="#">
+							<form action="#" id="personal-form">
 								<input type="hidden" name="subject" value="Персональный пакет">
 								<div class="info-form-title mb-4">
 									Пакет <span class="font-weight-bold">"Персональный"</span>
@@ -1019,11 +1019,11 @@
 								</div>
 								<div class="row h-100">
 									<div class="col-md-6 mb-4">
-										<label for="keyses-phone-number">Введите номер телефона</label>
-										<input type="tel" id="price-phone-number" class="tel-input mb-3" placeholder="+7(___) ___-__-__">
+										<label for="price-phone-number">Введите номер телефона</label>
+										<input type="tel" id="price-phone-number" name="tel" class="tel-input mb-3" placeholder="+7(___) ___-__-__">
 										<div>
 											<label class="checkmark-container">
-											  <input type="checkbox">
+											  <input type="checkbox" name="agreement">
 											  <span class="checkmark"></span>
 											</label>
 											<div class="agreement">
@@ -1032,7 +1032,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 my-auto">
-										<a href="#" class="btn btn-pink d-block">Оставить заявку</a>
+										<a href="#" class="btn btn-pink d-block" onclick="return submitform('personal-form');">Оставить заявку</a>
 									</div>
 
 								</div>
@@ -1046,7 +1046,7 @@
 		</div>
 	</div>
 </section>
-<section id="report" class="mt-5">
+<section id="report" class="lazyload mt-5">
 	<div class="container">
 		<div class="row bg-black">
 			<div class="col-12 col-lg-5">
@@ -1093,7 +1093,7 @@
 		</div>
 	</div>
 </section>
-<section id="franchazi" class="mb-4">
+<section id="franchazi" class="lazyload mb-4">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
@@ -1190,7 +1190,7 @@
 		</div>
 	</div>
 </section>
-<section id="video">
+<section id="video" class="lazyload">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -1214,7 +1214,7 @@
 		</div>
 	</div>
 </section>
-<section id="contacts" class="d-md-none">
+<section id="contacts" class="lazyload d-md-none">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -1240,7 +1240,7 @@
 		</div>
 	</div>
 </section>
-<section id="map">
+<section id="map" class="lazyload">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-7 col-lg-5 d-none d-md-flex">
@@ -1266,7 +1266,7 @@
 		</div>
 	</div>
 </section>
-<section id="questions" class="mb-5">
+<section id="questions" class="lazyload mb-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -1277,7 +1277,7 @@
 				<div class="info-border">
 					<div class="row">
 						<div class="col-md-7 offset-md-5">
-							<form action="#">
+							<form action="#" id="question">
 								<input type="hidden" name="subject" value="Остались вопросы">
 								<div class="questions-form-title font-weight-bold">
 									Остались вопросы?
@@ -1288,16 +1288,16 @@
 								<img src="img/head-manager.png" alt="" class="img-fluid mb-3 d-md-none">
 								<div class="row">
 									<div class="col-lg-6 mb-4">
-											<label for="keyses-phone-number">Введите номер телефона</label>
-											<input type="tel" id="questions-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+											<label for="questions-phone-number">Введите номер телефона</label>
+											<input type="tel" id="questions-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 										</div>
 										<div class="col-lg-6">
-											<a href="#" class="btn btn-pink d-block">Задать вопрос</a>
+											<a href="#" class="btn btn-pink d-block" onclick="return submitform('question');">Задать вопрос</a>
 										</div>
 									</div>
 								<div>
 									<label class="checkmark-container">
-									  <input type="checkbox">
+									  <input type="checkbox" name="agreement">
 									  <span class="checkmark"></span>
 									</label>
 									<div class="agreement">
@@ -1313,7 +1313,7 @@
 		</div>
 	</div>
 </section>
-<footer>
+<footer class="lazyload">
 	<div class="container">
 		<div class="row h-100">
 			<div class="col-12 col-md-3 col-lg-2 my-auto text-center text-md-left">
@@ -1365,20 +1365,20 @@
 		        <div class="callback-subtitle text-center mb-4">
 		        	Специалист перезвонит вам в течении 5 мин
 		        </div>
-		        <form action="#">
+		        <form action="#" id="callbackform">
 		        	<input type="hidden" name="subject" value="Заказ обратного звонка">
 					<div class="row mb-3">
 						<div class="col-12 mb-4">
 							<label for="keyses-phone-number">Введите номер телефона</label>
-							<input type="tel" id="callback-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+							<input type="tel" id="callback-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 						</div>
 						<div class="col-12 mb-3">
-							<a href="#" class="btn btn-pink d-block">Заказать звонок</a>
+							<a href="#" class="btn btn-pink d-block" onclick="return submitform('callbackform');">Заказать звонок</a>
 						</div>
 					</div>
 					<div>
 						<label class="checkmark-container">
-						  <input type="checkbox">
+						  <input type="checkbox" name="agreement">
 						  <span class="checkmark"></span>
 						</label>
 						<div class="agreement">
@@ -1415,7 +1415,7 @@
 		        </a>
 				<div class="row">
 					<div class="col-md-9 col-lg-8 offset-lg-4">
-						<form action="#">
+						<form action="#" id="get-clients">
 							<input type="hidden" name="subject" value="Получить клиентов">
 							<div class="questions-form-title font-weight-bold mb-2 mb-lg-0">
 								Получите новых клиентов<br> из Instagram и Facebook уже через 7 дней
@@ -1427,17 +1427,17 @@
 							<div class="row">
 								<div class="col-md-8 col-lg-6 mb-4">
 									<label for="keyses-phone-number">Введите номер телефона</label>
-									<input type="tel" id="questions-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+									<input type="tel" id="questions-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 								</div>
 							</div>
 							<div class="row h-100 mb-3">
 								<div class="col-md-8 col-lg-6 mb-3 mb-lg-0">
-									<a href="#" class="btn btn-pink d-block">Получить клиентов</a>
+									<a href="#" class="btn btn-pink d-block" onclick="return submitform('get-clients');">Получить клиентов</a>
 								</div>
 								<div class="col-md-6 my-auto">
 									<div>
 										<label class="checkmark-container">
-										  <input type="checkbox">
+										  <input type="checkbox" name="agreement">
 										  <span class="checkmark"></span>
 										</label>
 										<div class="agreement">
@@ -1481,7 +1481,7 @@
 		        </a>
 				<div class="row">
 					<div class="col-md-9 col-lg-8 offset-lg-4">
-						<form action="#">
+						<form action="#" id="get-price">
 							<input type="hidden" name="subject" value="Стоимость пакета">
 							<div class="questions-form-title font-weight-bold mb-2 mb-lg-0">
 								Узнайте точную стоимость и детали<br> пакета за 15 минут
@@ -1493,17 +1493,17 @@
 							<div class="row">
 								<div class="col-md-8 col-lg-6 mb-4">
 									<label for="keyses-phone-number">Введите номер телефона</label>
-									<input type="tel" id="questions-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+									<input type="tel" id="questions-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 								</div>
 							</div>
 							<div class="row h-100 mb-3">
 								<div class="col-md-8 col-lg-6 mb-3 mb-lg-0">
-									<a href="#" class="btn btn-pink d-block">Узнать стоимость</a>
+									<a href="#" class="btn btn-pink d-block" onclick="return submitform('get-price');">Узнать стоимость</a>
 								</div>
 								<div class="col-md-6 my-auto">
 									<div>
 										<label class="checkmark-container">
-										  <input type="checkbox">
+										  <input type="checkbox" name="agreement">
 										  <span class="checkmark"></span>
 										</label>
 										<div class="agreement">
@@ -1535,7 +1535,7 @@
 		        </a>
 				<div class="row">
 					<div class="col-lg-7">
-						<form action="#">
+						<form action="#" id="exit-form">
 							<input type="hidden" name="subject" value="Бонус при выходе">
 							<div class="questions-form-title font-weight-bold mb-lg-2">
 								Постойте! Заберите подарок и скидку 5% перед тем, как уйти
@@ -1549,17 +1549,17 @@
 							<div class="row">
 								<div class="col-md-8 col-lg-6 mb-4">
 									<label for="keyses-phone-number">Введите номер телефона</label>
-									<input type="tel" id="exit-phone-number" class="tel-input" placeholder="+7(___) ___-__-__">
+									<input type="tel" id="exit-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
 								</div>
 							</div>
 							<div class="row h-100 mb-3">
 								<div class="col-md-8 col-lg-6 mb-3 mb-lg-0">
-									<a href="#" class="btn btn-pink d-block">Узнать стоимость</a>
+									<a href="#" class="btn btn-pink d-block" onclick="return submitform('exit-form');">Узнать стоимость</a>
 								</div>
 								<div class="col-md-6 my-auto">
 									<div>
 										<label class="checkmark-container">
-										  <input type="checkbox">
+										  <input type="checkbox" name="agreement">
 										  <span class="checkmark"></span>
 										</label>
 										<div class="agreement">
@@ -1586,6 +1586,7 @@
 	<script src="libs/bootstrap/js/popper.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
 	<script src="js/maskinput.js"></script>
 	<script src="js/jquery.exit-modal.js"></script>
 	<script src="js/ekko-lightbox.min.js"></script>
