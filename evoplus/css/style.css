@@ -195,6 +195,9 @@ header {
 .hidden {
   display: none; }
 
+.hidden.visible {
+  display: block; }
+
 .features-bg {
   min-height: 580px;
   min-width: 550px;

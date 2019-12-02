@@ -1,10 +1,9 @@
-$('.lazyload').addClass('hidden');
 
 $(document).ready(function() {
-  $('.lazyload').viewportChecker({
-   classToRemove: 'hidden',
-   offset: 250
-  });
+    $('.lazyload').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
 });
 
 $('.portfolio-slider').slick({
@@ -30,6 +29,8 @@ $(document).ready(function(){
   $("#questions-phone-number").mask("+7(999) 999-99-99");
   $("#callback-phone-number").mask("+7(999) 999-99-99");
   $("#exit-phone-number").mask("+7(999) 999-99-99");
+  $("#getclients-phone-number").mask("+7(999) 999-99-99");
+  $("#howmuch-phone-number").mask("+7(999) 999-99-99");
 });
 
 
