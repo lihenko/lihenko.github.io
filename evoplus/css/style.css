@@ -160,7 +160,7 @@ input {
 
 header {
   padding-top: 24px;
-  background-image: url("../img/bg-header.jpg");
+  background-image: url("../img/bg-header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ header {
 .features-bg {
   min-height: 580px;
   min-width: 550px;
-  background-image: url("../img/phone.png");
+  background-image: url("../img/phone.webp");
   position: absolute;
   left: 16px;
   top: -20px; }
@@ -894,7 +894,7 @@ header {
   background-image: -webkit-linear-gradient(45deg, #aa76f8 0%, #c9a7ff 100%); }
 
 #map {
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1164,6 +1164,14 @@ a.dialog-close {
   position: absolute;
   bottom: 38px;
   right: 30px; }
+
+img {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+img[data-src] {
+  opacity: 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

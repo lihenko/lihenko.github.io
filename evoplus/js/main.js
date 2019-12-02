@@ -118,6 +118,15 @@ function submitform(formid){
       url: 'sendcontact.php',
       data: msg,
      });
-  window.location.href = "/thankyou.html";  
+  window.location.href = "thankyou.html";  
   return false;
 };
+
+$(document).ready(function(){
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+ img.removeAttribute('data-src');
+  };
+});
+});

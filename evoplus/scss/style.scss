@@ -5,7 +5,7 @@
 
 header{
 	padding-top: 24px;
-	background-image: url('../img/bg-header.jpg');
+	background-image: url('../img/bg-header.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -47,7 +47,7 @@ header{
 .features-bg{
 	min-height: 580px;
 	min-width: 550px;
-	background-image: url('../img/phone.png');
+	background-image: url('../img/phone.webp');
 	position: absolute;
 	left: 16px;
 	top: -20px;
@@ -799,7 +799,7 @@ header{
 }
 
 #map{
-	background-image: url('../img/map.jpg');
+	background-image: url('../img/map.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1114,6 +1114,15 @@ a.dialog-close{
 	right: 30px;
 }
 
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
 
 
 @import "media";
