@@ -201,6 +201,15 @@
 			z-index: 9;
 		}
 	}
+	.check-list-popup{
+		position: absolute;
+		max-height: 350px;
+		left: 75%;
+		top: -20px;
+	}
+	#exit .modal-border{
+		padding: 30px 35px;
+	}
 }
 
 
@@ -372,6 +381,12 @@
 		position: relative;
 		bottom: unset;
 		left: unset;
+	}
+	.check-list-popup{
+		position: absolute;
+		left: 17%;
+		top: -20px;
+		max-height: unset;
 	}
 }
 

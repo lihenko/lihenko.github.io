@@ -78,11 +78,11 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 
 
-/*$(document).ready(function(){
+$(document).ready(function(){
 
   $('#exit').exitModal();
 
-});*/
+});
 
 
 

@@ -969,6 +969,10 @@ a.dialog-close{
 	padding: 30px 35px;
 }
 
+#exit .modal-border{
+	padding: 20px 5px;
+}
+
 .callback-title{
 	font-weight: 700;
 	font-size: 1.33em;
@@ -1047,9 +1051,7 @@ a.dialog-close{
 }
 
 .check-list-popup{
-	position: absolute;
-	left: 17%;
-	top: -20px;
+	max-height: 350px;
 }
 
 .thankyou-brand-description{

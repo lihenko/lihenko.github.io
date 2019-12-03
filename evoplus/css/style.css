@@ -1045,6 +1045,9 @@ a.dialog-close {
   border: 1px solid #f2f3f4;
   padding: 30px 35px; }
 
+#exit .modal-border {
+  padding: 20px 5px; }
+
 .callback-title {
   font-weight: 700;
   font-size: 1.33em; }
@@ -1110,9 +1113,7 @@ a.dialog-close {
   font-weight: 700; }
 
 .check-list-popup {
-  position: absolute;
-  left: 17%;
-  top: -20px; }
+  max-height: 350px; }
 
 .thankyou-brand-description {
   font-size: .6em;
@@ -1304,7 +1305,14 @@ img[data-src] {
     right: -25px; }
   #testimonials .slick-prev {
     left: -25px;
-    z-index: 9; } }
+    z-index: 9; }
+  .check-list-popup {
+    position: absolute;
+    max-height: 350px;
+    left: 75%;
+    top: -20px; }
+  #exit .modal-border {
+    padding: 30px 35px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -1434,7 +1442,12 @@ img[data-src] {
   .thankyou-phone img {
     position: relative;
     bottom: unset;
-    left: unset; } }
+    left: unset; }
+  .check-list-popup {
+    position: absolute;
+    left: 17%;
+    top: -20px;
+    max-height: unset; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

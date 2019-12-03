@@ -5,10 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<title>EVO Plus</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
-	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" href="css/ekko-lightbox.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -1557,7 +1554,7 @@
 		          <span aria-hidden="true">&times;</span>
 		        </a>
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-md-9 col-lg-7">
 						<form action="#" id="exit-form">
 							<input type="hidden" name="subject" value="Бонус при выходе">
 							<div class="questions-form-title font-weight-bold mb-lg-2">
@@ -1569,10 +1566,16 @@
 							<div class="discount mb-4">
 								Так же за вашим номером телефона <span>закрепим скидку 5% на любой пакет услуг продвижения в Instagram и Facebook</span>
 							</div>
+							<div class="d-md-none text-center">
+									<img data-src="img/check-list-popup.webp" alt="" class="check-list-popup">
+								</div>
 							<div class="row">
 								<div class="col-md-8 col-lg-6 mb-4">
 									<label for="exit-phone-number">Введите номер телефона</label>
 									<input type="tel" id="exit-phone-number" name="tel" class="tel-input" placeholder="+7(___) ___-__-__">
+								</div>
+								<div class="col-md-2 d-none d-md-block d-lg-none">
+									<img data-src="img/check-list-popup.webp" alt="" class="check-list-popup">
 								</div>
 							</div>
 							<div class="row h-100 mb-3">
@@ -1593,7 +1596,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-lg-5">
+					<div class="d-none d-lg-block col-lg-5">
 						<img data-src="img/check-list-popup.webp" alt="" class="check-list-popup">
 					</div>
 				</div>
@@ -1603,7 +1606,9 @@
   	</div>
   </div>
 </div>
-
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/ekko-lightbox.css">
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
