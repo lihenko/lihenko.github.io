@@ -1,3 +1,15 @@
+function HeightBlock(column) {
+    var BlockHeight = 0;
+    column.each(function() {
+        CurrentHeight = $(this).height();
+        if(CurrentHeight > BlockHeight){
+            BlockHeight = CurrentHeight;
+        }
+    });
+    column.height(BlockHeight);
+        
+};
+
 $('.portfolio-slider').slick({
     speed: 300,
     autoplay:false,
@@ -90,19 +102,11 @@ function submitform(formid){
   event.preventDefault();
   var form = '#' + formid;
   var tel = form + ' input[name="tel"]' ;
-  var insta = form + ' input[name="insta"]' ;
   var agree = form + ' input[name="agreement"]' ;
 
   if ($(tel).val() == ""){
       alert('Введите номер телефона');
       return false;
-  }
-
-  if (form == '#free-audit'){
-      if ($(insta).val() == ""){
-        alert('Введите ссылку на свой Instagram');
-        return false;
-    }
   }
 
   if ($(agree).is( 
@@ -129,4 +133,10 @@ $(document).ready(function(){
  img.removeAttribute('data-src');
   };
 });
+});
+
+$(document).ready(function(){
+
+    HeightBlock($('.testi-slide-wrap'));
+
 });

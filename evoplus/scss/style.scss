@@ -249,13 +249,13 @@ header{
 }
 
 #keyses{
-	padding-bottom: 5.55em;
+	padding-bottom: 8.55em;
 }
 
 .keyses-bg{
 	position: absolute;
 	left: -160px;
-	bottom: -120px;
+	bottom: -165px;
 }
 
 .keyses-list ul{
@@ -510,40 +510,18 @@ header{
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.08);
-	padding: 33px 25px 0;
+	padding: 33px 25px 50px;
 	position: relative;
 }
 
-.testi-author-position{
+.testi-author-position, .testimonials-body{
 	font-size: .78em;
 }
 
 .author-ava{
 	position: absolute;
-	bottom: 0;
+	bottom: -50px;
 	right: -10px;
-}
-
-.video-button{
-	position: relative;
-	margin-left: -15px;
-}
-
-.video-button a:before{
-	display: block;
-	color: #fff;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color: $pink;
-	background-image: -webkit-linear-gradient(45deg, rgb(155,94,247) 0%, rgb(186,141,255) 100%);
-	line-height: 60px;
-	transition: all 0.3s ease-in-out;
-}
-
-.video-button a:hover:before{
-	background-color: lighten($pink, 5%);
-	background-image: -webkit-linear-gradient(45deg, lighten(rgb(155,94,247),5%) 0%, lighten(rgb(186,141,255),5%) 100%);
 }
 
 #testimonials .slick-prev::before{
@@ -559,6 +537,11 @@ header{
 	color:$black;
 	font-family: "fontello";
 	transform: rotate(180DEG);
+}
+
+.testi-slide-wrap .social-buttons{
+	position: absolute;
+	bottom: -55px;
 }
 
 .why-us-description{
@@ -977,6 +960,10 @@ a.dialog-close{
 .callback-title{
 	font-weight: 700;
 	font-size: 1.33em;
+}
+
+#callback .modal-dialog{
+	max-width: 655px;
 }
 
 #getclients .modal-dialog{
