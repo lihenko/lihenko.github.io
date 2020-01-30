@@ -412,7 +412,7 @@ footer {
   .footer-form input:not([type="submit"]) {
     height: 46px;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 20px;
     margin-right: 10px; }
 
 /*==========  Desktop First  ==========*/
