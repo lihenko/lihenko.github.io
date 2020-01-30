@@ -122,4 +122,15 @@ footer{
 	}
 }
 
+.footer-form{
+	font-size: 15px;
+	margin-bottom: 50px;
+	& input:not([type="submit"]){
+		height: 46px;
+		border: none;
+		padding: 10px 25px;
+		margin-right: 10px;
+	}
+}
+
 @import "media";

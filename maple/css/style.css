@@ -406,6 +406,15 @@ footer {
       #footer-menu li a:hover {
         color: #0000004d; }
 
+.footer-form {
+  font-size: 15px;
+  margin-bottom: 50px; }
+  .footer-form input:not([type="submit"]) {
+    height: 46px;
+    border: none;
+    padding: 10px 25px;
+    margin-right: 10px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
