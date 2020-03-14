@@ -328,6 +328,9 @@ header {
     text-align: center;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
+    #home-hero .arrow-down img {
+      height: 80px;
+      width: auto; }
     #home-hero .arrow-down a {
       padding: 45px 50px; }
     #home-hero .arrow-down:hover {
@@ -411,10 +414,92 @@ footer {
   margin-bottom: 50px; }
   .footer-form input:not([type="submit"]) {
     height: 46px;
-    border: none;
+    border: 1px solid #0000001f;
     padding: 10px 25px;
     margin-right: 10px; }
 
+/* Sales */
+#sales-hero {
+  height: 100vh; }
+  #sales-hero h2 {
+    font-family: 'Nunito-Maple', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: .15em;
+    line-height: 1.2em;
+    text-transform: lowercase; }
+  #sales-hero h1 {
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: .02em;
+    line-height: 1em; }
+    #sales-hero h1 span {
+      font-style: italic; }
+  #sales-hero .arrow-down {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    #sales-hero .arrow-down img {
+      height: 80px;
+      width: auto; }
+    #sales-hero .arrow-down a {
+      padding: 45px 50px; }
+    #sales-hero .arrow-down:hover {
+      bottom: 25px; }
+
+.nature {
+  background-image: url("../img/nature.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.farm {
+  background-image: url("../img/farm.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.house {
+  background-image: url("../img/house.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.waterfalls {
+  background-image: url("../img/waterfalls.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.big-house {
+  background-image: url("../img/big-house.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.farmhouse {
+  background-image: url("../img/farmhouse.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+.land {
+  background-image: url("../img/land.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px; }
+
+#call-to-action {
+  height: 680px; }
+  #call-to-action a {
+    color: #fff;
+    font-size: 48px; }
+
+/*Sales */
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
