@@ -141,17 +141,9 @@ footer{
 
 #sales-hero{
 	height: 100vh;
-	& h2{
-		font-family: 'Nunito-Maple', sans-serif;
-		color: #fff;
-		font-size: 30px;
-		letter-spacing: .15em;
-		line-height: 1.2em;
-		text-transform: lowercase;
-	}
 	& h1{
 		color: #fff;
-		font-size: 80px;
+		font-size: 52px;
 		letter-spacing: .02em;
 		line-height: 1em;
 		& span{
@@ -220,11 +212,30 @@ footer{
 	background-position: center;
 	min-height: 320px;
 }
+.garage{
+	background-image: url('../img/garage.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.direction1{
+	background-image: url('../img/direction1.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.direction2{
+	background-image: url('../img/direction2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
 #call-to-action{
 	height: 680px;
 	& a{
 		color: #fff;
-		font-size: 48px;
+		font-size: 36px;
+		line-height: 1;
 	}
 }
 
