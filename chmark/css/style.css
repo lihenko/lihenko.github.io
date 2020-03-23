@@ -84,6 +84,45 @@ a:hover, a:active, a:focus {
   color: #EFC4B0;
   opacity: 1; }
 
+.toggle-btn {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999999; }
+
+.toggle-btn .hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  display: block; }
+
+.hamburger .icon-bar {
+  background-color: #FE6531;
+  display: block;
+  height: 3px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 20px; }
+
+.hamburger .icon-bar:not(:last-child) {
+  margin-bottom: 3px; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(1) {
+  top: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-open .hamburger .icon-bar:nth-of-type(2) {
+  background-color: transparent; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(3) {
+  top: -6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -102,7 +141,10 @@ a:hover, a:active, a:focus {
   overflow-y: auto;
   position: absolute;
   left: -250px;
-  top: 0; }
+  top: 0;
+  z-index: 999;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out; }
   .left-menu ul {
     margin: 0;
     padding: 0;
@@ -125,6 +167,9 @@ a:hover, a:active, a:focus {
         color: #fff; }
         .left-menu ul li a:hover {
           opacity: 1; }
+
+.menu-open .left-menu {
+  left: 0; }
 
 .hero-slider .item {
   background-size: cover;
@@ -165,7 +210,9 @@ a:hover, a:active, a:focus {
   margin-left: 0;
   max-height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out; }
 
 .services {
   padding-left: 15px;
@@ -243,6 +290,22 @@ a:hover, a:active, a:focus {
 footer {
   padding: 45px 0 15px; }
 
+#arrow-up {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 15px;
+  left: 15px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+  #arrow-up:hover {
+    background-color: rgba(0, 0, 0, 0.4); }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -259,6 +322,8 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none; }
   .hero-slider .item {
     height: 450px; }
   .left-menu {

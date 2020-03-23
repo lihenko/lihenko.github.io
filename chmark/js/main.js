@@ -1,14 +1,28 @@
-function HeightBlock(column) {
-    var BlockHeight = 0;
-    column.each(function() {
-        CurrentHeight = $(this).height();
-        if(CurrentHeight > BlockHeight){
-            BlockHeight = CurrentHeight;
-        }
+$(document).ready(function(){
+    var button = $(".toggle-btn");
+    var menu = $(".main-menu");
+    button.on("click", function(){
+        $("body").toggleClass("menu-open");
+        button.toggleClass("open");
+        menu.toggleClass("open");
     });
-    column.height(BlockHeight);
-        
-};
+});
+
+
+$('#top').scroll(function () {
+    if ($('#top').scrollTop()  > 100) {
+        $("#arrow-up").fadeIn();
+    } else {
+        $("#arrow-up").fadeOut();
+    }
+});
+
+
+$("#arrow-up").click(function() {
+  $("#top").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
 
 $('.hero-slider').slick({
     speed: 300,
@@ -60,31 +74,3 @@ $('.our-partners').slick({
   ]
 });
 
-
-
-
-
-
-
-$(document).ready(function(){
-    var $page = $('html, body');
-    $('a[href*="#"]').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
-        return false;
-    });
-});
-
-
-
-
-
-$(document).ready(function(){
-
-    HeightBlock($('.plans-card-body'));
-
-    HeightBlock($('.charts-height'));
-
-
-});

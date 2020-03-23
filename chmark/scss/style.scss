@@ -3,6 +3,46 @@
 @import "base";
 @import "vars";
 
+.toggle-btn {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999999; }
+
+.toggle-btn .hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+   }
+
+.hamburger .icon-bar {
+  background-color: $red;
+  display: block;
+  height: 3px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 20px; }
+
+.hamburger .icon-bar:not(:last-child) {
+  margin-bottom: 3px; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(1) {
+  top: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-open .hamburger .icon-bar:nth-of-type(2) {
+  background-color: transparent; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(3) {
+  top: -6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }  
 
 .container{
 	max-width: 1170px;
@@ -25,6 +65,8 @@
 	position: absolute;
 	left: -250px;
 	top: 0;
+	z-index: 999;
+	transition: left 0.3s ease-in-out;
 	& ul{
 		margin: 0;
 		padding: 0;
@@ -53,6 +95,9 @@
 	}
 }
 
+.menu-open .left-menu{
+	left: 0;
+}
 
 .hero-slider{
 	& .item{
@@ -91,6 +136,7 @@
 	max-height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;
+	transition: margin-left 0.3s ease-in-out;
 }
 
 .services{
@@ -157,6 +203,23 @@
 
 footer{
 	padding: 45px 0 15px;
+}
+
+#arrow-up{
+	display: none;
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	background-color: rgba(0,0,0,0.2);
+	bottom: 15px;
+	left: 15px;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	&:hover{
+		background-color: rgba(0,0,0,0.4);
+	}
 }
 
 @import "media";
