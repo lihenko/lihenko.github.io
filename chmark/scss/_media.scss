@@ -1,0 +1,94 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	.services .item{
+		max-width: calc(50% - 30px);
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	.hero-slider .item{
+		height: 450px;
+	}
+	.left-menu{
+		left: 0;
+		top: 0;
+	}
+	.content{
+		margin-left: 250px;
+	}
+	h1{
+	  font-size: 2.3em;
+	  line-height: 0.95;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.services .item{
+		max-width: calc(25% - 30px);
+	}
+	h1{
+	  font-size: 3.3em;
+	  line-height: 0.95;
+	}
+}
