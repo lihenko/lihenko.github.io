@@ -254,6 +254,34 @@
 	}
 }
 
+.law{
+	padding: 45px 0;
+}
+
+.law-document{
+	padding-top: 45px;
+	& .item{
+		margin-bottom: 45px;
+		& h4{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		& p{
+			margin-top: 5px;
+		}
+		& .document-description{
+			padding-left: 95px;
+			position: relative;
+			& a:before{
+				content: url('../img/document.svg');
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
 footer{
 	padding: 45px 0 15px;
 	font-size: .75em;

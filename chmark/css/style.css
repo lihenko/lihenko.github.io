@@ -344,6 +344,27 @@ a:hover, a:active, a:focus {
     .terms-wrap .item .icon {
       margin-bottom: 15px; }
 
+.law {
+  padding: 45px 0; }
+
+.law-document {
+  padding-top: 45px; }
+  .law-document .item {
+    margin-bottom: 45px; }
+    .law-document .item h4 {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .law-document .item p {
+      margin-top: 5px; }
+    .law-document .item .document-description {
+      padding-left: 95px;
+      position: relative; }
+      .law-document .item .document-description a:before {
+        content: url("../img/document.svg");
+        position: absolute;
+        left: 0;
+        top: 0; }
+
 footer {
   padding: 45px 0 15px;
   font-size: .75em; }
