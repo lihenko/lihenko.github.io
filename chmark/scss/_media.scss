@@ -58,6 +58,9 @@
 	.terms-wrap .item{
 		max-width: calc(50% - 30px);
 	}
+	.steps-wrap .item{
+		max-width: calc(50% - 30px);
+	}
 }
 
 /* Small Devices, Tablets */
@@ -85,6 +88,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px){
 	.terms-wrap .item{
+		max-width: calc(25% - 30px);
+	}
+	.steps-wrap .item{
 		max-width: calc(25% - 30px);
 	}
 }
