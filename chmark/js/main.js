@@ -109,28 +109,31 @@ $('.dropdown .dropdown-menu li').click(function () {
 $('input[name="owner"]').change(function(){
      var value = $(this).val();
       if (value == "Другая") {
-        $('input[name="owner-other"]').show();
+        $('input[name="owner-other"]').show().addClass('required');
+        setTimeout(function() { $('input[name="owner-other"]').focus() }, 300);
        } else{
-        $('input[name="owner-other"]').hide();
+        $('input[name="owner-other"]').hide().removeClass('required');
        }
 });
 
 $('input[name="control-system"]').change(function(){
      var value = $(this).val();
       if (value == "Другая") {
-        $('input[name="control-system-other"]').show();
+        $('input[name="control-system-other"]').show().addClass('required');
+        setTimeout(function() { $('input[name="control-system-other"]').focus() }, 300);
        } else {
-        $('input[name="control-system-other"]').hide();
+        $('input[name="control-system-other"]').hide().removeClass('required');
        }
 });
 
 $('input[name="company-sklad"]').change(function(){
      var value = $(this).val();
       if (value == "Да") {
-        $('input[name="sklad-quantity"]').show();
-        $('input[name="sklad-address"]').show();
+        $('input[name="sklad-quantity"]').show().addClass('required');
+        $('input[name="sklad-address"]').show().addClass('required');
+        setTimeout(function() { $('input[name="sklad-quantity"]').focus() }, 300);
        } else {
-        $('input[name="sklad-quantity"]').hide();
-        $('input[name="sklad-address"]').hide();
+        $('input[name="sklad-quantity"]').hide().removeClass('required');
+        $('input[name="sklad-address"]').hide().removeClass('required');
        }
 });

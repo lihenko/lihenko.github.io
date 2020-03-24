@@ -520,7 +520,7 @@ footer {
   color: #030303;
   margin-bottom: 15px;
   border-radius: 0;
-  border: 1px solid #FE6531;
+  border: 1px solid #6F6460;
   height: 40px;
   font-size: 12px;
   position: relative;
@@ -528,6 +528,10 @@ footer {
   background-image: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 95% 3px; }
+  .dropdown.active {
+    border-color: #FE6531; }
+  .dropdown:focus {
+    border-color: #FE6531; }
 
 .dropdown .select {
   padding: 9px 12px; }
@@ -562,13 +566,15 @@ input:not([type="submit"]) {
   color: #030303;
   margin-bottom: 15px;
   border-radius: 0;
-  border: 1px solid #FE6531;
+  border: 1px solid #6F6460;
   height: 40px;
   font-size: 12px;
   background-color: #EFC4B0;
   padding: 12px;
   width: 100%;
   margin-bottom: 15px; }
+  input:not([type="submit"]):focus {
+    border-color: #FE6531; }
 
 input[type="submit"] {
   border: none; }

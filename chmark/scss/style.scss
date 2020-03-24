@@ -436,14 +436,21 @@ footer{
   color: $black;
   margin-bottom: 15px;
   border-radius: 0;
-  border: 1px solid $red;
+  border: 1px solid #6F6460;
   height: 40px;
   font-size: 12px;
   position: relative;
   background-color: $lightred;
   background-image: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: 95% 3px; }
+  background-position: 95% 3px;
+  &.active{
+  	border-color: $red;
+  }
+  &:focus{
+  	border-color: $red;
+  }
+}
 .dropdown .select {
     padding: 9px 12px; }
 
@@ -477,13 +484,16 @@ input:not([type="submit"]){
   color: $black;
   margin-bottom: 15px;
   border-radius: 0;
-  border: 1px solid $red;
+  border: 1px solid #6F6460;
   height: 40px;
   font-size: 12px;
   background-color: $lightred;
   padding: 12px;
   width: 100%;
   margin-bottom: 15px;
+  &:focus{
+  	border-color: $red;
+  }
 }
 
 input[type="submit"]{
