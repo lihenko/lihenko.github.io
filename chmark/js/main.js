@@ -74,3 +74,13 @@ $('.our-partners').slick({
   ]
 });
 
+
+const el = document.querySelector(".left-menu");
+
+window.addEventListener("mousemove", (e) => {
+var xpos = e.offsetX/10;
+var ypos = e.offsetY/10;
+  el.style.backgroundPositionX = xpos + "px";
+  el.style.backgroundPositionY = ypos + "px";
+});
+

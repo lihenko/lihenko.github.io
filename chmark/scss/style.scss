@@ -58,6 +58,7 @@
 
 .left-menu{
 	background-color: $lightred;
+	background-image: url('../img/bg-menu.png');
 	padding: 25px 15px;
 	width: 250px;
 	height: 100vh;
@@ -66,7 +67,7 @@
 	left: -250px;
 	top: 0;
 	z-index: 999;
-	transition: left 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	& ul{
 		margin: 0;
 		padding: 0;
@@ -106,6 +107,7 @@
 		background-position: center;
 		padding: 25px 60px;
 		height: 250px;
+		max-height: 60vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -188,13 +190,13 @@
 		}
 	}
 	& .slick-next{
-		right: -10px;
+		right: -15px;
 		&:before{
 			color: $red;
 		}
 	}
 	& .slick-prev{
-		left: -10px;
+		left: -15px;
 		&:before{
 			color:$red;
 		}

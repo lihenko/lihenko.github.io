@@ -135,6 +135,7 @@ a:hover, a:active, a:focus {
 
 .left-menu {
   background-color: #EFC4B0;
+  background-image: url("../img/bg-menu.png");
   padding: 25px 15px;
   width: 250px;
   height: 100vh;
@@ -143,8 +144,8 @@ a:hover, a:active, a:focus {
   left: -250px;
   top: 0;
   z-index: 999;
-  -webkit-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .left-menu ul {
     margin: 0;
     padding: 0;
@@ -177,6 +178,7 @@ a:hover, a:active, a:focus {
   background-position: center;
   padding: 25px 60px;
   height: 250px;
+  max-height: 60vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -278,12 +280,12 @@ a:hover, a:active, a:focus {
     max-height: 150px; }
 
 .our-partners .slick-next {
-  right: -10px; }
+  right: -15px; }
   .our-partners .slick-next:before {
     color: #FE6531; }
 
 .our-partners .slick-prev {
-  left: -10px; }
+  left: -15px; }
   .our-partners .slick-prev:before {
     color: #FE6531; }
 
