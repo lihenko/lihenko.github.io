@@ -68,8 +68,19 @@ a:hover, a:active, a:focus {
 	text-align: center;
 }
 
+input:focus { 
+  outline: 0; 
+}
+
+object, embed { 
+  outline: 0;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 ::placeholder { 
-  color: $lightred;
+  color: $black;
   opacity: 1; 
 }
 

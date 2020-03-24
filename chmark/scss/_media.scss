@@ -93,6 +93,20 @@
 	.steps-wrap .item{
 		max-width: calc(25% - 30px);
 	}
+	.form-wrap{
+		margin-left: -15px;
+		margin-right: -15px;
+		& .dropdown{
+			margin-left: 15px;
+			margin-right: 15px;
+			max-width: calc(50% - 30px);
+		}
+		& input{
+			margin-left: 15px;
+			margin-right: 15px;
+			max-width: calc(50% - 30px);
+		}
+	}
 }
 
 

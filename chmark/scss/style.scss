@@ -101,6 +101,7 @@
 }
 
 .hero-slider{
+	margin-bottom: 45px!important;
 	& .item{
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -130,6 +131,14 @@
 		&:before{
 			color:$red;
 		}
+	}
+
+	& .slick-dots{
+		bottom: -35px;
+	}
+	& .slick-dots li button::before {
+		color: $red;
+		font-size: 10px;
 	}
 }
 
@@ -318,6 +327,24 @@
 	border-radius: 3px;
 	background-color: #fff;
 	color: $red;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		opacity: .8;
+	}
+}
+
+.red-button{
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 3px;
+	background-color: $red;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		opacity: .8;
+	}
 }
 
 #features{
@@ -345,7 +372,7 @@
 }
 
 footer{
-	padding: 45px 0 15px;
+	padding: 30px 0 30px;
 	font-size: .75em;
 }
 
@@ -364,6 +391,124 @@ footer{
 	&:hover{
 		background-color: rgba(0,0,0,0.4);
 	}
+}
+
+.page-title{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& h1{
+		color: #fff;
+		text-shadow: $text-shadow;
+	}
+}
+
+.chmark{
+	padding: 0;
+	margin: 0 0 45px;
+	list-style: none;
+	& li{
+		padding-left: 25px;
+		position: relative;
+		margin-bottom: 15px;
+		&:before{
+			content: '';
+			width: 10px;
+			height: 10px;
+			border-radius: 3px;
+			background-color: $red;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 3px;
+		}
+
+	}
+}
+
+.dropdown {
+	width: 100%;
+	text-align: left;
+  color: $black;
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid $red;
+  height: 40px;
+  font-size: 12px;
+  position: relative;
+  background-color: $lightred;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 3px; }
+.dropdown .select {
+    padding: 9px 12px; }
+
+.dropdown .dropdown-menu {
+	display: none;
+	position: relative;
+	z-index: 99;	
+  width: calc(100% + 2px);
+  padding: 0;
+  max-height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid $red;
+  border-top: none;
+  background-color: #fff;
+  margin-top: 1px;
+  margin-left: -1px;
+  margin-right: -1px; }
+
+.dropdown .dropdown-menu li {
+  padding: 10px 12px;
+  font-size: 12px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #FAFBF9; }
+
+input:not([type="submit"]){
+  color: $black;
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid $red;
+  height: 40px;
+  font-size: 12px;
+  background-color: $lightred;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type="submit"]{
+	border: none;
+}
+
+.form-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input[name="owner-other"]{
+	display: none;
+}
+
+input[name="control-system-other"]{
+	display: none;
+}
+
+input[name="sklad-quantity"]{
+	display: none;
+}
+
+input[name="sklad-address"]{
+	display: none;
 }
 
 @import "media";

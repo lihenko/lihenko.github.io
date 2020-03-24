@@ -28,7 +28,7 @@ $('.hero-slider').slick({
     speed: 300,
     autoplay:true,
     arrows: true,
-    dots:false,
+    dots:true,
     responsive: [
     {
       breakpoint: 510,
@@ -89,4 +89,48 @@ $(function () {
         type: 'inline',
         preloader: false,
      });
+});
+
+
+$('.dropdown').click(function () {
+    $(this).attr('tabindex', 1).focus();
+    $(this).toggleClass('active');
+    $(this).find('.dropdown-menu').slideToggle(300);
+});
+$('.dropdown').focusout(function () {
+    $(this).removeClass('active');
+    $(this).find('.dropdown-menu').slideUp(300);
+});
+$('.dropdown .dropdown-menu li').click(function () {
+    $(this).parents('.dropdown').find('span').text($(this).text());
+    $(this).parents('.dropdown').find('input').attr('value', $(this).text()).trigger("change");
+});
+
+$('input[name="owner"]').change(function(){
+     var value = $(this).val();
+      if (value == "Другая") {
+        $('input[name="owner-other"]').show();
+       } else{
+        $('input[name="owner-other"]').hide();
+       }
+});
+
+$('input[name="control-system"]').change(function(){
+     var value = $(this).val();
+      if (value == "Другая") {
+        $('input[name="control-system-other"]').show();
+       } else {
+        $('input[name="control-system-other"]').hide();
+       }
+});
+
+$('input[name="company-sklad"]').change(function(){
+     var value = $(this).val();
+      if (value == "Да") {
+        $('input[name="sklad-quantity"]').show();
+        $('input[name="sklad-address"]').show();
+       } else {
+        $('input[name="sklad-quantity"]').hide();
+        $('input[name="sklad-address"]').hide();
+       }
 });
