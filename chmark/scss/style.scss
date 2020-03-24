@@ -67,7 +67,7 @@
 	left: -250px;
 	top: 0;
 	z-index: 999;
-	transition: all 0.3s ease-in-out;
+	transition: background-position 0.3s linear, left 0.3s ease-in-out;
 	& ul{
 		margin: 0;
 		padding: 0;
@@ -154,6 +154,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 		height: 200px;
 		border-radius: 3px;
 		box-shadow: $shadow;
@@ -170,7 +171,8 @@
 		}
 		& a{
 			color: #fff;
-			font-size: 2.5em;
+			font-size: 1.5em;
+			line-height: .95;
 			padding: 45px;
 			text-shadow: $text-shadow;
 		}
@@ -205,6 +207,7 @@
 
 footer{
 	padding: 45px 0 15px;
+	font-size: .75em;
 }
 
 #arrow-up{
