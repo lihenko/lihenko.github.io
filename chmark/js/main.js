@@ -84,3 +84,9 @@ var ypos = e.offsetY/10;
   el.style.backgroundPositionY = ypos + "px";
 });
 
+$(function () {
+    $('.popup-modal').magnificPopup({
+        type: 'inline',
+        preloader: false,
+     });
+});
