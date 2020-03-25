@@ -623,6 +623,21 @@ input:not([type="submit"]) {
   input:not([type="submit"]):focus {
     border-color: #FE6531; }
 
+textarea {
+  color: #030303;
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid #6F6460;
+  height: 40px;
+  font-size: 12px;
+  background-color: #EFC4B0;
+  padding: 12px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px; }
+  textarea:focus {
+    border-color: #FE6531; }
+
 input[type="submit"] {
   border: none; }
 
@@ -700,6 +715,12 @@ input[name="sklad-address"] {
   border-radius: 3px;
   border: 1px solid #FE6531; }
 
+.partners {
+  padding: 45px 0; }
+
+.contact {
+  padding: 45px 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -751,7 +772,14 @@ input[name="sklad-address"] {
     .form-wrap input {
       margin-left: 15px;
       margin-right: 15px;
-      max-width: calc(50% - 30px); } }
+      max-width: calc(50% - 30px); }
+  #contact-form .form-wrap input {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: calc(33.3% - 30px); }
+  #contact-form .form-wrap textarea {
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

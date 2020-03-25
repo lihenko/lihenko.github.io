@@ -542,6 +542,23 @@ input:not([type="submit"]){
   }
 }
 
+textarea{
+  color: $black;
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid #6F6460;
+  height: 40px;
+  font-size: 12px;
+  background-color: $lightred;
+  padding: 12px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+  &:focus{
+  	border-color: $red;
+  }
+}
+
 input[type="submit"]{
 	border: none;
 }
@@ -621,6 +638,14 @@ input[name="sklad-address"]{
 	font-weight:700;
 	border-radius:3px;
 	border:1px solid $red;
+}
+
+.partners{
+	padding: 45px 0;
+}
+
+.contact{
+	padding: 45px 0;
 }
 
 @import "media";
