@@ -132,7 +132,7 @@ $(function () {
 
 $(document).ready(function(){
     var $page = $('#top');
-    $('a[href*="#"]').click(function() {
+    $('a[href*="#"]:not(.popup-modal)').click(function() {
         $page.animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 600);
