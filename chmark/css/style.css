@@ -104,7 +104,9 @@ object, embed {
   z-index: 9999999; }
 
 .toggle-btn .hamburger {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 5px;
   cursor: pointer;
   display: block; }
 
@@ -174,6 +176,7 @@ header {
 
 .left-menu {
   background-color: #F9DDCB;
+  background-color: transparent;
   padding: 55px 15px 25px;
   width: 250px;
   height: 100vh;
@@ -182,7 +185,6 @@ header {
   left: -250px;
   top: 0;
   z-index: 999;
-  box-shadow: 5px 0px 10px rgba(17, 26, 41, 0.3);
   -webkit-transition: background-position 0.3s linear, left 0.3s ease-in-out;
   transition: background-position 0.3s linear, left 0.3s ease-in-out; }
   .left-menu ul {
@@ -784,15 +786,8 @@ input[name="sklad-address"] {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .toggle-btn {
-    display: none; }
   .hero-slider .item {
     height: 450px; }
-  .left-menu {
-    left: 0;
-    top: 0; }
-  .content {
-    margin-left: 250px; }
   h1 {
     font-size: 2.3em;
     line-height: 0.95; } }
