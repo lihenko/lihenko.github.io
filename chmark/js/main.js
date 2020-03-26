@@ -143,3 +143,186 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('input[name="phone"]').mask("+7(999) 999-99-99");
 });
+
+
+$(document).on('click', '#contact-form input[type="submit"]', function() {
+    event.preventDefault();
+    var error="";
+    $('#contact-form input.required').each(function(){
+      if(!$(this).val())
+      {
+        $(this).addClass('error');
+        error="1";
+      }
+      else
+      {
+        $(this).removeClass('error');
+        error="";
+      }
+    });
+    
+    if(!error)
+    {
+      var Name=$('input[name="name"]').val();
+      var Phone=$('input[name="phone"]').val();
+      var Email=$('input[name="email"]').val();
+      var Message=$('textarea[name="message"]').val();
+      $.ajax({
+        type:"POST",
+        cache:false,
+        url:'//gsmsggystems.com/wp-content/themes/gsm-systems/template-parts/ajax/request.php',
+        data: { sName:Name, sPhone:Phone, sEmail:Email, sMessage:Message},
+        success:function(data) {
+          $('#contact-form .form-wrap').html('<h2 style="text-align:center;">Спасибо за Ваше сообщение</h2>');
+        },
+        error: function(){
+            alert('error!');
+          }
+      });
+    }
+    
+});
+
+$(document).on('click', '#moloko-form input[type="submit"]', function() {
+    event.preventDefault();
+    var error="";
+    var dropdown="";
+    $('#moloko-form input.required').each(function(){
+      if(!$(this).val())
+      {
+        $(this).addClass('error');
+        error="1";
+      }
+      else
+      {
+        $(this).removeClass('error');
+        error="";
+      }
+    });
+    $('#moloko-form input[type="hidden"]').each(function(){
+      if(!$(this).val())
+      {
+        $(this).parents('.dropdown').addClass('error');
+        dropdown="1";
+      }
+      else
+      {
+        $(this).parents('.dropdown').removeClass('error');
+        dropdown="";
+      }
+    });
+    
+    if(!error && !dropdown)
+    {
+      var Owner=$('input[name="owner"]').val();
+      var Owner_other=$('input[name="owner-other"]').val();
+      var Company_name=$('input[name="company-name"]').val();
+      var Company_contact=$('input[name="company-contact"]').val();
+      var Company_lines=$('input[name="company-lines"]').val();
+      var Company_speed=$('input[name="company-speed"]').val();
+      var Control_system=$('input[name="control-system"]').val();
+      var Control_system_other=$('input[name="control-system-other"]').val();
+      var Company_sklad=$('input[name="company-sklad"]').val();
+      var Sklad_quantity=$('input[name="sklad-quantity"]').val();
+      var Sklad_address=$('input[name="sklad-address"]').val();
+      var Control_app=$('input[name="control-app"]').val();
+      $.ajax({
+        type:"POST",
+        cache:false,
+        url:'/request-moloko.php',
+        data: {
+            sOwner:Owner,
+            sOwner_other:Owner_other,
+            sCompany_name:Company_name,
+            sCompany_contact:Company_contact,
+            sCompany_lines:Company_lines,
+            sCompany_speed:Company_speed,
+            sControl_system:Control_system,
+            sControl_system_other:Control_system_other,
+            sCompany_sklad:Company_sklad,
+            sSklad_quantity:Sklad_quantity,
+            sSklad_address:Sklad_address,
+            sControl_app:Control_app
+        },
+        success:function(data) {
+          $('#moloko-form .form-wrap').html('<h2 style="text-align:center;">Ваша заявка принята</h2>');
+        },
+        error: function(){
+            alert('error!');
+          }
+      });
+    }
+    
+});
+
+$(document).on('click', '#voda-form input[type="submit"]', function() {
+    event.preventDefault();
+    var error="";
+    var dropdown="";
+    $('#voda-form input.required').each(function(){
+      if(!$(this).val())
+      {
+        $(this).addClass('error');
+        error="1";
+      }
+      else
+      {
+        $(this).removeClass('error');
+        error="";
+      }
+    });
+    $('#voda-form input[type="hidden"]').each(function(){
+      if(!$(this).val())
+      {
+        $(this).parents('.dropdown').addClass('error');
+        dropdown="1";
+      }
+      else
+      {
+        $(this).parents('.dropdown').removeClass('error');
+        dropdown="";
+      }
+    });
+    
+    if(!error && !dropdown)
+    {
+      var Owner=$('input[name="owner"]').val();
+      var Owner_other=$('input[name="owner-other"]').val();
+      var Company_name=$('input[name="company-name"]').val();
+      var Company_contact=$('input[name="company-contact"]').val();
+      var Company_lines=$('input[name="company-lines"]').val();
+      var Company_speed=$('input[name="company-speed"]').val();
+      var Control_system=$('input[name="control-system"]').val();
+      var Control_system_other=$('input[name="control-system-other"]').val();
+      var Company_sklad=$('input[name="company-sklad"]').val();
+      var Sklad_quantity=$('input[name="sklad-quantity"]').val();
+      var Sklad_address=$('input[name="sklad-address"]').val();
+      var Control_app=$('input[name="control-app"]').val();
+      $.ajax({
+        type:"POST",
+        cache:false,
+        url:'/request-voda.php',
+        data: {
+            sOwner:Owner,
+            sOwner_other:Owner_other,
+            sCompany_name:Company_name,
+            sCompany_contact:Company_contact,
+            sCompany_lines:Company_lines,
+            sCompany_speed:Company_speed,
+            sControl_system:Control_system,
+            sControl_system_other:Control_system_other,
+            sCompany_sklad:Company_sklad,
+            sSklad_quantity:Sklad_quantity,
+            sSklad_address:Sklad_address,
+            sControl_app:Control_app
+        },
+        success:function(data) {
+          $('#voda-form .form-wrap').html('<h2 style="text-align:center;">Ваша заявка принята</h2>');
+        },
+        error: function(){
+            alert('error!');
+          }
+      });
+    }
+    
+});

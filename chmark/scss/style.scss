@@ -83,6 +83,7 @@ header{
 	left: -250px;
 	top: 0;
 	z-index: 999;
+	box-shadow: 5px 0px 10px rgba(17, 26, 41, 0.3);
 	transition: background-position 0.3s linear, left 0.3s ease-in-out;
 	& ul{
 		margin: 0;
@@ -496,6 +497,9 @@ footer{
   &:focus{
   	border-color: $red;
   }
+  &.error{
+  	border-color: red;
+  }
 }
 .dropdown .select {
     padding: 9px 12px; }
@@ -539,6 +543,9 @@ input:not([type="submit"]){
   margin-bottom: 15px;
   &:focus{
   	border-color: $red;
+  }
+  &.error{
+  	border-color: red;
   }
 }
 
@@ -646,6 +653,32 @@ input[name="sklad-address"]{
 
 .contact{
 	padding: 45px 0;
+}
+
+.partner-po-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+	justify-content: center;
+	.item{
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.partner-komplekt-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+	justify-content: center;
+	.item{
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @import "media";
