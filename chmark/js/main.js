@@ -186,7 +186,6 @@ $(document).on('click', '#contact-form input[type="submit"]', function() {
 $(document).on('click', '#moloko-form input[type="submit"]', function() {
     event.preventDefault();
     var error="";
-    var dropdown="";
     $('#moloko-form input.required').each(function(){
       if(!$(this).val())
       {
@@ -199,20 +198,8 @@ $(document).on('click', '#moloko-form input[type="submit"]', function() {
         error="";
       }
     });
-    $('#moloko-form input[type="hidden"]').each(function(){
-      if(!$(this).val())
-      {
-        $(this).parents('.dropdown').addClass('error');
-        dropdown="1";
-      }
-      else
-      {
-        $(this).parents('.dropdown').removeClass('error');
-        dropdown="";
-      }
-    });
     
-    if(!error && !dropdown)
+    if(!error)
     {
       var Owner=$('input[name="owner"]').val();
       var Owner_other=$('input[name="owner-other"]').val();
@@ -258,7 +245,6 @@ $(document).on('click', '#moloko-form input[type="submit"]', function() {
 $(document).on('click', '#voda-form input[type="submit"]', function() {
     event.preventDefault();
     var error="";
-    var dropdown="";
     $('#voda-form input.required').each(function(){
       if(!$(this).val())
       {

@@ -95,10 +95,11 @@
 				<form action="" id="moloko-form">
 					<div class="container">
 						<div class="form-wrap">
+							<label>Форма собственности</label>
 							<div class="dropdown">
 						        <div id="owner" class="select">
 						          <span>
-									Форма собственности
+									Выбор
 						          </span>
 						        </div>
 						        <input type="hidden" name="owner">
@@ -110,14 +111,48 @@
 						        </ul>
 						    </div>
 						    <input type="text" name="owner-other" placeholder="Введите свою форму собственности">
-							<input class="required" type="text" name="company-name" placeholder="Название">
-							<input class="required" type="text" name="company-contact" placeholder="Контакты">
-							<input class="required" type="text" name="company-lines" placeholder="Количество производственных линий">
-							<input class="required" type="text" name="company-speed" placeholder="Максимальная скорость линий">
+						    <label>Название предприятия</label>
+							<input type="text" name="company-name" placeholder="Введите название">
+							<label for="">Номер телефона</label>
+							<input class="required tel-input" type="text" name="phone" placeholder="Введите телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="email" placeholder="Ведите e-mail">
+							<label>Количество производственных линий</label>
+							<div class="dropdown">
+						        <div id="company-lines" class="select">
+						          <span>
+									Выбор
+						          </span>
+						        </div>
+						        <input type="hidden" name="company-lines">
+						        <ul class="dropdown-menu">
+						          	<li>0-10</li>
+									<li>10-50</li>
+									<li>50-100</li>
+									<li>более 100</li>
+						        </ul>
+						    </div>
+						    <label>Максимальная скорость линий <span>(упаковок/час)</span></label>
+							<div class="dropdown">
+						        <div id="company-speed" class="select">
+						          <span>
+									Выбор
+						          </span>
+						        </div>
+						        <input type="hidden" name="company-speed">
+						        <ul class="dropdown-menu">
+						          	<li>5000</li>
+									<li>10000</li>
+									<li>20000</li>
+									<li>30000</li>
+									<li>50000 и более</li>
+						        </ul>
+						    </div>
+						    <label for="">Cистема документооборота</label>
 							<div class="dropdown">
 						        <div id="control-system" class="select">
 						          <span>
-									Cистема документооборота
+									Выбор
 						          </span>
 						        </div>
 						        <input type="hidden" name="control-system">
@@ -130,10 +165,11 @@
 						        </ul>
 						    </div>
 						    <input type="text" name="control-system-other" placeholder="Введите название вашей системы">
+						    <label for="">Есть ли свои склады?</label>
 						    <div class="dropdown">
 						        <div id="company-sklad" class="select">
 						          <span>
-									Есть ли свои склады
+									Выбор
 						          </span>
 						        </div>
 						        <input type="hidden" name="company-sklad">
@@ -143,13 +179,12 @@
 						        </ul>
 						    </div>
 						    <input type="text" name="sklad-quantity" placeholder="Количество складов">
-						    <input type="text" name="sklad-address" placeholder="Адреса складов">
-						    <input class="required" type="text" name="control-app" placeholder="Программа учета (название, версия)">
-
-						</div>
+						    <input type="text" name="control-app" placeholder="Программа учета (название, версия)">
 							<div class="form-button text-center">
 								<input type="submit" value="Отправить" class="red-button">
 							</div>
+						</div>
+							
 							
 					</div>
 				</form>
@@ -171,6 +206,7 @@
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/maskinput.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
