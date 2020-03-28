@@ -207,6 +207,8 @@ header {
       transition: all 0.3s ease-in-out; }
       .left-menu ul li.current-page {
         background-color: #FE6531; }
+      .left-menu ul li.current-menu-item:not(.menu-item-140) {
+        background-color: #FE6531; }
       .left-menu ul li:hover {
         background-color: #FE6531; }
       .left-menu ul li a {
@@ -675,6 +677,26 @@ input[name="sklad-address"] {
   border-radius: 20px;
   padding: 45px 15px 30px; }
 
+#voda-form .form-wrap {
+  background-color: #EFC4B0;
+  border-radius: 20px;
+  padding: 45px 15px 30px; }
+
+#prom-form .form-wrap {
+  background-color: #EFC4B0;
+  border-radius: 20px;
+  padding: 45px 15px 30px; }
+
+#import-form .form-wrap {
+  background-color: #EFC4B0;
+  border-radius: 20px;
+  padding: 45px 15px 30px; }
+
+#contact-form .form-wrap {
+  background-color: #EFC4B0;
+  border-radius: 20px;
+  padding: 45px 15px 30px; }
+
 .form-button {
   margin-top: 30px; }
 
@@ -775,6 +797,53 @@ input[name="sklad-address"] {
     padding-left: 15px;
     padding-right: 15px; }
 
+#zayavka .red-button {
+  margin-bottom: 45px; }
+
+.contact-wrap {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .contact-wrap .phone-number a {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 80px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block; }
+    .contact-wrap .phone-number a:before {
+      content: url("../img/phone-red.svg");
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .contact-wrap .email-address a {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 80px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block; }
+    .contact-wrap .email-address a:before {
+      content: url("../img/mail.svg");
+      position: absolute;
+      left: 0;
+      top: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -785,6 +854,12 @@ input[name="sklad-address"] {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .contact-wrap .phone-number a {
+    font-size: 28px; }
+  .contact-wrap .email-address a {
+    font-size: 28px; } }
+
 @media only screen and (min-width: 510px) {
   .services .item {
     max-width: calc(50% - 30px); }
@@ -812,13 +887,26 @@ input[name="sklad-address"] {
   #moloko-form .form-wrap {
     padding-left: 110px;
     padding-right: 110px; }
-  #contact-form .form-wrap input {
-    margin-left: 15px;
-    margin-right: 15px;
-    max-width: calc(33.3% - 30px); }
-  #contact-form .form-wrap textarea {
-    margin-left: 15px;
-    margin-right: 15px; } }
+  #voda-form .form-wrap {
+    padding-left: 110px;
+    padding-right: 110px; }
+  #prom-form .form-wrap {
+    padding-left: 110px;
+    padding-right: 110px; }
+  #import-form .form-wrap {
+    padding-left: 110px;
+    padding-right: 110px; }
+  #contact-form .form-wrap {
+    padding-left: 110px;
+    padding-right: 110px; }
+    #contact-form .form-wrap input {
+      margin-left: 15px;
+      margin-right: 15px;
+      max-width: calc(33% - 30px); }
+    #contact-form .form-wrap textarea {
+      margin-left: 15px;
+      margin-right: 15px;
+      max-width: calc(100% - 34px); } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -828,6 +916,21 @@ input[name="sklad-address"] {
     font-size: 3.3em;
     line-height: 0.95; }
   #moloko-form .form-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 250px;
+    padding-right: 250px; }
+  #voda-form .form-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 250px;
+    padding-right: 250px; }
+  #prom-form .form-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 250px;
+    padding-right: 250px; }
+  #import-form .form-wrap {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 250px;

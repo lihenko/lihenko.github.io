@@ -108,6 +108,9 @@ header{
 			&.current-page{
 				background-color: $red;
 			}
+			&.current-menu-item:not(.menu-item-140){
+				background-color: $red;
+			}
 			&:hover{
 				background-color: $red;
 			}
@@ -608,6 +611,30 @@ input[name="sklad-address"]{
 	  padding: 45px 15px 30px;
 }
 
+#voda-form .form-wrap{
+	  background-color: $lightred;
+	  border-radius: 20px;
+	  padding: 45px 15px 30px;
+}
+
+#prom-form .form-wrap{
+	  background-color: $lightred;
+	  border-radius: 20px;
+	  padding: 45px 15px 30px;
+}
+
+#import-form .form-wrap{
+	  background-color: $lightred;
+	  border-radius: 20px;
+	  padding: 45px 15px 30px;
+}
+
+#contact-form .form-wrap{
+	  background-color: $lightred;
+	  border-radius: 20px;
+	  padding: 45px 15px 30px;
+}
+
 .form-button{
 	margin-top: 30px;
 }	
@@ -699,6 +726,51 @@ input[name="sklad-address"]{
 		margin-bottom: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+}
+
+#zayavka .red-button{
+	margin-bottom: 45px;
+}
+
+.contact-wrap{
+	margin-bottom: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	& .phone-number a{
+		margin-left: 35px;
+		margin-right: 35px;
+		padding-left: 80px;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 48px;
+		position: relative;
+		margin-bottom: 15px;
+		display: inline-block;
+		&:before{
+			content: url('../img/phone-red.svg');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	& .email-address a{
+		margin-left: 35px;
+		margin-right: 35px;
+		padding-left: 80px;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 48px;
+		position: relative;
+		margin-bottom: 15px;
+		display: inline-block;
+		&:before{
+			content: url('../img/mail.svg');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
 	}
 }
 
