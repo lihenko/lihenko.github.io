@@ -539,7 +539,7 @@
 					</div>
 				</div>
 				<div class="button-wrap text-center">
-					<a href="#" class="white-button">Подать заявку</a>
+					<a href="#zayavka" class="popup-modal white-button">Подать заявку</a>
 				</div>
 			</div>
 		</div>
@@ -555,10 +555,25 @@
 		</footer>
 	</div>
 </div>
-	
+<div id="zayavka" class="mfp-hide white-popup-block">
+	<h3>Оформить заявку</h3>
+	<div class="form-wrap">
+		<form action="" id="zayavka-form">
+			<input type="hidden" name="mailto" value="<?php the_field('email_dlya_otpravki_formy', 'options'); ?>">
+			<input type="text" name="name" placeholder="Ваше имя">
+			<input class="required" type="tel" name="phone" placeholder="Ваш телефон">
+			<div class="text-center">
+				<input type="submit" value="Оформить" class="red-button">	
+			</div>
+		</form>
+	</div>
+		
+
+</div>	
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/maskinput.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

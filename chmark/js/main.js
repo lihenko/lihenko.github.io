@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    var $page = $('#top');
+    $('a[href^="#"]:not(.popup-modal)').click(function() {
+        $page.animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 600);
+        return false;
+    });
+});
+
+$(document).ready(function(){
     var button = $(".toggle-btn");
     var menu = $(".main-menu");
     button.on("click", function(){
@@ -7,9 +17,6 @@ $(document).ready(function(){
         menu.toggleClass("open");
     });
 });
-
-
-
 
 $('.hero-slider').slick({
     speed: 300,
@@ -130,18 +137,48 @@ $(function () {
     });
 });
 
-$(document).ready(function(){
-    var $page = $('#top');
-    $('a[href*="#"]:not(.popup-modal)').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
-        return false;
-    });
-});
+
 
 $(document).ready(function(){
   $('input[name="phone"]').mask("+7(999) 999-99-99");
+});
+
+
+$(document).on('click', '#zayavka-form input[type="submit"]', function() {
+    event.preventDefault();
+    var error="";
+    $('#zayavka-form input.required').each(function(){
+      if(!$(this).val())
+      {
+        $(this).addClass('error');
+        error="1";
+      }
+      else
+      {
+        $(this).removeClass('error');
+        error="";
+      }
+    });
+    
+    if(!error)
+    {
+      var Mailto=$('input[name="mailto"]').val();
+      var Name=$('input[name="name"]').val();
+      var Phone=$('input[name="phone"]').val();
+      $.ajax({
+        type:"POST",
+        cache:false,
+        url:'//www.chmark.su/wp-content/themes/chmark/template-parts/ajax/send-zayavka.php',
+        data: { sMailto:Mailto, sName:Name, sPhone:Phone},
+        success:function(data) {
+          $('#zayavka').html('<h2 style="text-align:center;">Спасибо, Ваша заявка принята</h2>');
+        },
+        error: function(){
+            alert('error!');
+          }
+      });
+    }
+    
 });
 
 
@@ -312,3 +349,4 @@ $(document).on('click', '#voda-form input[type="submit"]', function() {
     }
     
 });
+
