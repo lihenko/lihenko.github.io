@@ -39,6 +39,8 @@ header .green-button{
 	padding: 12px 7px;
 	white-space: nowrap;
 	font-size: 12px;
+	z-index: 9999;
+	position: relative;
 }
 
 #home-hero{
@@ -216,7 +218,7 @@ header .green-button{
 
 .top-3step-curve{
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 	min-height: 9vw;
 	width: 100%;
@@ -429,9 +431,10 @@ footer{
 	& #footer-widgets{
 		color:#F5F8FF;
 		font-size: .85em;
-		font-weight: 500;
+		font-weight: 300;
 		& a{
 			color:#F5F8FF;
+
 			&:hover{
 				color: darken($green, 15%);
 			}
@@ -439,11 +442,19 @@ footer{
 		& h5{
 			font-size: 1em;
 			text-transform: uppercase;
+			font-weight: 400;
 		}
 		& ul{
 			padding: 0;
 			margin: 0;
 			list-style: none;
+			& li{
+				margin-bottom: 5px;
+			}
+		}
+		.footer-address{
+			line-height: 1.2;
+			margin-top: 29px;
 		}
 	}
 	& #copyright{
@@ -463,6 +474,7 @@ footer{
 			padding-right: 14px;
 			display: inline-block;
 			border-right: 1px solid #F5F8FF;
+			font-weight: 300;
 			&:last-child{
 				border-right: none;
 			}

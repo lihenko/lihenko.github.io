@@ -1,67 +1,3 @@
-function HeightBlock(column) {
-    var BlockHeight = 0;
-    column.each(function() {
-        CurrentHeight = $(this).height();
-        if(CurrentHeight > BlockHeight){
-            BlockHeight = CurrentHeight;
-        }
-    });
-    column.height(BlockHeight);
-        
-};
-
-$('.hero-slider').slick({
-    speed: 300,
-    autoplay:true,
-    arrows: true,
-    dots:true
-});
-
-$('.home-testimonials').slick({
-    speed: 300,
-    autoplay:true,
-    arrows: false,
-    dots:true
-});
-
-
-
-$('.single-slide').slick({
-  autoplay:true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  fade: true,
-  asNavFor: '.nav-slide'
-});
-
-$('.nav-slide').slick({
-  autoplay:true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  asNavFor: '.single-slide',
-  arrows: false,
-  dots: false,
-  //centerMode: true,
-  focusOnSelect: true,
-  vertical: true,
-  verticalSwiping: true,
-  responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-        vertical: false,
-        verticalSwiping: false
-      }
-    }
-
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
 
 
 
@@ -69,7 +5,7 @@ $('.nav-slide').slick({
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     var $page = $('html, body');
     $('a[href*="#"]').click(function() {
         $page.animate({
@@ -77,10 +13,10 @@ $(document).ready(function(){
         }, 600);
         return false;
     });
-});
+});*/
 
 
-$('.dropdown.plan').click(function () {
+/*$('.dropdown.plan').click(function () {
         $(this).attr('tabindex', 1).focus();
         $(this).toggleClass('active');
         $(this).find('.dropdown-menu').slideToggle(300);
@@ -92,21 +28,7 @@ $('.dropdown.plan').click(function () {
     $('.dropdown.plan .dropdown-menu li').click(function () {
         $(this).parents('.dropdown').find('span').text($(this).text());
         $(this).parents('.dropdown').find('input').attr('value', $(this).text());
-    });
-
-
-
-
-
-$(document).ready(function(){
-
-    HeightBlock($('.plans-card-body'));
-
-    HeightBlock($('.charts-height'));
-
-
-});
-
+    });*/
 
 
 ///////////////////////////
@@ -192,10 +114,6 @@ $(document).ready(function(){
     });
     $('.different-case:nth-child(5)').addClass("hidden").viewportChecker({
         classToAdd: 'visible animate__animated animate__fadeInRight',
-        offset: 100
-    });
-    $('.attention').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__jackInTheBox',
         offset: 100
     });
 });
