@@ -1,0 +1,114 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	header .green-button{
+		padding: 12px 30px;
+		white-space: nowrap;
+		font-size: 14px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.seals-wrap{
+		justify-content: space-between;
+	}
+	#home-hero{
+		background-position: 50% 100%;
+	}
+	#home-hero h1{
+		font-size: 4em;
+	}
+	#three-steps{
+		padding: 11vw 0;
+	}
+	.three-step-line{
+		position: absolute;
+		top: 90px;
+		left: 0;
+		right: 50px;
+		text-align: center;
+	}
+	#three-steps .step1 .step-icon{
+		margin-top: 50px;
+	}
+	#three-steps .step2 .step-icon{
+		margin-top: 25px;
+	}
+	.different-case{
+		width: 33%;
+	}
+	.different-case:nth-child(4){
+		width: 40%;
+	}
+	.different-case:nth-child(5){
+		width: 40%;
+	}
+	.col-lg-five{
+		max-width: 20%;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}
