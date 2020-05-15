@@ -754,10 +754,13 @@ footer {
       margin: 0;
       list-style: none; }
       footer #footer-widgets ul li {
-        margin-bottom: 5px; }
+        line-height: 2; }
     footer #footer-widgets .footer-address {
       line-height: 1.2;
-      margin-top: 29px; }
+      margin-top: 29px;
+      margin-bottom: 13px; }
+    footer #footer-widgets .footer-phone {
+      margin-bottom: 7px; }
   footer #copyright .footer-social-links a {
     padding-left: 14px;
     padding-right: 14px;

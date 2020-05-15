@@ -449,12 +449,16 @@ footer{
 			margin: 0;
 			list-style: none;
 			& li{
-				margin-bottom: 5px;
+				line-height: 2;
 			}
 		}
 		.footer-address{
 			line-height: 1.2;
 			margin-top: 29px;
+			margin-bottom: 13px;
+		}
+		.footer-phone{
+			margin-bottom: 7px;
 		}
 	}
 	& #copyright{
