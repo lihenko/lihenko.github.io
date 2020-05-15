@@ -413,10 +413,11 @@ footer{
 	background: linear-gradient(120.92deg, #1E2C3E 0%, #091120 100%);
 	& #subscribe h2{
 		color: #F5F8FF;
+		margin-bottom: 15px;
 	}
 	& .subscribe-subtitle{
 		color:#F5F8FF;
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 24px;
 		line-height: 31px;
 	}
@@ -431,7 +432,7 @@ footer{
 	& #footer-widgets{
 		color:#F5F8FF;
 		font-size: .85em;
-		font-weight: 300;
+		font-weight: 500;
 		& a{
 			color:#F5F8FF;
 
@@ -442,7 +443,7 @@ footer{
 		& h5{
 			font-size: 1em;
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 600;
 		}
 		& ul{
 			padding: 0;
@@ -450,15 +451,21 @@ footer{
 			list-style: none;
 			& li{
 				line-height: 2;
+				opacity: .6;
 			}
 		}
 		.footer-address{
 			line-height: 1.2;
 			margin-top: 29px;
 			margin-bottom: 13px;
+			opacity: .6;
 		}
 		.footer-phone{
 			margin-bottom: 7px;
+			opacity: .6;
+		}
+		.footer-email{
+			opacity: .6;
 		}
 	}
 	& #copyright{

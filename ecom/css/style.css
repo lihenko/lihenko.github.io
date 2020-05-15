@@ -724,10 +724,11 @@ footer {
   background: -webkit-linear-gradient(329.08deg, #1E2C3E 0%, #091120 100%);
   background: linear-gradient(120.92deg, #1E2C3E 0%, #091120 100%); }
   footer #subscribe h2 {
-    color: #F5F8FF; }
+    color: #F5F8FF;
+    margin-bottom: 15px; }
   footer .subscribe-subtitle {
     color: #F5F8FF;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 31px; }
   footer .hr {
@@ -740,7 +741,7 @@ footer {
   footer #footer-widgets {
     color: #F5F8FF;
     font-size: .85em;
-    font-weight: 300; }
+    font-weight: 500; }
     footer #footer-widgets a {
       color: #F5F8FF; }
       footer #footer-widgets a:hover {
@@ -748,19 +749,24 @@ footer {
     footer #footer-widgets h5 {
       font-size: 1em;
       text-transform: uppercase;
-      font-weight: 400; }
+      font-weight: 600; }
     footer #footer-widgets ul {
       padding: 0;
       margin: 0;
       list-style: none; }
       footer #footer-widgets ul li {
-        line-height: 2; }
+        line-height: 2;
+        opacity: .6; }
     footer #footer-widgets .footer-address {
       line-height: 1.2;
       margin-top: 29px;
-      margin-bottom: 13px; }
+      margin-bottom: 13px;
+      opacity: .6; }
     footer #footer-widgets .footer-phone {
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      opacity: .6; }
+    footer #footer-widgets .footer-email {
+      opacity: .6; }
   footer #copyright .footer-social-links a {
     padding-left: 14px;
     padding-right: 14px;
