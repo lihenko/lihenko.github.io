@@ -54,7 +54,7 @@ header .green-button{
 	background-position: 40% 100%;
 	background-repeat: no-repeat;
 	& h1{
-		color: #fff;
+		color: $white;
 		font-size: 3em;
 		font-weight: 800;
 		line-height: 110%;
@@ -65,6 +65,7 @@ header .green-button{
 		font-weight: 500;
 		line-height: 160%;
 		margin-bottom: 110px;
+		opacity: .6;
 	}
 }
 
@@ -520,6 +521,153 @@ footer{
 	right: -160px;
 	top: -155px;
 	transform: rotate(24deg);
+}
+
+#services-hero{
+	background: linear-gradient(127.31deg, #1E2C3E 0%, #091120 100%);
+	position: relative;
+	margin-top: -145px;
+	padding-top: 160px;
+	padding-bottom: 150px;
+	min-height: 450px;
+	overflow:hidden;
+	& h1{
+		color: $white;
+		font-size: 3em;
+		font-weight: 800;
+		line-height: 110%;
+		margin-bottom: 24px;
+	}
+	.services-hero-bottom-curve{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		min-height: 5vw;
+		width: 100%;
+		background-image: url("../img/services-bottom-curve.svg");
+		background-size: cover;
+		background-position: 50% 100%;
+		z-index: 2;
+	}
+	.services-description{
+		font-weight: 500;
+		line-height: 160%;
+		color: $white;
+		opacity: .6;
+	}
+	.services-hero-call-to-action{
+		font-weight: 600;
+		font-size: .85em;
+		line-height: 1.25em;
+		color: $white;
+		& span {
+			opacity: .6;
+		}
+	}
+	.services-phone{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		& img{
+			max-width: 450px;
+		}
+	}
+}
+
+#services-features{
+	padding: 80px 0;
+	& .services-feature-logo{
+		margin-bottom: -30px;
+		& img{
+			transition: all .3s ease-in-out;
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+	}
+	& .services-feature-title h3{
+		font-weight: 700;
+		font-size: 1.28em;
+		line-height: 127%;
+	}
+
+	& .services-feature-description{
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 160%;
+		opacity: 0.6;
+	}
+}
+
+#services-campaigns{
+	position: relative;
+}
+
+#services-campaigns .campaign-name h4{
+	font-weight: 500;
+}
+
+#services-campaigns .campaign-description{
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 160%;
+	opacity: 0.6;
+}
+
+#services-campaigns .campaign-more-link a{
+	color: #00194C;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #002a7f;
+	}
+}
+
+.services-campaigns-right-curve{
+	position: absolute;
+	right: 0;
+	top: 300px;
+}
+
+#call-to-action{
+	background: linear-gradient(150.21deg, #1E2C3E 0%, #091120 100%);
+	padding: 8vw 0 7vw;
+	position: relative;
+}
+
+.call-to-action-top-curve{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 2.5vw;
+	width: 100%;
+	background-image: url("../img/call-to-action-top-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
+}
+
+.call-to-action-bottom-curve{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	min-height: 3vw;
+	width: 100%;
+	background-image: url("../img/call-to-action-bottom-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
+}
+
+.client-case-bottom-curve{
+	position: absolute;
+	bottom:-2.5vw;
+	left: 0;
+	min-height: 2.5vw;
+	width: 100%;
+	background-image: url("../img/call-to-action-top-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
 }
 
 @import "media";

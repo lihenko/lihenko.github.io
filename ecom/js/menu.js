@@ -21,7 +21,7 @@ $( window ).resize(function(){
     menuitem.unbind('mouseover');
     menuitem.unbind('mouseleave');
 
-    if ($(window).width() > 992) {
+    if ($(window).width() > 991) {
         
           menuitem.mouseover( function(){
                 if ($(this).children('ul').length != 0){
@@ -56,7 +56,7 @@ $( window ).resize(function(){
 $(document).ready(function(){
     var submenu = $("#primary-menu ul");
     var menuitem = $("#primary-menu > li");
-    if ($(window).width() > 992) {
+    if ($(window).width() > 991) {
         
           menuitem.mouseover( function(){
                 if ($(this).children('ul').length != 0){

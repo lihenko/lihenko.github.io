@@ -200,7 +200,7 @@
 					transition: all 0.3s ease-in-out;
 				}
 				&.menu-item-has-children > a:hover:after{
-					border-color: darken($green, 15%) transparent transparent transparent;
+					border-color: $green transparent transparent transparent;
 				}
 				&.menu-item-has-children > ul{
 					position: absolute;
