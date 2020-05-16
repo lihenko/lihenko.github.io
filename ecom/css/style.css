@@ -1136,6 +1136,76 @@ footer {
   background-position: 50% 100%;
   z-index: 2; }
 
+#join-hero {
+  background: -webkit-linear-gradient(322.69deg, #1E2C3E 0%, #091120 100%);
+  background: linear-gradient(127.31deg, #1E2C3E 0%, #091120 100%);
+  position: relative;
+  margin-top: -145px;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  min-height: 450px;
+  overflow: hidden; }
+  #join-hero h1 {
+    color: #FAFDFF;
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 110%;
+    margin-bottom: 24px; }
+  #join-hero .join-hero-bottom-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 5vw;
+    width: 100%;
+    background-image: url("../img/services-bottom-curve.svg");
+    background-size: cover;
+    background-position: 50% 100%;
+    z-index: 2; }
+  #join-hero .join-description {
+    font-weight: 500;
+    line-height: 160%;
+    color: #FAFDFF;
+    opacity: .6; }
+
+#vacancies {
+  padding: 100px 0 60px;
+  position: relative; }
+  #vacancies .vacancy-wrap {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px 45px 35px 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    #vacancies .vacancy-wrap:hover {
+      box-shadow: 12px 12px 40px rgba(65, 84, 139, 0.1);
+      -webkit-transform: translate(-4px, -4px);
+      -ms-transform: translate(-4px, -4px);
+      transform: translate(-4px, -4px); }
+  #vacancies .vacancy-title {
+    font-weight: 600;
+    font-size: 1.42em;
+    line-height: 130%; }
+  #vacancies .vacancy-description {
+    font-size: 1em;
+    line-height: 160%;
+    color: #00194C;
+    opacity: 0.6; }
+  #vacancies .vacancy-more-link a {
+    color: #00194C;
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.vacancies-bottom-curve {
+  position: absolute;
+  bottom: -2.5vw;
+  left: 0;
+  min-height: 2.5vw;
+  width: 100%;
+  background-image: url("../img/vacancies-bottom-curve.svg");
+  background-size: cover;
+  background-position: 50% 100%;
+  z-index: 2; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1200,7 +1270,9 @@ footer {
   .our-team-description {
     padding-right: 130px; }
   #our-team-hero {
-    min-height: 45vw; } }
+    min-height: 45vw; }
+  #vacancies .vacancy-wrap {
+    margin-right: 60px; } }
 
 @media only screen and (min-width: 1600px) {
   #services-hero .services-phone {
