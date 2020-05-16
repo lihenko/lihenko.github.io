@@ -578,6 +578,21 @@ header .green-button {
     border-radius: 4px;
     color: #fff;
     padding: 23px 20px; }
+    .home-hero-form-wrap input[type="tel"]::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .home-hero-form-wrap input[type="tel"]::-moz-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .home-hero-form-wrap input[type="tel"]:-ms-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .home-hero-form-wrap input[type="tel"]::-ms-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .home-hero-form-wrap input[type="tel"]::placeholder {
+      color: #fff;
+      opacity: 1; }
   .home-hero-form-wrap input[type="submit"] {
     height: 60px;
     width: 60px;
@@ -885,6 +900,7 @@ footer {
       footer #footer-widgets a:hover {
         color: #2aa05b; }
     footer #footer-widgets h5 {
+      color: #fff;
       font-size: 1em;
       text-transform: uppercase;
       font-weight: 600; }
