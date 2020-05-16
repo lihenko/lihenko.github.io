@@ -148,3 +148,19 @@ $('.our-work-slider').slick({
     }
   ]
 });
+
+
+$('.my-dropdown').click(function () {
+    $(this).attr('tabindex', 1).focus();
+    $(this).toggleClass('active');
+    $(this).find('.my-dropdown-menu').slideToggle(300);
+});
+$('.my-dropdown').focusout(function () {
+    $(this).removeClass('active');
+    $(this).find('.my-dropdown-menu').slideUp(300);
+});
+$('.my-dropdown .my-dropdown-menu li').click(function () {
+    $(this).parents('.my-dropdown').removeClass('empty');
+    $(this).parents('.my-dropdown').find('span').text($(this).text());
+    $(this).parents('.my-dropdown').find('input').attr('value', $(this).text());
+});
