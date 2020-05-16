@@ -117,7 +117,8 @@ input[type="text"], input[type="tel"], input[type="email"] {
   border: none;
   padding: 10px 0;
   border-bottom: 1px solid #C4C9D4;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-family: Mont-Ecom, sans-serif; }
 
 ul.list {
   margin: 0;
@@ -675,7 +676,7 @@ header .green-button {
   color: #F3F3F3; }
   #three-steps h2 {
     color: #FAFDFF; }
-  #three-steps h4 {
+  #three-steps h5 {
     color: #FAFDFF; }
   #three-steps ul {
     padding: 0;
@@ -1393,7 +1394,20 @@ footer {
   display: none; }
 
 #file + label {
-  color: #47CF80; }
+  color: #47CF80;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px; }
+  #file + label:before {
+    content: url("../img/icon-clip.svg");
+    position: absolute;
+    left: 0;
+    top: 2px; }
+
+.submit-button input {
+  width: 100%;
+  font-family: Mont-Ecom, sans-serif;
+  font-size: 14px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

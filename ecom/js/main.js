@@ -164,3 +164,14 @@ $('.my-dropdown .my-dropdown-menu li').click(function () {
     $(this).parents('.my-dropdown').find('span').text($(this).text());
     $(this).parents('.my-dropdown').find('input').attr('value', $(this).text());
 });
+
+
+$(document).ready(function(){
+  var input = $('#file');
+  var label = input.next();
+    input.change(function(e){
+        var fileName = e.target.files[0].name;
+        var string = 'The file "' + fileName +  '" has been selected.'
+        label.text(string);
+    });
+});

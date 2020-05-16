@@ -197,7 +197,7 @@ header .green-button{
 	& h2{
 		color: #FAFDFF;
 	}
-	& h4{
+	& h5{
 		color: #FAFDFF;
 	}
 	& ul{
@@ -1014,6 +1014,21 @@ footer{
 
 #file + label{
 	color: $green;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	&:before{
+		content: url('../img/icon-clip.svg');
+		position: absolute;
+		left: 0;
+		top: 2px;
+	}
+}
+
+.submit-button input{
+	width: 100%;
+	font-family: Mont-Ecom, sans-serif;
+	font-size: 14px;
 }
 
 @import "media";
