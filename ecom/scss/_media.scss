@@ -108,11 +108,24 @@
 	#services-hero h1{
 		font-size: 4em;
 	}
+	#our-team-hero h1{
+		padding-top: 100px;
+		font-size: 4em;
+	}
+	#our-team-hero .team-data-wrap{
+		justify-content: flex-end;
+	}
 }
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px){
+	.our-team-description{
+		padding-right: 130px;
+	}
+	#our-team-hero{
+		min-height: 45vw;
+	}
 
 }
 

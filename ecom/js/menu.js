@@ -17,7 +17,7 @@ $(document).ready(function(){
 $( window ).resize(function(){
     var submenu = $("#primary-menu ul");
     var menuitem = $("#primary-menu > li");
-
+    submenu.css('display', 'none');
     menuitem.unbind('mouseover');
     menuitem.unbind('mouseleave');
 

@@ -748,5 +748,131 @@ footer{
 	color:$green;
 }
 
+#our-team-hero{
+	background-image: url('../img/bg-our-team.png');
+	background-size: cover;
+	background-position: 50% 100%;
+	position: relative;
+	margin-top: -145px;
+	padding-top: 200px;
+	padding-bottom: 150px;
+	min-height: 800px;
+	& .parther-buttons img{
+		display: inline-block;
+		height: 38px;
+		width: auto;
+		margin-bottom: 2px;
+	}
+	& h1{
+		color: $white;
+		font-size: 3em;
+		font-weight: 800;
+		line-height: 110%;
+		margin-bottom: 24px;
+	}
+	.our-team-description{
+		color: #fff;
+		font-weight: 500;
+		line-height: 160%;
+		margin-bottom: 110px;
+	}
+	.team-data-wrap{
+		color: #fff;
+		font-size: 2.86em;
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		& span{
+			padding-top: 13px;
+			display: block;
+			font-size: .45em;
+			font-weight: 600;
+		}
+		.team-quantity{
+			margin-bottom: 50px;
+		}
+		.team-office{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+#team-features{
+	padding: 80px 0 50px;
+	& .team-feature-logo{
+		margin-bottom: -30px;
+		& img{
+			transition: all .3s ease-in-out;
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+	}
+	& .team-feature-title h3{
+		font-weight: 700;
+		font-size: 1.28em;
+		line-height: 127%;
+	}
+
+	& .team-feature-description{
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 160%;
+		opacity: 0.6;
+	}
+}
+
+#founder{
+	padding: 30px 0;
+	& .founder-quote{
+		font-weight: 500;
+		font-size: 2.28em;
+		line-height: 140%;
+	}
+	& .founder-name{
+		font-size: 1.42em;
+	}
+	& .founder-photo{
+		height: 605px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+	}
+}
+
+#our-team{
+	position: relative;
+	padding: 80px 0;
+	& .team-member-name{
+		font-weight: 600;
+		font-size: 1.42em;
+		line-height: 130%;
+	}
+	& .team-member-title{
+		font-weight: 400;
+		font-size: 1em;
+		line-height: 128%;
+		opacity: .6;
+	}
+}
+
+.our-team-left-curve{
+	position: absolute;
+	top: -115px;
+	left: 0;
+}
+
+.our-team-bottom-curve{
+	position: absolute;
+	bottom:-2.5vw;
+	left: 0;
+	min-height: 2.5vw;
+	width: 100%;
+	background-image: url("../img/our-team-bottom-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
+}
 
 @import "media";
