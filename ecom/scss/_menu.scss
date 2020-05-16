@@ -223,7 +223,22 @@
 						& a:hover{
 							color: $black;
 						}
+						&.current-menu-item a{
+							color: $black;
+						}
 					}
+				}
+				&.current-menu-ancestor > a{
+					color:$green;
+				}
+				&.current-menu-ancestor > a:after{
+					border-color: $green transparent transparent transparent;
+				}
+				&.current-menu-item > a{
+					color:$green;
+				}
+				&.current-menu-item > a:after{
+					border-color: $green transparent transparent transparent;
 				}
 			}
 		}

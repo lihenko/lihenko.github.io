@@ -670,4 +670,83 @@ footer{
 	z-index: 2;
 }
 
+#service-features{
+	padding: 80px 0;
+}
+
+.service-features-description{
+	font-weight: 500;
+	font-size: .85em;
+	line-height: 160%;
+	color: #565F73;
+	margin-bottom: 30px;
+}
+
+.service-features-img{
+	height: 605px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
+#other-cases{
+	position: relative;
+	padding: 120px 0 80px;
+	background-color: #fff;
+}
+
+.other-cases-top-curve{
+	position: absolute;
+	top:0;
+	left: 0;
+	min-height: 2.5vw;
+	width: 100%;
+	background-image: url("../img/other-cases-top-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
+}
+.other-cases-bottom-curve{
+	position: absolute;
+	bottom:-2.5vw;
+	left: 0;
+	min-height: 2.5vw;
+	width: 100%;
+	background-image: url("../img/other-cases-bottom-curve.svg");
+	background-size: cover;
+	background-position: 50% 100%;
+	z-index: 2;
+}
+
+.other-cases-link:hover > .other-cases-img{
+	transform: scale(1.1);
+}
+
+.other-cases-img{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 240px;
+	border-radius: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.other-cases-title{
+	display: block;
+	padding-top: 25px;
+	color: $black;
+	font-size: 1.42em;
+	transition: all 0.3s ease-in-out;
+}
+
+.other-cases-link:hover > .other-cases-img{
+	transform: scale(1.03);
+}
+
+.other-cases-link:hover > .other-cases-title{
+	color:$green;
+}
+
+
 @import "media";
