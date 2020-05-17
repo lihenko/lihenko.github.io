@@ -1075,7 +1075,7 @@ footer {
   position: absolute;
   bottom: 0px;
   left: 0;
-  min-height: 3vw;
+  min-height: 3.1vw;
   width: 100%;
   background-image: url("../img/call-to-action-bottom-curve.svg");
   background-size: cover;
@@ -1170,7 +1170,7 @@ footer {
 #our-team-hero {
   background-image: url("../img/bg-our-team.png");
   background-size: cover;
-  background-position: 50% 100%;
+  background-position: 50% 98%;
   position: relative;
   margin-top: -145px;
   margin-bottom: 0;
@@ -1240,8 +1240,17 @@ footer {
   padding: 30px 0; }
   #founder .founder-quote {
     font-weight: 500;
-    font-size: 2.28em;
-    line-height: 140%; }
+    font-size: 1.71em;
+    line-height: 140%;
+    position: relative;
+    padding-left: 54px;
+    padding-right: 54px; }
+    #founder .founder-quote:before {
+      content: url("../img/icon-quote.svg");
+      position: absolute;
+      left: 0;
+      top: -100px;
+      z-index: -1; }
   #founder .founder-name {
     font-size: 1.42em; }
   #founder .founder-photo {
@@ -1297,7 +1306,7 @@ footer {
     margin-bottom: 24px; }
   #join-hero .join-hero-bottom-curve {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     min-height: 5vw;
     width: 100%;
@@ -1409,6 +1418,12 @@ footer {
   font-family: Mont-Ecom, sans-serif;
   font-size: 14px; }
 
+.vacancies-right-curve {
+  position: absolute;
+  right: 0;
+  bottom: -180px;
+  z-index: 2; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1466,7 +1481,14 @@ footer {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+  #founder .founder-quote {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.28em; }
+    #founder .founder-quote:before {
+      left: -54px;
+      top: -90px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
