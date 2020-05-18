@@ -92,6 +92,38 @@ $(document).ready(function() {
         );
         }
        });
+
+});
+
+$(document).ready(function() {
+    $('.roi span').viewportChecker({
+        offset: 100,
+        callbackFunction: function(){
+          var number = $('.roi span').attr('data-data');
+          $('.roi span').animateNumber(
+          {
+            number: number,
+            numberStep: $.animateNumber.numberStepFactories.separator(',')
+          },
+          2000
+        );
+        }
+       });   
+});
+$(document).ready(function() {
+    $('.email span').viewportChecker({
+        offset: 100,
+        callbackFunction: function(){
+          var number = $('.email span').attr('data-data');
+          $('.email span').animateNumber(
+          {
+            number: number,
+            numberStep: $.animateNumber.numberStepFactories.separator(',')
+          },
+          2000
+        );
+        }
+       });   
 });
 
 
