@@ -1255,7 +1255,6 @@ footer{
 	padding-top: 160px;
 	padding-bottom: 60px;
 	min-height: 450px;
-	overflow:hidden;
 	& h1{
 		color: $white;
 		font-size: 3em;
@@ -1322,6 +1321,228 @@ footer{
 	background-size: cover;
 	background-position: 50% 100%;
 	z-index: 2;
+}
+
+#single-blog-post{
+	padding: 80px 0 0;
+	position: relative;
+}
+
+#guides-features{
+	padding: 80px 0;
+	position: relative;
+	& .guides-feature-logo{
+		margin-bottom: -30px;
+		& img{
+			transition: all .3s ease-in-out;
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+	}
+	& .guides-feature-title h3{
+		font-weight: 700;
+		font-size: 1.28em;
+		line-height: 127%;
+	}
+
+	& .guides-feature-description{
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 160%;
+		opacity: 0.6;
+	}
+}
+
+.guide-form-wrap{
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px 40px 110px rgba(21, 40, 69, 0.1);
+	border-radius: 8px;
+	padding: 45px 42px 42px;
+	z-index: 3;
+	& input{
+		margin-bottom: 15px;
+	}
+}
+
+#contact-form{
+	background-image: url('../img/map.jpg');
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -145px;
+	padding-top: 160px;
+	padding-bottom: 80px;
+	& h1{
+		color: $white;
+		font-size: 3em;
+		font-weight: 800;
+		line-height: 110%;
+		margin-bottom: 100px;
+	}
+	.contact-form-wrap{
+		background: #FFFFFF;
+		box-shadow: 0px 40px 110px rgba(21, 40, 69, 0.1);
+		border-radius: 8px;
+		padding: 45px 42px 42px;
+		& .form-description{
+			opacity: .8;
+		}
+		& input{
+			font-size: 12px;
+		}
+		& label{
+			font-size: 12px;
+			opacity: .8;
+		}
+		& .label{
+			font-size: 12px;
+			opacity: .8;
+		}
+		& .checkbox-container{
+			position: relative;
+			padding-left: 25px;
+			margin-right: 20px;
+			&:hover input ~ .checkmark:after {
+			  content: '';
+			  width: 10px;
+			  height: 10px;
+			  border-radius: 50%;
+			  background-color: $green;
+			  position: absolute;
+			  top: 4px;
+			  left: 4px;
+			}
+			& input:checked ~ .checkmark:after {
+			  content: '';
+			  width: 10px;
+			  height: 10px;
+			  border-radius: 50%;
+			  background-color: $green;
+			  position: absolute;
+			  top: 4px;
+			  left: 4px;
+			}
+		}
+		& .checkbox-container input {
+		  position: absolute;
+		  opacity: 0;
+		  cursor: pointer;
+		  height: 0;
+		  width: 0;
+		}
+		& .checkmark {
+		  position: absolute;
+		  top: 3px;
+		  left: 0;
+		  height: 20px;
+		  width: 20px;
+		  border: 1px solid #A3ADC2;
+		  border-radius: 50%;
+		}
+		textarea{
+			font-size: 12px;
+			color: #00194C;
+			width: 100%;
+			height: 35.4px;
+			border: none;
+			padding: 10px 0;
+			border-bottom: 1px solid #C4C9D4; 
+			margin-bottom: 10px;
+			font-family: Mont-Ecom, sans-serif;
+		}
+		& .send-button input{
+			width: 100%;
+		}
+	}
+}
+
+.contact-data-wrap{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 24px rgba(0, 25, 76, 0.1);
+	border-radius: 10px;
+	padding: 24px 20px;
+	max-width: 290px;
+	line-height: 140%;
+	position: relative;
+	margin-bottom: 150px;
+	&:before{
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 15px 0 15px;
+		border-color: #ffffff transparent transparent transparent;
+		position: absolute;
+		right: 80px;
+		bottom: -10px;
+	}
+	&:after{
+		content: url('../img/map-marker.svg');
+		position: absolute;
+		right: 73px;
+		bottom: -65px;
+	}
+	& .contact-data-address{
+		padding-left: 25px;
+		position: relative;
+		&:before{
+			content: url('../img/icon-pin.svg');
+			position: absolute;
+			left: 0;
+		}
+	}
+	& .contact-data-phone{
+		padding-left: 25px;
+		position: relative;
+		&:before{
+			content: url('../img/icon-phone.svg');
+			position: absolute;
+			left: 0;
+		}
+		& a{
+			color: $black;
+			&:hover{
+				color:darken($green, 15%);
+			}
+		}
+	}
+	& .contact-data-email{
+		padding-left: 25px;
+		position: relative;
+		&:before{
+			content: url('../img/icon-mail.svg');
+			position: absolute;
+			left: 0;
+		}
+		& a{
+			color: $black;
+			&:hover{
+				color:darken($green, 15%);
+			}
+		}
+	}	
+}
+
+.sosial-buttons{
+	display: flex;
+	& div{
+		padding-left: 6px;
+		padding-right: 6px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	& .sosial-icon{
+		transition: all 0.3s ease-in-out;
+	}
+	& a:hover .sosial-icon{
+		fill:darken($green, 15%);
+	}
 }
 
 @import "media";
