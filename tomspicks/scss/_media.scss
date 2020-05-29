@@ -1,0 +1,220 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	#post-navigation{
+		padding-bottom: 60px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 1;
+		font-weight: 600;
+		& .pagenavi{
+			display: flex;
+			justify-content: center;
+		}
+		& .pages{
+			display: none;
+		}
+		& .grid-previous-link{
+			padding-right: 20px;
+			& svg path{
+				transition: fill 0.3s ease-in-out;
+			}
+			&:hover svg path{
+				fill: $gold;
+			}
+		}
+		& .grid-next-link{
+			padding-left: 20px;
+			& svg path{
+				transition: fill 0.3s ease-in-out;
+			}
+			&:hover svg path{
+				fill: $gold;
+			}
+		}
+		& .current{
+			position: relative;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0 0 7px;
+			color: $gold;
+			&:after{
+				content: '';
+				width: 100%;
+				height: 2px;
+				background-color: $gold;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: block;
+			}
+		}
+		& .single_page{
+			position: relative;
+			color: $black;
+			margin-left: 20px;
+			margin-right: 20px;
+			&:after{
+				content: '';
+				width: 0;
+				height: 2px;
+				background-color: $gold;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: block;
+				transition: width 0.3s ease-in-out;
+			}
+			&:hover{
+				color: $gold;
+			}
+			&:hover:after{
+				width: 100%;
+			}
+		}
+		& .last{
+			position: relative;
+			color: $black;
+			margin-left: 20px;
+			margin-right: 20px;
+			&:after{
+				content: '';
+				width: 0;
+				height: 2px;
+				background-color: $gold;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: block;
+				transition: width 0.3s ease-in-out;
+			}
+			&:hover{
+				color: $gold;
+			}
+			&:hover:after{
+				width: 100%;
+			}
+		}
+		& .expand{
+			color: $grey;
+			margin-left: 20px;
+			margin-right: 20px;
+			letter-spacing: 2px;
+		}
+	}
+	#footer-menu{
+		display: flex;
+		justify-content: flex-end;
+		& li{
+			padding-left: 30px;
+			padding-right: 30px;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+	footer .footer-picks{
+		display: block;
+		margin-bottom: 25px;
+	}
+	#bottom-bar-menu{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 10px;
+		& li{
+			padding-left: 10px;
+			padding-right: 10px;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	#bottom-bar-menu{
+		justify-content: flex-end;
+		& li{
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+
+@media only screen and (min-width : 1400px){
+	.container{
+		max-width: 1320px;
+	}
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	
+<div class="container">
+	<div class="row h-100">
+		<div class="col-lg-4 my-auto">
+			<div class="toggle-btn">
+	            <span class="hamburger">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </span>
+	       	</div>
+			<div class="main-menu">
+				<a href="/">Picks</a>
+				<ul id="primary-menu">
+					<li id="menu-item-29" class="menu-item"><a href="#">About Us</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-4 my-auto">
+			<div class="brand text-center">
+				<a href="/">
+					<div class="brand-title">
+						Tom’s Picks
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-lg-4 my-auto">
+			<form action="">
+				<input type="text" name="s" placeholder="Search">
+				<input type="image" alt="Search" src="img/search.svg" />
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="subtitle text-center">
+				upgrades your life
+			</div>
+		</div>
+	</div>
+</div>
+
+</header>
+
+<section id="category-list">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!--
+					<?php
+					$categories =  get_categories('child_of=31');  
+					foreach  ($categories as $category) {
+					    //Display the sub category information using $category values like $category->cat_name
+					    echo '<h2>'.$category->name.'</h2>';
+					    echo '<ul>';
+
+					    foreach (get_posts('cat='.$category->term_id) as $post) {
+					        setup_postdata( $post );
+					        echo '<li><a href="'.get_permalink($post->ID).'">'.get_the_title().'</a></li>';   
+					    }  
+					    echo '</ul>';
+					} ?>
+				-->
+				<ul>
+					<li class="current-category"><a href="#">All</a></li>
+					<li><a href="#">Featured</a></li>
+					<li><a href="#">Trending</a></li>
+					<li><a href="#">Best picks</a></li>
+					<li><a href="#">TVs</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Deals</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="post-list">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-3.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best webcams in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-4.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							August Wi-Fi smart lock review
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-1.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							The best waterproof phones in 2020
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4">
+				<div class="post-wrap">
+					<a href="#">
+						<div class="post-tumbnail" style="background-image: url(img/blog-post-2.png);"></div>
+						<div class="row">
+							<div class="col-6">
+								<div class="post-category">Trending</div>
+							</div>
+							<div class="col-6">
+								<div class="post-date">13 hours ago</div>
+							</div>
+						</div>
+						<div class="post-title">
+							YouTube TV channels, cost, supported devices and more
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="post-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="navigation">
+					<div class="pagenavi">
+						<span class="pages">Page 1 of 9:</span>
+						<span class="grid-previous-link">
+							<svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.707 4.95a1 1 0 000 1.414l4.243 4.243a1 1 0 001.414-1.415L2.828 5.657 6.364 2.12A1 1 0 004.95.707L.707 4.95z" fill="#38393B"/></svg>
+						</span>
+						<span class="current">01</span>
+						<a href="#" class="single_page" title="2">02</a>
+						<a href="#" class="single_page" title="3">03</a>
+						<a href="#" class="single_page" title="4">04</a>
+						<span class="expand">...</span>
+						<a href="#" class="last" title="Last Page">16</a>
+						<span class="grid-next-link"><a href="#"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.607 6.364a1 1 0 000-1.414L6.364.707A1 1 0 004.95 2.121l3.535 3.536L4.95 9.192a1 1 0 101.414 1.415l4.243-4.243z" fill="#38393B"/></svg></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row h-100">
+			<div class="col-lg-4 text-center order-lg-2 my-auto">
+				<a href="/">
+					<div class="footer-logo">
+						Tom’s Picks
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 text-center text-lg-left order-lg-1 my-auto">
+				<a href="/" class="footer-picks">
+					Picks
+				</a>
+			</div>
+			<div class="col-lg-4 text-center text-lg-right order-lg-3 my-auto">
+				<ul id="footer-menu">
+					<li id="menu-item-29" class="menu-item"><a href="#">About Us</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="hr"></div>
+			</div>
+		</div>
+		<div class="row h-100 py-4">
+			<div class="col-xl-8 order-xl-2 text-center text-xl-right my-auto">
+				<ul id="bottom-bar-menu" class="mb-3 mb-xl-0">
+					<li id="menu-item-29" class="menu-item"><a href="#">Privacy policy</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Terms and conditions</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Advertise</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Cookies policy</a></li>
+					<li id="menu-item-29" class="menu-item"><a href="#">Accessibility statement</a></li>
+				</ul>
+			</div>
+			<div class="col-xl-4 order-xl-1 text-center text-xl-left my-auto">
+				<div class="copyright">
+					Copyright © 2019 All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/bootstrap/js/popper.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
