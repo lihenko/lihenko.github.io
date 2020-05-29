@@ -356,20 +356,20 @@ header input[type="text"] {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px; }
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     #category-list ul li {
       position: relative;
-      padding: 0 33px; }
+      padding: 10px 0;
+      width: 50%; }
       #category-list ul li:first-child {
         padding-left: 0; }
       #category-list ul li:last-child {
@@ -722,7 +722,24 @@ footer {
       #bottom-bar-menu li:first-child {
         padding-left: 0; }
       #bottom-bar-menu li:last-child {
-        padding-right: 0; } }
+        padding-right: 0; }
+  #category-list ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    #category-list ul li {
+      width: unset;
+      padding: 0 15px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -733,7 +750,9 @@ footer {
     justify-content: flex-end; }
     #bottom-bar-menu li {
       padding-left: 12px;
-      padding-right: 12px; } }
+      padding-right: 12px; }
+  #category-list ul li {
+    padding: 0 33px; } }
 
 @media only screen and (min-width: 1400px) {
   .container {
