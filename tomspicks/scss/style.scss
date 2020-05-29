@@ -61,11 +61,11 @@ header input[type="text"]{
 	background-color: transparent;
 	border: none;
 	font-size: 14px;
-	color: $black;
+	color: #5B5F6A;
 	font-weight: 500;
 	width: calc(100% - 20px);
 	&::placeholder{
-		color: $black;
+		color: #5B5F6A;
 		opacity: 1;
 	}
 }
