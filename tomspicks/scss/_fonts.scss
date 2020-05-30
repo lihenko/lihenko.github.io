@@ -7,6 +7,14 @@
 
 @font-face{
 	font-family: 'Poppins-TomsPicks';
+	src: url('../fonts/Poppins-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Poppins-TomsPicks';
 	src: url('../fonts/Poppins-Bold.ttf');
 	font-weight: 700;
 	font-display: swap;

@@ -209,6 +209,29 @@
 			}
 		}
 	}
+	h1{
+		font-size: 60px;
+		line-height: 120%;
+		font-weight: 700;
+	}
+	#post-title{
+		padding-top: 0;
+		& h1{
+			margin-bottom: 20px;
+		}
+	}
+	#post-body .share-buttons{
+		position: absolute;
+		width: unset;
+		left: 0;
+		& ul{
+			display: inline-block;
+			& li{
+				display:block;
+				margin-bottom: 10px;
+			}
+		}
+	}
 	
 }
 

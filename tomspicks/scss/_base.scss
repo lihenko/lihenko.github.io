@@ -14,7 +14,7 @@ html, body {
 body {
 	color: $black;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 180%;
 	font-family: Poppins-TomsPicks, sans-serif;
 	overflow-x: hidden;
 	background-color: #E5E5E5;
@@ -27,23 +27,29 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 3.3em;
-  line-height: 0.95;
+	font-size: 50px;
+	line-height: 100%;
+	font-weight: 700;
 }
 
 h2{
-  font-size: 32px;
-  line-height: 42px;
+  font-weight: 700;
+	font-size: 32px;
+	line-height: 140%;
+	margin-bottom: 30px;
 }
 
 h3{
-  font-size: 24px;
-  line-height: 32px;
+  font-weight: 700;
+	font-size: 26px;
+	line-height: 140%;
+	margin-bottom: 20px;
 }
 
 h4{
-  font-size: 21px;
-  line-height: 27px;
+  font-weight: 700;
+	font-size: 18px;
+	line-height: 140%;
 }
 
 h5{
@@ -62,6 +68,31 @@ a{
 
 a:hover, a:active, a:focus {
 	outline: 0;
+}
+
+#post-body img{
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+#post-body ul{
+	list-style: none;
+	padding: 0;
+	& li{
+		position: relative;
+		padding-left: 15px;
+		&:before{
+			content: '';
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: $gold;
+			position: absolute;
+			left: 0;
+			top: 14px;
+		}
+	}
 }
 
 input::-moz-focus-inner { 
