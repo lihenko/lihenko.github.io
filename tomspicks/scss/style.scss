@@ -701,4 +701,63 @@ footer{
 	}
 }
 
+.contact-arrow{
+	text-align: center;
+}
+
+.contact-form-wrap{
+	& input:not([type="submit"]){
+		width: 100%;
+		border: none;
+		font-family: Poppins-TomsPicks, sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		background-color: transparent;
+		border-bottom: 1px solid #C4C9D4;
+		padding: 8px 0;
+	}
+	& textarea{
+		width: 100%;
+		border: none;
+		font-family: Poppins-TomsPicks, sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		background-color: transparent;
+		border-bottom: 1px solid #C4C9D4;
+		padding: 8px 0;
+		height: 33px;
+	}
+}
+
+.gold-button{
+	width: 100%;
+	background-color: $gold;
+	border-radius: 0;
+	font-family: Poppins-TomsPicks, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	padding: 17px 10px;
+	&:hover{
+		background-color: lighten($gold, 10%);
+		color: #fff;
+	}
+}
+
+.modal-header{
+	border-bottom: none;
+}
+
+.modal-content{
+	border-radius: 0;
+}
+
+.close{
+	font-size: 1rem;
+}
+
+.modal-dialog {
+    max-width: 642px;
+}
+
 @import "media";

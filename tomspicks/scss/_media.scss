@@ -244,6 +244,22 @@
 	#features{
 		padding-bottom: 40px;
 	}
+	.contact-arrow{
+		text-align: unset;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: rotate(-90deg);
+	}
+	.brand{
+		text-align: left;
+	}
+	#most-popular-posts{
+		padding-bottom: 60px;
+	}
+	.contact-form-wrap{
+		padding: 0 30px;
+	}
 	
 }
 
@@ -264,10 +280,19 @@
 			}
 		}
 	}
+	.contact-arrow{
+		right: 30px;
+	}
+	.contact-form-wrap{
+		padding: 0 60px;
+	}
 }
 
 @media only screen and (min-width : 1400px){
 	.container{
 		max-width: 1320px;
+	}
+	.contact-form-wrap{
+		padding: 0 110px;
 	}
 }
