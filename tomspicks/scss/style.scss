@@ -581,6 +581,124 @@ footer{
 	}
 }
 
+#page-title{
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
 
+#photo-about{
+	& .about-photo{
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		height: 600px;
+	}
+}
+
+#features{
+	padding-top: 40px;
+	& .feature-title{
+		color: $gold;
+	}
+	& .feature-hr{
+		position: absolute;
+		bottom: 0;
+		width: calc(100% - 30px);
+	}
+}
+
+#who-we-are{
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+.team-slider .member-name{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000;
+}
+
+.team-slider .member-position{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: $grey;
+}
+
+.team-slider .member-photo{
+	margin-bottom: 20px;
+	& img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+#how-we-test{
+	padding-bottom: 60px;
+}
+#follow-us{
+	padding-bottom: 120px;
+	& a{
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		justify-content: center;
+		border: 1px solid #B4BDCF;
+		& svg path{
+			transition: fill 0.3s ease-in-out;
+		}
+		& span{
+			transition: color 0.3s ease-in-out;
+		}
+	}
+	& .social-follow-name{
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 1;
+		color: $black;
+		padding-left: 10px;
+	}
+	& .follow-instagram{
+		&:hover{
+			background-color: #C13584;
+			& span{
+				color: #fff;
+			}
+		}
+		&:hover svg path{
+			fill:#fff;
+		}
+	}
+	& .follow-twitter{
+		&:hover{
+			background-color: #1DA1F2;
+			& span{
+				color: #fff;
+			}
+		}
+		&:hover svg path{
+			fill:#fff;
+		}
+	}
+	& .follow-youtube{
+		&:hover{
+			background-color: #FF0000;
+			& span{
+				color: #fff;
+			}
+		}
+		&:hover svg path{
+			fill:#fff;
+		}
+		&:hover svg path:nth-child(2){
+			fill:#FF0000;
+		}
+	}
+}
 
 @import "media";
