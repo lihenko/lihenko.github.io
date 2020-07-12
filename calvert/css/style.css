@@ -310,7 +310,7 @@ header {
     margin-bottom: 7.5px;
     margin-top: 7.5px; }
   .top-contacts .top-phone a:before {
-    content: url("../img/phone.svg");
+    content: url("../img/call.svg");
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
