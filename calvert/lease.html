@@ -90,9 +90,126 @@
 				<div class="property-search-form">
 					<form action="/">
 						<div class="option-buttons">
-							<a href="#" id='space-type'>space type</a>
-							<a href="#" id='size'>size</a>
-							<a href="#" id='other'>other</a>
+							<div class="space-type">
+								<a href="#" id='space-type'>space type</a>
+								<div class="space-type-options">
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Entire place
+											</div>
+										</div>	
+									</div>
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Private room
+											</div>
+										</div>	
+									</div>
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Hotel room
+											</div>
+										</div>	
+									</div>
+									<div class="row">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Shared room
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="size">
+								<a href="#" id='size'>size</a>
+								<div class="size-options">
+									<div class="row">
+										<div class="col-6">
+											<input type="text" placeholder="From">
+										</div>
+										<div class="col-6">
+											<input type="text" placeholder="To">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="other">
+								<a href="#" id='other'>other</a>
+								<div class="other-options">
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Other 1
+											</div>
+										</div>	
+									</div>
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Other 2
+											</div>
+										</div>	
+									</div>
+									<div class="row mb-3">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Other 3
+											</div>
+										</div>	
+									</div>
+									<div class="row">
+										<div class="col-2">
+											<div class="checker">
+												<svg style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;" aria-hidden="true" role="presentation" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="property-options-title">
+												Other 4
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							
 						</div>
 						<div class="search-box">
 							<input type="text" placeholder="Search spaces for lease…">
@@ -100,9 +217,180 @@
 						</div>
 					</form>
 				</div>
+				<div class="propery-list">
+					<div class="property-wrap">
+						<div class="row">
+							<div class="col-md-5 mb-3 mb-md-0">
+								<a href="#">
+									<div class="property-image" style="background-image: url(img/property-1.jpg);"></div>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<div class="property-title">
+									<a href="#">
+										<h4>1670 Solomons Island Road</h4>
+									</a>
+								</div>
+								<div class="property-tags">
+									Industrial <span class="yellow">|</span> Single Tenant <span class="yellow">|</span> 7,349 SF
+								</div>
+								<div class="property-price">
+									$7000/month
+								</div>
+								<div class="property-details">
+									<div class="row">
+										<div class="col-6 text-left">
+											<a href="#"><img src="img/arrow-more.svg" alt=""></a>
+										</div>
+										<div class="col-6 text-right"><a href="#">See Details</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="property-wrap">
+						<div class="row">
+							<div class="col-md-5 mb-3 mb-md-0">
+								<a href="#">
+									<div class="property-image" style="background-image: url(img/property-1.jpg);"></div>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<div class="property-title">
+									<a href="#">
+										<h4>1670 Solomons Island Road</h4>
+									</a>
+								</div>
+								<div class="property-tags">
+									Industrial <span class="yellow">|</span> Single Tenant <span class="yellow">|</span> 7,349 SF
+								</div>
+								<div class="property-price">
+									$7000/month
+								</div>
+								<div class="property-details">
+									<div class="row">
+										<div class="col-6 text-left">
+											<a href="#"><img src="img/arrow-more.svg" alt=""></a>
+										</div>
+										<div class="col-6 text-right"><a href="#">See Details</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="property-wrap">
+						<div class="row">
+							<div class="col-md-5 mb-3 mb-md-0">
+								<a href="#">
+									<div class="property-image" style="background-image: url(img/property-1.jpg);"></div>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<div class="property-title">
+									<a href="#">
+										<h4>1670 Solomons Island Road</h4>
+									</a>
+								</div>
+								<div class="property-tags">
+									Industrial <span class="yellow">|</span> Single Tenant <span class="yellow">|</span> 7,349 SF
+								</div>
+								<div class="property-price">
+									$7000/month
+								</div>
+								<div class="property-details">
+									<div class="row">
+										<div class="col-6 text-left">
+											<a href="#"><img src="img/arrow-more.svg" alt=""></a>
+										</div>
+										<div class="col-6 text-right"><a href="#">See Details</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="property-wrap">
+						<div class="row">
+							<div class="col-md-5 mb-3 mb-md-0">
+								<a href="#">
+									<div class="property-image" style="background-image: url(img/property-1.jpg);"></div>
+								</a>
+							</div>
+							<div class="col-md-7">
+								<div class="property-title">
+									<a href="#">
+										<h4>1670 Solomons Island Road</h4>
+									</a>
+								</div>
+								<div class="property-tags">
+									Industrial <span class="yellow">|</span> Single Tenant <span class="yellow">|</span> 7,349 SF
+								</div>
+								<div class="property-price">
+									$7000/month
+								</div>
+								<div class="property-details">
+									<div class="row">
+										<div class="col-6 text-left">
+											<a href="#"><img src="img/arrow-more.svg" alt=""></a>
+										</div>
+										<div class="col-6 text-right"><a href="#">See Details</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navigation">
+					<div class="pagenavi">
+						<span class="navi-info">
+							1 – 20 of 37 Spaces for lease.
+						</span>
+						<span class="grid-previous-link d-none">
+							<svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+							    <title>982C592B-5EE1-4660-9588-7669D216D348</title>
+							    <desc>Created with sketchtool.</desc>
+							    <defs>
+							        <path d="M776.828676,1805 C776.536675,1805 776.246675,1804.873 776.048674,1804.62699 L771.220661,1798.62677 C770.92266,1798.25576 770.92666,1797.72574 771.231661,1797.35972 L776.231674,1791.35951 C776.584675,1790.93549 777.215677,1790.87849 777.640678,1791.2315 C778.06468,1791.58452 778.12168,1792.21554 777.767679,1792.63955 L773.292666,1798.01075 L777.607678,1803.37294 C777.953679,1803.80296 777.885679,1804.43298 777.454678,1804.77899 C777.270677,1804.928 777.048677,1805 776.828676,1805" id="path-1"></path>
+							    </defs>
+							    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g id="For-Lease" transform="translate(-771.000000, -1791.000000)">
+							            <mask id="mask-2" fill="white">
+							                <use xlink:href="#path-1"></use>
+							            </mask>
+							            <use id="рџЋЁ-Icon-РЎolor" fill="#A4193B" fill-rule="nonzero" transform="translate(774.500000, 1798.000000) rotate(-180.000000) translate(-774.500000, -1798.000000) " xlink:href="#path-1"></use>
+							        </g>
+							    </g>
+							</svg>
+						</span>
+						<span class="current">1</span>
+						<a href="#" class="single_page" title="2" data-page="2">2</a>
+						<span class="grid-next-link">
+							<a href="#" data-page="2" title="Next page">
+							<svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+							    <title>NEXT PAGE</title>
+							    <desc>Created with sketchtool.</desc>
+							    <defs>
+							        <path d="M776.828676,1805 C776.536675,1805 776.246675,1804.873 776.048674,1804.62699 L771.220661,1798.62677 C770.92266,1798.25576 770.92666,1797.72574 771.231661,1797.35972 L776.231674,1791.35951 C776.584675,1790.93549 777.215677,1790.87849 777.640678,1791.2315 C778.06468,1791.58452 778.12168,1792.21554 777.767679,1792.63955 L773.292666,1798.01075 L777.607678,1803.37294 C777.953679,1803.80296 777.885679,1804.43298 777.454678,1804.77899 C777.270677,1804.928 777.048677,1805 776.828676,1805" id="path-1"></path>
+							    </defs>
+							    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g id="For-Lease" transform="translate(-771.000000, -1791.000000)">
+							            <mask id="mask-2" fill="white">
+							                <use xlink:href="#path-1"></use>
+							            </mask>
+							            <use id="рџЋЁ-Icon-РЎolor" fill="#A4193B" fill-rule="nonzero" transform="translate(774.500000, 1798.000000) rotate(-180.000000) translate(-774.500000, -1798.000000) " xlink:href="#path-1"></use>
+							        </g>
+							    </g>
+							</svg>
+							</a>
+						</span>		
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-6 px-0">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167872.17467457472!2d-76.65767643628993!3d38.573156075564995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b778c1632ef02f%3A0x146665e9ab42e51e!2s1670%20Solomons%20Island%20Rd%20S%2C%20Prince%20Frederick%2C%20MD%2020678%2C%20USA!5e0!3m2!1sen!2sua!4v1594383813872!5m2!1sen!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<div class="property-map h-100">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167872.17467457472!2d-76.65767643628993!3d38.573156075564995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b778c1632ef02f%3A0x146665e9ab42e51e!2s1670%20Solomons%20Island%20Rd%20S%2C%20Prince%20Frederick%2C%20MD%2020678%2C%20USA!5e0!3m2!1sen!2sua!4v1594383813872!5m2!1sen!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>

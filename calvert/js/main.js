@@ -49,11 +49,27 @@ $('.quote-slider').slick({
 
 
 $(document).ready(function(){
-    var $page = $('html, body');
-    $('a[href*="#"]').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
-        return false;
-    });
+  var checker = $('.property-search-form .checker');
+  var spacetype = $('#space-type');
+  var size = $('#size');
+  var other = $('#other');
+  var sizeoption = $('.size-options');
+  var spacetypeoptions = $('.space-type-options');
+  var otheroptions = $('.other-options');
+
+  checker.on('click', function(){
+      $(this).toggleClass('checked');
+  });
+  spacetype.on('click', function(){
+      event.preventDefault();
+      spacetypeoptions.slideToggle();
+  });
+  size.on('click', function(){
+      event.preventDefault();
+      sizeoption.slideToggle();
+  });
+  other.on('click', function(){
+      event.preventDefault();
+      otheroptions.slideToggle();
+  });
 });
