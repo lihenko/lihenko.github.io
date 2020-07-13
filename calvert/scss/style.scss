@@ -547,7 +547,7 @@ ul.clients-list{
 		}
 	}
 	& .property-tags{
-		font-size: 18px;
+		font-size: .9em;
 		margin-bottom: 20px;
 	}
 	& .property-price{
@@ -606,6 +606,118 @@ ul.clients-list{
 	& .grid-next-link{
 		margin-left: 10px;
 	}
+}
+
+#property-title{
+	background-color: rgba(#484646, .09);
+	& .slick-prev{
+		left: 15px;
+		z-index: 99;
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		&:before{
+			content: url('../img/slider-left.svg');
+			display: block;
+		}
+	}
+	& .slick-next{
+		right: 15px;
+		z-index: 99;
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		&:before{
+			content: url('../img/slider-right.svg');
+			display: block;
+		}
+	}
+}
+
+.return-back{
+	margin-top: 30px;
+	margin-bottom: 45px;
+	& a{
+		font-size: .8em;
+		position: relative;
+		padding-left: 85px;
+		&:before{
+			content: url('../img/return-back.svg');
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+#property-title{
+	& .property-tags{
+		font-size: .9em;
+		margin-bottom: 20px;
+	}
+	& .property-price{
+		font-size: 1.2em;
+		font-weight: 700;
+		color: $red;
+		margin-bottom: 20px;
+	}
+	& .property-address{
+		font-size: .9em;
+		position: relative;
+		padding-left: 40px;
+		&:before{
+			content: url('../img/address-pin.svg');
+			position: absolute;
+			left: 0;
+		} 
+	}
+}
+
+.property-contact-buttons{
+	margin-bottom: 30px;
+	& a{
+		margin-bottom: 15px;
+	}
+}
+
+
+#property-details{
+	padding: 4em 0;
+	& .details-table{
+		font-size: .9em;
+		& .row{
+			margin-bottom: 28px;
+			& div[class^='col-']:first-child{
+				color: $red;
+			}
+		}
+	}
+	& .transparent-button{
+		max-width: 315px;
+	}
+}
+
+.transparent-button{
+	color: #000;
+	width: 100%;
+	max-width: 425px;
+	border: 1px solid #620219;
+  	background-color: transparent;
+  	padding: 12px 15px;
+  	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1.7px;
+	line-height: 1.5;
+  	&:hover{
+  		color: #fff;
+  		background-color: #620219;
+  	}
+}
+
+#related-properties{
+	padding-bottom: 4em;
 }
 
 @import "media";
