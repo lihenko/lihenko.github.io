@@ -1,0 +1,243 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	padding: 15px 0;
+}
+
+.yellow{
+	color: $yellow;
+}
+
+.pink {
+	color: $pink;
+}
+
+.bronse{
+	color: $bronse;
+}
+
+#home-hero{
+	margin-top: -120px;
+	padding-top: 200px;
+	padding-bottom: 265px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.donate-button a{
+	color: #fff!important;
+	background-color: $pink;
+	padding: 15px 70px;
+	&:hover{
+		color: #fff!important;
+		background-color: darken($pink, 10%);
+	}
+}
+
+.transparent-button{
+	font-size: 15px;
+	border: 1px solid #FFFFFF;
+	border-radius: 0;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 11px 25px;
+	width:260px;
+	max-width: 100%;
+	&:hover{
+		color: #fff;
+		background-color: $pink;
+		border-color: $pink;
+	}
+}
+
+.transparent-pink-button{
+	font-size: 15px;
+	border: 1px solid $pink;
+	border-radius: 0;
+	color: $pink;
+	text-transform: uppercase;
+	padding: 11px 25px;
+	width:260px;
+	max-width: 100%;
+	&:hover{
+		color: #fff;
+		background-color: $pink;
+		border-color: $pink;
+	}
+}
+
+.yellow-button{
+	font-size: 15px;
+	font-weight: 500;
+	border: 1px solid $yellow;
+	background-color: $yellow;
+	border-radius: 0;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 11px 25px;
+	width:260px;
+	max-width: 100%;
+	&:hover{
+		color: #fff;
+		background-color: $pink;
+		border-color: $yellow;
+	}
+}
+
+#our-location{
+	margin-top: -95px;
+	padding-bottom: 60px;
+}
+
+.quotes-slider-item{
+	padding: 30px 70px;
+	position: relative;
+	&:before{
+		position: absolute;
+		content: url('../img/icon-quote.svg');
+		left: 0;
+		top: 0;
+	}
+	&:after{
+		position: absolute;
+		content: url('../img/icon-quote.svg');
+		right: 0;
+		bottom: 0;
+		transform: rotate(180DEG);
+	}
+	& .quote-text{
+		padding-top: 40px;
+		color: #fff;
+		font-family: SourceSerifPro-CC, serif;
+		font-size: 1.5em;
+		margin-bottom: 45px;
+	}
+	& .quote-author{
+		color: $pink;
+		font-size: 1.5em;
+	}
+}
+
+#home-quotes{
+	padding: 120px 0 80px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#call-to-action{
+	background-color: $pink;
+	padding: 20px 0;
+	& .yellow-button{
+		width: 195px;
+	}
+}
+
+#our-mission{
+	padding: 60px 0 80px;
+}
+
+footer{
+	padding: 15px 0;
+	background-color: #fff;
+	& #footer-menu{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		& li{
+			padding-left: 10px;
+			padding-right: 10px;
+			& a{
+				color: $bronse;
+				font-size: .93em;
+				text-transform: uppercase;
+				line-height: 1;
+				&:hover{
+					color: $pink;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#page-hero{
+	margin-top: -120px;
+	padding-top: 140px;
+	padding-bottom: 120px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#our-services{
+	margin-top: -50px;
+	padding-bottom: 60px;
+	& .service-icon img{
+		height: 78px;
+		width: auto;
+	}
+}
+
+#call-to-action .yellow-button.position-absolute{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 44px;
+	width: 255px;
+	margin: auto;
+}
+
+#page-description{
+	margin-top: -50px;
+	padding-bottom: 0px;
+}
+
+#stories{
+	padding-bottom: 50px;
+}
+
+.support-address{
+	padding-left: 55px;
+	position: relative;
+	&:before{
+		content: url('../img/icon-address-marker.svg');
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.form-donation input[type="text"]{
+	font-family: Roboto-CC, sans-serif;
+	width: 100%;
+	height: 45px;
+	padding: 10px 195px 10px 15px;
+	color: $bronse;
+	border: 1px solid #CD9E72;
+	background-color: #F1EEE9;
+}
+
+.form-donation input[type="submit"]{
+	font-family: Roboto-CC, sans-serif;
+	position: absolute;
+	right: 0;
+	height: 45px;
+	width: 195px;
+	font-weight: 500;
+}
+
+#page-description.form{
+	min-height: calc(100vh - 458px);
+}
+
+@import "media";
