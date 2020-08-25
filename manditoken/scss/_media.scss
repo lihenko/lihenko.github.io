@@ -1,0 +1,151 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	body {
+		font-size: 16px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 18px;
+	}
+	.overview-wrap{
+		padding: 75px 65px;
+	}
+	.projects-slider{
+		padding: 70px 50px;
+	}
+	#mandi-experts{
+		padding: 100px 0;
+	}
+	.footer-form-wrap{
+		margin-top: -180px;
+	}
+	.footer-exchanges li{
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	.copyright{
+		margin-top: -17px;
+	}
+	.app-hr{
+		background-color: #0F1012;
+	}
+	.footer-form-wrap{
+		padding: 80px 75px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.hero-buttons .btn{
+		margin-left: 7.5px;
+		margin-right: 7.5px;	
+	}
+
+	#holding-company .top img{
+		margin-top: -45px;
+	}
+
+	#holding-company{
+		padding-top: 140px;
+		padding-bottom: 200px;
+	}
+	#approved-companies{
+		padding: 110px 0 60px;
+	}
+	#projects-being-assessed{
+		padding: 140px 0;
+	}
+	#undereview-companies{
+		padding: 60px 0 140px;
+	}
+	.expert-brief{
+		margin-right: 80px;
+	}
+	.footer-social-buttons{
+		justify-content: flex-end;
+	}
+	.footer-exchanges li{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (min-width : 1300px){
+	.container{
+		max-width: 1230px;
+	}
+	.hero-subtitle{
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
