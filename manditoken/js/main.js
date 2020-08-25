@@ -82,3 +82,10 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+ 
+    var m = new Masonry($('.masonry-grid').get()[0], {
+        itemSelector: ".col-md-6.col-lg-4.mb-4"
+    });
+
+});

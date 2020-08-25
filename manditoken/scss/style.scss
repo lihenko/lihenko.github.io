@@ -579,4 +579,38 @@ footer{
 	color: $red;
 }
 
+#media-posts{
+	margin-top: -117px;
+	padding-top: 117px;
+	padding-bottom: 80px;
+	background-image: url('../img/Hero-background.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% -117px;
+}
+
+.media-post-wrap{
+	border-radius: 26.5px;
+	background-color: #171819;
+	padding: 45px 40px;
+	transition: background-color 0.6s ease;
+	&:hover{
+		background-color: $red;
+	}
+	& .media-post-tumbnail{
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 50px;
+	}
+	& .media-post-title{
+		color:#fff;
+		margin-bottom: 15px;
+	}
+	& .media-post-description{
+		color: #fff;
+	}
+}
+
 @import "media";
