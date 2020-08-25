@@ -61,6 +61,9 @@
 	body {
 		font-size: 16px;
 	}
+	.undereview-company-logo .undereview-item{
+		max-width:calc(30% - 15px);
+	}
 }
 
 
@@ -137,6 +140,9 @@
 	.footer-exchanges li{
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	.undereview-company-logo .undereview-item{
+		max-width:calc(20% - 15px);
 	}
 }
 

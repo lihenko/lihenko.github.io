@@ -58,43 +58,10 @@ $('.approved-company-logo').slick({
   ]
 });
 
-$('.undereview-company-logo').slick({
-  autoplay:true,
-  autoplaySpeed: 4500,
-  dots: false,
-  arrows: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-       }
-    },
-    {
-      breakpoint: 680,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots:true
-      }
-    }
-  ]
-});
-
 $('.projects-slider').slick({
     speed: 800,
-    autoplay:false,
+    autoplay:true,
+    autoplaySpeed: 10000,
     arrows: true,
     fade: true,
     dots:false,
