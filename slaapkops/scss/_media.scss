@@ -1,0 +1,117 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	body{
+		font-size: 16px;
+	}
+	#home-slider{
+		& .item-home-slider{
+			padding-left: 90px;
+			padding-right: 90px;
+		}
+	}
+	#home-features{
+		padding-bottom: 100px;
+	}
+	#subscribe form input[type="submit"]{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.subscribe-stars{
+		bottom: -257px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	#top-bar .row{
+		justify-content: flex-end;
+	}
+	#home-features{
+		padding-bottom: 190px;
+	}
+	#slaapblogs .blog-post-title{
+		min-height: 90px;
+		margin-bottom: 0;
+	}
+	footer .footer-social{
+		display: flex;
+		justify-content: space-between;
+	}
+	footer h5{
+		margin-top: 32px;
+		margin-bottom: 50px;
+	}
+	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body{
+		font-size: 18px;
+	}
+	#subscribe form{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
