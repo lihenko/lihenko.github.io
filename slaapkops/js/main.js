@@ -44,6 +44,7 @@ $('.home-slider').slick({
       breakpoint: 768,
       settings: {
         arrows: false,
+        dots:true
       }
     }
   ]

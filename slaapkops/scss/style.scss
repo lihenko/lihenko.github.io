@@ -108,15 +108,15 @@ header{
 		background-position: 50% 0;
 		background-repeat: no-repeat;
 		background-color: #f5f6f5;
-		padding-bottom: 160px;
+		padding-bottom: 90px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 	& p{
-		margin-top: 300px;
+		margin-top: -90px;
 		margin-bottom: 55px;
 		font-family: ButtercellBrush-Slaapkops, serif;
-		font-size: 4.27em;
+		font-size: 1.9em;
 		color: $grey;
 	}
 	& .slick-prev{
@@ -135,6 +135,17 @@ header{
 			content: url('../img/slider-arrow.svg');
 			transform: rotate(180deg);
 		}
+	}
+	& .slick-dots li.slick-active button::before {
+		color:$grey;
+		font-size: 10px;
+	}
+	& .slick-dots li button::before {
+		font-size: 10px;
+	}
+	& .slick-dots{
+		bottom: 45px;
+		z-index: 9;
 	}
 }
 
@@ -433,7 +444,7 @@ input[type="submit"]{
 }
 
 .subscribe-stars{
-	width: 100%;
+	width: calc(100% - 20px);
 	position: absolute;
 	bottom: -195px;
 	& img{

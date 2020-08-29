@@ -380,14 +380,14 @@ header {
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-color: #f5f6f5;
-    padding-bottom: 160px;
+    padding-bottom: 90px;
     padding-left: 10px;
     padding-right: 10px; }
   #home-slider p {
-    margin-top: 300px;
+    margin-top: -90px;
     margin-bottom: 55px;
     font-family: ButtercellBrush-Slaapkops, serif;
-    font-size: 4.27em;
+    font-size: 1.9em;
     color: #768C97; }
   #home-slider .slick-prev {
     left: 10px;
@@ -404,6 +404,14 @@ header {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
+  #home-slider .slick-dots li.slick-active button::before {
+    color: #768C97;
+    font-size: 10px; }
+  #home-slider .slick-dots li button::before {
+    font-size: 10px; }
+  #home-slider .slick-dots {
+    bottom: 45px;
+    z-index: 9; }
 
 .yellow-button {
   border-radius: 26px;
@@ -662,7 +670,7 @@ input[type="submit"] {
     width: 100%; }
 
 .subscribe-stars {
-  width: 100%;
+  width: calc(100% - 20px);
   position: absolute;
   bottom: -195px; }
   .subscribe-stars img {
@@ -866,7 +874,10 @@ footer {
   .footer-menu-links {
     padding-left: inherit; }
   #page-title {
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+  #home-slider p {
+    font-size: 2.5em;
+    margin-top: -130px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -877,6 +888,9 @@ footer {
     justify-content: flex-end; }
   #home-features {
     padding-bottom: 190px; }
+  #home-slider p {
+    font-size: 4.27em;
+    margin-top: -150px; }
   #slaapblogs .blog-post-title {
     min-height: 90px;
     margin-bottom: 0; }
@@ -898,7 +912,9 @@ footer {
     padding-bottom: 150px; }
   #resultaten {
     padding-bottom: 150px;
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+  #home-slider .item-home-slider {
+    padding-bottom: 160px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
