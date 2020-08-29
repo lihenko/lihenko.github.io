@@ -353,7 +353,6 @@ header {
   .brand img {
     max-width: 163px;
     margin-top: 10px;
-    margin-bottom: -50px;
     z-index: 99;
     position: relative; }
 
@@ -373,7 +372,6 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 144px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -386,7 +384,7 @@ header {
     padding-left: 10px;
     padding-right: 10px; }
   #home-slider p {
-    margin-top: 30vh;
+    margin-top: 300px;
     margin-bottom: 55px;
     font-family: ButtercellBrush-Slaapkops, serif;
     font-size: 4.27em;
@@ -452,7 +450,8 @@ header {
 
 #home-features {
   position: relative;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  padding-top: 60px; }
 
 .slaapcoach-bottom-curve {
   position: absolute;
@@ -471,12 +470,14 @@ header {
     margin-right: 10px;
     margin-top: -40px;
     padding: 33px; }
-  #slaapblogs .blog-post-title {
+  #slaapblogs .blog-post-title a {
     font-size: 1.44em;
     font-weight: 700;
     color: #958671;
     letter-spacing: 0;
     margin-bottom: 20px; }
+    #slaapblogs .blog-post-title a:hover {
+      color: #E9941E; }
   #slaapblogs .blog-post-read-more a {
     color: #768C97; }
     #slaapblogs .blog-post-read-more a:after {
@@ -623,7 +624,7 @@ header {
     letter-spacing: 1.2px; }
   #subscribe form {
     position: relative;
-    text-align: right; }
+    text-align: center; }
 
 input[type="text"], input[type="email"], input[type="tel"] {
   font-family: SourceSansPro-Slaapkops, sans-serif;
@@ -778,6 +779,9 @@ footer {
     .cookie-button a:hover {
       background-color: #958671; }
 
+.footer-menu-links {
+  padding-left: 14%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -802,7 +806,9 @@ footer {
     top: 0;
     right: 0; }
   .subscribe-stars {
-    bottom: -257px; } }
+    bottom: -257px; }
+  .footer-menu-links {
+    padding-left: inherit; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -827,7 +833,9 @@ footer {
     justify-content: space-between; }
   footer h5 {
     margin-top: 32px;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .brand img {
+    margin-bottom: -50px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
