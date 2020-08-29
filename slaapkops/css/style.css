@@ -44,8 +44,8 @@ h1, h2, h3, h4 {
   font-family: ButtercellBrush-Slaapkops, serif; }
 
 h1 {
-  font-size: 3.3em;
-  line-height: 0.95; }
+  font-size: 2.5em;
+  line-height: 1.5; }
 
 h2 {
   font-size: 2.44em;
@@ -434,19 +434,21 @@ header {
   font-weight: 700;
   color: #958671; }
 
-#slaapcoach-list {
+.slaapcoach-list {
   list-style: none;
   padding: 0;
   margin: 0; }
-  #slaapcoach-list li {
+  .slaapcoach-list li {
     position: relative;
     padding-left: 55px;
     margin-bottom: 25px; }
-    #slaapcoach-list li:before {
+    .slaapcoach-list li:before {
       content: url("../img/Checkmark.svg");
       position: absolute;
       left: 0;
       top: -2px; }
+  .slaapcoach-list.orange li:before {
+    content: url("../img/checkmark-orange.svg"); }
 
 #home-features {
   position: relative;
@@ -782,6 +784,60 @@ footer {
 .footer-menu-links {
   padding-left: 14%; }
 
+#page-title {
+  background-color: #f5f6f5;
+  padding-bottom: 60px;
+  position: relative; }
+  #page-title .page-title-bottom-curve {
+    position: absolute;
+    bottom: -1px;
+    width: 100%; }
+    #page-title .page-title-bottom-curve img {
+      width: 100%; }
+
+.breadcrumbs svg {
+  margin-bottom: 2px;
+  margin-right: 7px; }
+
+#diensten {
+  padding: 20px 0 60px; }
+  #diensten .col-lg-4:first-child .price-box {
+    background: -webkit-linear-gradient(top, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%);
+    background: linear-gradient(180deg, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%); }
+  #diensten .col-lg-4:first-child .plan-price {
+    background-color: #fff; }
+  #diensten .col-lg-4:last-child .price-box {
+    background: -webkit-linear-gradient(top, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%);
+    background: linear-gradient(180deg, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%); }
+  #diensten .col-lg-4:last-child .plan-price {
+    background-color: #fff; }
+
+#slaapcoaching-basis {
+  padding: 80px 0;
+  background: -webkit-linear-gradient(top, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%);
+  background: linear-gradient(180deg, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%); }
+
+#slaapcoaching-uitgebreid {
+  padding: 80px 0;
+  background-color: #F5F6F5; }
+
+#slaapcoaching-op-maat {
+  padding: 80px 0;
+  background: -webkit-linear-gradient(top, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%);
+  background: linear-gradient(180deg, rgba(118, 140, 151, 0.22) 0%, rgba(245, 246, 245, 0) 100%); }
+
+#resultaten {
+  position: relative;
+  padding: 80px 0 60px;
+  border-top: 1px solid #979797;
+  background-color: #768C97;
+  position: relative;
+  margin-bottom: 80px; }
+
+.resultaten-call-to-action {
+  font-size: 1.44em;
+  font-weight: 700; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -808,7 +864,9 @@ footer {
   .subscribe-stars {
     bottom: -257px; }
   .footer-menu-links {
-    padding-left: inherit; } }
+    padding-left: inherit; }
+  #page-title {
+    padding-bottom: 100px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -835,7 +893,12 @@ footer {
     margin-top: 32px;
     margin-bottom: 50px; }
   .brand img {
-    margin-bottom: -50px; } }
+    margin-bottom: -50px; }
+  #page-title {
+    padding-bottom: 150px; }
+  #resultaten {
+    padding-bottom: 150px;
+    margin-bottom: 100px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -843,4 +906,6 @@ footer {
     font-size: 18px; }
   #subscribe form {
     margin-left: 40px;
-    margin-right: 40px; } }
+    margin-right: 40px; }
+  #page-title {
+    padding-bottom: 9vw; } }

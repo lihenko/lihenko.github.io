@@ -172,7 +172,7 @@ header{
 	color: $brown;
 }
 
-#slaapcoach-list{
+.slaapcoach-list{
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -186,6 +186,9 @@ header{
 			left: 0;
 			top: -2px;
 		}
+	}
+	&.orange li:before{
+		content: url('../img/checkmark-orange.svg');
 	}
 }
 
@@ -574,6 +577,80 @@ footer{
 
 .footer-menu-links{
 	padding-left: 14%;
+}
+
+
+
+#page-title{
+	background-color: #f5f6f5;
+	padding-bottom: 60px;
+	position: relative;
+	& .page-title-bottom-curve{
+		position: absolute;
+		bottom: -1px;
+		width: 100%;
+		& img{
+			width: 100%;
+		}
+	}
+}
+
+.breadcrumbs{
+	& svg{
+		margin-bottom: 2px;
+		margin-right: 7px;
+	}
+}
+
+#diensten{
+	padding: 20px 0 60px;
+	& .col-lg-4:first-child{
+		& .price-box{
+			background: linear-gradient(180deg, rgba(118,140,151,0.22) 0%, rgba(245,246,245,0) 100%);
+		}
+		& .plan-price{
+			background-color: #fff;
+		}
+	}
+	& .col-lg-4:last-child{
+		& .price-box{
+			background: linear-gradient(180deg, rgba(118,140,151,0.22) 0%, rgba(245,246,245,0) 100%);
+		}
+		& .plan-price{
+			background-color: #fff;
+		}
+	}
+
+}
+
+#slaapcoaching-basis{
+	padding: 80px 0;
+	  background: linear-gradient(180deg, rgba(118,140,151,0.22) 0%, rgba(245,246,245,0) 100%);
+}
+
+#slaapcoaching-uitgebreid{
+	padding: 80px 0;
+	  background-color: #F5F6F5;
+}
+
+#slaapcoaching-op-maat{
+	padding: 80px 0;
+	  background: linear-gradient(180deg, rgba(118,140,151,0.22) 0%, rgba(245,246,245,0) 100%);
+}
+
+
+#resultaten{
+	position: relative;
+	padding: 80px 0 60px;
+	border-top: 1px solid #979797;
+  	background-color: #768C97;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.resultaten-call-to-action{
+	font-size: 1.44em;
+	font-weight: 700;
 }
 
 @import "media";

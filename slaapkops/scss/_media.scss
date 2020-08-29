@@ -81,6 +81,9 @@
 	.footer-menu-links{
 		padding-left: inherit;
 	}
+	#page-title{
+		padding-bottom: 100px;
+	}
 }
 
 
@@ -107,7 +110,13 @@
 	.brand img{
 		margin-bottom: -50px;
 	}
-	
+	#page-title{
+		padding-bottom: 150px;
+	}
+	#resultaten{
+		padding-bottom: 150px;
+		margin-bottom: 100px;
+	}
 }
 
 
@@ -119,5 +128,8 @@
 	#subscribe form{
 		margin-left: 40px;
 		margin-right: 40px;
+	}
+	#page-title{
+		padding-bottom: 9vw;
 	}
 }
