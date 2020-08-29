@@ -229,14 +229,16 @@ header{
 		margin-top: -40px;
 		padding: 33px;
 	}
-	& .blog-post-title a{
-		font-size: 1.44em;
-		font-weight: 700;
-		color: $brown;
-		letter-spacing: 0;
+	& .blog-post-title{
 		margin-bottom: 20px;
-		&:hover{
-			color:$yellow;
+		& a{
+			font-size: 1.44em;
+			font-weight: 700;
+			color: $brown;
+			letter-spacing: 0;
+			&:hover{
+				color:$yellow;
+			}
 		}
 	}
 	& .blog-post-read-more a{

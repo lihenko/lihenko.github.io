@@ -74,6 +74,10 @@ input::-moz-focus-inner {
   border: 0; 
 }
 
+input:focus{
+	outline: none;
+}
+
 object, embed { 
   outline: none;
 }

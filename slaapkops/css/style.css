@@ -80,6 +80,9 @@ button, button:hover, button:active, button:focus {
 input::-moz-focus-inner {
   border: 0; }
 
+input:focus {
+  outline: none; }
+
 object, embed {
   outline: none; }
 
@@ -480,14 +483,15 @@ header {
     margin-right: 10px;
     margin-top: -40px;
     padding: 33px; }
-  #slaapblogs .blog-post-title a {
-    font-size: 1.44em;
-    font-weight: 700;
-    color: #958671;
-    letter-spacing: 0;
+  #slaapblogs .blog-post-title {
     margin-bottom: 20px; }
-    #slaapblogs .blog-post-title a:hover {
-      color: #E9941E; }
+    #slaapblogs .blog-post-title a {
+      font-size: 1.44em;
+      font-weight: 700;
+      color: #958671;
+      letter-spacing: 0; }
+      #slaapblogs .blog-post-title a:hover {
+        color: #E9941E; }
   #slaapblogs .blog-post-read-more a {
     color: #768C97; }
     #slaapblogs .blog-post-read-more a:after {
