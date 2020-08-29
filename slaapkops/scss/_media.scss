@@ -88,6 +88,18 @@
 		font-size: 2.5em;
 		margin-top: -130px;
 	}
+	.pagenavi .pagenavi-next{
+		margin-left: 30px;
+		& :after{
+			margin-left: 30px;
+		}
+	}
+	.pagenavi .pagenavi-prev{
+		margin-right: 30px;
+		& :before{
+			margin-right: 30px;
+		}
+	}
 }
 
 
