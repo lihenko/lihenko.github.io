@@ -1013,11 +1013,11 @@ footer {
     margin-top: -130px; }
   .pagenavi .pagenavi-next {
     margin-left: 30px; }
-    .pagenavi .pagenavi-next :after {
+    .pagenavi .pagenavi-next:after {
       margin-left: 30px; }
   .pagenavi .pagenavi-prev {
     margin-right: 30px; }
-    .pagenavi .pagenavi-prev :before {
+    .pagenavi .pagenavi-prev:before {
       margin-right: 30px; } }
 
 /* Medium Devices, Desktops */
