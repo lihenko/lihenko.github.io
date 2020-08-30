@@ -983,6 +983,47 @@ footer {
       color: #fff;
       background-color: #AEC4CF; }
 
+#about {
+  padding: 60px 0 90px; }
+  #about .social-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px; }
+    #about .social-buttons a {
+      height: 37px;
+      width: 37px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #958671;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #about .social-buttons a:hover {
+        background-color: #E9941E; }
+      #about .social-buttons a:first-child {
+        margin-left: 0; }
+      #about .social-buttons a:last-child {
+        margin-right: 0; }
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #F5F6F5;
+  margin-top: 5em;
+  margin-bottom: 5em; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
