@@ -100,6 +100,17 @@
 			margin-right: 30px;
 		}
 	}
+	#plog-post{
+		& .post-thumbnail{
+			height: 300px;
+		}
+	}
+	#plog-post{
+		& blockquote{
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+	}
 }
 
 
@@ -143,6 +154,25 @@
 	#contacts{
 		margin-bottom: 0;
 	}
+	#plog-post{
+		& .post-thumbnail{
+			height: 313px;
+			width: 500px;
+			float: right;
+			margin-left: 80px;
+			margin-bottom: 70px;
+			margin-top: 20px;
+		}
+	}
+	#post-call-to-action{
+		& .cta-wrap{
+			padding: 40px 50px;
+		}
+	}
+	#blog-post-author .blog-post-author-wrap{
+		padding-left: 75px;
+		padding-right: 75px;
+	}
 }
 
 
@@ -157,5 +187,28 @@
 	}
 	#page-title{
 		padding-bottom: 9vw;
+	}
+	#plog-post{
+		& h1,h2,h3,h4,h5,h6{
+			padding-left: 75px;
+			padding-right: 75px;
+		}
+		& p{
+			padding-right: 75px;
+			padding-left: 75px;
+		}
+		& blockquote{
+			padding-left: 150px;
+			&:before{
+	  			left: 75px;
+	  		}
+
+		}
+	}
+	#post-call-to-action{
+		& .cta-wrap{
+			margin-left: 75px;
+			margin-right: 75px;
+		}
 	}
 }
