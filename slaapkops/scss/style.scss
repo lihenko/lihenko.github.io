@@ -922,24 +922,23 @@ footer{
 }
 
 img.alignleft, .alignleft {
-    float: left;
-    margin-right: 70px;
-    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    margin-left: 0;
 }
 
 .aligncenter, div.aligncenter, img.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 img.alignright, .alignright {
-    float: right;
-    margin-left: 70px;
-    margin-right: 0;
-    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 
