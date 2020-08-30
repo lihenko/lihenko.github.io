@@ -1147,7 +1147,10 @@ footer {
       content: url("../img/Quote.svg");
       position: absolute;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   #plog-post p {
     margin-bottom: 2em; }
 
