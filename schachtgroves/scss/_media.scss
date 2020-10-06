@@ -1,0 +1,163 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	.yellow-splash{
+		padding-left: 280px;
+		text-align: left;
+		& img{
+			position: absolute;
+			top: -50%;
+			left: -40px;
+			margin-top: unset;
+		}
+
+	}
+
+	.orange-splash{
+		padding-left: 280px;
+		text-align: left;
+		& img{
+			position: absolute;
+			top: -50%;
+			left: -40px;
+			margin-top: unset;
+		}
+
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 16px;
+	}
+	.menu-tel{
+		display: inline-block;
+		margin-right: 15px;
+	}
+	.menu-location{
+		display: inline-block;
+	}
+	.home-hero-slider .item .slide-description{
+		margin-left: 90px;
+		margin-right: 90px;
+	}
+	.home-hero-slider{
+		position: relative;
+		& .slick-prev{
+			width: 55px;
+			height: 55px;
+			left: -30px;
+		}
+		& .slick-next{
+			width: 55px;
+			height: 55px;
+			right: -30px;
+		}
+	}
+	.event-slider .slick-dots{
+		width: 20px;
+		right: -45px;
+		top: 70px;
+		bottom: unset;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	#who-we-are h2{
+		margin-right: 130px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1300px){
+	.container{
+		max-width: 1230px;
+	}
+	#menu .hr{
+		margin-left: 45px;
+		width: calc(100% - 45px);
+	}
+	.main-menu{
+		padding-left: 45px;
+	}
+	.home-hero-slider .item .slide-description{
+		margin-left: 250px;
+		margin-right: 250px;
+	}
+	#menu .menu-cart span{
+		display: inline-block;
+	}
+	#menu .menu-login span{
+		display: inline-block;
+	}
+	#who-we-are{
+		padding-top: 0;
+		& .arrange{
+			margin-top: -30px;
+			& .col-lg-6:nth-child(even) .product-item{
+				margin-top: -45px;
+			}
+		}
+	}
+}
