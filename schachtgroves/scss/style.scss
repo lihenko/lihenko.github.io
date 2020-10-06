@@ -749,12 +749,18 @@ footer{
 		}
 		& td:nth-child(2){
 			text-align: center;
-			position: relative;
 		}
 		& td:nth-child(3){
 			text-align: center;
 			color:$orange;
 			font-weight: 900;
+		}
+		& .quantity{
+			width: 75px;
+			height: 23px;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 	& input[name="quantity"]{
@@ -766,14 +772,16 @@ footer{
 		text-align: center;
 		font-size: 10px;
 		font-weight: 500;
+		line-height: 1;
 	}
 	& .minus{
 		color:$orange;
 		position: absolute;
 		font-size: 10px;
+		line-height: 1;
 		font-weight: 500;
-		left: 21px;
-		top: 16px;
+		left: 10px;
+		top: 44%;
 		cursor:pointer;
 	}
 	& .plus{
@@ -781,8 +789,9 @@ footer{
 		position: absolute;
 		font-size: 10px;
 		font-weight: 500;
-		right: 35px;
-		top: 17px;
+		line-height: 1;
+		right: 10px;
+		top: 46%;
 		cursor:pointer;
 	}
 }

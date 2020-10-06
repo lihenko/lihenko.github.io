@@ -927,12 +927,17 @@ footer {
     #add-to-cart table td:nth-child(1) span {
       font-weight: 400; }
   #add-to-cart table td:nth-child(2) {
-    text-align: center;
-    position: relative; }
+    text-align: center; }
   #add-to-cart table td:nth-child(3) {
     text-align: center;
     color: #F06724;
     font-weight: 900; }
+  #add-to-cart table .quantity {
+    width: 75px;
+    height: 23px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
 
 #add-to-cart input[name="quantity"] {
   width: 75px;
@@ -942,15 +947,17 @@ footer {
   background-color: #FFFFFF;
   text-align: center;
   font-size: 10px;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1; }
 
 #add-to-cart .minus {
   color: #F06724;
   position: absolute;
   font-size: 10px;
+  line-height: 1;
   font-weight: 500;
-  left: 21px;
-  top: 16px;
+  left: 10px;
+  top: 44%;
   cursor: pointer; }
 
 #add-to-cart .plus {
@@ -958,8 +965,9 @@ footer {
   position: absolute;
   font-size: 10px;
   font-weight: 500;
-  right: 35px;
-  top: 17px;
+  line-height: 1;
+  right: 10px;
+  top: 46%;
   cursor: pointer; }
 
 .product-delivery {
