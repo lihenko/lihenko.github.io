@@ -239,7 +239,7 @@
 }
 
 #who-we-are{
-	padding: 60px 0;
+	padding: 60px 0 0;
 }
 
 .product-item{
@@ -652,6 +652,57 @@ footer{
 			}
 		}
 	}
+}
+
+#page-title{
+	background-image: url('../img/hero-bg.png');
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+	& h1{
+		margin: 0;
+	}
+	& .page-subtitle{
+		font-size: 1.31em;
+		font-weight: 900;
+		line-height: 1.2;
+		color: $black;
+	}
+}
+
+#our-products{
+	padding-top: 60px;
+}
+
+.hr.grey{
+	background-color: #ECECEC;
+	margin-top: 75px;
+	margin-bottom: 40px;
+}
+
+#yellow-bullets{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 25px;
+		&:before{
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: $yellow;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 11px;
+		}
+	}
+}
+
+#shipment{
+	margin-bottom: 60px;
 }
 
 @import "media";

@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 h1 {
-  font-size: 3.3em;
+  font-size: 4.68em;
   line-height: 0.95; }
 
 h2 {
@@ -63,8 +63,8 @@ h2 {
   line-height: .95; }
 
 h3 {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 1.44em;
+  line-height: .95; }
 
 h4 {
   font-size: 21px;
@@ -260,6 +260,8 @@ object, embed {
           transition: color 0.3s ease-in-out; }
           .main-menu ul li a:hover {
             color: #F9B019; }
+        .main-menu ul li.current-menu-item a {
+          color: #F9B019; }
   .toggle-btn {
     display: none; }
   .brand {
@@ -494,7 +496,7 @@ object, embed {
   color: #F9B019; }
 
 #who-we-are {
-  padding: 60px 0; }
+  padding: 60px 0 0; }
 
 .product-item {
   display: -webkit-box;
@@ -851,6 +853,48 @@ footer {
       #bottom-bar-menu li a:hover {
         color: #F9B019; }
 
+#page-title {
+  background-image: url("../img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; }
+  #page-title h1 {
+    margin: 0; }
+  #page-title .page-subtitle {
+    font-size: 1.31em;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #231F20; }
+
+#our-products {
+  padding-top: 60px; }
+
+.hr.grey {
+  background-color: #ECECEC;
+  margin-top: 75px;
+  margin-bottom: 40px; }
+
+#yellow-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #yellow-bullets li {
+    position: relative;
+    padding-left: 25px; }
+    #yellow-bullets li:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #F9B019;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 11px; }
+
+#shipment {
+  margin-bottom: 60px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -906,7 +950,9 @@ footer {
     width: 20px;
     right: -45px;
     top: 70px;
-    bottom: unset; } }
+    bottom: unset; }
+  #who-we-are {
+    padding: 60px 0; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
