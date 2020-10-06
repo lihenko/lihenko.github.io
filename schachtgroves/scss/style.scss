@@ -705,4 +705,121 @@ footer{
 	margin-bottom: 60px;
 }
 
+#single-product .single-product-title{
+	font-size: 2.25em;
+	font-weight: 900;
+}
+
+#single-product .single-product-shiping{
+	font-size: 0.87em;
+	font-weight: 300;
+	color: $orange;
+	& span{
+		color:$yellow;
+	}
+}
+
+#add-to-cart{
+	table{
+		width: 100%;
+		& th{
+			padding: 5px 15px 5px 0;
+			text-align: center;
+			color: #D1D1D1;
+			font-size: 10px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 14px;
+		}
+		& tbody tr{
+			border-bottom: 1px solid #ECECEC;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+		& td{
+			padding: 10px 15px 10px 0;
+		}
+
+		& td:nth-child(1){
+			font-weight: 900;
+			& span{
+				font-weight: 400;
+			}
+		}
+		& td:nth-child(2){
+			text-align: center;
+			position: relative;
+		}
+		& td:nth-child(3){
+			text-align: center;
+			color:$orange;
+			font-weight: 900;
+		}
+	}
+	& input[name="quantity"]{
+		width: 75px;
+		height: 23px;
+		border: 1px solid #ECECEC;
+		border-radius: 20px;
+		background-color: #FFFFFF;
+		text-align: center;
+		font-size: 10px;
+		font-weight: 500;
+	}
+	& .minus{
+		color:$orange;
+		position: absolute;
+		font-size: 10px;
+		font-weight: 500;
+		left: 21px;
+		top: 16px;
+		cursor:pointer;
+	}
+	& .plus{
+		color:$orange;
+		position: absolute;
+		font-size: 10px;
+		font-weight: 500;
+		right: 35px;
+		top: 17px;
+		cursor:pointer;
+	}
+}
+
+.product-delivery{
+	background-color: #F7F7F7;
+	padding: 35px;
+	& input{
+		width: 100%;
+		height: 44px;
+		border: 1px solid #DFDFEB;
+		border-radius: 12px;
+		background-color: #FFFFFF;
+		padding: 5px 15px;
+	}
+	& input[name="date"]{
+		padding-right: 45px;
+		background-image: url('../img/calendar.svg');
+		background-repeat: no-repeat;
+		background-position: 93% 10px;
+	}
+	& .gift{
+		line-height: 20px;
+		& span{
+			display: inline-block;
+			vertical-align: text-bottom;
+		}
+	}
+}
+
+.product-delivery-period{
+	color:$yellow;
+	font-size: 14px;
+}
+
+#related-products{
+	padding: 60px 0;
+}
+
 @import "media";

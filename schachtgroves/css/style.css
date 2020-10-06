@@ -895,6 +895,101 @@ footer {
 #shipment {
   margin-bottom: 60px; }
 
+#single-product .single-product-title {
+  font-size: 2.25em;
+  font-weight: 900; }
+
+#single-product .single-product-shiping {
+  font-size: 0.87em;
+  font-weight: 300;
+  color: #F06724; }
+  #single-product .single-product-shiping span {
+    color: #F9B019; }
+
+#add-to-cart table {
+  width: 100%; }
+  #add-to-cart table th {
+    padding: 5px 15px 5px 0;
+    text-align: center;
+    color: #D1D1D1;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 14px; }
+  #add-to-cart table tbody tr {
+    border-bottom: 1px solid #ECECEC; }
+    #add-to-cart table tbody tr:last-child {
+      border-bottom: none; }
+  #add-to-cart table td {
+    padding: 10px 15px 10px 0; }
+  #add-to-cart table td:nth-child(1) {
+    font-weight: 900; }
+    #add-to-cart table td:nth-child(1) span {
+      font-weight: 400; }
+  #add-to-cart table td:nth-child(2) {
+    text-align: center;
+    position: relative; }
+  #add-to-cart table td:nth-child(3) {
+    text-align: center;
+    color: #F06724;
+    font-weight: 900; }
+
+#add-to-cart input[name="quantity"] {
+  width: 75px;
+  height: 23px;
+  border: 1px solid #ECECEC;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500; }
+
+#add-to-cart .minus {
+  color: #F06724;
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  left: 21px;
+  top: 16px;
+  cursor: pointer; }
+
+#add-to-cart .plus {
+  color: #F06724;
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  right: 35px;
+  top: 17px;
+  cursor: pointer; }
+
+.product-delivery {
+  background-color: #F7F7F7;
+  padding: 35px; }
+  .product-delivery input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #DFDFEB;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 5px 15px; }
+  .product-delivery input[name="date"] {
+    padding-right: 45px;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 93% 10px; }
+  .product-delivery .gift {
+    line-height: 20px; }
+    .product-delivery .gift span {
+      display: inline-block;
+      vertical-align: text-bottom; }
+
+.product-delivery-period {
+  color: #F9B019;
+  font-size: 14px; }
+
+#related-products {
+  padding: 60px 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
