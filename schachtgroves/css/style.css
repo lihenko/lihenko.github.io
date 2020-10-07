@@ -1173,6 +1173,67 @@ ul.label-orange {
 #green-is-beautiful {
   padding: 0 0 80px; }
 
+#farm-photos {
+  padding: 60px 0; }
+
+.single-slide .item {
+  width: 100%;
+  height: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 7px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px 0 rgba(226, 232, 236, 0.5);
+  margin: 30px; }
+
+.nav-slide {
+  margin-left: 23px;
+  margin-right: 23px; }
+
+.nav-slide .item {
+  width: 100%;
+  height: 158px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 7px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(226, 232, 236, 0.5);
+  margin: 7px; }
+  .nav-slide .item.slick-current {
+    border-color: #F06724; }
+
+.single-slide {
+  position: relative; }
+  .single-slide .slick-prev {
+    top: 50%;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 55;
+    box-shadow: 0 30px 70px rgba(226, 232, 236, 0.5);
+    border-radius: 5px;
+    left: 0; }
+    .single-slide .slick-prev:before {
+      content: url("../img/slide-arrow.svg");
+      display: block;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .single-slide .slick-next {
+    top: 50%;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 55;
+    box-shadow: 0 30px 70px rgba(226, 232, 236, 0.5);
+    border-radius: 5px;
+    right: 0; }
+    .single-slide .slick-next:before {
+      content: url("../img/slide-arrow.svg");
+      display: block; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1262,6 +1323,16 @@ ul.label-orange {
       width: 55px;
       height: 55px;
       right: -30px; }
+  .single-slide {
+    position: relative; }
+    .single-slide .slick-prev {
+      width: 55px;
+      height: 55px;
+      left: 5px; }
+    .single-slide .slick-next {
+      width: 55px;
+      height: 55px;
+      right: 5px; }
   .event-slider .slick-dots {
     width: 20px;
     right: -45px;
@@ -1277,7 +1348,9 @@ ul.label-orange {
   #citrus-fruit-club {
     padding: 30px 0 0; }
   #river-fruits {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+  .single-slide .item {
+    height: 590px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

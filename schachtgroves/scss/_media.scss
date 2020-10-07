@@ -156,6 +156,19 @@
 			right: -30px;
 		}
 	}
+	.single-slide{
+		position: relative;
+		& .slick-prev{
+			width: 55px;
+			height: 55px;
+			left: 5px;
+		}
+		& .slick-next{
+			width: 55px;
+			height: 55px;
+			right: 5px;
+		}
+	}
 	.event-slider .slick-dots{
 		width: 20px;
 		right: -45px;
@@ -177,6 +190,9 @@
 	}
 	#river-fruits{
 		padding: 60px 0;
+	}
+	.single-slide .item{
+		height: 590px;
 	}
 }
 
