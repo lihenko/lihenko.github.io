@@ -64,6 +64,18 @@
 
 	}
 
+	#gifts-made-easy .yellow-splash{
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		& img{
+			position: relative;
+			top: unset;
+			left: unset;
+			margin-top: -130px;
+		}
+	}
+
 	.orange-splash{
 		padding-left: 280px;
 		text-align: left;
@@ -75,12 +87,44 @@
 		}
 
 	}
+	#our-store .orange-splash{
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		& img{
+			position: relative;
+			top: unset;
+			left: unset;
+			margin-top: -130px;
+		}
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px){
-
+	#gifts-made-easy .yellow-splash{
+		padding-left: 280px;
+		padding-right: 15px;
+		text-align: left;
+		& img{
+			position: absolute;
+			top: -50%;
+			left: -40px;
+			margin-top: unset;
+		}
+	}
+	#our-store .orange-splash{
+		padding-left: 280px;
+		padding-right: 15px;
+		text-align: left;
+		& img{
+			position: absolute;
+			top: -50%;
+			left: -40px;
+			margin-top: unset;
+		}
+	}
 }
 
 
@@ -121,6 +165,16 @@
 	}
 	#who-we-are{
 		padding: 60px 0;
+	}
+	.splash-data{
+		width: 55%;
+		padding-right: 15px;
+	}
+	.splash-buttons{
+		width: 45%;
+	}
+	#citrus-fruit-club{
+		padding: 30px 0 0;
 	}
 }
 

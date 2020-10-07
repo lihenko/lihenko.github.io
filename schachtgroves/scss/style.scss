@@ -831,4 +831,141 @@ footer{
 	padding: 60px 0;
 }
 
+.white-button{
+	color: $orange;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1;
+  	padding: 14px 15px 12px;
+  min-width: 180px;
+  border-radius: 20px;
+  background-color: #fff;
+  border:1px solid $orange;
+  &:hover{
+  	color:#fff;
+  	background-color: $orange;
+  }
+  &.current-button{
+  	color:#fff;
+  	background-color: $orange;
+  }
+}
+
+#about-us{
+	padding: 60px 0;
+}
+
+.font-weight-black{
+	font-weight: 900;
+}
+
+ul.label-orange{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 25px;
+		&:before{
+			content: url('../img/checkmark.svg');
+			position: absolute;
+			left: 0;
+			top: 3px;
+			display: block;
+		}
+	}
+}
+
+.owners-picture-2{
+	border: 7px solid #FFFFFF;
+	border-radius: 5px;
+	background-color: #C3BFBF;
+	box-shadow: 0 30px 70px rgba(226,232,236,0.5);
+}
+
+.splash-buttons{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.splash-buttons .orange-button{
+	border:1px solid $orange;
+	&:hover{
+		background-color: #fff;
+		color:$orange;
+	}
+}
+
+.splash-description{
+	color: #fff;
+	font-size: 0.87em;
+	line-height: 1.35;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#gifts-made-easy{
+	padding-bottom: 60px;
+}
+
+#gifts-made-easy .yellow-splash{
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#gifts-made-easy .splash-title{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#citrus-fruit-club{
+	padding: 60px 0 0;
+	background-image: url('../img/hero-bg.png');
+	background-position: center;
+	background-size: cover;
+}
+
+#our-store{
+	padding: 60px 0;
+}
+
+.splash-buttons .yellow-button{
+	border:1px solid $orange;
+	&:hover{
+		background-color: #fff;
+		color:$orange;
+	}
+}
+
+#our-store .splash-buttons .white-button{
+	&:hover{
+		background-color: $yellow;
+		color:#fff;
+	}
+}
+
+.splash-description{
+	color: #fff;
+	font-size: 0.87em;
+	line-height: 1.35;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#our-store .orange-splash{
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#our-store .splash-title{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 @import "media";
