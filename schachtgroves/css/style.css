@@ -1109,6 +1109,30 @@ ul.label-orange {
   padding-left: 15px;
   padding-right: 15px; }
 
+#our-history {
+  padding: 60px 0 0; }
+  #our-history .container {
+    position: relative;
+    padding-bottom: 60px; }
+
+#gains-momentum {
+  padding: 0; }
+  #gains-momentum .container {
+    position: relative;
+    padding-bottom: 60px; }
+
+#small-grower {
+  padding: 0; }
+  #small-grower .container {
+    position: relative;
+    padding-bottom: 60px; }
+
+#reputation {
+  padding: 0; }
+  #reputation .container {
+    position: relative;
+    padding-bottom: 60px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1216,7 +1240,129 @@ ul.label-orange {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   #who-we-are h2 {
-    margin-right: 130px; } }
+    margin-right: 130px; }
+  #our-history .container {
+    padding-bottom: 120px; }
+  #our-history .container:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #F06724;
+    position: absolute;
+    display: block;
+    left: 0; }
+  #our-history h2:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #F06724;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    left: -15px;
+    top: 0; }
+  #our-history h2:after {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #F9B019;
+    position: absolute;
+    display: block;
+    left: -11px;
+    top: 3.5px; }
+  #gains-momentum .container {
+    padding-bottom: 120px; }
+  #gains-momentum .container:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #F06724;
+    position: absolute;
+    display: block;
+    left: 0; }
+  #gains-momentum h2:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #F06724;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    left: -15px;
+    top: 0; }
+  #gains-momentum h2:after {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #F9B019;
+    position: absolute;
+    display: block;
+    left: -11px;
+    top: 3.5px; }
+  #small-grower .container {
+    padding-bottom: 120px; }
+  #small-grower .container:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #F06724;
+    position: absolute;
+    display: block;
+    left: 0; }
+  #small-grower h2:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #F06724;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    left: -15px;
+    top: 0; }
+  #small-grower h2:after {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #F9B019;
+    position: absolute;
+    display: block;
+    left: -11px;
+    top: 3.5px; }
+  #reputation .container:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #F06724;
+    position: absolute;
+    display: block;
+    left: 0; }
+  #reputation h2:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #F06724;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    left: -15px;
+    top: 0; }
+  #reputation h2:after {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #F9B019;
+    position: absolute;
+    display: block;
+    left: -11px;
+    top: 3.5px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1300px) {

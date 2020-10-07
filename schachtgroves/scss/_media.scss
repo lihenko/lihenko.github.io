@@ -184,6 +184,152 @@
 	#who-we-are h2{
 		margin-right: 130px;
 	}
+	#our-history{
+		& .container{
+			padding-bottom: 120px;
+		}
+		& .container:before{
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: $orange;
+			position: absolute;
+			display: block;
+			left: 0;
+		}
+		& h2:before{
+			content: '';
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			border:1px solid $orange;
+			background-color: #fff;
+			position: absolute;
+			display: block;
+			left: -15px;
+			top: 0;
+		}
+		& h2:after{
+			content: '';
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $yellow;
+			position: absolute;
+			display: block;
+			left: -11px;
+			top: 3.5px;
+		}
+	}
+	#gains-momentum{
+		& .container{
+			padding-bottom: 120px;
+		}
+		& .container:before{
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: $orange;
+			position: absolute;
+			display: block;
+			left: 0;
+		}
+		& h2:before{
+			content: '';
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			border:1px solid $orange;
+			background-color: #fff;
+			position: absolute;
+			display: block;
+			left: -15px;
+			top: 0;
+		}
+		& h2:after{
+			content: '';
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $yellow;
+			position: absolute;
+			display: block;
+			left: -11px;
+			top: 3.5px;
+		}
+	}
+	#small-grower{
+		& .container{
+			padding-bottom: 120px;
+		}
+		& .container:before{
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: $orange;
+			position: absolute;
+			display: block;
+			left: 0;
+		}
+		& h2:before{
+			content: '';
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			border:1px solid $orange;
+			background-color: #fff;
+			position: absolute;
+			display: block;
+			left: -15px;
+			top: 0;
+		}
+		& h2:after{
+			content: '';
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $yellow;
+			position: absolute;
+			display: block;
+			left: -11px;
+			top: 3.5px;
+		}
+	}
+
+	#reputation{
+		& .container:before{
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: $orange;
+			position: absolute;
+			display: block;
+			left: 0;
+		}
+		& h2:before{
+			content: '';
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			border:1px solid $orange;
+			background-color: #fff;
+			position: absolute;
+			display: block;
+			left: -15px;
+			top: 0;
+		}
+		& h2:after{
+			content: '';
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $yellow;
+			position: absolute;
+			display: block;
+			left: -11px;
+			top: 3.5px;
+		}
+	}
 }
 
 /* Large Devices, Wide Screens */
