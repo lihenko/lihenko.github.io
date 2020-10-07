@@ -1133,6 +1133,46 @@ ul.label-orange {
     position: relative;
     padding-bottom: 60px; }
 
+#how-we-operate {
+  padding: 60px 0; }
+  #how-we-operate .line:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #F06724;
+    left: 49%;
+    z-index: -1; }
+  #how-we-operate .lined:last-child .line:before {
+    display: none; }
+
+.process-number {
+  font-weight: 900;
+  position: absolute;
+  color: #F9B019;
+  top: 25px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+#farm-advantage {
+  padding: 60px 0;
+  background-image: url("../img/hero-bg.png");
+  background-position: center;
+  background-size: cover; }
+
+.img-shadow {
+  border: 7px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 30px 70px 0 rgba(226, 232, 236, 0.5); }
+
+#river-fruits {
+  padding: 60px 0 0; }
+
+#green-is-beautiful {
+  padding: 0 0 80px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1235,7 +1275,9 @@ ul.label-orange {
   .splash-buttons {
     width: 45%; }
   #citrus-fruit-club {
-    padding: 30px 0 0; } }
+    padding: 30px 0 0; }
+  #river-fruits {
+    padding: 60px 0; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

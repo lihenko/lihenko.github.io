@@ -1000,4 +1000,57 @@ ul.label-orange{
 	}
 }
 
+#how-we-operate{
+	padding: 60px 0;
+	& .line{
+		&:before{
+			content: '';
+			width: 2px;
+			height: 100%;
+			display: block;
+			position: absolute;
+			background-color: $orange;
+			left: 49%;
+    		z-index: -1;
+		}
+		
+	}
+	& .lined:last-child .line{
+		&:before{
+			display: none;
+		}
+	}
+}
+
+.process-number{
+	font-weight: 900;
+	position: absolute;
+	color: $yellow;
+	top: 25px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#farm-advantage{
+	padding: 60px 0;
+	background-image: url('../img/hero-bg.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.img-shadow{
+	border: 7px solid #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 30px 70px 0 rgba(226,232,236,0.5);
+}
+
+#river-fruits{
+	padding: 60px 0 0;
+}
+
+#green-is-beautiful{
+	padding: 0 0 80px;
+}
+
 @import "media";
