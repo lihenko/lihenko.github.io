@@ -1257,6 +1257,83 @@ ul.label-orange {
   #faq .list-unstyled {
     font-weight: 500; }
 
+#contact-form {
+  padding: 60px 0; }
+  #contact-form .address {
+    font-size: 1.37em;
+    font-weight: 900;
+    position: relative;
+    padding-left: 55px; }
+    #contact-form .address:before {
+      content: url("../img/Location-1.svg");
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  #contact-form .phone {
+    font-size: 1.37em;
+    font-weight: 900;
+    position: relative;
+    padding-left: 55px; }
+    #contact-form .phone:before {
+      content: url("../img/Phone-1.svg");
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  #contact-form .email {
+    font-size: 1.37em;
+    font-weight: 900;
+    position: relative;
+    padding-left: 55px; }
+    #contact-form .email:before {
+      content: url("../img/Email-1.svg");
+      position: absolute;
+      left: 0;
+      top: 0; }
+  #contact-form .form-wrap {
+    background-color: #F06724;
+    padding: 45px 45px 40px;
+    border-radius: 5px;
+    box-shadow: 0 30px 70px rgba(226, 232, 236, 0.5); }
+    #contact-form .form-wrap input[type="text"] {
+      width: 100%;
+      height: 44px;
+      border: 1px solid #DFDFEB;
+      border-radius: 12px;
+      background-color: #FFFFFF;
+      padding: 5px 15px; }
+    #contact-form .form-wrap input[type="email"] {
+      width: 100%;
+      height: 44px;
+      border: 1px solid #DFDFEB;
+      border-radius: 12px;
+      background-color: #FFFFFF;
+      padding: 5px 15px; }
+    #contact-form .form-wrap textarea {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #DFDFEB;
+      border-radius: 12px;
+      background-color: #FFFFFF;
+      padding: 5px 15px; }
+    #contact-form .form-wrap input[type="submit"]:hover {
+      background-color: #fff;
+      color: #F06724; }
+
+#map {
+  height: 496px; }
+
+#our-address {
+  padding: 30px 0 60px; }
+  #our-address .address-title {
+    color: #F06724;
+    font-size: 1.5em;
+    font-weight: 900; }
+
+#store .store-hours {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #F06724; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
