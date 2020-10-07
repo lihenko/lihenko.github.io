@@ -1001,7 +1001,7 @@ ul.label-orange{
 }
 
 #how-we-operate{
-	padding: 60px 0;
+	padding: 60px 0 10px;
 	& .line{
 		&:before{
 			content: '';
@@ -1121,6 +1121,10 @@ ul.label-orange{
 		    display: block;
 		}
 	}
+}
+
+#rentals{
+	padding-top: 60px;
 }
 
 @import "media";
