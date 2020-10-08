@@ -8,16 +8,47 @@
 </head>
 <body>
 <div class="fullscreen-wrapper">
+	<div class="main-menu">
+		<div class="main-nav">
+		    <div class="menu-primary-menu-container">
+		    	<ul id="primary-menu" class="menu">
+		    		<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-236"><a href="#hero">HOME</a>
+					</li>
+					<li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-237"><a href="#about">ABOUT</a>
+					</li>
+					<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="#listen">LISTEN</a>
+					</li>
+					<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="#video">VIDEOS</a>
+					</li>
+					<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="#gallery">GALLERY</a>
+					</li>
+					<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</div>						
+		</div><!-- #main-nav -->
+	</div>
+	<div class="toggle-btn">
+		<span class="menu-title">MENU</span>
+        <span class="hamburger">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </span>
+   	</div>
 	<section id="hero" class="fullscreen">
-		<div class="author">
+		<video playsinline autoplay muted loop poster="img/hero-bg.jpg" id="bgvid">
+		  <source src="video/Pietro.mp4" type="video/mp4">
+		</video>
+		<!--<div class="author">
 			PIETRO BORRADORI
-		</div>
+		</div>-->
 		<div class="mute">
 			<a href="#" class="volume"><img src="img/volume.svg" alt=""></a>
 		</div>
+		<!--
 		<div class="dual">
 			DUAL
-		</div>
+		</div> -->
 		<div class="next-screen">
 			<a href="#about">
 				<img src="img/second-arrow.svg" alt="" class="second-arrow">
@@ -288,6 +319,54 @@
 			DUAL C -VIDEO VERSION
 		</div>
 		<a href="#" class="shadow-button">PLAY</a>
+	</section>
+	<section id="gallery" class="fullscreen">
+		
+	</section>
+	<section id="contact">
+		<div class="container">
+			<div class="subscribe-title">
+				NEWSLETTER
+			</div>
+			<div class="subscribe-description">
+				Subscribe to Newsletter
+			</div>
+			<form action="#">
+				<input type="email" placeholder="Email Address">
+				<input type="submit" value="SEND">
+			</form>
+			<div class="social-title">
+				SOCIAL
+			</div>
+			<div class="social-list">
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<img src="img/youtube.png" alt="YouTube">
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="img/instagram.png" alt="Instagram">
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="img/facebook.png" alt="Facebook">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contact-title">
+				CONTACT
+			</div>
+			<div class="contacts">
+				<i>General inquires:</i><br>
+				<a href="mailto:info@pietroborradori.com">info@pietroborradori.com</a><br>
+				<i>For proposals:</i><br>
+				<a href="mailto:proposals@pietroborradori.com">proposals@pietroborradori.com</a>
+			</div>
+		</div>
 	</section>
 </div>
 
