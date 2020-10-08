@@ -67,6 +67,9 @@
 	.col-30{
 		max-width: 33%;
 	}
+	.col-60{
+		max-width: 66%;
+	}
 	.track-list-title{
 		margin-top: 68px;
 	}
@@ -78,5 +81,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px){
-
+	.album-description{
+		padding-right: 150px;
+	}
+	.thanks-list{
+		padding-right: 150px;
+	}
 }

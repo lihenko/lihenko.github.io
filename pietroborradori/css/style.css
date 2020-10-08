@@ -273,7 +273,7 @@ object, embed {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  height: calc(100vh - 30px);
+  min-height: calc(100vh - 30px);
   position: relative; }
 
 img {
@@ -372,7 +372,10 @@ img {
   font-size: 20px;
   box-shadow: 15px 0px 0px 0px rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
   .shadow-button:hover {
     color: #fff;
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
@@ -457,6 +460,44 @@ img {
   .steam-list-icon li {
     margin-bottom: 10px; }
 
+.album-description {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #786e6e; }
+  .album-description strong {
+    font-weight: 700; }
+
+.thanks-list {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #786e6e; }
+
+#video {
+  background-image: url("../img/video-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+  #video .video-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #fff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -472,9 +513,16 @@ img {
 @media only screen and (min-width: 992px) {
   .col-30 {
     max-width: 33%; }
+  .col-60 {
+    max-width: 66%; }
   .track-list-title {
     margin-top: 68px; }
   .stream-list-title {
     margin-top: 68px; } }
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .album-description {
+    padding-right: 150px; }
+  .thanks-list {
+    padding-right: 150px; } }
