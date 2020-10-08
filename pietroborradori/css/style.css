@@ -1,24 +1,24 @@
 @import url(../libs/normalize-css/normalize.css);
 @font-face {
-  font-family: 'Arquitecta';
+  font-family: 'Arquitecta-Borradori';
   src: url("../fonts/Arquitecta.otf");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Arquitecta';
+  font-family: 'Arquitecta-Borradori';
   src: url("../fonts/ArquitectaBold.otf");
   font-weight: 700;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Arquitecta';
+  font-family: 'Arquitecta-Borradori';
   src: url("../fonts/ArquitectaLight.otf");
   font-weight: 300;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Arquitecta';
+  font-family: 'Arquitecta-Borradori';
   src: url("../fonts/ArquitectaLight-Italic.otf");
   font-weight: 300;
   font-style: italic;
@@ -36,11 +36,11 @@ body {
   color: #362e2e;
   font-size: 20px;
   line-height: 1.2;
-  font-family: Arquitecta, sans-serif;
+  font-family: Arquitecta-Borradori, sans-serif;
   overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arquitecta, sans-serif; }
+  font-family: Arquitecta-Borradori, sans-serif; }
 
 h1 {
   font-size: 3.3em;
