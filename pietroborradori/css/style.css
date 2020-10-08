@@ -84,24 +84,24 @@ object, embed {
   outline: none; }
 
 ::-webkit-input-placeholder {
-  color: rgba(39, 34, 34, 0.5);
-  opacity: 1; }
+  color: #fff;
+  opacity: 0.8; }
 
 ::-moz-placeholder {
-  color: rgba(39, 34, 34, 0.5);
-  opacity: 1; }
+  color: #fff;
+  opacity: 0.8; }
 
 :-ms-input-placeholder {
-  color: rgba(39, 34, 34, 0.5);
-  opacity: 1; }
+  color: #fff;
+  opacity: 0.8; }
 
 ::-ms-input-placeholder {
-  color: rgba(39, 34, 34, 0.5);
-  opacity: 1; }
+  color: #fff;
+  opacity: 0.8; }
 
 ::placeholder {
-  color: rgba(39, 34, 34, 0.5);
-  opacity: 1; }
+  color: #fff;
+  opacity: 0.8; }
 
 .main-menu {
   position: fixed;
@@ -526,6 +526,17 @@ img {
     padding: 20px 30px; }
   #contact form {
     margin-bottom: 30px; }
+    #contact form input[type="email"] {
+      background-color: #e5e5e5;
+      border: none;
+      padding: 10px;
+      margin-right: 15px; }
+    #contact form input[type="submit"] {
+      color: #fff;
+      background-color: #999999;
+      border: none;
+      border-radius: 30px;
+      padding: 7px 25px; }
 
 .contacts {
   font-size: 1.5em;
