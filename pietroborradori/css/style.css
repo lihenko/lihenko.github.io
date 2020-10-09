@@ -194,7 +194,7 @@ object, embed {
   position: fixed;
   top: 20px;
   right: 30px;
-  z-index: 9999999; }
+  z-index: 999; }
 
 .toggle-btn .hamburger {
   background-color: transparent;
@@ -582,6 +582,54 @@ video {
   .gallery-wrap a:nth-child(5) {
     grid-row: 2 / 4;
     grid-column: 3/4; }
+  .gallery-wrap img {
+    display: none; }
+
+.image-source-link {
+  color: #98C3D1; }
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1; }
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0; }
+
+.mfp-bottom-bar {
+  display: none; }
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
