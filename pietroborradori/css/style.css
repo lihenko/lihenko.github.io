@@ -109,7 +109,7 @@ object, embed {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.49);
+  background-color: rgba(38, 38, 38, 0.49);
   z-index: 99;
   -webkit-transform: translateX(200%);
   -ms-transform: translateX(200%);
@@ -122,15 +122,16 @@ object, embed {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   overflow-y: auto; }
   .main-menu ul {
@@ -146,19 +147,19 @@ object, embed {
       .main-menu ul li a {
         position: relative;
         color: #fff;
-        font-size: 24px;
+        font-size: 1.2em;
         font-weight: 700;
-        line-height: 2em;
+        line-height: 5vh;
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        letter-spacing: 0.21em;
+        letter-spacing: 0.3em;
         text-transform: uppercase;
         -webkit-transition: color 0.3s ease-in-out;
         transition: color 0.3s ease-in-out; }
         .main-menu ul li a:hover {
-          color: #ffaa16; }
+          color: #c76b83; }
 
 .main-menu.open {
   -webkit-transform: translateX(0%);
@@ -631,6 +632,28 @@ video {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0; }
 
+.stream-buttons {
+  width: 100%;
+  position: absolute;
+  padding-left: 60px;
+  padding-right: 60px;
+  bottom: 30px; }
+  .stream-buttons ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .stream-buttons ul li {
+      padding: 0;
+      margin-bottom: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -661,3 +684,8 @@ video {
     padding-right: 150px; }
   .thanks-list {
     padding-right: 150px; } }
+
+@media only screen and (max-height: 530px) {
+  .stream-buttons {
+    position: relative;
+    margin-top: 30px; } }
