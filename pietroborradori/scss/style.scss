@@ -124,6 +124,8 @@ img{
 	}
 	& a{
 		padding: 10px;
+		width: 60px;
+		display: inline-flex;
 	}
 	& a:hover .first-arrow{
 		margin-top: 10px;
