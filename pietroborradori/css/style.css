@@ -302,9 +302,7 @@ img {
   margin-top: 30px; }
 
 #hero {
-  background-image: url("../img/hero-bg.jpg");
-  background-position: center;
-  background-size: cover; }
+  background-color: #000; }
   #hero .author {
     color: #fff;
     margin-bottom: 1.25em;
@@ -325,7 +323,8 @@ img {
 #about {
   background-image: url("../img/pietrophoto.jpg");
   background-position: 80% 50%;
-  background-size: cover; }
+  background-repeat: no-repeat;
+  background-color: #000; }
   #about .about-text {
     position: absolute;
     bottom: 90px;
@@ -478,7 +477,8 @@ img {
 #video {
   background-image: url("../img/video-bg.jpg");
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -560,8 +560,6 @@ img {
   padding: 0; }
 
 video {
-  object-fit: cover;
-  object-position: 50% 100%;
   width: 100vw;
   height: 100vh;
   position: fixed;
