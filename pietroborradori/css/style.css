@@ -160,6 +160,14 @@ object, embed {
         transition: color 0.3s ease-in-out; }
         .main-menu ul li a:hover {
           color: #c76b83; }
+      .main-menu ul li:nth-child(1) a {
+        letter-spacing: 1.05em; }
+      .main-menu ul li:nth-child(2) a {
+        letter-spacing: .65em; }
+      .main-menu ul li:nth-child(3) a {
+        letter-spacing: .55em; }
+      .main-menu ul li:nth-child(4) a {
+        letter-spacing: .5em; }
 
 .main-menu.open {
   -webkit-transform: translateX(0%);
@@ -560,6 +568,8 @@ img {
   padding: 0; }
 
 video {
+  object-fit: cover;
+  object-position: 50% 100%;
   width: 100vw;
   height: 100vh;
   position: fixed;
