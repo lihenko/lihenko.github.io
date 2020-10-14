@@ -310,7 +310,8 @@ img {
   margin-top: 30px; }
 
 #hero {
-  background-color: #000; }
+  background-color: #000;
+  height: calc(var(--vh, 1vh) * 100); }
   #hero .author {
     color: #fff;
     margin-bottom: 1.25em;

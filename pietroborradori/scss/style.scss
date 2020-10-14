@@ -68,6 +68,7 @@ img{
 	//background-position: center;
 	//background-size: cover;
 	background-color: #000;
+	height: calc(var(--vh, 1vh) * 100);
 	& .author{
 		color: #fff;
 		margin-bottom: 1.25em;
