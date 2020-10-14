@@ -331,6 +331,7 @@ img {
 #about {
   background-image: url("../img/pietrophoto.jpg");
   background-position: 80% 50%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000; }
   #about .about-text {
@@ -569,14 +570,17 @@ img {
   padding: 0; }
 
 video {
-  object-fit: cover;
-  object-position: 50% 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
   width: 100vw;
   height: 100vh;
   position: fixed;
   display: block;
   right: 0;
   bottom: 0; }
+
+#bgviddesctop {
+  display: none; }
 
 .gallery-wrap {
   display: grid;
@@ -698,7 +702,14 @@ video {
   .fullscreen {
     min-height: 100vh; }
   .container {
-    min-height: calc(100vh - 30px); } }
+    min-height: calc(100vh - 30px); }
+  #bgvidmobile {
+    display: none; }
+  #bgviddesctop {
+    display: block; }
+  video {
+    object-fit: cover;
+    object-position: 50% 100%; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

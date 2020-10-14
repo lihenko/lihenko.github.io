@@ -88,6 +88,16 @@
 	.container{
 		min-height: calc(100vh - 30px);
 	}
+	#bgvidmobile{
+		display: none;
+	}
+	#bgviddesctop{
+		display: block;
+	}
+	video {
+	  object-fit: cover;
+	  object-position: 50% 100%;
+	}
 }
 
 
