@@ -79,6 +79,15 @@
 	body{
 		font-size: 20px;
 	}
+	.fullscreen-wrapper{
+		min-height: 100vh;
+	}
+	.fullscreen{
+		min-height: 100vh;
+	}
+	.container{
+		min-height: calc(100vh - 30px);
+	}
 }
 
 

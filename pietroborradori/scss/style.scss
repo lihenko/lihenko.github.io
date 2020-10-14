@@ -16,7 +16,7 @@ section{
 }
 
 .fullscreen{
-	min-height: 100vh;
+	min-height: calc(100vh - 55px);
 	padding: 20px 30px;
 	position: relative;
 }
@@ -24,7 +24,7 @@ section{
 .container{
 	max-width: 1300px;
 	margin: 0 auto;
-	min-height: calc(100vh - 30px);
+	min-height: calc(100vh - 85px);
 	position: relative;
 }
 
@@ -68,7 +68,6 @@ img{
 	//background-position: center;
 	//background-size: cover;
 	background-color: #000;
-	height: calc(var(--vh, 1vh) * 100);
 	& .author{
 		color: #fff;
 		margin-bottom: 1.25em;
@@ -274,7 +273,7 @@ img{
 #video{
 	background-image: url('../img/video-bg.jpg');
 	background-position: center;
-	//background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
 	display: flex;
