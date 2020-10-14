@@ -137,7 +137,7 @@ object, embed {
   .main-menu ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0 0 0 38px; }
     .main-menu ul li {
       display: block;
       padding-left: 24px;
@@ -173,6 +173,9 @@ object, embed {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
+
+.menu-open .menu-title {
+  display: none; }
 
 .main-menu .menu-button a {
   padding: 18px 65px;
