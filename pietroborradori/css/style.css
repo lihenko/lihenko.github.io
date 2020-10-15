@@ -347,6 +347,23 @@ img {
       font-size: 1.2em;
       font-weight: 300; }
 
+#about2 {
+  background-image: url("../img/pietrophoto.jpg");
+  background-position: 80% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  display: none; }
+  #about2 .about-text {
+    position: absolute;
+    bottom: 90px;
+    color: #fff;
+    max-width: 520px; }
+    #about2 .about-text p {
+      margin-bottom: 70px;
+      font-size: 1.2em;
+      font-weight: 300; }
+
 .next-screen {
   position: absolute;
   bottom: 5vh;

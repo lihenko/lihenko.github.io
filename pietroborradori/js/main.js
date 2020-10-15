@@ -1,3 +1,13 @@
+$(document).ready(function(){
+    $('#about .shadow-button').click(function() {
+      event.preventDefault();
+      var $page = $('html, body');
+      $('#about2').show();
+      $page.animate({
+            scrollTop: $('#about2').offset().top
+        }, 600);
+    });
+});
 
 $(document).ready(function() {
   $('.gallery-wrap').magnificPopup({
@@ -47,3 +57,4 @@ $(document).ready(function(){
         return false;
     });
 });
+
