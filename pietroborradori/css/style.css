@@ -742,3 +742,7 @@ video {
   .stream-buttons {
     position: relative;
     margin-top: 30px; } }
+
+@media only screen and (min-width: 992px) and (min-height: 800px) {
+  body {
+    overflow-y: hidden; } }
