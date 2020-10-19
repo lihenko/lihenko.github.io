@@ -76,6 +76,7 @@ img{
 		position: relative;
 	}
 	& .dual{
+		display: none;
 		position: relative;
 		text-align: center;
 		margin-top: 2vh;
@@ -383,8 +384,8 @@ img{
 }
 
 video {
-  object-fit: contain;
-  object-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 75%;
   width: 100vw;
   height: 100vh;
   position: fixed;

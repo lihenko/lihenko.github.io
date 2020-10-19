@@ -321,6 +321,7 @@ img {
     letter-spacing: 0.25em;
     position: relative; }
   #hero .dual {
+    display: none;
     position: relative;
     text-align: center;
     margin-top: 2vh;
@@ -590,8 +591,8 @@ img {
   padding: 0; }
 
 video {
-  object-fit: contain;
-  object-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 75%;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -729,7 +730,7 @@ video {
     display: block; }
   video {
     object-fit: cover;
-    object-position: 50% 100%; } }
+    object-position: 50% 50%; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
