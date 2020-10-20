@@ -729,7 +729,7 @@ video {
   #bgviddesctop {
     display: block; }
   video {
-    object-fit: contain;
+    object-fit: cover;
     object-position: 50% 50%; } }
 
 /* Large Devices, Wide Screens */
