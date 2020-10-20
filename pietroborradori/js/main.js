@@ -1,7 +1,27 @@
-$("#mute .volume").click(function() {
-        var bool = $("#player audio").prop("muted");
-        $("#player audio").prop("muted",!bool);
+
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
 });
+
+
+const button = document.querySelector("#volume");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  event.preventDefault();
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    
+  } else {
+    audio.pause();
+
+  }
+
+});
+
 
 $(document).ready(function(){
     $('#about .shadow-button').click(function() {
