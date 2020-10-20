@@ -1,25 +1,24 @@
 
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
 
+$(document).ready(function() {
+  var playing = false;
+  
+  $('a#volume').click(function() {
+      event.preventDefault();
+      if (playing == false) {
+          document.getElementById('player').play();
+          playing = true;
 
-const button = document.querySelector("#volume");
-const audio = document.querySelector("audio");
+      } else {
+        document.getElementById('player').pause();
+        playing = false;
+      }
 
-button.addEventListener("click", () => {
-  event.preventDefault();
-  if (audio.paused) {
-    audio.volume = 0.2;
-    audio.play();
-    
-  } else {
-    audio.pause();
-
-  }
-
+  });
+  setTimeout(function(){
+        document.getElementById('player').play();
+        playing = true;
+    },100);
 });
 
 
