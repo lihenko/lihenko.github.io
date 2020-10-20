@@ -1,3 +1,8 @@
+$("#mute .volume").click(function() {
+        var bool = $("#player audio").prop("muted");
+        $("#player audio").prop("muted",!bool);
+});
+
 $(document).ready(function(){
     $('#about .shadow-button').click(function() {
       event.preventDefault();
