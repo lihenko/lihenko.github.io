@@ -124,3 +124,21 @@
 		overflow-y: hidden;
 	}
 }
+
+@media (orientation: landscape) {
+	#bgvidmobile{
+		display: none;
+	}
+	#bgviddesctop{
+		display: block;
+	}
+}
+
+@media only screen and (min-width : 2000px){
+	#bgviddesctop{
+		display: none;
+	}
+	#bgvidwide{
+		display: block;
+	}
+}

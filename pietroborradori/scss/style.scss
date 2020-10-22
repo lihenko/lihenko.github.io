@@ -91,7 +91,7 @@ img{
 }
 
 #about{
-	background-image: url('../img/pietrophoto.jpg');
+	background-image: url('../img/upscaled-retouched-photo-blur.jpg');
 	background-position: 80% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -110,7 +110,7 @@ img{
 }
 
 #about2{
-	background-image: url('../img/pietrophoto.jpg');
+	background-image: url('../img/upscaled-retouched-photo-blur.jpg');
 	background-position: 80% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -395,6 +395,10 @@ video {
 }
 
 #bgviddesctop{
+	display: none;
+}
+
+#bgvidwide{
 	display: none;
 }
 

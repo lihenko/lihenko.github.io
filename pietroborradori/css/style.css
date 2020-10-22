@@ -333,7 +333,7 @@ img {
     position: relative; }
 
 #about {
-  background-image: url("../img/pietrophoto.jpg");
+  background-image: url("../img/upscaled-retouched-photo-blur.jpg");
   background-position: 80% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ img {
       font-weight: 300; }
 
 #about2 {
-  background-image: url("../img/pietrophoto.jpg");
+  background-image: url("../img/upscaled-retouched-photo-blur.jpg");
   background-position: 80% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -603,6 +603,9 @@ video {
 #bgviddesctop {
   display: none; }
 
+#bgvidwide {
+  display: none; }
+
 .gallery-wrap {
   display: grid;
   grid-gap: 0;
@@ -747,3 +750,15 @@ video {
 @media only screen and (min-width: 992px) and (min-height: 800px) {
   body {
     overflow-y: hidden; } }
+
+@media (orientation: landscape) {
+  #bgvidmobile {
+    display: none; }
+  #bgviddesctop {
+    display: block; } }
+
+@media only screen and (min-width: 2000px) {
+  #bgviddesctop {
+    display: none; }
+  #bgvidwide {
+    display: block; } }
