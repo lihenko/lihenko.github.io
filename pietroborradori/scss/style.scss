@@ -86,7 +86,10 @@ img{
 		letter-spacing: .25em;
 	}
 	& #mute{
-		position: relative;
+		position: fixed;
+		left: 30px;
+		top: 50px;
+		z-index: 99;
 		& img{
 			width: 25px;
 		}
@@ -218,6 +221,9 @@ img{
 
 .album-cover{
 	margin-bottom: 15px;
+	& img {
+		max-width:490px;
+	}
 }
 
 .album-format{
