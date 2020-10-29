@@ -252,7 +252,9 @@ object, embed {
   .menu-title {
     display: none; }
   .main-menu ul li {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .toggle-btn {
+    top: 23px; } }
 
 section {
   position: relative;
@@ -335,7 +337,7 @@ img {
   #hero #mute {
     position: fixed;
     left: 30px;
-    top: 22px;
+    top: 17px;
     z-index: 99; }
     #hero #mute img {
       width: 25px; }
@@ -370,7 +372,7 @@ img {
   background-color: #000;
   display: none; }
   #about2 .about-text {
-    bottom: 90px;
+    margin-top: 8vh;
     color: #fff;
     max-width: 520px; }
     #about2 .about-text p {
@@ -716,6 +718,9 @@ video {
       padding: 0;
       margin-bottom: 0; }
 
+.d-none {
+  display: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -753,7 +758,13 @@ video {
     display: block; }
   video {
     object-fit: cover;
-    object-position: 50% 50%; } }
+    object-position: 50% 50%; }
+  #hero #mute {
+    top: 22px; }
+  .d-lg-inlineblock {
+    display: inline-block; }
+  .d-lg-none {
+    display: none; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
