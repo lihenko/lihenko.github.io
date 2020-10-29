@@ -74,6 +74,7 @@ img{
 		font-weight: 700;
 		letter-spacing: 0.25em;
 		position: relative;
+		margin-left: 50px;
 	}
 	& .dual{
 		display: none;
@@ -88,7 +89,7 @@ img{
 	& #mute{
 		position: fixed;
 		left: 30px;
-		top: 50px;
+		top: 22px;
 		z-index: 99;
 		& img{
 			width: 25px;
