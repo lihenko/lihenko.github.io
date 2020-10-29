@@ -334,7 +334,7 @@ img {
   #hero #mute {
     position: relative; }
     #hero #mute img {
-      width: 30px; }
+      width: 25px; }
     #hero #mute a.muted {
       display: none; }
     #hero #mute.muted a.speaker {
@@ -366,12 +366,11 @@ img {
   background-color: #000;
   display: none; }
   #about2 .about-text {
-    position: absolute;
     bottom: 90px;
     color: #fff;
     max-width: 520px; }
     #about2 .about-text p {
-      margin-bottom: 70px;
+      margin-bottom: 30px;
       font-size: 1.2em;
       font-weight: 300; }
 
@@ -741,6 +740,8 @@ video {
     min-height: 100vh; }
   .container {
     min-height: calc(100vh - 30px); }
+  #about2 .container {
+    min-height: calc(100vh - 60px); }
   #bgvidmobile {
     display: none; }
   #bgviddesctop {
