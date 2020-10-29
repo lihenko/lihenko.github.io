@@ -451,9 +451,8 @@ img {
   margin-bottom: 15px; }
 
 .album-cover {
-  margin-bottom: 15px; }
-  .album-cover img {
-    max-width: 490px; }
+  margin-bottom: 15px;
+  max-width: 490px; }
 
 .album-format {
   font-weight: 300;
