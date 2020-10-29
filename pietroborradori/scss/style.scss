@@ -40,7 +40,7 @@ img{
 	margin-right: -15px;
 }
 
-.col-30{
+.col-30, .col-60{
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -87,6 +87,18 @@ img{
 	}
 	& #mute{
 		position: relative;
+		& img{
+			width: 30px;
+		}
+		& a.muted{
+			display: none;
+		}
+		&.muted a.speaker{
+			display: none;
+		}
+		&.muted a.muted{
+			display: block;
+		}
 	}
 }
 
@@ -343,6 +355,9 @@ img{
 #contact{
 	padding-top: 80px;
 	padding-bottom: 80px;
+	&.fullscreen{
+		min-height:100vh;
+	}
 	& .container{
 		min-height: unset;
 		padding: 20px 30px;
@@ -354,6 +369,7 @@ img{
 			border: none;
 			padding: 10px;
 			margin-right: 15px;
+			margin-bottom: 15px;
 		}
 		& input[type="submit"]{
 			color:#fff;
@@ -361,6 +377,7 @@ img{
 			border: none;
 			border-radius: 30px;
 			padding: 7px 25px;
+			margin-bottom: 15px;
 		}
 	}
 }

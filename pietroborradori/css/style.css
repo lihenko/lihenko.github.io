@@ -250,7 +250,9 @@ object, embed {
 
 @media only screen and (max-width: 991px) {
   .menu-title {
-    display: none; } }
+    display: none; }
+  .main-menu ul li {
+    margin-bottom: 20px; } }
 
 section {
   position: relative;
@@ -294,7 +296,7 @@ img {
   margin-left: -15px;
   margin-right: -15px; }
 
-.col-30 {
+.col-30, .col-60 {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px; }
@@ -331,6 +333,14 @@ img {
     letter-spacing: .25em; }
   #hero #mute {
     position: relative; }
+    #hero #mute img {
+      width: 30px; }
+    #hero #mute a.muted {
+      display: none; }
+    #hero #mute.muted a.speaker {
+      display: none; }
+    #hero #mute.muted a.muted {
+      display: block; }
 
 #about {
   background-image: url("../img/upscaled-retouched-photo-blur.jpg");
@@ -558,6 +568,8 @@ img {
 #contact {
   padding-top: 80px;
   padding-bottom: 80px; }
+  #contact.fullscreen {
+    min-height: 100vh; }
   #contact .container {
     min-height: unset;
     padding: 20px 30px; }
@@ -567,13 +579,15 @@ img {
       background-color: #e5e5e5;
       border: none;
       padding: 10px;
-      margin-right: 15px; }
+      margin-right: 15px;
+      margin-bottom: 15px; }
     #contact form input[type="submit"] {
       color: #fff;
       background-color: #999999;
       border: none;
       border-radius: 30px;
-      padding: 7px 25px; }
+      padding: 7px 25px;
+      margin-bottom: 15px; }
 
 .contacts {
   font-size: 1.5em;

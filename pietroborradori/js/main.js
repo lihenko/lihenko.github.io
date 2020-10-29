@@ -3,15 +3,17 @@
 $(document).ready(function() {
   var playing = false;
   
-  $('a#volume').click(function() {
+  $('a.volume').click(function() {
       event.preventDefault();
       if (playing == false) {
           document.getElementById('player').play();
           playing = true;
+          $('#mute').removeClass('muted');
 
       } else {
         document.getElementById('player').pause();
         playing = false;
+        $('#mute').addClass('muted');
       }
 
   });
