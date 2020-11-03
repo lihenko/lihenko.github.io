@@ -1,0 +1,88 @@
+@import "vars";
+
+*{
+	box-sizing: border-box;
+	&:before, &:after{
+		box-sizing: border-box;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $black;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: Avenir-ECT, sans-serif;
+	overflow-x: hidden;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Montserrat-ECT, sans-serif;
+	font-weight: 700;
+	color:$violet;
+}
+
+h1{
+  font-size: 3.3em;
+  line-height: 0.95;
+}
+
+h2{
+  font-size: 1.6em;
+  line-height: 1.21;
+}
+
+h3{
+  font-size: 1em;
+  line-height: 1.21;
+}
+
+h4{
+  font-size: 21px;
+  line-height: 27px;
+}
+
+h5{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a{
+	color:$yellow;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color:$yellow;
+		text-decoration: none;
+	}
+}
+
+a:hover, a:active, a:focus {
+	outline: none;
+}
+
+button, button:hover, button:active, button:focus {
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+object, embed { 
+  outline: none;
+}
+
+::placeholder { 
+  color: $black;
+  opacity: 1; 
+}
+
