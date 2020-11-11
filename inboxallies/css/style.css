@@ -474,6 +474,9 @@ h2 span {
     content: url("../img/star-gold.svg"); }
 
 footer {
+  background-image: url("../img/ellipseright.svg");
+  background-size: cover;
+  background-position: 100% 0;
   padding: 30px 0; }
   footer .contacts-wrap {
     text-align: center;
@@ -610,33 +613,35 @@ footer #footer-menu .menu-transparent-button a {
     position: absolute;
     bottom: 30px;
     left: 15px; }
-  footer .contacts-wrap {
-    text-align: left;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    footer .contacts-wrap div {
-      width: inherit;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-bottom: 30px; }
-  footer #footer-menu {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
+  footer {
+    padding-top: 60px; }
+    footer .contacts-wrap {
+      text-align: left;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      footer .contacts-wrap div {
+        width: inherit;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 30px; }
+    footer #footer-menu {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
   .hr {
     margin-top: 120px;
     margin-bottom: 60px; } }
@@ -648,7 +653,10 @@ footer #footer-menu .menu-transparent-button a {
   #our-cases {
     padding: 60px 0; }
   #testimonials {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+  footer {
+    margin-top: -60px;
+    padding-top: 170px; } }
 
 @media only screen and (min-width: 1300px) {
   .container {

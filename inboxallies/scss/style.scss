@@ -244,6 +244,9 @@ h2 span{
 }
 
 footer{
+	background-image: url('../img/ellipseright.svg');
+	background-size: cover;
+	background-position: 100% 0;
 	padding: 30px 0;
 	& .contacts-wrap{
 		text-align: center;

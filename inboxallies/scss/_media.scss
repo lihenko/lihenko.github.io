@@ -85,6 +85,7 @@
 		left: 15px;
 	}
 	footer{
+		padding-top: 60px;
 		& .contacts-wrap{
 			text-align: left;
 			display: flex;
@@ -119,6 +120,10 @@
 	}
 	#testimonials{
 		padding: 60px 0;
+	}
+	footer{
+		margin-top: -60px;
+		padding-top: 170px;
 	}
 }
 
