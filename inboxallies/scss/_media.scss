@@ -70,6 +70,9 @@
 	#home-hero{
 		padding: 190px 0 160px;
 	}
+	#pricing-hero{
+		padding: 140px 0 190px;
+	}
 	#our-cases .section-label{
 		top: 60px;
 	}
@@ -124,6 +127,12 @@
 	footer{
 		margin-top: -60px;
 		padding-top: 170px;
+	}
+	#trusted-companies{
+		padding: 60px 0 120px;
+		& .trusted-companies-logo{
+			justify-content: space-between;
+		}
 	}
 }
 
