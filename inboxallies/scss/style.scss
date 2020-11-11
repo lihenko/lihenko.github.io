@@ -1,0 +1,356 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+
+header{
+	padding: 30px 0;
+	top:-100%;
+	transition: top 0.3s ease-in-out;
+	&.fixed-header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		z-index: 99;
+		padding: 20px 0;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.section-label{
+	font-size: 0.77em;
+	color: $grey;
+	padding-left: 42px;
+	position: relative;
+	&:before{
+		content: '';
+		width: 30px;
+		height: 1px;
+		position: absolute;
+		display: block;
+		background-color: $grey;
+		left: 0;
+		top: 10px;
+	}
+}
+
+#home-hero{
+	padding: 120px 0 60px;
+	background-image: url('../img/ellipseleft.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 100%;
+	margin-top: -90.5px;
+}
+
+.blue-button{
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	padding: 14px 40px;
+	background-color: $blue;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: $yellow;
+	}
+}
+
+.transparent-button{
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: $blue;
+	padding: 14px 40px;
+	background-color: transparent;
+	border:1px solid $blue;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: $blue;
+	}
+}
+
+.email-marketing{
+	max-width: 500px;
+}
+
+#our-services{
+	padding: 30px 0;
+	& .service-wrap{
+		height: 100%;
+		padding: 40px 30px;
+		transition: box-shadow 0.3s ease-in-out;
+		border-radius: 20px;
+		cursor: pointer;
+		&:hover{
+			background: #FFFFFF;
+			box-shadow: 0px 50px 210px rgba(33, 57, 84, 0.14);
+		}
+	}
+	& .service-icon{
+		width: 158px;
+		height: 158px;
+		background-color: #D3D9E5;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		& img{
+			max-height: 90px;
+		}
+	}
+}
+
+h2 span{
+	position: relative;
+	&:after{
+		content: '';
+		width: 100%;
+		height: 23px;
+		opacity: 0.4;
+		display: block;
+		position: absolute;
+		background-color: $yellow;
+		left: 0;
+		bottom: 2px;
+		z-index: -1;
+	}
+}
+
+#our-cases{
+	padding: 30px 0;
+	& .case-image{
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 240px;
+	}
+	& .section-label{
+		position: absolute;
+		top: 10px;
+	}
+	& .case-data{
+		padding: 45px 0;
+	}
+	& .transparent-button{
+		min-width: 160px;
+	}
+}
+
+.blue{
+	color:$blue;
+}
+
+.mb-150{
+	margin-bottom: 150px;
+}
+
+.prev-slide{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border:1px solid #E4E9F2;
+	cursor: pointer;
+	position: relative;
+	margin-right: 10px;
+	&:hover{
+		background-color: #F8F9FB;
+	}
+	&:after{
+		content:url('../img/slide-arrow.svg');
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 18px;
+	} 
+}
+.next-slide{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border:1px solid #E4E9F2;
+	cursor: pointer;
+	position: relative;
+	&:hover{
+		background-color: #F8F9FB;
+	}
+	&:after{
+		content:url('../img/slide-arrow.svg');
+		display: block;
+		transform: rotate(180deg);
+		position: absolute;
+		top: 15px;
+		left: 18px;
+	} 
+}
+
+#testimonials{
+	padding: 30px 0;
+	& .collapse-button{
+		padding: 40px;
+		cursor: pointer;
+		border-radius: 20px;
+		background: #FFFFFF;
+		box-shadow: 0px 50px 210px rgba(33, 57, 84, 0.14);
+		margin-bottom: 10px;
+		&.collapsed{
+			background: transparent;
+			box-shadow: none;
+		}
+		&:hover{
+			background: #FFFFFF;
+			box-shadow: 0px 50px 210px rgba(33, 57, 84, 0.14);
+		}
+		& .testiposition{
+			font-family: Poppins, sans-serif;
+			font-size: 0.77em;
+			font-weight: 500;
+			color: #8F98AE;
+		}
+
+	}
+	& .testiavatar{
+		width: 80px;
+		height: 80px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+	}
+}
+
+.testirating{
+	margin-bottom: 15px;
+	& span:before{
+		content:url('../img/star-black.svg');
+	}
+	& span.checked:before{
+		content:url('../img/star-gold.svg');
+	}
+}
+
+footer{
+	padding: 30px 0;
+	& .contacts-wrap{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		& div{
+			width: 100%;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 30px;
+		}
+		& .footer-email{
+			font-size: 0.77em;
+			color: #8F98AE;
+			& a{
+				font-family: Poppins, sans-serif;
+				font-weight: 600;
+				font-size: 1.4em;
+				color: $black;
+				&:hover{
+					color: $blue;
+				}
+			}
+		}
+		& .footer-phone{
+			font-size: 0.77em;
+			color: #8F98AE;
+			& a{
+				font-family: Poppins, sans-serif;
+				font-weight: 600;
+				font-size: 1.4em;
+				color: $black;
+				&:hover{
+					color: $blue;
+				}
+			}
+		}
+	}
+	& #footer-menu{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		& li{
+			display: inline-block;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:last-child{
+				padding-right: 0;
+			}
+			&:first-child{
+				padding-left: 0;
+			}
+			& a{
+				font-family: Poppins, sans-serif;
+				font-weight: 500;
+				font-size: 0.77em;
+				color: $black;
+				&:hover{
+					color: $blue;
+				}
+			}
+		}
+	}
+	& .privacy-policy{
+		font-family: Poppins, sans-serif;
+		font-weight: 500;
+		font-size: 0.77em;
+		color:#8F98AE;
+		&:hover{
+			color:$blue;
+		}
+	}
+	& .copyright{
+		font-family: Poppins, sans-serif;
+		font-weight: 500;
+		font-size: 0.77em;
+		color:#8F98AE;
+	}
+}
+
+footer #footer-menu .menu-transparent-button a{
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: $blue;
+	padding: 14px 40px;
+	background-color: transparent;
+	border:1px solid $blue;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: $blue;
+	}
+}
+
+.hr{
+	width: 100%;
+	height: 1px;
+	background-color: #DCDFE6;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+@import "media";
