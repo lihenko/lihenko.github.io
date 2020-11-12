@@ -30,8 +30,8 @@
 				font-weight: 500;
 				position: relative;
 				color:$darkblue;
-				font-size: 12px;
-				line-height: 14px;
+				font-size: 18px;
+				line-height: 1;
 				align-items: center;
 				transition: color 0.3s ease-in-out;
 				&:hover{
@@ -131,6 +131,7 @@
 					padding-right: 0;
 				}
 				& a{
+					font-size: 14px;
 					color:$darkblue;
 					text-decoration: none;
 					transition: color 0.3s ease-in-out;

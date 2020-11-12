@@ -81,7 +81,9 @@ object, embed {
   outline: none;
 }
 
-::placeholder { 
-  opacity: 1; 
+::placeholder {
+  font-family: OpenSans, sans-serif; 
+  opacity: 1;
+  color: #91A3B2;
 }
 
