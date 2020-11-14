@@ -67,6 +67,9 @@
 	.fundraising-image{
 		min-height: 500px;
 	}
+	.dropdown{
+		height: 56.38px;
+	}
 }
 
 
@@ -130,6 +133,9 @@
 	.radio-container .checkmark:after {
 	  top: 5px;
 	  left: 9px;
+	}
+	.dropdown{
+		height: 63.19px;
 	}
 }
 
@@ -213,5 +219,8 @@
 	.radio-container .checkmark:after {
 	  top: 6px;
 	  left: 11px;
+	}
+	.dropdown{
+		height: 70px;
 	}
 }

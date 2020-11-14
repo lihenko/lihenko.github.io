@@ -78,6 +78,7 @@ input:not([type="submit"]){
 	font-size: 0.8em;
 	line-height: 1;
 	padding: 1.5em 2.5em;
+	outline: none;
 	
 }
 input[type="submit"]{
@@ -96,10 +97,7 @@ textarea{
 	padding: 1.5em 2.5em;
 	width: 100%;
 	min-height: 203px;
-}
-
-.bg-blue{
-	background-color: $blue!important;
+	outline: none;
 }
 
 .blue{
@@ -113,11 +111,6 @@ textarea{
 .btn{
 	border-radius: 0;
 }
-
-
-
-
-
 
 
 ::placeholder { 

@@ -89,7 +89,8 @@ input:not([type="submit"]) {
   border-radius: 0;
   font-size: 0.8em;
   line-height: 1;
-  padding: 1.5em 2.5em; }
+  padding: 1.5em 2.5em;
+  outline: none; }
 
 input[type="submit"] {
   letter-spacing: 0.2em;
@@ -105,10 +106,8 @@ textarea {
   line-height: 1.5;
   padding: 1.5em 2.5em;
   width: 100%;
-  min-height: 203px; }
-
-.bg-blue {
-  background-color: #345de3 !important; }
+  min-height: 203px;
+  outline: none; }
 
 .blue {
   color: #345de3 !important; }
@@ -508,6 +507,8 @@ textarea {
   background-color: #bac8f6; }
 
 .dropdown {
+  height: 48.59px;
+  outline: none;
   color: #202024;
   border-radius: 0;
   display: -webkit-box;
@@ -684,7 +685,9 @@ textarea {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .fundraising-image {
-    min-height: 500px; } }
+    min-height: 500px; }
+  .dropdown {
+    height: 56.38px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -726,7 +729,9 @@ textarea {
     padding: 60px 0; }
   .radio-container .checkmark:after {
     top: 5px;
-    left: 9px; } }
+    left: 9px; }
+  .dropdown {
+    height: 63.19px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -789,4 +794,6 @@ textarea {
     padding: 100px 130px; }
   .radio-container .checkmark:after {
     top: 6px;
-    left: 11px; } }
+    left: 11px; }
+  .dropdown {
+    height: 70px; } }
