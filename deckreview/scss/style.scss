@@ -23,6 +23,11 @@
 	}
 }
 
+.brand img{
+	max-width: 100%;
+	height: auto;
+}
+
 .hero-subtitle{
 	font-size: 1.5em;
 	font-weight: 700;
@@ -234,11 +239,7 @@
 	color: #fff;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	& img{
-		margin-right: 10px;
-	}
 	& a{
-		margin-left: 10px;
 		text-decoration: underline;
 		&:hover{
 			color: #fff;
@@ -246,6 +247,12 @@
 	}
 	&:hover{
 		background-color: rgba(0,0,0,.15);
+	}
+	& .box_info{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
 	}
 }
 
@@ -450,6 +457,13 @@
 .copyright{
 	color: #fff;
 	font-size: 0.6em;
+}
+
+input[type="submit"]{
+	letter-spacing: normal;
+	font-weight: 700;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 @import "media";

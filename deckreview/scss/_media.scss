@@ -137,6 +137,23 @@
 	.dropdown{
 		height: 63.19px;
 	}
+	input[type="submit"]{
+		letter-spacing: 0.2em;
+		font-weight: 700;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	#dropContainer{
+		& .box_info{
+			flex-direction: row;
+		}
+		& img{
+			margin-right: 10px;
+		}
+		& a{
+			margin-left: 10px;
+		}
+	}
 }
 
 

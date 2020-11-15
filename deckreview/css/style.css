@@ -92,12 +92,6 @@ input:not([type="submit"]) {
   padding: 1.5em 2.5em;
   outline: none; }
 
-input[type="submit"] {
-  letter-spacing: 0.2em;
-  font-weight: 700;
-  padding-left: 60px;
-  padding-right: 60px; }
-
 textarea {
   border: none;
   background-color: #fff;
@@ -257,6 +251,10 @@ textarea {
       margin-bottom: 1em; }
   .bar-social-buttons.open {
     display: none; }
+
+.brand img {
+  max-width: 100%;
+  height: auto; }
 
 .hero-subtitle {
   font-size: 1.5em;
@@ -470,15 +468,29 @@ textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer; }
-  #dropContainer img {
-    margin-right: 10px; }
   #dropContainer a {
-    margin-left: 10px;
     text-decoration: underline; }
     #dropContainer a:hover {
       color: #fff; }
   #dropContainer:hover {
     background-color: rgba(0, 0, 0, 0.15); }
+  #dropContainer .box_info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .box_uploading,
 .box_success,
@@ -665,6 +677,12 @@ textarea {
   color: #fff;
   font-size: 0.6em; }
 
+input[type="submit"] {
+  letter-spacing: normal;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-right: 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -731,7 +749,22 @@ textarea {
     top: 5px;
     left: 9px; }
   .dropdown {
-    height: 63.19px; } }
+    height: 63.19px; }
+  input[type="submit"] {
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    padding-left: 50px;
+    padding-right: 50px; }
+  #dropContainer .box_info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #dropContainer img {
+    margin-right: 10px; }
+  #dropContainer a {
+    margin-left: 10px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
