@@ -1,0 +1,109 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	#page-title{
+		padding: 60px 0;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.search{
+		position: relative;
+		top: unset;
+		left: unset;
+	}
+	#page-title{
+		padding: 60px 0;
+		& h1{
+			font-size: 3.77em;
+		}
+	}
+	h2{
+		font-size: 2.66em;
+	}
+	.header-wrap{
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body{
+		font-size: 18px;
+	}
+	.footer-posts li{
+		min-height: 44.2px;
+	}
+
+}
+
+@media only screen and (min-width : 1200px){
+	.container{
+		max-width: 1268px;
+	}
+	.home-page-title{
+		margin-right: -90px;
+	}
+}
