@@ -17,12 +17,20 @@ $(window).scroll(function() {
     }
 });
 
+
 $('#open-search').click(function () {
-    $(this).addClass('open');
-    $(this).parent('.search').addClass('open');
-    $('.menu-primary-menu-container').addClass('d-none');
-    $('#search').focus();
+    if ($(this).hasClass('open')){
+      $('#search-form').submit();
+    } else {
+      $(this).addClass('open');
+      $(this).parent('.search').addClass('open');
+      $('.menu-primary-menu-container').addClass('d-none');
+      $('#search').focus();
+    }
+      
 });
+
+
 
 $('#close-search').click(function () {
     $('#open-search').removeClass('open');

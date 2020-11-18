@@ -94,6 +94,9 @@ header{
 
 #home-review{
 	padding-bottom: 15px;
+	& .review-tumbnail{
+		border-top: 3px solid $green;
+	}
 }
 
 .review-wrap{
@@ -108,7 +111,6 @@ header{
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	border-top: 3px solid $green;
 	margin-bottom: 20px;
 	transition: all 0.3s ease-in-out;
 	&:after{
@@ -236,6 +238,61 @@ footer{
 	bottom: 45px;
 	right: 15px;
 	display: none;
+}
+
+.green-shadow{
+	text-shadow: 0px 4px 4px #459300;
+}
+
+.rgb-red{
+	color:#D12121;
+}
+
+.rgb-blue{
+	color:#0E23E8;
+}
+
+.rgb-green{
+	color:#03C200;
+}
+
+#all-ledsearch-form{
+	position: relative;
+	& input[type="text"]{
+		width: 100%;
+		background: rgba(69, 147, 0, 0.44);
+		border-radius: 18.5px;
+		border:none;
+		padding: 9px 35px 9px 45px;
+		&::placeholder{
+			color:rgba(255,255,255,.5);
+		}
+	}
+	
+	& label{
+		position: absolute;
+		top: 7px;
+		left: 15px;
+		cursor: pointer;
+		margin-bottom: 0;
+	}
+}
+
+.allled-review-wrap{
+	height: 100%;
+	padding: 20px;
+	border: 1px solid $green;
+}
+
+.allled-review-tumbnail{
+	min-height: 239px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		opacity: 0.8;
+	}
 }
 
 @import "media";
