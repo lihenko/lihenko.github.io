@@ -734,20 +734,20 @@ footer{
 }
 
 .scale{
-	animation: scale 3s ease-in-out;
-	animation-iteration-count: infinite;
+    -webkit-animation: scale 3000ms ease-in-out infinite;
+    -moz-animation: scale 3000ms ease-in-out infinite;
+    animation: scale 3000ms ease-in-out infinite;
 }
-
 @keyframes scale {
-  0% {
-    transform: scale(100%);
-  }
-  50% {
-    transform: scale(97%);
-  }
-  100%{
-  	transform: scale(100%);
-  }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.97);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @import "media";

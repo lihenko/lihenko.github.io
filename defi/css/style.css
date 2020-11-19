@@ -727,32 +727,30 @@ footer {
     padding: 0 28px 0 47px; }
 
 .scale {
-  -webkit-animation: scale 3s ease-in-out;
-  animation: scale 3s ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  -webkit-animation: scale 3000ms ease-in-out infinite;
+  animation: scale 3000ms ease-in-out infinite; }
 
 @-webkit-keyframes scale {
   0% {
-    -webkit-transform: scale(100%);
-    transform: scale(100%); }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
   50% {
-    -webkit-transform: scale(97%);
-    transform: scale(97%); }
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97); }
   100% {
-    -webkit-transform: scale(100%);
-    transform: scale(100%); } }
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 @keyframes scale {
   0% {
-    -webkit-transform: scale(100%);
-    transform: scale(100%); }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
   50% {
-    -webkit-transform: scale(97%);
-    transform: scale(97%); }
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97); }
   100% {
-    -webkit-transform: scale(100%);
-    transform: scale(100%); } }
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -857,4 +855,6 @@ footer {
   .days .row {
     padding: 10px 335px 0 320px;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  #public-sale-info {
+    padding-bottom: 18vw; } }
