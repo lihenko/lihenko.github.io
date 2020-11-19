@@ -740,12 +740,15 @@ footer{
 }
 @keyframes scale {
     0% {
+    	opacity: 1;
         transform: scale(1);
     }
     50% {
+    	opacity: 0.65;
         transform: scale(.97);
     }
     100% {
+    	opacity: 1;
         transform: scale(1);
     }
 }
