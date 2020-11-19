@@ -47,18 +47,30 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px){
-
+	.days .row{
+		padding: 0 99px 0 81px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 
 @media only screen and (min-width : 510px){
-
+	.days .row{
+		padding: 0 98px 0 86px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px){
-
+	.days .row{
+		padding: 10px 61px 0 50px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 
@@ -106,6 +118,14 @@
 	#public-sale-info{
 		padding: 60px 0 250px;
 	}
+	.days{
+		font-size: 1em;
+	}
+	.days .row{
+		padding: 10px 181px 0 170px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 }
 
@@ -130,6 +150,11 @@
 	footer .copyright{
 		margin-top: -15px;
 	}
+	.days .row{
+		padding: 10px 272px 0 259px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 @media only screen and (min-width : 1300px){
@@ -148,5 +173,9 @@
 	#road-map{
 		padding-bottom: 13vw;
 	}
-	
+	.days .row{
+		padding: 10px 335px 0 320px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }

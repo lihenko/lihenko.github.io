@@ -100,7 +100,7 @@ video {
 }
 
 .countdown {
-
+	position: relative;
   display: inline-block;
   height: 100%;
   /* Reset */
@@ -178,16 +178,7 @@ video {
     font-size: 35px !important;
   }
 }
-.countdown ul.nth-child-2np2-notlast:after, .countdown ul.flip:nth-child(2n + 2):not(:last-child):after {
-  position: absolute;
-  top: 12%;
-  right: -13px;
-  content: ":";
-  display: block;
-  color: #fff;
-  font-size: 46px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
+
 .countdown ul.nth-child-2np2-notlast {
   margin-right: 14px;
 }
@@ -263,7 +254,6 @@ video {
   width: 100%;
   height: 200%;
   color: #106CFA;
-  text-shadow: 0 1px 2px #000;
   text-align: center;
   background-color: #fff;
   /*border-radius*/
@@ -731,6 +721,33 @@ footer{
 		letter-spacing: 1.32px;
 		margin-top: 30px;
 	}
+}
+
+.days{
+	display: block;
+	font-weight: 400;
+	font-size: 0.7em;
+	& .row{
+		padding: 0 28px 0 47px;
+	}
+
+}
+
+.scale{
+	animation: scale 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(97%);
+  }
+  100%{
+  	transform: scale(100%);
+  }
 }
 
 @import "media";

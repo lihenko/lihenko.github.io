@@ -707,3 +707,7 @@ $('.slider-wrap').slick({
     // instead of a settings object
   ]
 });
+
+/*$(document).ready(function() {
+  $('.days').appendTo($('.countdown'));
+});*/
