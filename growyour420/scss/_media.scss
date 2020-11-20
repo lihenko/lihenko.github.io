@@ -52,7 +52,11 @@
 
 
 @media only screen and (min-width : 510px){
-
+	.video-wrap{
+		& .video-bg{
+			min-height: 220px;
+		}
+	}
 
 }
 
@@ -60,6 +64,11 @@
 @media only screen and (min-width : 768px){
 	#page-title{
 		padding: 60px 0;
+	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 280px;
+		}
 	}
 }
 
@@ -110,6 +119,11 @@
 			margin-bottom: 15px;
 		}
 	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 300px;
+		}
+	}
 }
 
 
@@ -126,6 +140,11 @@
 		flex: 0 0 20%;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 350px;
+		}
 	}
 
 }

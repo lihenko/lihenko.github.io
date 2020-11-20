@@ -652,6 +652,64 @@ footer {
   display: none;
   min-height: 100vh; }
 
+ul.leaf {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.leaf li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 20px; }
+    ul.leaf li:before {
+      content: url("../img/body-list-marker.svg");
+      position: absolute;
+      left: 0; }
+    ul.leaf li:last-child {
+      margin-bottom: 0; }
+
+.tent-title {
+  font-size: 1.33em;
+  font-weight: 500; }
+
+.best-tents-button .btn {
+  min-width: 223px; }
+
+.video-wrap {
+  position: relative;
+  max-width: 618px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 9px solid #459300; }
+  .video-wrap .video-bg {
+    min-height: 190px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .video-wrap .video-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 94px;
+    height: 94px; }
+    .video-wrap .video-button svg path {
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .video-wrap .video-button svg circle {
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .video-wrap .video-button:hover svg path {
+      fill: #6EBD27; }
+    .video-wrap .video-button:hover svg circle {
+      stroke: #6EBD27; }
+
+.video-note-wrap {
+  padding: 20px 15px;
+  background-color: rgba(69, 147, 0, 0.1);
+  margin-bottom: 20px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -662,10 +720,16 @@ footer {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 510px) {
+  .video-wrap .video-bg {
+    min-height: 220px; } }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   #page-title {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+  .video-wrap .video-bg {
+    min-height: 280px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -710,7 +774,9 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 9px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+  .video-wrap .video-bg {
+    min-height: 300px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -725,7 +791,9 @@ footer {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+  .video-wrap .video-bg {
+    min-height: 350px; } }
 
 @media only screen and (min-width: 1200px) {
   .container {

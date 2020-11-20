@@ -82,7 +82,10 @@ $('#need-button').click(function () {
         });
 });
 
-
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 
 $(document).ready(function(){
     var $page = $('html, body');
