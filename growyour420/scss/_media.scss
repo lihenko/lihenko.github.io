@@ -85,6 +85,31 @@
 		align-items: center;
 		text-align: left;
 	}
+	.tools-button{
+		font-size: 1.33em;
+	}
+	.equipment-link{
+		display: block;
+		color: $black;
+		font-weight: 500;
+		height: 100%;
+		border: 2px solid transparent;
+		border-radius: 9px;
+		padding: 20px 15px;
+		&:hover{
+			color: $black;
+			border-color: $green;
+			box-shadow: 0px 0px 11px rgba($green,.3);
+		}
+		& .equipment-tumbnail{
+			min-height: 284px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 9px;
+			margin-bottom: 15px;
+		}
+	}
 }
 
 
@@ -95,6 +120,12 @@
 	}
 	.footer-posts li{
 		min-height: 44.2px;
+	}
+	.col-xl-20{
+		max-width: 20%;
+		flex: 0 0 20%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 }

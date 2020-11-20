@@ -20,7 +20,12 @@ body {
 	background: #DCE1D8;
 }
 
-
+p{
+	margin-bottom: 1.66em;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
 
 h1,h2,h3,h4,h5,h6{
 	font-family: GrowYour420-Roboto, sans-serif;

@@ -45,6 +45,11 @@ body {
   overflow-x: hidden;
   background: #DCE1D8; }
 
+p {
+  margin-bottom: 1.66em; }
+  p:last-child {
+    margin-bottom: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: GrowYour420-Roboto, sans-serif; }
 
@@ -553,6 +558,100 @@ footer {
   .allled-review-tumbnail:hover {
     opacity: 0.8; }
 
+#tools-buttons {
+  padding: 15px 0 30px; }
+
+.tools-button {
+  background-color: transparent;
+  border: 3px solid #459300;
+  border-radius: 0;
+  color: #459300;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 6px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .tools-button:hover {
+    color: #fff;
+    background-color: #459300; }
+  .tools-button.active {
+    color: #fff;
+    background-color: #459300; }
+
+.equipment-link {
+  display: block;
+  color: #111111;
+  font-weight: 500;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  padding: 10px 10px; }
+  .equipment-link:hover {
+    color: #111111;
+    border-color: #459300;
+    box-shadow: 0px 0px 11px rgba(69, 147, 0, 0.3); }
+  .equipment-link .equipment-tumbnail {
+    min-height: 163px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
+    margin-bottom: 15px; }
+
+.review-tumbnail.equipment {
+  min-height: 231px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .review-tumbnail.equipment:after {
+    display: none; }
+  .review-tumbnail.equipment:hover {
+    opacity: 0.8; }
+
+.what-i-need-slider {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .what-i-need-slider .slider-item {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .what-i-need-slider .slider-img {
+    min-height: 189px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .what-i-need-slider .slick-dots {
+    bottom: -20px;
+    padding-right: 15px;
+    text-align: right; }
+    .what-i-need-slider .slick-dots li {
+      width: 12px;
+      height: 12px; }
+      .what-i-need-slider .slick-dots li button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%; }
+        .what-i-need-slider .slick-dots li button:before {
+          top: 2.5px;
+          left: 2.5px;
+          color: #459300;
+          opacity: 1;
+          line-height: 1;
+          width: 6px;
+          height: 6px; }
+      .what-i-need-slider .slick-dots li.slick-active button {
+        background: rgba(69, 147, 0, 0.28); }
+
+#equipment {
+  min-height: 100vh; }
+
+#what-i-need {
+  display: none;
+  min-height: 100vh; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -590,14 +689,43 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    text-align: left; } }
+    text-align: left; }
+  .tools-button {
+    font-size: 1.33em; }
+  .equipment-link {
+    display: block;
+    color: #111111;
+    font-weight: 500;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 9px;
+    padding: 20px 15px; }
+    .equipment-link:hover {
+      color: #111111;
+      border-color: #459300;
+      box-shadow: 0px 0px 11px rgba(69, 147, 0, 0.3); }
+    .equipment-link .equipment-tumbnail {
+      min-height: 284px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 9px;
+      margin-bottom: 15px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   body {
     font-size: 18px; }
   .footer-posts li {
-    min-height: 44.2px; } }
+    min-height: 44.2px; }
+  .col-xl-20 {
+    max-width: 20%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media only screen and (min-width: 1200px) {
   .container {
