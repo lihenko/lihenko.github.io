@@ -1,5 +1,4 @@
 
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
         $('#to-top').fadeIn('slow');
@@ -22,62 +21,68 @@ $('#open-search').click(function () {
       
 });
 
-
-
 $('#close-search').click(function () {
     $('#open-search').removeClass('open');
     $('#open-search').parent('.search').removeClass('open');
     $('.menu-primary-menu-container').removeClass('d-none');
 });
 
-
+$('#equipment-button').click(function () {
+    event.preventDefault();
+    $('#tools-buttons .btn').removeClass('active');
+    $(this).addClass('active');
+    $('#what-i-need').hide();
+    $('#equipment').fadeIn();
+    
+});
 
 $('#need-button').click(function () {
     event.preventDefault();
     $('#tools-buttons .btn').removeClass('active');
     $(this).addClass('active');
-    $('#equipment').fadeOut('400');
-    $('#what-i-need').fadeIn('600', function() {
-      $('.what-i-need-slider').slick({
-        autoplay:true,
-        autoplaySpeed: 4000,
-        dots: false,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 680,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-    });
+    $('#equipment').hide();
+    $('#what-i-need').fadeIn( function() {
+          setTimeout(function(){ 
+
+            $('.what-i-need-slider').slick({
+                autoplay:true,
+                autoplaySpeed: 4000,
+                dots: false,
+                arrows: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 991,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 680,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      dots: true
+                    }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+                ]
+              });
+
+
+
+          }, 100);
+              
+        });
 });
 
-$('#equipment-button').click(function () {
-    event.preventDefault();
-    $('#tools-buttons .btn').removeClass('active');
-    $(this).addClass('active');
-    $('#what-i-need').fadeOut('400');
-    $('#equipment').fadeIn('600');
-});
+
 
 $(document).ready(function(){
     var $page = $('html, body');
