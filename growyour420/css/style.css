@@ -710,6 +710,27 @@ ul.leaf {
   background-color: rgba(69, 147, 0, 0.1);
   margin-bottom: 20px; }
 
+.hydroponic-posts-tumbnail {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 239px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .hydroponic-posts-tumbnail:hover {
+    opacity: 0.8; }
+
+.hydroponic-posts-link {
+  font-weight: 500; }
+
+.left-border {
+  border-left: 9px solid #459300;
+  padding-left: 20px; }
+  .left-border h3 {
+    font-size: 1.77em;
+    font-weight: 500; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
