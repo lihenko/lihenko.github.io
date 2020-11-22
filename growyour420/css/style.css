@@ -965,7 +965,7 @@ table#best-marijuana-seeds-table td:last-child {
     display: table-cell; }
     table#best-marijuana-seeds-table td:before {
       display: none; }
-    table#best-marijuana-seeds-table td:nth-child(odd) {
+    table#best-marijuana-seeds-table td:nth-child(odd):not(:last-child) {
       background-color: rgba(69, 147, 0, 0.04); }
   .netherlands:after {
     vertical-align: top; }
