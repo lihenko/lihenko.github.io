@@ -124,6 +124,99 @@
 			min-height: 300px;
 		}
 	}
+	h3.big{
+		font-size: 1.77em;
+		font-weight: 500;
+	}
+	.aligncenter {
+	    float: none;
+	    margin: .5em auto 1em;
+	}
+
+	.alignright {
+	    float: right;
+	    margin: .5em 0 1em 1em;
+	}
+
+	.alignleft {
+	    float: left;
+	    margin: .5em 1em 1em 0;
+	}
+	h3.effect{
+		padding-left: 0;
+		&:before{
+			content: '';
+			width: 82px;
+			height: 7px;
+			background-color: $green;
+			display: block;
+			position: absolute;
+			left: -97px;
+			top: calc(50% - 3.5px);
+		}
+	}
+	table#best-marijuana-seeds-table {
+
+	  border: 1px solid #ccc;
+	  border-collapse: collapse;
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  table-layout: fixed;
+	  & thead{
+	  	position: relative;
+		width: 100%;
+		height: unset;
+		& th{
+			font-weight: 500;
+			background-color: $green;
+			padding: 17px;
+			&:last-child{
+				background-color: transparent;
+				width: 223px;
+			}
+			&:nth-last-child(2){
+				border-bottom-right-radius: 30px;
+			}
+		}
+	  }
+	}
+
+	table#best-marijuana-seeds-table tr {
+	  border: 1px solid #ddd;
+	  padding: .35em;
+	  display: table-row;
+	}
+
+	table#best-marijuana-seeds-table th {
+	  padding: .625em;
+	  text-align: center;
+	  display: table-cell;
+	}
+	table#best-marijuana-seeds-table td {
+	  padding: .625em;
+	  text-align: left;
+	  display: table-cell;
+	  &:before{
+	  	display: none;
+	  }
+	  &:nth-child(odd){
+	  	background-color: rgba(69, 147, 0, 0.04);
+	  }
+	}
+	.netherlands:after{
+		vertical-align: top;
+	}
+
+	.usa:after{
+		vertical-align: top;
+	}
+
+	.canada:after{
+
+		vertical-align: top;
+	}
+
 }
 
 

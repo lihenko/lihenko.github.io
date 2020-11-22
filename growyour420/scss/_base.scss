@@ -83,8 +83,21 @@ object, embed {
   outline: none;
 }
 
+ul{
+	margin: 0;
+	padding-left: 15px;
+	list-style-type:"- ";
+}
+
 ::placeholder { 
   color: $grey;
   opacity: 1; 
+}
+
+.aligncenter,.alignleft,.alignright {
+    display: block;
+    padding: 0 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
