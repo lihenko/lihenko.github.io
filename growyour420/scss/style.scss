@@ -618,4 +618,34 @@ table#best-marijuana-seeds-table {
 	vertical-align: middle;
 }
 
+.recent-posts-label{
+	background-color: $green;
+	color:#fff;
+	padding: 15px 33px;
+	display: inline-block;
+	border-radius: 0px 29.5px 29.5px 0px;
+	margin-left: -15px;
+	min-width:172px;
+
+}
+
+.category-label{
+	background-color: $green;
+	color:#fff;
+	padding: 15px 33px;
+	display: inline-block;
+	border-radius: 0px 29.5px 29.5px 0px;
+	margin-left: -15px;
+	min-width:172px;
+}
+
+ul.categories-list{
+	list-style: none;
+}
+
+.buy-button .btn{
+	width: 390px;
+	max-width: 100%;
+}
+
 @import "media";
