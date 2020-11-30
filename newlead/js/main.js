@@ -105,6 +105,35 @@ $('.our-work-slider').slick({
 });
 
 
+$('.our-work-logos').slick({
+  arrows: false,
+  dots:false,
+  slidesToShow: 6,
+  speed: 300,
+  autoplay:true,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
+});
+
 $(document).ready(function(){
     var $page = $('html, body');
     $('a[href*="#"]').click(function() {

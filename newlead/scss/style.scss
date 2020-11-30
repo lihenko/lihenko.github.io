@@ -116,7 +116,7 @@ header{
 	}
 	& .hero-slider-capabilities{
 		position: absolute;
-		bottom: -70px;
+		bottom: -13px;
 		left: 0;
 		right: 0;
 		text-align: center;
@@ -297,12 +297,24 @@ header{
 			z-index: 99;
 		}
 	}
-	& .our-work-logos{
-	 	display: flex;
-	 	flex-wrap: wrap;
-	 	justify-content: center;
-	 	gap:30px;
-	 }
+	& .our-work-logos {
+		height: 100%;
+		& .logo-item{
+			display: flex;
+			justify-content: center;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		& .slick-track
+			{
+			    display: flex !important;
+			}
+
+		& .slick-slide
+			{
+			    height: inherit !important;
+			}
+		}
 
 }
 
@@ -315,7 +327,7 @@ header{
 	padding-bottom: 45px;
 	& .contact-us-label{
 		position: absolute;
-		top: -57px;
+		top: -43px;
 		left: 0;
 		right: 0;
 		text-align: center;

@@ -47,7 +47,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px){
-
+	#contact-us .contact-us-label{
+		top: -55px;
+	}
 }
 
 
@@ -100,6 +102,9 @@
 	}
 	#hero-slider{
 		padding-bottom: 250px;
+		& .hero-slider-capabilities{
+			bottom: -39px;
+		}
 	}
 	#capabilities{
 		margin-bottom: 250px;
@@ -130,6 +135,9 @@
 	}
 	#hero-slider{
 		padding-bottom: 290px;
+		& .hero-slider-capabilities{
+			bottom: -50px;
+		}
 	}
 	#capabilities{
 		margin-bottom: 290px;
@@ -191,6 +199,9 @@
 	}
 	#hero-slider{
 		padding-bottom: 340px;
+		& .hero-slider-capabilities{
+			bottom: -67px;
+		}
 	}
 	#capabilities{
 		margin-bottom: 340px;

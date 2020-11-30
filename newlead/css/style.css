@@ -318,7 +318,7 @@ header {
     left: 10%; }
   #hero-slider .hero-slider-capabilities {
     position: absolute;
-    bottom: -70px;
+    bottom: -13px;
     left: 0;
     right: 0;
     text-align: center; }
@@ -492,18 +492,25 @@ header {
       position: relative;
       z-index: 99; }
   #our-work .our-work-logos {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 30px; }
+    height: 100%; }
+    #our-work .our-work-logos .logo-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px; }
+    #our-work .our-work-logos .slick-track {
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #our-work .our-work-logos .slick-slide {
+      height: inherit !important; }
 
 #contact-us {
   background-image: url("../img/contact-bg.png");
@@ -514,7 +521,7 @@ header {
   padding-bottom: 45px; }
   #contact-us .contact-us-label {
     position: absolute;
-    top: -57px;
+    top: -43px;
     left: 0;
     right: 0;
     text-align: center; }
@@ -636,6 +643,10 @@ input[type="submit"] {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  #contact-us .contact-us-label {
+    top: -55px; } }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   #hero-slider {
@@ -665,6 +676,8 @@ input[type="submit"] {
     font-size: 18px; }
   #hero-slider {
     padding-bottom: 250px; }
+    #hero-slider .hero-slider-capabilities {
+      bottom: -39px; }
   #capabilities {
     margin-bottom: 250px; }
     #capabilities .our-work {
@@ -683,6 +696,8 @@ input[type="submit"] {
       margin-right: 120px; }
   #hero-slider {
     padding-bottom: 290px; }
+    #hero-slider .hero-slider-capabilities {
+      bottom: -50px; }
   #capabilities {
     margin-bottom: 290px; }
     #capabilities .our-work {
@@ -721,6 +736,8 @@ input[type="submit"] {
     margin-left: 50px; }
   #hero-slider {
     padding-bottom: 340px; }
+    #hero-slider .hero-slider-capabilities {
+      bottom: -67px; }
   #capabilities {
     margin-bottom: 340px; }
     #capabilities .our-work {
