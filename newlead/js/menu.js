@@ -10,7 +10,11 @@ $(document).ready(function(){
         menu.toggleClass("open");
     });
     
-       
+    $("#primary-menu > li a").on("click", function(){
+        $("body").removeClass("menu-open");
+        button.removeClass("open");
+        menu.removeClass("open");
+    });
 
 });
 
