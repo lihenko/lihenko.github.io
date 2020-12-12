@@ -89,10 +89,11 @@ $('section').bind('mousewheel DOMMouseScroll', function(event){
             scroll = setTimeout(function(){scrollCount=0;}, 1500);
             scrollCount=1;
     }
+    if(scrollCount) return;
     if ($(window).width() > 991 && sectionheight <= windowheight) {
        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
           event.preventDefault();
-            if(scrollCount) return; 
+             
             
             $page.animate({
                 scrollTop: $(this).prev('section').offset().top
@@ -104,8 +105,7 @@ $('section').bind('mousewheel DOMMouseScroll', function(event){
         }
         else {
           event.preventDefault();
-            if(scrollCount) return 0; 
-            
+           
             $page.animate({
                   scrollTop: $(this).next('section').offset().top
               }, 600);
