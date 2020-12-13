@@ -34,8 +34,6 @@ body {
 
 p {
   margin-bottom: 30px; }
-  p:last-child {
-    margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: EBGaramond-Venandi, serif;
@@ -383,7 +381,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-left: 44px;
-  padding-right: 44px;
+  padding-right: 15px;
   min-height: 1px; }
 
 .text-center {
@@ -437,6 +435,7 @@ section {
   padding: 25px 0;
   width: 100%; }
   .locations-wrap .locations {
+    font-size: 0.8em;
     padding-left: 25px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -546,12 +545,16 @@ input[type="submit"] {
   max-width: 100%; }
 
 .copyright {
-  font-size: 0.88em;
+  font-size: 0.70em;
   text-align: center;
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0; }
+
+.img-max-width img {
+  max-width: 50vw;
+  height: auto; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -596,6 +599,7 @@ input[type="submit"] {
     max-width: 850px;
     height: 74px; }
     .locations-wrap .locations {
+      font-size: 1em;
       padding-left: 44px;
       padding-right: 44px; }
       .locations-wrap .locations:after {
@@ -609,7 +613,13 @@ input[type="submit"] {
         border-left: 50px solid #020203;
         display: block; }
   .contact-form-wrap {
-    padding: 65px 72px 45px; } }
+    padding: 65px 72px 45px; }
+  p {
+    margin-bottom: 30px; }
+    p:last-child {
+      margin-bottom: 0; }
+  .copyright {
+    font-size: 0.88em; } }
 
 @media only screen and (min-width: 992px) and (min-height: 780px) {
   #hero {
