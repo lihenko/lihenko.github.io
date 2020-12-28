@@ -116,12 +116,23 @@
 	#staking-table > tbody > tr td:nth-child(1) img{
 		max-height: 40px;
 	}
+	#staking-table > tbody > tr td:nth-child(5){
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-right: none;
+	}
 	#staking-table > tbody > tr > td:nth-child(6){
 		display: table-cell;
 		position: relative;
 		bottom: unset;
 		left: unset;
 		width: 257px;
+		background-color: #fff;
+		border-right: 1px solid $blue;
+		border-top: 1px solid $blue;
+		border-bottom: 1px solid $blue;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 	.currency-table tr{
 		display: table-row;
