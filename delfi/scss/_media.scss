@@ -130,10 +130,11 @@
 		border-bottom: 1px solid $blue;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
-		& div{
+		& .buttons-position{
 			position: relative;
-			top: unset;
+			left: unset;
 			bottom: unset;
+			width: 100%;
 		}
 	}
 	.currency-table tr{

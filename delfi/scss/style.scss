@@ -229,11 +229,14 @@
 		border: none;
 		background: transparent;
 		display: none;
-		& div{
+		& .buttons-wrap{
+			position: relative;
+		}
+		& .buttons-position{
 			position: absolute;
-			width: 100%;
-			left: 0;
-			bottom: 15px;
+			width: 100vw;
+			left: calc(15px - 100vw);
+			bottom: -108px;
 		}
 	}
 	&.open > td:nth-child(6){

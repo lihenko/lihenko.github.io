@@ -512,11 +512,13 @@ div[class^="col-"] {
     border: none;
     background: transparent;
     display: none; }
-    #staking-table > tbody > tr > td:nth-child(6) div {
+    #staking-table > tbody > tr > td:nth-child(6) .buttons-wrap {
+      position: relative; }
+    #staking-table > tbody > tr > td:nth-child(6) .buttons-position {
       position: absolute;
-      width: 100%;
-      left: 0;
-      bottom: 15px; }
+      width: 100vw;
+      left: calc(15px - 100vw);
+      bottom: -108px; }
   #staking-table > tbody > tr.open > td:nth-child(6) {
     display: block; }
   #staking-table > tbody > tr.open > td {
@@ -710,10 +712,11 @@ footer {
     border-bottom: 1px solid #0096AF;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
-    #staking-table > tbody > tr > td:nth-child(6) div {
+    #staking-table > tbody > tr > td:nth-child(6) .buttons-position {
       position: relative;
-      top: unset;
-      bottom: unset; }
+      left: unset;
+      bottom: unset;
+      width: 100%; }
   .currency-table tr {
     display: table-row;
     -webkit-box-orient: vertical;
