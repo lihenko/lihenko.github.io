@@ -226,14 +226,15 @@
 		max-height: 15px;
 	}
 	& > td:nth-child(6){
-		position: absolute;
-		width: 100%;
-		left: 0;
-		bottom: -45px;
 		border: none;
 		background: transparent;
 		display: none;
-		z-index: 10;
+		& div{
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 15px;
+		}
 	}
 	&.open > td:nth-child(6){
 		display: block;

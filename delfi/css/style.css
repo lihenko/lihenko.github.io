@@ -509,14 +509,14 @@ div[class^="col-"] {
   #staking-table > tbody > tr > td:nth-child(5) img {
     max-height: 15px; }
   #staking-table > tbody > tr > td:nth-child(6) {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -45px;
     border: none;
     background: transparent;
-    display: none;
-    z-index: 10; }
+    display: none; }
+    #staking-table > tbody > tr > td:nth-child(6) div {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 15px; }
   #staking-table > tbody > tr.open > td:nth-child(6) {
     display: block; }
   #staking-table > tbody > tr.open > td {
@@ -703,9 +703,6 @@ footer {
     border-right: none; }
   #staking-table > tbody > tr > td:nth-child(6) {
     display: table-cell;
-    position: relative;
-    bottom: unset;
-    left: unset;
     width: 257px;
     background-color: #fff;
     border-right: 1px solid #0096AF;
@@ -713,6 +710,10 @@ footer {
     border-bottom: 1px solid #0096AF;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
+    #staking-table > tbody > tr > td:nth-child(6) div {
+      position: relative;
+      top: unset;
+      bottom: unset; }
   .currency-table tr {
     display: table-row;
     -webkit-box-orient: vertical;

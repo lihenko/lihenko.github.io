@@ -123,9 +123,6 @@
 	}
 	#staking-table > tbody > tr > td:nth-child(6){
 		display: table-cell;
-		position: relative;
-		bottom: unset;
-		left: unset;
 		width: 257px;
 		background-color: #fff;
 		border-right: 1px solid $blue;
@@ -133,6 +130,11 @@
 		border-bottom: 1px solid $blue;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
+		& div{
+			position: relative;
+			top: unset;
+			bottom: unset;
+		}
 	}
 	.currency-table tr{
 		display: table-row;
