@@ -479,32 +479,30 @@ div[class^="col-"] {
 #staking-table > tbody > tr {
   vertical-align: middle;
   position: relative;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-  #staking-table > tbody > tr img {
-    max-height: 15px; }
-  #staking-table > tbody > tr:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: -1px;
-    left: -1px;
+  /*&:before{
+	content: '';
+	position: absolute;
+	display: block;
+    //z-index: -2;
+    top: -1px; left: -1px;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
-    background: -webkit-linear-gradient(left, #0096AF, #A51E8C);
-    background: linear-gradient(to right, #0096AF, #A51E8C);
-    border-radius: 5px; }
-  #staking-table > tbody > tr:after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
+    background: linear-gradient(to right, $blue, $violet);
+    border-radius: 5px;
+	}
+	&:after{
+	content: '';
+	position: absolute;
+	display: block;
+    //z-index: -1;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
     background: #fff;
-    border-radius: 5px; }
+    border-radius: 5px;
+	}*/ }
+  #staking-table > tbody > tr img {
+    max-height: 15px; }
   #staking-table > tbody > tr svg {
     display: block;
     margin: 4px; }

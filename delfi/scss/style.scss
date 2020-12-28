@@ -189,11 +189,11 @@
 #staking-table > tbody > tr {
 	vertical-align: middle;
 	position: relative;
-	transform: scale(1);
+	//transform: scale(1);
 	& img{
 		max-height: 15px;
 	}
-	&:before{
+	/*&:before{
 	content: '';
 	position: absolute;
 	display: block;
@@ -214,7 +214,7 @@
     height: 100%;
     background: #fff;
     border-radius: 5px;
-	}
+	}*/
 	& svg{
 		display: block;
 		margin: 4px;
