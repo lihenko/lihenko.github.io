@@ -17,14 +17,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px){
-	#table table{
-		& tr{
-			& td{
-				display: list-item;
-				list-style: none;
-			}
-		}
-	}
+
 }
 
 /* Extra Small Devices, Phones */

@@ -22,10 +22,15 @@
 
 #table{
 	padding-bottom: 60px;
+	& .responsive-table{
+		width: 100%;
+		overflow-x: auto;
+	}
 }
 
 #table table{
 	width: 100%;
+	min-width: 944px;
 	font-size: 0.875em;
 	& h3{
 		margin-bottom: 0;
@@ -33,8 +38,14 @@
 	& a{
 		margin-left: 7px;
 	}
-	
-	tr:nth-child(odd){
+	& th{
+		color:$red;
+		font-weight: 700;
+		&:nth-child(5){
+			padding-left: 60px;
+		}
+	}
+	& tbody tr:nth-child(odd){
 		background-color: #F4F6F7;
 	}
 	& tr td:nth-child(1){
