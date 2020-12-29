@@ -1,0 +1,211 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 16px;
+	}
+	.hero-title h1{
+		margin-right: -200px;
+		z-index: 2;
+		position: relative;
+	}
+	.hero-email-icon{
+		&:before{
+			top: -6px;
+		}
+	}
+
+	.hero-pdf-icon{
+		&:before{
+			top: -6px;
+		}
+	}
+
+	.hero-button .green-button{
+		&:before{
+			bottom: -6px;
+		}
+	}
+	.blue-button{
+		padding: 15px 43px;
+		min-width: 400px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.transparent-button{
+		padding: 15px 43px;
+		min-width: 400px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.what-you-get-bg{
+		background: linear-gradient(to right, #F5F5F5 0%, #F5F5F5 70%, #fff 70%, #fff 100%);
+		padding: 130px 15px;
+	}
+	.bg-what-you-get-image{
+		right: 30%;
+	}
+	#features{
+		& .newsletter:before{
+			top: 3px;
+		}
+		& .professional-examples:before{
+			top: 3px;
+		}
+		& .evaluation:before{
+			top: 3px;
+		}
+		& .reexamine:before{
+			top: 3px;
+		}
+	}
+	#examples{
+		padding: 60px 0 80px;
+	}
+	.form-wrap{
+		padding: 87px 93px 70px;
+	}
+	#pricing{
+		padding: 80px 0;
+	}
+	.contact-email{
+		margin-left: 45px;
+		margin-right: 45px;
+		&:before{
+			top: 5px;
+		}
+	}
+	.contact-phone{
+		margin-left: 45px;
+		margin-right: 45px;
+		&:before{
+			top: 5px;
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body{
+		font-size: 20px;
+	}
+	.hero-title h1{
+		margin-right: -300px;
+		padding-left: 100px;
+	}
+	.hero-title p{
+		padding-left: 100px;
+	}
+	.hero-email-icon{
+		margin-left: 100px;
+	}
+	.hero-pdf-icon{
+		margin-left: 100px;
+	}
+	.hero-button{
+		margin-top: 44px;
+	}
+	.hero-button .green-button{
+		&:before{
+			bottom: -6.6px;
+		}
+	}
+	#features h4{
+		padding-left: 100px;
+		padding-right: 50px;
+	}
+	#what-you-get{
+		& h4{
+			padding-left: 100px;
+		}
+		& p{
+			padding-left: 100px;
+			padding-right: 80px;
+		}
+	}
+	#examples h5{
+		padding-left: 100px;
+	}
+	.example-buttons{
+		padding-left: 100px;
+		padding-right: 50px;
+		margin-bottom: 25px;
+	}
+}
+
+@media only screen and (min-width : 1600px){
+	.container{
+		max-width: 1260px;
+	}
+	.mb-xxl-5{
+		margin-bottom: 3rem!important;
+	}
+	.hero-button{
+		margin-top: 70px;
+	}
+}
