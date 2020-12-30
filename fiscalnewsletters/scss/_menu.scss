@@ -9,6 +9,9 @@
 	z-index: 99;
 	transform: translateY(-200%);
 	transition: transform 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	& ul{
 		list-style: none;
 		margin: 0;
@@ -23,8 +26,8 @@
 			& a{
 				position: relative;
 				color:$black;
-				font-size: 12px;
-				line-height: 14px;
+				font-size: 18px;
+				line-height: 18px;
 				align-items: center;
 				letter-spacing: 0.1em;
 				text-transform: capitalize;
@@ -42,6 +45,8 @@
 }
 
 .main-menu .menu-button a{
+	position: relative;
+	display: inline-block;
 	padding: 10px 80px;
 	border:2px solid $green;
 	transition: all 0.3s ease-in-out;
@@ -65,7 +70,7 @@
   display: block;
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   z-index: 9999999; }
 
 .toggle-btn .hamburger {
