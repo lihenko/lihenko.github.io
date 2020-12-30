@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="overlay"></div>
 <section id="top-bar">
 	<div class="container">
 		<div class="row">
@@ -50,9 +51,9 @@
 								</li>
 							</ul>
 						</div>						
-					</div><!-- #main-nav -->
+					</div>
 				</div>
-				<a href="#" class="blue-button">connect wallet</a>
+				<a href="#" class="blue-button" id="connect-wallet-button">connect wallet</a>
 			</div>
 		</div>
 		<div class="row">
@@ -68,7 +69,7 @@
 					This project is in beta. Use at your own risk.
 				</div>
 				<div class="hero-button text-center">
-					<a href="#" class="violet-button">Buy DELFI</a>
+					<a href="#" class="violet-button" id="buy-delfi-button">Buy DELFI</a>
 				</div>
 			</div>
 		</div>
@@ -1045,7 +1046,206 @@
 		</div>
 	</div>
 </footer>
-
+<div id="connect-wallet" class="modal">
+	<div class="modal-header">
+		<a href="#" class="close-button">
+			<img src="img/close.svg" alt="">
+		</a>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Metamask-1.svg" alt="">
+						</span>
+						<span>MetaMask</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/TWT.svg" alt="">
+						</span>
+						<span>TrustWallet</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/walletconnect-circle-blue.svg" alt="">
+						</span>
+						<span>Wallet Connect</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/coinbase-wallet.svg" alt="">
+						</span>
+						<span>Coinbase Wallet</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Ledger.svg" alt="">
+						</span>
+						<span>Ledger</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/wallet_trezor.svg" alt="">
+						</span>
+						<span>Trezor</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Fortmatic.svg" alt="">
+						</span>
+						<span>Fortmatic</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Portis-1.svg" alt="">
+						</span>
+						<span>Portis</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Squarelink.svg" alt="">
+						</span>
+						<span>Squarelink</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Torus.svg" alt="">
+						</span>
+						<span>Torus</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="wallet-wrap">
+					<a href="#" class="wallet">
+						<span>
+							<img src="img/Authereum.svg" alt="">
+						</span>
+						<span>Authereum</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="modal-button-wrap">
+					<a href="#" class="btn blue-button">Deactivate</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="buy-delfi" class="modal">
+	<div class="modal-header">
+		<a href="#" class="close-button">
+			<img src="img/close.svg" alt="">
+		</a>
+	</div>
+	<div class="modal-body">
+		<div class="row mb-45">
+			<div class="col-30">
+				My Ballance
+			</div>
+			<div class="col-30 mt-auto">
+				<div class="dots"></div>
+			</div>
+			<div class="col-30 blue">
+				0.000000 DELFI
+			</div>
+		</div>
+		<div class="row mb-45">
+			<div class="col-30">
+				Staked
+			</div>
+			<div class="col-30 mt-auto">
+				<div class="dots"></div>
+			</div>
+			<div class="col-30 blue">
+				0.000000 DELFI
+			</div>
+		</div>
+		<div class="row mb-45">
+			<div class="col-30">
+				Total Earned
+			</div>
+			<div class="col-30 mt-auto">
+				<div class="dots"></div>
+			</div>
+			<div class="col-30 blue">
+				0.000000 DELFI
+			</div>
+		</div>
+		<div class="row mb-30">
+			<div class="col-30">
+				Pending
+			</div>
+			<div class="col-30 mt-auto">
+				<div class="dots"></div>
+			</div>
+			<div class="col-30 blue">
+				0.000000 DELFI
+			</div>
+		</div>
+		<div class="row mb-45">
+			<div class="col-100 text-center">
+				<div class="history">
+					<a href="#">View Transaction History on Etherscan</a>
+				</div>	
+			</div>
+		</div>
+		<div class="row buttons-group">
+			<div class="col-30 text-center">
+				<a href="#" class="blue-button">STAKE</a>
+				<p>1.0% fee for staking.</p>
+			</div>
+			<div class="col-30 text-center">
+				<a href="#" class="blue-button">UNSTAKE</a>
+				<p>0.5% fee for unstaking.</p>
+			</div>
+			<div class="col-30 text-center">
+				<a href="#" class="violet-button">CLAIM</a>
+				<p>0% fee for claim.</p>
+			</div>
+		</div>
+	</div>
+</div>
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/tablesorter/jquery.tablesorter.min.js"></script>
 	<script src="js/menu.js"></script>

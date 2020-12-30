@@ -4,6 +4,24 @@
 @import "vars";
 @import "menu";
 
+body.open{
+	overflow: hidden;
+	& .overlay{
+		display: block;
+	}
+}
+
+.overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 99;
+	display: none;
+}
+
 #top-bar{
 	background-color: rgba(#A51E8C, 0.15);
 	padding-top: 7.5px;
@@ -349,6 +367,166 @@ footer{
 			}
 		}
 	}
+}
+
+#connect-wallet{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 688px;
+	max-width: 100%;
+	height: 493px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 35px 0 rgba(0,0,0,0.16);
+	padding: 40px 55px 35px;
+	z-index: 100;
+	transition: all 1s ease-in-out;
+	transform: translateY(-200%);
+	& .row{
+		margin-left: -9px;
+		margin-right: -9px;
+	}
+	& .col-50{
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+	& .close-button{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	& .modal-body{
+		max-height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	& .wallet-wrap{
+		background: linear-gradient(90deg, $blue, $violet);
+		border-radius: 5px;
+		padding: 1px;
+		margin-bottom: 5px;
+		height: 64px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& .wallet{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 4px;
+		padding: 5px 15px;
+		font-size: 18px;
+		font-weight: 500;
+		color: $black;
+		transition: all 0.3s ease-in-out;
+		& span:nth-child(1){
+			width: 20%;
+		}
+		& span:nth-child(2){
+			width: 80%;
+		}
+		&:hover{
+			background-color: transparent;
+			color: #fff;
+		}
+	}
+	.modal-button-wrap{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		& .blue-button{
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+#connect-wallet.open{
+	transform: translateY(0%);
+}
+
+#buy-delfi.open{
+	transform: translateY(0%);
+}
+
+#buy-delfi{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 860px;
+	max-width: 100%;
+	height: 493px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 35px 0 rgba(0,0,0,0.16);
+	padding: 40px 55px 35px;
+	z-index: 101;
+	transition: all 1s ease-in-out;
+	transform: translateY(-200%);
+	& .row{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	& .col-30{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	& .close-button{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	& .modal-body{
+		max-height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	& .history a{
+		color: $violet;
+		font-size: 14px;
+		&:hover{
+			color: $blue;
+		}
+		&:after{
+			content: url('../img/arrows-round.4.svg');
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 10px;
+		}
+	}
+	& .buttons-group{
+		font-size: 14px;
+		font-weight: 400;
+		& a{
+			min-width: 215px;
+		}
+	}
+}
+
+.mt-auto{
+	margin-top: auto;
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.mb-45{
+	margin-bottom: 45px;
 }
 
 @import "media";

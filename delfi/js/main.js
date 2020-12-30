@@ -19,4 +19,44 @@ $("#staking-table").tablesorter({
         }
         return $(node).text(); 
     } 
+});
+
+$(document).ready(function(){
+  $('#connect-wallet-button').on('click', function(event) {
+    event.preventDefault();
+    $('body').addClass('open');
+    $('#connect-wallet').addClass('open');
+  });
 }); 
+
+$(document).ready(function(){
+  $('#connect-wallet .close-button').on('click', function(event) {
+    event.preventDefault();
+    $('#connect-wallet').removeClass('open');
+    setTimeout(function(){ $('body').removeClass('open'); }, 1000);
+  });
+});
+
+$(document).ready(function(){
+  $('#buy-delfi-button').on('click', function(event) {
+    event.preventDefault();
+    $('body').addClass('open');
+    $('#buy-delfi').addClass('open');
+  });
+}); 
+
+$(document).ready(function(){
+  $('#buy-delfi .close-button').on('click', function(event) {
+    event.preventDefault();
+    $('#buy-delfi').removeClass('open');
+    setTimeout(function(){ $('body').removeClass('open'); }, 1000);
+  });
+});
+
+$(document).ready(function(){
+  $('.overlay').on('click', function(event) {
+    event.preventDefault();
+    $('.modal').removeClass('open');
+    setTimeout(function(){ $('body').removeClass('open'); }, 1000);
+  });
+});

@@ -37,8 +37,7 @@ body {
   font-weight: 400;
   line-height: 1.14;
   font-family: WorkSans-DelFi, sans-serif;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: auto !important; }
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Vote-DelFi, sans-serif;
@@ -251,7 +250,7 @@ div[class^="col-"] {
   position: absolute;
   top: 35px;
   right: 10px;
-  z-index: 9999999; }
+  z-index: 98; }
 
 .toggle-btn .hamburger {
   background-color: transparent;
@@ -325,6 +324,21 @@ div[class^="col-"] {
   .main-menu ul li {
     padding-left: 27px;
     padding-right: 27px; } }
+
+body.open {
+  overflow: hidden; }
+  body.open .overlay {
+    display: block; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 99;
+  display: none; }
 
 #top-bar {
   background-color: rgba(165, 30, 140, 0.15);
@@ -642,6 +656,172 @@ footer {
       #footer-menu li a:hover {
         color: #A51E8C; }
 
+#connect-wallet {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 688px;
+  max-width: 100%;
+  height: 493px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.16);
+  padding: 40px 55px 35px;
+  z-index: 100;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%); }
+  #connect-wallet .row {
+    margin-left: -9px;
+    margin-right: -9px; }
+  #connect-wallet .col-50 {
+    padding-left: 9px;
+    padding-right: 9px; }
+  #connect-wallet .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+  #connect-wallet .modal-body {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  #connect-wallet .wallet-wrap {
+    background: -webkit-linear-gradient(left, #0096AF, #A51E8C);
+    background: linear-gradient(90deg, #0096AF, #A51E8C);
+    border-radius: 5px;
+    padding: 1px;
+    margin-bottom: 5px;
+    height: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #connect-wallet .wallet {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #323232;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    #connect-wallet .wallet span:nth-child(1) {
+      width: 20%; }
+    #connect-wallet .wallet span:nth-child(2) {
+      width: 80%; }
+    #connect-wallet .wallet:hover {
+      background-color: transparent;
+      color: #fff; }
+  #connect-wallet .modal-button-wrap {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #connect-wallet .modal-button-wrap .blue-button {
+      display: block;
+      width: 100%;
+      text-align: center; }
+
+#connect-wallet.open {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+#buy-delfi.open {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+#buy-delfi {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 860px;
+  max-width: 100%;
+  height: 493px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.16);
+  padding: 40px 55px 35px;
+  z-index: 101;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%); }
+  #buy-delfi .row {
+    margin-left: -15px;
+    margin-right: -15px; }
+  #buy-delfi .col-30 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  #buy-delfi .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+  #buy-delfi .modal-body {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight: 500; }
+  #buy-delfi .history a {
+    color: #A51E8C;
+    font-size: 14px; }
+    #buy-delfi .history a:hover {
+      color: #0096AF; }
+    #buy-delfi .history a:after {
+      content: url("../img/arrows-round.4.svg");
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 10px; }
+  #buy-delfi .buttons-group {
+    font-size: 14px;
+    font-weight: 400; }
+    #buy-delfi .buttons-group a {
+      min-width: 215px; }
+
+.mt-auto {
+  margin-top: auto; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-45 {
+  margin-bottom: 45px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -669,6 +849,8 @@ footer {
     font-size: 22px; }
   .col-50 {
     max-width: 50%; }
+  .col-30 {
+    max-width: 33%; }
   .text-lg-right {
     text-align: right; }
   .brand {
@@ -808,7 +990,19 @@ footer {
     #footer-menu li:last-child {
       border: none; }
     #footer-menu li a {
-      font-size: 14px; } }
+      font-size: 14px; }
+  .dots {
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.19) 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.19) 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px 2px;
+    background-repeat: repeat-x; }
+  #buy-delfi .row:not(.buttons-group) .col-30:nth-child(1) {
+    padding-left: 70px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
