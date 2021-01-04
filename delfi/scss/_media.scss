@@ -123,6 +123,9 @@
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 		border-right: none;
+		& img:nth-child(1){
+			display: block;
+		}
 	}
 	#staking-table > tbody > tr > td:nth-child(6){
 		display: table-cell;

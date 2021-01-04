@@ -177,7 +177,7 @@ div[class^="col-"] {
   font-size: 14px;
   font-weight: 400;
   background-color: #fff;
-  z-index: 99;
+  z-index: 80;
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -430,7 +430,7 @@ body.open {
   margin-bottom: 30px; }
 
 .description {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 55px; }
 
 .hero-button .violet-button {
@@ -633,7 +633,7 @@ ul#earning {
       transform: scale(0.7); }
 
 footer {
-  margin-top: -150px;
+  margin-top: -100px;
   position: relative;
   padding-bottom: 40px; }
 
@@ -822,6 +822,9 @@ footer {
 .mb-45 {
   margin-bottom: 45px; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -885,6 +888,8 @@ footer {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none; }
+    #staking-table > tbody > tr td:nth-child(5) img:nth-child(1) {
+      display: block; }
   #staking-table > tbody > tr > td:nth-child(6) {
     display: table-cell;
     width: 257px;
