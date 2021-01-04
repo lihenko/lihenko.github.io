@@ -390,7 +390,7 @@ body.open {
 
 #hero {
   background-image: url("../img/back.svg");
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
