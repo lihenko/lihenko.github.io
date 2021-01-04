@@ -825,6 +825,10 @@ footer {
 .mb-100 {
   margin-bottom: 100px; }
 
+.copyright {
+  margin-top: 30px;
+  font-size: 0.6em; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
