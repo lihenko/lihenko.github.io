@@ -129,7 +129,7 @@
 	}
 	#staking-table > tbody > tr > td:nth-child(6){
 		display: table-cell;
-		width: 257px;
+		width: 295px;
 		background-color: #fff;
 		border-right: 1px solid $blue;
 		border-top: 1px solid $blue;
@@ -182,8 +182,8 @@
 		padding: 16px 33px;
 		display: inline-block;
 		&:hover{
-			color: #fff;
-			background-color: $violet;
+			color: $blue;
+			background-color: #fff;
 		}
 	}
 
@@ -198,8 +198,8 @@
 		padding: 16px 33px;
 		display: inline-block;
 		&:hover{
-			color: #fff;
-			background-color: $blue;
+			color: $violet;
+			background-color: #fff;
 		}
 	}
 	.hero-button .violet-button{
@@ -268,5 +268,14 @@
 			padding-left: 35px;
 			padding-right: 35px;
 		}
+	}
+	table .blue-button{
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	table .violet-button{
+		font-size: 18px;
+		font-weight: 400;
 	}
 }

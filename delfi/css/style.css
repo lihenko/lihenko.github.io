@@ -401,14 +401,15 @@ body.open {
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
+  border: 2px solid #0096AF;
   background-color: #0096AF;
   text-transform: uppercase;
   border-radius: 5px;
   padding: 10px 23px;
   display: inline-block; }
   .blue-button:hover {
-    color: #fff;
-    background-color: #A51E8C; }
+    color: #0096AF;
+    background-color: #fff; }
 
 .violet-button {
   font-size: 12px;
@@ -416,13 +417,14 @@ body.open {
   letter-spacing: 1px;
   color: #fff;
   background-color: #A51E8C;
+  border: 2px solid #A51E8C;
   text-transform: uppercase;
   border-radius: 5px;
   padding: 10px 23px;
   display: inline-block; }
   .violet-button:hover {
-    color: #fff;
-    background-color: #0096AF; }
+    color: #A51E8C;
+    background-color: #fff; }
 
 .amount {
   font-family: Vote-DelFi, sans-serif;
@@ -769,12 +771,12 @@ footer {
   right: 0;
   width: 860px;
   max-width: 100%;
-  height: 493px;
+  height: 510px;
   margin: auto;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.16);
-  padding: 40px 55px 35px;
+  padding: 55px 55px 35px;
   z-index: 101;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -896,7 +898,7 @@ footer {
       display: block; }
   #staking-table > tbody > tr > td:nth-child(6) {
     display: table-cell;
-    width: 257px;
+    width: 295px;
     background-color: #fff;
     border-right: 1px solid #0096AF;
     border-top: 1px solid #0096AF;
@@ -953,8 +955,8 @@ footer {
     padding: 16px 33px;
     display: inline-block; }
     .blue-button:hover {
-      color: #fff;
-      background-color: #A51E8C; }
+      color: #0096AF;
+      background-color: #fff; }
   .violet-button {
     font-size: 14px;
     font-weight: 600;
@@ -966,8 +968,8 @@ footer {
     padding: 16px 33px;
     display: inline-block; }
     .violet-button:hover {
-      color: #fff;
-      background-color: #0096AF; }
+      color: #A51E8C;
+      background-color: #fff; }
   .hero-button .violet-button {
     font-size: 18px;
     padding: 25px 70px; }
@@ -1019,4 +1021,10 @@ footer {
     padding-left: 90px !important; }
   #footer-menu li {
     padding-left: 35px;
-    padding-right: 35px; } }
+    padding-right: 35px; }
+  table .blue-button {
+    font-size: 18px;
+    font-weight: 400; }
+  table .violet-button {
+    font-size: 18px;
+    font-weight: 400; } }
