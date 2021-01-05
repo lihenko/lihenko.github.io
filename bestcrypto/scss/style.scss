@@ -20,6 +20,40 @@
 	padding-bottom: 70px;
 }
 
+.button-red{
+	font-family:WorkSans, sans-serif;
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background: $red;
+	border-radius: 5px;
+	padding: 19px 75px;
+	line-height: 1;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background: $blue;
+	}
+}
+
+a.video:after{
+	content: url('../img/video.svg');
+	position: absolute;
+	display: block;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.mb-60{
+	margin-bottom: 60px;
+}
+
 #table{
 	padding-bottom: 60px;
 	& .responsive-table{
@@ -89,6 +123,46 @@
 			padding-left: 15px;
 			margin-bottom: 15px;
 		}
+	}
+}
+
+#final-thoughts{
+	padding: 80px 0 0;
+}
+
+.big{
+	font-size: 1.375em;
+	font-weight: 700;
+  	line-height: 1.36;
+}
+
+.join-wrap .button-red{
+	font-weight: 600;
+	max-width: 100%;
+}
+
+.join-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.join-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 45px;
+	& img{
+		margin-bottom: 30px;
+		align-self: center;
+	}
+	& .button-red{
+		padding: 17px 50px;
+		text-align: center;
 	}
 }
 

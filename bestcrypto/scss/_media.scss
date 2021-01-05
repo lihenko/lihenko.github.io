@@ -75,6 +75,9 @@
 			white-space: nowrap;
 		}
 	}
+	.join-wrap{
+		flex-basis: 33%;
+	}
 }
 
 
@@ -98,6 +101,16 @@
 		padding-top: 140px;
 		padding-bottom: 80px;
 	}
+	.button-red{
+		padding: 19px 119px;
+	}
+	a.video:after{
+		right: 35px;
+	}
+	.join-wrap{
+		flex-basis: 25%;
+	}
+	
 }
 
 
@@ -130,5 +143,8 @@
 			padding-left: 260px;
 			padding-right: 260px;
 		}
+	}
+	.join-wrap{
+		flex-basis: 20%;
 	}
 }
