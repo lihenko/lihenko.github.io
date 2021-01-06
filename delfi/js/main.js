@@ -1,3 +1,11 @@
+$(document).ready(function () {
+  $('#countdown').countdown({
+    until: new Date(2021, 2-1, 12, 12, 0),
+    timezone: +8,
+  });
+});
+
+
 $(document).ready(function(){
   $('#staking-table > tbody > tr').on('click', function(event) {
     event.preventDefault();
@@ -60,3 +68,4 @@ $(document).ready(function(){
     setTimeout(function(){ $('body').removeClass('open'); }, 1000);
   });
 });
+

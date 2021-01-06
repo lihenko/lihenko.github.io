@@ -65,6 +65,11 @@
 	#staking-table{
 		font-size: 16px;
 	}
+	.countdown-row {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 
@@ -73,11 +78,17 @@
 	body{
 		font-size: 22px;
 	}
+	.col-60{
+		max-width: 60%;
+	}
 	.col-50{
 		max-width: 50%;
 	}
 	.col-30{
 		max-width: 33%;
+	}
+	.offset-lg-20{
+		margin-left: 20%;
 	}
 	.text-lg-right{
 		text-align: right;
@@ -87,6 +98,9 @@
 	}
 	.amount{
 		font-size: 5.9em;
+	}
+	.countdown-amount{
+		font-size: 5em;
 	}
 	.hero-button .violet-button{
 		font-size: 18px;
@@ -255,6 +269,12 @@
 	#buy-delfi .row:not(.buttons-group) .col-30:nth-child(1){
 		padding-left: 70px;
 	}
+	.countdown-row {
+		width: 100%;
+	}
+	.countdown-period{
+		margin-top: -25px;
+	}
 }
 
 
@@ -277,5 +297,8 @@
 	table .violet-button{
 		font-size: 18px;
 		font-weight: 400;
+	}
+	.countdown-amount{
+		font-size: 5.9em;
 	}
 }

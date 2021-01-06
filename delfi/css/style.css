@@ -831,6 +831,59 @@ footer {
   margin-top: 30px;
   font-size: 0.6em; }
 
+#countdown {
+  margin-bottom: 30px; }
+
+.countdown-row {
+  clear: both;
+  width: 100%;
+  padding: 0px 2px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.countdown-show1 .countdown-section {
+  width: 98%; }
+
+.countdown-show2 .countdown-section {
+  width: 48%; }
+
+.countdown-show3 .countdown-section {
+  width: 32.5%; }
+
+.countdown-show4 .countdown-section {
+  width: 24.5%; }
+
+.countdown-show5 .countdown-section {
+  width: 19.5%; }
+
+.countdown-show6 .countdown-section {
+  width: 16.25%; }
+
+.countdown-show7 .countdown-section {
+  width: 14%; }
+
+.countdown-section {
+  display: block;
+  float: left;
+  text-align: center; }
+
+.countdown-amount {
+  font-family: Vote-DelFi, sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 30px; }
+
+.countdown-period {
+  display: block;
+  font-size: 0.63em;
+  text-transform: uppercase; }
+
+.countdown-descr {
+  display: block;
+  width: 100%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -850,22 +903,32 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   #staking-table {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .countdown-row {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   body {
     font-size: 22px; }
+  .col-60 {
+    max-width: 60%; }
   .col-50 {
     max-width: 50%; }
   .col-30 {
     max-width: 33%; }
+  .offset-lg-20 {
+    margin-left: 20%; }
   .text-lg-right {
     text-align: right; }
   .brand {
     margin-bottom: 0; }
   .amount {
     font-size: 5.9em; }
+  .countdown-amount {
+    font-size: 5em; }
   .hero-button .violet-button {
     font-size: 18px;
     padding: 25px 120px; }
@@ -1013,7 +1076,11 @@ footer {
     background-size: 10px 2px;
     background-repeat: repeat-x; }
   #buy-delfi .row:not(.buttons-group) .col-30:nth-child(1) {
-    padding-left: 70px; } }
+    padding-left: 70px; }
+  .countdown-row {
+    width: 100%; }
+  .countdown-period {
+    margin-top: -25px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -1027,4 +1094,6 @@ footer {
     font-weight: 400; }
   table .violet-button {
     font-size: 18px;
-    font-weight: 400; } }
+    font-weight: 400; }
+  .countdown-amount {
+    font-size: 5.9em; } }
