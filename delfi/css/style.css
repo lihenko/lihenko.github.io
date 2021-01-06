@@ -388,13 +388,20 @@ body.open {
 .mb-60 {
   margin-bottom: 60px; }
 
-#hero {
+.home #hero {
   background-image: url("../img/back.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 330px; }
+
+#hero {
+  padding-top: 80px;
+  padding-bottom: 15px; }
+
+#content {
+  padding-bottom: 200px; }
 
 .blue-button {
   font-size: 12px;
