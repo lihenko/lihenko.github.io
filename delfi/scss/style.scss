@@ -135,6 +135,23 @@ body.open{
 	}
 }
 
+.violet-transparent-button{
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: $violet;
+	background-color: #fff;
+	border: 2px solid $violet;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 10px 23px;
+	display: inline-block;
+	&:hover{
+		color: #fff;
+		background-color: $violet;
+	}
+}
+
 .amount{
 	font-family: Vote-DelFi, sans-serif;
 	font-size: 3.5em;
@@ -465,11 +482,11 @@ footer{
 	transform: translateY(0%);
 }
 
-#buy-delfi.open{
+#stake-claim.open{
 	transform: translateY(0%);
 }
 
-#buy-delfi{
+#stake-claim{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -526,6 +543,42 @@ footer{
 			min-width: 215px;
 		}
 	}
+}
+
+#buy-delfi.open{
+	transform: translateY(0%);
+}
+
+#buy-delfi{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 860px;
+	max-width: 100%;
+	height: 510px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 35px 0 rgba(0,0,0,0.16);
+	padding: 55px 55px 35px;
+	z-index: 101;
+	transition: all 1s ease-in-out;
+	transform: translateY(-200%);
+	& .close-button{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	& .modal-body{
+		max-height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
 }
 
 .mt-auto{
@@ -599,5 +652,47 @@ footer{
   width: 100%;
 }
 
+#buy-delfi .violet-transparent-button{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 33px;
+}
+
+#news-window.open{
+	transform: translateY(0%);
+}
+
+#news-window{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 860px;
+	max-width: 100%;
+	height: 510px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 35px 0 rgba(0,0,0,0.16);
+	padding: 55px 55px 35px;
+	z-index: 101;
+	transition: all 1s ease-in-out;
+	transform: translateY(-200%);
+	& .close-button{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	& .modal-body{
+		max-height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+}
 
 @import "media";

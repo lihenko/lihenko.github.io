@@ -433,6 +433,21 @@ body.open {
     color: #A51E8C;
     background-color: #fff; }
 
+.violet-transparent-button {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #A51E8C;
+  background-color: #fff;
+  border: 2px solid #A51E8C;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 23px;
+  display: inline-block; }
+  .violet-transparent-button:hover {
+    color: #fff;
+    background-color: #A51E8C; }
+
 .amount {
   font-family: Vote-DelFi, sans-serif;
   font-size: 3.5em;
@@ -765,6 +780,63 @@ footer {
   -ms-transform: translateY(0%);
   transform: translateY(0%); }
 
+#stake-claim.open {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+#stake-claim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 860px;
+  max-width: 100%;
+  height: 510px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.16);
+  padding: 55px 55px 35px;
+  z-index: 101;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%); }
+  #stake-claim .row {
+    margin-left: -15px;
+    margin-right: -15px; }
+  #stake-claim .col-30 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  #stake-claim .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+  #stake-claim .modal-body {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight: 500; }
+  #stake-claim .history a {
+    color: #A51E8C;
+    font-size: 14px; }
+    #stake-claim .history a:hover {
+      color: #0096AF; }
+    #stake-claim .history a:after {
+      content: url("../img/arrows-round.4.svg");
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 10px; }
+  #stake-claim .buttons-group {
+    font-size: 14px;
+    font-weight: 400; }
+    #stake-claim .buttons-group a {
+      min-width: 215px; }
+
 #buy-delfi.open {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -790,12 +862,6 @@ footer {
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%); }
-  #buy-delfi .row {
-    margin-left: -15px;
-    margin-right: -15px; }
-  #buy-delfi .col-30 {
-    padding-left: 15px;
-    padding-right: 15px; }
   #buy-delfi .close-button {
     position: absolute;
     top: 15px;
@@ -806,21 +872,6 @@ footer {
     overflow-x: hidden;
     font-size: 18px;
     font-weight: 500; }
-  #buy-delfi .history a {
-    color: #A51E8C;
-    font-size: 14px; }
-    #buy-delfi .history a:hover {
-      color: #0096AF; }
-    #buy-delfi .history a:after {
-      content: url("../img/arrows-round.4.svg");
-      display: inline-block;
-      vertical-align: middle;
-      padding-left: 10px; }
-  #buy-delfi .buttons-group {
-    font-size: 14px;
-    font-weight: 400; }
-    #buy-delfi .buttons-group a {
-      min-width: 215px; }
 
 .mt-auto {
   margin-top: auto; }
@@ -890,6 +941,48 @@ footer {
 .countdown-descr {
   display: block;
   width: 100%; }
+
+#buy-delfi .violet-transparent-button {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 33px; }
+
+#news-window.open {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+#news-window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 860px;
+  max-width: 100%;
+  height: 510px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.16);
+  padding: 55px 55px 35px;
+  z-index: 101;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%); }
+  #news-window .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+  #news-window .modal-body {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight: 500; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

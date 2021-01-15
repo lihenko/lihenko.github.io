@@ -46,6 +46,22 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.buttons-wrap a').on('click', function(event) {
+    event.preventDefault();
+    $('body').addClass('open');
+    $('#stake-claim').addClass('open');
+  });
+}); 
+
+$(document).ready(function(){
+  $('#stake-claim .close-button').on('click', function(event) {
+    event.preventDefault();
+    $('#stake-claim').removeClass('open');
+    setTimeout(function(){ $('body').removeClass('open'); }, 1000);
+  });
+});
+
+$(document).ready(function(){
   $('#buy-delfi-button').on('click', function(event) {
     event.preventDefault();
     $('body').addClass('open');
@@ -57,6 +73,22 @@ $(document).ready(function(){
   $('#buy-delfi .close-button').on('click', function(event) {
     event.preventDefault();
     $('#buy-delfi').removeClass('open');
+    setTimeout(function(){ $('body').removeClass('open'); }, 1000);
+  });
+});
+
+$(document).ready(function(){
+  $('.top-bar-learn-more').on('click', function(event) {
+    event.preventDefault();
+    $('body').addClass('open');
+    $('#news-window').addClass('open');
+  });
+}); 
+
+$(document).ready(function(){
+  $('#news-window .close-button').on('click', function(event) {
+    event.preventDefault();
+    $('#news-window').removeClass('open');
     setTimeout(function(){ $('body').removeClass('open'); }, 1000);
   });
 });
