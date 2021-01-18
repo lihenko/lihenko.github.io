@@ -129,6 +129,12 @@
 	.form-wrap{
 		padding: 87px 93px 70px;
 	}
+	#professional-images .form-wrap{
+		padding: 87px 43px 70px;
+	}
+	#professional-audience .form-wrap{
+		padding: 87px 43px 70px;
+	}
 	#pricing{
 		padding: 80px 0;
 	}
@@ -145,6 +151,12 @@
 		&:before{
 			top: 5px;
 		}
+	}
+	.file-box{
+		padding: 30px 50px;
+	}
+	.audience-info{
+		padding: 15px 35px;
 	}
 }
 
