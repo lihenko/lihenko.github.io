@@ -87,7 +87,6 @@ body.open{
 	background-image: url('../img/bg-hero.png');
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: cover;
 	padding-top: 80px;
 	padding-bottom: 330px;
 }
@@ -374,7 +373,6 @@ footer{
 	&.home{
 		background-image: url('../img/bg-footer.png');
 		background-position: bottom center;
-		background-size: cover;
 	}
 }
 
