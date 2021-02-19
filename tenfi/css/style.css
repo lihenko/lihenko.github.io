@@ -662,6 +662,8 @@ footer {
   padding-bottom: 40px; }
 
 .home footer {
+  margin-top: -250px;
+  padding-top: 150px;
   background-image: url("../img/bg-footer.png");
   background-position: bottom center;
   background-repeat: no-repeat; }
@@ -997,6 +999,16 @@ footer {
     overflow-x: hidden;
     font-size: 18px;
     font-weight: 500; }
+
+table .violet-button:hover {
+  color: #171719;
+  border-color: #07A5FF;
+  background-color: #fff; }
+
+table .blue-button:hover {
+  color: #171719;
+  border-color: #EB4F45;
+  background-color: #fff; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

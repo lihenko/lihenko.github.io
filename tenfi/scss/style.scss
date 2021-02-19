@@ -374,6 +374,8 @@ footer{
 }
 
 .home footer{
+		margin-top: -250px;
+		padding-top: 150px;
 		background-image: url('../img/bg-footer.png');
 		background-position: bottom center;
 		background-repeat: no-repeat;
@@ -707,5 +709,20 @@ footer{
 	}
 
 }
+
+table .violet-button:hover{
+	color:$black;
+	border-color: $violet;
+	background-color: #fff;
+}
+
+table .blue-button:hover{
+	color:$black;
+	border-color: $blue;
+	background-color: #fff;
+}
+
+
+
 
 @import "media";
