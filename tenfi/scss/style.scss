@@ -374,6 +374,8 @@ footer{
 }
 
 .home footer{
+		z-index: -1;
+		position: relative;
 		margin-top: -250px;
 		padding-top: 150px;
 		background-image: url('../img/bg-footer.png');
