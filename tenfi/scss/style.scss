@@ -370,11 +370,14 @@ footer{
 	margin-top: -100px;
 	position: relative;
 	padding-bottom: 40px;
-	&.home{
+	
+}
+
+.home footer{
 		background-image: url('../img/bg-footer.png');
 		background-position: bottom center;
+		background-repeat: no-repeat;
 	}
-}
 
 #footer-menu{
 	list-style: none;
