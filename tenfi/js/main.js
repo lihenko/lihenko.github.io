@@ -104,3 +104,29 @@ $(document).ready(function(){
 $(document).ready(function(){
     $.protip();
 });
+
+function copyToClipboard(element) {
+  event.preventDefault();
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+$(document).ready(function(){
+  $('#copy-text').on('click', function(event) {
+    event.preventDefault();
+    var $temp = $("<input>");
+    var element = $(".violet-transparent-button");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    $(this).text('copied');
+    setTimeout(function(){ 
+      $('#copy-text').text('copy address');
+    }, 3000);
+    
+  });
+});

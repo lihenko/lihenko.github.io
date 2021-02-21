@@ -113,9 +113,9 @@ body.open{
 	padding: 10px 23px;
 	display: inline-block;
 	&:hover{
-		color: #fff;
-		background-color: $violet;
-		border-color: $violet;
+		color: $black;
+		background-color: #fff;
+		border-color: $blue;
 	}
 }
 
@@ -131,9 +131,9 @@ body.open{
 	padding: 10px 23px;
 	display: inline-block;
 	&:hover{
-		color: #fff;
-		background-color: $blue;
-		border-color: $blue;
+		color: $black;
+		background-color: #fff;
+		border-color: $violet;
 	}
 }
 
@@ -236,6 +236,9 @@ body.open{
 #staking-table > tbody > tr {
 	vertical-align: middle;
 	position: relative;
+	&:nth-child(1){
+		background-color: $black;
+	}
 	& img{
 		max-height: 15px;
 	}
@@ -257,7 +260,7 @@ body.open{
 	}
 	& > td:nth-child(2){
 		font-weight: 700;
-		color: $violet;
+		color: $blue;
 	}
 	& > td:nth-child(3){
 		font-weight: 700;
@@ -483,7 +486,7 @@ footer{
 		height: 100%;
 		display: flex;
 		align-items: center;
-		& .blue-button{
+		& .violet-button{
 			display: block;
 			width: 100%;
 			text-align: center;

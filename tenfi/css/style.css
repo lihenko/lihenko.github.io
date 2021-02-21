@@ -415,9 +415,9 @@ body.open {
   padding: 10px 23px;
   display: inline-block; }
   .blue-button:hover {
-    color: #fff;
-    background-color: #07A5FF;
-    border-color: #07A5FF; }
+    color: #171719;
+    background-color: #fff;
+    border-color: #EB4F45; }
 
 .violet-button {
   font-size: 12px;
@@ -431,9 +431,9 @@ body.open {
   padding: 10px 23px;
   display: inline-block; }
   .violet-button:hover {
-    color: #fff;
-    background-color: #EB4F45;
-    border-color: #EB4F45; }
+    color: #171719;
+    background-color: #fff;
+    border-color: #07A5FF; }
 
 .violet-transparent-button {
   font-size: 12px;
@@ -519,6 +519,8 @@ body.open {
 #staking-table > tbody > tr {
   vertical-align: middle;
   position: relative; }
+  #staking-table > tbody > tr:nth-child(1) {
+    background-color: #171719; }
   #staking-table > tbody > tr img {
     max-height: 15px; }
   #staking-table > tbody > tr svg {
@@ -536,7 +538,7 @@ body.open {
     border-bottom-left-radius: 5px; }
   #staking-table > tbody > tr > td:nth-child(2) {
     font-weight: 700;
-    color: #07A5FF; }
+    color: #EB4F45; }
   #staking-table > tbody > tr > td:nth-child(3) {
     font-weight: 700;
     color: #0096AF; }
@@ -784,7 +786,7 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-    #connect-wallet .modal-button-wrap .blue-button {
+    #connect-wallet .modal-button-wrap .violet-button {
       display: block;
       width: 100%;
       text-align: center; }
