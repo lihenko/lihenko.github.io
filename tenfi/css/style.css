@@ -713,9 +713,9 @@ footer {
   z-index: 100;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  -webkit-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%); }
   #connect-wallet .row {
     margin-left: -9px;
     margin-right: -9px; }
@@ -819,9 +819,9 @@ footer {
   z-index: 101;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  -webkit-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%); }
   #stake-claim .row {
     margin-left: -15px;
     margin-right: -15px; }
@@ -877,9 +877,9 @@ footer {
   z-index: 101;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  -webkit-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%); }
   #buy-delfi .close-button {
     position: absolute;
     top: 15px;
@@ -990,9 +990,9 @@ footer {
   z-index: 101;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  -webkit-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%); }
   #news-window .close-button {
     position: absolute;
     top: 15px;
