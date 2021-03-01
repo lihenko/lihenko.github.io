@@ -1,0 +1,105 @@
+
+.main-menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	z-index: 99;
+	transform: translateY(-200%);
+	transition: transform 0.3s ease-in-out;
+	& ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		& li{
+			display: block;
+			padding-left: 24px;
+			padding-right: 24px;
+			margin-bottom: 30px;
+			line-height: 1;
+			& a{
+				position: relative;
+				color:$black;
+				font-size: 20px;
+				line-height: 22px;
+				align-items: center;
+				letter-spacing: 0.1em;
+				text-transform: capitalize;
+				transition: color 0.3s ease-in-out;
+				&:hover{
+					color:$black;
+				}
+			}
+		}
+	}
+}
+
+.main-menu.open{
+	transform: translateY(0%);
+}
+
+.main-menu .menu-button a{
+	padding: 18px 65px;
+	border:1px solid $gold;
+	border-radius: 25px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		background-color: $gold;
+		color: #fff;
+	}
+}
+
+.dropdown-link:after{
+	content: url('../img/arrow-down.svg');
+	position: absolute;
+	right: -5px;
+	top: -2px;
+}
+
+
+/* Toggle */
+.toggle-btn {
+  display: block;
+  z-index: 9999999; }
+
+.toggle-btn .hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+   }
+
+.hamburger .icon-bar {
+  background-color: $black;
+  display: block;
+  height: 4px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 43px; }
+
+.hamburger .icon-bar:not(:last-child) {
+  margin-bottom: 10px; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(1) {
+  top: 11px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-open .hamburger .icon-bar:nth-of-type(2) {
+  background-color: transparent; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(3) {
+  top: -17px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+
