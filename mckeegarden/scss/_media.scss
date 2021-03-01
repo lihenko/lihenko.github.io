@@ -11,7 +11,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px){
-
+	footer{
+		& .footer-copyright{
+			justify-content: center;
+		}
+	}
 }
 
 
@@ -106,7 +110,7 @@
 			padding-left: 65px;
 			padding-right: 65px;
 		}
-		& .footer-seals{
+		& .footer-copyright{
 			padding-left: 65px;
 			padding-right: 65px;
 		}	

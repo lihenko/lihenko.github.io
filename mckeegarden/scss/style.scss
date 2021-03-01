@@ -494,6 +494,13 @@ footer{
 		margin-bottom: 30px;
 	}
 
+	& .footer-copyright{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap:30px 15px;
+	}
 	& .footer-seals{
 		display: flex;
 		flex-wrap: wrap;
@@ -501,7 +508,9 @@ footer{
 		& img{
 			align-self: center;
 		}
-		
+	}
+	& .copyright{
+		color: #fff;
 	}
 }
 
