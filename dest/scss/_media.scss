@@ -1,0 +1,301 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	.thead{
+		font-size: 12px;}
+
+	#staking-table{
+		font-size: 12px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	#staking-table{
+		font-size: 16px;
+	}
+	.countdown-row {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#staking-table > tbody > tr {
+		& img{
+			max-height: 25px;
+		}
+	}
+	#staking-table > tbody > tr > td:nth-child(5) img {
+	    max-height: 20px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 22px;
+	}
+	.col-60{
+		max-width: 60%;
+	}
+	.col-50{
+		max-width: 50%;
+	}
+	.col-30{
+		max-width: 33%;
+	}
+	.offset-lg-20{
+		margin-left: 20%;
+	}
+	.text-lg-right{
+		text-align: right;
+	}
+	.brand{
+		margin-bottom: 0;
+	}
+	.amount{
+		font-size: 5.9em;
+	}
+	.countdown-amount{
+		font-size: 5em;
+	}
+	.hero-button .violet-button{
+		font-size: 18px;
+		padding: 25px 120px;
+	}
+	#staking-table{
+		font-size: 0.81em;
+		border-spacing: 0 10px;
+		margin-top: -39px;
+	}
+	.thead{
+		font-size: 14px;
+		margin-bottom: -10px;
+		&:after{
+			content: '';
+			display: inline-block;
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 6px solid #fff;
+		}
+	}
+	#staking-table > tbody > tr > td{
+		padding: 10px 0 10px;
+	}
+	#staking-table > tbody > tr > td:nth-child(5) img{
+		max-height: 26px;
+	}
+	#staking-table > tbody > tr td:nth-child(1) img{
+		max-height: 40px;
+	}
+	#staking-table > tbody > tr td:nth-child(5){
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-right: none;
+		/*& img:nth-child(1){
+			display: block;
+		}*/
+	}
+	#staking-table > tbody > tr > td:nth-child(6){
+		display: table-cell;
+		width: 295px;
+		border-right: 1px solid rgba(0,221,255,0.29);
+		border-top: 1px solid rgba(0,221,255,0.29);
+		border-bottom: 1px solid rgba(0,221,255,0.29);
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		& .buttons-position{
+			position: relative;
+			left: unset;
+			bottom: unset;
+			width: 100%;
+		}
+	}
+	.currency-table tr{
+		display: table-row;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		& td:nth-child(1){
+			text-align: center;
+			width: 24%;
+		}
+		& td:nth-child(2){
+			text-align: left;
+			width: 24%;
+			display: table-cell;
+		}
+		& td:nth-child(3){
+			width: 2%;
+			transform: none;
+		}
+		& td:nth-child(4){
+			text-align: center;
+			width: 24%;
+		}
+		& td:nth-child(5){
+			text-align: left;
+			width: 24%;
+			display: table-cell;
+		}
+	}
+	.blue-button{
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		background-color: $blue;
+		text-transform: uppercase;
+		border-radius: 5px;
+		padding: 16px 33px;
+		display: inline-block;
+
+	}
+
+	.violet-button{
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		background-color: $violet;
+		text-transform: uppercase;
+		border-radius: 5px;
+		padding: 16px 33px;
+		display: inline-block;
+
+	}
+	.hero-button .violet-button{
+		font-size: 18px;
+		padding: 25px 70px;
+	}
+	ul#earning{
+		& li{
+			padding-left: 99px;
+			&:before{
+				width: 47px;
+				height: 47px;
+				left: 0;
+				top: -12px;
+			}
+		}
+	}
+	.social-wrap{
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-between;
+
+		& img{
+			transform: scale(1);
+			margin-right: 10px;
+		}
+	}
+	#footer-menu{
+		& li{
+			padding-left: 17px;
+			padding-right: 17px;
+			border-right: 1px solid $violet;
+			&:last-child{
+				border: none;
+			}
+			& a{
+				font-size: 14px;
+			}
+		}
+	}
+	.dots{
+		margin-bottom: 5px;
+		position: relative;
+		width: 100%;
+		height: 5px;
+		background-image: linear-gradient(to right, rgba(0,0,0,.19) 33%, rgba(255,255,255,0) 0%);
+		background-position: bottom;
+		background-size: 10px 2px;
+		background-repeat: repeat-x;
+	}
+	#buy-delfi .row:not(.buttons-group) .col-30:nth-child(1){
+		padding-left: 70px;
+	}
+	.countdown-row {
+		width: 100%;
+	}
+	.countdown-period{
+		margin-top: -25px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.pl-xl-75{
+		padding-left: 90px!important;
+	}
+	#footer-menu{
+		& li{
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+	table .blue-button{
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	table .violet-button{
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.countdown-amount{
+		font-size: 5.9em;
+	}
+}
