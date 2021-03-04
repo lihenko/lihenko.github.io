@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('#countdown').countdown({
-    until: new Date(2021, 5-1, 31, 12, 0),
+    until: new Date(2021, 4-1, 28, 12, 0),
     timezone: +8,
   });
 });
@@ -143,15 +143,6 @@ $(window).resize(function(){
 });
 
 
-$(window).on('scroll', function() {
-    var y_scroll_pos_staking = window.pageYOffset + 500;
-    var scroll_pos_staking = $('#staking').offset().top;
-
-    if(y_scroll_pos_staking > scroll_pos_staking) {
-        $('.staking-title').addClass('showed')
-    }
-});
-
 $(document).ready(function() {
      $('#staking-table > tbody > tr > td:nth-child(2) > span').viewportChecker({
         offset: 100,
@@ -163,6 +154,15 @@ $(document).ready(function() {
           },
           3000
         );
+        }
+       });
+});
+
+$(document).ready(function() {
+     $('#staking').viewportChecker({
+        offset: 50,
+        callbackFunction: function(){
+          $('.staking-title').addClass('showed')
         }
        });
 });
