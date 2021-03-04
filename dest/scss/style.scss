@@ -181,8 +181,14 @@ body.open{
 	margin-bottom: 30px;
 }
 
+.available-coins{
+	font-size: 1.18em;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
 .description{
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 55px;
 }
 
@@ -193,6 +199,14 @@ body.open{
 
 .staking-title{
 	position: relative;
+	transform: translateY(200px);
+	opacity: 0;
+	transition: all 0.9s ease-in-out;
+}
+
+.staking-title.showed{
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .staking-title img{
@@ -751,7 +765,37 @@ table .blue-button:hover{
 	background-color: #fff;
 }
 
+.scale {
+    -webkit-animation: scale 3000ms ease-in-out infinite;
+    animation: scale 3000ms ease-in-out infinite;
+}
 
+@-webkit-keyframes scale {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    opacity: 0.65;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
+@keyframes scale {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    opacity: 0.65;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 @import "media";

@@ -141,3 +141,28 @@ $(window).resize(function(){
   var tableheight = $('#staking-table > tbody > tr > td:nth-child(1)').height();
   $('.currency-table').height(tableheight);
 });
+
+
+$(window).on('scroll', function() {
+    var y_scroll_pos_staking = window.pageYOffset + 500;
+    var scroll_pos_staking = $('#staking').offset().top;
+
+    if(y_scroll_pos_staking > scroll_pos_staking) {
+        $('.staking-title').addClass('showed')
+    }
+});
+
+$(document).ready(function() {
+     $('#staking-table > tbody > tr > td:nth-child(2) > span').viewportChecker({
+        offset: 100,
+        callbackFunction: function(elem){
+          var number = elem.find('span').text();
+          elem.find('span').prop('number', number * .94 ).animateNumber(
+          {
+            number: number,
+          },
+          3000
+        );
+        }
+       });
+});
