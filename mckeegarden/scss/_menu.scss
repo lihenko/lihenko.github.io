@@ -77,18 +77,18 @@
 .hamburger .icon-bar {
   background-color: $black;
   display: block;
-  height: 4px;
+  height: 2px;
   position: relative;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  width: 43px; }
+  width: 28px; }
 
 .hamburger .icon-bar:not(:last-child) {
-  margin-bottom: 10px; }
+  margin-bottom: 7px; }
 
 .menu-open .hamburger .icon-bar:nth-of-type(1) {
-  top: 11px;
+  top: 7px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
@@ -97,9 +97,24 @@
   background-color: transparent; }
 
 .menu-open .hamburger .icon-bar:nth-of-type(3) {
-  top: -17px;
+  top: -11px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 
+@media only screen and (min-width : 992px){
+	.hamburger .icon-bar {
+	  height: 4px;
+	  width: 43px; }
+
+	.hamburger .icon-bar:not(:last-child) {
+	  margin-bottom: 10px; }
+
+	.menu-open .hamburger .icon-bar:nth-of-type(1) {
+	  top: 11px; }
+
+	.menu-open .hamburger .icon-bar:nth-of-type(3) {
+	  top: -17px; }
+
+}
