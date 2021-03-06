@@ -5,6 +5,10 @@
 @import "menu";
 
 header{
+	& .brand{
+		display: flex;
+		align-items: center;
+	}
 	& .brand img{
 		max-width: 105px;
 		height: auto;

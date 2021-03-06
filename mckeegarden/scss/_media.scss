@@ -271,6 +271,7 @@
 				margin:5px 10px;
 			}
 		}
+
 	}
 	#home-hero{
 		padding: 260px 0;
@@ -344,6 +345,10 @@
 					display: inline-block!important;
 				}
 			}
+		}
+		& .brand img{
+			max-width: unset;
+			height: auto;
 		}
 	}
 	#top-picks{

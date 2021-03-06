@@ -236,6 +236,16 @@ object, embed {
   .menu-open .hamburger .icon-bar:nth-of-type(3) {
     top: -17px; } }
 
+header .brand {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 header .brand img {
   max-width: 105px;
   height: auto; }
@@ -1166,6 +1176,9 @@ footer {
       margin: 5px 10px; }
       header .header-buttons-block a.blue-button {
         display: inline-block !important; }
+  header .brand img {
+    max-width: unset;
+    height: auto; }
   #top-picks {
     margin-top: -220px; }
   .mt-xxl-0 {
