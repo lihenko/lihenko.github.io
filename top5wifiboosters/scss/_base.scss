@@ -134,6 +134,7 @@ img{
 	align-items: center;
 	transition: all 0.3s ease-in-out;
 	line-height: 1;
+	max-width: 350px;
 	&:hover{
 		color: #fff;
 		background-color: $green;
@@ -156,6 +157,7 @@ img{
 	align-items: center;
 	transition: all 0.3s ease-in-out;
 	line-height: 1;
+	max-width: 350px;
 	&:hover{
 		color: #fff;
 		background-color: $green;
