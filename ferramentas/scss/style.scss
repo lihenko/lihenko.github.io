@@ -1,0 +1,198 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+
+header{
+	padding: 30px 0;
+}
+
+#home-hero{
+	background-image: url('../img/bg-home-hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 0;
+	margin-top: -126px;
+	padding-top: 126px;
+	padding-bottom: 400px;
+	margin-bottom: -250px;
+	& .hero-description{
+		font-size: 1.25em;
+		letter-spacing: 0.5px;
+		margin-bottom: 100px;
+	}
+}
+
+#companies{
+	position: relative;
+	background: linear-gradient(to bottom, transparent 0, transparent 250px, #CECDCD 250px, #CECDCD 100%);
+	padding-bottom: 130px;
+	& .companies-title{
+		font-size: 1.5625em;
+	}
+	& .companies-grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 181px);
+		grid-gap: 30px;
+		margin-bottom: 50px;
+		& .companies-item{
+			padding: 20px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 6px;
+			box-shadow: 0 13px 41px 0 rgba(0,0,0,0.04);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	& .more-companies{
+		color: $black;
+		font-size: 0.9375em;
+		font-weight: 500;
+		letter-spacing: 3px;
+		line-height: 1;
+		text-transform: uppercase;
+		transition: all 0.3s ease-in-out;
+		padding: 16.5px 0;
+		border-bottom: 1px dashed #000;
+		&:hover{
+			color: #fff;
+			border-color: #fff;
+		}
+	}
+}
+
+#call-to-action{
+	background-color: #000;
+	padding: 57px 0;
+	& h2{
+		line-height: 1;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+	}
+	& .action-button-wrap{
+		& img{
+			position: absolute;
+			transform: translateY(-50%);
+			margin-top: -10px;
+		}
+		& .white-button{
+			position: relative;
+		}
+	}
+}
+
+#industry-insights{
+	padding-top: 200px;
+	& .insight-wrap{
+		min-height: 150px;
+		position: relative;
+		margin-bottom: 90px;
+		padding-bottom: 40px;
+		& a{
+			color: #000;
+			&:hover{
+				color: $yellow;
+			}
+		}
+		& .insight-data{
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			& .insight-date{
+				position: relative;
+				color: #9E9E9E;
+				font-size: 12px;
+				&:before{
+					content: url('../img/calendar.svg');
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 12px;
+				}
+			}
+			& a img{
+				transition: all 0.3s ease-in-out;
+			}
+			& a:hover img{
+				transform: translateX(5px);
+			}
+		}
+	}
+}
+
+#team-presents{
+	& .team-presents-wrap{
+		position: relative;
+		background-color: #000;
+		padding: 30px;
+		margin-top: 90px;
+		margin-bottom: 90px;
+		border-radius: 6px;
+	}
+	& .shadowed-image{
+
+		& img{
+			border-radius: 6px;
+			position: relative;
+		}
+		& .image-shadow{
+			background-color: $yellow;
+			position: absolute;
+			top: 32px;
+			bottom:-32px;
+			right: 29px;
+			left: -29px;
+			border-radius: 6px;
+		}
+	}
+}
+.main-content{
+	position: relative;
+	z-index: 2;
+}
+footer{
+	position: relative;
+	margin-top: -450px;
+	padding-top: 500px;
+	padding-bottom: 30px;
+	& .footer-bg{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		& img{
+			width: 100vw;
+		}
+	}
+	& .footer-social ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 30px;
+			padding-right: 30px;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+			& a:hover{
+				opacity: 0.75;
+			}
+		}
+	}
+	& .copyright{
+		font-size: 12px;
+	}
+}
+
+@import "media";
