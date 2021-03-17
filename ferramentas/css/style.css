@@ -30,7 +30,9 @@ html, body {
 body {
   color: #231F20;
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.5;
+  letter-spacing: 0.5px;
   font-family: Poppins-Ferramentas, sans-serif; }
 
 body.menu-open {
@@ -106,7 +108,7 @@ object, embed {
 
 .yellow-button {
   color: #231F20;
-  font-size: 0.9375em;
+  font-size: 0.8333em;
   font-weight: 500;
   letter-spacing: 3px;
   line-height: 1;
@@ -121,7 +123,7 @@ object, embed {
 
 .white-button {
   color: #000;
-  font-size: 0.9375em;
+  font-size: 0.8333em;
   font-weight: 500;
   letter-spacing: 3px;
   line-height: 1;
@@ -183,6 +185,8 @@ object, embed {
         transition: color 0.3s ease-in-out; }
         .main-menu ul li a:hover {
           color: #F6B219; }
+      .main-menu ul li.current-menu-item a {
+        color: #F6B219; }
 
 .main-menu.open {
   -webkit-transform: translateY(0%);
@@ -278,7 +282,9 @@ object, embed {
     padding-right: 27px; } }
 
 header {
-  padding: 30px 0; }
+  padding: 30px 0;
+  position: relative;
+  z-index: 3; }
 
 #home-hero {
   background-image: url("../img/bg-home-hero.png");
@@ -398,18 +404,26 @@ header {
   margin-bottom: 90px;
   border-radius: 6px; }
 
-#team-presents .shadowed-image img {
-  border-radius: 6px;
-  position: relative; }
-
-#team-presents .shadowed-image .image-shadow {
-  background-color: #F6B219;
-  position: absolute;
-  top: 32px;
-  bottom: -32px;
-  right: 29px;
-  left: -29px;
-  border-radius: 6px; }
+.shadowed-image {
+  position: relative;
+  text-align: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px; }
+  .shadowed-image img {
+    border-radius: 6px;
+    position: relative; }
+  .shadowed-image .image-shadow {
+    background-color: #F6B219;
+    position: absolute;
+    top: 30px;
+    bottom: -30px;
+    right: 30px;
+    left: -30px;
+    border-radius: 6px; }
 
 .main-content {
   position: relative;
@@ -444,6 +458,87 @@ footer {
         opacity: 0.75; }
   footer .copyright {
     font-size: 12px; }
+
+#page-title {
+  margin-top: -126px;
+  padding-top: 126px;
+  padding-bottom: 60px; }
+  #page-title .bg-page-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
+    #page-title .bg-page-title img {
+      width: 100vw;
+      height: auto; }
+
+#focus {
+  padding-bottom: 180px; }
+
+.bold-list {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+  text-align: left; }
+  .bold-list li {
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px; }
+    .bold-list li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: .23em;
+      width: 0.6em;
+      height: 0.6em;
+      border-radius: 50%;
+      background-color: #F6B219; }
+
+#services {
+  padding-top: 140px; }
+
+#advantage {
+  padding: 80px 0; }
+  #advantage .advantage-wrap {
+    height: 100%;
+    padding-left: 48px;
+    position: relative;
+    padding-top: 30px; }
+    #advantage .advantage-wrap:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 17px;
+      height: 100%;
+      background-color: #F6B219;
+      border-radius: 6px; }
+    #advantage .advantage-wrap .advantage-title {
+      font-size: 1.33em;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin-bottom: 30px; }
+    #advantage .advantage-wrap .advantage-list {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #advantage .advantage-wrap .advantage-list li {
+        margin-bottom: 10px; }
+
+#learn-more-action .learn-more-action-wrap {
+  background-color: #000;
+  border-radius: 6px;
+  padding: 70px 15px; }
+  #learn-more-action .learn-more-action-wrap .yellow-button {
+    width: 250px;
+    padding-left: 15px;
+    padding-right: 15px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -498,10 +593,10 @@ footer {
   body {
     font-size: 16px; }
   h1 {
-    font-size: 3.25em;
+    font-size: 2.88em;
     line-height: 0.96; }
   h2 {
-    font-size: 2.625em;
+    font-size: 2.33em;
     line-height: 1;
     letter-spacing: 1.17px; }
   #home-hero {
@@ -574,17 +669,25 @@ footer {
     #team-presents .shadowed-image .image-shadow {
       background-color: #F6B219;
       position: absolute;
-      top: 32px;
-      bottom: -32px;
-      right: 29px;
-      left: -29px;
+      top: 30px;
+      bottom: -30px;
+      right: 30px;
+      left: -30px;
       border-radius: 6px; }
   footer {
     padding-bottom: 90px;
-    padding-top: 600px; } }
+    padding-top: 600px; }
+  #page-title {
+    padding-bottom: 140px; }
+  #advantage {
+    padding-bottom: 140px; }
+  #learn-more-action .learn-more-action-wrap {
+    padding: 70px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
+  body {
+    font-size: 18px; }
   .container {
     max-width: 1260px; }
   #call-to-action h2 {
@@ -593,7 +696,9 @@ footer {
     padding-left: 25px;
     padding-right: 25px; }
     #industry-insights .insight-wrap .insight-data {
-      width: calc(100% - 50px); } }
+      width: calc(100% - 50px); }
+  #learn-more-action .learn-more-action-wrap .yellow-button {
+    width: 297px; } }
 
 @media only screen and (min-width: 1600px) {
   #companies {

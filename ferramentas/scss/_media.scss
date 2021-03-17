@@ -98,11 +98,11 @@
 		font-size: 16px;
 	}
 	h1{
-	  font-size: 3.25em;
+	  font-size: 2.88em;
 	  line-height: 0.96;
 	}
 	h2{
-	  font-size: 2.625em;
+	  font-size: 2.33em;
 	  line-height: 1;
 	  letter-spacing: 1.17px;
 	}
@@ -179,10 +179,10 @@
 			& .image-shadow{
 				background-color: $yellow;
 				position: absolute;
-				top: 32px;
-				bottom:-32px;
-				right: 29px;
-				left: -29px;
+				top: 30px;
+				bottom:-30px;
+				right: 30px;
+				left: -30px;
 				border-radius: 6px;
 			}
 		}
@@ -191,11 +191,24 @@
 		padding-bottom: 90px;
 		padding-top: 600px;
 	}
+	#page-title{
+	padding-bottom: 140px;}
+	#advantage{
+		padding-bottom: 140px;
+	}
+	#learn-more-action{
+ 		& .learn-more-action-wrap{
+ 			padding: 70px;
+ 		}
+ 	}
 }
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px){
+	body{
+		font-size: 18px;
+	}
 	.container{
 		max-width: 1260px;
 	}
@@ -214,7 +227,13 @@
 		}
 		
 	}
-		
+	#learn-more-action{
+		& .learn-more-action-wrap{
+	 		& .yellow-button{
+	 			width: 297px;
+	 		}
+	 	}
+ 	}	
 
 }
 

@@ -35,6 +35,9 @@
 					color:$yellow;
 				}
 			}
+			&.current-menu-item a{
+				color: $yellow;
+			}
 		}
 	}
 }

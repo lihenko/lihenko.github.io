@@ -16,7 +16,9 @@ html, body {
 body {
 	color: $black;
 	font-size: 14px;
+	font-weight: 300;
 	line-height: 1.5;
+	letter-spacing: 0.5px;
 	font-family: Poppins-Ferramentas, sans-serif;
 }
 
@@ -93,7 +95,7 @@ object, embed {
 
 .yellow-button{
 	color: $black;
-	font-size: 0.9375em;
+	font-size: 0.8333em;
 	font-weight: 500;
 	letter-spacing: 3px;
 	line-height: 1;
@@ -109,7 +111,7 @@ object, embed {
 
 .white-button{
 	color: #000;
-	font-size: 0.9375em;
+	font-size: 0.8333em;
 	font-weight: 500;
 	letter-spacing: 3px;
 	line-height: 1;
