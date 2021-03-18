@@ -96,7 +96,25 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px){
-	
+	#category-list{
+		padding-bottom: 70px;
+		& .category-list-wrap{
+			padding-bottom: 50px;
+			border-bottom: 1px dashed #000000;
+			& .category-list-title{
+				display: inline-block;
+				vertical-align: middle;
+				width: 115px;
+				margin-bottom: 0;
+			}
+			& .category-list{
+				width: calc(100% - 241px);
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+	}
 }
 
 
