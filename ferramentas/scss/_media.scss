@@ -220,6 +220,9 @@
  	#companies-grid{
 		padding-bottom: 140px;
 	}
+	#team{
+		padding-bottom: 70px;
+	}
 }
 
 
@@ -252,7 +255,13 @@
 	 			width: 297px;
 	 		}
 	 	}
- 	}	
+ 	}
+ 	#team{
+		& .team-member-wrap{
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-bottom: 80px;
+	}}	
 
 }
 
