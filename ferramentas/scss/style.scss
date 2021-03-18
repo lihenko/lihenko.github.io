@@ -494,6 +494,7 @@ footer{
 
 .pagenavi{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	& .pages{
@@ -586,6 +587,36 @@ footer{
 		}
 		&:hover{
 			background-color: $yellow;
+		}
+	}
+}
+
+#contact-form{
+	& .contact-form-wrap{
+		background-color: #000;
+		padding: 30px 15px;
+		border-radius: 6px;
+	}
+}
+
+#contacts{
+	padding-top: 60px;
+	& .contact-icon{
+		height: 150px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& .contact-link{
+		color: #222;
+		font-size: 1.33em;
+		font-weight: 500;
+		& a{
+			color: #222;
+			&:hover{
+				color: $yellow;
+			}
 		}
 	}
 }

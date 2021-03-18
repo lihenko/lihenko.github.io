@@ -17,7 +17,31 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px){
-
+	.pagenavi{
+		& .pages{
+			flex-basis: 100%;
+			margin-right: 0;
+		}
+		& .current{
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+		& .single_page{
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+		& .expand{
+			margin-left: 0;
+			margin-right: 0;
+			width: 20px;
+		}
+		& .prev-button{
+			margin-left: 3px;
+		}
+		& .next-button{
+			margin-left: 3px;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -241,6 +265,11 @@
 	#team{
 		padding-bottom: 70px;
 	}
+	#contact-form{
+		& .contact-form-wrap{
+			padding: 95px;
+		}
+	}
 }
 
 
@@ -279,7 +308,12 @@
 			padding-left: 30px;
 			padding-right: 30px;
 			margin-bottom: 80px;
-	}}	
+	}}
+	#contact-form{
+		& .contact-form-wrap{
+			padding: 95px 166px;
+		}
+	}	
 
 }
 

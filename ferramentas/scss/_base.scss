@@ -88,9 +88,29 @@ input:focus, textarea:focus{
 object, embed { 
   outline: none;
 }
+textarea{
+	font-family: Poppins-Ferramentas, sans-serif;
+	font-size: 14px;
+	width: 100%;
+	border-radius: 4px;
+	background-color: #fff;
+	border:none;
+	padding: 14px 25px;
+	min-height: 115px;
+}
+
+input:not([type="submit"]){
+	font-family: Poppins-Ferramentas, sans-serif;
+	font-size: 14px;
+	width: 100%;
+	border-radius: 4px;
+	background-color: #fff;
+	border:none;
+	padding: 14px 25px;
+}
 
 ::placeholder { 
-  color: $grey;
+  color: #222;
   opacity: 1; 
 }
 
