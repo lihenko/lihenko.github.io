@@ -58,6 +58,12 @@
 			background-size: 70%;
 		}
 	}
+	header{
+		& .top-bar-phone{
+			padding-right: 14px;
+			padding-left: 0;
+		}
+	}
 
 }
 
@@ -69,6 +75,7 @@
 			background-size: unset;
 		}
 	}
+
 }
 
 

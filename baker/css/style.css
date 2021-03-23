@@ -279,7 +279,7 @@ header {
     font-size: 16px;
     font-weight: 700;
     color: #D8B853;
-    padding-right: 14px; }
+    padding-left: 30px; }
   header .top-bar-hours {
     display: inline-block;
     font-size: 16px;
@@ -512,7 +512,10 @@ footer {
 @media only screen and (min-width: 510px) {
   #home-hero .section-bg {
     background-position: right bottom;
-    background-size: 70%; } }
+    background-size: 70%; }
+  header .top-bar-phone {
+    padding-right: 14px;
+    padding-left: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
