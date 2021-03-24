@@ -98,6 +98,27 @@ object, embed {
   opacity: 1; 
 }
 
+input:not([type="submit"]){
+	width: 100%;
+	font-family: Montserrat-Baker, sans-serif;
+	font-size: 14px;
+	border: none;
+	background-color: #fff;
+	padding: 15px 25px;
+	color: $black;
+}
+
+textarea{
+	width: 100%;
+	font-family: Montserrat-Baker, sans-serif;
+	font-size: 14px;
+	border: none;
+	background-color: #fff;
+	padding: 15px 25px;
+	color: $black;
+	height: 115px;
+}
+
 .red-button{
 	color: #fff;
 	font-size: 16px;

@@ -110,6 +110,25 @@ object, embed {
   color: #373536;
   opacity: 1; }
 
+input:not([type="submit"]) {
+  width: 100%;
+  font-family: Montserrat-Baker, sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #000; }
+
+textarea {
+  width: 100%;
+  font-family: Montserrat-Baker, sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #000;
+  height: 115px; }
+
 .red-button {
   color: #fff;
   font-size: 16px;
@@ -618,6 +637,15 @@ footer {
   #faqs .faq-wrap .faq-answer p:last-child {
     margin-bottom: 0; }
 
+#join-now .section-bg {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  background-color: #000; }
+
+#join-now .form-wrap {
+  padding: 30px 15px;
+  background-color: #D8B853; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -647,7 +675,9 @@ footer {
   body {
     font-size: 18px; }
   .copyright {
-    margin-top: -20px; } }
+    margin-top: -20px; }
+  #join-now .form-wrap {
+    padding: 98px 65px 68px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
