@@ -403,4 +403,70 @@ footer{
 	}
 }
 
+#contact{
+	& .section-bg{
+		padding-top: 4.5em;
+		padding-bottom: 4.5em;
+		background-color: $black;
+	}
+	& .form-wrap{
+		padding: 30px 15px;
+		background-color: $gold;
+	}
+	& .contacts-wrap{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap:65px;
+		& a{
+			color: #fff;
+			&:hover{
+				color: $red;
+			}
+		}
+		& p{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		& .contact-phones{
+			position: relative;
+			padding-left: 65px;
+			padding-right: 30px;
+			&:before{
+				content: url('../img/phone-icon.svg');
+				display: block;
+				position: absolute;
+				top: -5px;
+				left: 0;
+			}
+		}
+		& .contact-address{
+			position: relative;
+			padding-left: 65px;
+			padding-right: 30px;
+			&:before{
+				content: url('../img/marker-icon.svg');
+				display: block;
+				position: absolute;
+				top: -5px;
+				left: 0;
+			}
+		}
+		& .contact-email{
+			position: relative;
+			padding-left: 65px;
+			padding-right: 30px;
+			&:before{
+				content: url('../img/mail-icon.svg');
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
 @import "media";

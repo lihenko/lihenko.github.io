@@ -646,6 +646,67 @@ footer {
   padding: 30px 15px;
   background-color: #D8B853; }
 
+#contact .section-bg {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  background-color: #000; }
+
+#contact .form-wrap {
+  padding: 30px 15px;
+  background-color: #D8B853; }
+
+#contact .contacts-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 65px; }
+  #contact .contacts-wrap a {
+    color: #fff; }
+    #contact .contacts-wrap a:hover {
+      color: #E22029; }
+  #contact .contacts-wrap p {
+    margin-bottom: 15px; }
+    #contact .contacts-wrap p:last-child {
+      margin-bottom: 0; }
+  #contact .contacts-wrap .contact-phones {
+    position: relative;
+    padding-left: 65px;
+    padding-right: 30px; }
+    #contact .contacts-wrap .contact-phones:before {
+      content: url("../img/phone-icon.svg");
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 0; }
+  #contact .contacts-wrap .contact-address {
+    position: relative;
+    padding-left: 65px;
+    padding-right: 30px; }
+    #contact .contacts-wrap .contact-address:before {
+      content: url("../img/marker-icon.svg");
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 0; }
+  #contact .contacts-wrap .contact-email {
+    position: relative;
+    padding-left: 65px;
+    padding-right: 30px; }
+    #contact .contacts-wrap .contact-email:before {
+      content: url("../img/mail-icon.svg");
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -677,6 +738,8 @@ footer {
   .copyright {
     margin-top: -20px; }
   #join-now .form-wrap {
+    padding: 98px 65px 68px; }
+  #contact .form-wrap {
     padding: 98px 65px 68px; } }
 
 /* Large Devices, Wide Screens */
