@@ -47,6 +47,11 @@ h2 {
   font-weight: 700;
   line-height: 1.42; }
 
+h2.big {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.23; }
+
 h3 {
   font-size: 24px;
   line-height: 32px; }
@@ -59,9 +64,14 @@ h5 {
   font-size: 14px;
   line-height: 18px; }
 
+p {
+  margin-bottom: 33px; }
+
 a {
   color: #D8B853;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   a:hover {
     color: #E22029; }
 
@@ -175,6 +185,8 @@ object, embed {
         transition: color 0.3s ease-in-out; }
         .main-menu ul li a:hover {
           color: #E22029; }
+      .main-menu ul li.current-menu-item a {
+        color: #E22029; }
 
 .main-menu.open {
   -webkit-transform: translateY(0%);
@@ -498,6 +510,38 @@ footer {
     padding: 0; }
     footer .widget ul li {
       margin-bottom: 25px; }
+
+#page-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../img/page-title-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #page-title h1 {
+    color: #E22029; }
+
+#meet-a-doctor {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+#education .section-bg {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  background-color: #D8B853; }
+
+#education .photo-call-to-action-wrap {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  background-color: #E22029;
+  max-width: 452px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700; }
+  #education .photo-call-to-action-wrap a {
+    color: #fff; }
+    #education .photo-call-to-action-wrap a:hover {
+      color: #D8B853; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
