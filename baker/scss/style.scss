@@ -253,6 +253,12 @@ footer{
 				margin-bottom: 25px;
 			}
 		}
+		& a{
+			color: #fff;
+			&:hover{
+				color: $red;
+			}
+		}
 	}
 }
 	
@@ -265,6 +271,7 @@ footer{
 	background-repeat: no-repeat;
 	& h1{
 		color: $red;
+		text-transform: uppercase;
 	}
 }
 
@@ -353,6 +360,33 @@ footer{
 				left: 0;
 				top: 6px;
 			}
+		}
+	}
+}
+
+#faqs{
+	& .section-bg{
+		padding-top: 4.5em;
+		padding-bottom: 4.5em;
+		&:nth-child(odd){
+			background-color: $black;
+		}
+		&:nth-child(even){
+			background-color: $grey;
+		}
+	}
+	& .faq-wrap{
+		padding-left: 65px;
+		position: relative;
+		&:before{
+			content: url('../img/question-checkmark.svg');
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		& .faq-answer p:last-child{
+			margin-bottom: 0;
 		}
 	}
 }

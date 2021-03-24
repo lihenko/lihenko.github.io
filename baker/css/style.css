@@ -510,6 +510,10 @@ footer {
     padding: 0; }
     footer .widget ul li {
       margin-bottom: 25px; }
+  footer .widget a {
+    color: #fff; }
+    footer .widget a:hover {
+      color: #E22029; }
 
 #page-title {
   padding-top: 60px;
@@ -519,7 +523,8 @@ footer {
   background-position: center;
   background-repeat: no-repeat; }
   #page-title h1 {
-    color: #E22029; }
+    color: #E22029;
+    text-transform: uppercase; }
 
 #meet-a-doctor {
   padding-top: 4.5em;
@@ -592,6 +597,26 @@ footer {
       background-color: #000;
       left: 0;
       top: 6px; }
+
+#faqs .section-bg {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em; }
+  #faqs .section-bg:nth-child(odd) {
+    background-color: #000; }
+  #faqs .section-bg:nth-child(even) {
+    background-color: #373536; }
+
+#faqs .faq-wrap {
+  padding-left: 65px;
+  position: relative; }
+  #faqs .faq-wrap:before {
+    content: url("../img/question-checkmark.svg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #faqs .faq-wrap .faq-answer p:last-child {
+    margin-bottom: 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
