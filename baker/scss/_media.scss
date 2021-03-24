@@ -97,6 +97,16 @@
 			padding: 98px 65px 68px;
 		}
 	}
+	.post.type-post{
+		& .post-thumbnail{
+			float: right;
+			padding-left: 65px;
+			margin-bottom: 65px;
+		}
+		& h1, h2, h3, h4, h5{
+			margin-right: 400px;
+		}
+	}
 	
 }
 
