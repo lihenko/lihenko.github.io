@@ -97,6 +97,7 @@
 			padding: 98px 65px 68px;
 		}
 	}
+	
 }
 
 
@@ -109,6 +110,51 @@
 		& h1{
 			padding-left: 65px;
 			padding-right: 65px;
+		}
+	}
+	#blog-grid{
+		& article{
+			& .post-title{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			& .post-excerpt{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			& .post-data{
+				left: 30px;
+				width: calc(100% - 60px);
+			}
+		}
+	}
+	.pagenavi{
+		& .pages{
+			padding-right: 15px;
+			flex-basis: unset;
+			margin-bottom: 0;
+		}
+		& .single_page{
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		& .current{
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		& .expand{
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		& .last, .first{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		& .prev-button{
+			margin-left: 15px;
+		}
+		& .next-button{
+			margin-left: 15px;
 		}
 	}
 }
