@@ -115,6 +115,14 @@ body.open{
 
 #content{
 	padding-bottom: 200px;
+	& h1, h2, h3, h4, h5{
+		margin-top: 2em;
+	}
+	& ul{
+		& li{
+			margin-bottom: 1em;
+		}
+	}
 }
 
 .blue-button{
