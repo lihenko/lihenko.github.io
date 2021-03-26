@@ -115,13 +115,29 @@ body.open{
 
 #content{
 	padding-bottom: 200px;
+	line-height: 1.375;
 	& h1, h2, h3, h4, h5{
 		margin-top: 2em;
 	}
 	& ul{
+		margin-bottom: 2em;
+		margin-top: 2em;
 		& li{
 			margin-bottom: 1em;
 		}
+	}
+	& a{
+		color:$violet;
+		&:hover{
+			color: $blue;
+		}
+	}
+	.alignright{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 
@@ -420,7 +436,7 @@ footer{
 	
 }
 
-.home footer{
+.home footer, .about footer{
 		z-index: -1;
 		position: relative;
 		margin-top: -450px;

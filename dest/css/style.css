@@ -415,11 +415,25 @@ body.open {
       height: auto; }
 
 #content {
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  line-height: 1.375; }
   #content h1, #content h2, #content h3, #content h4, #content h5 {
     margin-top: 2em; }
-  #content ul li {
-    margin-bottom: 1em; }
+  #content ul {
+    margin-bottom: 2em;
+    margin-top: 2em; }
+    #content ul li {
+      margin-bottom: 1em; }
+  #content a {
+    color: #FF00D4; }
+    #content a:hover {
+      color: #00DDFF; }
+  #content .alignright {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
 
 .blue-button {
   font-size: 12px;
@@ -703,7 +717,7 @@ footer {
   position: relative;
   padding-bottom: 40px; }
 
-.home footer {
+.home footer, .about footer {
   z-index: -1;
   position: relative;
   margin-top: -450px;
@@ -1284,7 +1298,14 @@ table .blue-button:hover {
     #content .col-100 {
       width: 83.33%;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; }
+    #content .alignright {
+      float: right;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      margin-left: unset;
+      margin-right: unset;
+      display: block; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -1300,4 +1321,6 @@ table .blue-button:hover {
     font-size: 18px;
     font-weight: 400; }
   .countdown-amount {
-    font-size: 5.9em; } }
+    font-size: 5.9em; }
+  #content .alignright {
+    margin-left: 60px; } }
