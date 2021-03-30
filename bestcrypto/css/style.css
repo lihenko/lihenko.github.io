@@ -62,9 +62,10 @@ h5 {
   line-height: 18px; }
 
 a {
-  color: #0B90D1; }
+  color: #0B90D1;
+  text-decoration: underline; }
   a:hover {
-    color: #1cacf3; }
+    color: #fff; }
 
 a:hover, a:active, a:focus {
   outline: none; }
@@ -102,6 +103,7 @@ object, embed {
   opacity: 1; }
 
 .button-telegram {
+  text-decoration: none;
   font-size: 16px;
   font-family: Mont-BC, sans-serif;
   font-weight: 900;
@@ -115,16 +117,27 @@ object, embed {
   padding: 10px 72px;
   position: relative; }
   .button-telegram:before {
-    content: url("../img/tg-icon.svg");
+    content: '';
     position: absolute;
     left: 25px;
-    top: 9px; }
+    top: 9px;
+    width: 20px;
+    height: 17px;
+    -webkit-mask: url("../img/tg-icon.svg") no-repeat 50% 50%;
+    mask: url("../img/tg-icon.svg") no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #fff;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
   .button-telegram:hover {
-    color: #fff;
-    background: -webkit-linear-gradient(right, #0B90D1 0%, #48BEF8 100%);
-    background: linear-gradient(270deg, #0B90D1 0%, #48BEF8 100%); }
+    color: #000;
+    background: #fff; }
+  .button-telegram:hover:before {
+    background-color: #000; }
 
 .black-button {
+  text-decoration: none;
   font-family: Mont-BC, sans-serif;
   font-weight: 900;
   font-size: 14px;
@@ -135,8 +148,8 @@ object, embed {
   border-radius: 19px;
   padding: 11px 20px; }
   .black-button:hover {
-    color: #fff;
-    background-color: #1a1a1a; }
+    color: #000;
+    background-color: #fff; }
 
 header {
   padding: 25px 0 550px;
@@ -335,7 +348,20 @@ header {
     #telegram-advertising .advertising-channels-slider-item .channel-description {
       font-size: 0.8em; }
     #telegram-advertising .advertising-channels-slider-item .channel-data {
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      line-height: 1;
+      padding-left: 10px;
+      padding-right: 10px; }
+      #telegram-advertising .advertising-channels-slider-item .channel-data .people:before {
+        content: url("../img/people.svg");
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+      #telegram-advertising .advertising-channels-slider-item .channel-data .view:before {
+        content: url("../img/eye.svg");
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
     #telegram-advertising .advertising-channels-slider-item .channel-price {
       font-size: 1.2em;
       font-family: Mont-BC, sans-serif;

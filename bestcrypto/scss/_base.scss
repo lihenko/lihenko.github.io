@@ -58,8 +58,9 @@ h5{
 
 a{
 	color:$blue;
+	text-decoration: underline;
 	&:hover{
-		color:lighten($blue, 10%);
+		color:#fff;
 	}
 }
 
