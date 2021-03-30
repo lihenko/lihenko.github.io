@@ -139,14 +139,22 @@
 			margin-left: 100px;
 			margin-right: 100px;
 		}
-		.slick-prev::before {
+		& .slick-prev::before {
 			content: url('../img/slider-arrow.svg');
 			display: block;
 			transform: rotate(180deg);
 		}
-		.slick-next::before {
+		& .slick-next::before {
 			content: url('../img/slider-arrow.svg');
 			display: block;
+		}
+	}
+	.light #telegram-advertising{
+		& .slick-prev::before {
+			content: url('../img/slider-arrow-black.svg');
+		}
+		& .slick-next::before {
+			content: url('../img/slider-arrow-black.svg');
 		}
 	}
 }

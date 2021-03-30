@@ -381,6 +381,12 @@ header{
 	}
 }
 
+.light #telegram-advertising{
+	& .slick-prev::before, .slick-next::before {
+		color: #0D0E0E;
+	}
+}
+
 #related-video{
 	padding: 60px 0;
 	& .related-video-title{

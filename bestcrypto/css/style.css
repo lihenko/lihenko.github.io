@@ -441,6 +441,9 @@ header {
       font-family: Mont-BC, sans-serif;
       font-weight: 900; }
 
+.light #telegram-advertising .slick-prev::before, .light #telegram-advertising .slick-next::before {
+  color: #0D0E0E; }
+
 #related-video {
   padding: 60px 0; }
   #related-video .related-video-title {
@@ -641,4 +644,8 @@ footer .copyright {
     transform: rotate(180deg); }
   #telegram-advertising .slick-next::before {
     content: url("../img/slider-arrow.svg");
-    display: block; } }
+    display: block; }
+  .light #telegram-advertising .slick-prev::before {
+    content: url("../img/slider-arrow-black.svg"); }
+  .light #telegram-advertising .slick-next::before {
+    content: url("../img/slider-arrow-black.svg"); } }
