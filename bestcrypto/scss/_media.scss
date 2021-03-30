@@ -97,6 +97,8 @@
 		& .footer-menu{
 			& li{
 				border-right: 1px solid $blue;
+				padding-top: 0;
+				padding-bottom: 0;
 				&:last-child{
 					border-right:none;
 				}

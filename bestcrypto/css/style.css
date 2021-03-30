@@ -606,7 +606,9 @@ footer .copyright {
   #crypto-signals .crypto-signals-item-wrap {
     padding: 40px 45px 36px; }
   footer .footer-menu li {
-    border-right: 1px solid #0B90D1; }
+    border-right: 1px solid #0B90D1;
+    padding-top: 0;
+    padding-bottom: 0; }
     footer .footer-menu li:last-child {
       border-right: none; } }
 
