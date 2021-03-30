@@ -52,31 +52,26 @@
 
 
 @media only screen and (min-width : 510px){
-
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px){
-	#table table{
-		& div{
-			min-height: 82px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-		& tr td:nth-child(1){
-			text-align: left;
-		}
-		& tr td:nth-child(2){
-			width: 400px;
-		}
-		& tr td:nth-child(5){
-			white-space: nowrap;
-		}
+	body{
+		font-size: 16px;
 	}
-	.join-wrap{
-		flex-basis: 33%;
+	
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 45px;
+			margin-right: 45px;
+		}
 	}
 }
 
@@ -84,67 +79,72 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px){
 	body{
-		font-size: 16px;
+		font-size: 18px;
 	}
-	#hero{
-		padding-left: 70px;
+	header{
+		padding: 110px 0 550px;
 	}
-	.col-50{
-		max-width: 50%;
-	}
-	#table table{
-		& tr td:nth-child(1){
-			width:175px;
+	#crypto-signals{
+		& .crypto-signals-wrap{
+			padding: 80px 60px;
+		}
+		& .crypto-signals-item-wrap{
+			padding: 40px 45px 36px;
 		}
 	}
-	#faq{
-		padding-top: 140px;
-		padding-bottom: 80px;
-	}
-	.button-red{
-		padding: 19px 119px;
-	}
-	a.video:after{
-		right: 35px;
-	}
-	.join-wrap{
-		flex-basis: 25%;
-	}
 	
+	footer{
+		& .footer-menu{
+			& li{
+				border-right: 1px solid $blue;
+				&:last-child{
+					border-right:none;
+				}
+			}
+		}
+	}
 }
 
+@media only screen and (min-width : 992px) and (max-width: 1599px){
+	.slick-track .slick-current{
+	opacity: 0.6;
+	}
+	.slick-track .slick-current + .slick-active + .slick-active{
+		opacity: 0.6;
+	}
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px){
-	.pl-xl-30{
-		padding-left: 30px!important;
+	body{
+		font-size: 20px;
 	}
-	.pr-xl-30{
-		padding-right: 30px!important;
+	.container{
+		max-width: 1320px;
 	}
-	.pl-xl-45{
-		padding-left: 45px!important;
+
+}
+
+@media only screen and (min-width : 1600px){
+	.slick-track .slick-current{
+	opacity: 0.6;
 	}
-	.pr-xl-45{
-		padding-right:45px!important;
+	.slick-track .slick-current + .slick-active + .slick-active + .slick-active{
+		opacity: 0.6;
 	}
-	#table table{
-		& tr td:nth-child(1){
-			width:205px;
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 100px;
+			margin-right: 100px;
 		}
-	}
-	#faq{
-		& .description{
-			padding-right: 250px;
+		.slick-prev::before {
+			content: url('../img/slider-arrow.svg');
+			display: block;
+			transform: rotate(180deg);
 		}
-	}
-	footer{
-		p{
-			padding-left: 260px;
-			padding-right: 260px;
+		.slick-next::before {
+			content: url('../img/slider-arrow.svg');
+			display: block;
 		}
-	}
-	.join-wrap{
-		flex-basis: 20%;
 	}
 }
