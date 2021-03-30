@@ -34,6 +34,9 @@ body {
   position: relative;
   height: 100%;
   overflow-x: hidden; }
+  body.light {
+    color: #0D0E0E;
+    background-color: #F1F2F2; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Mont-BC, sans-serif;
@@ -66,6 +69,11 @@ a {
   text-decoration: underline; }
   a:hover {
     color: #fff; }
+
+.light a:not(.btn) {
+  color: #0D0E0E; }
+  .light a:not(.btn):hover {
+    color: #0B90D1; }
 
 a:hover, a:active, a:focus {
   outline: none; }
@@ -101,6 +109,59 @@ object, embed {
 ::placeholder {
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
+
+body.overlayed {
+  overflow-y: hidden; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+body.overlayed .overlay {
+  display: block;
+  opacity: 1;
+  z-index: 99999; }
+
+#color-button {
+  color: #000;
+  width: 55px;
+  height: 38px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 999999;
+  cursor: pointer;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.light #color-button {
+  color: #fff;
+  background-color: #000; }
 
 .button-telegram {
   text-decoration: none;
@@ -164,6 +225,9 @@ header {
     header .hero-bg-img img {
       max-width: 100%;
       height: auto; }
+
+.light header {
+  background-image: url("../img/bg-hero-white.png"); }
 
 #best-groups {
   margin-top: -500px; }
@@ -257,13 +321,23 @@ header {
         height: calc(100% - 40px);
         background-color: #000; }
 
+.light #best-groups table tbody td {
+  background-color: #fff; }
+  .light #best-groups table tbody td:nth-child(3):before {
+    background-color: #D7E6ED; }
+  .light #best-groups table tbody td:nth-child(4):before {
+    background-color: #D7E6ED; }
+  .light #best-groups table tbody td:nth-child(5):before {
+    background-color: #D7E6ED; }
+
 #pump-and-dump {
   margin-top: -90vw;
   padding: 97vw 0 16vw;
   background-image: url("../img/curve.svg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: #fff; }
 
 #pump-and-dump-description {
   padding: 60px 0; }
@@ -310,6 +384,13 @@ header {
     #crypto-signals .crypto-signals-item-wrap a.btn {
       max-width: 100%; }
 
+.light #crypto-signals {
+  background-image: url("../img/crypto-signal-bg-white.png"); }
+  .light #crypto-signals .crypto-signals-wrap {
+    background-color: #fff; }
+  .light #crypto-signals .crypto-signals-item-wrap {
+    background-color: #F3F3F3; }
+
 #telegram-advertising {
   padding-bottom: 80px; }
   #telegram-advertising .telegram-advertising-channels-title {
@@ -324,7 +405,8 @@ header {
     margin-left: 15px;
     margin-right: 15px;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    color: #fff; }
     #telegram-advertising .advertising-channels-slider-item img {
       border: 8px solid #0D0E0E;
       border-radius: 14px;
@@ -458,6 +540,35 @@ footer .footer-menu {
 footer .copyright {
   font-size: 10px;
   opacity: 0.5; }
+
+.light footer .social-buttons a {
+  color: #0B90D1; }
+  .light footer .social-buttons a:hover {
+    color: #000; }
+
+.light footer .social-buttons a.youtube:before {
+  content: url("../img/youtube-black.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.light footer .social-buttons a.medium:before {
+  content: url("../img/medium-black.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.light footer .social-buttons a.crunchbase:before {
+  content: url("../img/crunchbase-black.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.light footer .social-buttons a.bitcointalk:before {
+  content: url("../img/bitcointalk-black.png");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

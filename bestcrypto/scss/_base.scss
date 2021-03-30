@@ -20,6 +20,10 @@ body {
 	position:relative;
 	height: 100%;
 	overflow-x: hidden;
+	&.light{
+		color: #0D0E0E;
+		background-color: #F1F2F2;
+	}
 }
 
 
@@ -61,6 +65,13 @@ a{
 	text-decoration: underline;
 	&:hover{
 		color:#fff;
+	}
+}
+
+.light a:not(.btn){
+	color: #0D0E0E;
+	&:hover{
+		color: $blue;
 	}
 }
 

@@ -43,3 +43,9 @@ $(document).ready(function(){
         return false;
     });
 });
+
+$(document).on('click', '#color-button', function(event) {
+    $('body').addClass('overlayed');
+      setTimeout(function(){ $('body').toggleClass('light'); }, 1000);
+    setTimeout(function(){ $('body').removeClass('overlayed'); }, 2000);
+});
