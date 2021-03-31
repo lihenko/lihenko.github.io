@@ -592,6 +592,7 @@ footer {
       padding-top: 15px;
       padding-bottom: 15px; }
       footer #footer-menu li a {
+        font-size: 0.88em;
         color: #fff; }
         footer #footer-menu li a:hover {
           color: #ED8D22;
