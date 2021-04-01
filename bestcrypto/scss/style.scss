@@ -423,13 +423,16 @@ footer{
 		text-transform: uppercase;
 		display: flex;
 		flex-wrap: wrap;
-		gap:45px 15px;
 		justify-content: center;
 		align-items: center;
 		& a{
 			flex-basis: calc(50% - 10px);
 			text-decoration: none;
 			transition: all 0.3s ease-in-out;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
 			&:hover{
 				color: #fff;
 			}

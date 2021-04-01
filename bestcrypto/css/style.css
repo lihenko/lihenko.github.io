@@ -489,7 +489,6 @@ footer .social-buttons {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 45px 15px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -504,7 +503,11 @@ footer .social-buttons {
     flex-basis: calc(50% - 10px);
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px; }
     footer .social-buttons a:hover {
       color: #fff; }
     footer .social-buttons a.youtube:before {
@@ -613,11 +616,7 @@ footer .copyright {
     font-size: 16px; }
   #telegram-advertising .advertising-channels-slider {
     margin-left: 45px;
-    margin-right: 45px; }
-  footer .social-buttons a {
-    -webkit-flex-basis: calc(25% - 12px);
-    -ms-flex-preferred-size: calc(25% - 12px);
-    flex-basis: calc(25% - 12px); } }
+    margin-right: 45px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -635,12 +634,14 @@ footer .copyright {
     padding-bottom: 0; }
     footer .footer-menu li:last-child {
       border-right: none; }
-  footer .social-buttons {
-    gap: 45px 65px; }
-    footer .social-buttons a {
-      -webkit-flex-basis: unset;
-      -ms-flex-preferred-size: unset;
-      flex-basis: unset; } }
+  footer .social-buttons a {
+    -webkit-flex-basis: unset;
+    -ms-flex-preferred-size: unset;
+    flex-basis: unset;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-left: 35px;
+    padding-right: 35px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1599px) {
   .slick-track .slick-current {

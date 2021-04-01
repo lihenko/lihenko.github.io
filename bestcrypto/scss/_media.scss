@@ -73,13 +73,7 @@
 			margin-right: 45px;
 		}
 	}
-	footer{
-		& .social-buttons{
-			& a{
-				flex-basis: calc(25% - 12px);
-			}
-		}
-	}
+
 }
 
 
@@ -112,9 +106,12 @@
 			}
 		}
 		& .social-buttons{
-			gap:45px 65px;
 			a{
 				flex-basis: unset;
+				margin-top: 45px;
+				margin-bottom: 45px;
+				padding-left: 35px;
+				padding-right: 35px;
 			}
 		}
 	}
