@@ -73,6 +73,13 @@
 			margin-right: 45px;
 		}
 	}
+	footer{
+		& .social-buttons{
+			& a{
+				flex-basis: calc(25% - 12px);
+			}
+		}
+	}
 }
 
 
@@ -104,6 +111,12 @@
 				}
 			}
 		}
+		& .social-buttons{
+			gap:45px 65px;
+			a{
+				flex-basis: unset;
+			}
+		}
 	}
 }
 
@@ -123,6 +136,17 @@
 	}
 	.container{
 		max-width: 1320px;
+	}
+	footer{
+		& .social-buttons{
+			a{
+				&:before{
+					width: 60px!important;
+					height: 50px!important;
+					margin-right: 15px!important;
+				}
+			}
+		}
 	}
 
 }

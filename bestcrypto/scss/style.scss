@@ -41,6 +41,8 @@ body.overlayed .overlay{
 	justify-content: center;
 	align-items: center;
 	transition: all 0.3s ease-in-out;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
 }
 
 .light #color-button{
@@ -421,38 +423,63 @@ footer{
 		text-transform: uppercase;
 		display: flex;
 		flex-wrap: wrap;
-		gap:45px 65px;
+		gap:45px 15px;
 		justify-content: center;
 		align-items: center;
 		& a{
+			flex-basis: calc(50% - 10px);
 			text-decoration: none;
 			transition: all 0.3s ease-in-out;
 			&:hover{
 				color: #fff;
 			}
 			&.youtube:before{
-				content: url('../img/youtube.svg');
+				content: '';
+				width: 40px;
+				height: 30px;
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: 15px;
+				background-image: url('../img/youtube.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left center;
+				margin-right: 10px;
 			}
 			&.medium:before{
-				content: url('../img/medium.svg');
+				content: '';
+				width: 40px;
+				height: 30px;
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: 15px;
+				background-image: url('../img/medium.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left center;
+				margin-right: 10px;
 			}
 			&.crunchbase:before{
-				content: url('../img/crunchbase.svg');
+				content: '';
+				width: 40px;
+				height: 30px;
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: 15px;
+				background-image: url('../img/crunchbase.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left center;
+				margin-right: 10px;
 			}
 			&.bitcointalk:before{
-				content: url('../img/bitcointalk.png');
+				content: '';
+				width: 40px;
+				height: 30px;
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: 15px;
+				background-image: url('../img/bitcointalk.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left center;
+				margin-right: 10px;
 			}
 		}
 	}
@@ -493,28 +520,16 @@ footer{
 			}
 		}
 		& a.youtube:before{
-			content: url('../img/youtube-black.svg');
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 15px;
+			background-image: url('../img/youtube-color.svg');
 		}
 		& a.medium:before{
-			content: url('../img/medium-black.svg');
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 15px;
+			background-image: url('../img/medium-black.svg');
 		}
 		& a.crunchbase:before{
-			content: url('../img/crunchbase-black.svg');
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 15px;
+			background-image: url('../img/crunchbase-color.svg');
 		}
 		& a.bitcointalk:before{
-			content: url('../img/bitcointalk-black.png');
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 15px;
+			background-image: url('../img/bitcointalk-color.png');
 		}
 	}
 }

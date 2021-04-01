@@ -157,7 +157,9 @@ body.overlayed .overlay {
   -ms-flex-align: center;
   align-items: center;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px; }
 
 .light #color-button {
   color: #fff;
@@ -487,7 +489,7 @@ footer .social-buttons {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 45px 65px;
+  gap: 45px 15px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -497,31 +499,58 @@ footer .social-buttons {
   -ms-flex-align: center;
   align-items: center; }
   footer .social-buttons a {
+    -webkit-flex-basis: calc(50% - 10px);
+    -ms-flex-preferred-size: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     footer .social-buttons a:hover {
       color: #fff; }
     footer .social-buttons a.youtube:before {
-      content: url("../img/youtube.svg");
+      content: '';
+      width: 40px;
+      height: 30px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 15px; }
+      background-image: url("../img/youtube.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin-right: 10px; }
     footer .social-buttons a.medium:before {
-      content: url("../img/medium.svg");
+      content: '';
+      width: 40px;
+      height: 30px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 15px; }
+      background-image: url("../img/medium.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin-right: 10px; }
     footer .social-buttons a.crunchbase:before {
-      content: url("../img/crunchbase.svg");
+      content: '';
+      width: 40px;
+      height: 30px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 15px; }
+      background-image: url("../img/crunchbase.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin-right: 10px; }
     footer .social-buttons a.bitcointalk:before {
-      content: url("../img/bitcointalk.png");
+      content: '';
+      width: 40px;
+      height: 30px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 15px; }
+      background-image: url("../img/bitcointalk.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin-right: 10px; }
 
 footer .footer-menu {
   margin: 0;
@@ -552,28 +581,16 @@ footer .copyright {
     color: #000; }
 
 .light footer .social-buttons a.youtube:before {
-  content: url("../img/youtube-black.svg");
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px; }
+  background-image: url("../img/youtube-color.svg"); }
 
 .light footer .social-buttons a.medium:before {
-  content: url("../img/medium-black.svg");
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px; }
+  background-image: url("../img/medium-black.svg"); }
 
 .light footer .social-buttons a.crunchbase:before {
-  content: url("../img/crunchbase-black.svg");
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px; }
+  background-image: url("../img/crunchbase-color.svg"); }
 
 .light footer .social-buttons a.bitcointalk:before {
-  content: url("../img/bitcointalk-black.png");
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px; }
+  background-image: url("../img/bitcointalk-color.png"); }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -596,7 +613,11 @@ footer .copyright {
     font-size: 16px; }
   #telegram-advertising .advertising-channels-slider {
     margin-left: 45px;
-    margin-right: 45px; } }
+    margin-right: 45px; }
+  footer .social-buttons a {
+    -webkit-flex-basis: calc(25% - 12px);
+    -ms-flex-preferred-size: calc(25% - 12px);
+    flex-basis: calc(25% - 12px); } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -613,7 +634,13 @@ footer .copyright {
     padding-top: 0;
     padding-bottom: 0; }
     footer .footer-menu li:last-child {
-      border-right: none; } }
+      border-right: none; }
+  footer .social-buttons {
+    gap: 45px 65px; }
+    footer .social-buttons a {
+      -webkit-flex-basis: unset;
+      -ms-flex-preferred-size: unset;
+      flex-basis: unset; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1599px) {
   .slick-track .slick-current {
@@ -626,7 +653,11 @@ footer .copyright {
   body {
     font-size: 20px; }
   .container {
-    max-width: 1320px; } }
+    max-width: 1320px; }
+  footer .social-buttons a:before {
+    width: 60px !important;
+    height: 50px !important;
+    margin-right: 15px !important; } }
 
 @media only screen and (min-width: 1600px) {
   .slick-track .slick-current {
