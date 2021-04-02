@@ -258,7 +258,8 @@ input:not([type="submit"]) {
         padding-left: 15px;
         padding-right: 15px;
         line-height: 1;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        position: relative; }
         .main-menu ul li:last-child {
           padding-right: 0; }
         .main-menu ul li a {
@@ -267,7 +268,25 @@ input:not([type="submit"]) {
           -webkit-transition: color 0.3s ease-in-out;
           transition: color 0.3s ease-in-out; }
           .main-menu ul li a:hover {
-            color: #ED8D22; }
+            color: #4BB649; }
+            .main-menu ul li a:hover:after {
+              opacity: 1; }
+          .main-menu ul li a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            width: 100%;
+            height: 4px;
+            background-image: url("../img/wave.svg");
+            background-repeat: repeat-x;
+            -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+            opacity: 0; }
+        .main-menu ul li.current-menu-item a {
+          color: #4BB649; }
+          .main-menu ul li.current-menu-item a:after {
+            opacity: 1; }
   .toggle-btn {
     display: none; }
   .brand {
@@ -918,9 +937,9 @@ footer {
       order: 1;
       width: calc(50% - 10px);
       font-size: 12px;
-      color: #4BB649; }
+      color: #008682; }
       .pagination .page-numbers.prev:before {
-        content: url("../img/dropdown-arrow.svg");
+        content: url("../img/arrow.svg");
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
@@ -935,9 +954,9 @@ footer {
       order: 2;
       width: calc(50% - 10px);
       font-size: 12px;
-      color: #4BB649; }
+      color: #008682; }
       .pagination .page-numbers.next:after {
-        content: url("../img/dropdown-arrow.svg");
+        content: url("../img/arrow.svg");
         -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
@@ -956,6 +975,11 @@ footer {
   background-color: #070A25;
   padding: 25px 15px;
   border-radius: 11px; }
+
+#news-grid .news-link a {
+  display: inline-block;
+  padding-left: 42px;
+  padding-right: 42px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
