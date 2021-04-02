@@ -76,6 +76,23 @@
 			}
 		}
 	}
+	#call-to-action{
+		& .cta-form-wrap{
+			padding: 39px 53px;
+		}
+	}
+	.pagination{
+		& .page-numbers{
+			&.prev{
+				order: 3;
+				width: auto;
+			}
+			&.next{
+				order: 3;
+				width: auto;
+			}
+		}
+	}
 }
 
 
