@@ -959,4 +959,53 @@ footer{
 	}
 }
 
+#services{
+	padding-bottom: 80px;
+	& .col-lg-3{
+		& .service-overwiev-wrap{
+			height: 100%;
+			& .service-overwiev-title{
+				background-color: #121635;
+				border-radius: 11px;
+				padding: 35px 15px;
+				margin-bottom: 30px;
+			}
+			& .service-overwiev-icon{
+				min-height: 70px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+			}
+			& .service-overview-data{
+				font-size: 0.88em;
+				padding-left: 15px;
+				padding-right: 15px;
+				& ul{
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					& li{
+						position: relative;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+		&:nth-child(4n + 1){
+			color:$brilliant;
+		}
+		&:nth-child(4n + 2){
+			color:$yellow;
+		}
+		&:nth-child(4n + 3){
+			color:$green;
+		}
+		&:nth-child(4n + 4){
+			color:#fff;
+		}
+	}
+
+}
+
 @import "media";
