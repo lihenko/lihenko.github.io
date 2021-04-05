@@ -913,4 +913,50 @@ footer{
 	}
 }
 
+#contact-us{
+	& .address{
+		position: relative;
+		padding-left: 65px;
+		&:before{
+			content: url('../img/address-icon.svg');
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	& .phone{
+		position: relative;
+		padding-left: 65px;
+		&:before{
+			content: url('../img/contact-phone-icon.svg');
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	& .email{
+		position: relative;
+		padding-left: 65px;
+		&:before{
+			content: url('../img/contact-email-icon.svg');
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	& .contact-form-wrap{
+		padding: 25px 15px;
+		background-color: $brilliant;
+		border-radius: 11px;
+		& .btn{
+			font-size: 0.77em;
+			width: 274px;
+			max-width: 100%;
+		}
+	}
+}
+
 @import "media";

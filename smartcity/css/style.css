@@ -64,11 +64,12 @@ h5 {
   line-height: 18px; }
 
 a {
-  color: #ED8D22;
+  color: #4BB649;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   a:hover {
-    color: #4BB649; }
+    color: #ED8D22;
+    text-decoration: none; }
 
 a:hover, a:active, a:focus {
   outline: none; }
@@ -141,6 +142,16 @@ input:not([type="submit"]) {
   padding: 12.5px 25px;
   border-radius: 3px;
   border: none; }
+
+textarea {
+  width: 100%;
+  font-family: NunitoSans-Smartcity, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12.5px 25px;
+  border-radius: 3px;
+  border: none;
+  height: 125px; }
 
 .main-menu {
   position: fixed;
@@ -1106,6 +1117,51 @@ footer {
   padding: 25px 15px;
   border-radius: 11px; }
 
+#contact-us .address {
+  position: relative;
+  padding-left: 65px; }
+  #contact-us .address:before {
+    content: url("../img/address-icon.svg");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+#contact-us .phone {
+  position: relative;
+  padding-left: 65px; }
+  #contact-us .phone:before {
+    content: url("../img/contact-phone-icon.svg");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+#contact-us .email {
+  position: relative;
+  padding-left: 65px; }
+  #contact-us .email:before {
+    content: url("../img/contact-email-icon.svg");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+#contact-us .contact-form-wrap {
+  padding: 25px 15px;
+  background-color: #008682;
+  border-radius: 11px; }
+  #contact-us .contact-form-wrap .btn {
+    font-size: 0.77em;
+    width: 274px;
+    max-width: 100%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1138,7 +1194,9 @@ footer {
     order: 3;
     width: auto; }
   #reach-out-us .reach-out-us-form-wrap {
-    padding: 25px 45px; } }
+    padding: 25px 45px; }
+  #contact-us .contact-form-wrap {
+    padding: 38px 38px 33px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

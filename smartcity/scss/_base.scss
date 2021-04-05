@@ -53,10 +53,11 @@ h5{
 }
 
 a{
-	color:$yellow;
+	color:$green;
 	transition: all 0.3s ease-in-out;
 	&:hover{
-		color:$green;
+		color:$yellow;
+		text-decoration: none;
 	}
 }
 
@@ -125,4 +126,15 @@ input:not([type="submit"]){
 	padding: 12.5px 25px;
 	border-radius: 3px;
 	border:none;
+}
+
+textarea{
+	width: 100%;
+	font-family: NunitoSans-Smartcity, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	padding: 12.5px 25px;
+	border-radius: 3px;
+	border:none;
+	height: 125px;
 }
