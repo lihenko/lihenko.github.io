@@ -1008,4 +1008,29 @@ footer{
 
 }
 
+#partners{
+	padding: 80px 0;
+	& .col-lg-4{
+		& .partner-wrap{
+			padding: 50px 67px 44px;
+			background-color: #121635;
+			border-radius: 11px;
+			& .partner-logo{
+				min-height: 90px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 30px;
+			}
+			& .partner-button .btn{
+				font-size: 0.77em;
+				width: 160px;
+				max-width: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+
 @import "media";
