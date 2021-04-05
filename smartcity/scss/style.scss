@@ -1009,7 +1009,7 @@ footer{
 }
 
 #partners{
-	padding: 80px 0;
+	padding: 80px 0 150px;
 	& .col-lg-4{
 		& .partner-wrap{
 			padding: 50px 67px 44px;
@@ -1028,6 +1028,42 @@ footer{
 				max-width: 100%;
 				padding-left: 15px;
 				padding-right: 15px;
+			}
+		}
+	}
+}
+
+#leadership{
+	padding: 80px 0 250px;
+	& .leadership-wrap{
+		display: flex;
+		align-items: center;
+		& .leadership-avatar{
+			width: 91px;
+			height: 91px;
+			background-color: $brilliant;
+			border:5px solid $green;
+			border-radius: 50%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-self: center;
+			flex-basis: 91px;
+		}
+		& .leadership-data{
+			padding-left: 15px;
+			padding-right: 15px;
+			flex-basis: calc(100% - 121px);
+			& .leadership-name{
+				font-size: 1.11em;
+				font-weight: 700;
+			}
+			& .leadership-position{
+				color: $yellow;
 			}
 		}
 	}

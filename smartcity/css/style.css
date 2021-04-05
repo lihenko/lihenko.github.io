@@ -1207,7 +1207,7 @@ footer {
     color: #fff; }
 
 #partners {
-  padding: 80px 0; }
+  padding: 80px 0 150px; }
   #partners .col-lg-4 .partner-wrap {
     padding: 50px 67px 44px;
     background-color: #121635;
@@ -1233,6 +1233,57 @@ footer {
       max-width: 100%;
       padding-left: 15px;
       padding-right: 15px; }
+
+#leadership {
+  padding: 80px 0 250px; }
+  #leadership .leadership-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #leadership .leadership-wrap .leadership-avatar {
+      width: 91px;
+      height: 91px;
+      background-color: #008682;
+      border: 5px solid #4BB649;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-flex-basis: 91px;
+      -ms-flex-preferred-size: 91px;
+      flex-basis: 91px; }
+    #leadership .leadership-wrap .leadership-data {
+      padding-left: 15px;
+      padding-right: 15px;
+      -webkit-flex-basis: calc(100% - 121px);
+      -ms-flex-preferred-size: calc(100% - 121px);
+      flex-basis: calc(100% - 121px); }
+      #leadership .leadership-wrap .leadership-data .leadership-name {
+        font-size: 1.11em;
+        font-weight: 700; }
+      #leadership .leadership-wrap .leadership-data .leadership-position {
+        color: #ED8D22; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
