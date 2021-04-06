@@ -1,0 +1,122 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	border-top: 6px solid $green;
+	padding-top: 10px;
+	& .brand{
+		line-height: 1;
+		& img{
+			max-height: 105px;
+			width: auto;
+		}
+		a{
+			font-family: Gilroy, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $darkgreen;
+			font-size: 2.35em;
+			display: inline-block;
+		    vertical-align: middle;
+		    line-height: 1;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	& .phone-top-bar{
+		display: inline-block;
+		margin-right: 32px;
+		vertical-align: middle;
+		& a{
+			font-family: Gilroy, sans-serif;
+			font-weight: 700;
+			font-size: 1.76em;
+			color: $darkgreen;
+			line-height: 1;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	} 
+	& .social-top-bar{
+		display: inline-block;
+		& ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			& li{
+				padding-left: 8px;
+				padding-right: 8px;
+				display: inline-block;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+				& a svg path{
+					transition: all 0.3s ease-in-out;
+				}
+				&.facebook a:hover svg path{
+					fill: #4387bb;
+				}
+				&.instagram a:hover svg path{
+					fill: #F44AB6;
+				}
+				&.whatsup a:hover svg path{
+					fill: #1CC3B9;
+				}
+				&.telegram a:hover svg path{
+					fill: #21B9FF;
+				}
+			}
+		}
+	}
+	& .main-menu-wrap{
+		background-color: $green;
+	}
+}
+
+#hero{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: linear-gradient(to bottom, #B1D8F6 0%, #FCF291 100%);
+	position: relative;
+	& h1 {
+	  background: linear-gradient(to right, #2a918b, #07605a);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	}
+	& .hero-bg{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-image: url('../img/hero-bg-m.png');
+	}
+
+}
+
+.green-button{
+	font-family: Gilroy, sans-serif;
+	font-size: 1.41em;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: $green;
+	line-height: 1;
+	border-radius: 45px;
+	padding: 31px 50px;
+	&:hover{
+		color: $yellow;
+	}
+}
+
+@import "media";
