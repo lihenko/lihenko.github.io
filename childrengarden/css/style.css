@@ -981,6 +981,113 @@ header {
   padding: 0;
   margin: 0; }
 
+footer {
+  color: #fff;
+  font-size: 0.82em;
+  padding: 30px 0;
+  background-color: #7dcdc8; }
+
+#to-top {
+  width: 60px;
+  height: 60px;
+  background-color: #7dcdc8;
+  box-shadow: 1.035px 3.864px 18px 0px rgba(7, 96, 90, 0.48);
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+  #to-top.show {
+    opacity: 1;
+    z-index: 1; }
+
+.modal-open .modal {
+  background-color: rgba(125, 205, 200, 0.5); }
+
+.modal-content {
+  border-radius: 30px;
+  box-shadow: 1.035px 3.864px 18px 0px rgba(7, 96, 90, 0.48);
+  border: none; }
+
+.modal-dialog {
+  max-width: 560px; }
+  .modal-dialog .close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-shadow: none; }
+  .modal-dialog .modal-header {
+    border-bottom-color: #e3e3e3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .modal-dialog .modal-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 45px; }
+    .modal-dialog .modal-body input:not([type="submit"]) {
+      background-color: #ddf4f5; }
+  .modal-dialog .btn.whatsapp {
+    font-size: 1.11em;
+    padding: 24px 105px 24px 50px;
+    position: relative; }
+    .modal-dialog .btn.whatsapp:after {
+      content: url("../img/whatsapp-icon.png");
+      position: absolute;
+      top: 50%;
+      right: 35px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+#chat {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 1.035px 3.864px 18px 0px rgba(7, 96, 90, 0.48);
+  padding: 15px 15px 15px 25px; }
+  #chat .chat-title {
+    text-align: center;
+    color: #07605a;
+    font-weight: 700;
+    font-size: 1.11em;
+    font-family: Gilroy, sans-serif;
+    margin-bottom: 15px; }
+  #chat ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    #chat ul li {
+      text-align: center;
+      margin-bottom: 10px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1115,7 +1222,14 @@ header {
   #contact {
     padding: 80px 0; }
     #contact .contact-wrap {
-      padding: 45px 35px; } }
+      padding: 45px 35px; }
+  .modal-dialog .close {
+    top: -20px;
+    right: -20px; }
+  .modal-dialog .modal-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

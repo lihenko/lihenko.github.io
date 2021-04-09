@@ -228,6 +228,17 @@
 			padding: 45px 35px;
 		}
 	}
+	.modal-dialog {
+		& .close{
+			top: -20px;
+			right: -20px;
+		}
+		& .modal-body{
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 45px;
+		}
+	}
 	
 }
 

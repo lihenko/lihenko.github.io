@@ -138,6 +138,28 @@ $('.photogallery-slider').slick({
 });
 
 
+$(window).scroll(function() {
+    var button = $('#to-top');
+    if ($(window).scrollTop() > 600) {
+        button.addClass('show');
+    }
+    else {
+        button.removeClass('show');
+    }
+});
+
+
+function contactform(){
+  event.preventDefault();
+  $('#modalform').modal('show');
+}
+
+
+function scrollToTop() {
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+};
+
 $(document).ready(function(){
     var $page = $('html, body');
     $('a[href*="#"]').click(function() {

@@ -12,7 +12,8 @@ ymaps.ready(function () {
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'НЕЙРОЛЭНД'
+            hintContent: 'НЭЙРОЛЭНД',
+            balloonContent: 'НЭЙРОЛЭНД'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
@@ -24,9 +25,8 @@ ymaps.ready(function () {
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
-        }),
+        });
 
     myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
+        .add(myPlacemark);
 });
