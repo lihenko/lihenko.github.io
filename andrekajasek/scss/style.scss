@@ -1,0 +1,286 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	z-index: 99999;
+	position: relative;
+	background-color: #E0E0E0;
+}
+
+.bg-grey{
+	background-color: #E0E0E0;
+}
+
+#home-hero{
+	padding-bottom: 30px;
+	background-color: #323232;
+	& .andreka-jasek{
+		mix-blend-mode: screen;
+		margin-bottom: -150px;
+	}
+}
+
+
+.transparent-button{
+	color: $grey;
+	font-size: 1.25em;
+	line-height: 1.4;
+	letter-spacing: 0.0015em;
+	padding: 15px 47px;
+	border:1px solid $grey;
+	border-radius: 0;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		border-color: $blue;
+		color: $blue;
+	}
+}
+
+.grey{
+	color: $grey;
+}
+
+div.marquee {
+    white-space:no-wrap;
+    overflow:hidden;
+    color: $grey;
+    font-size: 1.25em;
+}
+div.marquee > div.marquee-text {
+    white-space:nowrap;
+    display:inline;
+    width:auto;
+    & span{
+    	padding-left: 30px;
+    	padding-right: 30px;
+    }
+}
+
+#about{
+	padding: 60px 0;
+}
+
+.h1.rotate{
+	transform: rotate(-90deg);
+	transform-origin: center;
+	opacity: 0.2;
+	display: flex;
+	justify-content: center;
+}
+
+.big{
+	font-size: 1.125em;
+}
+
+#experience{
+	padding: 60px 0;
+	background-color: #535756;
+	position: relative;
+	& .hr{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-top: 30px;
+		&:before{
+			content: '';
+			width: 80%;
+			height: 1px;
+			background-color: $grey;
+			display: block;
+		}
+		&:after{
+			content: '';
+			margin-top: 24px;
+			width: 90%;
+			height: 1px;
+			background-color: $grey;
+			display: block;
+		}
+	}
+}
+
+.opacity-2{
+	opacity: 0.2;
+}
+
+#headliners{
+	padding: 60px 0;
+}
+
+#features{
+	padding: 60px 0;
+	background-color: #F2F2F2;
+	& .feature-icon{
+		min-height: 165px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& .feature-title{
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+}
+
+#testimonials{
+	padding: 60px 0;
+	& .h1{
+		&:before{
+			content: '';
+			width: 52%;
+			height: 1px;
+			background-color: #535756;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		&:after{
+			content: '';
+			width: 52%;
+			height: 1px;
+			background-color: #535756;
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: -24px;
+		}
+	}
+	& .tesimonial-author{
+		font-family: Spartan, sans-serif;
+		font-weight: 700;
+		font-size: 2em;
+	}
+
+	& .slick-dots{
+		bottom: -32px;
+	}
+	& .slick-dots li.slick-active button::before {
+		content: '';
+		width: 20px;
+		height: 4px;
+		background-color: #535756;
+		opacity: 1;
+	}
+	& .slick-dots li button::before {
+		content: '';
+		width: 20px;
+		height: 4px;
+		background-color: #535756;
+		opacity: .2;
+	}
+	& .slick-dots li:hover button::before {
+		opacity: 1;
+	}
+}
+
+#latest-updates{
+	padding: 60px 0;
+	background: linear-gradient(to right, #F2F2F2, #F2F2F2 78%, #fff 78%, #fff 100%);
+	margin-bottom: 80px;
+}
+
+.news-item{
+	max-width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	& .news-data-wrap{
+		display: flex;
+		margin-bottom: 15px;
+		line-height: 1;
+
+		& .news-category{
+			padding-right: 14px;
+			border-right: 1px solid #535756;
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+		& .news-date{
+			padding-left: 15px;
+			font-size: 1.5em;
+		}
+	
+	}
+	& .news-thumbnail{
+		margin-bottom: 15px;
+	}
+	& .news-title{
+		font-size: 1.5em;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+}
+
+footer{
+	padding: 60px 0 0;
+	background-color: #535756;
+	& .footer-social{
+		margin-bottom: 10px;
+		& ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			& li{
+				display: inline-block;
+				padding-left: 11px;
+				padding-right: 11px;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+				& a svg path{
+					transition: all 0.15s ease-in-out;
+				}
+				& a:hover svg path{
+					fill: $blue;
+				}
+			}
+		}
+	}
+	& .footer-tel{
+		margin-bottom: 10px;
+		& a{
+			color: $grey;
+			&:hover{
+				color: $blue;
+			}
+		}
+	}
+	& .footer-email{
+		& a{
+			color: $grey;
+			&:hover{
+				color: $blue;
+			}
+		}
+	}
+	& .footer-menu{
+		& ul{
+			margin: 0 0 10px -11px;
+			padding: 0;
+			list-style: none;
+			& li{
+				display: inline-block;
+				padding-left: 11px;
+				padding-right: 11px;
+				padding-bottom: 5px;
+				& a{
+					color: $grey;
+					&:hover{
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+	& .copyright{
+		color: $grey;
+	}
+}
+
+@import "media";
