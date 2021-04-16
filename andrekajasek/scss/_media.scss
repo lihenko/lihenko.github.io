@@ -628,6 +628,36 @@
 			}
 		}
 	}
+	#blog-title{
+		background: linear-gradient(to right, #F2F2F2, #F2F2F2 calc(50% + 178px), #fff calc(50% + 178px), #fff 100%);
+	}
+	#entry-content{
+		& p{
+			font-size: 1.5em;
+		}
+		& blockquote{
+			padding: 64px;
+			font-size: 1.25em;
+		} 
+	}
+
+	#blog-post-footer{
+		& .blog-post-navigation{
+			justify-content: flex-end;
+		}
+		& .blog-post-data{
+			justify-content: flex-start;
+		}
+	}
+	.two-image-content{
+		& .image-one{
+			height: 364px;
+		}
+		& .image-two{
+			height: 364px;
+		}
+	}
+		
 }
 
 

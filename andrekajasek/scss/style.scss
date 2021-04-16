@@ -193,6 +193,7 @@ div.marquee > div.marquee-text {
 		line-height: 1;
 		align-items: center;
 		& .news-category{
+			text-transform: lowercase;
 			padding-right: 14px;
 			border-right: 1px solid #535756;
 			font-size: 1.5em;
@@ -208,6 +209,7 @@ div.marquee > div.marquee-text {
 		margin-bottom: 15px;
 	}
 	& .news-title{
+		text-transform: lowercase;
 		font-size: 1.5em;
 		font-weight: 500;
 		margin-bottom: 10px;
@@ -354,6 +356,7 @@ footer{
 		line-height: 1;
 
 		& .blog-category{
+			text-transform: lowercase;
 			padding-right: 14px;
 			border-right: 1px solid #535756;
 			font-size: 1.5em;
@@ -370,6 +373,7 @@ footer{
 		margin-bottom: 15px;
 	}
 	& .blog-title{
+		text-transform: lowercase;
 		font-size: 1.5em;
 		font-weight: 500;
 		margin-bottom: 10px;
@@ -413,6 +417,187 @@ footer{
 	}
 }
 
+#blog-title{
+	padding: 60px 0;
+	background: linear-gradient(to right, #F2F2F2, #F2F2F2 100%);
+	& .blog-post-data{
+		display: flex;
+		line-height: 1;
+		align-items: center;
+		& .blog-post-category{
+			padding-right: 16px;
+			border-right: 1px solid #535756;
+			font-size: 1.5em;
+			font-weight: 700;
 
+		}
+		& .blog-post-date{
+			font-size: 1.5em;
+			padding-left: 16px;
+		}
+	}
+	& .share-buttons{
+		& ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			& li{
+				display: inline-block;
+				padding-left: 9px;
+				padding-right: 9px;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+				& a svg path{
+					transition: all 0.15s ease-in-out;
+				}
+				& a:hover svg path{
+					fill:$blue;
+				}
+			}
+		}
+	}
+	& .blog-post-thumbnail{
+		height: 480px;
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+#entry-content{
+	padding: 60px 0;
+	& p{
+		font-size: 1.125em;
+	}
+	& h1, h2, h3, h4,h5, h6{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	& blockquote{
+		padding: 25px 15px;
+		font-size: 1.125em;
+		background-color: #F2F2F2;
+		margin-bottom: 2em;
+	}
+	& img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+#blog-post-footer{
+	padding: 60px 0;
+	border-top: 1px solid #535756;
+	& .blog-post-data{
+		display: flex;
+		line-height: 1;
+		align-items: center;
+		justify-content: center;
+		& .blog-post-category{
+			padding-right: 16px;
+			border-right: 1px solid #535756;
+			font-size: 1.5em;
+			font-weight: 700;
+
+		}
+		& .blog-post-date{
+			font-size: 1.5em;
+			padding-left: 16px;
+		}
+	}
+	& .blog-post-navigation{
+		display: flex;
+		justify-content: space-between;
+		& a{
+			margin-left: 10px;
+			margin-right: 10px;
+			padding: 0 0 9px;
+			position: relative;
+			transition: all 0.15s ease-in-out;
+			&:first-child{
+				margin-left: 0;
+				&:after{
+					content: '';
+					width: 100%;
+					height: 1px;
+					background-color: #535756;
+					display: block;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transition: all 0.15s ease-in-out;
+				}
+				&:before{
+					content: '';
+					border: solid #535756;
+					border-width: 0 1px 1px 0;
+					display: inline-block;
+					padding: 2px;
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					 transform: rotate(135deg);
+					 transition: all 0.15s ease-in-out;
+				}
+			}
+			&:last-child{
+				margin-right: 0;
+				&:after{
+					content: '';
+					width: 100%;
+					height: 1px;
+					background-color: #535756;
+					display: block;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transition: all 0.15s ease-in-out;
+				}
+				&:before{
+					content: '';
+					border: solid #535756;
+					border-width: 0 1px 1px 0;
+					display: inline-block;
+					padding: 2px;
+					position: absolute;
+					bottom: -2px;
+					right: 0;
+					 transform: rotate(-45deg);
+					 transition: all 0.15s ease-in-out;
+				}
+			}
+			&:hover{
+				&:after{
+					background-color: $blue;
+				}
+				&:before{
+					border-color: $blue;
+				}
+			}
+		}
+	}
+}
+
+.two-image-content{
+	padding-top: 30px;
+	& .image-one{
+		height: 264px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+	& .image-two{
+		height: 264px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+}
 
 @import "media";
