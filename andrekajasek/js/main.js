@@ -56,11 +56,13 @@ $('.slider-footer-content').slick({
 });
 
 
-$('.home-testimonials').slick({
+$('.photo-slider').slick({
     speed: 300,
     autoplay:true,
-    arrows: false,
-    dots:true
+    arrows: true,
+    dots:false,
+    nextArrow: '.photo-slider-prev',
+    prevArrow: '.photo-slider-next'
 });
 
 

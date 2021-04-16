@@ -283,4 +283,64 @@ footer{
 	}
 }
 
+#about-photos{
+	padding: 0 0 60px;
+	background: linear-gradient(to right, #323232, #323232 100%);
+	& .photo-slider{
+		& .slider-item{
+			height: 374px;
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	& .photo-slider-buttons{
+		padding: 10px;
+		background-color: #535756;
+		display: inline-block;
+		& .photo-slider-prev{
+			display: inline-block;
+			cursor: pointer;
+			padding: 5px 25px 5px 10px;
+			border-right: 1px solid $grey;
+			& svg path{
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover svg path{
+				fill: $blue;
+			}
+		}
+		& .photo-slider-next{
+			display: inline-block;
+			cursor: pointer;
+			padding: 5px 10px 5px 25px;
+			& svg path{
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover svg path{
+				fill: $blue;
+			}
+		}
+	}
+}
+
+#who-benefits{
+	padding: 60px 0;
+}
+
+#when-and-where{
+	background-color: #F2F2F2;
+	padding: 60px 0;
+}
+
+#how{
+	padding: 60px 0;
+	& .how-text-wrap{
+		padding: 25px 15px;
+		background-color: #F2F2F2;
+		margin-left: 15px;
+		margin-top: -60px;
+	}
+}
+
 @import "media";

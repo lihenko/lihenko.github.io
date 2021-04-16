@@ -58,7 +58,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px){
-
+	#about-photos{
+		& .photo-slider{
+			& .slider-item{
+				height: 480px;
+			}
+		}
+	}
 }
 
 
@@ -75,6 +81,12 @@
 
 	h1, .h1{
 		font-size: 4.5em;
+	}
+	h3, .h3{
+		font-size: 2.7em;
+	}
+	h2, .h2{
+		font-size: 4em;
 	}
 	.big{
 		font-size: 1.5em;
@@ -106,6 +118,58 @@
 	footer{
 		& .footer-menu{
 			padding-right: 50%;
+		}
+	}
+	#about-photos{
+		background: linear-gradient(to right, #323232, #323232 calc(50% + 178px), #fff calc(50% + 178px), #fff 100%);
+		& .photo-slider{
+			& .slider-item{
+				height: 736px;
+			}
+		}
+		& .photo-slider-buttons{
+			position: absolute;
+			padding: 15px;
+			background-color: #535756;
+			display: inline-block;
+			& .photo-slider-prev{
+				display: inline-block;
+				cursor: pointer;
+				padding: 15px 45px 15px 30px;
+				border-right: 1px solid $grey;
+				&:hover svg path{
+					fill: $blue;
+				}
+			}
+			& .photo-slider-next{
+				display: inline-block;
+				cursor: pointer;
+				padding: 15px 30px 15px 45px;
+				&:hover svg path{
+					fill: $blue;
+				}
+			}
+		}
+		& .transform{
+			transform: translateY(260px);
+		}
+	}
+	#who-benefits{
+		padding: 120px 0;
+		& .transform{
+			transform: translateY(260px);
+		}
+	}
+	#how{
+		padding: 120px 0;
+		& .how-text-wrap{
+			padding: 64px;
+			margin-left: 0;
+			margin-top: 0;
+		}
+		& .image-transform{
+			margin-left: 7.33%;
+			margin-right: calc(-14.66% - 15px);
 		}
 	}
 }

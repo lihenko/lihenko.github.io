@@ -152,6 +152,9 @@ body.menu-open{
 				line-height: 1;
 				margin-bottom: 0;
 				margin-left: 0;
+				&.current-menu-item a{
+					color: $blue;
+				}
 				&.menu-button{
 					margin-top: 0;
 				}
