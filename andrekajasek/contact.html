@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 my-auto order-lg-2">
+				<div class="main-menu">
+					<div class="main-nav">
+					    <div class="menu-primary-menu-container">
+					    	<ul id="primary-menu" class="menu">
+					    		<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-236"><a href="#">about</a>
+								</li>
+								<li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-237"><a href="#">services</a>
+								</li>
+								<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="#">blog</a>
+								</li>
+								<li id="menu-item-235" class="menu-item menu-item-type-post_type current-menu-item menu-item-object-page menu-item-235"><a href="#">contact</a>
+								</li>
+								<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235 menu-button"><a href="#">CONTACT NOW</a>
+								</li>
+							</ul>
+						</div>						
+					</div><!-- #main-nav -->
+				</div>
+			</div>
+			<div class="col-lg-3 bg-grey pt-3 pb-3 order-lg-1">
+				<div class="brand">
+					<a href="/">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<div class="toggle-btn">
+		            <span class="hamburger">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </span>
+		       	</div>
+			</div>
+
+		</div>
+	</div>
+
+</header>
+<section id="contact-form">
+	<div class="container">
+		<div class="row">
+            <div class="col-12 d-lg-none">
+                <h2 class="h1 my-5">contact</h2>
+            </div>
+            <div class="col-lg-8 px-0 order-lg-2">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4eB1zgQK9f-Rb1LJDZ0imWzPscreftJg"></script> 
+                <script> 
+                    function initialize() {                  
+                      var styleArray = [
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e9e9e9"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dedede"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#333333"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    }
+                ]; 
+                      var mapOptions = { 
+                        zoom: 11, 
+                        scrollwheel: false, 
+                        center: new google.maps.LatLng(47.6129432, -122.4821475), 
+                        mapTypeId: google.maps.MapTypeId.ROADMAP, 
+                        styles: styleArray 
+                      };                     
+                      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);   
+                }
+                                     
+                    google.maps.event.addDomListener(window, 'load', initialize);             
+                </script> 
+                <div id="map-canvas"></div>
+            </div>
+			<div class="col-lg-4 my-auto order-lg-1">
+				<h2 class="h1 my-5 d-none d-lg-block">contact</h2>
+				<div class="form-wrap mb-5 mb-lg-0">
+					<div class="row">
+						<div class="col-12 mb-3">
+                            <input type="text">
+                            <label for="">Name</label>
+						</div>
+						<div class="col-12 mb-3">
+                            <input type="email">
+                            <label for="">Email</label>
+						</div>
+						<div class="col-12 mb-3">
+                            <input type="tel">
+                            <label for="">Phone</label>
+						</div>
+						<div class="col-12 mb-4">
+							<textarea name="" ></textarea>
+                            <label for="">Message</label>
+						</div>
+						<div class="col-12 text-right">
+							<input type="submit" value="SEND MESSAGE" class="btn submit-button">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 order-lg-1 mb-3 mb-lg-5">
+                <h3>
+                    address
+                </h3>
+                <p class="big">
+                    671 S Jackson St, Seattle, WA 98104, USA
+                </p>
+            </div>
+            <div class="col-lg-6 order-lg-3 mb-3 mb-lg-5">
+                <h3>
+                    phone
+                </h3>
+                <p class="big">
+                    <a href="#">
+                        +1 206-661-1928
+                    </a>
+                </p>
+            </div>
+            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-5">
+                <h3>
+                    email
+                </h3>
+                <p class="big">
+                    <a href="#">
+                        aj.musicindustryconsulting@gmail.com
+                    </a>
+                </p>
+            </div>
+            <div class="col-lg-6 order-lg-4 mb-3 mb-lg-5">
+                <h3>
+                    social
+                </h3>
+                <ul id="social-contacts">
+                    <li>
+                        <a href="#">
+                            <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.80636 27.3334V15.1694H13.889L14.501 10.4294H9.80769V7.40271C9.80769 6.02937 10.1877 5.09471 12.1557 5.09471L14.6664 5.09337V0.853372C13.4515 0.724797 12.2306 0.662483 11.009 0.666705C7.38903 0.666705 4.91169 2.87604 4.91169 6.93337V10.4294H0.818359V15.1694H4.91169V27.3334H9.80636Z" fill="#535756"/>
+</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0001 8.83447C10.7064 8.83447 8.83452 10.7063 8.83452 13.0001C8.83452 15.2938 10.7064 17.1657 13.0001 17.1657C15.2939 17.1657 17.1658 15.2938 17.1658 13.0001C17.1658 10.7063 15.2939 8.83447 13.0001 8.83447ZM25.4939 13.0001C25.4939 11.2751 25.5095 9.56572 25.4126 7.84385C25.3158 5.84385 24.8595 4.06885 23.397 2.60635C21.9314 1.14072 20.1595 0.687599 18.1595 0.590724C16.4345 0.493849 14.7251 0.509474 13.0033 0.509474C11.2783 0.509474 9.5689 0.493849 7.84702 0.590724C5.84702 0.687599 4.07202 1.14385 2.60952 2.60635C1.1439 4.07197 0.690773 5.84385 0.593898 7.84385C0.497023 9.56885 0.512648 11.2782 0.512648 13.0001C0.512648 14.722 0.497023 16.4345 0.593898 18.1563C0.690773 20.1563 1.14702 21.9313 2.60952 23.3938C4.07515 24.8595 5.84702 25.3126 7.84702 25.4095C9.57202 25.5063 11.2814 25.4907 13.0033 25.4907C14.7283 25.4907 16.4376 25.5063 18.1595 25.4095C20.1595 25.3126 21.9345 24.8563 23.397 23.3938C24.8626 21.9282 25.3158 20.1563 25.4126 18.1563C25.5126 16.4345 25.4939 14.7251 25.4939 13.0001ZM13.0001 19.4095C9.45327 19.4095 6.59077 16.547 6.59077 13.0001C6.59077 9.45322 9.45327 6.59072 13.0001 6.59072C16.547 6.59072 19.4095 9.45322 19.4095 13.0001C19.4095 16.547 16.547 19.4095 13.0001 19.4095ZM19.672 7.8251C18.8439 7.8251 18.1751 7.15635 18.1751 6.32822C18.1751 5.5001 18.8439 4.83135 19.672 4.83135C20.5001 4.83135 21.1689 5.5001 21.1689 6.32822C21.1691 6.52487 21.1306 6.71962 21.0555 6.90135C20.9803 7.08307 20.8701 7.24818 20.731 7.38723C20.592 7.52627 20.4269 7.63652 20.2451 7.71166C20.0634 7.7868 19.8687 7.82535 19.672 7.8251Z" fill="#535756"/>
+</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.052 26.9999C22.128 26.9999 28.734 16.9939 28.734 8.33192C28.734 8.05192 28.734 7.76792 28.722 7.48792C30.0081 6.55689 31.1181 5.40422 32 4.08392C30.7986 4.61362 29.5255 4.96273 28.222 5.11992C29.5951 4.2992 30.6234 3.00786 31.116 1.48592C29.826 2.25017 28.414 2.78667 26.942 3.07192C25.9524 2.01797 24.6428 1.31976 23.2162 1.08544C21.7895 0.851116 20.3254 1.09376 19.0507 1.7758C17.7759 2.45783 16.7616 3.54118 16.1649 4.85804C15.5682 6.1749 15.4224 7.65179 15.75 9.05992C13.1395 8.92902 10.5856 8.25086 8.25409 7.06941C5.92254 5.88796 3.86537 4.22961 2.216 2.20192C1.37868 3.64809 1.12315 5.35872 1.50129 6.98645C1.87944 8.61418 2.86291 10.037 4.252 10.9659C3.21108 10.9306 2.19304 10.651 1.28 10.1499V10.2399C1.28179 11.7549 1.80661 13.2228 2.76575 14.3954C3.72488 15.5681 5.0595 16.3737 6.544 16.6759C5.98053 16.8312 5.39846 16.9085 4.814 16.9059C4.40197 16.9072 3.99076 16.869 3.586 16.7919C4.00557 18.096 4.82255 19.2363 5.92249 20.0529C7.02244 20.8695 8.35027 21.3216 9.72 21.3459C7.39311 23.1735 4.5188 24.1647 1.56 24.1599C1.03864 24.1621 0.517646 24.1321 0 24.0699C3.00303 25.9844 6.4906 27.001 10.052 26.9999Z" fill="#535756"/>
+</svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mb-5 order-lg-2 text-left text-lg-center mt-lg-auto">
+				<a href="/">
+					<img src="img/logo-white.svg" alt="">
+				</a>
+			</div>
+			<div class="col-lg-4 text-left text-lg-right order-lg-3 mb-5">
+				<div class="footer-social">
+					<ul>
+						<li>
+							<a href="#">
+								<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.35477 20.0002V10.8772H10.4168L10.8758 7.32215H7.35577V5.05215C7.35577 4.02215 7.64077 3.32115 9.11677 3.32115L10.9998 3.32015V0.140151C10.0887 0.04372 9.17297 -0.00301596 8.25677 0.000150718C5.54177 0.000150718 3.68377 1.65715 3.68377 4.70015V7.32215H0.61377V10.8772H3.68377V20.0002H7.35477Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.0001 6.87579C8.2798 6.87579 6.87589 8.2797 6.87589 10C6.87589 11.7203 8.2798 13.1242 10.0001 13.1242C11.7204 13.1242 13.1243 11.7203 13.1243 10C13.1243 8.2797 11.7204 6.87579 10.0001 6.87579ZM19.3704 10C19.3704 8.70626 19.3821 7.42423 19.3095 6.13283C19.2368 4.63283 18.8946 3.30158 17.7978 2.2047C16.6985 1.10548 15.3696 0.765639 13.8696 0.692982C12.5759 0.620326 11.2939 0.632045 10.0025 0.632045C8.7087 0.632045 7.42667 0.620326 6.13527 0.692982C4.63527 0.765639 3.30402 1.10783 2.20714 2.2047C1.10792 3.30392 0.76808 4.63283 0.695424 6.13283C0.622767 7.42658 0.634486 8.70861 0.634486 10C0.634486 11.2914 0.622767 12.5758 0.695424 13.8672C0.76808 15.3672 1.11027 16.6985 2.20714 17.7953C3.30636 18.8945 4.63527 19.2344 6.13527 19.307C7.42902 19.3797 8.71105 19.368 10.0025 19.368C11.2962 19.368 12.5782 19.3797 13.8696 19.307C15.3696 19.2344 16.7009 18.8922 17.7978 17.7953C18.897 16.6961 19.2368 15.3672 19.3095 13.8672C19.3845 12.5758 19.3704 11.2938 19.3704 10ZM10.0001 14.807C7.33995 14.807 5.19308 12.6602 5.19308 10C5.19308 7.33986 7.33995 5.19298 10.0001 5.19298C12.6603 5.19298 14.8071 7.33986 14.8071 10C14.8071 12.6602 12.6603 14.807 10.0001 14.807ZM15.004 6.11876C14.3829 6.11876 13.8814 5.6172 13.8814 4.99611C13.8814 4.37501 14.3829 3.87345 15.004 3.87345C15.6251 3.87345 16.1267 4.37501 16.1267 4.99611C16.1269 5.14359 16.0979 5.28966 16.0416 5.42595C15.9852 5.56224 15.9026 5.68607 15.7983 5.79036C15.694 5.89464 15.5701 5.97733 15.4339 6.03368C15.2976 6.09004 15.1515 6.11895 15.004 6.11876Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.539 19.5001C16.596 19.5001 21.5505 11.9956 21.5505 5.49906C21.5505 5.28906 21.5505 5.07606 21.5415 4.86606C22.5061 4.16779 23.3386 3.30329 24 2.31306C23.099 2.71034 22.1441 2.97217 21.1665 3.09006C22.1963 2.47452 22.9676 1.50602 23.337 0.364563C22.3695 0.937749 21.3105 1.34012 20.2065 1.55406C19.4643 0.763599 18.4821 0.23994 17.4121 0.0641994C16.3421 -0.111541 15.2441 0.0704453 14.288 0.581969C13.3319 1.09349 12.5712 1.90601 12.1237 2.89365C11.6761 3.8813 11.5668 4.98896 11.8125 6.04506C9.85461 5.94689 7.93922 5.43826 6.19056 4.55218C4.4419 3.66609 2.89903 2.42233 1.662 0.901563C1.03401 1.98619 0.842361 3.26916 1.12597 4.48996C1.40958 5.71076 2.14718 6.77786 3.189 7.47456C2.40831 7.44804 1.64478 7.2384 0.96 6.86256V6.93006C0.961346 8.06628 1.35496 9.16719 2.07431 10.0467C2.79366 10.9262 3.79462 11.5304 4.908 11.7571C4.48539 11.8735 4.04884 11.9315 3.6105 11.9296C3.30148 11.9305 2.99307 11.9019 2.6895 11.8441C3.00418 12.8221 3.61691 13.6773 4.44187 14.2898C5.26683 14.9022 6.2627 15.2413 7.29 15.2596C5.54483 16.6303 3.3891 17.3737 1.17 17.3701C0.778981 17.3717 0.388235 17.3492 0 17.3026C2.25227 18.7385 4.86795 19.5009 7.539 19.5001Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-tel">
+					<a href="#">
+						+1 206-661-1928
+					</a>
+				</div>
+				<div class="footer-email">
+					<a href="#">aj.musicindustryconsulting@gmail.com</a>
+				</div>
+			</div>
+			<div class="col-lg-4 order-lg-1 mb-5 mb-lg-0">
+				<div class="footer-menu">
+					<ul>
+						<li>
+							<a href="#">
+								Services
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					© 2020 Andreka Jasek / All Rights Reserved
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/bootstrap/js/popper.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

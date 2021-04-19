@@ -600,4 +600,46 @@ footer{
 	}
 }
 
+#contact-form{
+	background-color: #323232;
+	.form-wrap{
+		position: relative;
+		z-index: 2;
+		background-color: #F2F2F2;
+		padding: 32px;
+		margin-top: -86px;
+	}
+}
+
+
+#map-canvas{
+	height: 680px;
+}
+
+#contacts{
+	padding: 60px 0;
+	& #social-contacts{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 10px;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+			& svg path{
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover svg path{
+				fill: $blue;
+			}
+		}
+	}
+}
+
 @import "media";
