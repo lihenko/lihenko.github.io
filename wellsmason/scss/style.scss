@@ -23,6 +23,14 @@ header{
 		background-color: #fff;
 		color: #000;
 	}
+	&.light:hover{
+		background-color: $blue;
+		color: #fff;
+	}
+	&.linkedin:hover{
+		background-color: $blue;
+		color: #fff;
+	}
 }
 
 .blue-button{
@@ -261,7 +269,99 @@ footer{
 	}
 }
 
+#page-title{
+	position: relative;
+	margin-top: -95px;
+	padding: 155px 0 60px;
+	background-image: url('../img/hero-bg.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	& .page-title{
+		position: relative;
+		margin-bottom: 150px;
+	}
+	& .pagetitle-splash{
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 275px;
+		border-radius: 8px;
+	}
+	& .page-subtitle{
+		position: absolute;
+		top: 100%;
+		padding-top: 45px;
+	}
+}
 
-	
+.orange{
+	color: $orange;
+}
+
+#cmmc-certification{
+	padding: 60px 0;
+	background-color: #fff;
+}	
+
+#cyber-risk-programs{
+	padding: 60px 0;
+	& .program-icon{
+		width: 112px;
+		height: 112px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	& .program-title{
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 1;
+		letter-spacing: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+ul.orange{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 10px;
+		&:before{
+			content: '';
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: $orange;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 8px;
+		}
+	}
+}
+
+#why-choose{
+	padding-bottom: 60px;
+}
+
+#meet-founder{
+	padding-bottom: 60px;
+	& .meet-founder-wrap{
+		padding: 35px 15px;
+		background-color: #fff;
+	}
+}
 
 @import "media";

@@ -43,7 +43,7 @@ h1 {
   font-size: 3.3em; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 2.22em; }
 
 h3 {
   font-size: 24px; }
@@ -315,6 +315,12 @@ header {
   .orange-button:hover {
     background-color: #fff;
     color: #000; }
+  .orange-button.light:hover {
+    background-color: #173861;
+    color: #fff; }
+  .orange-button.linkedin:hover {
+    background-color: #173861;
+    color: #fff; }
 
 .blue-button {
   font-size: 16px;
@@ -554,6 +560,95 @@ footer {
     color: #fff;
     font-size: 12px; }
 
+#page-title {
+  position: relative;
+  margin-top: -95px;
+  padding: 155px 0 60px;
+  background-image: url("../img/hero-bg.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+  #page-title .page-title {
+    position: relative;
+    margin-bottom: 150px; }
+  #page-title .pagetitle-splash {
+    background-color: #173861;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 275px;
+    border-radius: 8px; }
+  #page-title .page-subtitle {
+    position: absolute;
+    top: 100%;
+    padding-top: 45px; }
+
+.orange {
+  color: #FF7E00; }
+
+#cmmc-certification {
+  padding: 60px 0;
+  background-color: #fff; }
+
+#cyber-risk-programs {
+  padding: 60px 0; }
+  #cyber-risk-programs .program-icon {
+    width: 112px;
+    height: 112px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+  #cyber-risk-programs .program-title {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+ul.orange {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul.orange li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px; }
+    ul.orange li:before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #FF7E00;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px; }
+
+#why-choose {
+  padding-bottom: 60px; }
+
+#meet-founder {
+  padding-bottom: 60px; }
+  #meet-founder .meet-founder-wrap {
+    padding: 35px 15px;
+    background-color: #fff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -611,7 +706,19 @@ footer {
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-      transform: translateY(-50%); } }
+      transform: translateY(-50%); }
+  #page-title .page-subtitle {
+    position: relative;
+    top: unset;
+    padding-top: unset; }
+  #cmmc-certification {
+    padding: 115px 0; }
+  #cyber-risk-programs {
+    padding: 115px 0; }
+  #why-choose {
+    padding-bottom: 115px; }
+  #meet-founder .meet-founder-wrap {
+    padding: 65px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

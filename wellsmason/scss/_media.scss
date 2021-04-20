@@ -125,6 +125,27 @@
 			}
 		}
 	}
+	#page-title{
+		& .page-subtitle{
+			position: relative;
+			top: unset;
+			padding-top: unset;
+		}
+	}
+	#cmmc-certification{
+		padding: 115px 0;
+	}
+	#cyber-risk-programs{
+		padding: 115px 0;
+	}
+	#why-choose{
+		padding-bottom: 115px;
+	}
+	#meet-founder{
+		& .meet-founder-wrap{
+			padding: 65px;
+		}
+	}
 }
 
 
