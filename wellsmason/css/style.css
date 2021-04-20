@@ -321,6 +321,12 @@ header {
   .orange-button.linkedin:hover {
     background-color: #173861;
     color: #fff; }
+  .orange-button.linkedin:after {
+    content: url("../img/Linkedin.svg");
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: middle;
+    margin-top: -3px; }
 
 .blue-button {
   font-size: 16px;
