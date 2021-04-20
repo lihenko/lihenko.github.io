@@ -69,6 +69,14 @@ header{
 		background-color: #fff;
 		color: #000;
 	}
+	&.transparent-orange{
+		border-color:$orange;
+		color: #000;
+		&:hover{
+			background-color: $orange;
+			color: #fff;
+		}
+	}
 }
 
 #home-hero{
@@ -368,6 +376,26 @@ ul.orange{
 	& .meet-founder-wrap{
 		padding: 35px 15px;
 		background-color: #fff;
+	}
+}
+
+#certified{
+	padding: 60px 0;
+	& .transparent-button{
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+}
+
+#our-cmmc-services{
+	padding-bottom: 60px;
+	& .cmmc-services-wrap{
+		padding: 35px 15px;
+		background-color: #fff;
+	}
+	& .transparent-button{
+		text-transform: uppercase;
+		margin-bottom: 5px;
 	}
 }
 

@@ -16,12 +16,6 @@
   *:before, *:after {
     box-sizing: border-box; }
 
-:root {
-  --bs-gutter-x: 5px; }
-
-.row {
-  --bs-gutter-x: 10px; }
-
 html, body {
   position: relative;
   height: 100%;
@@ -194,7 +188,7 @@ textarea {
 .toggle-btn {
   display: block;
   position: absolute;
-  top: 36px;
+  top: 27px;
   right: 15px;
   z-index: 9999999; }
 
@@ -354,6 +348,12 @@ header {
   .transparent-button:hover {
     background-color: #fff;
     color: #000; }
+  .transparent-button.transparent-orange {
+    border-color: #FF7E00;
+    color: #000; }
+    .transparent-button.transparent-orange:hover {
+      background-color: #FF7E00;
+      color: #fff; }
 
 #home-hero {
   position: relative;
@@ -655,10 +655,29 @@ ul.orange {
     padding: 35px 15px;
     background-color: #fff; }
 
+#certified {
+  padding: 60px 0; }
+  #certified .transparent-button {
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+
+#our-cmmc-services {
+  padding-bottom: 60px; }
+  #our-cmmc-services .cmmc-services-wrap {
+    padding: 35px 15px;
+    background-color: #fff; }
+  #our-cmmc-services .transparent-button {
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .brand img {
+    max-height: 65px; } }
+
 /* Extra Small Devices, Phones */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
@@ -724,7 +743,15 @@ ul.orange {
   #why-choose {
     padding-bottom: 115px; }
   #meet-founder .meet-founder-wrap {
-    padding: 65px; } }
+    padding: 65px; }
+  :root {
+    --bs-gutter-x: 5px; }
+  .row {
+    --bs-gutter-x: 10px; }
+  #certified {
+    padding: 115px 0; }
+  #our-cmmc-services .cmmc-services-wrap {
+    padding: 110px 110px 95px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {

@@ -17,7 +17,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px){
-
+	.brand img{
+		max-height: 65px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -144,6 +146,21 @@
 	#meet-founder{
 		& .meet-founder-wrap{
 			padding: 65px;
+		}
+	}
+	:root {
+	  --bs-gutter-x: 5px;
+	}
+
+	.row {
+	    --bs-gutter-x: 10px;
+	}
+	#certified{
+		padding: 115px 0;
+	}
+	#our-cmmc-services{
+		& .cmmc-services-wrap{
+			padding: 110px 110px 95px;
 		}
 	}
 }
