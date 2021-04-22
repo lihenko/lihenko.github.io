@@ -642,4 +642,120 @@ footer{
 	}
 }
 
+#services-hero{
+	padding: 60px 0 0;
+	background: linear-gradient(to right, #323232, #323232 100%);
+	margin-bottom: 120px;
+	& img{
+		margin-bottom: -120px;
+	}
+}
+
+#services-1{
+	padding: 60px 0;
+	& p{
+		font-size: 1.125em;
+	}
+	& table{
+		font-size: 1em;
+		width: 100%;
+		& td{
+			border-bottom: 1px solid #535756;
+			padding: 13px 0 8px;
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+	& .service-image-1{
+		height: 200px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	& .service-image-2{
+		height: 313px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+#services-2{
+	padding-bottom: 60px;
+	& .service-wrap{
+		padding: 40px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 256px;
+		position: relative;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		& .service-overlay{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #535756;
+			opacity: 0.8;
+		}
+		& .service-title{
+			position: relative;
+			margin-bottom: 30px;
+		}
+		& .service-price{
+			position: relative;
+		}
+	}
+}
+
+#services-3{
+	padding: 60px 0;
+	background-color: #F2F2F2;
+	& p{
+		font-size: 1.125em;
+	}
+	& table{
+		font-size: 1em;
+		width: 100%;
+		& td{
+			border-bottom: 1px solid #535756;
+			padding: 13px 0 8px;
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+}
+
+#services-4{
+	padding: 60px 0;
+	& p{
+		font-size: 1.125em;
+	}
+	& table{
+		font-size: 1em;
+		width: 100%;
+		& td{
+			border-bottom: 1px solid #535756;
+			padding: 13px 0 8px;
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+	& .service-image-5{
+		height: 200px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
 @import "media";

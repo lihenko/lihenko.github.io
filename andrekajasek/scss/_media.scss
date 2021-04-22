@@ -674,7 +674,59 @@
 	#contacts{
 		padding: 120px 0;
 	}
-		
+	#services-hero{
+		padding: 95px 0;
+		margin-bottom: 0;
+		background: linear-gradient(to right, #323232, #323232 calc(50% + 178px), #fff calc(50% + 178px), #fff 100%);
+		& img{
+			margin-bottom: 0;
+		}
+	}
+	#services-1{
+		padding: 120px 0 200px;
+		& p{
+			font-size: 1.25em;
+		}
+		& table{
+			font-size: 1.25em;
+		}
+		& .service-image-1{
+			height: 479px;
+		}
+	}
+	#services-2{
+		padding-bottom: 200px;
+		& .service-wrap{
+			height: 336px;
+		}
+		& .col-lg-6:nth-child(odd){
+			padding-right: 1.5rem;
+		}
+		& .col-lg-6:nth-child(even){
+			padding-left: 1.5rem;
+		}
+	}
+	#services-3{
+		padding: 120px 0;
+		& p{
+			font-size: 1.25em;
+		}
+		& table{
+			font-size: 1.25em;
+		}
+	}
+	#services-4{
+		padding: 120px 0;
+		& p{
+			font-size: 1.25em;
+		}
+		& table{
+			font-size: 1.25em;
+		}
+		& .service-image-5{
+			height: 300px;
+		}
+	}	
 }
 
 
