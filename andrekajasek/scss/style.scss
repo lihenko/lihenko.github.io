@@ -5,9 +5,11 @@
 @import "menu";
 
 header{
-	z-index: 99999;
 	position: relative;
 	background-color: #E0E0E0;
+	& .brand{
+		z-index: 99999;
+	}
 }
 
 .bg-grey{

@@ -354,9 +354,10 @@ body.menu-open {
       padding-right: 0; } }
 
 header {
-  z-index: 99999;
   position: relative;
   background-color: #E0E0E0; }
+  header .brand {
+    z-index: 99999; }
 
 .bg-grey {
   background-color: #E0E0E0; }
