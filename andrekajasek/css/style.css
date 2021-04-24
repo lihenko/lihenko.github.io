@@ -172,7 +172,6 @@ body.menu-open {
   font-size: 14px;
   font-weight: 400;
   background-color: #E0E0E0;
-  z-index: -2;
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -192,8 +191,7 @@ body.menu-open {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 30px;
-  overflow-y: auto; }
+  padding-top: 30px; }
   .main-menu ul {
     list-style: none;
     margin: 0;
@@ -297,12 +295,16 @@ body.menu-open {
 
 @media only screen and (min-width: 992px) {
   .main-menu {
-    padding-top: unset;
-    position: unset;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    position: relative;
     background-color: transparent;
-    -webkit-transform: unset;
-    -ms-transform: unset;
-    transform: unset;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
@@ -310,7 +312,7 @@ body.menu-open {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    overflow-y: unset; }
+    top: 0; }
     .main-menu ul {
       list-style: none;
       margin: 0;

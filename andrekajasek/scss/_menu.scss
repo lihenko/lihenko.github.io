@@ -10,14 +10,13 @@ body.menu-open{
 	font-size: 14px;
 	font-weight: 400;
 	background-color: #E0E0E0;
-	z-index:-2;
 	transform: translateY(-200%);
 	transition: transform 0.3s ease-in-out;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 30px;
-	overflow-y: auto;
+
 	& ul{
 		list-style: none;
 		margin: 0;
@@ -134,13 +133,14 @@ body.menu-open{
 
 @media only screen and (min-width: 992px){
 	.main-menu{
-		padding-top: unset;
-		position: unset;
+		display: flex;
+		padding-top: 0;
+		position: relative;
 		background-color: transparent;
-		transform: unset;
+		transform: translateY(0%);
 		align-content: center;
 		justify-content: flex-end;
-		overflow-y: unset;
+		top:0;
 		& ul{
 			list-style: none;
 			margin: 0;
