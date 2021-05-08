@@ -154,7 +154,7 @@
 }
 
 #buy-tokens{
-	padding: 60px 0;
+	padding: 60px 0 0;
 	& .token-card{
 		height: 100%;
 		background-color: rgba(#060A21, .7);
@@ -194,6 +194,7 @@
 }
 
 #road-map{
+	padding-top: 100px;
 	padding-bottom: 60px;
 	& .map-element{
 		padding-left: 45px;
@@ -237,21 +238,6 @@
 			top: 6px;
 			left: -3.5px;
 		}
-		&:first-child:before{
-			content: url('');
-			background-image: url('../img/start-road.svg');
-			background-size: cover;
-			display: block;
-			position: absolute;
-			background-color: transparent;
-			width: 90px;
-			height: 90px;
-			left: -33px;
-			top: -35px;
-		}
-		&:first-child:after{
-			display: none;
-		}
 	}
 	& .road-map{
 		&:before{
@@ -262,6 +248,19 @@
 			display: block;
 			border-left: 2px dashed #fff;
 		}
+	}
+}
+
+#rocket{
+	position: absolute;
+	z-index: 70;
+	left: -23px;
+	top: -40px;
+	transform-origin: 50%;
+	transition: all 0.15s ease;
+	& img{
+		width: 100px;
+		height: auto;
 	}
 }
 

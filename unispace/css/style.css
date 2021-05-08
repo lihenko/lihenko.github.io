@@ -231,7 +231,7 @@ object, embed {
     background-color: #fff; }
 
 #buy-tokens {
-  padding: 60px 0; }
+  padding: 60px 0 0; }
   #buy-tokens .token-card {
     height: 100%;
     background-color: rgba(6, 10, 33, 0.7);
@@ -269,6 +269,7 @@ object, embed {
           text-align: right; }
 
 #road-map {
+  padding-top: 100px;
   padding-bottom: 60px; }
   #road-map .map-element {
     padding-left: 45px;
@@ -306,19 +307,6 @@ object, embed {
       position: absolute;
       top: 6px;
       left: -3.5px; }
-    #road-map .map-element:first-child:before {
-      content: url("");
-      background-image: url("../img/start-road.svg");
-      background-size: cover;
-      display: block;
-      position: absolute;
-      background-color: transparent;
-      width: 90px;
-      height: 90px;
-      left: -33px;
-      top: -35px; }
-    #road-map .map-element:first-child:after {
-      display: none; }
   #road-map .road-map:before {
     content: '';
     position: absolute;
@@ -326,6 +314,20 @@ object, embed {
     height: 100%;
     display: block;
     border-left: 2px dashed #fff; }
+
+#rocket {
+  position: absolute;
+  z-index: 70;
+  left: -23px;
+  top: -40px;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease; }
+  #rocket img {
+    width: 100px;
+    height: auto; }
 
 #team {
   padding: 60px 0;
@@ -436,11 +438,6 @@ footer {
       #road-map .map-element:nth-child(even):after {
         left: unset;
         right: -15px; }
-    #road-map .map-element:first-child:before {
-      width: 215px;
-      height: 215px;
-      left: -105px;
-      top: -105px; }
     #road-map .map-element .element-description {
       font-size: 1.3em; }
   #road-map .road-map:before {
@@ -450,6 +447,19 @@ footer {
     height: calc(100% - 70px);
     display: block;
     border-left: 2px dashed #fff; }
+  #road-map #rocket {
+    z-index: 70;
+    left: calc(50% + 5px);
+    top: -130px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform-origin: -1%;
+    -ms-transform-origin: -1%;
+    transform-origin: -1%; }
+    #road-map #rocket img {
+      width: 214px;
+      height: auto; }
   footer .sosial-wrap {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
