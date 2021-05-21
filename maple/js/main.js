@@ -23,6 +23,18 @@ $('.hero-slider').slick({
 });
 
 
+/*$('#slider-wrap').slick({
+  autoplay: true,
+  dots: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  rows: 0
+})
+.on('setPosition', function (event, slick) {
+  slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+});*/
+
 
 $('.slider-footer-content').slick({
   autoplay:true,

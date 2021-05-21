@@ -8,11 +8,15 @@ header{
 	min-height: 100px;
 	display: flex;
 	align-items: center;
+	z-index: 99;
+	position: relative;
 }
 
 #home-hero{
-	height: 100vh;
+	min-height: 100vh;
 	margin-top: -100px;
+	padding: 180px 0 140px;
+	position: relative;
 	& h2{
 		font-family: 'Nunito-Maple', sans-serif;
 		color: #fff;
@@ -23,7 +27,7 @@ header{
 	}
 	& h1{
 		color: #fff;
-		font-size: 80px;
+		font-size: 60px;
 		letter-spacing: .02em;
 		line-height: 1em;
 		& span{
@@ -50,13 +54,39 @@ header{
 	}
 }
 
+h1{
+	color: #fff;
+	font-size: 80px;
+	letter-spacing: .02em;
+	line-height: 1em;
+	& span{
+		font-style: italic;
+	}
+}
+
 .brand a{
 	color: #fff;
 	font-size: 22px;
 }
 
+.brand.dark a{
+	color: $black;
+}
+
 #property-description{
-	padding: 100px 0;
+	padding: 100px 0 50px;
+}
+
+#planing{
+	padding: 50px 0;
+}
+
+#one-price{
+	padding: 50px 0;
+}
+
+#about{
+	padding: 50px 0;
 }
 
 .link-wrap{
@@ -245,5 +275,32 @@ footer{
 }
 
 /*Sales */
+
+#rent-description{
+	padding: 100px 0;
+}
+
+#waterfalls{
+	padding: 100px 0;
+}
+
+#price{
+	padding: 100px 0;
+}
+
+.form-wrap input:not([type="submit"]){
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.form-wrap textarea{
+	width: 100%;
+	height: 86px;
+	padding: 10px 15px;
+}
+
+#contact-form{
+	padding: 100px 0;
+}
 
 @import "media";

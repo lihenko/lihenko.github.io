@@ -135,6 +135,9 @@
 				}
 			}
 		}
+		&.dark ul li a{
+			color: $black;
+		}
 	}
 	.toggle-btn{
 		display: none;
