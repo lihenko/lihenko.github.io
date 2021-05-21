@@ -555,12 +555,15 @@ footer {
     font-size: 36px;
     line-height: 1; }
 
+.gold {
+  color: #c6c5b3; }
+
 /*Sales */
 #rent-description {
   padding: 100px 0; }
 
 #waterfalls {
-  padding: 100px 0; }
+  padding: 200px 0; }
 
 #price {
   padding: 100px 0; }
@@ -576,6 +579,18 @@ footer {
 
 #contact-form {
   padding: 100px 0; }
+
+#space-one-gallery {
+  padding: 50px 0 100px; }
+
+.gallery-item {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#rent-description-2 {
+  padding: 100px 0 50px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
