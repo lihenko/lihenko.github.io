@@ -324,7 +324,7 @@ header {
 #home-hero {
   min-height: 100vh;
   margin-top: -100px;
-  padding: 180px 0 140px;
+  padding: 240px 0 140px;
   position: relative; }
   #home-hero h2 {
     font-family: 'Nunito-Maple', sans-serif;
@@ -355,6 +355,13 @@ header {
       padding: 45px 50px; }
     #home-hero .arrow-down:hover {
       bottom: 25px; }
+  #home-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 h1 {
   color: #fff;
@@ -382,6 +389,9 @@ h1 {
 
 #about {
   padding: 50px 0; }
+
+#links {
+  padding: 100px 0 0; }
 
 .link-wrap {
   height: 350px;
