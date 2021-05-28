@@ -1,0 +1,394 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+	#home-hero .hero-buttons a{
+		display: block;
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	#marketing-services{
+		padding: 50px 0 10px;
+		background-color: #1B1C33;
+		& .marketing-services-wrap{
+			flex-basis: 33%;
+			& .marketing-services-icon{
+				min-height: 90px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+				& img{
+					height: 90px;
+				}
+			}
+		}
+	}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 15px;
+	}
+	header{
+		border-bottom: 12px solid $yellow;
+		& .row div.col-lg-2{
+			border-right: 1px solid #E1E5EE;
+		}
+	}
+	#home-hero{
+		padding: 90px 0 85px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		& h1{
+			font-size: 70px;
+			margin-right: 65px;
+		}
+		& .hero-subtitle{
+			margin-right: 85px;
+			font-size: 1.4em;
+		}
+	}
+	.big-video-poster{
+		height: 429px;
+		& .big-play-button{
+			width: 110px;
+			height: 110px;
+			& img{
+				margin-left: 6px;
+				width: 29px;
+			}
+		}
+	}
+	#our-results .big-video-poster{
+		height: 384px;
+	}
+	.middle-video-poster{
+		height: 254px;
+		& .middle-play-button{
+			width: 66px;
+			height: 66px;
+			& img{
+				margin-left: 3px;
+				width: 17px;
+			}
+		}
+	}
+	#features{
+		padding: 60px 0 50px;
+		& .features-icon{
+			padding: 0 15px;
+			flex-basis: 124px;
+		}
+		& .features-description{
+			padding: 0 15px;
+			flex-basis: calc(100% - 124px);
+			& .features-title{
+				font-weight: 700;
+				font-size: 0.93em;
+			}
+			& .features-text{
+				font-size: 0.93em;
+			}
+		}
+	}
+	.featured-course-img{
+		height: 708px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.right-padding{
+		padding-right: calc(50% - 465px)!important;
+	}
+	.bg-lg-grey{
+		background-color: #F4F4F4;
+	}
+	#home-testimonials{
+		padding: 70px 30px;
+		background-color: #1B1C33;
+		& h2{
+			color: #fff;
+		}
+		& .testimonials-wrap{
+			margin-left: 5px;
+			margin-right: 5px;
+			background-color: $yellow;
+			padding: 26px 30px 50px;
+			color: #fff;
+			position: relative;
+			overflow: hidden;
+			border-radius: 12px;
+			& .big-line{
+				position: absolute;
+				width: 100%;
+				height: 57px;
+				background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+				transform: rotate(-47deg);
+				right: -110px;
+			}
+			& .small-line{
+				position: absolute;
+				width: 100%;
+				height: 10px;
+				background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+				transform: rotate(-47deg);
+				right: -190px;
+			}
+			& .sheld{
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+			& .author{
+				display: flex;
+				& .author-name{
+					font-size: 1.2em;
+					font-weight: 700;
+				}
+				& .author-position{
+					font-size: 0.8em;
+				}
+			}
+			& .testimonial-quote{
+				font-size: 1.1em;
+			}
+		}
+	}
+	#what-our-cources-help{
+		& .what-our-cources-icon{
+			min-height: 150px;
+			margin-bottom: 25px;
+			& img{
+				max-height: 150px;
+			}
+		}
+	}
+	#site-description{
+		padding: 50px 0 0;
+		& h2{
+			font-size: 2.2em;
+		}
+		& .subtitle{
+			font-size: 1.6em;
+		}
+	}
+	#what-people-say{
+		padding: 50px 0;
+		& h2{
+			font-size: 2.2em;
+		}
+		& .subtitle{
+			font-size: 1.6em;
+		}
+	}
+	.upcoming-course-wrap{
+
+		& .upcoming-course-button{
+			& .yellow-button{
+				min-width: 122px;
+				font-size: 12px;
+				padding: 9px 14px;
+			}
+		}
+
+	}
+	#marketing-services{
+		padding: 50px 0 10px;
+		background-color: #1B1C33;
+		& .marketing-services-wrap{
+			flex-basis: 25%;
+			& .marketing-services-icon{
+				min-height: 90px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+				& img{
+					height: 90px;
+				}
+			}
+		}
+	}
+	#taught-expert-coaches{
+		& [aria-expanded="true"]:after{
+			content:'';
+			width: 0; 
+		    height: 0; 
+		    border-left: 35px solid transparent;
+		    border-right: 35px solid transparent;
+		    border-bottom: 35px solid $yellow;
+		    position: absolute;
+		    bottom: 0;
+		    left: 50%;
+		    transform: translateX(-50%);
+		}
+	}
+	.footer-mobile-menu{
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width : 1200px){
+	.upcoming-course-wrap{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.col-xl-55{
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	#marketing-services{
+		padding: 50px 0 10px;
+		background-color: #1B1C33;
+		& .marketing-services-wrap{
+			flex-basis: 20%;
+			& .marketing-services-icon{
+				min-height: 137px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+				& img{
+					height: unset;
+				}
+			}
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1330px){
+	.container{
+		max-width: 1310px;
+	}
+	header .brand img{
+		width: 302px;
+	}
+	.col-xxl-3{
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.col-xxl-9{
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	.right-padding{
+		padding-right: calc(50% - 640px)!important;
+	}
+	#featured-course{
+		& .featured-course-wrap{
+			padding: 73px 0 73px 55px;
+		}
+		& h4{
+			font-size: 1.6em;
+		}
+		& .subtitle{
+			font-size: 1.73em;
+		}
+		& .description{
+			font-size: 0.93em;
+		}
+		& .banner{
+			background-color: #1B1C33;
+			border-radius: 8px;
+			padding: 42px 37px 32px 68px;
+			position: relative;
+			overflow: hidden;
+			color: #fff;
+			max-width: 585px;
+			margin-left: auto;
+			margin-right: auto;
+			& .big-line{
+				position: absolute;
+				width: 100%;
+				height: 57px;
+				background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+				transform: rotate(-47deg);
+				right: -165px;
+			}
+			& .small-line{
+				position: absolute;
+				width: 100%;
+				height: 10px;
+				background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+				transform: rotate(-47deg);
+				right: -245px;
+			}
+		}
+		& .featured-course-data{
+			& .data-icon{
+				flex-basis: 37px;
+			}
+			& .data-text{
+				font-size: 1.6em;
+				padding-left: 30px;
+				&.small-data{
+					color: $yellow;
+					font-size: 0.86em;
+				}
+			}
+		}
+	}
+	
+}
