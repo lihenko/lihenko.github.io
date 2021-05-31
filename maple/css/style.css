@@ -365,7 +365,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    opacity: 0.2;
     background-color: #000; }
 
 h1 {
@@ -385,6 +385,15 @@ h1 {
 
 #property-description {
   padding: 100px 0 50px; }
+
+#welcome {
+  padding: 200px 0; }
+
+#history {
+  padding: 50px 0; }
+
+#history-image {
+  padding: 200px 0; }
 
 #planing {
   padding: 50px 0; }
