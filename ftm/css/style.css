@@ -37,7 +37,6 @@
 
 html, body {
   position: relative;
-  height: 100%;
   overflow-x: hidden; }
 
 body {
@@ -304,6 +303,12 @@ p:last-child {
 
 .pointer {
   cursor: pointer; }
+
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
 
 .main-menu {
   display: none; }
@@ -967,6 +972,9 @@ header {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px; }
+  #taught-expert-coaches .expert-more {
+    font-size: 13px;
+    color: #F2A400; }
   #taught-expert-coaches .tabs-content {
     color: #fff;
     background-color: #F2A400;
@@ -1097,6 +1105,67 @@ header {
   .footer-buttons .btn {
     min-width: 186px;
     padding: 12px 15px; }
+
+#about-hero {
+  padding: 100px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #about-hero .about-hero-subtitle {
+    margin-bottom: 165px; }
+  #about-hero h1 {
+    font-size: 23px; }
+
+#what-we-do {
+  padding: 50px 0; }
+
+.meet-founders-wrap {
+  background-color: #1B1C33;
+  padding: 60px 0;
+  margin-bottom: 30px; }
+  .meet-founders-wrap:last-child {
+    margin-bottom: 0; }
+
+#meet-founders .meet-founders-subtitle {
+  color: #fff;
+  font-size: 1.13em;
+  font-weight: 700; }
+
+#meet-founders .meet-founders-description {
+  color: #fff;
+  font-size: 1.22em; }
+
+#our-team {
+  padding: 50px 0; }
+  #our-team .our-team-subtitle {
+    font-weight: 700; }
+  #our-team .team-wrap {
+    max-width: 298px;
+    margin-left: auto;
+    margin-right: auto; }
+  #our-team .team-avatar {
+    height: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px; }
+  #our-team .team-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px; }
+    #our-team .team-name span {
+      color: #F2A400;
+      font-size: 15px;
+      padding-left: 3px; }
+  #our-team .team-description {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+#few-team-words {
+  padding-bottom: 80px; }
+  #few-team-words .description {
+    font-weight: 700; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1311,7 +1380,11 @@ header {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
   .footer-mobile-menu {
-    display: none; } }
+    display: none; }
+  #about-hero h1 {
+    font-size: 58px; }
+  #what-we-do p {
+    font-size: 1.3em; } }
 
 @media only screen and (min-width: 1200px) {
   .upcoming-course-wrap {

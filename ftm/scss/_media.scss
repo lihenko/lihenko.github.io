@@ -285,6 +285,16 @@
 	.footer-mobile-menu{
 		display: none;
 	}
+	#about-hero{
+		& h1{
+			font-size: 58px;
+		}
+	}
+	#what-we-do{
+		& p{
+			font-size: 1.3em;
+		}
+	}
 	
 }
 

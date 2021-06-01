@@ -551,6 +551,10 @@ header{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	& .expert-more{
+		font-size: 13px;
+		color: $yellow;
+	}
 	& .tabs-content{
 		color: #fff;
 		background-color: $yellow;
@@ -689,6 +693,85 @@ header{
 	& .btn{
 		min-width: 186px;
 		padding: 12px 15px;
+	}
+}
+
+#about-hero{
+	padding: 100px 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	& .about-hero-subtitle{
+		margin-bottom: 165px;
+	}
+	& h1{
+		font-size: 23px;
+	}
+}
+
+#what-we-do{
+	padding: 50px 0;
+}
+
+.meet-founders-wrap{
+	background-color: #1B1C33;
+	padding: 60px 0;
+	margin-bottom: 30px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+#meet-founders{
+	& .meet-founders-subtitle{
+		color: #fff;
+		font-size: 1.13em;
+		font-weight: 700;
+	}
+	& .meet-founders-description{
+		color: #fff;
+		font-size: 1.22em;
+	}
+}
+
+#our-team{
+	padding: 50px 0;
+	& .our-team-subtitle{
+		font-weight: 700;
+	}
+	& .team-wrap{
+		max-width: 298px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	& .team-avatar{
+		height: 160px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 20px;
+	}
+	& .team-name{
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		& span{
+			color: $yellow;
+			font-size: 15px;
+			padding-left: 3px;
+		}
+	}
+	& .team-description{
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+#few-team-words{
+	padding-bottom: 80px;
+	& .description{
+		font-weight: 700;
 	}
 }
 

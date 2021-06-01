@@ -9,7 +9,6 @@
 
 html, body {
 	position:relative;
-	height: 100%;
 	overflow-x: hidden;
 }
 
@@ -310,4 +309,11 @@ p:last-child{
 
 .pointer{
 	cursor: pointer;
+}
+
+.hidden{
+	opacity: 0;
+}
+.visible{
+	opacity: 1;
 }
