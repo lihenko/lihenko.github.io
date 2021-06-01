@@ -1008,6 +1008,9 @@ header {
 #our-results {
   padding: 50px 0; }
 
+.footer-brand {
+  width: 100%; }
+
 .footer-menu-bar {
   background-color: #1C1C33;
   padding: 13px 0; }
@@ -1379,6 +1382,17 @@ header {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+  .footer-brand {
+    -webkit-flex-basis: 201px;
+    -ms-flex-preferred-size: 201px;
+    flex-basis: 201px;
+    max-width: 201px;
+    margin-right: 15px;
+    border-right: 1px solid #E1E5EE; }
+  .footer-menu {
+    -webkit-flex-basis: calc(100% - 231px);
+    -ms-flex-preferred-size: calc(100% - 231px);
+    flex-basis: calc(100% - 231px); }
   .footer-mobile-menu {
     display: none; }
   #about-hero h1 {
@@ -1419,7 +1433,18 @@ header {
         align-items: center;
         margin-bottom: 15px; }
         #marketing-services .marketing-services-wrap .marketing-services-icon img {
-          height: unset; } }
+          height: unset; }
+  .footer-brand {
+    -webkit-flex-basis: 261px;
+    -ms-flex-preferred-size: 261px;
+    flex-basis: 261px;
+    max-width: 261px;
+    margin-right: 15px;
+    border-right: 1px solid #E1E5EE; }
+  .footer-menu {
+    -webkit-flex-basis: calc(100% - 291px);
+    -ms-flex-preferred-size: calc(100% - 291px);
+    flex-basis: calc(100% - 291px); } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1330px) {
