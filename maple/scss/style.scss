@@ -347,4 +347,19 @@ footer{
 	padding: 100px 0 50px;
 }
 
+#gallery{
+	padding: 50px 0;
+}
+
+.gallery{
+	display: grid;
+	grid-gap:15px;
+	& .big-gallery-item{
+		min-height: calc(100vw - 47px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
 @import "media";
