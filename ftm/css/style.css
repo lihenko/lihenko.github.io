@@ -91,7 +91,7 @@ input:focus, textarea:focus {
 object, embed {
   outline: none; }
 
-input[type="email"], input[type="text"] {
+input[type="email"], input[type="text"], input[type="tel"] {
   font-family: Rubik-FTM, sans-serif;
   width: 100%;
   font-size: 16px;
@@ -1240,6 +1240,62 @@ header {
   .dropdown .dropdown-menu li:hover {
     background-color: #eee; }
 
+#freebrochure .modal-dialog {
+  max-width: 1078px; }
+  #freebrochure .modal-dialog input[type="email"], #freebrochure .modal-dialog input[type="text"], #freebrochure .modal-dialog input[type="tel"] {
+    font-size: 0.83em; }
+  #freebrochure .modal-dialog .modal-content {
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+#freebrochure .form-description {
+  font-size: 0.83em; }
+
+#freebrochure .modal-form-wrap {
+  padding: 30px; }
+
+#freebrochure .modal-info {
+  background-color: #1B1C33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px; }
+
+#freebrochure .modal-benefits {
+  color: #fff;
+  font-size: 0.87em; }
+  #freebrochure .modal-benefits ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    #freebrochure .modal-benefits ul li {
+      padding-left: 35px;
+      position: relative;
+      margin-bottom: 20px; }
+      #freebrochure .modal-benefits ul li:before {
+        content: url("../img/Star.svg");
+        position: absolute;
+        top: -5px;
+        left: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1468,7 +1524,17 @@ header {
   #about-hero h1 {
     font-size: 58px; }
   #what-we-do p {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+  #freebrochure .modal-form-wrap {
+    -webkit-flex-basis: 590px;
+    -ms-flex-preferred-size: 590px;
+    flex-basis: 590px;
+    padding: 80px 58px 58px 70px; }
+  #freebrochure .modal-info {
+    -webkit-flex-basis: calc(100% - 590px);
+    -ms-flex-preferred-size: calc(100% - 590px);
+    flex-basis: calc(100% - 590px);
+    padding: 40px 60px; } }
 
 @media only screen and (min-width: 1200px) {
   .upcoming-course-wrap {

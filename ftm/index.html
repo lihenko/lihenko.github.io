@@ -32,7 +32,7 @@
 					</div>
 				    <div class="header-buttons my-auto">
 						<a href="#" class="btn black-button">UPCOMING COURSES</a>
-						<a href="#" class="btn yellow-button">FREE eBROCHURE</a>	
+						<a href="#" class="btn yellow-button" data-toggle="modal" data-target="#freebrochure">FREE eBROCHURE</a>	
 					</div>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 					</div>
 				    <div class="header-buttons my-auto">
 						<a href="#" class="btn black-button">UPCOMING COURSES</a>
-						<a href="#" class="btn yellow-button">FREE eBROCHURE</a>	
+						<a href="#" class="btn yellow-button" data-toggle="modal" data-target="#freebrochure">FREE eBROCHURE</a>	
 					</div>
 				</div>
 
@@ -1139,6 +1139,57 @@
 		</div>
 	</div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="freebrochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    	<div class="modal-form-wrap my-auto">
+    		<h2 class="yellow mb-4">
+    			Get your eBrochure now!
+    		</h2>
+    		<p class="mb-4">Provide your contact details do download now</p>
+    		<form action="#">
+    			<div class="row no-gutters">
+    				<div class="col-lg-6 mb-3 pr-xl-1">
+    					<input type="text" placeholder="First Name">
+    				</div>
+    				<div class="col-lg-6 mb-3 pl-xl-1">
+    					<input type="text" placeholder="Surname">
+    				</div>
+    				<div class="col-lg-12 mb-3">
+    					<input type="email" placeholder="Email">
+    				</div>
+    				<div class="col-lg-12 mb-4">
+    					<input type="tel" placeholder="Phone Number">
+    				</div>
+    				<div class="col-lg-12 mb-4">
+    					<div class="form-description">By clicking on Download eBrochure Now, you agree to Fast Track Me’s Terms and Conditions of Use</div>
+    				</div>
+    				<div class="col-lg-12">
+    					<input type="submit" value="DOWNLOAD EBROCHURE" class="btn yellow-button">
+    				</div>
+    			</div>
+    		</form>
+    	</div>
+    	<div class="modal-info">
+    		<div class="modal-info-logo text-center mb-4">
+    			<img src="img/FTM logo - white 2.svg" alt="">
+    		</div>
+    		<div class="modal-info-image text-center mb-4">
+    			<img src="img/form-description-bg.png" alt="" class="img-fluid">
+    		</div>
+    		<div class="modal-benefits">
+    			<ul>
+    				<li>Featured benefits here</li>
+    				<li>Featured benefits here</li>
+    				<li>Featured benefits here</li>
+    				<li>Featured benefits here</li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="libs/viewport/jquery.viewportchecker.js"></script> 
 	<script src="libs/bootstrap/js/popper.min.js"></script>
