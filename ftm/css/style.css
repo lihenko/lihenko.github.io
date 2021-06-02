@@ -91,23 +91,45 @@ input:focus, textarea:focus {
 object, embed {
   outline: none; }
 
+input[type="email"], input[type="text"] {
+  font-family: Rubik-FTM, sans-serif;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12.5px 15px;
+  border: 1px solid #CAD1E1; }
+
+textarea {
+  font-family: Rubik-FTM, sans-serif;
+  width: 100%;
+  height: 46px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12.5px 15px;
+  border: 1px solid #CAD1E1; }
+
 ::-webkit-input-placeholder {
+  font-family: Rubik-FTM, sans-serif;
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
 
 ::-moz-placeholder {
+  font-family: Rubik-FTM, sans-serif;
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
 
 :-ms-input-placeholder {
+  font-family: Rubik-FTM, sans-serif;
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
 
 ::-ms-input-placeholder {
+  font-family: Rubik-FTM, sans-serif;
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
 
 ::placeholder {
+  font-family: Rubik-FTM, sans-serif;
   color: rgba(89, 88, 90, 0.5);
   opacity: 1; }
 
@@ -1169,6 +1191,54 @@ header {
   padding-bottom: 80px; }
   #few-team-words .description {
     font-weight: 700; }
+
+#contact-hero {
+  padding: 200px 0 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #contact-hero .contact-hero-subtitle {
+    color: #fff;
+    font-size: 1.067em;
+    margin-bottom: 45px; }
+
+#contact-form-section {
+  padding: 50px 0; }
+  #contact-form-section .form-subtitle {
+    color: #95A1BB;
+    margin-bottom: 45px; }
+  #contact-form-section .yellow-button {
+    min-width: 165px; }
+
+.dropdown {
+  width: 100%;
+  padding: 12.5px 15px;
+  border: 1px solid #CAD1E1;
+  height: 46px;
+  cursor: pointer; }
+  .dropdown:after {
+    content: url("../img/dropdown-arrow.svg");
+    position: absolute;
+    top: 12px;
+    right: 10px; }
+  .dropdown.active:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 8px; }
+
+.dropdown .dropdown-menu {
+  width: calc(100% + 2px);
+  border: 1px solid #CAD1E1;
+  border-radius: 0;
+  padding: 0;
+  left: -1px; }
+
+.dropdown .dropdown-menu li {
+  cursor: pointer;
+  padding: 10px 15px; }
+  .dropdown .dropdown-menu li:hover {
+    background-color: #eee; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
