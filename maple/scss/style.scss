@@ -58,7 +58,7 @@ header{
 		right: 0;
 		bottom: 0;
 		left: 0;
-		opacity: 0.2;
+		opacity: 0;
 		background-color: #000;
 	}
 }
@@ -360,6 +360,27 @@ footer{
 		background-position: center;
 		background-repeat: no-repeat;
 	}
+}
+
+#amenities-hero{
+	min-height: 750px;
+	margin-top: -100px;
+	padding: 240px 0 140px;
+	position: relative;
+	& h1{
+		color: #fff;
+		font-size: 60px;
+		letter-spacing: .02em;
+		line-height: 1em;
+		& span{
+			font-style: italic;
+		}
+	}
+
+}
+
+.fullwidth-image{
+	padding: 250px 0;
 }
 
 @import "media";
