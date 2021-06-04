@@ -395,7 +395,7 @@
 		}
 	}
 	#client-cases{
-		& .row:nth-child(odd){
+		& .row:nth-child(even){
 			& .col-lg-6:nth-child(1){
 				order: 2;
 			}
