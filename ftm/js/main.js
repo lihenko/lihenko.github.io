@@ -93,7 +93,31 @@ $(document).ready(function(){
           slidesToScroll: 1
       });
     }
-});      
+}); 
+
+$( window ).resize(function(){
+  if ($(window).width() < 991) {
+        $('#course-testimonials .slider').slick({
+          speed: 300,
+          autoplay:true,
+          arrows: false,
+          dots:true
+      });
+    } else{
+      $('#course-testimonials .slider').slick('unslick');
+    }
+});
+
+$(document).ready(function(){
+    if ($(window).width() < 991) {
+        $('#course-testimonials .slider').slick({
+          speed: 300,
+          autoplay:true,
+          arrows: false,
+          dots:true
+      });
+    }
+});     
 
 
 $(document).ready(function(){

@@ -113,7 +113,7 @@ textarea{
 	line-height: 1;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	padding: 11.5px 58px;
+	padding: 11.5px 45px;
 	min-width: 307px;
 	&:hover{
 		color: #fff;
@@ -129,7 +129,7 @@ textarea{
 	line-height: 1;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	padding: 11.5px 58px;
+	padding: 11.5px 45px;
 	min-width: 307px;
 	&:hover{
 		color: #fff;
@@ -145,7 +145,7 @@ textarea{
 	line-height: 1;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	padding: 11.5px 58px;
+	padding: 11.5px 45px;
 	min-width: 307px;
 	border:1px solid #fff;
 	&:hover{
@@ -263,7 +263,7 @@ header .yellow-button{
 		line-height: 1;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		padding: 20.5px 58px;
+		padding: 20.5px 45px;
 		min-width: 307px;
 		&:hover{
 			color: #fff;
@@ -279,11 +279,28 @@ header .yellow-button{
 		line-height: 1;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		padding: 20.5px 58px;
+		padding: 20.5px 45px;
 		min-width: 307px;
 		&:hover{
 			color: #fff;
 			background-color: lighten($yellow, 5%);
+		}
+	}
+	.transparent-button{
+		font-size: 12px;
+		font-weight: 500;
+		color: #fff;
+		background-color: transparent;
+		line-height: 1;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		padding: 20.5px 45px;
+		min-width: 307px;
+		border:1px solid #fff;
+		&:hover{
+			color: #fff;
+			border:1px solid $yellow;
+			background-color: $yellow;
 		}
 	}
 	.black-button.small-button{

@@ -882,4 +882,175 @@ header{
 	}
 }
 
+#coaching-hero{
+	padding: 50px 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	& h1{
+		color: #fff;
+	}
+	& .hero-subtitle{
+		color: #fff;
+		margin-bottom: 120px;
+	}
+}
+
+.hero-video-button{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform:translate(-50%);
+		& .big-play-button{
+			width: 57px;
+			height: 57px;
+			border-radius: 50%;
+			background-color: #F5F4FF;
+			border: 4px solid #CAD1E1;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				background-color: #CAD1E1;
+			}
+			& img{
+				width: 14px;
+			}
+		}
+	}
+
+#course-topics{
+	padding: 50px 0;
+	& .course-topic-wrap{
+		display: flex;
+		& .course-topic-star{
+			flex-basis: 45px;
+		}
+		& .course-topic-data{
+			flex-basis: calc(100% - 45px);
+		}
+	}
+	& .course-topic-title{
+		font-size: 0.87em;
+		font-weight: 700;
+	}
+	& .course-topic-description{
+		font-size: 0.87em;
+	}
+}
+
+#course-testimonials{
+	padding: 30px 0;
+	background-color: #1B1C33;
+	margin-bottom: 50px;
+	& h2{
+			color: #fff;
+		}
+	& .slick-dots{
+		bottom: 0;
+		& li{
+			width: 10px;
+			height: 10px;
+			opacity: 1;
+		}
+	}
+	& .slick-dots li button::before {
+		color: transparent;
+		line-height: 12px;
+		width: 12px;
+		height: 10px;
+		opacity: 1;
+	}
+	& .slick-dots li.slick-active button::before {
+		color: #fff;
+		opacity: 1;
+	}
+	& .slick-dots li:hover button::before {
+		color: #fff;
+		opacity: 1;
+	}
+	& .slick-dots button{
+		border: 1px solid #fff;
+		border-radius: 50%;
+		width: 10px;
+		height: 10px;
+		opacity: 1;
+	}
+	& .testimonials-wrap{
+		background-color: $yellow;
+		padding: 26px 30px 50px;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
+		max-width: 319px;
+		margin-left: auto;
+		margin-right: auto;
+		& .big-line{
+			position: absolute;
+			width: 100%;
+			height: 57px;
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+			transform: rotate(-47deg);
+			right: -110px;
+		}
+		& .small-line{
+			position: absolute;
+			width: 100%;
+			height: 10px;
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.27) 100%);
+			transform: rotate(-47deg);
+			right: -190px;
+		}
+		& .sheld{
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			& img{
+				width: 18px;
+				height: auto;
+			}
+				
+		}
+		& .author{
+			display: flex;
+			& .avatar{
+				margin: auto 0;
+			}
+			& .avatar img{
+				width: 32px;
+				height: auto;
+			}
+			& .author-name{
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			& .author-position{
+				font-size: 1em;
+			}
+		}
+		& .testimonial-quote{
+			font-size: 1.1em;
+		}
+	}
+}
+
+#client-cases{
+	padding: 50px 0;
+}
+
+#call-to-action{
+	padding: 80px 0;
+	background-color: #1B1C33;
+	margin-bottom: 30px;
+}
+
 @import "media";
