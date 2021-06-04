@@ -208,6 +208,9 @@
 				& .author-position{
 					font-size: 0.8em;
 				}
+				& .avatar img{
+					width: 55px;
+				}
 			}
 			& .testimonial-quote{
 				font-size: 1.1em;
@@ -388,6 +391,9 @@
 				& .author-position{
 					font-size: 0.8em;
 				}
+				& .avatar img{
+					width: 55px;
+				}
 			}
 			& .testimonial-quote{
 				font-size: 1.1em;
@@ -401,6 +407,60 @@
 			}
 			& .col-lg-6:nth-child(2){
 				order: 1;
+			}
+		}
+	}
+	#coaching-child-hero{
+		padding: 150px 0 60px;
+		& .hero-subtitle{
+			margin-bottom: 120px;
+		}
+		& h1{
+			font-size: 3.3em;
+		}
+	}
+	#upcoming-start-dates{
+		& .upcoming-start-wrap{
+			margin-bottom: 20px;
+			& .upcoming-start-date{
+				padding-right: 15px;
+				flex-basis: 80px;
+				& .upcoming-start-month{
+					font-size: 1.33em;
+				}
+				& .upcoming-start-day{
+					font-size: 2.4em;
+					font-weight: 700;
+				}
+				& .upcoming-start-year{
+					font-size: 1.33em;
+				}
+			}
+			& .upcoming-start-buttons{
+				padding-left: 15px;
+				text-align: left;
+				flex-basis: 322px;
+				& .yellow-button{
+					margin-bottom: 15px;
+				}
+				& .upcoming-start-price{
+					font-size: 1.33em;
+				}
+			}
+			& .upcoming-start-title{
+				flex-basis: calc(100% - 402px);
+				& .upcoming-start-week{
+					font-size: 1.33em;
+				}
+				& .upcoming-start-title{
+					font-size: 2.4em;
+				}
+				& .upcoming-start-dates{
+					font-size: 1.33em;
+				}
+				& .upcoming-start-totlal-time{
+					font-size: 0.67em;
+				}
 			}
 		}
 	}
@@ -441,6 +501,11 @@
 	}
 	.footer-menu{
 		flex-basis: calc(100% - 291px);
+	}
+	#upcoming-start-dates{
+		& .upcoming-start-wrap{
+			padding: 25px 80px;
+		}
 	}
 }
 

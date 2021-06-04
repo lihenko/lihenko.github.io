@@ -945,6 +945,12 @@ header{
 	& .course-topic-description{
 		font-size: 0.87em;
 	}
+	& a{
+		color: $black;
+		&:hover{
+			color: $yellow;
+		}
+	}
 }
 
 #course-testimonials{
@@ -954,6 +960,9 @@ header{
 	& h2{
 			color: #fff;
 		}
+	&.bg-white h2{
+		color: $black;
+	}
 	& .slick-dots{
 		bottom: 0;
 		& li{
@@ -983,6 +992,30 @@ header{
 		width: 10px;
 		height: 10px;
 		opacity: 1;
+	}
+	&.bg-white{
+		& .slick-dots li button::before {
+			color: transparent;
+			line-height: 12px;
+			width: 12px;
+			height: 10px;
+			opacity: 1;
+		}
+		& .slick-dots li.slick-active button::before {
+			color: $black;
+			opacity: 1;
+		}
+		& .slick-dots li:hover button::before {
+			color: $black;
+			opacity: 1;
+		}
+		& .slick-dots button{
+			border: 1px solid $black;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			opacity: 1;
+		}
 	}
 	& .testimonials-wrap{
 		background-color: $yellow;
@@ -1051,6 +1084,77 @@ header{
 	padding: 80px 0;
 	background-color: #1B1C33;
 	margin-bottom: 30px;
+}
+
+#coaching-child-hero{
+	padding: 308px 0 72px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	& h1{
+		font-size: 2.2em;
+	}
+	& .hero-subtitle{
+		margin-bottom: 30px;
+	}
+}
+
+#upcoming-start-dates{
+	padding: 50px 0 0;
+	& .upcoming-start-wrap{
+		background-color: #1B1C33;
+		color: #fff;
+		padding: 25px 15px;
+		margin-bottom: 4px;
+		& .upcoming-start-date{
+			padding-right: 15px;
+			flex-basis: 46px;
+			& .upcoming-start-month{
+				font-size: 1.08em;
+			}
+			& .upcoming-start-day{
+				font-size: 1.08em;
+				font-weight: 700;
+			}
+			& .upcoming-start-year{
+				font-size: 1.08em;
+			}
+		}
+		& .upcoming-start-buttons{
+			padding-left: 15px;
+			text-align: center;
+			flex-basis: 62px;
+			& .mobile-button{
+				padding: 5px;
+				min-width: 24px;
+				border-radius:0;
+				margin-bottom: 5px;
+			}
+			& .upcoming-start-price{
+				font-size: 0.42em;
+				& span{
+					color: $yellow;
+				}
+			}
+		}
+		& .upcoming-start-title{
+			flex-basis: calc(100% - 108px);
+			& .upcoming-start-week{
+				font-size: 1.08em;
+			}
+			& .upcoming-start-title{
+				font-size: 1.08em;
+				font-weight: 700;
+				color: $yellow;
+			}
+			& .upcoming-start-dates{
+				font-size: 1.08em;
+			}
+			& .upcoming-start-totlal-time{
+				font-size: 0.42em;
+			}
+		}
+	}
 }
 
 @import "media";

@@ -1381,6 +1381,10 @@ header {
     font-weight: 700; }
   #course-topics .course-topic-description {
     font-size: 0.87em; }
+  #course-topics a {
+    color: #363940; }
+    #course-topics a:hover {
+      color: #F2A400; }
 
 #course-testimonials {
   padding: 30px 0;
@@ -1388,6 +1392,8 @@ header {
   margin-bottom: 50px; }
   #course-testimonials h2 {
     color: #fff; }
+  #course-testimonials.bg-white h2 {
+    color: #363940; }
   #course-testimonials .slick-dots {
     bottom: 0; }
     #course-testimonials .slick-dots li {
@@ -1408,6 +1414,24 @@ header {
     opacity: 1; }
   #course-testimonials .slick-dots button {
     border: 1px solid #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: 1; }
+  #course-testimonials.bg-white .slick-dots li button::before {
+    color: transparent;
+    line-height: 12px;
+    width: 12px;
+    height: 10px;
+    opacity: 1; }
+  #course-testimonials.bg-white .slick-dots li.slick-active button::before {
+    color: #363940;
+    opacity: 1; }
+  #course-testimonials.bg-white .slick-dots li:hover button::before {
+    color: #363940;
+    opacity: 1; }
+  #course-testimonials.bg-white .slick-dots button {
+    border: 1px solid #363940;
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -1474,6 +1498,65 @@ header {
   padding: 80px 0;
   background-color: #1B1C33;
   margin-bottom: 30px; }
+
+#coaching-child-hero {
+  padding: 308px 0 72px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #coaching-child-hero h1 {
+    font-size: 2.2em; }
+  #coaching-child-hero .hero-subtitle {
+    margin-bottom: 30px; }
+
+#upcoming-start-dates {
+  padding: 50px 0 0; }
+  #upcoming-start-dates .upcoming-start-wrap {
+    background-color: #1B1C33;
+    color: #fff;
+    padding: 25px 15px;
+    margin-bottom: 4px; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date {
+      padding-right: 15px;
+      -webkit-flex-basis: 46px;
+      -ms-flex-preferred-size: 46px;
+      flex-basis: 46px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-month {
+        font-size: 1.08em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-day {
+        font-size: 1.08em;
+        font-weight: 700; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-year {
+        font-size: 1.08em; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons {
+      padding-left: 15px;
+      text-align: center;
+      -webkit-flex-basis: 62px;
+      -ms-flex-preferred-size: 62px;
+      flex-basis: 62px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .mobile-button {
+        padding: 5px;
+        min-width: 24px;
+        border-radius: 0;
+        margin-bottom: 5px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .upcoming-start-price {
+        font-size: 0.42em; }
+        #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .upcoming-start-price span {
+          color: #F2A400; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title {
+      -webkit-flex-basis: calc(100% - 108px);
+      -ms-flex-preferred-size: calc(100% - 108px);
+      flex-basis: calc(100% - 108px); }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-week {
+        font-size: 1.08em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-title {
+        font-size: 1.08em;
+        font-weight: 700;
+        color: #F2A400; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-dates {
+        font-size: 1.08em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-totlal-time {
+        font-size: 0.42em; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1628,6 +1711,8 @@ header {
           font-weight: 700; }
         #home-testimonials .testimonials-wrap .author .author-position {
           font-size: 0.8em; }
+        #home-testimonials .testimonials-wrap .author .avatar img {
+          width: 55px; }
       #home-testimonials .testimonials-wrap .testimonial-quote {
         font-size: 1.1em; }
   #what-our-cources-help .what-our-cources-icon {
@@ -1787,6 +1872,8 @@ header {
           font-weight: 700; }
         #course-testimonials .testimonials-wrap .author .author-position {
           font-size: 0.8em; }
+        #course-testimonials .testimonials-wrap .author .avatar img {
+          width: 55px; }
       #course-testimonials .testimonials-wrap .testimonial-quote {
         font-size: 1.1em; }
   #client-cases .row:nth-child(even) .col-lg-6:nth-child(1) {
@@ -1798,7 +1885,49 @@ header {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; } }
+    order: 1; }
+  #coaching-child-hero {
+    padding: 150px 0 60px; }
+    #coaching-child-hero .hero-subtitle {
+      margin-bottom: 120px; }
+    #coaching-child-hero h1 {
+      font-size: 3.3em; }
+  #upcoming-start-dates .upcoming-start-wrap {
+    margin-bottom: 20px; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date {
+      padding-right: 15px;
+      -webkit-flex-basis: 80px;
+      -ms-flex-preferred-size: 80px;
+      flex-basis: 80px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-month {
+        font-size: 1.33em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-day {
+        font-size: 2.4em;
+        font-weight: 700; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-year {
+        font-size: 1.33em; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons {
+      padding-left: 15px;
+      text-align: left;
+      -webkit-flex-basis: 322px;
+      -ms-flex-preferred-size: 322px;
+      flex-basis: 322px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .yellow-button {
+        margin-bottom: 15px; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .upcoming-start-price {
+        font-size: 1.33em; }
+    #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title {
+      -webkit-flex-basis: calc(100% - 402px);
+      -ms-flex-preferred-size: calc(100% - 402px);
+      flex-basis: calc(100% - 402px); }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-week {
+        font-size: 1.33em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-title {
+        font-size: 2.4em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-dates {
+        font-size: 1.33em; }
+      #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-totlal-time {
+        font-size: 0.67em; } }
 
 @media only screen and (min-width: 1200px) {
   .upcoming-course-wrap {
@@ -1844,7 +1973,9 @@ header {
   .footer-menu {
     -webkit-flex-basis: calc(100% - 291px);
     -ms-flex-preferred-size: calc(100% - 291px);
-    flex-basis: calc(100% - 291px); } }
+    flex-basis: calc(100% - 291px); }
+  #upcoming-start-dates .upcoming-start-wrap {
+    padding: 25px 80px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1330px) {
