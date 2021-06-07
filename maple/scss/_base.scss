@@ -64,6 +64,14 @@ p{
 	margin-bottom: 17px;
 }
 
+a{
+	color: $gold;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: darken($gold, 15%);
+	}
+}
+
 .menu-transparent-button{
 	display: inline-block;
 	font-family: 'Nunito-Maple', sans-serif;

@@ -70,6 +70,13 @@ h5 {
 p {
   margin-bottom: 17px; }
 
+a {
+  color: #c6c5b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  a:hover {
+    color: #a5a487; }
+
 .menu-transparent-button {
   display: inline-block;
   font-family: 'Nunito-Maple', sans-serif;
