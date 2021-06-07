@@ -1192,4 +1192,80 @@ header{
 	padding-right: 15px;
 }
 
+#events-hero{
+	padding: 50px 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#topic-sorting{
+	& .dropdown{
+		width: 141px;
+		border:none;
+		border-radius:25px;
+		background-color: $yellow;
+		display: inline-block;
+		margin-right: 10px;
+		color: #fff;
+		&:after{
+			content: url('../img/white-arrow-down.svg');
+		}
+	}
+}
+
+#events-list{
+	padding: 50px 0;
+	& .event-list-wrap{
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 45px;
+		& .event-list-tumbnail{
+			display: none;
+		}
+	}
+	& .event-data{
+		flex-basis: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		& .event-total-time{
+			font-weight: 700;
+			font-size: 6px;
+			margin-bottom: 10px;
+		}
+		& .event-description{
+			margin-bottom: 15px;
+		}
+		& .event-control{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			& .event-mobile-type{
+				flex-basis: 100%;
+				font-size: 10px;
+				margin-bottom: 15px;
+				padding-left: 20px;
+				position: relative;
+				line-height: 1;
+				&:before{
+					content: url('../img/webinar-icon.svg');
+					left: 0;
+					top: 50%;
+					transform:translateY(-50%);
+					position: absolute;
+				}
+			}
+			& .event-button{
+				margin-right: 25px;
+				& .yellow-button{
+					min-width: 150px;
+				}
+			}
+			& .event-price{
+				display: none;
+			}
+		}
+	}	
+}
+
 @import "media";
