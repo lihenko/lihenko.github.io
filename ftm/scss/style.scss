@@ -1157,4 +1157,39 @@ header{
 	}
 }
 
+#service-hero{
+	padding: 50px 0 50px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	& .hero-video-button{
+		position: relative;
+		height: 110px;
+		margin-bottom: 45px;
+		top: 0;
+	}
+}
+
+#our-services{
+	padding: 50px 0;
+}
+
+.service-icon{
+	flex-basis: 100%;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	& img{
+		max-width: 70px;
+		height: auto;
+	}
+}
+
+.service-description{
+	flex-basis: 100%;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 @import "media";

@@ -1558,6 +1558,39 @@ header {
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-totlal-time {
         font-size: 0.42em; }
 
+#service-hero {
+  padding: 50px 0 50px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #service-hero .hero-video-button {
+    position: relative;
+    height: 110px;
+    margin-bottom: 45px;
+    top: 0; }
+
+#our-services {
+  padding: 50px 0; }
+
+.service-icon {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .service-icon img {
+    max-width: 70px;
+    height: auto; }
+
+.service-description {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1927,7 +1960,32 @@ header {
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-dates {
         font-size: 1.33em; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-totlal-time {
-        font-size: 0.67em; } }
+        font-size: 0.67em; }
+  #service-hero {
+    padding: 150px 0 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #service-hero .hero-video-button {
+      position: relative;
+      height: 110px;
+      margin-bottom: 45px;
+      top: 0; }
+  .service-icon {
+    -webkit-flex-basis: 126px;
+    -ms-flex-preferred-size: 126px;
+    flex-basis: 126px;
+    margin-bottom: 0; }
+    .service-icon img {
+      max-width: 126px; }
+  .service-description {
+    -webkit-flex-basis: calc(100% - 156px);
+    -ms-flex-preferred-size: calc(100% - 156px);
+    flex-basis: calc(100% - 156px);
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 @media only screen and (min-width: 1200px) {
   .upcoming-course-wrap {

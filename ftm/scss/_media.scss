@@ -464,6 +464,33 @@
 			}
 		}
 	}
+	#service-hero{
+		padding: 150px 0 60px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		& .hero-video-button{
+			position: relative;
+			height: 110px;
+			margin-bottom: 45px;
+			top: 0;
+		}
+	}
+	.service-icon{
+		flex-basis: 126px;
+		margin-bottom: 0;
+		& img{
+			max-width: 126px;
+		}
+	}
+
+	.service-description{
+		flex-basis: calc(100% - 156px);
+		margin-bottom: auto;
+		margin-top: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 	
 }
 
