@@ -1268,4 +1268,116 @@ header{
 	}	
 }
 
+#single-event{
+		& .single-event-wrap{
+			background-color: #fff;
+			border-radius:23px;
+			overflow: hidden;
+			& .single-event-hero{
+				padding: 20px 25px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: #fff;
+			}
+			& .single-event-author{
+				display: flex;
+				& .single-event-author-avatar{
+					width: 68px;
+					height: 68px;
+					background-size: cover;
+					background-position: center;
+					border-radius:50%;
+					flex-basis: 68px;
+				}
+				& .single-event-author-data{
+					flex-basis: calc(100% - 68px);
+					padding-left: 20px;
+					font-size: 1.13em;
+					& span{
+						font-weight: 700;
+					}
+				}
+			}
+			& .single-event-body{
+				padding: 50px 25px;
+				& .single-event-total-time{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .single-event-hours{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .single-event-days{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .order-event-form-wrap{
+					position: fixed;
+					width: 100%;
+					background-color: #fff;
+					padding: 30px;
+					z-index: 99;
+					left: 0;
+					bottom: 155px;
+					border-top: 3px solid #CAD1E1;
+					& .form-event-price{
+						font-size: 1.3em;
+						margin-bottom: 5px;
+					}
+					& .minimum-attendees{
+						font-size: 0.67em;
+						margin-bottom: 10px;
+					}
+					& .dropdown{
+						border-radius:.25rem;
+					}
+				}
+			}
+			& .single-event-picture{
+				height: 182px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			& .single-event-coaches{
+				padding: 50px 25px;
+			}
+			& .expert-wrap{
+				max-width: 298px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			& .expert-avatar{
+				height: 160px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				margin-bottom: 20px;
+			}
+			& .expert-name{
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 15px;
+				& span{
+					color: $yellow;
+					font-size: 15px;
+					padding-left: 3px;
+				}
+			}
+			& .expert-description{
+				font-size: 14px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}	
+		}
+	}
+
 @import "media";

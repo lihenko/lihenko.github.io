@@ -554,6 +554,93 @@
 			}
 		}	
 	}
+	#single-event{
+		background-color: #585656;
+		& .single-event-wrap{
+			background-color: #fff;
+			margin-top: 120px;
+			margin-bottom: 120px;
+			border-radius:23px;
+			overflow: hidden;
+			& .single-event-hero{
+				padding: 50px 100px 30px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: #fff;
+			}
+			& .single-event-author{
+				display: flex;
+				& .single-event-author-avatar{
+					width: 68px;
+					height: 68px;
+					background-size: cover;
+					background-position: center;
+					border-radius:50%;
+					flex-basis: 68px;
+				}
+				& .single-event-author-data{
+					flex-basis: calc(100% - 68px);
+					padding-left: 20px;
+					font-size: 1.13em;
+					& span{
+						font-weight: 700;
+					}
+				}
+			}
+			& .single-event-body{
+				padding: 50px 30px 80px 100px;
+				& .single-event-total-time{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .single-event-hours{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .single-event-days{
+					font-size: 1.2em;
+					& span{
+						font-weight: 700;
+					}
+				}
+				& .order-event-form-wrap{
+					position: relative;
+					border-top: none;
+					background-color: #1B1C33;
+					border-radius:23px;
+					padding: 30px 28px 52px 37px;
+					color: #fff;
+					left: unset;
+					bottom: unset;
+					& .form-event-price{
+						font-size: 1.3em;
+						margin-bottom: 5px;
+					}
+					& .minimum-attendees{
+						font-size: 0.67em;
+						margin-bottom: 45px;
+					}
+					& .dropdown{
+						border-radius:.25rem;
+					}
+				}
+			}
+			& .single-event-picture{
+				height: 348px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			& .single-event-coaches{
+				padding: 56px 100px 98px;
+			}	
+		}
+	}
 	
 }
 
