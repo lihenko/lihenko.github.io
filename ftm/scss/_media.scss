@@ -476,8 +476,20 @@
 			top: 0;
 		}
 	}
+	#coaching-hero{
+		padding: 150px 0 60px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		& .hero-video-button{
+			position: relative;
+			height: 110px;
+			margin-bottom: 45px;
+			top: 0;
+		}
+	}
 	.service-icon{
-		flex-basis: 126px;
+		flex-basis: 154px;
 		margin-bottom: 0;
 		& img{
 			max-width: 126px;
@@ -675,6 +687,9 @@
 		max-width: 261px;
 		margin-right: 15px;
 		border-right:1px solid #E1E5EE;
+		& img{
+			max-width: 201px;
+		}
 	}
 	.footer-menu{
 		flex-basis: calc(100% - 291px);
@@ -770,6 +785,10 @@
 			padding-right: 15px;
 		}
 		& .course-topic-description{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		& .course-topic-more{
 			padding-left: 15px;
 			padding-right: 15px;
 		}

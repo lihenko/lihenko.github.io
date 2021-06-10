@@ -1,5 +1,10 @@
 @import "vars";
 
+:root {
+  --animate-duration: 2s;
+  --animate-delay: 0.9s;
+}
+
 *{
 	box-sizing: border-box;
 	&:before, &:after{
@@ -156,7 +161,7 @@ textarea{
 }
 
 .black-button.small-button{
-	font-size: 7px;
+	font-size: 10px;
 	font-weight: 500;
 	color: #fff;
 	background-color: #1C1C33;
@@ -172,7 +177,7 @@ textarea{
 }
 
 .yellow-button.small-button{
-	font-size: 7px;
+	font-size: 10px;
 	font-weight: 500;
 	color: #fff;
 	background-color: $yellow;

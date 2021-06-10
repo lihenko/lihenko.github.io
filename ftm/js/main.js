@@ -95,28 +95,38 @@ $(document).ready(function(){
     }
 }); 
 
-$( window ).resize(function(){
-  if ($(window).width() < 991) {
-        $('#course-testimonials .slider').slick({
-          speed: 300,
-          autoplay:true,
-          arrows: false,
-          dots:true
-      });
-    } else{
-      $('#course-testimonials .slider').slick('unslick');
-    }
-});
 
 $(document).ready(function(){
-    if ($(window).width() < 991) {
-        $('#course-testimonials .slider').slick({
+
+    $('#course-testimonials .slider').slick({
           speed: 300,
           autoplay:true,
-          arrows: false,
-          dots:true
+          arrows: true,
+          dots:true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 680,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
-    }
+
 });     
 
 
