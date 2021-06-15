@@ -199,7 +199,7 @@ textarea{
 
 
 header .black-button{
-	min-width: 186px;
+	width: 186px;
 	font-size: 12px;
 	font-weight: 500;
 	color: #fff;
@@ -215,7 +215,7 @@ header .black-button{
 }
 
 header .yellow-button{
-	min-width: 186px;
+	width: 186px;
 	font-size: 12px;
 	font-weight: 500;
 	color: #fff;
@@ -231,7 +231,7 @@ header .yellow-button{
 }
 
 #mobile-menu .black-button{
-	min-width: 186px;
+	width: 186px;
 	font-size: 12px;
 	font-weight: 500;
 	color: #fff;
@@ -240,7 +240,7 @@ header .yellow-button{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	padding: 20.5px 15px;
-	width: 321px;
+	max-width: 100%;
 	&:hover{
 		color: #fff;
 		background-color: lighten(#1C1C33, 20%);
@@ -248,7 +248,7 @@ header .yellow-button{
 }
 
 #mobile-menu .yellow-button{
-	min-width: 186px;
+	width: 186px;
 	font-size: 12px;
 	font-weight: 500;
 	color: #fff;
@@ -257,7 +257,7 @@ header .yellow-button{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	padding: 20.5px 15px;
-	width: 321px;	
+	max-width: 100%;	
 	&:hover{
 		color: #fff;
 		background-color: lighten($yellow, 5%);
@@ -274,7 +274,7 @@ header .yellow-button{
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		padding: 20.5px 45px;
-		min-width: 307px;
+		width: 307px;
 		&:hover{
 			color: #fff;
 			background-color: lighten(#1C1C33, 20%);
@@ -290,7 +290,7 @@ header .yellow-button{
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		padding: 20.5px 45px;
-		min-width: 307px;
+		width: 307px;
 		&:hover{
 			color: #fff;
 			background-color: lighten($yellow, 5%);

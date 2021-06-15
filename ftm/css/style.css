@@ -215,7 +215,7 @@ textarea {
     background-color: #ffb10d; }
 
 header .black-button {
-  min-width: 186px;
+  width: 186px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -229,7 +229,7 @@ header .black-button {
     background-color: #404075; }
 
 header .yellow-button {
-  min-width: 186px;
+  width: 186px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -243,7 +243,7 @@ header .yellow-button {
     background-color: #ffb10d; }
 
 #mobile-menu .black-button {
-  min-width: 186px;
+  width: 186px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -252,13 +252,13 @@ header .yellow-button {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px;
-  width: 321px; }
+  max-width: 100%; }
   #mobile-menu .black-button:hover {
     color: #fff;
     background-color: #404075; }
 
 #mobile-menu .yellow-button {
-  min-width: 186px;
+  width: 186px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -267,7 +267,7 @@ header .yellow-button {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px;
-  width: 321px; }
+  max-width: 100%; }
   #mobile-menu .yellow-button:hover {
     color: #fff;
     background-color: #ffb10d; }
@@ -282,7 +282,7 @@ header .yellow-button {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
-    min-width: 307px; }
+    width: 307px; }
     .black-button:hover {
       color: #fff;
       background-color: #404075; }
@@ -295,7 +295,7 @@ header .yellow-button {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
-    min-width: 307px; }
+    width: 307px; }
     .yellow-button:hover {
       color: #fff;
       background-color: #ffb10d; }
