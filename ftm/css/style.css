@@ -1170,7 +1170,9 @@ header {
   justify-content: space-between; }
   .footer-buttons .btn {
     min-width: 186px;
-    padding: 12px 15px; }
+    padding: 12px 15px;
+    margin-left: 2.5px;
+    margin-right: 2.5px; }
 
 #about-hero {
   padding: 100px 0;
