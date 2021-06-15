@@ -145,8 +145,9 @@ textarea {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 11.5px 45px;
-  min-width: 307px; }
+  padding: 11.5px 40px;
+  max-width: 100%;
+  width: 307px; }
   .black-button:hover {
     color: #fff;
     background-color: #404075; }
@@ -159,8 +160,9 @@ textarea {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 11.5px 45px;
-  min-width: 307px; }
+  padding: 11.5px 40px;
+  width: 307px;
+  max-width: 100%; }
   .yellow-button:hover {
     color: #fff;
     background-color: #ffb10d; }
@@ -173,8 +175,9 @@ textarea {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 11.5px 45px;
-  min-width: 307px;
+  padding: 11.5px 40px;
+  width: 307px;
+  max-width: 100%;
   border: 1px solid #fff; }
   .transparent-button:hover {
     color: #fff;
@@ -190,7 +193,8 @@ textarea {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 9px 14px;
-  min-width: 150px; }
+  width: 200px;
+  max-width: 100%; }
   .black-button.small-button:hover {
     color: #fff;
     background-color: #404075; }
@@ -204,7 +208,8 @@ textarea {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 9px 14px;
-  min-width: 150px; }
+  width: 200px;
+  max-width: 100%; }
   .yellow-button.small-button:hover {
     color: #fff;
     background-color: #ffb10d; }
@@ -563,8 +568,8 @@ header {
   background-repeat: no-repeat;
   background-color: #E2E2E2; }
   .big-video-poster .big-play-button {
-    width: 57px;
-    height: 57px;
+    width: 67px;
+    height: 67px;
     border-radius: 50%;
     background-color: #F5F4FF;
     border: 4px solid #CAD1E1;
@@ -715,7 +720,11 @@ header {
 
 #featured-course .featured-course-data .data-text {
   font-size: 1.33em;
-  padding-left: 10px; }
+  padding-left: 10px;
+  -webkit-flex-basis: calc(100% - 24px);
+  -ms-flex-preferred-size: calc(100% - 24px);
+  flex-basis: calc(100% - 24px);
+  text-align: left; }
   #featured-course .featured-course-data .data-text.small-data {
     color: #F2A400;
     font-size: 0.75em; }
@@ -817,7 +826,7 @@ header {
       font-size: 1.1em; }
 
 #what-people-say {
-  padding: 50px 0; }
+  padding: 0 0 50px; }
   #what-people-say h2 {
     font-size: 1.5em; }
   #what-people-say .subtitle {
@@ -912,7 +921,7 @@ header {
 
 #what-our-cources-help {
   background-color: #F4F4F4;
-  padding: 60px 0; }
+  padding: 50px 0 20px; }
   #what-our-cources-help .what-our-cources-icon {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1015,7 +1024,8 @@ header {
   #taught-expert-coaches .expert-description {
     font-size: 14px;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    margin-bottom: 10px; }
   #taught-expert-coaches .expert-more {
     font-size: 13px;
     color: #F2A400; }
@@ -1377,8 +1387,8 @@ header {
   #course-topics .course-topic-description {
     font-size: 1em; }
   #course-topics .course-topic-more {
-    font-size: 0.67em;
-    margin-top: 5px; }
+    font-size: 1em;
+    margin-top: 8px; }
   #course-topics a {
     color: #363940; }
     #course-topics a:hover {
@@ -1493,12 +1503,12 @@ header {
   padding: 50px 0; }
 
 #call-to-action {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #1B1C33;
   margin-bottom: 30px; }
 
 #coaching-child-hero {
-  padding: 308px 0 72px;
+  padding: 50px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1516,9 +1526,9 @@ header {
     margin-bottom: 4px; }
     #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date {
       padding-right: 15px;
-      -webkit-flex-basis: 46px;
-      -ms-flex-preferred-size: 46px;
-      flex-basis: 46px; }
+      -webkit-flex-basis: 52px;
+      -ms-flex-preferred-size: 52px;
+      flex-basis: 52px; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-month {
         font-size: 1.08em; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date .upcoming-start-day {
@@ -1529,13 +1539,13 @@ header {
     #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons {
       padding-left: 15px;
       text-align: center;
-      -webkit-flex-basis: 100px;
-      -ms-flex-preferred-size: 100px;
-      flex-basis: 100px; }
+      -webkit-flex-basis: 105px;
+      -ms-flex-preferred-size: 105px;
+      flex-basis: 105px; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .mobile-button {
         font-size: 9px;
         padding: 5px;
-        min-width: 24px;
+        width: 90px;
         border-radius: 0;
         margin-bottom: 5px; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .upcoming-start-price {
@@ -1543,9 +1553,9 @@ header {
         #upcoming-start-dates .upcoming-start-wrap .upcoming-start-buttons .upcoming-start-price span {
           color: #F2A400; }
     #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title {
-      -webkit-flex-basis: calc(100% - 146px);
-      -ms-flex-preferred-size: calc(100% - 146px);
-      flex-basis: calc(100% - 146px); }
+      -webkit-flex-basis: calc(100% - 157px);
+      -ms-flex-preferred-size: calc(100% - 157px);
+      flex-basis: calc(100% - 157px); }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-week {
         font-size: 1.08em; }
       #upcoming-start-dates .upcoming-start-wrap .upcoming-start-title .upcoming-start-title {
@@ -1608,6 +1618,7 @@ header {
   background-repeat: no-repeat; }
 
 #topic-sorting .dropdown {
+  margin-bottom: 5px;
   width: 141px;
   border: none;
   border-radius: 25px;
@@ -1634,7 +1645,7 @@ header {
     padding-right: 15px; }
     #events-list .event-data .event-total-time {
       font-weight: 700;
-      font-size: 10px;
+      font-size: 13px;
       margin-bottom: 10px; }
     #events-list .event-data .event-description {
       margin-bottom: 15px; }
@@ -1654,7 +1665,7 @@ header {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        font-size: 10px;
+        font-size: 13px;
         margin-bottom: 15px;
         padding-left: 20px;
         position: relative;
@@ -1670,7 +1681,9 @@ header {
       #events-list .event-data .event-control .event-button {
         margin-right: 25px; }
         #events-list .event-data .event-control .event-button .yellow-button {
-          min-width: 150px; }
+          width: 150px; }
+      #events-list .event-data .event-control .event-spots {
+        font-size: 13px; }
       #events-list .event-data .event-control .event-price {
         display: none; }
 
@@ -2307,7 +2320,9 @@ header {
         background-position: center;
         background-repeat: no-repeat; }
       #single-event .single-event-wrap .single-event-coaches {
-        padding: 56px 100px 98px; } }
+        padding: 56px 100px 98px; }
+  #call-to-action {
+    padding: 80px 0; } }
 
 @media only screen and (min-width: 1200px) {
   .upcoming-course-wrap {
