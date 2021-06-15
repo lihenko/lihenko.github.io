@@ -215,7 +215,7 @@ textarea {
     background-color: #ffb10d; }
 
 header .black-button {
-  width: 186px;
+  width: 187px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -229,7 +229,7 @@ header .black-button {
     background-color: #404075; }
 
 header .yellow-button {
-  width: 186px;
+  width: 187px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -532,8 +532,8 @@ header {
     -ms-flex-preferred-size: 422px;
     flex-basis: 422px; }
     header .header-buttons a {
-      margin-left: 11px;
-      margin-right: 11px; }
+      margin-left: 10px;
+      margin-right: 10px; }
   header .brand img {
     width: 185px;
     max-width: 100%;
