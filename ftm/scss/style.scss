@@ -251,18 +251,21 @@ header{
 		}
 	}
 	& .slick-dots li button::before {
-		color: #fff;
-		line-height: 12px;
-		width: 12px;
-		height: 10px;
+		content:'';
+		width: 6px;
+		height: 6px;
+		border-radius:50%;
+		background-color: #fff;
+		top: 3px;
+		left: 3px;
 		opacity: 1;
 	}
 	& .slick-dots li.slick-active button::before {
-		color: #565758;
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots li:hover button::before {
-		color: #565758;
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots button{
@@ -359,18 +362,21 @@ header{
 		}
 	}
 	& .slick-dots li button::before {
-		color: #fff;
-		line-height: 12px;
-		width: 12px;
-		height: 10px;
+		content:'';
+		width: 6px;
+		height: 6px;
+		border-radius:50%;
+		background-color: #fff;
+		top: 3px;
+		left: 3px;
 		opacity: 1;
 	}
 	& .slick-dots li.slick-active button::before {
-		color: #565758;
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots li:hover button::before {
-		color: #565758;
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots button{
@@ -509,18 +515,22 @@ header{
 		}
 	}
 	& .slick-dots li button::before {
-		color: #fff;
-		line-height: 12px;
-		width: 12px;
-		height: 10px;
+		content:'';
+		width: 6px;
+		height: 6px;
+		border-radius:50%;
+		background-color: #fff;
+		top: 3px;
+		left: 3px;
 		opacity: 1;
 	}
 	& .slick-dots li.slick-active button::before {
-		color: #565758;
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots li:hover button::before {
-		color: #565758;
+
+		background-color: #565758;
 		opacity: 1;
 	}
 	& .slick-dots button{
@@ -968,18 +978,21 @@ header{
 		}
 	}
 	& .slick-dots li button::before {
-		color: transparent;
-		line-height: 12px;
-		width: 12px;
-		height: 10px;
+		content:'';
+		width: 6px;
+		height: 6px;
+		border-radius:50%;
+		background-color: transparent;
+		top: 3px;
+		left: 3px;
 		opacity: 1;
 	}
 	& .slick-dots li.slick-active button::before {
-		color: #fff;
+		background-color: #fff;
 		opacity: 1;
 	}
 	& .slick-dots li:hover button::before {
-		color: #fff;
+		background-color: #fff;
 		opacity: 1;
 	}
 	& .slick-dots button{
@@ -991,18 +1004,21 @@ header{
 	}
 	&.bg-white{
 		& .slick-dots li button::before {
-			color: transparent;
-			line-height: 12px;
-			width: 12px;
-			height: 10px;
+			content:'';
+			width: 6px;
+			height: 6px;
+			border-radius:50%;
+			background-color: transparent;
+			top: 3px;
+			left: 3px;
 			opacity: 1;
 		}
 		& .slick-dots li.slick-active button::before {
-			color: $black;
+			background-color: $black;
 			opacity: 1;
 		}
 		& .slick-dots li:hover button::before {
-			color: $black;
+			background-color: $black;
 			opacity: 1;
 		}
 		& .slick-dots button{

@@ -753,16 +753,19 @@ header {
       height: 10px;
       opacity: 1; }
   #home-testimonials .slick-dots li button::before {
-    color: #fff;
-    line-height: 12px;
-    width: 12px;
-    height: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 3px;
+    left: 3px;
     opacity: 1; }
   #home-testimonials .slick-dots li.slick-active button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #home-testimonials .slick-dots li:hover button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #home-testimonials .slick-dots button {
     border: 1px solid #565758;
@@ -847,16 +850,19 @@ header {
       height: 10px;
       opacity: 1; }
   #upcoming-courses .slick-dots li button::before {
-    color: #fff;
-    line-height: 12px;
-    width: 12px;
-    height: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 3px;
+    left: 3px;
     opacity: 1; }
   #upcoming-courses .slick-dots li.slick-active button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #upcoming-courses .slick-dots li:hover button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #upcoming-courses .slick-dots button {
     border: 1px solid #565758;
@@ -986,16 +992,19 @@ header {
       height: 10px;
       opacity: 1; }
   #taught-expert-coaches .slick-dots li button::before {
-    color: #fff;
-    line-height: 12px;
-    width: 12px;
-    height: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 3px;
+    left: 3px;
     opacity: 1; }
   #taught-expert-coaches .slick-dots li.slick-active button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #taught-expert-coaches .slick-dots li:hover button::before {
-    color: #565758;
+    background-color: #565758;
     opacity: 1; }
   #taught-expert-coaches .slick-dots button {
     border: 1px solid #565758;
@@ -1409,16 +1418,19 @@ header {
       height: 10px;
       opacity: 1; }
   #course-testimonials .slick-dots li button::before {
-    color: transparent;
-    line-height: 12px;
-    width: 12px;
-    height: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 3px;
+    left: 3px;
     opacity: 1; }
   #course-testimonials .slick-dots li.slick-active button::before {
-    color: #fff;
+    background-color: #fff;
     opacity: 1; }
   #course-testimonials .slick-dots li:hover button::before {
-    color: #fff;
+    background-color: #fff;
     opacity: 1; }
   #course-testimonials .slick-dots button {
     border: 1px solid #fff;
@@ -1427,16 +1439,19 @@ header {
     height: 10px;
     opacity: 1; }
   #course-testimonials.bg-white .slick-dots li button::before {
-    color: transparent;
-    line-height: 12px;
-    width: 12px;
-    height: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 3px;
+    left: 3px;
     opacity: 1; }
   #course-testimonials.bg-white .slick-dots li.slick-active button::before {
-    color: #363940;
+    background-color: #363940;
     opacity: 1; }
   #course-testimonials.bg-white .slick-dots li:hover button::before {
-    color: #363940;
+    background-color: #363940;
     opacity: 1; }
   #course-testimonials.bg-white .slick-dots button {
     border: 1px solid #363940;
