@@ -308,7 +308,7 @@ header .yellow-button {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
-    min-width: 307px;
+    width: 307px;
     border: 1px solid #fff; }
     .transparent-button:hover {
       color: #fff;
@@ -322,8 +322,8 @@ header .yellow-button {
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 15.5px 34px;
-    min-width: 248px; }
+    padding: 15.5px 17px;
+    width: 248px; }
     .black-button.small-button:hover {
       color: #fff;
       background-color: #404075; }
@@ -335,8 +335,8 @@ header .yellow-button {
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 15.5px 34px;
-    min-width: 248px; }
+    padding: 15.5px 17px;
+    width: 248px; }
     .yellow-button.small-button:hover {
       color: #fff;
       background-color: #ffb10d; } }

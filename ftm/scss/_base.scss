@@ -305,7 +305,7 @@ header .yellow-button{
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		padding: 20.5px 45px;
-		min-width: 307px;
+		width: 307px;
 		border:1px solid #fff;
 		&:hover{
 			color: #fff;
@@ -321,8 +321,8 @@ header .yellow-button{
 		line-height: 1;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		padding: 15.5px 34px;
-		min-width: 248px;
+		padding: 15.5px 17px;
+		width: 248px;
 		&:hover{
 			color: #fff;
 			background-color: lighten(#1C1C33, 20%);
@@ -337,8 +337,8 @@ header .yellow-button{
 		line-height: 1;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		padding: 15.5px 34px;
-		min-width: 248px;
+		padding: 15.5px 17px;
+		width: 248px;
 		&:hover{
 			color: #fff;
 			background-color: lighten($yellow, 5%);
