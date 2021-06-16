@@ -771,6 +771,7 @@
 			& .data-text{
 				font-size: 1.6em;
 				padding-left: 30px;
+				flex-basis: calc(100% - 38px);
 				&.small-data{
 					color: $yellow;
 					font-size: 0.86em;

@@ -2455,7 +2455,10 @@ header {
     flex-basis: 37px; }
   #featured-course .featured-course-data .data-text {
     font-size: 1.6em;
-    padding-left: 30px; }
+    padding-left: 30px;
+    -webkit-flex-basis: calc(100% - 38px);
+    -ms-flex-preferred-size: calc(100% - 38px);
+    flex-basis: calc(100% - 38px); }
     #featured-course .featured-course-data .data-text.small-data {
       color: #F2A400;
       font-size: 0.86em; }
