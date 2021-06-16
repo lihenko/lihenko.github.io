@@ -721,9 +721,9 @@ header {
 #featured-course .featured-course-data .data-text {
   font-size: 1.33em;
   padding-left: 10px;
-  -webkit-flex-basis: calc(100% - 24px);
-  -ms-flex-preferred-size: calc(100% - 24px);
-  flex-basis: calc(100% - 24px);
+  -webkit-flex-basis: calc(100% - 25px);
+  -ms-flex-preferred-size: calc(100% - 25px);
+  flex-basis: calc(100% - 25px);
   text-align: left; }
   #featured-course .featured-course-data .data-text.small-data {
     color: #F2A400;
