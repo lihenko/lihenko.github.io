@@ -138,11 +138,11 @@ textarea {
   opacity: 1; }
 
 .black-button {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #1C1C33;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 11.5px 40px;
@@ -153,11 +153,11 @@ textarea {
     background-color: #404075; }
 
 .yellow-button {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #F2A400;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 11.5px 40px;
@@ -168,11 +168,11 @@ textarea {
     background-color: #ffb10d; }
 
 .transparent-button {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: transparent;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 11.5px 40px;
@@ -185,11 +185,11 @@ textarea {
     background-color: #F2A400; }
 
 .black-button.small-button {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 500;
   color: #fff;
   background-color: #1C1C33;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 9px 14px;
@@ -200,11 +200,11 @@ textarea {
     background-color: #404075; }
 
 .yellow-button.small-button {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 500;
   color: #fff;
   background-color: #F2A400;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 9px 14px;
@@ -216,11 +216,11 @@ textarea {
 
 header .black-button {
   width: 187px;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #1C1C33;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px; }
@@ -230,11 +230,11 @@ header .black-button {
 
 header .yellow-button {
   width: 187px;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #F2A400;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px; }
@@ -244,11 +244,11 @@ header .yellow-button {
 
 #mobile-menu .black-button {
   width: 186px;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #1C1C33;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px;
@@ -259,11 +259,11 @@ header .yellow-button {
 
 #mobile-menu .yellow-button {
   width: 186px;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: #fff;
   background-color: #F2A400;
-  /*line-height: 1;*/
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20.5px 15px;
@@ -274,11 +274,11 @@ header .yellow-button {
 
 @media only screen and (min-width: 1330px) {
   .black-button {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     background-color: #1C1C33;
-    /*line-height: 1;*/
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
@@ -287,11 +287,11 @@ header .yellow-button {
       color: #fff;
       background-color: #404075; }
   .yellow-button {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     background-color: #F2A400;
-    /*line-height: 1;*/
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
@@ -300,11 +300,11 @@ header .yellow-button {
       color: #fff;
       background-color: #ffb10d; }
   .transparent-button {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     background-color: transparent;
-    /*line-height: 1;*/
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20.5px 45px;
@@ -315,11 +315,11 @@ header .yellow-button {
       border: 1px solid #F2A400;
       background-color: #F2A400; }
   .black-button.small-button {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     background-color: #1C1C33;
-    /*line-height: 1;*/
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 15.5px 17px;
@@ -328,11 +328,11 @@ header .yellow-button {
       color: #fff;
       background-color: #404075; }
   .yellow-button.small-button {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     background-color: #F2A400;
-    /*line-height: 1;*/
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 15.5px 17px;
@@ -545,7 +545,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
   #home-hero h1 {
-    font-size: 23px; }
+    font-size: 23px;
+    line-height: 1; }
   #home-hero .hero-subtitle {
     margin-right: 45px;
     font-size: 0.75em; }
@@ -654,9 +655,10 @@ header {
     flex-basis: 100%; }
     #features .features-description .features-title {
       font-weight: 700;
-      font-size: 0.58em; }
+      margin-bottom: 7px;
+      /*font-size: 0.58em;*/ }
     #features .features-description .features-text {
-      font-size: 0.58em; }
+      /*font-size: 0.58em;*/ }
 
 .bg-grey {
   background-color: #F4F4F4; }
@@ -677,7 +679,7 @@ header {
   font-size: 1.5em; }
 
 #featured-course .description {
-  font-size: 0.67em; }
+  /*font-size: 0.67em;*/ }
 
 #featured-course .banner {
   background-color: #1B1C33;
@@ -826,7 +828,7 @@ header {
       #home-testimonials .testimonials-wrap .author .author-position {
         font-size: 1em; }
     #home-testimonials .testimonials-wrap .testimonial-quote {
-      font-size: 1.1em; }
+      /*font-size: 1.1em;*/ }
 
 #what-people-say {
   padding: 0 0 50px; }
@@ -1031,7 +1033,7 @@ header {
       font-size: 15px;
       padding-left: 3px; }
   #taught-expert-coaches .expert-description {
-    font-size: 14px;
+    /*font-size: 14px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 10px; }
@@ -1051,7 +1053,7 @@ header {
         border-left: 3px solid #fff;
         padding-left: 20px; }
     #taught-expert-coaches .tabs-content .tabs-description {
-      font-size: 1.13em; }
+      /*font-size: 1.13em;*/ }
   #taught-expert-coaches [aria-expanded="true"]:after {
     content: '';
     width: 0;
@@ -1146,7 +1148,7 @@ header {
     font-size: 16px; }
   .footer-mobile-menu .yellow-button {
     padding: 15px;
-    min-width: 184px; }
+    width: 184px; }
 
 .copyright {
   padding: 25px 0;
@@ -1201,7 +1203,7 @@ header {
 
 #meet-founders .meet-founders-description {
   color: #fff;
-  font-size: 1.22em; }
+  /*font-size: 1.22em;*/ }
 
 #our-team {
   padding: 50px 0; }
@@ -1226,7 +1228,7 @@ header {
       font-size: 15px;
       padding-left: 3px; }
   #our-team .team-description {
-    font-size: 14px;
+    /*font-size: 14px;*/
     padding-left: 15px;
     padding-right: 15px; }
 
@@ -1248,7 +1250,7 @@ header {
 #contact-form-section {
   padding: 50px 0; }
   #contact-form-section .form-subtitle {
-    color: #95A1BB;
+    /*color: #95A1BB;*/
     margin-bottom: 45px; }
   #contact-form-section .yellow-button {
     min-width: 165px; }
@@ -1275,7 +1277,9 @@ header {
   border: 1px solid #CAD1E1;
   border-radius: 0;
   padding: 0;
-  left: -1px; }
+  left: -1px;
+  max-height: 150px;
+  overflow-y: auto; }
 
 .dropdown .dropdown-menu li {
   cursor: pointer;
@@ -1514,7 +1518,7 @@ header {
       #course-testimonials .testimonials-wrap .author .author-position {
         font-size: 1em; }
     #course-testimonials .testimonials-wrap .testimonial-quote {
-      font-size: 1.1em; }
+      /*font-size: 1.1em;*/ }
 
 #client-cases {
   padding: 50px 0; }
@@ -1793,7 +1797,7 @@ header {
       font-size: 15px;
       padding-left: 3px; }
   #single-event .single-event-wrap .expert-description {
-    font-size: 14px;
+    /*font-size: 14px;*/
     padding-left: 15px;
     padding-right: 15px; }
 
@@ -1892,9 +1896,9 @@ header {
       flex-basis: calc(100% - 124px); }
       #features .features-description .features-title {
         font-weight: 700;
-        font-size: 0.93em; }
+        /*font-size: 0.93em;*/ }
       #features .features-description .features-text {
-        font-size: 0.93em; }
+        /*font-size: 0.93em;*/ }
   .featured-course-img {
     height: 708px;
     background-position: center;
@@ -1956,7 +1960,7 @@ header {
         #home-testimonials .testimonials-wrap .author .avatar img {
           width: 55px; }
       #home-testimonials .testimonials-wrap .testimonial-quote {
-        font-size: 1.1em; }
+        /*font-size: 1.1em;*/ }
   #what-our-cources-help .what-our-cources-icon {
     min-height: 150px;
     margin-bottom: 25px; }
@@ -2117,7 +2121,7 @@ header {
         #course-testimonials .testimonials-wrap .author .avatar img {
           width: 55px; }
       #course-testimonials .testimonials-wrap .testimonial-quote {
-        font-size: 1.1em; }
+        /*font-size: 1.1em;*/ }
   #client-cases .row:nth-child(even) .col-lg-6:nth-child(1) {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -2421,7 +2425,7 @@ header {
   #featured-course .subtitle {
     font-size: 1.73em; }
   #featured-course .description {
-    font-size: 0.93em; }
+    /*font-size: 0.93em;*/ }
   #featured-course .banner {
     background-color: #1B1C33;
     border-radius: 8px;

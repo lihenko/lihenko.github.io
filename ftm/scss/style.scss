@@ -38,6 +38,7 @@ header{
 	background-repeat: no-repeat;
 	& h1{
 		font-size: 23px;
+		line-height: 1;
 	}
 	& .hero-subtitle{
 		margin-right: 45px;
@@ -138,10 +139,11 @@ header{
 		flex-basis: 100%;
 		& .features-title{
 			font-weight: 700;
-			font-size: 0.58em;
+			margin-bottom: 7px;
+			/*font-size: 0.58em;*/
 		}
 		& .features-text{
-			font-size: 0.58em;
+			/*font-size: 0.58em;*/
 		}
 	}
 }
@@ -168,7 +170,7 @@ header{
 		font-size: 1.5em;
 	}
 	& .description{
-		font-size: 0.67em;
+		/*font-size: 0.67em;*/
 	}
 	& .banner{
 		background-color: #1B1C33;
@@ -329,7 +331,7 @@ header{
 			}
 		}
 		& .testimonial-quote{
-			font-size: 1.1em;
+			/*font-size: 1.1em;*/
 		}
 	}
 }
@@ -563,7 +565,7 @@ header{
 		}
 	}
 	& .expert-description{
-		font-size: 14px;
+		/*font-size: 14px;*/
 		padding-left: 15px;
 		padding-right: 15px;
 		margin-bottom: 10px;
@@ -587,7 +589,7 @@ header{
 			}
 		}
 		& .tabs-description{
-			font-size: 1.13em;
+			/*font-size: 1.13em;*/
 		}
 	}
 	& [aria-expanded="true"]:after{
@@ -691,7 +693,7 @@ header{
 	}
 	& .yellow-button{
 		padding: 15px;
-		min-width: 184px;
+		width: 184px;
 	}
 }
 
@@ -753,7 +755,7 @@ header{
 	}
 	& .meet-founders-description{
 		color: #fff;
-		font-size: 1.22em;
+		/*font-size: 1.22em;*/
 	}
 }
 
@@ -785,7 +787,7 @@ header{
 		}
 	}
 	& .team-description{
-		font-size: 14px;
+		/*font-size: 14px;*/
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -813,7 +815,7 @@ header{
 #contact-form-section{
 	padding: 50px 0;
 	& .form-subtitle{
-		color: #95A1BB;
+		/*color: #95A1BB;*/
 		margin-bottom: 45px; 
 	}
 	& .yellow-button{
@@ -844,7 +846,9 @@ header{
     border:1px solid #CAD1E1;
     border-radius: 0;
     padding: 0;
-    left: -1px; }
+    left: -1px;
+    max-height: 150px;
+    overflow-y: auto; }
     .dropdown .dropdown-menu li {
       cursor: pointer;
       padding: 10px 15px;
@@ -1085,7 +1089,7 @@ header{
 			}
 		}
 		& .testimonial-quote{
-			font-size: 1.1em;
+			/*font-size: 1.1em;*/
 		}
 	}
 }
@@ -1405,7 +1409,7 @@ header{
 				}
 			}
 			& .expert-description{
-				font-size: 14px;
+				/*font-size: 14px;*/
 				padding-left: 15px;
 				padding-right: 15px;
 			}	
