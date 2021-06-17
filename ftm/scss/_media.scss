@@ -85,6 +85,10 @@
 @media only screen and (min-width : 992px){
 	body{
 		font-size: 15px;
+		line-height: 1.33;
+	}
+	h1,h2,h3,h4,h5,h6{
+		line-height: 1.33;
 	}
 	header{
 		border-bottom: 12px solid $yellow;
