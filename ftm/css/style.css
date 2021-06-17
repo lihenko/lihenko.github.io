@@ -1967,17 +1967,21 @@ header {
     #what-our-cources-help .what-our-cources-icon img {
       max-height: 150px; }
   #site-description {
-    padding: 50px 0 0; }
-    #site-description h2 {
-      font-size: 2.2em; }
-    #site-description .subtitle {
-      font-size: 1.6em; }
+    padding: 50px 0 0;
+    /*& h2{
+			font-size: 2.2em;
+		}
+		& .subtitle{
+			font-size: 1.6em;
+		}*/ }
   #what-people-say {
-    padding: 50px 0; }
-    #what-people-say h2 {
-      font-size: 2.2em; }
-    #what-people-say .subtitle {
-      font-size: 1.6em; }
+    padding: 50px 0;
+    /*& h2{
+			font-size: 2.2em;
+		}
+		& .subtitle{
+			font-size: 1.6em;
+		}*/ }
   .upcoming-course-wrap .upcoming-course-button .yellow-button {
     min-width: 122px;
     font-size: 12px;
@@ -2034,8 +2038,6 @@ header {
     display: none; }
   #about-hero h1 {
     font-size: 58px; }
-  #what-we-do p {
-    font-size: 1.3em; }
   #freebrochure .modal-form-wrap {
     -webkit-flex-basis: 590px;
     -ms-flex-preferred-size: 590px;
