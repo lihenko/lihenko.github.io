@@ -107,7 +107,6 @@
 		}
 		& .hero-subtitle{
 			margin-right: 85px;
-			font-size: 1.4em;
 		}
 	}
 	.big-video-poster{
@@ -306,6 +305,9 @@
 		& h1{
 			font-size: 58px;
 		}
+		& .about-hero-subtitle{
+			font-size: 24px;
+		}
 	}
 	#freebrochure{
 		& .modal-form-wrap{
@@ -340,8 +342,13 @@
 			flex-wrap: wrap;
 			& .course-topic-star{
 				flex-basis: 100%;
+				min-height: 150px;
+				display: flex;
+				justify-content: center;
+				align-items:center;
 			}
 			& .course-topic-data{
+				padding-left: 0;
 				flex-basis: 100%;
 			}
 		}

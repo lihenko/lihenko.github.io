@@ -42,7 +42,6 @@ header{
 	}
 	& .hero-subtitle{
 		margin-right: 45px;
-		font-size: 0.75em;
 	}
 }
 
@@ -624,7 +623,7 @@ header{
 		align-items: center;
 		justify-content: space-between;
 		display: flex;
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 300;
 		text-transform: uppercase;
 		line-height: 1;
@@ -940,10 +939,11 @@ header{
 	& .course-topic-wrap{
 		display: flex;
 		& .course-topic-star{
-			flex-basis: 45px;
+			flex-basis: 130px;
 		}
 		& .course-topic-data{
-			flex-basis: calc(100% - 45px);
+			padding-left: 15px;
+			flex-basis: calc(100% - 130px);
 		}
 	}
 	& .course-topic-title{
@@ -1305,6 +1305,24 @@ header{
 }
 
 #single-event{
+		& .order-event-form-wrap{
+					position: relative;
+					width: 100%;
+					background-color: #fff;
+					padding: 30px;
+					border-top: 3px solid #CAD1E1;
+					& .form-event-price{
+						font-size: 1.3em;
+						margin-bottom: 5px;
+					}
+					& .minimum-attendees{
+						font-size: 0.67em;
+						margin-bottom: 10px;
+					}
+					& .dropdown{
+						border-radius:.25rem;
+					}
+				}
 		& .single-event-wrap{
 			background-color: #fff;
 			border-radius:23px;
@@ -1355,27 +1373,7 @@ header{
 						font-weight: 700;
 					}
 				}
-				& .order-event-form-wrap{
-					position: fixed;
-					width: 100%;
-					background-color: #fff;
-					padding: 30px;
-					z-index: 99;
-					left: 0;
-					bottom: 155px;
-					border-top: 3px solid #CAD1E1;
-					& .form-event-price{
-						font-size: 1.3em;
-						margin-bottom: 5px;
-					}
-					& .minimum-attendees{
-						font-size: 0.67em;
-						margin-bottom: 10px;
-					}
-					& .dropdown{
-						border-radius:.25rem;
-					}
-				}
+				
 			}
 			& .single-event-picture{
 				height: 182px;

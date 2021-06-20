@@ -214,6 +214,9 @@ textarea {
     color: #fff;
     background-color: #ffb10d; }
 
+.black-button.small-button.wide, .yellow-button.small-button.wide {
+  width: 220px; }
+
 header .black-button {
   width: 187px;
   font-size: 12px;
@@ -548,8 +551,7 @@ header {
     font-size: 23px;
     line-height: 1; }
   #home-hero .hero-subtitle {
-    margin-right: 45px;
-    font-size: 0.75em; }
+    margin-right: 45px; }
 
 #site-description {
   padding: 50px 0 0; }
@@ -1092,7 +1094,7 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1; }
@@ -1389,13 +1391,14 @@ header {
     display: -ms-flexbox;
     display: flex; }
     #course-topics .course-topic-wrap .course-topic-star {
-      -webkit-flex-basis: 45px;
-      -ms-flex-preferred-size: 45px;
-      flex-basis: 45px; }
+      -webkit-flex-basis: 130px;
+      -ms-flex-preferred-size: 130px;
+      flex-basis: 130px; }
     #course-topics .course-topic-wrap .course-topic-data {
-      -webkit-flex-basis: calc(100% - 45px);
-      -ms-flex-preferred-size: calc(100% - 45px);
-      flex-basis: calc(100% - 45px); }
+      padding-left: 15px;
+      -webkit-flex-basis: calc(100% - 130px);
+      -ms-flex-preferred-size: calc(100% - 130px);
+      flex-basis: calc(100% - 130px); }
   #course-topics .course-topic-title {
     font-size: 1em;
     font-weight: 700; }
@@ -1708,6 +1711,21 @@ header {
       #events-list .event-data .event-control .event-price {
         display: none; }
 
+#single-event .order-event-form-wrap {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-top: 3px solid #CAD1E1; }
+  #single-event .order-event-form-wrap .form-event-price {
+    font-size: 1.3em;
+    margin-bottom: 5px; }
+  #single-event .order-event-form-wrap .minimum-attendees {
+    font-size: 0.67em;
+    margin-bottom: 10px; }
+  #single-event .order-event-form-wrap .dropdown {
+    border-radius: .25rem; }
+
 #single-event .single-event-wrap {
   background-color: #fff;
   border-radius: 23px;
@@ -1754,23 +1772,6 @@ header {
       font-size: 1.2em; }
       #single-event .single-event-wrap .single-event-body .single-event-days span {
         font-weight: 700; }
-    #single-event .single-event-wrap .single-event-body .order-event-form-wrap {
-      position: fixed;
-      width: 100%;
-      background-color: #fff;
-      padding: 30px;
-      z-index: 99;
-      left: 0;
-      bottom: 155px;
-      border-top: 3px solid #CAD1E1; }
-      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .form-event-price {
-        font-size: 1.3em;
-        margin-bottom: 5px; }
-      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .minimum-attendees {
-        font-size: 0.67em;
-        margin-bottom: 10px; }
-      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .dropdown {
-        border-radius: .25rem; }
   #single-event .single-event-wrap .single-event-picture {
     height: 182px;
     background-size: cover;
@@ -1862,8 +1863,7 @@ header {
       font-size: 70px;
       margin-right: 65px; }
     #home-hero .hero-subtitle {
-      margin-right: 85px;
-      font-size: 1.4em; }
+      margin-right: 85px; }
   .big-video-poster {
     height: 429px; }
     .big-video-poster .big-play-button {
@@ -2038,6 +2038,8 @@ header {
     display: none; }
   #about-hero h1 {
     font-size: 58px; }
+  #about-hero .about-hero-subtitle {
+    font-size: 24px; }
   #freebrochure .modal-form-wrap {
     -webkit-flex-basis: 590px;
     -ms-flex-preferred-size: 590px;
@@ -2069,8 +2071,22 @@ header {
     #course-topics .course-topic-wrap .course-topic-star {
       -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-basis: 100%;
+      min-height: 150px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
     #course-topics .course-topic-wrap .course-topic-data {
+      padding-left: 0;
       -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
