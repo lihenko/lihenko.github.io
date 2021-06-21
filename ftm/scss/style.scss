@@ -1324,9 +1324,6 @@ header{
 					}
 				}
 		& .single-event-wrap{
-			background-color: #fff;
-			border-radius:23px;
-			overflow: hidden;
 			& .single-event-hero{
 				padding: 20px 25px;
 				background-size: cover;
@@ -1354,7 +1351,7 @@ header{
 				}
 			}
 			& .single-event-body{
-				padding: 50px 25px;
+				padding: 50px 0;
 				& .single-event-total-time{
 					font-size: 1.2em;
 					& span{

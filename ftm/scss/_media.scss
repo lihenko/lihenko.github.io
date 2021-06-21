@@ -573,15 +573,9 @@
 		}	
 	}
 	#single-event{
-		background-color: #585656;
 		& .single-event-wrap{
-			background-color: #fff;
-			margin-top: 120px;
-			margin-bottom: 120px;
-			border-radius:23px;
-			overflow: hidden;
 			& .single-event-hero{
-				padding: 50px 100px 30px;
+				padding: 177px 0 103px;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -607,7 +601,7 @@
 				}
 			}
 			& .single-event-body{
-				padding: 50px 30px 80px 100px;
+				padding: 50px 0 80px;
 				& .single-event-total-time{
 					font-size: 1.2em;
 					& span{

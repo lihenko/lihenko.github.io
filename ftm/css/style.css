@@ -1726,81 +1726,85 @@ header {
   #single-event .order-event-form-wrap .dropdown {
     border-radius: .25rem; }
 
-#single-event .single-event-wrap {
-  background-color: #fff;
-  border-radius: 23px;
-  overflow: hidden; }
-  #single-event .single-event-wrap .single-event-hero {
-    padding: 20px 25px;
+#single-event .single-event-wrap .single-event-hero {
+  padding: 20px 25px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; }
+
+#single-event .single-event-wrap .single-event-author {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #single-event .single-event-wrap .single-event-author .single-event-author-avatar {
+    width: 68px;
+    height: 68px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #fff; }
-  #single-event .single-event-wrap .single-event-author {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    #single-event .single-event-wrap .single-event-author .single-event-author-avatar {
-      width: 68px;
-      height: 68px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      -webkit-flex-basis: 68px;
-      -ms-flex-preferred-size: 68px;
-      flex-basis: 68px; }
-    #single-event .single-event-wrap .single-event-author .single-event-author-data {
-      -webkit-flex-basis: calc(100% - 68px);
-      -ms-flex-preferred-size: calc(100% - 68px);
-      flex-basis: calc(100% - 68px);
-      padding-left: 20px;
-      font-size: 1.13em; }
-      #single-event .single-event-wrap .single-event-author .single-event-author-data span {
-        font-weight: 700; }
-  #single-event .single-event-wrap .single-event-body {
-    padding: 50px 25px; }
-    #single-event .single-event-wrap .single-event-body .single-event-total-time {
-      font-size: 1.2em; }
-      #single-event .single-event-wrap .single-event-body .single-event-total-time span {
-        font-weight: 700; }
-    #single-event .single-event-wrap .single-event-body .single-event-hours {
-      font-size: 1.2em; }
-      #single-event .single-event-wrap .single-event-body .single-event-hours span {
-        font-weight: 700; }
-    #single-event .single-event-wrap .single-event-body .single-event-days {
-      font-size: 1.2em; }
-      #single-event .single-event-wrap .single-event-body .single-event-days span {
-        font-weight: 700; }
-  #single-event .single-event-wrap .single-event-picture {
-    height: 182px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  #single-event .single-event-wrap .single-event-coaches {
-    padding: 50px 25px; }
-  #single-event .single-event-wrap .expert-wrap {
-    max-width: 298px;
-    margin-left: auto;
-    margin-right: auto; }
-  #single-event .single-event-wrap .expert-avatar {
-    height: 160px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px; }
-  #single-event .single-event-wrap .expert-name {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px; }
-    #single-event .single-event-wrap .expert-name span {
-      color: #F2A400;
-      font-size: 15px;
-      padding-left: 3px; }
-  #single-event .single-event-wrap .expert-description {
-    /*font-size: 14px;*/
-    padding-left: 15px;
-    padding-right: 15px; }
+    border-radius: 50%;
+    -webkit-flex-basis: 68px;
+    -ms-flex-preferred-size: 68px;
+    flex-basis: 68px; }
+  #single-event .single-event-wrap .single-event-author .single-event-author-data {
+    -webkit-flex-basis: calc(100% - 68px);
+    -ms-flex-preferred-size: calc(100% - 68px);
+    flex-basis: calc(100% - 68px);
+    padding-left: 20px;
+    font-size: 1.13em; }
+    #single-event .single-event-wrap .single-event-author .single-event-author-data span {
+      font-weight: 700; }
+
+#single-event .single-event-wrap .single-event-body {
+  padding: 50px 0; }
+  #single-event .single-event-wrap .single-event-body .single-event-total-time {
+    font-size: 1.2em; }
+    #single-event .single-event-wrap .single-event-body .single-event-total-time span {
+      font-weight: 700; }
+  #single-event .single-event-wrap .single-event-body .single-event-hours {
+    font-size: 1.2em; }
+    #single-event .single-event-wrap .single-event-body .single-event-hours span {
+      font-weight: 700; }
+  #single-event .single-event-wrap .single-event-body .single-event-days {
+    font-size: 1.2em; }
+    #single-event .single-event-wrap .single-event-body .single-event-days span {
+      font-weight: 700; }
+
+#single-event .single-event-wrap .single-event-picture {
+  height: 182px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#single-event .single-event-wrap .single-event-coaches {
+  padding: 50px 25px; }
+
+#single-event .single-event-wrap .expert-wrap {
+  max-width: 298px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#single-event .single-event-wrap .expert-avatar {
+  height: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px; }
+
+#single-event .single-event-wrap .expert-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px; }
+  #single-event .single-event-wrap .expert-name span {
+    color: #F2A400;
+    font-size: 15px;
+    padding-left: 3px; }
+
+#single-event .single-event-wrap .expert-description {
+  /*font-size: 14px;*/
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2289,80 +2293,72 @@ header {
             min-width: 150px; }
         #events-list .event-data .event-control .event-price {
           margin-right: 25px; }
-  #single-event {
-    background-color: #585656; }
-    #single-event .single-event-wrap {
-      background-color: #fff;
-      margin-top: 120px;
-      margin-bottom: 120px;
+  #single-event .single-event-wrap .single-event-hero {
+    padding: 177px 0 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; }
+  #single-event .single-event-wrap .single-event-author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #single-event .single-event-wrap .single-event-author .single-event-author-avatar {
+      width: 68px;
+      height: 68px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      -webkit-flex-basis: 68px;
+      -ms-flex-preferred-size: 68px;
+      flex-basis: 68px; }
+    #single-event .single-event-wrap .single-event-author .single-event-author-data {
+      -webkit-flex-basis: calc(100% - 68px);
+      -ms-flex-preferred-size: calc(100% - 68px);
+      flex-basis: calc(100% - 68px);
+      padding-left: 20px;
+      font-size: 1.13em; }
+      #single-event .single-event-wrap .single-event-author .single-event-author-data span {
+        font-weight: 700; }
+  #single-event .single-event-wrap .single-event-body {
+    padding: 50px 0 80px; }
+    #single-event .single-event-wrap .single-event-body .single-event-total-time {
+      font-size: 1.2em; }
+      #single-event .single-event-wrap .single-event-body .single-event-total-time span {
+        font-weight: 700; }
+    #single-event .single-event-wrap .single-event-body .single-event-hours {
+      font-size: 1.2em; }
+      #single-event .single-event-wrap .single-event-body .single-event-hours span {
+        font-weight: 700; }
+    #single-event .single-event-wrap .single-event-body .single-event-days {
+      font-size: 1.2em; }
+      #single-event .single-event-wrap .single-event-body .single-event-days span {
+        font-weight: 700; }
+    #single-event .single-event-wrap .single-event-body .order-event-form-wrap {
+      position: relative;
+      border-top: none;
+      background-color: #1B1C33;
       border-radius: 23px;
-      overflow: hidden; }
-      #single-event .single-event-wrap .single-event-hero {
-        padding: 50px 100px 30px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: #fff; }
-      #single-event .single-event-wrap .single-event-author {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        #single-event .single-event-wrap .single-event-author .single-event-author-avatar {
-          width: 68px;
-          height: 68px;
-          background-size: cover;
-          background-position: center;
-          border-radius: 50%;
-          -webkit-flex-basis: 68px;
-          -ms-flex-preferred-size: 68px;
-          flex-basis: 68px; }
-        #single-event .single-event-wrap .single-event-author .single-event-author-data {
-          -webkit-flex-basis: calc(100% - 68px);
-          -ms-flex-preferred-size: calc(100% - 68px);
-          flex-basis: calc(100% - 68px);
-          padding-left: 20px;
-          font-size: 1.13em; }
-          #single-event .single-event-wrap .single-event-author .single-event-author-data span {
-            font-weight: 700; }
-      #single-event .single-event-wrap .single-event-body {
-        padding: 50px 30px 80px 100px; }
-        #single-event .single-event-wrap .single-event-body .single-event-total-time {
-          font-size: 1.2em; }
-          #single-event .single-event-wrap .single-event-body .single-event-total-time span {
-            font-weight: 700; }
-        #single-event .single-event-wrap .single-event-body .single-event-hours {
-          font-size: 1.2em; }
-          #single-event .single-event-wrap .single-event-body .single-event-hours span {
-            font-weight: 700; }
-        #single-event .single-event-wrap .single-event-body .single-event-days {
-          font-size: 1.2em; }
-          #single-event .single-event-wrap .single-event-body .single-event-days span {
-            font-weight: 700; }
-        #single-event .single-event-wrap .single-event-body .order-event-form-wrap {
-          position: relative;
-          border-top: none;
-          background-color: #1B1C33;
-          border-radius: 23px;
-          padding: 30px 28px 52px 37px;
-          color: #fff;
-          left: unset;
-          bottom: unset; }
-          #single-event .single-event-wrap .single-event-body .order-event-form-wrap .form-event-price {
-            font-size: 1.3em;
-            margin-bottom: 5px; }
-          #single-event .single-event-wrap .single-event-body .order-event-form-wrap .minimum-attendees {
-            font-size: 0.67em;
-            margin-bottom: 45px; }
-          #single-event .single-event-wrap .single-event-body .order-event-form-wrap .dropdown {
-            border-radius: .25rem; }
-      #single-event .single-event-wrap .single-event-picture {
-        height: 348px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
-      #single-event .single-event-wrap .single-event-coaches {
-        padding: 56px 100px 98px; }
+      padding: 30px 28px 52px 37px;
+      color: #fff;
+      left: unset;
+      bottom: unset; }
+      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .form-event-price {
+        font-size: 1.3em;
+        margin-bottom: 5px; }
+      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .minimum-attendees {
+        font-size: 0.67em;
+        margin-bottom: 45px; }
+      #single-event .single-event-wrap .single-event-body .order-event-form-wrap .dropdown {
+        border-radius: .25rem; }
+  #single-event .single-event-wrap .single-event-picture {
+    height: 348px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #single-event .single-event-wrap .single-event-coaches {
+    padding: 56px 100px 98px; }
   #call-to-action {
     padding: 80px 0; } }
 
