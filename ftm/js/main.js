@@ -147,6 +147,21 @@ $(document).ready(function(){
 }); 
 
 
+$(window).scroll(function () {
+    var $this = $(this),
+        $head = $('header');
+    if ($this.scrollTop() > 250) {
+       $head.addClass('transformed_header');
+    } else {
+       $head.removeClass('transformed_header');
+    }
+    if ($this.scrollTop() > 350) {
+       $head.addClass('fixed_header');
+    } else {
+       $head.removeClass('fixed_header');
+    }
+});
+
 
 
 $(document).ready(function(){

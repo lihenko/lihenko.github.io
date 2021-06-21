@@ -542,6 +542,22 @@ header {
     max-width: 100%;
     height: auto; }
 
+header.transformed_header {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out; }
+
+header.fixed_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
 #home-hero {
   padding: 47px 0 19px;
   background-position: center;
