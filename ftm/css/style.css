@@ -246,7 +246,8 @@ header .yellow-button {
     background-color: #ffb10d; }
 
 #mobile-menu .black-button {
-  width: 186px;
+  width: 288px;
+  max-width: 100%;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -254,14 +255,15 @@ header .yellow-button {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 20.5px 15px;
+  padding: 9px 15px;
   max-width: 100%; }
   #mobile-menu .black-button:hover {
     color: #fff;
     background-color: #404075; }
 
 #mobile-menu .yellow-button {
-  width: 186px;
+  width: 288px;
+  max-width: 100%;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -269,7 +271,7 @@ header .yellow-button {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 20.5px 15px;
+  padding: 9px 15px;
   max-width: 100%; }
   #mobile-menu .yellow-button:hover {
     color: #fff;
@@ -1256,7 +1258,7 @@ header.fixed_header {
     font-weight: 700; }
 
 #contact-hero {
-  padding: 200px 0 60px;
+  padding: 60px 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -1427,6 +1429,19 @@ header.fixed_header {
     color: #363940; }
     #course-topics a:hover {
       color: #F2A400; }
+  #course-topics .coaching-child-course-topic-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #course-topics .coaching-child-course-topic-wrap .course-topic-star {
+      -webkit-flex-basis: 35px;
+      -ms-flex-preferred-size: 35px;
+      flex-basis: 35px; }
+    #course-topics .coaching-child-course-topic-wrap .course-topic-data {
+      -webkit-flex-basis: calc(100% - 35px);
+      -ms-flex-preferred-size: calc(100% - 35px);
+      flex-basis: calc(100% - 35px); }
 
 #course-testimonials {
   padding: 30px 0;
@@ -1742,8 +1757,12 @@ header.fixed_header {
   #single-event .order-event-form-wrap .dropdown {
     border-radius: .25rem; }
 
+#single-event .single-event-wrap .single-event-title {
+  font-size: 23px;
+  font-weight: 700; }
+
 #single-event .single-event-wrap .single-event-hero {
-  padding: 20px 25px;
+  padding: 20px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1880,9 +1899,10 @@ header.fixed_header {
     background-size: cover;
     background-repeat: no-repeat; }
     #home-hero h1 {
-      font-size: 70px;
+      font-size: 55px;
       margin-right: 65px; }
     #home-hero .hero-subtitle {
+      font-size: 24px;
       margin-right: 85px; }
   .big-video-poster {
     height: 429px; }
@@ -2110,6 +2130,20 @@ header.fixed_header {
       -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
+  #course-topics .coaching-child-course-topic-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #course-topics .coaching-child-course-topic-wrap .course-topic-star {
+      -webkit-flex-basis: 40px;
+      -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+      padding-right: 0; }
+    #course-topics .coaching-child-course-topic-wrap .course-topic-data {
+      -webkit-flex-basis: calc(100% - 40px);
+      -ms-flex-preferred-size: calc(100% - 40px);
+      flex-basis: calc(100% - 40px); }
   #course-testimonials {
     padding: 70px 30px; }
     #course-testimonials .testimonials-wrap {
@@ -2309,6 +2343,11 @@ header.fixed_header {
             min-width: 150px; }
         #events-list .event-data .event-control .event-price {
           margin-right: 25px; }
+  #single-event .single-event-wrap .single-event-date {
+    font-size: 24px; }
+  #single-event .single-event-wrap .single-event-title {
+    font-size: 55px;
+    font-weight: 700; }
   #single-event .single-event-wrap .single-event-hero {
     padding: 177px 0 103px;
     background-size: cover;

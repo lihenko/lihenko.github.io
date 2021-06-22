@@ -102,10 +102,11 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		& h1{
-			font-size: 70px;
+			font-size: 55px;
 			margin-right: 65px;
 		}
 		& .hero-subtitle{
+			font-size: 24px;
 			margin-right: 85px;
 		}
 	}
@@ -352,6 +353,16 @@
 				flex-basis: 100%;
 			}
 		}
+		& .coaching-child-course-topic-wrap{
+			display: flex;
+			& .course-topic-star{
+				flex-basis: 40px;
+				padding-right: 0;
+			}
+			& .course-topic-data{
+				flex-basis: calc(100% - 40px);
+			}
+		}
 	}
 	#course-testimonials{
 		padding: 70px 30px;
@@ -574,6 +585,13 @@
 	}
 	#single-event{
 		& .single-event-wrap{
+			& .single-event-date{
+				font-size: 24px;
+			}
+			& .single-event-title{
+				font-size: 55px;
+				font-weight: 700;
+			}
 			& .single-event-hero{
 				padding: 177px 0 103px;
 				background-size: cover;

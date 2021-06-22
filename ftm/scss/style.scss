@@ -814,7 +814,7 @@ header.fixed_header{
 }
 
 #contact-hero{
-	padding: 200px 0 60px;
+	padding: 60px 0;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -975,6 +975,15 @@ header.fixed_header{
 		color: $black;
 		&:hover{
 			color: $yellow;
+		}
+	}
+	& .coaching-child-course-topic-wrap{
+		display: flex;
+		& .course-topic-star{
+			flex-basis: 35px;
+		}
+		& .course-topic-data{
+			flex-basis: calc(100% - 35px);
 		}
 	}
 }
@@ -1338,8 +1347,12 @@ header.fixed_header{
 					}
 				}
 		& .single-event-wrap{
+			& .single-event-title{
+				font-size: 23px;
+				font-weight: 700;
+			}
 			& .single-event-hero{
-				padding: 20px 25px;
+				padding: 20px 0;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
