@@ -1,0 +1,128 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 15px;
+	}
+	#home-hero{
+		min-height: 690px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items:center;
+		& .header-title-first-line{
+			color: #fff;
+			font-size: 5.2em;
+			font-family: HS-Gilroy, sans-serif;
+			font-weight: 500;
+			line-height: 1;
+		}
+		& .header-title-second-line{
+			color: #fff;
+			font-size: 8.3em;
+			font-family: HS-Gilroy, sans-serif;
+			font-weight: 500;
+			line-height: 1;
+			padding-left: 135px;
+		}
+		& .header-title-third-line{
+			color: #fff;
+			font-size: 3.35em;
+			font-family: HS-Gilroy, sans-serif;
+			font-weight: 500;
+			line-height: 1;
+			padding-left: 45px;
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.header-contact{
+		& ul{
+			& li{
+				&:last-child{
+					padding-left: 20px;
+				}
+				& a{
+
+					& span{
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width : 1400px){
+	body{
+		font-size: 17px;
+	}
+}

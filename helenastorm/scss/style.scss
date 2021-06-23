@@ -1,0 +1,120 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	padding: 15px 0;
+}
+
+.brand{
+	& img{
+		max-height: 115px;
+		width: auto;
+	}
+}
+.green{
+	color: $green;
+}
+.lightgreen{
+	color: $lightgreen;
+}
+.header-contact{
+	& ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			display: inline-block;
+			position: relative;
+			line-height: 1;
+			&:last-child{
+				padding-left: 10px;
+			}
+			& a{
+				font-size: 1.1em;
+				color: $black;
+				&:hover{
+					color: $green;
+				}
+				& span{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+#home-hero{
+	position: relative;
+	min-height: 590px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items:center;
+	& .header-title-first-line{
+		color: #fff;
+		font-size: 3.2em;
+		font-family: HS-Gilroy, sans-serif;
+		font-weight: 500;
+		line-height: 1;
+	}
+	& .header-title-second-line{
+		color: #fff;
+		font-size: 4.3em;
+		font-family: HS-Gilroy, sans-serif;
+		font-weight: 500;
+		line-height: 1;
+		padding-left: 55px;
+	}
+	& .header-title-third-line{
+		color: #fff;
+		font-size: 2em;
+		font-family: HS-Gilroy, sans-serif;
+		font-weight: 500;
+		line-height: 1;
+		padding-left: 15px;
+	}
+}
+
+#our-services{
+	margin-top: -115px;
+	& .our-services-wrap{
+		box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
+		margin-bottom: 45px;
+		position: relative;
+		clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 5%);
+	}
+	& .our-services-bg{
+		background-position: bottom center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 750px;
+	}
+	#our-services-list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			position: relative;
+			padding-left: 75px;
+			font-size: 1.29em;
+		}
+		& .fund-administration:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -10px;
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Fund Administration.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+	}
+}
+
+@import "media";
