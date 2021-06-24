@@ -81,14 +81,21 @@ header{
 
 #our-services{
 	margin-top: -115px;
+	padding: 0;
 	& .our-services-wrap{
 		box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
 		margin-bottom: 45px;
 		position: relative;
-		clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 5%);
+		clip-path: polygon(120% 0%, 120% 120%, -10% 120%, -10% 5%);
+		&:before{
+			content: url('../img/our-services-shape.png');
+			position: absolute;
+			top: 10px;
+			right: -30px;
+		}
 	}
 	& .our-services-bg{
-		background-position: bottom center;
+		background-position: bottom left;
 		background-size: cover;
 		background-repeat: no-repeat;
 		min-height: 750px;
@@ -101,12 +108,14 @@ header{
 			position: relative;
 			padding-left: 75px;
 			font-size: 1.29em;
+			margin-bottom: 40px;
 		}
 		& .fund-administration:before{
 			content: '';
 			position: absolute;
 			left: 0;
-			top: -10px;
+			top: 50%;
+			transform: translateY(-50%);
 			height: 55px;
 			width: 55px;
 			background-image: url('../img/Fund Administration.svg');
@@ -114,6 +123,167 @@ header{
 			background-repeat: no-repeat;
 			background-size:contain;
 		}
+		& .accounting-for-management:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Accounting for Management.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+		& .internal-controls:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Internal Controls.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+		& .advisory-and-consulting:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Advisory and Consulting.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+		& .tax-consulting:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Tax Consulting.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+		& .fund-setup-advisory:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 55px;
+			width: 55px;
+			background-image: url('../img/Fund Set-up Advisory.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+	}
+}
+
+section{
+	padding: 50px 0;
+}
+
+section.colored{
+	padding: 120px 0;
+	background-color: #f0f0f0;
+	clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 5%);
+}
+
+.footer-map{
+	position: relative;
+	line-height: 0;
+	& .contact-section-wrap{
+		padding: 45px 15px;
+		background-color: #fff;
+		box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
+		line-height: 1.76;
+		& #contact-list{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			& li{
+				position: relative;
+				padding-left: 50px;
+				margin-bottom: 15px;
+				& svg{
+					position: absolute;
+					top: -2px;
+					left: 0;
+				}
+				& a{
+					color: $black;
+					font-size: 0.94em;
+					&:hover{
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-widgets{
+	padding: 50px 0 40px;
+	background-color: #202121;
+	font-size: 14px;
+	color: #fff;
+	& svg path{
+		transition: all 0.15s ease-in-out;
+	}
+	& svg polygon{
+		transition: all 0.15s ease-in-out;
+	}
+	& a{
+		color: #fff;
+		&:hover{
+			color: $lightgreen;
+			& svg path{
+				fill: $lightgreen;
+			}
+			& svg polygon{
+				fill: $lightgreen;
+			}
+		}
+	}
+	& #footer-menu{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			margin-bottom: 15px;
+
+		}
+	}
+	& #footer-contact{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			position: relative;
+			padding-left: 45px;
+			margin-bottom: 15px;
+			& svg{
+				position: absolute;
+				top: -2px;
+				left: 0;
+			}
+		}
+	}
+	& .footer-social a{
+		padding-left: 7.5px;
+		padding-right: 7.5px;
 	}
 }
 
