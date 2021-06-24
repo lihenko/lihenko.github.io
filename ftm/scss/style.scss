@@ -51,7 +51,6 @@ header.fixed_header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	& h1{
-		font-size: 23px;
 		line-height: 1;
 	}
 	& .hero-subtitle{
@@ -61,12 +60,8 @@ header.fixed_header{
 
 #site-description{
 	padding: 50px 0 0;
-	& h2{
-		font-size: 1.5em;
-	}
 	& .subtitle{
 		color: #000;
-		font-size: 1em;
 	}
 }
 
@@ -178,12 +173,6 @@ header.fixed_header{
 	}
 	& h4{
 		font-size: 1.17em;
-	}
-	& .subtitle{
-		font-size: 1.5em;
-	}
-	& .description{
-		/*font-size: 0.67em;*/
 	}
 	& .banner{
 		background-color: #1B1C33;
@@ -351,12 +340,8 @@ header.fixed_header{
 
 #what-people-say{
 	padding: 0 0 50px;
-	& h2{
-		font-size: 1.5em;
-	}
 	& .subtitle{
 		color: #000;
-		font-size: 1em;
 	}
 }
 
@@ -742,9 +727,6 @@ header.fixed_header{
 	& .about-hero-subtitle{
 		margin-bottom: 165px;
 	}
-	& h1{
-		font-size: 23px;
-	}
 }
 
 #what-we-do{
@@ -763,12 +745,10 @@ header.fixed_header{
 #meet-founders{
 	& .meet-founders-subtitle{
 		color: #fff;
-		font-size: 1.13em;
 		font-weight: 700;
 	}
 	& .meet-founders-description{
 		color: #fff;
-		/*font-size: 1.22em;*/
 	}
 }
 
@@ -820,7 +800,6 @@ header.fixed_header{
 	background-repeat: no-repeat;
 	& .contact-hero-subtitle{
 		color: #fff;
-		font-size: 1.067em;
 		margin-bottom: 45px;
 	}
 }
@@ -1132,9 +1111,6 @@ header.fixed_header{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	& h1{
-		font-size: 2.2em;
-	}
 	& .hero-subtitle{
 		margin-bottom: 30px;
 	}

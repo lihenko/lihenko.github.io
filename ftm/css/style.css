@@ -55,13 +55,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.23; }
 
 h1 {
-  font-size: 3.3em; }
+  font-size: 36px; }
 
 h2 {
-  font-size: 2.2em; }
+  font-size: 33px; }
 
 h3 {
-  font-size: 1.73em; }
+  font-size: 15px; }
 
 h4 {
   font-size: 1.6em; }
@@ -566,18 +566,14 @@ header.fixed_header {
   background-size: cover;
   background-repeat: no-repeat; }
   #home-hero h1 {
-    font-size: 23px;
     line-height: 1; }
   #home-hero .hero-subtitle {
     margin-right: 45px; }
 
 #site-description {
   padding: 50px 0 0; }
-  #site-description h2 {
-    font-size: 1.5em; }
   #site-description .subtitle {
-    color: #000;
-    font-size: 1em; }
+    color: #000; }
 
 .big-video-poster {
   position: relative;
@@ -694,12 +690,6 @@ header.fixed_header {
 
 #featured-course h4 {
   font-size: 1.17em; }
-
-#featured-course .subtitle {
-  font-size: 1.5em; }
-
-#featured-course .description {
-  /*font-size: 0.67em;*/ }
 
 #featured-course .banner {
   background-color: #1B1C33;
@@ -852,11 +842,8 @@ header.fixed_header {
 
 #what-people-say {
   padding: 0 0 50px; }
-  #what-people-say h2 {
-    font-size: 1.5em; }
   #what-people-say .subtitle {
-    color: #000;
-    font-size: 1em; }
+    color: #000; }
 
 .hr {
   width: 100%;
@@ -1203,8 +1190,6 @@ header.fixed_header {
   background-repeat: no-repeat; }
   #about-hero .about-hero-subtitle {
     margin-bottom: 165px; }
-  #about-hero h1 {
-    font-size: 23px; }
 
 #what-we-do {
   padding: 50px 0; }
@@ -1218,12 +1203,10 @@ header.fixed_header {
 
 #meet-founders .meet-founders-subtitle {
   color: #fff;
-  font-size: 1.13em;
   font-weight: 700; }
 
 #meet-founders .meet-founders-description {
-  color: #fff;
-  /*font-size: 1.22em;*/ }
+  color: #fff; }
 
 #our-team {
   padding: 50px 0; }
@@ -1264,7 +1247,6 @@ header.fixed_header {
   background-repeat: no-repeat; }
   #contact-hero .contact-hero-subtitle {
     color: #fff;
-    font-size: 1.067em;
     margin-bottom: 45px; }
 
 #contact-form-section {
@@ -1567,8 +1549,6 @@ header.fixed_header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  #coaching-child-hero h1 {
-    font-size: 2.2em; }
   #coaching-child-hero .hero-subtitle {
     margin-bottom: 30px; }
 
@@ -1889,6 +1869,12 @@ header.fixed_header {
     line-height: 1.33; }
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.33; }
+  h1 {
+    font-size: 55px; }
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 24px; }
   header {
     border-bottom: 12px solid #F2A400; }
     header .row div.col-lg-2 {
@@ -1899,10 +1885,8 @@ header.fixed_header {
     background-size: cover;
     background-repeat: no-repeat; }
     #home-hero h1 {
-      font-size: 55px;
       margin-right: 65px; }
     #home-hero .hero-subtitle {
-      font-size: 24px;
       margin-right: 85px; }
   .big-video-poster {
     height: 429px; }
@@ -2015,13 +1999,7 @@ header.fixed_header {
 			font-size: 1.6em;
 		}*/ }
   #what-people-say {
-    padding: 50px 0;
-    /*& h2{
-			font-size: 2.2em;
-		}
-		& .subtitle{
-			font-size: 1.6em;
-		}*/ }
+    padding: 50px 0; }
   .upcoming-course-wrap .upcoming-course-button .yellow-button {
     min-width: 122px;
     font-size: 12px;
@@ -2076,10 +2054,6 @@ header.fixed_header {
     flex-basis: calc(100% - 231px); }
   .footer-mobile-menu {
     display: none; }
-  #about-hero h1 {
-    font-size: 58px; }
-  #about-hero .about-hero-subtitle {
-    font-size: 24px; }
   #freebrochure .modal-form-wrap {
     -webkit-flex-basis: 590px;
     -ms-flex-preferred-size: 590px;
@@ -2208,8 +2182,6 @@ header.fixed_header {
     padding: 150px 0 60px; }
     #coaching-child-hero .hero-subtitle {
       margin-bottom: 120px; }
-    #coaching-child-hero h1 {
-      font-size: 3.3em; }
   #upcoming-start-dates .upcoming-start-wrap {
     margin-bottom: 20px; }
     #upcoming-start-dates .upcoming-start-wrap .upcoming-start-date {
@@ -2491,10 +2463,6 @@ header.fixed_header {
     padding: 73px 0 73px 55px; }
   #featured-course h4 {
     font-size: 1.6em; }
-  #featured-course .subtitle {
-    font-size: 1.73em; }
-  #featured-course .description {
-    /*font-size: 0.93em;*/ }
   #featured-course .banner {
     background-color: #1B1C33;
     border-radius: 8px;
