@@ -1,0 +1,260 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	.video-wrap{
+		& .video-bg{
+			min-height: 220px;
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	#page-title{
+		padding: 60px 0;
+	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 280px;
+		}
+	}
+	ul.categories-list{
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap:0 30px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.search{
+		position: relative;
+		top: unset;
+		left: unset;
+	}
+	#page-title{
+		padding: 60px 0;
+		& h1{
+			font-size: 3.77em;
+		}
+	}
+	h2{
+		font-size: 2.66em;
+	}
+	.header-wrap{
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+	}
+	.tools-button{
+		font-size: 1.33em;
+	}
+	.equipment-link{
+		display: block;
+		color: $black;
+		font-weight: 500;
+		height: 100%;
+		border: 2px solid transparent;
+		border-radius: 9px;
+		padding: 20px 15px;
+		&:hover{
+			color: $black;
+			border-color: $green;
+			box-shadow: 0px 0px 11px rgba($green,.3);
+		}
+		& .equipment-tumbnail{
+			min-height: 284px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 9px;
+			margin-bottom: 15px;
+		}
+	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 300px;
+		}
+	}
+	h3.big{
+		font-size: 1.77em;
+		font-weight: 500;
+	}
+	.aligncenter {
+	    float: none;
+	    margin: .5em auto 1em;
+	}
+
+	.alignright {
+	    float: right;
+	    margin: .5em 0 1em 1em;
+	}
+
+	.alignleft {
+	    float: left;
+	    margin: .5em 1em 1em 0;
+	}
+	h3.effect{
+		padding-left: 0;
+		&:before{
+			content: '';
+			width: 82px;
+			height: 7px;
+			background-color: $green;
+			display: block;
+			position: absolute;
+			left: -97px;
+			top: calc(50% - 3.5px);
+		}
+	}
+	table#best-marijuana-seeds-table {
+
+	  border: 1px solid #ccc;
+	  border-collapse: collapse;
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  table-layout: fixed;
+	  & thead{
+	  	position: relative;
+		width: 100%;
+		height: unset;
+		& th{
+			font-weight: 500;
+			background-color: $green;
+			padding: 17px;
+			&:last-child{
+				background-color: transparent;
+				width: 223px;
+			}
+			&:nth-last-child(2){
+				border-bottom-right-radius: 30px;
+			}
+		}
+	  }
+	}
+
+	table#best-marijuana-seeds-table tr {
+	  border: 1px solid #ddd;
+	  padding: .35em;
+	  display: table-row;
+	}
+
+	table#best-marijuana-seeds-table th {
+	  padding: .625em;
+	  text-align: center;
+	  display: table-cell;
+	}
+	table#best-marijuana-seeds-table td {
+	  padding: .625em;
+	  text-align: left;
+	  display: table-cell;
+	  &:before{
+	  	display: none;
+	  }
+	  &:nth-child(odd):not(:last-child){
+	  	background-color: rgba(69, 147, 0, 0.04);
+	  }
+	}
+	.netherlands:after{
+		vertical-align: top;
+	}
+
+	.usa:after{
+		vertical-align: top;
+	}
+
+	.canada:after{
+
+		vertical-align: top;
+	}
+
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body{
+		font-size: 18px;
+	}
+	.footer-posts li{
+		min-height: 44.2px;
+	}
+	.col-xl-20{
+		max-width: 20%;
+		flex: 0 0 20%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.video-wrap{
+		& .video-bg{
+			min-height: 350px;
+		}
+	}
+
+}
+
+@media only screen and (min-width : 1300px){
+	.container{
+		max-width: 1268px;
+	}
+	.home-page-title{
+		margin-right: -90px;
+	}
+}

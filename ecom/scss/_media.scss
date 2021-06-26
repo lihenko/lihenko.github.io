@@ -1,0 +1,212 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	header .green-button{
+		padding: 12px 30px;
+		white-space: nowrap;
+		font-size: 14px;
+	}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.seals-wrap{
+		justify-content: space-between;
+	}
+	#home-hero{
+		background-position: 50% 100%;
+	}
+	#home-hero h1{
+		font-size: 4em;
+	}
+	#three-steps{
+		padding: 11vw 0;
+	}
+	.three-step-line{
+		position: absolute;
+		top: 90px;
+		left: 0;
+		right: 50px;
+		text-align: center;
+	}
+	#three-steps .step1 .step-icon{
+		margin-top: 50px;
+	}
+	#three-steps .step2 .step-icon{
+		margin-top: 25px;
+	}
+	.different-case{
+		width: 33%;
+	}
+	.different-case:nth-child(4){
+		width: 40%;
+	}
+	.different-case:nth-child(5){
+		width: 40%;
+	}
+	.col-lg-five{
+		max-width: 20%;
+	}
+	#services-hero h1{
+		font-size: 4em;
+	}
+	#our-team-hero h1{
+		padding-top: 100px;
+		font-size: 4em;
+	}
+	#our-team-hero .team-data-wrap{
+		justify-content: flex-end;
+	}
+	#case-testiomonial{
+		& .founder-quote{
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 2.28em;
+			&:before{
+				left: -54px;
+				top: -90px;
+			}
+		}
+		& .founder-name{
+			padding-left: 0;
+		}
+	}
+	#case-testiomonial{
+		& .case-client-quote{
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 2.28em;
+			&:before{
+				left: -54px;
+				top: -90px;
+			}
+		}
+		& .case-client-name{
+			padding-left: 0;
+		}
+	}
+	#three-step-hero h1{
+		font-size: 4em;
+	}
+	#single-case-hero h1{
+		font-size: 4em;
+	}
+	#three-step-hero .three-step-right-img{
+		position: absolute;
+		right: -5vw;
+		& img{
+			max-width: unset;
+		}
+	}
+	#three-step-hero .col-lg-9{
+		z-index: 2;
+	}
+	.case-details-image{
+		position: absolute;
+		left: -15vw;
+	}
+	#case-details .container .row{
+		min-height: 630px;
+	}
+	#guides-hero h1{
+		font-size: 4em;
+	}
+	.guide-form{
+		position: absolute;
+	}
+	.guide-form-wrap{
+		margin-top: 37px;
+	}
+	#contact-form h1{
+		font-size: 4em;
+	}
+	#contact-form .contact-form-wrap{
+		margin-top: 37px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.our-team-description{
+		padding-right: 130px;
+	}
+	#our-team-hero{
+		min-height: 45vw;
+	}
+	#vacancies .vacancy-wrap{
+		margin-right: 60px;
+	}
+	.why-3step-title{
+		padding-right: 150px;
+	}
+}
+
+@media only screen and (min-width : 1600px){
+	#services-hero .services-phone{
+		right: 11vw;
+	}
+	.why-3step-image{
+		max-width: unset;
+		margin-left: -125px;
+	}
+}

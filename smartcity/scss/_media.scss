@@ -1,0 +1,119 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 18px;
+	}
+	footer{
+		& #footer-menu{
+			& li{
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	#call-to-action{
+		& .cta-form-wrap{
+			padding: 39px 53px;
+		}
+	}
+	.pagination{
+		& .page-numbers{
+			&.prev{
+				order: 3;
+				width: auto;
+			}
+			&.next{
+				order: 3;
+				width: auto;
+			}
+		}
+	}
+	#reach-out-us{
+		& .reach-out-us-form-wrap{
+			padding: 25px 45px;
+		}
+	}
+	#contact-us{
+		& .contact-form-wrap{
+			padding: 38px 38px 33px;
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	footer{
+		& #footer-menu{
+			& li{
+				padding-left: 27px;
+				padding-right: 27px;
+			}
+		}
+	}
+}

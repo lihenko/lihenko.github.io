@@ -1,0 +1,402 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	padding: 5px 0;
+	position: relative;
+	z-index: 2;
+}
+
+.orange-button{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #fff;
+	background-color: $orange;
+	padding: 13px 33px;
+	border-radius: 8px;
+	min-width: 226px;
+	&:hover{
+		background-color: #fff;
+		color: #000;
+	}
+	&.light:hover{
+		background-color: $blue;
+		color: #fff;
+	}
+	&.linkedin:hover{
+		background-color: $blue;
+		color: #fff;
+	}
+	&.linkedin:after{
+		content: url('../img/Linkedin.svg');
+		display: inline-block;
+		padding-left: 20px;
+		vertical-align: middle;
+		margin-top: -3px;
+	}
+}
+
+.blue-button{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #fff;
+	background-color: $blue;
+	padding: 13px 33px;
+	border-radius: 8px;
+	min-width: 226px;
+	&:hover{
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+.transparent-button{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #fff;
+	background-color: transparent;
+	border:1px solid rgba(255,255,255,0.06);
+	padding: 13px 33px;
+	border-radius: 8px;
+	min-width: 226px;
+	&:hover{
+		background-color: #fff;
+		color: #000;
+	}
+	&.transparent-orange{
+		border-color:$orange;
+		color: #000;
+		&:hover{
+			background-color: $orange;
+			color: #fff;
+		}
+	}
+}
+
+#home-hero{
+	position: relative;
+	margin-top: -95px;
+	padding: 155px 0 60px;
+	background-image: url('../img/hero-bg.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	& .hero-title{
+		position: relative;
+		margin-bottom: 150px;
+	}
+	& .herotitle-splash{
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 275px;
+		border-radius: 8px;
+	}
+	& .hero-buttons-group{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		& a{
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-right: 5px;
+			min-width: 248px;
+		}
+	}
+	& .home-hero-bottom-background{
+		position: absolute;
+		height: 347px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, rgba(8,30,64,0) 0%, #081E40 100%);
+	}
+}
+
+
+.hero-slider{
+	& .hero-slider-subtitle{
+		padding-top: 45px;
+		color: #BCBEC0;
+		font-size: 1.33em;
+	}
+	& .hero-slider-title{
+		font-family: Gotham-Mason, sans-serif;
+		font-size: 3.5em;
+		line-height: 0.8;
+		color: #fff;
+		padding-bottom: 45px;
+	}
+	& .slick-dots{
+		bottom: -45px;
+	}
+	& .slick-dots li{
+		width: 66px;
+		height: 4px;
+		&.slick-active button::before{
+			background-color: $orange;
+		}
+		&:hover button::before{
+			background-color: $orange;
+		}
+	}
+	& .slick-dots li button{
+		width: 66px;
+		height: 4px;
+	}
+	& .slick-dots li button::before{
+		content: '';
+		width: 66px;
+		height: 4px;
+		border-radius: 8px;
+		background-color: #fff;
+		display: block;
+		opacity: 1;
+		transition: all 0.15s ease-in-out;
+	}
+}
+
+#about-company{
+	background-color: #fff;
+	padding: 60px 0;
+}
+
+.blue{
+	color: $blue;
+}
+
+.learn-more{
+	font-size: 0.88em;
+	letter-spacing: 2px;
+	line-height: 1;
+	&:after{
+		content: url('../img/learn-more-arrow.svg');
+		display: inline-block;
+		vertical-align: baseline;
+		margin-left: 25px;
+		transition: all 0.15s ease-in-out;
+	}
+	&:hover:after{
+		margin-left: 30px;
+	}
+}
+
+#what-is-cmmc{
+	padding: 60px 0;
+}
+
+#how-will-cmmc{
+	padding-bottom: 60px;
+}
+
+#experience{
+	padding: 0 0 60px;
+	background-color: #173861;
+	& .experience-title-wrap{
+		background-color: #fff;
+		padding: 80px 15px 160px;
+		margin-bottom: -80px;
+	}
+	& .experience-items-wrap{
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 30px;
+		padding-right: 30px;
+		justify-content: center;
+		& .experience-item{
+			padding: 34px 34px 25px;
+			background-color: #F2F2F2;
+			border-radius: 8px;
+			margin: 5px;
+			flex-basis: calc(20% - 12px);
+			min-width: 238px;
+			transition: all 0.15s ease-in-out;
+			cursor: pointer;
+			&:hover{
+				background-color: darken(#F2F2F2, 3%);
+			}
+			& .experience-icon{
+				width: 112px;
+				height: 112px;
+				background-color: #fff;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			& .experience-title{
+				min-height: 52px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+#get-started{
+	padding: 60px 0;
+}
+
+.contact-form-wrap{
+	padding: 25px 15px;
+	background-color: $orange;
+	border-radius: 8px;
+}
+
+footer{
+	padding: 60px 0;
+	& #footer-menu{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		& li{
+			display: inline-block;
+			padding: 10px 20px;
+			& a{
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				&:hover{
+					color: $orange;
+				}
+			}
+		}
+	}
+	& .copyright{
+		color: #fff;
+		font-size: 12px;
+	}
+}
+
+#page-title{
+	position: relative;
+	margin-top: -95px;
+	padding: 155px 0 60px;
+	background-image: url('../img/hero-bg.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	& .page-title{
+		position: relative;
+		margin-bottom: 150px;
+	}
+	& .pagetitle-splash{
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 275px;
+		border-radius: 8px;
+	}
+	& .page-subtitle{
+		position: absolute;
+		top: 100%;
+		padding-top: 45px;
+	}
+}
+
+.orange{
+	color: $orange;
+}
+
+#cmmc-certification{
+	padding: 60px 0;
+	background-color: #fff;
+}	
+
+#cyber-risk-programs{
+	padding: 60px 0;
+	& .program-icon{
+		width: 112px;
+		height: 112px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	& .program-title{
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 1;
+		letter-spacing: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+ul.orange{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 10px;
+		&:before{
+			content: '';
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: $orange;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 8px;
+		}
+	}
+}
+
+#why-choose{
+	padding-bottom: 60px;
+}
+
+#meet-founder{
+	padding-bottom: 60px;
+	& .meet-founder-wrap{
+		padding: 35px 15px;
+		background-color: #fff;
+	}
+}
+
+#certified{
+	padding: 60px 0;
+	& .transparent-button{
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+}
+
+#our-cmmc-services{
+	padding-bottom: 60px;
+	& .cmmc-services-wrap{
+		padding: 35px 15px;
+		background-color: #fff;
+	}
+	& .transparent-button{
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+}
+
+@import "media";

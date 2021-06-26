@@ -1,0 +1,234 @@
+#left-menu{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	z-index: 9999;
+	& ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		&:before{
+			content: '';
+			display: block;
+			height: 174px;
+			width: 2px;
+			background-color: $gold;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 32px;
+		}
+		&:after{
+			content: '';
+			display: block;
+			height: 174px;
+			width: 2px;
+			background-color: $gold;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 32px;
+		}
+		& li:first-child{
+			margin-bottom: 37px;
+		}
+	}
+
+}
+
+#right-menu{
+	transform: translateX(100%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.9s ease;
+	padding-left: 50px;
+	padding-right: 50px;
+	& ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		& li{
+			margin-bottom: 20px;
+			& a{
+				color: $black;
+				text-transform: uppercase;
+				font-size: 1.1em;
+			}
+			& li{
+				padding-left: 25px;
+				&:first-child{
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+	&.open{
+		transform: translateX(0);
+	}
+}
+
+
+/* Toggle */
+.toggle-btn {
+  display: block;
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  z-index: 9999999; }
+
+.toggle-btn .hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  display: block; }
+
+.hamburger .icon-bar {
+  background-color: $gold;
+  display: block;
+  height: 4px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 25px; }
+
+.hamburger .icon-bar:not(:last-child) {
+  margin-bottom: 4px; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(1) {
+  top: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-open .hamburger .icon-bar:nth-of-type(2) {
+  background-color: transparent; }
+
+.menu-open .hamburger .icon-bar:nth-of-type(3) {
+  top: -10px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+@media only screen and (min-width : 992px){
+	.toggle-btn {
+		display: none;
+	}
+	#left-menu{
+		left: 44px;
+	}
+	#right-menu{
+		transform: translateX(0);
+		left: unset;
+		right: 80px;
+		background-color: unset;
+		width: unset;
+		text-align: right;
+		padding: 0;
+		& ul{
+			padding-top: 60px;
+			& li{
+				margin-bottom: 60px;
+				position: relative;
+				&:before{
+					content: '';
+					width: 2px;
+					height: 55px;
+					background-color: $gold;
+					position: absolute;
+					right: 0;
+					top: -58px;
+				}
+				&:last-child:after{
+					content: '';
+					width: 2px;
+					height: 55px;
+					background-color: $gold;
+					position: absolute;
+					right: 0;
+					top: 28px;
+				}
+				& a{
+					padding-right: 44px;
+				}
+				& a:after{
+					content: '';
+					width: 9px;
+					height: 9px;
+					position: absolute;
+					right: -3px;
+					top: 8px;
+					background-color: #020203;
+					transition: all 0.3s ease-in-out;
+				}
+				& a:hover:after {
+					background-color: $gold;
+				}
+				&.active{
+					& a:after{
+						background-color: $gold;
+					}
+				}
+				& .sub-menu{
+					display: none;
+				}
+				&.active .sub-menu{
+					display: block;
+				}
+				& ul{
+					padding-top: 30px;
+					& li{
+						padding-left: 0;
+						display: flex;
+						justify-content: flex-end;
+						margin-bottom: 30px;
+						&:first-child{
+							padding-top: unset;
+						}
+						&:last-child{
+							margin-bottom: 0;
+						}
+						&:before{
+							height: 80px;
+							top: -30px;
+						}
+						& a{
+							position: relative;
+							max-width: 270px;
+							white-space: normal;
+							color: $gold;
+							font-size: 0.77em;
+							&:after{
+								display: none;
+							}
+						}
+						&.active a:after{
+							content: '';
+							width: 0; 
+							height: 0; 
+							border-top: 8px solid transparent;
+							border-bottom: 8px solid transparent; 
+							border-right:8px solid $gold; 
+							display: block;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							background-color: transparent;
+							z-index: 2;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

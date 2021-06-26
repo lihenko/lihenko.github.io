@@ -1,0 +1,386 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	z-index: 99;
+	position: relative;
+}
+
+#home-hero{
+	min-height: 100vh;
+	margin-top: -100px;
+	padding: 240px 0 140px;
+	position: relative;
+	& h2{
+		font-family: 'Nunito-Maple', sans-serif;
+		color: #fff;
+		font-size: 30px;
+		letter-spacing: .15em;
+		line-height: 1.2em;
+		text-transform: lowercase;
+	}
+	& h1{
+		color: #fff;
+		font-size: 60px;
+		letter-spacing: .02em;
+		line-height: 1em;
+		& span{
+			font-style: italic;
+		}
+	}
+	& .arrow-down{
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		transition: all .3s ease-in-out;
+		& img{
+			height: 80px;
+			width: auto;
+		}
+		& a{
+			padding: 45px 50px;
+		}
+		&:hover{
+			bottom: 25px;
+		}
+	}
+	& .hero-overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		background-color: #000;
+	}
+}
+
+h1{
+	color: #fff;
+	font-size: 80px;
+	letter-spacing: .02em;
+	line-height: 1em;
+	& span{
+		font-style: italic;
+	}
+}
+
+.brand a{
+	color: #fff;
+	font-size: 22px;
+}
+
+.brand.dark a{
+	color: $black;
+}
+
+#property-description{
+	padding: 100px 0 50px;
+}
+
+#welcome{
+	padding: 200px 0;
+}
+
+#history{
+	padding: 50px 0;
+}
+
+#history-image{
+	padding: 200px 0;
+}
+
+#planing{
+	padding: 50px 0;
+}
+
+#one-price{
+	padding: 50px 0;
+}
+
+#about{
+	padding: 50px 0;
+}
+
+#links{
+	padding: 100px 0 0;
+}
+
+.link-wrap{
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	border-right: none;
+	
+	position: relative;
+	&:hover .overlay{
+		opacity: 0;
+	}
+	& .overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #000;
+		opacity: 0;
+		transition: all .3s ease-in-out;
+	}
+	& h4{
+		color: #fff;
+		font-size: 26px;
+		z-index: 2;
+	}
+}
+
+#map{
+	padding-bottom: 40px;
+}
+
+#booking{
+	height: 680px;
+}
+
+footer{
+	padding: 80px 0;
+	background-color: #f8f8f8;
+}
+
+#footer-menu{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	& li{
+		display: inline-block;
+		padding-left: 7.5px;
+		padding-right: 7.5px;
+		& a{
+			color: #0009;
+			font-style: normal;
+			font-size: 15px;
+			letter-spacing: .06em;
+			line-height: 1.5em;
+			text-transform: none;
+			transition: all .3s ease-in-out;
+			&:hover{
+				color: #0000004d;
+			}
+		}
+	}
+}
+
+.footer-form{
+	font-size: 15px;
+	margin-bottom: 50px;
+	& input:not([type="submit"]){
+		height: 46px;
+		border: 1px solid #0000001f;
+		padding: 10px 25px;
+		margin-right: 10px;
+	}
+}
+
+/* Sales */
+
+#sales-hero{
+	height: 100vh;
+	& h1{
+		color: #fff;
+		font-size: 52px;
+		letter-spacing: .02em;
+		line-height: 1em;
+		& span{
+			font-style: italic;
+		}
+	}
+	& .arrow-down{
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		transition: all .3s ease-in-out;
+		& img{
+			height: 80px;
+			width: auto;
+		}
+		& a{
+			padding: 45px 50px;
+		}
+		&:hover{
+			bottom: 25px;
+		}
+	}
+}
+
+.nature{
+	background-image: url('../img/nature.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.farm{
+	background-image: url('../img/farm.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.house{
+	background-image: url('../img/house.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.waterfalls{
+	background-image: url('../img/waterfalls.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.big-house{
+	background-image: url('../img/big-house.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.farmhouse{
+	background-image: url('../img/farmhouse.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.land{
+	background-image: url('../img/land.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.garage{
+	background-image: url('../img/garage.jpeg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.direction1{
+	background-image: url('../img/direction1.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+.direction2{
+	background-image: url('../img/direction2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 320px;
+}
+#call-to-action{
+	height: 680px;
+	& a{
+		color: #fff;
+		font-size: 36px;
+		line-height: 1;
+	}
+	& p.big-email{
+		color: #fff;
+		font-size: 36px;
+		line-height: 1;
+	}
+}
+
+.gold{
+	color: $gold;
+}
+
+/*Sales */
+
+#rent-description{
+	padding: 100px 0;
+}
+
+#waterfalls{
+	padding: 200px 0;
+}
+
+#price{
+	padding: 100px 0;
+}
+
+.form-wrap input:not([type="submit"]){
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.form-wrap textarea{
+	width: 100%;
+	height: 86px;
+	padding: 10px 15px;
+}
+
+#contact-form{
+	padding: 100px 0;
+}
+
+#space-one-gallery{
+	padding: 50px 0 100px;
+}
+
+.gallery-item{
+	height: 220px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rent-description-2{
+	padding: 100px 0 50px;
+}
+
+#gallery{
+	padding: 50px 0;
+}
+
+.gallery{
+	display: grid;
+	grid-gap:15px;
+	& .big-gallery-item{
+		min-height: calc(100vw - 47px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+#amenities-hero{
+	min-height: 750px;
+	margin-top: -100px;
+	padding: 240px 0 140px;
+	position: relative;
+	& h1{
+		color: #fff;
+		font-size: 60px;
+		letter-spacing: .02em;
+		line-height: 1em;
+		& span{
+			font-style: italic;
+		}
+	}
+
+}
+
+.fullwidth-image{
+	padding: 250px 0;
+}
+
+@import "media";

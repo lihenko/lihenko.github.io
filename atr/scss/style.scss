@@ -1,0 +1,58 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+body{
+
+}
+
+.overlay{
+	background-image: url('../img/bg-atr.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.title{
+	margin-top: 220px;
+}
+
+ul.office-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.dark-button{
+	color: #fff;
+	width: 100%;
+	background-color: rgba(darken(#0808DE, 20%), 0.6);
+	border-radius: 20px;
+	margin-bottom: 30px;
+	&:hover{
+		color: #fff;
+		background-color: darken(#0808DE, 20%);
+	}
+}
+.light-button{
+	color: #fff;
+	width: 100%;
+	background-color: rgba(lighten(#E31313, 10%), 0.6);
+	border-radius: 20px;
+	margin-bottom: 30px;
+	&:hover{
+		color: #fff;
+		background-color: lighten(#E31313, 10%);
+	}
+}
+
+@import "media";

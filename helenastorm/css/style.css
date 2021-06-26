@@ -360,11 +360,14 @@ header {
 #our-services {
   margin-top: -115px;
   padding: 0; }
+<<<<<<< HEAD
   #our-services .bg-hs {
     background-image: url("../img/HS-bg.png");
     background-position: center;
     background-size: 86%;
     background-repeat: no-repeat; }
+=======
+>>>>>>> 6ef9886284f85cc4c3f77ca6cdf5d932faf91df2
   #our-services .our-services-wrap {
     box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
     margin-bottom: 45px;

@@ -1,0 +1,169 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+
+	.countdown-row {
+		width: 100%;
+		& .countdown-amount{
+			font-size: 3em;
+		}
+		& .countdown-section{
+			padding: 25px;
+		}
+		& .countdown-period{
+			font-size: 0.7em;
+		}
+	}
+
+	body{
+		font-size: 18px;
+	}
+	#road-map{
+		& .map-element{
+			width: 50%;
+			padding-bottom: 0;
+			&:nth-child(odd){
+				margin-left: 50%;
+				padding-left: 130px;
+				&:before{
+					left: -18px;
+				}
+				&:after{
+					left: -13px;
+				}
+			}
+			&:nth-child(even){
+				text-align: right;
+				padding-right: 130px;
+				padding-left: unset;
+				&:before{
+					left: unset;
+					right: -22px;
+				}
+				&:after{
+					left: unset;
+					right:-15px;
+				}
+			}
+			& .element-description{
+				font-size: 1.3em;
+			}
+		}
+		& .road-map{
+			&:before{
+				content: '';
+				position: absolute;
+				left: 50%;
+				height: calc(100% - 70px);
+				display: block;
+				border-left: 2px dashed #fff;
+			}
+		}
+		#rocket{
+			z-index: 70;
+			left: calc(50% + 5px);
+			top: -130px;
+			transform: translateX(-50%);
+			transform-origin: -1%;
+			& img{
+				width: 214px;
+				height: auto;
+			}
+		}
+	}
+	footer{
+		& .sosial-wrap{
+			justify-content: space-between;
+			& .social-link{
+				flex-basis: unset;
+			}
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	.countdown-row {
+		& .countdown-amount{
+			font-size: 4em;
+		}
+	}
+	body{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width : 1350px){
+	.container{
+		max-width: 1350px;
+	}
+	.countdown-row {
+		& .countdown-amount{
+			font-size: 5em;
+		}
+	}
+}

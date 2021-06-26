@@ -1,0 +1,103 @@
+@import "vars";
+
+*{
+	box-sizing: border-box;
+	&:before, &:after{
+		box-sizing: border-box;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $black;
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: GrowYour420-Roboto, sans-serif;
+	overflow-x: hidden;
+	background: #DCE1D8;
+}
+
+p{
+	margin-bottom: 1.66em;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: GrowYour420-Roboto, sans-serif;
+}
+
+h1{
+  font-size: 3.3em;
+}
+
+h2{
+  font-size: 1.44em;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.29em;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 14px;
+}
+
+a{
+	color:$green;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color:#6EBD27;
+		text-decoration: none;
+	}
+}
+
+a:hover, a:active, a:focus {
+	outline: none;
+}
+
+button, button:hover, button:active, button:focus {
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+object, embed { 
+  outline: none;
+}
+
+ul{
+	margin: 0;
+	padding-left: 15px;
+	list-style-type:"- ";
+}
+
+::placeholder { 
+  color: $grey;
+  opacity: 1; 
+}
+
+.aligncenter,.alignleft,.alignright {
+    display: block;
+    padding: 0 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

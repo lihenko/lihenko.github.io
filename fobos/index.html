@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row h-100">
+			<div class="col-lg-2">
+				<div class="brand text-lg-center">
+					<a href="/">
+						<img src="img/Logo.png" alt="Logo" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-10 my-auto">
+				<div class="main-menu">
+					<div class="menu-container">
+					    <ul id="primary-menu">
+							<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-134"><a href="#">Інтернет на дому</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="#">Орбіта ТБ</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="#">Корпоративним клієнтам</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="#">Сервісний центр</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="#">Про компанію</a></li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+			<div class="toggle-btn">
+	            <span class="hamburger">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </span>
+	       	</div>
+		</div>
+	</div>
+</header>
+<section id="home-hero">
+	<div class="home-slider">
+		<div class="slider-item" >
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row h-100">
+					<div class="col-lg-6 col-xl-4 order-xl-2">
+						<h1 class="slider-title text-center text-xl-left px-4 px-lg-0">З нами ваші можливості безкрайні</h1>
+					</div>
+					<div class="col-lg-6 col-xl-4 px-lg-0 order-xl-3">
+						<div class="hero-action mt-lg-5 mb-3 d-none d-lg-block">
+							<span>Швидкість до</span>
+						</div>
+						<div class="slider-action-button d-none d-lg-block">
+							100 Мбіт/с
+							<div class="button-overlay"></div>
+						</div>
+						<div class="hero-action mt-3 mb-5 arrow d-none d-lg-block">
+							Оптоволокно у кожен приватний будинок!
+						</div>
+						<div class="hero-action mb-4 d-lg-none text-center">
+							Швидкість <span>до 100 Мбіт/с!</span><br>Оптоволокно у кожен приватний будинок!
+						</div>
+						<div class="action-button text-center text-lg-left mb-4 mb-lg-0">
+							<a href="#" class="btn gold-button">Підключитись</a>
+						</div>
+					</div>
+					<div class="col-xl-4 mt-auto order-xl-1">
+						<img src="img/slider-image.png" alt="" class="mx-auto mx-xl-0">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section id="home-buttons">
+	<div class="container px-lg-0">
+		<div class="row">
+			<div class="col-12 col-md-6 col-xl-3 button-wrap px-0">
+					<a href="">
+						<div class="icon">
+							<svg width="38" height="50" viewBox="0 0 38 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M36.5 0H33.1667C32.7064 0 32.3334 0.373047 32.3334 0.833301V39.9892C32.3334 42.7453 30.0892 44.9892 27.3334 44.9892L16.4991 45C13.7443 45 11.5 42.7556 11.5 40V33.3333H13.1667C13.5325 33.3333 13.8556 33.0947 13.9632 32.745L16.0103 26.0916C16.0128 26.0841 16.015 26.0766 16.0173 26.069L17.2965 21.9117C17.3209 21.8323 17.3333 21.7497 17.3333 21.6666V10.8333C17.3333 10.373 16.9602 10 16.5 10V1.6667C16.5 1.20645 16.1268 0.833398 15.6667 0.833398H13.1667C13.1667 0.373145 12.7936 9.76563e-05 12.3334 9.76563e-05H5.6667C5.20644 9.76563e-05 4.83339 0.373145 4.83339 0.833398H2.3334C1.87314 0.833398 1.50009 1.20654 1.50009 1.6667V10C1.03984 10 0.666794 10.373 0.666794 10.8333V21.6666C0.666794 21.7497 0.679196 21.8323 0.70361 21.9117L0.958982 22.7418C0.960154 22.7455 0.961227 22.7492 0.962399 22.7529L1.9832 26.0706C1.98515 26.0772 1.98711 26.0837 1.98916 26.0901L3.01201 29.4144C3.01201 29.4144 3.01201 29.4144 3.01201 29.4145L4.03681 32.745C4.14443 33.0947 4.46748 33.3333 4.8333 33.3333H6.5V40C6.5 45.5145 10.9855 50 16.5 50L27.3342 49.9892C32.848 49.9892 37.3333 45.5041 37.3333 39.9892V0.833301C37.3333 0.373047 36.9602 0 36.5 0ZM14.8333 2.5V10H13.1666H11.5V8.3333H12.3333C12.7935 8.3333 13.1666 7.96025 13.1666 7.5V2.5H14.8333ZM7.3333 11.6667H10.6666H12.2283C11.8584 13.1047 10.5536 14.1667 8.9999 14.1667C7.44628 14.1667 6.1414 13.1047 5.77148 11.6667H7.3333ZM11.5 1.6667V6.6667H10.6667C10.2064 6.6667 9.83339 7.03984 9.83339 7.5V10H8.16669V7.5C8.16669 7.03975 7.79365 6.6667 7.33339 6.6667H6.5V1.6667H11.5ZM3.1667 2.5H4.83339V7.5C4.83339 7.96025 5.20644 8.3333 5.6667 8.3333H6.5V10H4.8333H3.1667V2.5ZM4.93603 30H6.49961C6.95986 30 7.33291 29.627 7.33291 29.1667C7.33291 28.7064 6.95986 28.3334 6.49961 28.3334H4.42324L3.91045 26.6667H6.50019C6.96044 26.6667 7.33349 26.2937 7.33349 25.8334C7.33349 25.3731 6.96044 25.0001 6.50019 25.0001H3.39765L2.88486 23.3334H6.4998C6.96005 23.3334 7.3331 22.9604 7.3331 22.5001C7.3331 22.0398 6.96005 21.6668 6.4998 21.6668H2.37187L2.3333 21.5415V20H6.5C6.96025 20 7.3333 19.627 7.3333 19.1667C7.3333 18.7064 6.96025 18.3334 6.5 18.3334H2.3333V11.6667H4.07041C4.46718 14.0315 6.52216 15.8334 9 15.8334C11.4778 15.8334 13.5328 14.0316 13.9296 11.6667H15.6667V18.3334H11.5C11.0397 18.3334 10.6667 18.7064 10.6667 19.1667C10.6667 19.627 11.0397 20 11.5 20H15.6667V21.5414L15.6281 21.6667H11.5C11.0397 21.6667 10.6667 22.0397 10.6667 22.5C10.6667 22.9603 11.0397 23.3333 11.5 23.3333H15.1153L14.6024 25H11.5C11.0397 25 10.6667 25.3731 10.6667 25.8333C10.6667 26.2935 11.0397 26.6666 11.5 26.6666H14.0896L13.5768 28.3333H11.5C11.0397 28.3333 10.6667 28.7063 10.6667 29.1666C10.6667 29.6269 11.0397 29.9999 11.5 29.9999H13.064L12.5512 31.6666H10.6667H7.33339H5.44892L4.93603 30ZM35.6667 39.9892C35.6667 44.5836 31.9276 48.3225 27.3334 48.3225L16.4992 48.3333C11.9061 48.3333 8.16669 44.5938 8.16669 40V33.3333H9.83339V40C9.83339 43.6761 12.824 46.6667 16.5001 46.6667L27.3343 46.6559C31.0098 46.6559 34.0001 43.6658 34.0001 39.9892V1.6667H35.6668V39.9892H35.6667Z"/>
+								</svg>
+						</div>
+						<div class="link-title">
+							Залишити заявку на підключення
+						</div>
+					</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 button-wrap px-0">
+					<a href="">
+						<div class="icon">
+							<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M40.1806 35.8517C39.8735 35.8517 39.5649 35.778 39.2814 35.6289C38.6436 35.2939 38.2473 34.6386 38.2473 33.918V32.2033H30.178C29.639 32.2033 29.2015 31.7661 29.2015 31.2267V25.7332C29.2015 25.1938 29.639 24.7566 30.178 24.7566H38.2473V23.0423C38.2473 22.3217 38.6436 21.6659 39.2814 21.331C39.9192 20.9957 40.6841 21.0419 41.2773 21.4508L49.1645 26.8886C49.6875 27.2495 50 27.8446 50 28.4801C50 29.1157 49.6875 29.7104 49.1645 30.0712L41.2773 35.5091C40.9477 35.7364 40.5651 35.8517 40.1806 35.8517ZM31.1546 30.2501H39.2238C39.7632 30.2501 40.2004 30.6873 40.2004 31.2267V33.8791L48.0312 28.4797L40.2004 23.0808V25.7332C40.2004 26.2726 39.7628 26.7097 39.2238 26.7097H31.1546V30.2501ZM48.0556 28.4965C48.056 28.4969 48.0564 28.4969 48.0564 28.4973L48.6099 27.6928L48.0556 28.4965Z"/>
+							<path d="M25.4997 30.4996C26.0391 30.4996 26.4763 30.0625 26.4763 29.5231V26.5087C26.4763 24.2588 24.646 22.4285 22.3965 22.4285H19.0861C21.4539 20.6482 22.9881 17.8162 22.9881 14.6324C22.9881 9.25636 18.6142 4.88281 13.2381 4.88281C7.86209 4.88281 3.48816 9.25636 3.48816 14.6324C3.48816 17.8162 5.02243 20.6482 7.39021 22.4285H4.07982C1.83029 22.4289 0 24.2588 0 26.5087V40.1009C0 40.4079 0.144577 40.6975 0.390244 40.8817C4.11835 43.6813 8.56094 45.1611 13.2381 45.1611C17.9153 45.1611 22.3579 43.6813 26.086 40.8817C26.3317 40.6975 26.4763 40.4079 26.4763 40.1009V38.3053C26.4763 37.7659 26.0391 37.3287 25.4997 37.3287C24.9603 37.3287 24.5232 37.7659 24.5232 38.3053V39.6053C21.2181 41.9636 17.3267 43.2079 13.2381 43.2079C9.14955 43.2079 5.25818 41.9636 1.95312 39.6053V26.5087C1.95312 25.3361 2.90718 24.382 4.07982 24.382H22.3961C23.5691 24.382 24.5232 25.3361 24.5232 26.5087V29.5231C24.5232 30.0625 24.9603 30.4996 25.4997 30.4996ZM5.44128 14.6324C5.44128 10.3333 8.93898 6.83594 13.2381 6.83594C17.5373 6.83594 21.035 10.3333 21.035 14.6324C21.035 18.9312 17.5373 22.4285 13.2381 22.4285C8.93898 22.4285 5.44128 18.9312 5.44128 14.6324Z"/>
+							<path d="M25.5001 34.8892C25.0919 34.8892 24.718 34.6245 24.5803 34.2411C24.4453 33.865 24.5601 33.4248 24.868 33.1677C25.1907 32.898 25.6565 32.861 26.015 33.083C26.3564 33.2939 26.5361 33.7097 26.4572 34.103C26.3664 34.5532 25.9605 34.8892 25.5001 34.8892Z"/>
+							</svg>
+
+						</div>
+						<div class="link-title">
+							Особистий кабінет
+						</div>
+					</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 button-wrap px-0">
+					<a href="">
+						<div class="icon">
+							<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M28.3333 0H11.6667C9.36914 0 7.5 1.86914 7.5 4.1667V34.1667C7.5 36.4642 9.36914 38.3334 11.6667 38.3334H26.6667V36.6667H11.6667C10.2884 36.6667 9.1667 35.545 9.1667 34.1667V4.1667C9.1667 2.78838 10.2884 1.6667 11.6667 1.6667H28.3334C29.7117 1.6667 30.8334 2.78838 30.8334 4.1667V28.3334H32.5V4.1667C32.5 1.86914 30.6308 0 28.3333 0Z"/>
+								<path d="M40.4925 22.1967L32.3175 11.98L31.015 13.0217L39.19 23.2375C40.2508 24.5625 40.8341 26.2275 40.8333 27.925V48.3333H28.6417C24.3368 48.3333 20.8334 44.8308 20.8334 40.525V37.5H19.1667V40.525C19.1667 45.7491 23.4176 50 28.6417 50H41.6667C42.1276 50 42.5 49.6275 42.5 49.1667V27.9259C42.5009 25.8525 41.7884 23.8175 40.4925 22.1967Z"/>
+								<path d="M21.6634 19.6525C22.2484 19.6692 22.7926 19.9125 23.1934 20.3375L34.3926 32.2375L35.6068 31.095L24.4059 19.1941C23.6984 18.4449 22.7408 18.0158 21.7109 17.9866C20.67 17.9516 19.7009 18.3307 18.9609 19.03C18.9517 19.0391 18.885 19.1024 18.8767 19.1116C17.4526 20.5399 17.3567 22.7816 18.6559 24.33L25.8334 32.805V35.3833C25.8325 39.9883 28.7284 44.1658 33.0409 45.7807L33.6259 44.2199C29.9609 42.8474 27.4992 39.2966 27.5 35.3833V32.5C27.5 32.3033 27.43 32.1116 27.3026 31.9608L19.9301 23.255C19.1926 22.3766 19.2468 21.1008 20.0968 20.25C20.5217 19.8483 21.0767 19.6491 21.6634 19.6525Z"/>
+								<path d="M27.5 1.66669H25.8333V22.5H27.5V1.66669Z"/>
+								<path d="M23.3334 27.5H21.6667V37.5H23.3334V27.5Z"/>
+								<path d="M23.3334 0.833313H21.6667V19.1666H23.3334V0.833313Z" fill="#2B74B9"/>
+								<path d="M13.3335 4.16669H11.6667V15H13.3335V4.16669Z"/>
+								<path d="M17.5 4.16669H15.8333V10.8334H17.5V4.16669Z"/>
+								<path d="M17.5001 27.5H12.5C12.0401 27.5 11.6667 27.8725 11.6667 28.3333V33.3333C11.6667 33.7941 12.0401 34.1666 12.5 34.1666H17.5001C17.96 34.1666 18.3334 33.7941 18.3334 33.3333V28.3333C18.3334 27.8725 17.96 27.5 17.5001 27.5ZM16.6668 32.5H13.3334V29.1667H16.6668V32.5Z"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="50" height="50" fill="white"/>
+								</clipPath>
+								</defs>
+								</svg>
+
+						</div>
+						<div class="link-title">
+							Поповнити рахунок
+						</div>
+					</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 button-wrap px-0">
+					<a href="">
+						<div class="icon">
+							<svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M47.8745 0.251587H12.9493C11.776 0.252954 10.8251 1.20377 10.8238 2.37711V12.0103L9.2267 9.61473C8.49566 8.51202 7.02547 8.18118 5.89258 8.86455L2.60681 10.84C1.53076 11.4714 0.741407 12.4953 0.404605 13.6966C-0.794029 18.061 0.0953505 25.5804 11.1322 36.6189C19.9093 45.3869 26.4534 47.7483 30.9637 47.7483C32.0079 47.7531 33.0481 47.6174 34.0561 47.3449C35.2569 47.0081 36.2808 46.2198 36.9135 45.1453L38.8864 41.8561C39.5671 40.7241 39.2365 39.2569 38.1363 38.526L30.2685 33.2814C29.1892 32.5676 27.7426 32.8023 26.9443 33.8207L24.6537 36.7656C24.4143 37.0807 23.98 37.1725 23.6335 36.9814L23.1975 36.7413C21.763 35.9595 19.9776 34.9859 16.3717 31.3801C15.9816 30.9899 15.6282 30.6249 15.2965 30.2756H47.8745C49.0449 30.2765 49.9954 29.3304 50 28.16V2.37711C49.9986 1.20377 49.0478 0.252954 47.8745 0.251587ZM22.3999 38.2052L22.8233 38.4377C23.8877 39.0329 25.2276 38.7568 25.9699 37.7892L28.2605 34.8444C28.5209 34.5127 28.9921 34.4362 29.3441 34.6685L37.2118 39.9131C37.5692 40.1513 37.6767 40.6282 37.456 40.9967L35.4831 44.2859C35.071 44.9924 34.4016 45.512 33.6151 45.7362C29.675 46.8198 22.7792 45.903 12.3132 35.4362C1.84725 24.9695 0.933837 18.0743 2.01487 14.1375C2.23885 13.3511 2.75821 12.6818 3.46434 12.2696L6.75353 10.2958C7.12208 10.0756 7.59866 10.1829 7.8371 10.54L13.0842 18.4077C13.3169 18.7596 13.2404 19.2312 12.9083 19.4913L9.96252 21.7827C8.9952 22.5247 8.71896 23.8643 9.31402 24.9285L9.54738 25.3519C10.3809 26.8806 11.417 28.7827 15.1938 32.5587C18.9707 36.3347 20.872 37.3716 22.3999 38.2052ZM48.333 28.1601C48.3303 28.4109 48.1252 28.6121 47.8746 28.6102H13.7928C12.7102 27.3722 11.7766 26.0115 11.0112 24.5559L10.7711 24.1183C10.5797 23.7725 10.6713 23.3386 10.9862 23.0997L13.932 20.8083C14.9508 20.0103 15.1855 18.5634 14.4713 17.4841L12.4908 14.5117V2.37711C12.4894 2.25511 12.5373 2.1377 12.6235 2.05144C12.7098 1.96519 12.8272 1.91733 12.9492 1.9187H47.8745C47.9965 1.91733 48.1139 1.96519 48.2002 2.05144C48.2864 2.1377 48.3343 2.25511 48.3329 2.37711V28.1601H48.333Z"/>
+							<path d="M45.0037 4.11091L31.0728 14.676C30.6786 14.9624 30.1449 14.9624 29.7508 14.676L15.825 4.11091C15.4581 3.83262 14.935 3.90451 14.6568 4.2714C14.3785 4.63829 14.4504 5.16136 14.8173 5.43956L28.7448 16.0038C29.7357 16.7358 31.0881 16.7358 32.079 16.0038L46.0107 5.43956C46.187 5.30593 46.303 5.10764 46.333 4.88845C46.363 4.66925 46.3046 4.44713 46.1707 4.27101C45.8925 3.90481 45.3703 3.83321 45.0037 4.11091Z"/>
+							<path d="M23.2984 16.0739L14.7597 25.2178C14.4457 25.5545 14.4642 26.0821 14.8009 26.396C15.1376 26.71 15.6652 26.6915 15.9791 26.3548L24.5179 17.2068C24.8 16.8664 24.7673 16.3651 24.4435 16.0641C24.1196 15.7631 23.6171 15.7674 23.2984 16.0739Z"/>
+							<path d="M37.5803 16.0738C37.2664 15.7371 36.7389 15.7185 36.4021 16.0326C36.0654 16.3465 36.0469 16.874 36.3609 17.2108L44.8972 26.3548C45.2111 26.6915 45.7386 26.71 46.0754 26.396C46.4121 26.082 46.4307 25.5546 46.1166 25.2178L37.5803 16.0738Z"/>
+							</svg>
+						</div>
+						<div class="link-title">
+							Контакти
+						</div>
+					</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="pay-online">
+	<div class="container">
+		<div class="overlay"></div>
+		<div class="row h-100">
+			<div class="col-lg-6 text-white text-center text-lg-left position-relative order-lg-2">
+				<h2 class="mb-4">Оплата онлайн</h2>
+				<div class="mb-5">
+					Поповнюй свій рахунок не виходячи з дому!<br>Приймаэмо картки будь-якого банку.
+				</div>
+				<div class="pay-button mb-5">
+					<a href="" class="btn gold-button">Оплатити онлайн</a>
+				</div>
+				<div class="cards d-none d-lg-block">
+					<img src="img/CreditCards.png" alt="">
+				</div>
+			</div>
+			<div class="col-lg-6 mt-auto text-center">
+				<img src="img/iPhoneX.png" alt="" class="pay-online-img img-fluid ml-4">
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section id="news">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 mb-4">
+				<h2>
+					Новини
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture.jpg);"></div>	
+						<div class="news-title mb-3">
+							Зміна графіку роботи офісу на період карантину
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture1.jpg);"></div>	
+						<div class="news-title mb-3">
+							Зміна графіку роботи 
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture2.jpg"></div>	
+						<div class="news-title mb-3">
+							Терміново! Ремонтні роботи на магістралі 
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture.jpg);"></div>	
+						<div class="news-title mb-3">
+							Зміна графіку роботи офісу на період карантину
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture1.jpg);"></div>	
+						<div class="news-title mb-3">
+							Зміна графіку роботи 
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xl-4 mb-5">
+				<div class="news-wrap h-100">
+					<a href="#">
+						<div class="news-thumbnail mb-2" style="background-image: url(img/Picture2.jpg"></div>	
+						<div class="news-title mb-3">
+							Терміново! Ремонтні роботи на магістралі 
+						</div>
+					</a>
+					<div class="row no-gutters post-data mx-0">
+						<div class="col-sm-6">
+							<div class="date">
+								Березень 18, 2020
+							</div>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<a href="#" class="link-more">Докладніше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 text-center">
+				<a href="#" class="btn transparent-button">Завантажити ще</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="plans">
+	<div class="container">
+		<div class="row h-100 no-gutters">
+			<div class="col-lg-3 position-relative">
+				<h2>Тарифи</h2>
+					<div id="filter-button">
+						<img src="img/filter.svg" alt="">
+					</div>
+				    <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				      <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Горішні Плавні</a>
+				      <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Піддубне, Низи</a>
+				      <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Келеберда, Селівка, Карпівка</a>
+				      <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Дмитрівка</a>
+				      <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Світлогорськ</a>
+				      <a class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">Холор</a>
+				      <a class="nav-link" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-7" aria-selected="false">Решетилівка</a>
+				      <a class="nav-link" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-8" aria-selected="false">Успенка</a>
+				    </div>
+			</div>
+		  <div class="col-lg-9">
+		    <div class="tab-content" id="v-pills-tabContent">
+		      <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+		      	<div class="row no-gutters">
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-max"></div>
+		      			<div class="tarif-title">
+		      				Гігабіт
+		      			</div>
+		      			<div class="tarif-speed">
+		      				1000 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				150 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-middle"></div>
+		      			<div class="tarif-title">
+		      				Максимальний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				20 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				125 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      		<div class="col-lg-4 tarif-item">
+		      			<div class="tarif-logo-low"></div>
+		      			<div class="tarif-title">
+		      				Комфортний
+		      			</div>
+		      			<div class="tarif-speed">
+		      				75 Мбіт/c
+		      			</div>
+		      			<div class="tarif-price">
+		      				135 грн/міс
+		      			</div>
+		      			<div class="tarif-order">
+		      				<a href="#" class="btn order-button">Підключити</a>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+</section>
+<div class="footer-top">
+	<div class="container">
+		<div class="row h-100">
+			<div class="col-lg-2 text-center text-lg-left">
+				<a href="/">
+					<img src="img/Footer-Logo.png" alt="Logo" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-10 my-auto">
+				<div class="footer-menu">
+					<div class="menu-container">
+					    <ul id="footer-menu">
+							<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-134"><a href="https://ch-mark.ru/">Інтернет на дому</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://ch-mark.ru/novosti/">Орбіта ТБ</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://ch-mark.ru/novosti/">Корпоративним клієнтам</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://ch-mark.ru/novosti/">Сервісний центр</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://ch-mark.ru/novosti/">Про компанію</a></li>
+							<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153 button"><a href="https://ch-mark.ru/novosti/">Підключитись</a></li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 text-white order-xl-6 mb-5 text-center text-lg-left">
+				<div class="sosial-title">
+					Ми у соц. мережах
+				</div>
+				<div class="sosial-links">
+					<a href="#"><img src="img/watsapp.svg" alt=""></a>
+					<a href="#"><img src="img/viber.svg" alt=""></a>
+					<a href="#"><img src="img/vk.svg" alt=""></a>
+					<a href="#"><img src="img/instagramm.svg" alt=""></a>
+					<a href="#"><img src="img/twitter.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="col-xl-9">
+				<div class="address-title">
+					<div class="title">
+						м. Горішні Плавні
+					</div>
+				</div>
+				<div class="row text-white mt-3 mb-3">
+					<div class="col-lg-4 mb-3">
+						<div class="service-name mb-2">
+							Відділ обслуговування Інтернет абонентів
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:063-422-0050">063-422-0050</a>
+								</li>
+								<li>
+									<a href="tel:067-803-3933">067-803-3933</a>
+								</li>
+								<li>
+									<a href="tel:095-514-1741">095-514-1741</a>
+								</li>
+								<li>
+									<a href="mailto:foboskoms@gmail.com">foboskoms@gmail.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<div class="service-name mb-2">
+							Крамниця електронних послуг “Твій&nbsp;час”
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:068-232-5415">068-232-5415 (Viber, Telegram)</a>
+								</li>
+								<li>
+									<a href="tel:067- 736-8748">067- 736-8748</a>
+								</li>
+								<li>
+									<a href="tel:093-029-2616">093-029-2616</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<div class="service-name mb-2">
+							Сервісний центр
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:068-232-5415">068-232-5415 (Viber, Telegram)</a>
+								</li>
+								<li>
+									<a href="tel:067- 736-8748">067- 736-8748</a>
+								</li>
+								<li>
+									<a href="tel:093-029-2616">093-029-2616</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3">
+				<div class="address-title">
+					<div class="title">
+						м. Решетилівка
+					</div>
+				</div>
+				<div class="row text-white mt-3 mb-3">
+					<div class="col-xl-12 mb-3">
+						<div class="service-name mb-2">
+							Відділ обслуговування Інтернет абонентів
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:063-422-0050">063-422-0050</a>
+								</li>
+								<li>
+									<a href="tel:067-803-3933">067-803-3933</a>
+								</li>
+								<li>
+									<a href="tel:095-514-1741">095-514-1741</a>
+								</li>
+								<li>
+									<a href="mailto:foboskoms@gmail.com">foboskoms@gmail.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6">
+				<div class="address-title">
+					<div class="title">
+						м. Світловодськ
+					</div>
+				</div>
+				<div class="row text-white mt-3 mb-3">
+					<div class="col-lg-6 mb-3">
+						<div class="service-name mb-2">
+							Відділ обслуговування Інтернет абонентів
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:052-362-0777">052-362-0777</a>
+								</li>
+								<li>
+									<a href="tel:093-037-2406">093-037-2406</a>
+								</li>
+								<li>
+									<a href="tel:098-627-7056">098-627-7056</a>
+								</li>
+								<li>
+									<a href="mailto:fsv.fobos@gmail.com">sv.fobos@gmail.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 mb-3">
+						<div class="service-name mb-2">
+							Крамниця електронних послуг “Твій&nbsp;час”
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:097-688-4686">097-688-4686</a>
+								</li>
+								<li>
+									<a href="mailto:221030@ukr.net">221030@ukr.net</a>
+								</li>
+								<li>
+									<a href="mailto:230614@ukr.net">230614@ukr.net</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3">
+				<div class="address-title">
+					<div class="title">
+						м. Хорол
+					</div>
+				</div>
+				<div class="row text-white mt-3 mb-3">
+					<div class="col-xl-12 mb-3">
+						<div class="service-name mb-2">
+							Відділ обслуговування Інтернет абонентів
+						</div>
+						<div class="service-contact">
+							<ul>
+								<li>
+									<a href="tel:050-034-3545">050-034-3545</a>
+								</li>
+								<li>
+									<a href="tel:068-302-1740">068-302-1740</a>
+								</li>
+								<li>
+									<a href="mailto:fobos59@ukr.net">fobos59@ukr.net</a>
+								</li>
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/bootstrap/js/popper.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	body{
+		font-size: 16px;
+	}
+	
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+	}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 18px;
+	}
+	header{
+		padding: 110px 0 550px;
+	}
+	#crypto-signals{
+		& .crypto-signals-wrap{
+			padding: 80px 60px;
+		}
+		& .crypto-signals-item-wrap{
+			padding: 40px 45px 36px;
+		}
+	}
+	
+	footer{
+		& .footer-menu{
+			& li{
+				border-right: 1px solid $blue;
+				padding-top: 0;
+				padding-bottom: 0;
+				&:last-child{
+					border-right:none;
+				}
+			}
+		}
+		& .social-buttons{
+			a{
+				flex-basis: unset;
+				margin-top: 45px;
+				margin-bottom: 45px;
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 992px) and (max-width: 1599px){
+	.slick-track .slick-current{
+	opacity: 0.6;
+	}
+	.slick-track .slick-current + .slick-active + .slick-active{
+		opacity: 0.6;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body{
+		font-size: 20px;
+	}
+	.container{
+		max-width: 1320px;
+	}
+	footer{
+		& .social-buttons{
+			a{
+				&:before{
+					width: 60px!important;
+					height: 50px!important;
+					margin-right: 15px!important;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width : 1600px){
+	.slick-track .slick-current{
+	opacity: 0.6;
+	}
+	.slick-track .slick-current + .slick-active + .slick-active + .slick-active{
+		opacity: 0.6;
+	}
+	#telegram-advertising{
+		& .advertising-channels-slider{
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		& .slick-prev::before {
+			content: url('../img/slider-arrow.svg');
+			display: block;
+			transform: rotate(180deg);
+		}
+		& .slick-next::before {
+			content: url('../img/slider-arrow.svg');
+			display: block;
+		}
+	}
+	.light #telegram-advertising{
+		& .slick-prev::before {
+			content: url('../img/slider-arrow-black.svg');
+		}
+		& .slick-next::before {
+			content: url('../img/slider-arrow-black.svg');
+		}
+	}
+}

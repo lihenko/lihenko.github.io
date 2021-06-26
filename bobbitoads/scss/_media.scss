@@ -1,0 +1,103 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.cart{
+		position: relative;
+		top: unset;
+		right: unset;
+	}
+	.home-product-viotele-element{
+		position: absolute;
+		bottom: 0;
+		right: 60%;
+	}
+	.attachable-plushies-orange-element{
+		position: absolute;
+		bottom: -60px;
+		left: 10%;
+	}
+	.newest-product-green-element{
+		position: absolute;
+		top: 0;
+		right: 10%;
+	}
+	.testimonials-slider{
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}
+
+@media only screen and (min-width : 1400px){
+	.container{
+		max-width: 1332px;
+	}
+}

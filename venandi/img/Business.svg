@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="277px" height="266px" viewBox="0 0 277 266" style="enable-background:new 0 0 277 266;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#CC9E0E;stroke-width:9;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill:#FFFFFF;}
+	.st3{mask:url(#mask-2_1_);fill:none;stroke:#CC9E0E;stroke-width:9;}
+	.st4{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st5{mask:url(#mask-4_1_);fill:none;stroke:#CC9E0E;stroke-width:9;}
+</style>
+<title>Business</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="MANAGEMENT-CONSULTANCY-_x26_-BUSINESS-STRATEGY" transform="translate(-1096.000000, -368.000000)">
+		<g id="Business" transform="translate(1096.000000, 368.000000)">
+			<path id="Stroke-1" class="st0" d="M95.3,195l-8.6-34.5l47.5-60.5l-4.3-8.6l-43.2,17.3L65,74.1L138.5,5
+				C171.9,5,199,32.1,199,65.5V195"/>
+			<g id="Group-5" transform="translate(208.000000, 0.000000)">
+				<g id="Clip-4">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="-0.1" width="69" height="9">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="0" y="-0.1" width="69" height="9" id="mask-2_1_">
+					<g class="st1">
+						<polygon id="path-1_1_" class="st2" points="0,0.2 69,0.2 69,8.7 0,8.7 						"/>
+					</g>
+				</mask>
+				<line id="Stroke-3" class="st3" x1="0" y1="4.4" x2="69" y2="4.4"/>
+			</g>
+			<line id="Stroke-6" class="st0" x1="0" y1="4.5" x2="87" y2="4.5"/>
+			<g id="Group-10" transform="translate(0.000000, 190.000000)">
+				<g id="Clip-9">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="0" y="-0.1" width="277" height="9">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="0" y="-0.1" width="277" height="9" id="mask-4_1_">
+					<g class="st4">
+						<polygon id="path-3_1_" class="st2" points="0,0.2 277,0.2 277,8.7 0,8.7 						"/>
+					</g>
+				</mask>
+				<line id="Stroke-8" class="st5" x1="277" y1="4.4" x2="0" y2="4.4"/>
+			</g>
+			<line id="Stroke-11" class="st0" x1="251.5" y1="5" x2="251.5" y2="195"/>
+			<line id="Stroke-13" class="st0" x1="25.5" y1="195" x2="25.5" y2="5"/>
+			<line id="Stroke-15" class="st0" x1="208" y1="229.5" x2="69" y2="229.5"/>
+			<line id="Stroke-17" class="st0" x1="61" y1="264" x2="78" y2="195"/>
+			<line id="Stroke-19" class="st0" x1="216" y1="264" x2="199" y2="195"/>
+		</g>
+	</g>
+</g>
+</svg>

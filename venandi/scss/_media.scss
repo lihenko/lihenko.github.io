@@ -1,0 +1,201 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+
+
+@media only screen and (min-width : 992px){
+	body{
+		font-size: 18px;
+	}
+	h1{
+  		font-size: 2.55em;
+  	}
+	.col-60{
+		max-width: 60%;
+	}
+	.col-40{
+		max-width: 40%;
+	}
+	.col-50{
+		max-width: 50%;
+	}
+	.container{
+		padding-left: 88px;
+		padding-right: 200px;
+	}
+	.brand{
+		position: absolute;
+		padding-left: 88px;
+		padding-right: 200px;
+		text-align: left;
+		& img{
+			max-height: unset;
+		}
+	}
+	section{
+		padding: 142px 0;
+	}
+	
+	.locations-wrap{
+		position: absolute;
+		bottom: 44px;
+		background-color: #020203;
+		padding: 25px 0;
+		max-width: 850px;
+		height: 74px;
+		& .locations{
+			font-size: 1em;
+			padding-left: 44px;
+			padding-right: 44px;
+			&:after{
+				content: '';
+				position: absolute;
+				right: -50px;
+				width: 0; 
+				height: 0; 
+				border-top: 0 solid transparent;
+				border-bottom: 74px solid transparent;
+				border-left: 50px solid #020203;
+				display: block;
+			}
+		}
+	}
+	.contact-form-wrap{
+		padding: 65px 72px 45px;
+	}
+	p{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.copyright{
+		font-size: 0.88em;
+	}
+	
+}
+
+@media only screen and (min-width : 992px) and (min-height: 780px){ 
+	#hero{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#about{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#values{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#what-we-do{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#energy{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#management{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#helthcare{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+	#contact{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 100%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}
+
+@media only screen and (min-width : 1600px){
+	#hero p{
+		padding-right: 170px;
+	}
+	#about p{
+		padding-right: 170px;
+	}
+	.copyright{
+		text-align: right;
+		bottom: 70px;
+		left: unset;
+		right: 124px;
+	}
+}

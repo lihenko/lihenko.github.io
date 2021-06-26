@@ -1,0 +1,121 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+	.top-contacts{
+		display: flex;
+		justify-content: space-between;
+	}
+	.property-contact-buttons{
+		& a{
+			max-width: calc(50% - 15px);
+			&:first-child{
+				margin-right: 22px;
+			}
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	.property-wrap{
+		& .property-image{
+			max-width: 315px;
+		}
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	#get-in-touch{
+		background: linear-gradient(90deg, $red 0%, $red 50%, #fff 50%, #fff 100%);
+	}
+	footer{
+		& .footer-menu ul{
+			justify-content: space-between;
+			& li{
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	body {
+		font-size: 20px;
+	}
+	.top-contacts{
+		width: 55%;
+	}
+
+	.top-search-form{
+		width: 45%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px){
+	.container{
+		max-width: 1440px;
+	}
+}

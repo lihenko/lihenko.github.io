@@ -1,0 +1,651 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+header{
+	background-color: #323232;
+	border-top: 4px solid $green;
+	padding: 7px 0;
+	min-height: 77px;
+}
+
+.main-nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.search{
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	display: flex;
+	& form{
+		display: none;
+		margin-left: 15px;
+		margin-right: 15px;
+		width: 100%;
+		& input{
+			border:none;
+			background-color: transparent;
+			color: #fff;
+			width: 100%;
+		}
+			
+	}
+	&.open{
+		width: 100%;
+		& form{
+			display: block;
+		}
+		& #close-search{
+			display: block;
+		}
+	}
+	& #close-search{
+		display: none;
+	}
+}
+
+#open-search.open svg path{
+	fill:$green;
+}
+
+#page-title{
+	position: relative;
+	padding: 30px 0 160px;
+	background-image: url('../img/bg-page-title.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	& .overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(358.53deg, #DCE1D8 1.25%, rgba(20, 21, 23, 0) 251.48%);
+	}
+	& h1{
+		font-size: 2.5em;
+		color: #fff;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+}
+
+.green{
+	color: $green;
+}
+
+.mobile-big-logo-title{
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+}
+
+.header-wrap{
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-bottom: 2px solid $black;
+
+}
+
+#home-review{
+	padding-bottom: 15px;
+	& .review-tumbnail{
+		border-top: 3px solid $green;
+	}
+}
+
+.review-wrap{
+	height: 100%;
+	position: relative;
+	padding-bottom: 65px;
+}
+
+.review-tumbnail{
+	min-height: 284px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom: 20px;
+	transition: all 0.3s ease-in-out;
+	&:after{
+		content: url('../img/small-logo.png');
+		display: block;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+.review-description{
+	color: $green;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.review-button{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	& a{
+		display: block;
+	}
+} 
+
+.green-button{
+	background-color: $green;
+	border-radius: 3px;
+	color: #fff;
+	padding: 17.5px 35px;
+	line-height: 1;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: #6EBD27;
+	}
+}
+
+.blog-wrap{
+	height: 100%;
+	position: relative;
+	& a:hover .blog-tumbnail{
+		opacity: 0.8;
+	}
+}
+
+.blog-tumbnail{
+	min-height: 239px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom: 20px;
+	transition: all 0.3s ease-in-out;
+	
+}
+
+.blog-title{
+	color:$black;
+}
+
+.blog-date{
+	font-weight: 500;
+	color: $green;
+}
+
+.hr{
+	width: 100%;
+	height: 2px;
+	background-color: $black;
+	margin-bottom: 30px;
+}
+
+footer{
+	padding: 60px 0 20px;
+	background-image: url('../img/bg-footer.svg');
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	& ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			position: relative;
+			padding-left: 12px;
+			&:before{
+				content: url('../img/list-maker.svg');
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			& a{
+				font-size: 0.88em;
+				color: $black;
+				transition: all 0.3s ease-in-out;
+				&:hover{
+					color: $green;
+				}
+			}
+		}
+	}
+}
+
+.footer-posts li{
+	min-height: 39.41px;
+}
+
+.amazon-program{
+	font-size: 0.88em;
+}
+
+.copyright{
+	font-size: 14px;
+	font-weight: 300;
+}
+
+#to-top{
+	position: fixed;
+	bottom: 45px;
+	right: 15px;
+	display: none;
+}
+
+.green-shadow{
+	text-shadow: 0px 4px 4px #459300;
+}
+
+.rgb-red{
+	color:#D12121;
+}
+
+.rgb-blue{
+	color:#0E23E8;
+}
+
+.rgb-green{
+	color:#03C200;
+}
+
+#all-ledsearch-form{
+	position: relative;
+	& input[type="text"]{
+		width: 100%;
+		background: rgba(69, 147, 0, 0.44);
+		border-radius: 18.5px;
+		border:none;
+		padding: 9px 35px 9px 45px;
+		&::placeholder{
+			color:rgba(255,255,255,.5);
+		}
+	}
+	
+	& label{
+		position: absolute;
+		top: 7px;
+		left: 15px;
+		cursor: pointer;
+		margin-bottom: 0;
+	}
+}
+
+.allled-review-wrap{
+	height: 100%;
+	padding: 20px;
+	border: 1px solid $green;
+}
+
+.allled-review-tumbnail{
+	min-height: 239px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+#tools-buttons{
+	padding: 15px 0 30px;
+}
+.tools-button{
+	background-color: transparent;
+	border: 3px solid $green;
+	border-radius: 0;
+	color: $green;
+	font-size: 1em;
+	font-weight: 500;
+	padding: 6px 10px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: $green;
+	}
+	&.active{
+		color: #fff;
+		background-color: $green;
+	}
+}
+
+.equipment-link{
+	display: block;
+	color: $black;
+	font-weight: 500;
+	height: 100%;
+	border: 2px solid transparent;
+	border-radius: 9px;
+	padding: 10px 10px;
+	&:hover{
+		color: $black;
+		border-color: $green;
+		box-shadow: 0px 0px 11px rgba($green,.3);
+	}
+	& .equipment-tumbnail{
+		min-height: 163px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 9px;
+		margin-bottom: 15px;
+	}
+}
+
+.review-tumbnail.equipment{
+	min-height: 231px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom: 20px;
+	transition: all 0.3s ease-in-out;
+	&:after{
+		display: none;
+	}
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+.what-i-need-slider{
+	margin-left: -15px;
+	margin-right: -15px;
+	& .slider-item{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	& .slider-img{
+		min-height: 189px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	& .slick-dots{
+		bottom: -20px;
+		padding-right: 15px;
+		text-align: right;
+		& li{
+			width: 12px;
+			height: 12px;
+			& button{
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				&:before{
+					top: 2.5px;
+					left: 2.5px;
+					color: $green;
+					opacity: 1;
+					line-height: 1;
+					width: 6px;
+					height: 6px;					
+				}
+
+			}
+			&.slick-active button{
+				background: rgba(69, 147, 0, 0.28);
+			}
+		}
+	}
+}
+
+#equipment{
+	min-height: 100vh;
+}
+
+#what-i-need{
+	display: none;
+	min-height: 100vh;
+}
+
+ul.leaf{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	& li{
+		padding-left: 25px;
+		position: relative;
+		margin-bottom: 20px;
+		&:before{
+			content: url('../img/body-list-marker.svg');
+			position: absolute;
+			left: 0;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.tent-title{
+	font-size: 1.33em;
+	font-weight: 500;
+}
+
+.best-tents-button .btn{
+	min-width: 223px;
+}
+.video-wrap{
+	position: relative;
+	max-width: 618px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 9px solid $green;
+	& .video-bg{
+		min-height: 190px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	& .video-button{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 94px;
+		height: 94px;
+		& svg path{
+			transition: all 0.3s ease-in-out;
+		}
+		& svg circle{
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover svg path{
+			fill:#6EBD27;
+		}
+		&:hover svg circle{
+			stroke:#6EBD27;
+		}
+	}
+}
+
+.video-note-wrap{
+	padding: 20px 15px;
+	background-color: rgba(69, 147, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.hydroponic-posts-tumbnail{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 239px;
+	margin-bottom: 10px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+.hydroponic-posts-link{
+	font-weight: 500;
+}
+
+.left-border{
+	border-left: 9px solid $green;
+	padding-left: 20px;
+	& h3{
+		font-size: 1.77em;
+		font-weight: 500;
+	} h4{
+		font-size: 1.33em;
+		font-weight: 500;
+	}
+}
+
+.card-with-button{
+	max-width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	& .card-with-button-image{
+		position: relative;
+		& .card-with-button-img{
+			border-bottom: 6px solid $green;
+		}
+		& .card-with-button-logo{
+			position: absolute;
+			right: 5px;
+			bottom: 20px;
+		}
+	}
+	& .card-with-button-title{
+		font-size: 1.66em;
+		font-weight: 500;
+	}
+}
+
+h3.effect{
+	position: relative;
+	padding-left: 36px;
+	&:before{
+		content: '';
+		width: 41px;
+		height: 7px;
+		background-color: $green;
+		display: block;
+		position: absolute;
+		left: -15px;
+		top: calc(50% - 3.5px);
+	}
+}
+
+table#best-marijuana-seeds-table {
+    border: 0;
+    width: 100%;
+    & .btn{
+	  	font-weight: 500;
+	  	width: 223px;
+	  	max-width: 100%;
+	  }
+  }
+  table#best-marijuana-seeds-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #CDDDC9;
+    & th{
+    	color: #fff;
+    	font-size: 0.8em;
+    }
+  }
+  
+  table#best-marijuana-seeds-table tr {
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+    display: block;
+    margin-bottom: .625em;
+    &:nth-child(odd){
+    	background-color: #CDDDC9;
+    }
+  }
+  
+  table#best-marijuana-seeds-table td {
+    display: block;
+    font-size: .8em;
+    text-align: left;
+    padding-left: 50%;
+    &:last-child{
+    	padding-left: inherit;
+    	text-align: center;
+    	margin-top: 20px;
+    }
+  }
+  
+  table#best-marijuana-seeds-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 30px;
+    font-weight: bold;
+  }
+  
+  table#best-marijuana-seeds-table td:last-child {
+    border-bottom: 0;
+  }
+
+.netherlands:after{
+	content: url('../img/netherlands-flag.svg');
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.usa:after{
+	content: url('../img/usa.svg');
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.canada:after{
+	content: url('../img/canada-flag.svg');
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.recent-posts-label{
+	background-color: $green;
+	color:#fff;
+	padding: 15px 33px;
+	display: inline-block;
+	border-radius: 0px 29.5px 29.5px 0px;
+	margin-left: -15px;
+	min-width:172px;
+
+}
+
+.category-label{
+	background-color: $green;
+	color:#fff;
+	padding: 15px 33px;
+	display: inline-block;
+	border-radius: 0px 29.5px 29.5px 0px;
+	margin-left: -15px;
+	min-width:172px;
+}
+
+ul.categories-list{
+	list-style: none;
+}
+
+.buy-button .btn{
+	width: 390px;
+	max-width: 100%;
+}
+
+@import "media";
