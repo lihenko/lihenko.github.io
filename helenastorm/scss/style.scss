@@ -106,6 +106,12 @@ header{
 #our-services{
 	margin-top: -115px;
 	padding: 0;
+	& .bg-hs{
+			background-image: url('../img/HS-bg.png');
+			background-position: center;
+			background-size: 85%;
+			background-repeat: no-repeat;
+		}
 	& .our-services-wrap{
 		box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
 		margin-bottom: 45px;
@@ -128,6 +134,7 @@ header{
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
 		& li{
 			position: relative;
 			padding-left: 75px;
@@ -212,6 +219,7 @@ header{
 			background-repeat: no-repeat;
 			background-size:contain;
 		}
+
 	}
 }
 
