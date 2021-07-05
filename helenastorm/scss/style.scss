@@ -4,8 +4,32 @@
 @import "vars";
 @import "menu";
 
+.hidden{
+	opacity: 0;
+	transition: all 0.15s ease-in-out;
+}
+
+.visible{
+	opacity: 1;
+}
+
 header{
 	padding: 15px 0;
+}
+
+.brand-column{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.menu-column{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.contact-column{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .brand{
@@ -200,7 +224,9 @@ section.colored{
 	background-color: #f0f0f0;
 	clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 5%);
 }
-
+footer{
+	position: relative;
+}
 .footer-map{
 	position: relative;
 	line-height: 0;
@@ -280,11 +306,55 @@ section.colored{
 				left: 0;
 			}
 		}
+		& .footer-social{
+			padding-left: 0;
+			& svg{
+				position: relative;
+			}
+		}
+		& .footer-social a{
+			padding-left: 7.5px;
+			padding-right: 7.5px;
+			&:first-child{
+				padding-left: 0;
+			}
+		}
 	}
-	& .footer-social a{
-		padding-left: 7.5px;
-		padding-right: 7.5px;
-	}
+
+}
+
+#social-wdget{
+	position: fixed;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 17.46px 0.54px rgba(0, 0, 0, 0.11);
+    top: 150px;
+    right: 0;
+    padding: 17px 10px 17px 15px;
+    & ul{
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    	& li{
+    		margin-bottom: 7px;
+    		&:last-child{
+    			margin-bottom: 0;
+    		}
+    		& a svg path{
+    			transition: all 0.15s ease-in-out;
+    		}
+    		& a svg polygon{
+    			transition: all 0.15s ease-in-out;
+    		}
+    		&:hover a svg path{
+    			fill: #00ead1;
+    		}
+    		&:hover a svg polygon{
+    			fill: #00ead1;
+    		}
+    	}
+    }
 }
 
 @import "media";

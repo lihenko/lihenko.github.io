@@ -148,4 +148,13 @@
 	body{
 		font-size: 17px;
 	}
+	header .container{
+		max-width: 1400px;
+		& .row{
+			justify-content: space-between!important;
+		}
+	}
+	.footer-widgets .container{
+		max-width: 1400px;
+	}
 }
