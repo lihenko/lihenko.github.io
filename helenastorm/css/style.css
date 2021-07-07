@@ -387,6 +387,11 @@ header {
 #our-services {
   margin-top: -115px;
   padding: 0; }
+  #our-services .bg-hs {
+    background-image: url("../img/HS-bg.png");
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat; }
   #our-services .our-services-wrap {
     box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
     margin-bottom: 45px;
@@ -697,12 +702,14 @@ footer {
 @media only screen and (min-width: 1400px) {
   body {
     font-size: 17px; }
+  .container {
+    max-width: 1320px; }
   header .container {
-    max-width: 1400px; }
+    max-width: 1440px; }
     header .container .row {
       -webkit-box-pack: justify !important;
       -webkit-justify-content: space-between !important;
       -ms-flex-pack: justify !important;
       justify-content: space-between !important; }
   .footer-widgets .container {
-    max-width: 1400px; } }
+    max-width: 1440px; } }
