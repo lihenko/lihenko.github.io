@@ -367,4 +367,25 @@ footer{
 
 }
 
+.service-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#client-center{
+	color: #fff;
+	padding: 110px 0 90px;
+	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 10%);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	& .client-center-title{
+		font-size: 3.53em;
+		font-weight: 700;
+	}
+	& .client-center-description{
+		font-size: 1.29em;
+	}
+}
+
 @import "media";
