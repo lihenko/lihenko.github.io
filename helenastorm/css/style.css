@@ -36,28 +36,32 @@ p:last-child {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: HS-Gilroy, sans-serif;
-  font-weight: 700; }
+  font-family: HS-Gilroy, sans-serif; }
 
 h1 {
   font-size: 3.3em;
-  line-height: 0.95; }
+  line-height: 0.95;
+  font-weight: 500; }
 
 h2 {
   font-size: 2.11em;
-  line-height: 42px; }
+  line-height: 42px;
+  font-weight: 700; }
 
 h3 {
   font-size: 24px;
-  line-height: 32px; }
+  line-height: 32px;
+  font-weight: 700; }
 
 h4 {
   font-size: 21px;
-  line-height: 27px; }
+  line-height: 27px;
+  font-weight: 700; }
 
 h5 {
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-weight: 700; }
 
 a {
   color: #198a89;
@@ -276,6 +280,10 @@ object, embed {
               width: 100%;
               -webkit-transition: all 0.3s ease-in-out;
               transition: all 0.3s ease-in-out; }
+        .main-menu ul li.current-menu-item a {
+          color: #198a89; }
+        .main-menu ul li.current-menu-item a:after {
+          width: 100%; }
   .toggle-btn {
     display: none; }
   .brand {
@@ -602,6 +610,13 @@ footer {
       #social-wdget ul li:hover a svg polygon {
         fill: #00ead1; }
 
+#page-hero {
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -667,7 +682,7 @@ footer {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      padding: 60px 80px 60px 100px;
+      padding: 60px 65px 60px 80px;
       background-color: #fff;
       box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
       line-height: 1.76; } }

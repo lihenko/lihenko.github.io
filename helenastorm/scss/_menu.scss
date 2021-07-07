@@ -130,6 +130,12 @@
 						}
 					}
 				}
+				&.current-menu-item a{
+					color: $green;
+				}
+				&.current-menu-item a:after{
+					width: 100%;
+				}
 			}
 		}
 	}
