@@ -44,10 +44,9 @@
 
 /* Toggle */
 .toggle-btn {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+  position: relative;
   z-index: 9999999; }
 
 .toggle-btn .hamburger {

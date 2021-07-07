@@ -67,6 +67,12 @@
 	body{
 		font-size: 15px;
 	}
+	.brand{
+		& img{
+			max-height: 115px;
+			width: auto;
+		}
+	}
 	#home-hero{
 		min-height: 690px;
 		background-position: center;

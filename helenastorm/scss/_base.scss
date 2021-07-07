@@ -9,6 +9,7 @@
 
 html, body {
 	position:relative;
+	overflow-x: hidden;
 }
 
 body {
@@ -16,8 +17,6 @@ body {
 	font-size: 14px;
 	line-height: 1.76;
 	font-family: HS-OpenSans, sans-serif;
-	
-	overflow-x: hidden;
 }
 
 p:last-child{

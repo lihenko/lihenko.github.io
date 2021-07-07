@@ -23,14 +23,14 @@
     box-sizing: border-box; }
 
 html, body {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   color: #454545;
   font-size: 14px;
   line-height: 1.76;
-  font-family: HS-OpenSans, sans-serif;
-  overflow-x: hidden; }
+  font-family: HS-OpenSans, sans-serif; }
 
 p:last-child {
   margin-bottom: 0; }
@@ -195,10 +195,9 @@ object, embed {
 
 /* Toggle */
 .toggle-btn {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
   z-index: 9999999; }
 
 .toggle-btn .hamburger {
@@ -313,16 +312,12 @@ header {
   padding-left: 15px;
   padding-right: 15px; }
 
-.menu-column {
-  padding-left: 15px;
-  padding-right: 15px; }
-
 .contact-column {
   padding-left: 15px;
   padding-right: 15px; }
 
 .brand img {
-  max-height: 115px;
+  max-height: 90px;
   width: auto; }
 
 .green {
@@ -637,6 +632,9 @@ footer {
 @media only screen and (min-width: 992px) {
   body {
     font-size: 15px; }
+  .brand img {
+    max-height: 115px;
+    width: auto; }
   #home-hero {
     min-height: 690px;
     background-position: center;
