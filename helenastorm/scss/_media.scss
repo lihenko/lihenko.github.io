@@ -136,6 +136,26 @@
 		padding: 250px 0 180px;
 		clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
 	}
+	.pagination{
+		& .page-numbers.prev{
+			margin-right: 25px;
+			& svg{
+				margin-right: 9px;
+			}
+			& span{
+				display: block;
+			}
+		}
+		& .page-numbers.next{
+			margin-left: 25px;
+			& svg{
+				margin-left: 9px;
+			}
+			& span{
+				display: block;
+			}
+		}
+	}
 }
 
 

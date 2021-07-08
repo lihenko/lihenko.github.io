@@ -388,4 +388,134 @@ footer{
 	}
 }
 
+.news-wrap{
+	position: relative;
+	height: 100%;
+	border:1px solid #ececec;
+	padding: 45px 30px 110px;
+	& a{
+		color: #454545;
+		&:hover{
+			color: $green;
+		}
+	}
+	& .post-tumbnail{
+		height: 190px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	& .post-description{
+		font-size: 0.94em;
+		line-height: 1.56;
+		text-align: justify;
+		hyphens: auto;
+	}
+	& p{
+		margin-bottom: 0;
+	}
+	& .post-readmore{
+		position: absolute;
+		bottom: 35px;
+	}
+}
+
+a.read-more-button{
+	border-style: solid;
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 13.12px 2.88px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  line-height: 14px;
+  padding: 13.5px 49px 13.5px 25px;
+  position:relative;
+  color: #4e4e4e;
+  font-family: HS-Gilroy, sans-serif;
+  font-weight: 700;
+  & svg{
+  	position: absolute;
+  	right: 15px;
+  	top: 13.5px;
+  	& path{
+  		transition: all 0.15s ease-in-out;
+  	}
+  }
+  &:hover{
+  	color: #fff;
+  	background-color: $lightgreen;
+  	& svg path{
+  		fill: #fff;
+  	}
+  }
+}
+
+.pagination{
+	display: flex;
+	align-items:center;
+	line-height: 1;
+	& .page-numbers{
+		font-family: HS-Gilroy, sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		border-style: solid;
+		  border-width: 1px;
+		  border-color: rgb(226, 226, 226);
+		  border-radius: 2px;
+		  background-color: rgb(255, 255, 255);
+		  box-shadow: 0px 0px 13.12px 2.88px rgba(0, 0, 0, 0.08);
+		  width: 42px;
+		  height: 42px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  margin: 8.5px;
+		  color: #4e4e4e;
+		  &:hover{
+		  	background-color: $lightgreen;
+		  	color: #fff;
+		  }
+	}
+	& .page-numbers.current{
+		color: #fff;
+		background-color: $green;
+	}
+	& .page-numbers.dots{
+		border:none;
+		box-shadow:none;
+		align-items: flex-end;
+		margin-left: 0;
+		margin-right: 0;
+		&:hover{
+			color: #4e4e4e;
+			background-color: #fff;
+		}
+	}
+	& .page-numbers.prev, .page-numbers.next{
+		position:relative;
+		border:none;
+		box-shadow:none;
+		color: #4e4e4e;
+		width: unset;
+		& svg path{
+			transition: all 0.15s ease-in-out;
+		}
+		&:hover{
+			color: $green;
+			background-color: #fff;
+			& svg path{
+				fill: $green;
+			}
+		}
+	}
+	& .page-numbers.prev span{
+		display: none;
+	}
+	& .page-numbers.next span{
+		display: none;
+	}
+	 
+}
+
 @import "media";

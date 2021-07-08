@@ -59,9 +59,9 @@ h5{
 
 a{
 	color:$green;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.15s ease-in-out;
 	&:hover{
-		color:$gold;
+		color:$lightgreen;
 		text-decoration: none;
 	}
 }
