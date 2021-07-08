@@ -237,27 +237,29 @@ footer{
 		background-color: #fff;
 		box-shadow: 0px 2px 28.7px 6.3px rgba(0, 0, 0, 0.11);
 		line-height: 1.76;
-		& #contact-list{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			& li{
-				position: relative;
-				padding-left: 50px;
-				margin-bottom: 15px;
-				& svg{
-					position: absolute;
-					top: -2px;
-					left: 0;
-				}
-				& a{
-					color: $black;
-					font-size: 0.94em;
-					&:hover{
-						color: $green;
-						text-decoration: none;
-					}
-				}
+		
+	}
+}
+
+#contact-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 50px;
+		margin-bottom: 15px;
+		& svg{
+			position: absolute;
+			top: -2px;
+			left: 0;
+		}
+		& a{
+			color: $black;
+			font-size: 0.94em;
+			&:hover{
+				color: $green;
+				text-decoration: none;
 			}
 		}
 	}
