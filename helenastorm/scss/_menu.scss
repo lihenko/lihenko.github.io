@@ -32,6 +32,7 @@
 				transition: color 0.3s ease-in-out;
 				&:hover{
 					color:$black;
+					text-decoration: none;
 				}
 			}
 		}
@@ -123,6 +124,7 @@
 					}
 					&:hover{
 						color:$green;
+						text-decoration: none;
 						&:after{
 							width: 100%;
 							transition: all 0.3s ease-in-out;

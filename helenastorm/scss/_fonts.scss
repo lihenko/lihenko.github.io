@@ -6,6 +6,14 @@
 }
 
 @font-face{
+	font-family: 'HS-OpenSans';
+	src: url('../fonts/OpenSans-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
 	font-family: 'HS-Gilroy';
 	src: url('../fonts/Radomir Tinkov - Gilroy-Medium.otf');
 	font-weight: 500;

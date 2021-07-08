@@ -35,25 +35,25 @@ h1{
 
 h2{
   font-size: 2.11em;
-  line-height: 42px;
+  line-height: 1.16;
   font-weight: 700;
 }
 
 h3{
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.41em;
+  line-height: 1.16;
   font-weight: 700;
 }
 
 h4{
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 1.18em;
+  line-height: 1.16;
   font-weight: 700;
 }
 
 h5{
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.06em;
+  line-height: 1.16;
   font-weight: 700;
 }
 
@@ -61,8 +61,8 @@ a{
 	color:$green;
 	transition: all 0.15s ease-in-out;
 	&:hover{
-		color:$lightgreen;
-		text-decoration: none;
+		color:$green;
+		text-decoration: underline;
 	}
 }
 
@@ -122,4 +122,14 @@ object, embed {
 		transform: translateY(-50%);
 		transition: all 0.15s ease-in-out;
 	}
+}
+
+ul{
+ padding-left: 15px;
+ & li{
+ 	margin-bottom: 8px;
+ }
+ & li::marker{
+ 	color: $green;
+ }
 }
