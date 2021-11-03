@@ -1353,8 +1353,13 @@ footer .copyright-column {
   .team-member-title {
     font-size: 1.375em;
   }
+
+  .footer-row {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
   .team-member-column {
     padding-left: 150px;
     padding-right: 80px;
@@ -1373,5 +1378,10 @@ footer .copyright-column {
     -ms-flex-preferred-size: calc(100% - 180px);
     flex-basis: calc(100% - 180px);
     max-width: calc(100% - 180px);
+  }
+
+  .footer-row {
+    padding-left: 265px;
+    padding-right: 265px;
   }
 }
