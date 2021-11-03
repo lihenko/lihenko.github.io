@@ -282,6 +282,25 @@
 			margin-bottom: 0;
 		}
 	}
+	#data{
+		margin-top: -170.5px;
+		padding-top: 300px;
+		margin-bottom: -46.25px;
+		padding-bottom: 100px;
+		min-height: 100vh;
+		& .row{
+			align-items:center;
+		}
+		& .image-column{
+			flex-basis: 344px;
+			max-width: 344px;
+		}
+		& .data-column{
+			flex-basis: calc(100% - 344px);
+			max-width: calc(100% - 344px);
+			text-align: left;
+		}
+	}
 }
 
 
@@ -368,6 +387,12 @@
 		padding-left: 120px;
 		padding-right: 120px;
 	}
+	#data{
+		& .row{
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+	}
 
 }
 
@@ -388,5 +413,18 @@
 	.footer-row{
 		padding-left: 265px;
 		padding-right: 265px;
+	}
+	#data{
+		& .image-column{
+			flex-basis: 424px;
+			max-width: 424px;
+		}
+		& .data-column{
+			flex-basis: calc(100% - 424px);
+			max-width: calc(100% - 424px);
+			text-align: left;
+			padding-right: 110px;
+			padding-left: 100px;
+		}
 	}
 }

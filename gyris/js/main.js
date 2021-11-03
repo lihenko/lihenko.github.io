@@ -10,3 +10,23 @@ $(document).ready(function(){
 		$(row).fadeIn();
 	});
 })
+
+$(document).ready(function(){
+	var number = $('.number-input input');
+	var less = $('.less');
+	var more = $('.more');
+
+	
+	less.click(function(event) {
+		var value = parseInt(number.val());
+		if (value > 1) {
+			number.val(value - 1);
+		} else {
+			return;
+		}
+	});
+	more.click(function(event) {
+		var value = parseInt(number.val());
+		number.val(value + 1);
+	});
+})
