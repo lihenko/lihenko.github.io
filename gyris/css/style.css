@@ -1064,6 +1064,10 @@ footer .copyright-column {
   height: 100%;
 }
 
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 .process-row {
   display: -webkit-box;
   display: -webkit-flex;
