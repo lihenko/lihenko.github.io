@@ -25,6 +25,11 @@ $(document).ready(function(){
     });
     partnershipbutton.click(function(event) {
         event.preventDefault();
+        if ($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $('.form-wrap').removeClass('active');
+            $('form').hide();
+        } else {
         $('.form-wrap').removeClass('active');
         $('form').hide();
         $('.form-control-column .btn').removeClass('active');
@@ -34,6 +39,7 @@ $(document).ready(function(){
         $('html, body').animate({
                     scrollTop: partnership.offset().top-150
                 }, 1000);
+    }
     });
 
 
