@@ -73,20 +73,29 @@ header{
 .form-wrap-column{
 	& .form-wrap{
 		padding: 45px 0;
-		background-image: url('../img/form-bg.png');
 		background-position: center;
 		background-repeat: no-repeat;
-		min-height: 497px;
-		justify-content: center;
-		flex-direction: column;
 		display: none;
+		& .form-bg{
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			top: -100px;
+			z-index: -1;
+		}
 		&.active{
-			display: flex;
+			display: block;
 		}
 		& form{
 			display: none;
 		}
 	}
+}
+
+#updates{
+	margin-top: 50px;
 }
 
 footer{

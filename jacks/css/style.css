@@ -408,29 +408,28 @@ header {
 
 .form-wrap-column .form-wrap {
   padding: 45px 0;
-  background-image: url("../img/form-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 497px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   display: none;
 }
+.form-wrap-column .form-wrap .form-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -100px;
+  z-index: -1;
+}
 .form-wrap-column .form-wrap.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 .form-wrap-column .form-wrap form {
   display: none;
+}
+
+#updates {
+  margin-top: 50px;
 }
 
 footer {
