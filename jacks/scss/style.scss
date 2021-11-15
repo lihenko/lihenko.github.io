@@ -1,0 +1,127 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+
+header{
+	padding: 15px 0;
+}
+
+#hero{
+	background-image: url('../img/hero-bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	min-height: 728px;
+	margin-top: -105px;
+	padding-top: 95px;
+	& .container{
+		& .row{
+			min-height: 638px;
+			align-items:flex-end;
+		}
+	}
+	& .top-left{
+		position: absolute;
+		top: 130px;
+		left: 0;
+	}
+	& .top-right{
+		position: absolute;
+		right: 0;
+		top: 60px;
+	}
+	& .bottom-left{
+		position: absolute;
+		bottom: 80px;
+		left: -140px;
+		z-index: 3;
+	}
+}
+
+.hero-banner{
+	width: 980px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $red;
+	font-family: Lemon-Tuesday, cursive;
+	font-size: 34px;
+	line-height: 33px;
+	padding: 30px 40px;
+	transform: rotate(-1deg);
+	position: relative;
+	& .top-right-banner{
+		position: absolute;
+		top: -50px;
+		right: -50px;
+	}
+	& .shots{
+		position: absolute;
+		bottom: -30px;
+		left: 0;
+	}
+}
+
+#buttons{
+	padding: 60px 0;
+}
+
+.form-control-column .btn{
+	margin-bottom: 15px;
+}
+
+.form-wrap-column{
+	& .form-wrap{
+		padding: 45px 0;
+		background-image: url('../img/form-bg.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 497px;
+		justify-content: center;
+		flex-direction: column;
+		display: none;
+		&.active{
+			display: flex;
+		}
+		& form{
+			display: none;
+		}
+	}
+}
+
+footer{
+	font-size: 10px;
+	padding: 45px 0;
+}
+
+#thankyou{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: calc(100vh - 94.5px - 109px);
+	& .back-link{
+		margin-top: 45px;
+		display: inline-block;
+		font-weight: 700;
+		position: relative;
+		padding-left: 40px;
+		&:before{
+			content: url('../img/left-arrow.svg');
+			display: block;
+			position: absolute;
+			top: -3px;
+			left: 0;
+		}
+	}
+	& .hero-banner{
+		font-family: NotoSerif, sans-serif;
+		font-size: 16px;
+		& .shots{
+		position: absolute;
+			bottom: -38px;
+			left: 0;
+		}
+	}
+}
+
+@import "media";

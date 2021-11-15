@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>left-arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Thank-you" transform="translate(-858.000000, -523.000000)">
+            <g id="left-arrow" transform="translate(858.000000, 523.000000)">
+                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                <line x1="4.01" y1="11.98" x2="19" y2="11.98" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+                <polyline id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="10.013 5.988 4.002 12 10.013 18.012"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

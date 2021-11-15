@@ -1,0 +1,111 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	.hero-banner{
+		font-size: 44px;
+		line-height: 43px;
+		padding: 40px 90px;
+	}
+	#hero{
+		& .top-left{
+			position: absolute;
+			top: 130px;
+			left: 60px;
+		}
+		& .top-right{
+			position: absolute;
+			right: 80px;
+			top: 82px;
+		}
+		& .bottom-left{
+		position: absolute;
+			bottom: 80px;
+			left: -80px;
+		}
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	#hero{
+		& .top-left{
+			position: absolute;
+			top: 130px;
+			left: 160px;
+		}
+		& .top-right{
+			position: absolute;
+			right: 218px;
+			top: 82px;
+		}
+		& .bottom-left{
+		position: absolute;
+			bottom: 80px;
+			left: 0;
+		}
+	}
+}
