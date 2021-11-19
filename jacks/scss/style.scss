@@ -8,38 +8,46 @@ header{
 }
 
 #hero{
-	background-image: url('../img/hero-bg.png');
+	background-image: url('../img/hero-bg-mobile.png');
 	background-repeat: no-repeat;
 	background-position: top center;
-	min-height: 728px;
+	background-size: 100%;
+	min-height: 515px;
 	margin-top: -105px;
 	padding-top: 95px;
 	& .container{
 		& .row{
-			min-height: 638px;
+			min-height: 515px;
 			align-items:flex-end;
 		}
 	}
 	& .top-left{
 		position: absolute;
-		top: 130px;
-		left: 0;
+		top: 0;
+		left: 12px;
+		& img{
+			height: 37px;
+		}
 	}
 	& .top-right{
 		position: absolute;
-		right: 0;
-		top: 60px;
+		right: 12px;
+		top: 0;
+		& img{
+			height: 37px;
+		}
 	}
 	& .bottom-left{
 		position: absolute;
 		bottom: 80px;
 		left: -140px;
 		z-index: 3;
+		display: none;
 	}
 }
 
 .hero-banner{
-	width: 980px;
+	width: 768px;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -47,13 +55,16 @@ header{
 	font-family: Lemon-Tuesday, cursive;
 	font-size: 34px;
 	line-height: 33px;
-	padding: 30px 40px;
+	padding: 30px;
 	transform: rotate(-1deg);
 	position: relative;
 	& .top-right-banner{
 		position: absolute;
-		top: -50px;
-		right: -50px;
+		top: -25px;
+		right: -12px;
+		& img{
+			height: 53px;
+		}
 	}
 	& .shots{
 		position: absolute;
@@ -101,13 +112,31 @@ header{
 footer{
 	font-size: 10px;
 	padding: 45px 0;
+	& .socials{
+		& ul{
+			list-style: none;
+			padding: 0;
+			margin: 0 0 25px;
+			& li{
+				padding-left: 10px;
+				padding-right: 10px;
+				display: inline-block;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}
 }
 
 #thankyou{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	min-height: calc(100vh - 94.5px - 109px);
+	min-height: calc(100vh - 158.5px - 109px);
 	& .back-link{
 		margin-top: 45px;
 		display: inline-block;
