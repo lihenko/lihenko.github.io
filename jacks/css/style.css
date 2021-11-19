@@ -530,6 +530,9 @@ footer .socials ul li:last-child {
     line-height: 43px;
     padding: 40px 90px;
   }
+  .hero-banner .top-right-banner img {
+    height: unset;
+  }
 
   #hero {
     background-image: url("../img/hero-bg.png");
@@ -545,10 +548,16 @@ footer .socials ul li:last-child {
     top: 130px;
     left: 60px;
   }
+  #hero .top-left img {
+    height: unset;
+  }
   #hero .top-right {
     position: absolute;
     right: 80px;
     top: 82px;
+  }
+  #hero .top-right img {
+    height: unset;
   }
   #hero .bottom-left {
     display: block;

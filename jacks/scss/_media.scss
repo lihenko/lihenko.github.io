@@ -71,6 +71,11 @@
 		font-size: 44px;
 		line-height: 43px;
 		padding: 40px 90px;
+		& .top-right-banner{
+			& img{
+				height: unset;
+			}
+		}
 	}
 	#hero{
 		background-image: url('../img/hero-bg.png');
@@ -84,15 +89,21 @@
 			position: absolute;
 			top: 130px;
 			left: 60px;
+			& img{
+				height: unset;
+			}
 		}
 		& .top-right{
 			position: absolute;
 			right: 80px;
 			top: 82px;
+			& img{
+				height: unset;
+			}
 		}
 		& .bottom-left{
 			display: block;
-		position: absolute;
+			position: absolute;
 			bottom: 80px;
 			left: -80px;
 		}
