@@ -78,7 +78,25 @@
 			padding-right: 45px;
 		}
 	}
-
+	#price{
+		& .price-wrap{
+			& .table-head{
+				padding: 0 15px;
+				flex-basis: 264px;
+				max-width: 264px;
+				& div{
+					height: 66px;
+					display: flex;
+					align-items: center;
+				}
+					
+			}
+			& .price-table{
+				flex-basis: calc(100% - 264px);
+				max-width: calc(100% - 264px);
+			}
+		}
+	}
 }
 
 
@@ -257,6 +275,24 @@
 			order: 1;
 			flex-basis: 50%;
 			max-width: 50%;
+		}
+	}
+	#why-us{
+		padding: 90px 0;
+		& .section-title-column{
+			flex-basis: 52%;
+			max-width: 52%;
+			margin: 0 auto;
+		}
+		& .section-subtitle-column{
+			flex-basis: 70%;
+			max-width: 70%;
+			margin: 0 auto 45px;
+		}
+		& .feature-column{
+			flex-basis: 25%;
+			max-width: 25%;
+			padding: 0 20px 0 10px;
 		}
 	}	
 
