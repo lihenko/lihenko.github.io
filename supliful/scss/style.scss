@@ -1,0 +1,72 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+
+#header{
+	padding: 40px 0;
+	& .brand-column{
+		margin-bottom: 25px;
+	}
+	& .top-buttons-column{
+		& .btn:first-child{
+			margin-right: 10px;
+		}
+	}
+}
+
+#home-hero{
+	background-color: $yellow;
+	margin-top: -172.2px;
+	padding-top: 172.2px;
+	padding-bottom: 60px;
+	& .home-hero-description{
+		margin-bottom: 35px;
+	}
+}
+
+#seals{
+	padding: 30px 0;
+	& .row{
+		align-items:center;
+	}
+	& .seals-title-column{
+		flex-basis: 120px;
+		max-width: 120px;
+	}
+	& .seals-column{
+		flex-basis: calc(100% - 120px);
+		max-width: calc(100% - 120px);
+	}
+	& .seals-slider-item{
+		display: flex;
+		justify-content: center;
+
+	}
+	& .slick-track{
+		display: flex;
+		align-items:center;
+	}
+}
+
+#features{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	& .influencers-row{
+		& .column:first-child{
+			flex-basis: 156px;
+			max-width: 156px;
+		}
+		& .column:last-child{
+			flex-basis: calc(100% - 156px);
+			max-width: calc(100% - 156px);
+		}
+	}
+	& .influence-title-column{
+		padding-bottom: 45px;
+	}
+}
+
+@import "media";
