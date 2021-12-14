@@ -141,28 +141,3 @@ jQuery(window).on('resize', function() {
 });
 
 
-jQuery(document).ready(function($) {
-  var videobutton = $('#about .video-wrap a');
-  var videoplay = $('#about .video-wrap .video-play-button');
-  var videostop = $('#about .video-wrap .video-stop-button');
-
-  videostop.hide();
-
-  videobutton.click(function(event) {
-    event.preventDefault();
-    if ($(this).hasClass('active')) {
-      $(this).parent('.video-wrap').find('video').get(0).pause();
-      $(this).parent('.video-wrap').find('video').get(0).currentTime = 0;
-      $(this).removeClass('active');
-      $(this).find(videoplay).show();
-      $(this).find(videostop).hide();
-    } else {
-      $(this).parent('.video-wrap').find('video').get(0).play();
-      $(this).addClass('active');
-      $(this).find(videoplay).hide();
-      $(this).find(videostop).show();
-    }
-    
-  })
-
-})
