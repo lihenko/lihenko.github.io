@@ -581,4 +581,89 @@ footer{
 	}
 }
 
+#page-title{
+		& .subtitle{
+			margin-bottom: 35px;
+		}
+			
+	}
+
+#first-gallery{
+	padding: 60px 0;
+
+}
+
+#second-gallery{
+	padding-bottom: 60px;
+}
+
+ .gallery-row{
+		padding: 0 20px;
+		& .gallery-item{
+			padding: 0 7.5px;
+			margin-bottom: 15px;
+		}
+		& .slick-prev{
+			left: -5px;
+		}
+		& .slick-next{
+			right: -5px;
+		}
+		& .slick-prev::before, .slick-next::before {
+			color:$pink;
+		}
+	}
+
+#about{
+	& .about-video-column{
+		padding-left: 50px;
+		& .video-wrap{
+			position: relative;
+			display: block;
+			max-width: 329px;
+			margin-left: auto;
+			margin-right: auto;
+			& video{
+				max-width: 76.2%;
+				position: absolute;
+				top: 47.5%;
+				left: 5.2%;
+				transform:translateY(-50%);
+			}
+			& a{
+				position: absolute;
+				top: 48%;
+				left: 37.5%;
+				transform:translateY(-50%);
+			}
+		}
+	}
+	& .about-description-column{
+		margin-bottom: 30px;
+	}
+}
+	
+#how-we-do-it{
+	padding-bottom: 60px;
+}
+
+
+.marked-ul{
+	margin: 45px 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		position: relative;
+		padding-left: 60px;
+		margin-bottom: 30px;
+		&:before{
+			content: url('../img/checkmark.svg');
+			position: absolute;
+			left: 0;
+			top: -6px;
+			display: block;
+		}
+	}
+}
+
 @import "media";
