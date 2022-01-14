@@ -357,4 +357,17 @@ footer{
 	}
 }
 
+#food-safety{
+	padding-top: 60px;
+	& .food-safety-description-column{
+		margin-bottom: 45px;
+	}
+	& .food-safety-item-column{
+		margin-bottom: 45px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
 @import "media";

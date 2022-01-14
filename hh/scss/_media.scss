@@ -112,6 +112,10 @@
 			max-width: 50%;
 		}
 	}
+	.food-safety-item-column{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
 }
 
 
@@ -259,6 +263,19 @@
 				margin-top: 0;
 			}
 		}
+	}
+	.food-safety-description-column{
+		flex-basis: 66.66%;
+		max-width: 66.66%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.food-safety-item-column{
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+	}
+	#food-safety .food-safety-description-column{
+		margin-bottom: 60px;
 	}
 
 }

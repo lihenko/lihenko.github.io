@@ -737,6 +737,19 @@ footer {
   left: 0;
 }
 
+#food-safety {
+  padding-top: 60px;
+}
+#food-safety .food-safety-description-column {
+  margin-bottom: 45px;
+}
+#food-safety .food-safety-item-column {
+  margin-bottom: 45px;
+}
+#food-safety .food-safety-item-column:last-child {
+  margin-bottom: 0;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -819,6 +832,13 @@ footer {
   }
 
   #where-we-farm .where-we-locations-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .food-safety-item-column {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -1035,6 +1055,26 @@ footer {
   }
   #where-we-farm .where-we-location-column h2 {
     margin-top: 0;
+  }
+
+  .food-safety-description-column {
+    -webkit-flex-basis: 66.66%;
+    -ms-flex-preferred-size: 66.66%;
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .food-safety-item-column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  #food-safety .food-safety-description-column {
+    margin-bottom: 60px;
   }
 }
 /* Large Devices, Wide Screens */
