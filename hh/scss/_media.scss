@@ -90,6 +90,22 @@
 		flex-basis: 33.33%;
 		max-width: 33.33%;
 	}
+
+	.watermelons-grid-column{
+		flex-basis: 50%;
+		max-width: 50%;
+		& .watermelons-wrap{
+			& h5{
+				margin-bottom: 20px;
+			}
+			& .watermelons-title{
+				padding: 15px 25px 0 35px;
+			}
+			& .watermelons-excerpt{
+				padding: 0 25px 40px 35px;
+			}
+		}
+	}
 	
 }
 
@@ -220,7 +236,6 @@
 			max-width: 50%;
 		}
 	}
-
 
 }
 
@@ -360,5 +375,9 @@
 		& .btn:last-child{
 			margin-bottom: 0;
 		}
+	}
+	.watermelons-grid-column{
+		flex-basis: 33.33%;
+		max-width: 33.33%;
 	}
 }

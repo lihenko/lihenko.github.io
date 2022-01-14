@@ -45,32 +45,36 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Boldstrom, sans-serif;
   text-transform: uppercase;
 }
 
 h1 {
+  font-family: Boldstrom, sans-serif;
   font-size: 2.5em;
   line-height: 0.97;
 }
 
 h2 {
+  font-family: Boldstrom, sans-serif;
   font-size: 2em;
   line-height: 1.055;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.33em;
+  font-weight: 700;
+  line-height: 1;
 }
 
 h4 {
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1;
 }
 
 h5 {
   font-size: 1em;
+  font-weight: 700;
   line-height: 1.055;
 }
 
@@ -676,6 +680,40 @@ footer {
   margin-bottom: 45px;
 }
 
+#watermelons {
+  padding-top: 60px;
+}
+#watermelons h3 {
+  margin-bottom: 45px;
+}
+
+.watermelons-grid-column {
+  margin-bottom: 30px;
+}
+.watermelons-grid-column .watermelons-wrap {
+  background-color: #265D33;
+  color: #fff;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+.watermelons-grid-column .watermelons-wrap h5 {
+  margin-bottom: 20px;
+}
+.watermelons-grid-column .watermelons-wrap .watermelons-tumbnail {
+  height: 275px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.watermelons-grid-column .watermelons-wrap .watermelons-title {
+  padding: 15px 15px 0;
+}
+.watermelons-grid-column .watermelons-wrap .watermelons-excerpt {
+  padding: 0 15px 40px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -739,6 +777,22 @@ footer {
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
     max-width: 33.33%;
+  }
+
+  .watermelons-grid-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .watermelons-grid-column .watermelons-wrap h5 {
+    margin-bottom: 20px;
+  }
+  .watermelons-grid-column .watermelons-wrap .watermelons-title {
+    padding: 15px 25px 0 35px;
+  }
+  .watermelons-grid-column .watermelons-wrap .watermelons-excerpt {
+    padding: 0 25px 40px 35px;
   }
 }
 /* Medium Devices, Desktops */
@@ -1092,5 +1146,12 @@ footer {
   }
   #about .about-row .btn:last-child {
     margin-bottom: 0;
+  }
+
+  .watermelons-grid-column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
   }
 }

@@ -298,4 +298,38 @@ footer{
 	}
 }
 
+#watermelons{
+	padding-top: 60px;
+	& h3{
+		margin-bottom: 45px;
+	}
+}
+
+.watermelons-grid-column{
+	margin-bottom: 30px;
+	& .watermelons-wrap{
+		background-color: $green;
+		color: #fff;
+		max-width: 410px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		& h5{
+			margin-bottom: 20px;
+		}
+		& .watermelons-tumbnail{
+			height: 275px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		& .watermelons-title{
+			padding: 15px 15px 0;
+		}
+		& .watermelons-excerpt{
+			padding: 0 15px 40px;
+		}
+	}
+}
+
 @import "media";
