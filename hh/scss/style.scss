@@ -332,4 +332,29 @@ footer{
 	}
 }
 
+#where-we-farm{
+	& .where-we-description-title{
+		margin-bottom: 45px;
+	}
+	& .where-we-locations-column{
+		margin-bottom: 25px;
+	}
+	& .where-we-row{
+		margin-bottom: 45px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	& .whre-we-location-detail{
+		padding-left: 45px;
+		position: relative;
+		&:before{
+			content: url('../img/map-pin-location.svg');
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
 @import "media";

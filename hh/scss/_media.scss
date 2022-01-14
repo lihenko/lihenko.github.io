@@ -106,7 +106,12 @@
 			}
 		}
 	}
-	
+	#where-we-farm{
+		& .where-we-locations-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 
@@ -234,6 +239,25 @@
 		& .column{
 			flex-basis: 50%;
 			max-width: 50%;
+		}
+	}
+	#where-we-farm{
+		& .where-we-description-column{
+			flex-basis: 83.33%;
+			max-width: 83.33%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		& .where-we-map-column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		& .where-we-location-column{
+			flex-basis: 66.66%;
+			max-width: 66.66%;
+			& h2{
+				margin-top: 0;
+			}
 		}
 	}
 

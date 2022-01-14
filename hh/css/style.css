@@ -714,6 +714,29 @@ footer {
   padding: 0 15px 40px;
 }
 
+#where-we-farm .where-we-description-title {
+  margin-bottom: 45px;
+}
+#where-we-farm .where-we-locations-column {
+  margin-bottom: 25px;
+}
+#where-we-farm .where-we-row {
+  margin-bottom: 45px;
+}
+#where-we-farm .where-we-row:last-child {
+  margin-bottom: 0;
+}
+#where-we-farm .whre-we-location-detail {
+  padding-left: 45px;
+  position: relative;
+}
+#where-we-farm .whre-we-location-detail:before {
+  content: url("../img/map-pin-location.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -793,6 +816,13 @@ footer {
   }
   .watermelons-grid-column .watermelons-wrap .watermelons-excerpt {
     padding: 0 25px 40px 35px;
+  }
+
+  #where-we-farm .where-we-locations-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
 /* Medium Devices, Desktops */
@@ -981,6 +1011,30 @@ footer {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
+  }
+
+  #where-we-farm .where-we-description-column {
+    -webkit-flex-basis: 83.33%;
+    -ms-flex-preferred-size: 83.33%;
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #where-we-farm .where-we-map-column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #where-we-farm .where-we-location-column {
+    -webkit-flex-basis: 66.66%;
+    -ms-flex-preferred-size: 66.66%;
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+  }
+  #where-we-farm .where-we-location-column h2 {
+    margin-top: 0;
   }
 }
 /* Large Devices, Wide Screens */
