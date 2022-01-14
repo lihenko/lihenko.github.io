@@ -152,6 +152,15 @@ object, embed {
 	}
 }
 
+.green-button{
+	background-color: $green;
+	color: #fff;
+	&:hover{
+		color: #fff;
+		background-color: $red;
+	}
+}
+
 .red{
 	color:$red;
 }

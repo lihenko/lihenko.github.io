@@ -276,4 +276,26 @@ footer{
 	}
 }
 
+#page-title{
+	padding-top: 40px;
+	& h1{
+		color: #fff;
+	}
+}
+
+#about{
+	padding: 45px 0 0;
+	& .about-us-description{
+		margin-bottom: 30px;
+	}
+	& .btn{
+		margin-bottom: 15px;
+		display: block;
+		max-width: 440px;
+		&:last-child{
+			margin-bottom: 45px;
+		}
+	}
+}
+
 @import "media";
