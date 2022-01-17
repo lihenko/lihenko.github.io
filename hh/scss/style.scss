@@ -310,7 +310,7 @@ footer{
 	& .watermelons-wrap{
 		background-color: $green;
 		color: #fff;
-		max-width: 410px;
+		max-width: 394px;
 		margin-left: auto;
 		margin-right: auto;
 		height: 100%;
@@ -366,6 +366,70 @@ footer{
 		margin-bottom: 45px;
 		&:last-child{
 			margin-bottom: 0;
+		}
+	}
+}
+
+.recipes-title-column{
+	& .recipes-description{
+		margin-bottom: 35px;
+	}
+	& h3{
+		margin-bottom: 45px;
+	}
+}
+
+.recipes-grid-column{
+	margin-bottom: 35px;
+	& .recipes-grid-wrap{
+		background-color: $green;
+		max-width: 394px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		padding-bottom: 60px;
+		position: relative;
+	}
+	& .recipes-grid-tumbnail{
+		height: 274px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	& h5{
+		margin-bottom: 20px;
+		color: #fff;
+	}
+	& .recipes-grid-title{
+		padding: 15px 15px 0;}
+	& .recipes-grid-read-more{
+		position: absolute;
+		left: 15px;
+		bottom: 40px;
+		& a{
+			color:#F9AB48;
+			font-size: 0.88em;
+			font-weight: 700;
+			text-transform: uppercase;
+			position: relative;
+			padding-right: 50px;
+			&:hover{
+				color: $red;
+				&:after{
+					right: 0;
+				}
+			}
+			&:after{
+				content: url('../img/arrow-learn-more.svg');
+				position: absolute;
+				display: block;
+				height: 24px;
+				width: 24px;
+				top: 50%;
+				right: 5px;
+				transform:translateY(-50%);
+				transition:all 0.3s ease-in-out;
+			}
 		}
 	}
 }

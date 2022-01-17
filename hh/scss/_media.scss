@@ -277,6 +277,44 @@
 	#food-safety .food-safety-description-column{
 		margin-bottom: 60px;
 	}
+	.recipes-title-column{
+		flex-basis: 82%;
+		max-width: 82%;
+		margin-left: auto;
+		margin-right: auto;
+		& .recipes-description{
+			padding-left: 140px;
+			padding-right: 140px;
+		}
+	}
+	.recipes-grid-column{
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+		& .recipes-grid-wrap{
+			background-color: $green;
+			max-width: 394px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 100%;
+			padding-bottom: 60px;
+			position: relative;
+		}
+		& .recipes-grid-tumbnail{
+			height: 274px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& h5{
+			margin-bottom: 20px;
+			color: #fff;
+		}
+		& .recipes-grid-title{
+			padding: 15px 22px 0 35px;}
+		& .recipes-grid-read-more{
+			position: absolute;
+			left: 35px;
+			}}
 
 }
 
