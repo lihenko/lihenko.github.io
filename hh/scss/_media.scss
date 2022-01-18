@@ -116,6 +116,16 @@
 		flex-basis: 50%;
 		max-width: 50%;
 	}
+	.contact-form-wrap{
+		& .form-item:nth-child(1){
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .form-item:nth-child(2){
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 
@@ -315,6 +325,12 @@
 			position: absolute;
 			left: 35px;
 			}}
+		.contact-form-wrap{
+			padding: 79px 72px 45px;
+			& .btn{
+				min-width: 440px;
+			}
+		}
 
 }
 
@@ -458,5 +474,11 @@
 	.watermelons-grid-column{
 		flex-basis: 33.33%;
 		max-width: 33.33%;
+	}
+	.contact-form-column{
+		flex-basis: 990px;
+		max-width: 990px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

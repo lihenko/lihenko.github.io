@@ -90,9 +90,30 @@ object, embed {
   outline: none;
 }
 
+input[type="text"],input[type="email"],input[type="tel"]{
+	width: 100%;
+	border: 1px solid #020303;
+  background-color: #FFFFFF;
+  padding: 18.5px 27px;
+}
+
+textarea{
+	height: 206px;
+	width: 100%;
+	border: 1px solid #020303;
+  background-color: #FFFFFF;
+  padding: 18.5px 27px;
+}
+
+input[type="submit"]{
+	border:none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
 ::placeholder { 
-  color: $grey;
-  opacity: 1; 
+  color: $black;
+  opacity: .75; 
 }
 
 .container{

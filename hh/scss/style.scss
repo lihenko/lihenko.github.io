@@ -278,9 +278,20 @@ footer{
 
 #page-title{
 	padding-top: 40px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	& h1{
 		color: #fff;
 	}
+}
+
+.mb-15{
+	margin-bottom: 15px;
+}
+
+.mt-30{
+	margin-top: 30px;
 }
 
 #about{
@@ -431,6 +442,29 @@ footer{
 				transition:all 0.3s ease-in-out;
 			}
 		}
+	}
+}
+
+#contact{
+	padding-top: 30px;
+}
+
+.contact-title-column{
+	margin-bottom: 55px;
+}
+
+.contact-form-wrap{
+	background-color: $green;
+	background-image:url('../img/varieities-bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 25px 15px;
+	& .form-item{
+		margin-bottom: 20px;
+	}
+	& .form-button{
+		padding-top: 23px;
 	}
 }
 
