@@ -47,6 +47,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px){
+	#features{
+		.features-bg{
+			height: 300px;
+		}
+	}
 
 }
 
@@ -71,6 +76,15 @@
 				margin-bottom: 12px;
 			}
 		}
+	}
+	#features{
+		.features-bg{
+			height: 350px;
+		}
+	}
+	.services-row .service-column{
+		flex-basis: 50%;
+		max-width: 50%;
 	}
 
 }
@@ -101,6 +115,29 @@
 					margin-left: 15px;
 				}
 			}
+		}
+	}
+	.feature-item{
+		display: flex;
+		flex-wrap: wrap;
+		& .feature-icon{
+			flex-basis: 148px;
+			max-width: 148px;
+			padding-top: 5px;
+		}
+		& .feature-description{
+			flex-basis: calc(100% - 148px);
+			max-width: calc(100% - 148px);
+		}
+	}
+	#features{
+		.features-bg{
+			height: 450px;
+		}
+	}
+	.home-service-buttons{
+		& .btn:first-child{
+			margin-right: 19px;
 		}
 	}
 
@@ -176,6 +213,25 @@
 			max-width: 40%;
 		}
 	}
+	.features-row{
+		align-items:center;
+	}
+	.features-row .column{
+		flex-basis: 50%;
+		max-width: 50%;
+		margin-left: 50%;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	#features{
+		.features-bg{
+			height: 100%;
+			position: absolute;
+			width: calc(50vw - 7px);
+			top: 0;
+			left: 0;
+		}
+	}
 }
 
 
@@ -198,5 +254,14 @@
 	.home-hero-title-column{
 		flex-basis: 50%;
 		max-width: 50%;
+	}
+	#services{
+		& .container{
+			max-width: 1640px;
+			& .service-column{
+				flex-basis: 25%;
+				max-width: 25%;
+			}
+		}
 	}
 }

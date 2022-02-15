@@ -143,7 +143,21 @@ object, embed {
 		border-color: $black;
 	}
 }
+.black-button{
+	color: #fff;
+	background-color: $black;
+	border: 1px solid $black;
+	&:hover{
+		color: $black;
+		background-color: #fff;
+		border-color: #fff;
+	}
+}
 
 .red{
 	color: $red;
+}
+
+.uppercase{
+	text-transform: uppercase;
 }
