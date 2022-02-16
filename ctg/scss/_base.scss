@@ -86,8 +86,13 @@ object, embed {
   outline: none;
 }
 
-::placeholder { 
-  color: $grey;
+input[type="submit"]{
+	cursor: pointer;
+}
+
+::placeholder {
+	font-family: inherit; 
+  color: $black;
   opacity: 1; 
 }
 
@@ -126,10 +131,16 @@ object, embed {
 	color: #fff;
 	background-color: $red;
 	border: 1px solid $red;
+	transition: all 0.3s ease-in-out;
 	&:hover{
 		color: #fff;
 		background-color: $black;
 		border-color: $black;
+	}
+	&.alt:hover{
+		color:$black;
+		background-color: #fff;
+		border-color: #fff;
 	}
 }
 
@@ -137,6 +148,7 @@ object, embed {
 	color: $black;
 	background-color: transparent;
 	border: 1px solid $black;
+	transition: all 0.3s ease-in-out;
 	&:hover{
 		color: #fff;
 		background-color: $black;
@@ -147,11 +159,28 @@ object, embed {
 	color: #fff;
 	background-color: $black;
 	border: 1px solid $black;
+	transition: all 0.3s ease-in-out;
 	&:hover{
 		color: $black;
 		background-color: #fff;
 		border-color: #fff;
 	}
+}
+
+.white-button{
+	color: $black;
+	background-color: #fff;
+	border: 1px solid #fff;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: #fff;
+		background-color: $black;
+		border-color: $black;
+	}
+}
+
+.white{
+	color: #fff;
 }
 
 .red{
@@ -160,4 +189,8 @@ object, embed {
 
 .uppercase{
 	text-transform: uppercase;
+}
+
+.mb-30{
+	margin-bottom: 30px!important;
 }

@@ -13,6 +13,14 @@
 }
 
 @font-face{
+	font-family: 'FiraSans';
+	src: url('../fonts/FiraSans-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
 	font-family: 'WorkSans';
 	src: url('../fonts/WorkSans-ExtraBold.ttf');
 	font-weight: 900;
