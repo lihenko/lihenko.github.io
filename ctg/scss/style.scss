@@ -20,6 +20,7 @@
 	background-color: $black;
 	padding: 12px 0;
 	box-shadow: $shadow;
+	position: relative;
 	& #bar-menu{
 		margin: 0;
 		padding: 0;
@@ -206,6 +207,8 @@ footer{
 		text-align: center;
 	}
 	& .footer-contact{
+		display: flex;
+		justify-content: center;
 		& ul{
 			margin: 0;
 			padding: 0;
@@ -241,6 +244,7 @@ footer{
 	}
 }
 
+
 [class^='footer-menu-']{
 	& ul{
 		margin: 0;
@@ -249,10 +253,10 @@ footer{
 		& li{
 			position: relative;
 			margin-bottom: 12px;
+			text-align: center;
 			& a{
 				color: #fff;
 				font-size: 0.8em;
-				padding-left: 40px;
 				line-height: 1;
 				&:hover{
 					color: $red;

@@ -173,6 +173,7 @@
 		box-shadow: $shadow;
 		padding: 15px 45px;
 		top: 0;
+		z-index: 10;
 		& img{
 			max-height: 150px;
 		}
@@ -255,7 +256,9 @@
 			text-align: left;
 		}
 		& .footer-contact{
+			justify-content: flex-start;
 			& ul{
+
 				& li{
 					margin-bottom: 24px;
 				}
@@ -280,9 +283,10 @@
 	}
 	[class^='footer-menu-']{
 		& ul{
-			padding-top: 5px;
 			& li{
+				text-align: left;
 				margin-bottom: 24px;
+				padding-left: 40px;
 			}
 		}
 	}
