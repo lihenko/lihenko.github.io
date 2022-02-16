@@ -97,6 +97,10 @@ a.arrow-right{
 	}
 }
 
+.feature-icon{
+	margin-bottom: 12px;
+}
+
 .feature-item{
 	margin-bottom: 30px;
 }
@@ -104,6 +108,7 @@ a.arrow-right{
 .feature-title{
 	font-size: 1.1em;
 	font-weight: 700;
+	text-align: center;
 }
 
 .feature-text{
@@ -124,6 +129,14 @@ a.arrow-right{
 	padding: 77px 0;
 	& .service-column{
 		margin-bottom: 24px;
+		& a{
+			display: block;
+			&:hover{
+				& .service-image{
+					opacity: 0.8;
+				}
+			}
+		}
 	}
 }
 
@@ -138,6 +151,7 @@ a.arrow-right{
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		transition: opacity 0.3s ease-in-out;
 	}
 	& .service-name{
 		min-height: 130px;
@@ -149,6 +163,7 @@ a.arrow-right{
 		font-weight: 900;
 		font-size: 1.1em;
 		line-height: 1.13;
+		padding: 12px;
 	}
 }
 
@@ -161,6 +176,106 @@ a.arrow-right{
 
 #home-clients-experience{
 	padding: 77px 0;
+	& h2{
+		margin-bottom: 70px;
+	}
+	& .client-experience-name{
+		font-weight: 700;
+		font-size: 1.1em;
+	}
+	& .client-experience-icon{
+		min-height: 64px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		margin-bottom: 24px;
+	}
+	& .client-experience-column{
+		margin-bottom: 48px;
+	}
+}
+
+footer{
+	background-color: $black;
+	padding: 105px 0 93px;
+	& .footer-logo{
+		margin-bottom: 24px;
+		text-align: center;
+	}
+	& .footer-contact{
+		& ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			& li{
+				position: relative;
+				margin-bottom: 12px;
+				& a{
+					color: #fff;
+					font-size: 0.8em;
+					padding-left: 40px;
+					line-height: 1;
+					&:hover{
+						color: $red;
+					}
+					&.footer-email:before{
+						content: url('../img/email-letter-square.svg');
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+					}
+					&.footer-tel:before{
+						content: url('../img/iphone-mobile-phone.svg');
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+[class^='footer-menu-']{
+	& ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			position: relative;
+			margin-bottom: 12px;
+			& a{
+				color: #fff;
+				font-size: 0.8em;
+				padding-left: 40px;
+				line-height: 1;
+				&:hover{
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+.footer-button{
+	text-align: center;
+	padding-top: 24px;
+}
+
+.footer-button .red-button:hover{
+	color: $black;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.copyright{
+	padding-top: 24px;
+	font-size: 0.6em;
+	opacity: 0.5;
+	color: #fff;
+	text-align: center;
 }
 
 @import "media";
