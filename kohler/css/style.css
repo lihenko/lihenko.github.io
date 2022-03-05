@@ -53,8 +53,8 @@ h1, .h1 {
   line-height: 1.32;
 }
 
-h2 {
-  font-size: 32px;
+h2, .h2 {
+  font-size: 1.6em;
   line-height: 1.32;
 }
 
@@ -294,6 +294,10 @@ object, embed {
 
 .desctop {
   display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 input[type=text], input[type=email], input[type=tel] {
@@ -885,6 +889,164 @@ footer .copyright-column {
   font-size: 0.875em;
 }
 
+#hero-page {
+  padding-bottom: 160px;
+}
+#hero-page .hero-page-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+#hero-page .hero-page-image img {
+  max-width: 335px;
+}
+
+#hospital {
+  padding: 96px 0;
+  background: -webkit-linear-gradient(top, rgba(255, 102, 0, 0.1) 0%, rgba(255, 102, 0, 0.1) 50%, white 50%, white 100%);
+  background: linear-gradient(180deg, rgba(255, 102, 0, 0.1) 0%, rgba(255, 102, 0, 0.1) 50%, white 50%, white 100%);
+}
+#hospital .service-link {
+  color: #322E2F;
+}
+#hospital .service-link svg path {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#hospital .service-link:hover {
+  color: #EE1C25;
+}
+#hospital .service-link:hover svg path {
+  stroke: #EE1C25;
+}
+#hospital .service-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#hospital .service-title svg {
+  margin-right: 16px;
+}
+#hospital .service-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-wrap {
+  margin-bottom: 40px;
+  padding-right: 20px;
+  line-height: 1.6;
+}
+
+h2.arrowed {
+  position: relative;
+  padding-left: 72px;
+}
+
+h2.arrowed:before {
+  content: "";
+  width: 52px;
+  height: 52px;
+  background-image: url("../img/arrow-black.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}
+
+#compliance {
+  padding-bottom: 96px;
+  position: relative;
+}
+#compliance .top-left-image {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 0;
+}
+#compliance .bottom-right-image {
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  z-index: 0;
+}
+#compliance .services-list-wrap {
+  padding: 64px 16px 32px;
+  background-color: #E1F4FC;
+  margin-top: -58px;
+  line-height: 1.6;
+}
+#compliance .services-list-wrap .service-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#physician {
+  padding-bottom: 96px;
+  position: relative;
+}
+#physician .service-bg {
+  background-image: url("../img/bg-service.svg");
+  position: absolute;
+  bottom: -32px;
+  right: 25%;
+  height: 160px;
+  width: 100%;
+  min-width: 477px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#physician .services-list-wrap {
+  padding: 64px 16px 8px;
+  background-color: #E1F4FC;
+  margin-top: -58px;
+  line-height: 1.6;
+}
+#physician .services-list-wrap .service-options {
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+#other-services {
+  padding: 40px 20px 16px;
+  background-color: #00AAD4;
+}
+#other-services .other-services {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#other-services .other-services li {
+  margin-bottom: 24px;
+}
+#other-services .other-services li a {
+  color: #fff;
+}
+#other-services .other-services li a:hover {
+  color: #EE1C25;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -895,6 +1057,17 @@ footer .copyright-column {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 510px) {
+  #compliance .services-list-wrap {
+    margin-left: 72px;
+    max-width: 440px;
+  }
+
+  #physician .services-list-wrap {
+    margin-left: 72px;
+    max-width: 440px;
+  }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   #testimonials .testimonials-img {
@@ -921,6 +1094,34 @@ footer .copyright-column {
   }
   #subsribe button {
     width: 156px;
+  }
+
+  .service-wrap, .grid-sizer {
+    width: 50%;
+  }
+
+  .service-wrap {
+    float: left;
+  }
+
+  #other-services .column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #other-services .column:nth-child(3) {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  #other-services .column:nth-child(3) li {
+    width: 50%;
+    float: left;
+  }
+  #other-services .column:nth-child(3) li:nth-child(even) {
+    padding-left: 20px;
   }
 }
 /* Medium Devices, Desktops */
@@ -1236,6 +1437,50 @@ footer .copyright-column {
     color: #fff;
     font-size: 0.875em;
   }
+
+  #hero-page {
+    padding-bottom: 100px;
+    position: relative;
+  }
+  #hero-page .hero-page-column {
+    -webkit-flex-basis: 58%;
+    -ms-flex-preferred-size: 58%;
+    flex-basis: 58%;
+    max-width: 58%;
+  }
+  #hero-page .hero-page-column p {
+    padding-right: 150px;
+  }
+  #hero-page .hero-page-image {
+    position: absolute;
+    left: 40%;
+    right: 0;
+    bottom: -50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #hero-page .hero-page-image img {
+    max-width: 100%;
+  }
+
+  #compliance .services-list-wrap {
+    padding: 80px 64px 64px;
+    max-width: 577px;
+    margin-left: 222px;
+    margin-top: -90px;
+  }
+
+  #physician .services-list-wrap {
+    padding: 80px 64px 40px;
+    max-width: 577px;
+    margin-left: 222px;
+    margin-top: -90px;
+  }
+
+  #physician .service-bg {
+    bottom: -16px;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -1341,12 +1586,6 @@ footer .copyright-column {
     border-radius: 4px;
   }
 
-  footer {
-    padding: 448px 0 48px;
-    margin-top: -361px;
-    position: relative;
-    z-index: -1;
-  }
   footer .footer-logo-column {
     -webkit-flex-basis: 238px;
     -ms-flex-preferred-size: 238px;
@@ -1507,5 +1746,75 @@ footer .copyright-column {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  body.home-page footer {
+    padding: 448px 0 48px;
+    margin-top: -361px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .grid {
+    max-width: 1138px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #other-services {
+    padding: 64px 0 40px;
+  }
+  #other-services .column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #other-services .column:nth-child(3) {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #other-services .column:nth-child(3) li {
+    width: 100%;
+    float: none;
+  }
+  #other-services .column:nth-child(3) li:nth-child(even) {
+    padding-left: 0;
+  }
+
+  #physician {
+    padding-bottom: 200px;
+  }
+  #physician .service-bg {
+    height: 378px;
+  }
+}
+@media only screen and (min-width: 1287px) {
+  #hero-page .hero-page-column {
+    z-index: 1;
+  }
+  #hero-page .hero-page-image {
+    left: 40%;
+    right: 0;
+    bottom: -150px;
+    z-index: 0;
+  }
+
+  #physician h2 {
+    width: 1110px;
+    margin-left: auto;
+  }
+  #physician .services-list-wrap {
+    max-width: 983px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #physician .services-list-wrap .service-options:first-child {
+    padding-right: 32px;
   }
 }

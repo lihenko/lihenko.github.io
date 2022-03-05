@@ -103,3 +103,11 @@ jQuery(document).ready(function($){
 	  ]
 	});
 });
+
+jQuery(document).ready(function($){
+	$('.grid').masonry({
+	  itemSelector: '.service-wrap',
+	  columnWidth: '.grid-sizer',
+	  percentPosition: true
+	});
+});

@@ -349,4 +349,153 @@ footer{
 	}
 }
 
+#hero-page{
+	padding-bottom: 160px;
+	& .hero-page-image{
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		& img{
+			max-width: 335px;
+		}
+	}
+}
+
+#hospital{
+	padding: 96px 0;
+	background: linear-gradient(180deg, rgba(255,102,0,0.1) 0%, rgba(255,102,0,0.1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+	& .service-link{
+		color: $black;
+		& svg path{
+			transition: 0.3s ease-in-out;
+		}
+		&:hover{
+			color: $red;
+			& svg path{
+				stroke: $red;
+			}
+		}
+	}
+	& .service-title{
+		display: flex;
+		align-items:center;
+		& svg{
+			margin-right: 16px;
+		}
+	}
+	& .service-options{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.service-wrap{
+	margin-bottom: 40px;
+	padding-right: 20px;
+	line-height: 1.6;
+}
+
+h2.arrowed{
+	position: relative;
+	padding-left: 72px;
+}
+
+h2.arrowed:before{
+	content: '';
+	width: 52px;
+	height: 52px;
+	background-image: url('../img/arrow-black.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+#compliance{
+	padding-bottom: 96px;
+	position: relative;
+	& .top-left-image{
+		position: absolute;
+		top: -50%;
+		left: 0;
+		z-index: 0;
+	}
+	& .bottom-right-image{
+		position: absolute;
+		bottom: -50%;
+		right: 0;
+		z-index: 0;
+	}
+	& .services-list-wrap{
+		padding: 64px 16px 32px;
+		background-color: #E1F4FC;
+		margin-top: -58px;
+		line-height: 1.6;
+		& .service-options{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	}
+}
+
+#physician{
+	padding-bottom: 96px;
+	position: relative;
+	& .service-bg{
+		background-image: url('../img/bg-service.svg');
+		position: absolute;
+		bottom: -32px;
+		right: 25%;
+		height: 160px;
+		width: 100%;
+		min-width: 477px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	& .services-list-wrap{
+		padding: 64px 16px 8px;
+		background-color: #E1F4FC;
+		margin-top: -58px;
+		line-height: 1.6;
+		& .service-options{
+			margin: 0 0 24px;
+			padding: 0;
+			list-style: none;
+		}
+	}
+	
+}
+
+#other-services{
+	padding: 40px 20px 16px;
+	background-color: #00AAD4;
+	& .other-services{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		color: #fff;
+		font-size: 1.5em;
+		font-weight: 600;
+		text-transform: uppercase;
+		& li{
+			margin-bottom: 24px;
+			& a{
+				color: #fff;
+				&:hover{
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
 @import "media";

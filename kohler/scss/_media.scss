@@ -52,7 +52,18 @@
 
 
 @media only screen and (min-width : 510px){
-
+	#compliance{
+		& .services-list-wrap{
+			margin-left: 72px;
+			max-width: 440px;
+		}
+	}
+	#physician{
+		& .services-list-wrap{
+			margin-left: 72px;
+			max-width: 440px;
+		}
+	}
 
 }
 
@@ -80,6 +91,29 @@
 		}
 		& button{
 			width: 156px;
+		}
+	}
+	.service-wrap, .grid-sizer{
+		width: 50%;
+	}
+	.service-wrap{
+		float: left;
+	}
+	#other-services{
+		& .column{
+			flex-basis: 50%;
+			max-width: 50%;
+			&:nth-child(3){
+				flex-basis: 100%;
+				max-width: 100%;
+				& li{
+					width: 50%;
+					float: left;
+					&:nth-child(even){
+						padding-left: 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -318,6 +352,50 @@
 			font-size: 0.875em;
 		}
 	}
+	#hero-page{
+		padding-bottom: 100px;
+		position: relative;
+		& .hero-page-column{
+			flex-basis: 58%;
+			max-width: 58%;
+			& p{
+				padding-right: 150px;
+			}
+		}
+		& .hero-page-image{
+			position: absolute;
+			left: 40%;
+			right: 0;
+			bottom: -50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: center;
+			& img{
+				max-width: 100%;
+			}
+		}
+	}
+	#compliance{
+		& .services-list-wrap{
+			padding: 80px 64px 64px;
+			max-width: 577px;
+			margin-left: 222px;
+			margin-top: -90px;
+		}
+	}
+	#physician{
+		& .services-list-wrap{
+			padding: 80px 64px 40px;
+			max-width: 577px;
+			margin-left: 222px;
+			margin-top: -90px;
+		}
+	}
+	#physician{
+		& .service-bg{
+			bottom: -16px;
+		}
+	}
 }
 
 
@@ -411,10 +489,7 @@
 		border-radius:4px;
 	}
 	footer{
-		padding: 448px 0 48px;
-		margin-top: -361px;
-		position: relative;
-		z-index: -1;
+		
 		& .footer-logo-column{
 			flex-basis: 238px;
 			max-width: 238px;
@@ -525,6 +600,70 @@
 		}
 		& .copyright-row{
 			align-items: center;
+		}
+	}
+	body.home-page footer{
+		padding: 448px 0 48px;
+		margin-top: -361px;
+		position: relative;
+		z-index: -1;
+	}
+	
+	.grid{
+		max-width: 1138px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#other-services{
+		padding: 64px 0 40px;
+		& .column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+			&:nth-child(3){
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+				& li{
+					width: 100%;
+					float: none;
+					&:nth-child(even){
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	#physician{
+		padding-bottom: 200px;
+		& .service-bg{
+			height: 378px;
+		}
+	}
+}
+
+@media only screen and (min-width : 1287px){
+	#hero-page{
+		& .hero-page-column{
+			z-index: 1;
+		}
+		& .hero-page-image{
+			left: 40%;
+			right: 0;
+			bottom: -150px;
+			z-index: 0;
+		}
+	}
+	#physician{
+		& h2{
+			width: 1110px;
+			margin-left: auto;
+		}
+		& .services-list-wrap{
+			max-width: 983px;
+			margin-left: auto;
+			display: flex;
+			& .service-options:first-child{
+				padding-right: 32px;
+			}
 		}
 	}
 }
