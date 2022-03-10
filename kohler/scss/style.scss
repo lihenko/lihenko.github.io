@@ -350,6 +350,7 @@ footer{
 }
 
 #hero-page{
+	position: relative;
 	padding-bottom: 160px;
 	& .hero-page-image{
 		position: absolute;
@@ -494,6 +495,69 @@ h2.arrowed:before{
 					color: $red;
 				}
 			}
+		}
+	}
+}
+
+body.page-template-template-home-page-php{
+	& #hero-page{
+		position: relative;
+		padding-bottom: 64px;
+		& h1{
+			font-size: 4em;
+			margin-bottom: 0;
+		}
+		& .column-hero-description{
+			margin-bottom: 96px;
+		}
+		& h4{
+			opacity: 0.65;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+		& .hero-page-image{
+			top: 47%;
+			transform: translateY(-50%);
+			left: 55%;
+		}
+		& .column-hero-address p, .column-hero-contact p{
+			font-size: 20px;
+		}
+	}
+}
+
+#contact-form-section{
+	background-color: $black;
+	padding: 40px 0;
+	& h2{
+		font-weight: 700;
+		font-size: 2em;
+		& span{
+			color: $orange;
+		}
+	}
+	& .contact-form-column{
+		& input{
+			width: 100%;
+		}
+		& textarea{
+			width: 100%;
+		}
+		& .btn{
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	& .subscribe-form-column{
+		margin-bottom: 24px;
+		& input{
+			width: 100%;
+			margin-bottom: 16px;
+		}
+		& .btn{
+			width: 100%;
+			justify-content: center;
 		}
 	}
 }
