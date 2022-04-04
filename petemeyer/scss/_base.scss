@@ -1,0 +1,161 @@
+@import "vars";
+
+*{
+	box-sizing: border-box;
+	&:before, &:after{
+		box-sizing: border-box;
+	}
+}
+
+html, body {
+	position:relative;
+}
+
+body {
+	color: $black;
+	font-size: 16px;
+	line-height: 1.55;
+	font-family: Satoshi, sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Satoshi, sans-serif;
+	color: $violet;
+	font-weight: 700;
+}
+
+h1, .h1{
+  font-size: 2em;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h4{
+  font-size: 21px;
+  line-height: 27px;
+}
+
+h5{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	color:$black;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color:$red;
+	}
+}
+
+a:hover, a:active, a:focus {
+	outline: none;
+}
+
+button, button:hover, button:active, button:focus {
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+object, embed { 
+  outline: none;
+}
+
+::placeholder {
+	font-family: inherit; 
+  color: $black;
+  opacity: 0.51; 
+}
+
+.container{
+	max-width: 1166px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	position: relative;
+}
+
+.column{
+	padding: 0 15px;
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+input[type="text"],input[type="email"]{
+	font-family: inherit;
+	width: 100%;
+	background-color: #ECECEC;
+	border-radius: 4px;
+	border:none;
+	padding: 13px 10px;
+	margin-bottom: 15px;
+}
+
+label{
+	display: block;
+	margin-bottom: 7px;
+}
+
+textarea{
+	font-family: inherit;
+	width: 100%;
+	background-color: #ECECEC;
+	border-radius: 4px;
+	border:none;
+	padding: 5px 10px;
+	margin-bottom: 25px;
+	height: 142px;
+}
+
+input[type="submit"]{
+	width: 200px;
+	max-width: 100%;
+	font-family: inherit;
+	padding: 18px;
+	background-color: #1a79c7;
+	border-radius:4px;
+	border:none;
+	cursor: pointer;
+	color: #fff;
+	line-height: 1;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.16);
+	&:hover{
+		background-color: lighten(#1a79c7, 10%);
+	}
+}
