@@ -1,0 +1,296 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px){
+	
+}
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px){
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 509px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px){
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 374px){
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+
+@media only screen and (min-width : 510px){
+	#header{
+		margin-bottom: -264px;
+	}
+	#home-hero{
+		padding-top: 264px;
+	}
+	#subscribe{
+		form{
+			position: relative;
+			& input[type='email']{
+				padding-right: 230px;
+			}
+			& input[type="submit"]{
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin-top: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	.footer-menu-column ul{
+		& li{
+			padding-left: 10px;	
+			padding-right: 10px;	
+			display: inline-block;	
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	.why-wrapper{
+		padding: 45px;
+	}
+	.why-quote{
+		padding-left: 45px;
+		padding-right: 45px;
+		font-size: 1.25em;
+	}
+
+	.why-quote-author{
+		padding-left: 45px;
+		padding-right: 45px;
+		font-size: 1.875em;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	#header{
+		margin-bottom: -205px;
+	}
+	.logo-column{
+		flex-basis: 230px;
+		max-width: 230px;
+	}
+	.header-social-column{
+		flex-basis: 130px;
+		max-width: 130px;
+	}
+	.main-menu-column{
+		flex-basis: calc(100% - 230px - 130px);
+		max-width: calc(100% - 230px - 130px);
+	}
+	.header-row{
+		align-items: center;
+	}
+	#home-hero{
+		background-position: center;
+		padding-top: 220px;
+		padding-bottom: 50px;
+	}
+	#why{
+		background-position: center;
+	}
+	.home-issues-row{
+		display: flex;
+		& .home-issue{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+			& h4{
+				min-height: 45px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.footer-menu-row{
+		align-items: center;
+	}
+	.footer-logo-column{
+		text-align: left;
+		flex-basis: 230px;
+		max-width: 230px;
+	}
+	.footer-social-column{
+		text-align: right;
+		flex-basis: 190px;
+		max-width: 190px;
+	}
+	.footer-menu-column{
+		flex-basis: calc(100% - 230px - 190px);
+		max-width: calc(100% - 230px - 190px);
+	}
+	.footer-slogan-column{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	.footer-contact-column{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	#home-hero{
+		padding-top: 230px;
+		padding-bottom: 150px;
+		& .column{
+			flex-basis: 902px;
+			max-width: 902px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		& .home-hero-subtitle{
+			padding-left: 72px;
+			padding-right: 72px;
+		}
+	}
+	#subscribe{
+		padding: 25px 0;
+	}
+	.subscribe-row{
+		align-items: center;
+	}
+	.subscribe-title-column{
+		flex-basis: 360px;
+		max-width: 360px;
+	}
+	.subscribe-form-column{
+		flex-basis: calc(100% - 360px);
+		max-width: calc(100% - 360px);
+	}
+	#why{
+		padding-top: 295px;
+	}
+	.why-wrapper{
+		max-width: 849px;
+		margin-left: auto;
+		margin-right: 110px;
+	}
+	.why-quote{
+		padding-left: 35px;
+		padding-right: 35px;
+		margin-bottom: 55px;
+		&:before{
+			width: 96px;
+			height: 73px;
+			left: -95px;
+			top: -48px;
+		}
+		&:after{
+			width: 96px;
+			height: 73px;
+			right: -95px;
+			bottom: -60px;
+		}
+	}
+	.why-title{
+		margin-bottom: 55px;
+	}
+	#home-about{
+		padding-top: 260px;
+		padding-bottom: 185px;
+	}
+	#home-about .column{
+		flex-basis: 1070px;
+		max-width: 1070px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-menu-column ul{
+		& li{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+}
+
+@media only screen and (min-width : 1600px){
+	h1, .h1{
+	  font-size: 4.125em;
+	}
+	h2{
+	  font-size: 3em;
+	}
+	h3{
+		font-size: 2.25em;
+	}
+	h4{
+		font-size: 1.875em;
+	}
+	#header{
+		margin-bottom: -142px;
+	}
+	.logo-column{
+		flex-basis: 230px;
+		max-width: 230px;
+	}
+	.header-social-column{
+		flex-basis: 180px;
+		max-width: 180px;
+		& #header-social-links{
+			& li{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+	.header-cta-buttons{
+		flex-basis: 463px;
+		max-width: 463px;
+	}
+	.main-menu-column{
+		flex-basis: calc(100% - 230px - 180px - 463px);
+		max-width: calc(100% - 230px - 180px - 463px);
+	}
+	.home-issues-row{
+		display: flex;
+		& .home-issue{
+			padding: 95px 65px;
+			& .home-issue-more-link{
+				width: calc(100% - 130px);
+				bottom: 75px;
+			}
+		}
+	}
+}

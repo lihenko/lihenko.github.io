@@ -1,0 +1,251 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+@import "menu";
+
+
+#header{
+	padding: 15px 0;
+	position: relative;
+	margin-bottom: -328px;
+	z-index: 5;
+}
+
+#home-hero{
+	position: relative;
+	background-position: -150px center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 328px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#header-social-links{
+	margin: 0;
+	padding: 15px 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& li{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.home-hero-subtitle{
+	color: $blue;
+	font-weight: 700;
+	font-size: 2.06em;
+	text-transform: uppercase;
+	padding: 6px 30px;
+	background-color: #fff;
+	display: inline-block;
+}
+
+.home-hero-description{
+	font-size: 1.25em;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+#subscribe{
+	background-color: $red;
+	padding-bottom: 25px;
+	& input[type='submit']{
+		cursor: pointer;
+		margin-left: 0;
+		margin-right: 0;
+		&:hover{
+			background-color:$blue;
+			color: $red;
+		}
+	}
+}
+
+#why{
+	background-position: 55% center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 280px;
+	padding-bottom: 50px;
+}
+
+.why-wrapper{
+	padding: 15px;
+	background-color: $blue;
+}
+
+.why-title{
+	margin-bottom: 10px;
+}
+
+.why-quote{
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-bottom: 55px;
+	font-size: 1.125em;
+	font-weight: 500;
+	position: relative;
+	&:before{
+		content: '';
+		width: 48px;
+		height: 36.5px;
+		position: absolute;
+		left: -10px;
+		top: -25px;
+		background-image: url('../img/quote.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&:after{
+		content: '';
+		width: 48px;
+		height: 36.5px;
+		position: absolute;
+		right: -10px;
+		bottom: -15px;
+		transform: rotate(180deg);
+		background-image: url('../img/quote.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.why-quote-author{
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-bottom: 35px;
+	font-size: 1.35em;
+	font-weight: 500;
+	& span{
+		font-weight: 700;
+	}
+}
+
+#home-about{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 90px;
+	padding-bottom: 60px;
+}
+
+.home-about-title{
+	margin-bottom: 45px;
+}
+
+.home-about-description{
+	font-size: 1.125em;
+	font-weight: 500;
+	margin-bottom: 45px;
+}
+
+.home-issue{
+	padding: 45px 15px 65px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	& .home-issue-label{
+		color: $blue;
+		font-weight: 700;
+		background-color: #fff;
+		padding: 2.5px 45px;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	& .home-issue-description{
+		font-size: 1.125em;
+		margin-bottom: 20px;
+	}
+	& .home-issue-more-link{
+		position: absolute;
+		bottom: 45px;
+		width: calc(100% - 30px);
+		& a{
+			color: $red;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+
+#contribute{
+	background-color: $blue;
+	padding-bottom: 65px;
+	padding-top: 30px;
+}
+
+#dark-footer{
+	background-color: #141414;
+	padding: 60px 0;
+}
+
+.footer-menu-row{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.footer-logo-column{
+	margin-bottom: 15px;
+}
+
+.footer-menu-column ul{
+	margin: 0 0 15px;
+	padding: 0;
+	list-style: none;
+	& li{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		& a{
+			color: $red;
+			text-transform: uppercase;
+			font-weight: 500;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.footer-social-column ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	& li{
+		padding: 5px 15px;
+		display: inline-block;
+	}
+}
+
+.footer-contact-column{
+	font-weight: 500;
+	& a{
+		color: $red;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.footer-copyright-row{
+	margin-top: 50px;
+	text-align: center;
+	color: #fff;
+	opacity: 0.43;
+	font-size: 0.75em;
+}
+
+@import "media";
