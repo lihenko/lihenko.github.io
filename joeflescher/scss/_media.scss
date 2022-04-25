@@ -134,6 +134,11 @@
 			top: 0;
 		}
 	}
+	.faq-item{
+		& .answer{
+			padding: 30px 40px 30px 54px;
+		}
+	}
 }
 
 
@@ -536,6 +541,9 @@
 			min-width: 200px;
 			margin-right: 0;
 		}
+	}
+	.faq-item{
+		padding: 60px 130px 45px 115px;
 	}
 }
 
