@@ -139,6 +139,11 @@
 			padding: 30px 40px 30px 54px;
 		}
 	}
+	#contact-form{
+		& .contact-form-wrap{
+			padding: 50px 120px;
+		}
+	}
 }
 
 
@@ -545,6 +550,21 @@
 	.faq-item{
 		padding: 60px 130px 45px 115px;
 	}
+	#contact-form{
+		& .contact-form-wrap{
+			& h3{
+				margin-bottom: 50px;
+			}
+			& .contact-form-element.one-third{
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+			}
+			& .contact-form-element.half{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
+	}
 }
 
 
@@ -718,6 +738,14 @@
 				min-height: 55px;
 			}
 		}
+	}
+	.page-template-contact #page-hero{
+		padding-bottom: 150px;
+	}
+
+	.page-template-contact .contact-form-wrap{
+		margin-top: -100px;
+		position: relative;
 	}
 }
 

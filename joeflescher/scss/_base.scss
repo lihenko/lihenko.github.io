@@ -171,7 +171,14 @@ object, embed {
 	color: $red;
 }
 
-input[type='text'], input[type='email']{
+input[type='text'], input[type='email'], input[type='tel']{
+	width: 100%;
+	height: 67px;
+	border:none;
+	padding: 24px 25px;
+}
+
+textarea{
 	width: 100%;
 	height: 67px;
 	border:none;
@@ -181,4 +188,5 @@ input[type='text'], input[type='email']{
 input[type="submit"]{
 	border:none;
 	height: 67px;
+	cursor: pointer;
 }

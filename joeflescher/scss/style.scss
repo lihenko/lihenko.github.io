@@ -259,6 +259,15 @@
 	& h1{
 		text-transform: uppercase;
 	}
+	& .quote{
+		font-size: 1.125em;
+	}
+	& .author{
+		font-size: 1.25em;
+		& span{
+			font-weight: 700;
+		}
+	}
 }
 
 .page-hero-title-column{
@@ -762,6 +771,43 @@
 			position: absolute;
 			top: -40px;
 			left: 0;
+		}
+	}
+}
+
+#contact-form{
+	background-color: $black;
+	padding: 45px 0;
+	& .contact-form-wrap{
+		background-color: $red;
+		padding: 20px 15px;
+		& h3{
+			color: #fff;
+			text-transform: uppercase;
+		}
+		& .row{
+			margin-left: -13px;
+			margin-right: -13px;
+		}
+		& .contact-form-element{
+			flex-basis: 100%;
+			max-width: 100%;
+			padding-left: 13px;
+			padding-right: 13px;
+			margin-bottom: 26px;
+		}
+	}
+	& .contact-info{
+		padding-top: 45px;
+		font-size: 1.125em;
+		font-weight: 500;
+		& a{
+			color: #fff;
+			font-weight: 700;
+			white-space: nowrap;
+			&:hover{
+				color: $red;
+			}
 		}
 	}
 }
