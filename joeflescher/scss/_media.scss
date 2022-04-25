@@ -144,6 +144,14 @@
 			padding: 50px 120px;
 		}
 	}
+	.features-row{
+		display: flex;
+		flex-wrap: wrap;
+		& .features-wrap{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 
@@ -565,6 +573,32 @@
 			}
 		}
 	}
+	#donate-section{
+		flex-direction: row;
+		& .image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	.features-row{
+		& .features-wrap{
+			flex-basis: 25%;
+			max-width: 25%;
+		}
+	}
 }
 
 
@@ -642,6 +676,20 @@
 	#seals{
 		& .seals-row{
 			justify-content: space-between;
+		}
+	}
+	#donate-section{
+		& .data-column{
+			padding-left: calc((100% - 1500px)/ 2);
+			padding-right: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	.features-row{
+		& .features-wrap{
+			padding-left: 40px;
+			padding-right: 40px;
 		}
 	}
 
