@@ -102,6 +102,9 @@
 				&:last-child{
 					padding-right: 0;
 				}
+				&.current-menu-item a{
+					color: $blue;
+				}
 				& a{
 					color: #fff;
 					font-weight: 500;

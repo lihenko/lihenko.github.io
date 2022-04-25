@@ -58,6 +58,9 @@
 	#home-hero{
 		padding-top: 264px;
 	}
+	#page-hero{
+		padding-top: 264px;
+	}
 	#subscribe{
 		form{
 			position: relative;
@@ -98,6 +101,30 @@
 		padding-left: 45px;
 		padding-right: 45px;
 		font-size: 1.875em;
+	}
+	.deputy-quote-wrapper{
+		padding: 45px;
+	}
+	.deputy-quote{
+		padding-left: 45px;
+		padding-right: 45px;
+		font-size: 1.25em;
+	}
+
+	.deputy-quote-author{
+		padding-left: 45px;
+		padding-right: 45px;
+		font-size: 1.875em;
+	}
+	#issues-list{
+		& .issues-item{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .issues-item:nth-child(3){
+			flex-basis: 100%;
+			max-width: 100%;
+		}
 	}
 }
 
@@ -165,6 +192,41 @@
 	.footer-contact-column{
 		flex-basis: 50%;
 		max-width: 50%;
+	}
+	.page-hero-title-column{
+		flex-basis: 50%;
+		max-width: 50%;
+		text-align: left;
+	}
+	.page-hero-description-column{
+		padding-top: 45px;
+		flex-basis: 50%;
+		max-width: 50%;
+		& h2{
+			text-align: left;
+		}
+	}
+	#page-hero{
+		background-position: center;
+		padding-top: 220px;
+		padding-bottom: 50px;
+	}
+	.deputy-column{
+		flex-basis: 40%;
+		max-width: 40%;
+	}
+	.deputy-quote-column{
+		flex-basis: 60%;
+		max-width: 60%;
+	}
+	#issues-list{
+		& .issues-item{
+			padding: 120px 70px 135px;
+			& .issues-read-more{
+				left: 70px;
+			}
+		}
+		
 	}
 }
 
@@ -243,6 +305,264 @@
 			padding-right: 25px;
 		}
 	}
+	#page-hero{
+		padding-top: 230px;
+		padding-bottom: 150px;
+	}
+	.deputy-quote-wrapper{
+		padding-top: 96px;
+	}
+	.deputy-quote{
+		padding-left: 35px;
+		padding-right: 35px;
+		margin-bottom: 55px;
+		&:before{
+			width: 96px;
+			height: 73px;
+			left: -75px;
+			top: -48px;
+		}
+		&:after{
+			width: 96px;
+			height: 73px;
+			right: -75px;
+			bottom: -60px;
+		}
+	}
+	.deputy-column{
+		flex-basis: 35%;
+		max-width: 35%;
+	}
+	.deputy-quote-column{
+		flex-basis: 65%;
+		max-width: 65%;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	#commissioner{
+		flex-direction: row;
+		& .image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#family{
+		flex-direction: row;
+		& .image-column{
+			order:1;
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			order: 2;
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#solution{
+		flex-direction: row;
+		& .image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#serve{
+		flex-direction: row;
+		& .image-column{
+			order:1;
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			order: 2;
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#worker{
+		flex-direction: row;
+		& .image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#leadership{
+		flex-direction: row;
+		& .image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			min-height: unset;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding: 30px 15px;
+			& p{
+				font-weight: 500;
+				font-size: 1.125em;
+			}
+		}
+	}
+	#accomplishment{
+		padding-top: 220px;
+		padding-bottom: 180px;
+	}
+	#accomplishment .column{
+		flex-basis: 876px;
+		max-width: 876px;
+	}
+	#endorsements{
+		padding-bottom: 70px;
+	}
+	.endorsements-title-column{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	.endorsements-description-column{
+		padding-top: 20px;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+}
+
+
+@media only screen and (min-width : 1530px){
+	#commissioner{
+		& .data-column{
+			padding-left: calc((100% - 1500px)/ 2);
+			padding-right: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#family{
+		& .data-column{
+			padding-right: calc((100% - 1500px)/ 2);
+			padding-left: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#solution{
+		& .data-column{
+			padding-left: calc((100% - 1500px)/ 2);
+			padding-right: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#serve{
+		& .data-column{
+			padding-right: calc((100% - 1500px)/ 2);
+			padding-left: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#worker{
+		& .data-column{
+			padding-left: calc((100% - 1500px)/ 2);
+			padding-right: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#issues-list{
+		& .issues-item:nth-child(1){
+			flex-basis: 35%;
+			max-width: 35%;
+		}
+		& .issues-item:nth-child(2){
+			flex-basis: 65%;
+			max-width: 65%;
+		}
+		& .issues-item:nth-child(3){
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		& .issues-item:nth-child(4){
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		& .issues-item:nth-child(5){
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+	}
+	#leadership{
+		& .data-column{
+			padding-left: calc((100% - 1500px)/ 2);
+			padding-right: 90px;
+			padding-top: 120px;
+			padding-bottom: 90px;
+		}
+	}
+	#seals{
+		& .seals-row{
+			justify-content: space-between;
+		}
+	}
+
 }
 
 @media only screen and (min-width : 1600px){
@@ -292,5 +612,55 @@
 				bottom: 75px;
 			}
 		}
+	}
+	#page-hero{
+		padding-top: 308px;
+		padding-bottom: 60px;
+	}
+	.page-hero-description-column{
+		padding-top: 60px;
+	}
+	.deputy-quote{
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-bottom: 55px;
+		&:before{
+			width: 96px;
+			height: 73px;
+			left: -95px;
+			top: -48px;
+		}
+		&:after{
+			width: 96px;
+			height: 73px;
+			right: -95px;
+			bottom: -60px;
+		}
+	}
+	.deputy-column{
+		flex-basis: 40%;
+		max-width: 40%;
+		padding-right: 45px;
+		& h4{
+			padding-right: 15px;
+		}
+	}
+	.deputy-quote-column{
+		flex-basis: 60%;
+		max-width: 60%;
+		padding-left: 45px;
+	}
+	#issues-list{
+		& .issues-item{
+			& h4{
+				min-height: 55px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 1800px){
+	.deputy-quote-column{
+		padding-right: 0;
 	}
 }
