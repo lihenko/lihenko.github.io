@@ -609,4 +609,116 @@
 	background-color: $black;
 }
 
+#news-list{
+	background-color: $black;
+	padding: 30px 0 100px;
+}
+
+.news-item{
+	background-color: $blue;
+	padding: 70px 30px 130px;
+	position: relative;
+	color: #fff;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	& a{
+		color: #fff;
+		&:hover{
+			color: $red;
+		}
+	}
+	& .news-data{
+		font-weight: 500;
+	}
+	& .news-date{
+		margin-bottom: 15px;
+	}
+	& .news-read-more{
+		position: absolute;
+		left: 15px;
+		bottom: 80px;
+		& a{
+			color: $red;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	& .news-type{
+		display: inline-block;
+		color: $blue;
+		text-transform: uppercase;
+		font-weight: 700;
+		background-color: #fff;
+		padding: 2px 15px;
+		min-width: 187px;
+		text-align: center;
+	}
+}
+
+
+.pagination{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.page-numbers{
+	color: #fff;
+	display: flex;
+	width: 48px;
+	height: 48px;
+	justify-content: center;
+	align-items:center;
+	border:1px solid transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	&.current{
+		border-color: #fff;
+	}
+	&:hover:not(.dots){
+		border-color:#fff;
+		color: #fff;
+	}
+	&.prev{
+		margin-left: 0;
+		position: absolute;
+		top: 65px;
+		left: 0;
+		text-transform: uppercase;
+		background-color: $red;
+		padding: 10px 15px;
+		min-width: 150px;
+		font-weight: 700;
+		display: inline-block;
+		text-align: center;
+		border: 1px solid $red;
+		&:hover{
+			background-color: transparent;
+			color: #fff;
+		}
+	}
+	&.next{
+		margin-right: 0;
+		position: absolute;
+		top: 65px;
+		right: 0;
+		text-transform: uppercase;
+		background-color: $red;
+		padding: 10px 15px;
+		min-width: 150px;
+		font-weight: 700;
+		display: inline-block;
+		text-align: center;
+		border: 1px solid $red;
+		&:hover{
+			background-color: transparent;
+			color: #fff;
+		}
+	}
+}
+
 @import "media";
