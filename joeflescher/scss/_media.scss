@@ -152,6 +152,17 @@
 			max-width: 50%;
 		}
 	}
+	#donate-form{
+		& .donate-form-wrap{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 78px 58px 51px;
+			& .contact-form-element.half{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
+	}
 }
 
 
@@ -599,6 +610,20 @@
 			max-width: 25%;
 		}
 	}
+	#donate-form{
+		display: flex;
+		align-items:center;
+		& .donate-form-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .donate-form-description{
+			flex-basis: 50%;
+			max-width: 50%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
 }
 
 
@@ -690,6 +715,18 @@
 		& .features-wrap{
 			padding-left: 40px;
 			padding-right: 40px;
+		}
+	}
+	#donate-form{
+		& .donate-form-column{
+			& .donate-form-wrap{
+				max-width: 923px;
+				margin-left: auto;
+			}
+		}
+		& .donate-form-description{
+			padding-left: 115px;
+			padding-right: calc((100% - 1500px)/ 2);
 		}
 	}
 
@@ -788,6 +825,10 @@
 		}
 	}
 	.page-template-contact #page-hero{
+		padding-bottom: 150px;
+	}
+
+	.page-template-donate #page-hero{
 		padding-bottom: 150px;
 	}
 

@@ -880,4 +880,35 @@
 	}
 }
 
+
+#donate-form{
+	background-color: $blue;
+	padding: 75px 15px 45px;
+	& .donate-form-wrap{
+		background-color: $red;
+		padding: 20px 15px;
+		margin-bottom: 30px;
+		& h3{
+			color: #fff;
+			text-transform: uppercase;
+		}
+		& .row{
+			margin-left: -13px;
+			margin-right: -13px;
+		}
+		& .contact-form-element{
+			flex-basis: 100%;
+			max-width: 100%;
+			padding-left: 13px;
+			padding-right: 13px;
+			margin-bottom: 26px;
+		}
+	}
+	& .donate-form-description p{
+		font-weight: 500;
+		font-size: 1.125em;
+	}
+}
+
+
 @import "media";
