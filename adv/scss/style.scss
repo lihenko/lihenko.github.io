@@ -10,6 +10,9 @@
 		flex-basis: 100%;
 		max-width: 100%;
 		margin-bottom: 15px;
+		& img{
+			max-width: 100px;
+		}
 	}
 	& .header-buttons-column{
 		flex-basis: 100%;
@@ -22,6 +25,9 @@
 	& .language-switch{
 		padding-left: 12px;
 		padding-right: 12px;
+		position: absolute;
+		top: 32px;
+		right: 12px;
 		& a{
 			color: #fff;
 			font-size: 0.875em;
@@ -310,6 +316,9 @@
 		background-repeat: no-repeat;
 		padding-top: 35px;
 		padding-bottom: 35px;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	& .more-screens-photo-column{
 		padding-top: 45px;
@@ -317,37 +326,46 @@
 	}
 	& .more-screens-photo-1{
 		width: 100%;
-		max-width: 275px;
-		height: 225px;
+		width: 140px;
+		height: 90px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		border-radius:30px;
-		border:14px solid $gold;
-		margin-bottom: 24px;
+		border-radius:15px;
+		border:7px solid $gold;
+		margin-left: 10%;
+		position: relative;
+		z-index: 3;
 	}
 	& .more-screens-photo-2{
 		width: 100%;
-		max-width: 294px;
-		height: 425px;
+		width: 146px;
+		height: 206px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		border-radius:30px;
-		border:14px solid $gold;
-		margin-bottom: 24px;
+		border-radius:15px;
+		border:7px solid $gold;
 		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		z-index: 2;
+		margin-top: -60px;
 	}
 	& .more-screens-photo-3{
 		width: 100%;
-		max-width: 275px;
-		height: 225px;
+		width: 140px;
+		height: 90px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		border-radius:30px;
-		border:14px solid $gold;
-		margin-bottom: 24px;
+		border-radius:15px;
+		border:7px solid $gold;
+		margin-left: auto;
+		margin-right: 10%;
+		position: relative;
+		z-index: 3;
+		margin-top: -60px;
 	}
 }
 

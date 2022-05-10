@@ -52,27 +52,6 @@
 
 
 @media only screen and (min-width : 510px){
-	#more-screens{
-		& .more-screens-photo-1{
-			position: relative;
-			height: 194px;
-			z-index: 3;
-		}
-		& .more-screens-photo-2{
-			position: relative;
-			height: 454px;
-			margin-top: -150px;
-			margin-right: auto;
-			z-index: 2;
-		}
-		& .more-screens-photo-3{
-			position: relative;
-			height: 194px;
-			z-index: 3;
-			margin-left: auto;
-			margin-top: -150px;
-		}
-	}
 	#contact{
 		& .contact-buttons-column{
 			justify-content: space-around;
@@ -95,6 +74,26 @@
 			}
 		}
 	}
+	#more-screens{
+		& .more-screens-photo-wrap{
+			max-width: 568px;
+		}
+		& .more-screens-photo-1{
+			width: 290px;
+			height: 185px;
+			margin-left: 12px;
+		}
+		& .more-screens-photo-2{
+			width: 303px;
+			height: 426px;
+
+		}
+		& .more-screens-photo-3{
+			width: 290px;
+			height: 185px;
+			margin-right: 12px;
+		}
+	}
 }
 
 
@@ -108,6 +107,9 @@
 			flex-basis: 224px;
 			max-width: 224px;
 			margin-bottom: 0;
+			& img{
+				max-width: unset;
+			}
 		}
 		& .header-buttons-column{
 			flex-basis: calc(50% - 112px);
@@ -119,6 +121,11 @@
 			flex-basis: calc(50% - 112px);
 			max-width: calc(50% - 112px);
 			margin-bottom: 30px;
+		}
+		& .language-switch{
+			position: relative;
+			top: unset;
+			right: unset;
 		}
 	}
 	#hero{
@@ -190,6 +197,18 @@
 			flex-basis: 50%;
 			max-width: 50%;
 			order: 1;
+		}
+		& .more-screens-photo-1{
+			border-radius:30px;
+			border:14px solid $gold;
+		}
+		& .more-screens-photo-2{
+			border-radius:30px;
+			border:14px solid $gold;
+		}
+		& .more-screens-photo-3{
+			border-radius:30px;
+			border:14px solid $gold;
 		}
 	}
 	#features{

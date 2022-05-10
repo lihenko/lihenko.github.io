@@ -285,8 +285,8 @@ object, embed {
 #toggle-btn {
   display: block;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 39px;
+  left: 20px;
   z-index: 9999999;
 }
 
@@ -297,23 +297,23 @@ object, embed {
 }
 
 .hamburger .icon-bar {
-  background-color: #D9AC4C;
+  background-color: #fff;
   display: block;
-  height: 4px;
+  height: 3px;
   position: relative;
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 30px;
+  width: 25px;
 }
 
 .hamburger .icon-bar:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .menu-open .hamburger .icon-bar:nth-of-type(1) {
   background-color: #080D16;
-  top: 8px;
+  top: 4px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -325,7 +325,7 @@ object, embed {
 
 .menu-open .hamburger .icon-bar:nth-of-type(3) {
   background-color: #080D16;
-  top: -10px;
+  top: -8px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -361,8 +361,8 @@ object, embed {
   }
   #main-menu ul li {
     margin-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
   #main-menu ul li:first-child {
     padding-left: 0;
@@ -404,6 +404,9 @@ object, embed {
   max-width: 100%;
   margin-bottom: 15px;
 }
+#header .brand-column img {
+  max-width: 100px;
+}
 #header .header-buttons-column {
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -428,6 +431,9 @@ object, embed {
 #header .language-switch {
   padding-left: 12px;
   padding-right: 12px;
+  position: absolute;
+  top: 32px;
+  right: 12px;
 }
 #header .language-switch a {
   color: #fff;
@@ -754,6 +760,9 @@ object, embed {
   background-repeat: no-repeat;
   padding-top: 35px;
   padding-bottom: 35px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #more-screens .more-screens-photo-column {
   padding-top: 45px;
@@ -761,37 +770,46 @@ object, embed {
 }
 #more-screens .more-screens-photo-1 {
   width: 100%;
-  max-width: 275px;
-  height: 225px;
+  width: 140px;
+  height: 90px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 30px;
-  border: 14px solid #D9AC4C;
-  margin-bottom: 24px;
+  border-radius: 15px;
+  border: 7px solid #D9AC4C;
+  margin-left: 10%;
+  position: relative;
+  z-index: 3;
 }
 #more-screens .more-screens-photo-2 {
   width: 100%;
-  max-width: 294px;
-  height: 425px;
+  width: 146px;
+  height: 206px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 30px;
-  border: 14px solid #D9AC4C;
-  margin-bottom: 24px;
+  border-radius: 15px;
+  border: 7px solid #D9AC4C;
   margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
 }
 #more-screens .more-screens-photo-3 {
   width: 100%;
-  max-width: 275px;
-  height: 225px;
+  width: 140px;
+  height: 90px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 30px;
-  border: 14px solid #D9AC4C;
-  margin-bottom: 24px;
+  border-radius: 15px;
+  border: 7px solid #D9AC4C;
+  margin-left: auto;
+  margin-right: 10%;
+  position: relative;
+  z-index: 3;
+  margin-top: -60px;
 }
 
 #features {
@@ -1013,26 +1031,6 @@ footer .copiright {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 510px) {
-  #more-screens .more-screens-photo-1 {
-    position: relative;
-    height: 194px;
-    z-index: 3;
-  }
-  #more-screens .more-screens-photo-2 {
-    position: relative;
-    height: 454px;
-    margin-top: -150px;
-    margin-right: auto;
-    z-index: 2;
-  }
-  #more-screens .more-screens-photo-3 {
-    position: relative;
-    height: 194px;
-    z-index: 3;
-    margin-left: auto;
-    margin-top: -150px;
-  }
-
   #contact .contact-buttons-column {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -1058,6 +1056,24 @@ footer .copiright {
     flex-basis: auto;
     max-width: 100%;
   }
+
+  #more-screens .more-screens-photo-wrap {
+    max-width: 568px;
+  }
+  #more-screens .more-screens-photo-1 {
+    width: 290px;
+    height: 185px;
+    margin-left: 12px;
+  }
+  #more-screens .more-screens-photo-2 {
+    width: 303px;
+    height: 426px;
+  }
+  #more-screens .more-screens-photo-3 {
+    width: 290px;
+    height: 185px;
+    margin-right: 12px;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -1073,6 +1089,9 @@ footer .copiright {
     flex-basis: 224px;
     max-width: 224px;
     margin-bottom: 0;
+  }
+  #header .brand-column img {
+    max-width: unset;
   }
   #header .header-buttons-column {
     -webkit-flex-basis: calc(50% - 112px);
@@ -1091,6 +1110,11 @@ footer .copiright {
     flex-basis: calc(50% - 112px);
     max-width: calc(50% - 112px);
     margin-bottom: 30px;
+  }
+  #header .language-switch {
+    position: relative;
+    top: unset;
+    right: unset;
   }
 
   #hero {
@@ -1186,6 +1210,18 @@ footer .copiright {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+  }
+  #more-screens .more-screens-photo-1 {
+    border-radius: 30px;
+    border: 14px solid #D9AC4C;
+  }
+  #more-screens .more-screens-photo-2 {
+    border-radius: 30px;
+    border: 14px solid #D9AC4C;
+  }
+  #more-screens .more-screens-photo-3 {
+    border-radius: 30px;
+    border: 14px solid #D9AC4C;
   }
 
   #features .features-row {
