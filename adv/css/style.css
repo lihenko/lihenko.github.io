@@ -285,7 +285,7 @@ object, embed {
 #toggle-btn {
   display: block;
   position: absolute;
-  top: 39px;
+  top: 46px;
   left: 20px;
   z-index: 9999999;
 }
@@ -405,7 +405,7 @@ object, embed {
   margin-bottom: 15px;
 }
 #header .brand-column img {
-  max-width: 100px;
+  max-width: 150px;
 }
 #header .header-buttons-column {
   -webkit-flex-basis: 100%;
@@ -432,7 +432,7 @@ object, embed {
   padding-left: 12px;
   padding-right: 12px;
   position: absolute;
-  top: 32px;
+  top: 40px;
   right: 12px;
 }
 #header .language-switch a {
