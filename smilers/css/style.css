@@ -443,7 +443,8 @@ header .language-switch ul li.lang-current a {
 
 .countdown-title {
   margin-top: 10px;
-  font-size: 0.625em;
+  font-size: 0.625rem;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 0.28px;
 }
@@ -1344,6 +1345,7 @@ footer .footer-menu-row ul li.contact-link a:hover {
   position: absolute;
   color: #fff;
   font-size: 18%;
+  font-weight: 400;
   text-transform: uppercase;
   top: 100%;
   line-height: 1em;

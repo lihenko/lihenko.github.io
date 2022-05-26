@@ -1,4 +1,42 @@
 jQuery(document).ready(function ($) {
+  const d = new Date();
+  let diff = d.getTimezoneOffset();
+  let year = 2022;
+  let month = 8;
+  let day = 24;
+  let hour = 12;
+  let minutes = 0;
+  let zone = -180;
+
+  if (diff != zone){
+    var newhour = hour + ((diff - zone) / 60);
+
+    if (newhour >= 24){
+      var newday = day + 1;
+      newhour = newhour - 24;
+    }
+    else if (newhour <= 0){
+        var newday = day - 1;
+        newhour = 24 + newhour;
+    } else {
+      newday = day;
+    }
+      $('.flipper').each(function(){
+        var newdate = year.toString() + '-' + month.toString() + '-' + newday.toString() + ' ' + newhour.toString() + ':' + minutes.toString() + ':00';
+        $(this).data('datetime', newdate);
+      });
+    
+  } else {
+    $('.flipper').each(function(){
+        var newdate = year.toString() + '-' + month.toString() + '-' + day.toString() + ' ' + hour.toString() + ':' + minutes.toString() + ':00';
+        $(this).data('datetime', newdate);
+      });
+
+  }
+
+});
+
+jQuery(document).ready(function ($) {
   $('#countdown').flipper('init');
   $('#countdown2').flipper('init');
 });
