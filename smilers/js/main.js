@@ -77,3 +77,34 @@ jQuery(document).ready(function ($) {
     $('.accordion-arrow',this).toggleClass('accordion-rotate');
   });
 });
+
+
+jQuery(document).ready(function ($) {
+  $('.how-it-works-line-column ul li').viewportChecker({
+      classToAdd: 'visible',
+      offset: 400,
+      invertBottomOffset: true,
+      repeat: true,
+      scrollHorizontal: false
+  });
+  $('.how-it-works-line-column ul').viewportChecker({
+      classToAdd: 'visible',
+      offset: 400,
+      invertBottomOffset: true,
+      repeat: true,
+      callbackFunction: function(elem, action){
+        var position = $('#how-it-works').position();
+        var current_position = $(window).scrollTop();
+        var different = (current_position + 100 - position.top);
+        var windowwidth = $(window).width();
+        if($(window).width() > 991){
+          if( different > 0) {
+            $('.how-it-works-title-column h2').css({
+              top: different + 'px'
+            });
+          }
+        }
+      },
+      scrollHorizontal: false
+  });
+});

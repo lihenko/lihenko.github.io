@@ -37,11 +37,17 @@ header{
 
 
 #home-hero{
+	overflow: hidden;
 	& h1{
 		margin: 0.3em 0;
 			& span{
 				color: $yellow;
 		} 
+	}
+	& img{
+		max-width: 130%;
+		height: auto;
+		margin-left: -10%;
 	}
 	& .hero-quote{
 		margin-bottom: 30px;
@@ -98,7 +104,7 @@ header{
 		padding-bottom: 10%;
 	}
 	& .our-mission{
-		font-size: 1.625em;
+		font-size: 1.4em;
 		font-weight: 700;
 		margin-bottom: 15px;
 	}
@@ -186,7 +192,7 @@ header{
 						border:none;
 					}
 				}
-				&:nth-child(2){
+				&.visible{
 					color: $yellow;
 					&:before{
 						background-color: $yellow;
@@ -429,6 +435,7 @@ header{
 			& .doings-triangle{
 				margin-left: 25px;
 				display: flex;
+				margin-bottom: -1px;
 			}
 			& .doings{
 				background-color: #fff;

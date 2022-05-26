@@ -73,6 +73,18 @@
 
 
 @media only screen and (min-width : 510px){
+	#home-hero{
+		& img{
+			max-width: 100%;
+			height: auto;
+			margin-left: 0;
+		}
+	}
+	#our-mission{
+		& .our-mission{
+			font-size: 1.625em;
+		}
+	}
 	#team{
 		& .team-backers-column{
 			max-width: 510px;
@@ -167,6 +179,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px){
+	h1, .h1{
+	  font-size: 7.8em;
+	  line-height: 0.92;
+	}
+
+	h2{
+	  font-size: 4em;
+	  line-height: 0.92;
+	}
 	.header-row{
 		align-items:center;
 	}
@@ -531,11 +552,20 @@
 	}
 	#how-it-works{
 		padding-top: 80px;
+		h2{
+			margin-top: 0;
+		}
 		& .how-it-works-row{
 			& .how-it-works-title-column{
 				flex-basis: calc(50% - 81px);
 				max-width: calc(50% - 81px);
-				padding-top: 80px;
+				position: relative;
+				& h2{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
 			}
 			& .how-it-works-line-column{
 				max-width: 655px;
@@ -593,7 +623,7 @@
 								border:none;
 							}
 						}
-						&:nth-child(2){
+						&.visible{
 							color: $yellow;
 							&:before{
 								background-color: $yellow;
