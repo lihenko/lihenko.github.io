@@ -1,0 +1,79 @@
+jQuery(document).ready(function ($) {
+  $('#countdown').flipper('init');
+  $('#countdown2').flipper('init');
+});
+
+jQuery(document).ready(function ($) {
+  $('.smilers-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 300,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
+});
+
+jQuery(document).ready(function ($) {
+  $('.smilers-media-slider').slick({
+    centerMode: true,
+    variableWidth: true,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});  
+
+jQuery(document).ready(function ($) {
+  $(".accordion-title").on("click", function(e) {
+
+    e.preventDefault();
+    var $this = $(this);
+
+    if (!$this.hasClass("accordion-active")) {
+      $(".accordion-content").slideUp(400);
+      $(".accordion-title").removeClass("accordion-active");
+      $('.accordion-arrow').removeClass('accordion-rotate');
+    }
+
+    $this.toggleClass("accordion-active");
+    $this.next().slideToggle();
+    $('.accordion-arrow',this).toggleClass('accordion-rotate');
+  });
+});

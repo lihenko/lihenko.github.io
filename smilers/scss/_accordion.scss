@@ -1,0 +1,53 @@
+@import "vars";
+
+.accordion-item {
+  margin: 5px auto;
+  border-bottom: 1px dashed #fff;
+}
+.accordion-item .accordion-title {
+  position: relative;
+  display: block;
+  padding: 13px 60px 15px 13px;
+  margin-bottom: 2px;
+  color: $yellow;
+  font-size: 1.625em;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.accordion-item .accordion-title:hover {
+  background-color: $blue;
+  transition: all 0.5s ease-out;
+}
+
+.accordion-item .accordion-title .accordion-arrow {
+  position: absolute;
+  top: 13px; right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.accordion-item .accordion-rotate {
+  margin-top: 5px;
+  transform: rotate(180deg);
+}
+.accordion-item .accordion-content {
+  color: #fff;
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 2px;
+  display: none;
+}
+
+
+@media only screen and (min-width : 992px){
+  .accordion-item .accordion-content {
+    padding: 10px 100px 30px 30px;
+  }
+}
