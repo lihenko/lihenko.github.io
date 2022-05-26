@@ -425,8 +425,11 @@ header .language-switch ul {
   margin: 0;
   list-style: none;
 }
-header .language-switch ul li.lang-current a {
+header .language-switch ul li a {
   color: #FFCC00;
+}
+header .language-switch ul li.lang-current a {
+  color: #fff;
 }
 
 .countdown-column {
@@ -785,6 +788,7 @@ header .language-switch ul li.lang-current a {
   -ms-flex-preferred-size: calc(100% - 68px);
   flex-basis: calc(100% - 68px);
   max-width: calc(100% - 68px);
+  font-size: 1.125em;
   font-weight: 700;
   color: #fff;
   line-height: 1.125;
@@ -912,7 +916,7 @@ header .language-switch ul li.lang-current a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #road-map .road-map #road-map-list .doings .row .doing-icon-column {
   -webkit-flex-basis: 57px;
@@ -1225,6 +1229,13 @@ footer .footer-social ul li {
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+footer .footer-social ul li a svg path {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-social ul li a:hover svg path {
+  fill: #fff;
 }
 footer .cta-row {
   -webkit-box-align: center;
@@ -2013,7 +2024,6 @@ footer .footer-menu-row ul li.contact-link a:hover {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 20px;
   }
   #road-map .road-map #road-map-list .doings .row .doing-icon-column {
     -webkit-flex-basis: 57px;
@@ -2227,9 +2237,6 @@ footer .footer-menu-row ul li.contact-link a:hover {
   #how-it-works {
     padding-top: 80px;
   }
-  #how-it-works h2 {
-    margin-top: 0;
-  }
   #how-it-works .how-it-works-row .how-it-works-title-column {
     -webkit-flex-basis: calc(50% - 81px);
     -ms-flex-preferred-size: calc(50% - 81px);
@@ -2244,6 +2251,9 @@ footer .footer-menu-row ul li.contact-link a:hover {
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    margin-top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #how-it-works .how-it-works-row .how-it-works-line-column {
     max-width: 655px;

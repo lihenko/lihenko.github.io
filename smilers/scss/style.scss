@@ -14,8 +14,11 @@ header{
 			padding: 0;
 			margin: 0;
 			list-style: none;
-			& li.lang-current a{
+			& li a{
 				color: $yellow;
+			}
+			& li.lang-current a{
+				color: #fff;
 			}
 		}
 	}
@@ -289,7 +292,7 @@ header{
 	& .slick-dots{
 		bottom: -45px;
 	}
-	
+
 }
 
 #free-nfts{
@@ -327,6 +330,7 @@ header{
 	& .list-data-column{
 		flex-basis: calc(100% - 68px);
 		max-width: calc(100% - 68px);
+		font-size: 1.125em;
 		font-weight: 700;
 		color: #fff;
 		line-height: 1.125;
@@ -445,7 +449,7 @@ header{
 				margin-top: 0;
 				& .row{
 					align-items:center;
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 					& .doing-icon-column{
 						flex-basis: 57px;
 						max-width: 57px;
@@ -689,6 +693,12 @@ footer{
 				padding-right: 10px;
 				padding-top: 10px;
 				padding-bottom: 10px;
+				& a svg path{
+					transition: all 0.3s ease-in-out;
+				}
+				& a:hover svg path{
+					fill: #fff;
+				}
 			}
 		}
 	}
