@@ -262,12 +262,23 @@
 		}
 		& .slick-prev{
 			left: -150px;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				left: -155px;
+			}
 		}
 		& .slick-next{
 			right: -150px;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				right: -155px;
+			}
 		}
 		& .slick-prev, .slick-next{
 			top: calc(50% - 60px);
+		}
+		.slick-prev::before, .slick-next::before{
+			opacity: 1;	
 		}
 	}
 	#free-nfts{

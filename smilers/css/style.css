@@ -1855,12 +1855,25 @@ footer .footer-menu-row ul li.contact-link a:hover {
   }
   #smilers .slick-prev {
     left: -150px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #smilers .slick-prev:hover {
+    left: -155px;
   }
   #smilers .slick-next {
     right: -150px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #smilers .slick-next:hover {
+    right: -155px;
   }
   #smilers .slick-prev, #smilers .slick-next {
     top: calc(50% - 60px);
+  }
+  #smilers .slick-prev::before, #smilers .slick-next::before {
+    opacity: 1;
   }
 
   #free-nfts .free-nfts-row {
