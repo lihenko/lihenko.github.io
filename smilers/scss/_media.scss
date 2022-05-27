@@ -591,7 +591,7 @@
 						position: relative;
 						font-size: 1.625em;
 						font-weight: 700;
-						min-height: 217px;
+						min-height: 145px;
 						display: flex;
 						align-items:center;
 						margin-bottom: 8px;
@@ -625,7 +625,7 @@
 		  					z-index: 2;
 						}
 						&:first-child{
-							min-height: 257px;
+							min-height: 185px;
 							&:before{
 								border-top-left-radius:57px;
 								border-top-right-radius:57px;
@@ -642,7 +642,7 @@
 							}
 						}
 						&:last-child{
-							min-height: 257px;
+							min-height: 185px;
 							&:before{
 								border-bottom-left-radius:57px;
 								border-bottom-right-radius:57px;

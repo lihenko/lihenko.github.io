@@ -573,7 +573,7 @@ header .language-switch ul li.lang-current a {
   position: relative;
   font-size: 1.625em;
   font-weight: 700;
-  min-height: 217px;
+  min-height: 145px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -625,7 +625,7 @@ header .language-switch ul li.lang-current a {
   z-index: 2;
 }
 #how-it-works .how-it-works-line-column ul li:first-child {
-  min-height: 257px;
+  min-height: 185px;
 }
 #how-it-works .how-it-works-line-column ul li:first-child:before {
   border-top-left-radius: 50px;
@@ -642,7 +642,7 @@ header .language-switch ul li.lang-current a {
   border-top: 38px solid #FFCC00;
 }
 #how-it-works .how-it-works-line-column ul li:last-child {
-  min-height: 257px;
+  min-height: 185px;
 }
 #how-it-works .how-it-works-line-column ul li:last-child:before {
   border-bottom-left-radius: 50px;
@@ -2274,7 +2274,7 @@ footer .footer-menu-row ul li.contact-link a:hover {
     position: relative;
     font-size: 1.625em;
     font-weight: 700;
-    min-height: 217px;
+    min-height: 145px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2324,7 +2324,7 @@ footer .footer-menu-row ul li.contact-link a:hover {
     z-index: 2;
   }
   #how-it-works .how-it-works-row .how-it-works-line-column ul li:first-child {
-    min-height: 257px;
+    min-height: 185px;
   }
   #how-it-works .how-it-works-row .how-it-works-line-column ul li:first-child:before {
     border-top-left-radius: 57px;
@@ -2341,7 +2341,7 @@ footer .footer-menu-row ul li.contact-link a:hover {
     border-top: 38px solid #FFCC00;
   }
   #how-it-works .how-it-works-row .how-it-works-line-column ul li:last-child {
-    min-height: 257px;
+    min-height: 185px;
   }
   #how-it-works .how-it-works-row .how-it-works-line-column ul li:last-child:before {
     border-bottom-left-radius: 57px;

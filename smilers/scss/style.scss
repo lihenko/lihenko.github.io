@@ -153,7 +153,7 @@ header{
 				position: relative;
 				font-size: 1.625em;
 				font-weight: 700;
-				min-height: 217px;
+				min-height: 145px;
 				display: flex;
 				align-items:center;
 				margin-bottom: 5px;
@@ -189,7 +189,7 @@ header{
   					z-index: 2;
 				}
 				&:first-child{
-					min-height: 257px;
+					min-height: 185px;
 					&:before{
 						border-top-left-radius:50px;
 						border-top-right-radius:50px;
@@ -206,7 +206,7 @@ header{
 					}
 				}
 				&:last-child{
-					min-height: 257px;
+					min-height: 185px;
 					&:before{
 						border-bottom-left-radius:50px;
 						border-bottom-right-radius:50px;
