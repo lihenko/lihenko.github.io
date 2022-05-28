@@ -1169,6 +1169,7 @@ header .language-switch ul li.lang-current a {
   font-weight: 700;
   color: #fff;
   margin-top: -50px;
+  margin-bottom: 45px;
 }
 #team .for-invesotrs-data-column .our-mission {
   font-size: 1.8em;
@@ -1180,6 +1181,7 @@ header .language-switch ul li.lang-current a {
   background-color: #FFCC00;
   padding: 15px;
   border-radius: 20px;
+  margin-bottom: 45px;
 }
 #team .pitch-deck-form-wrap h3 {
   margin-top: 0;
