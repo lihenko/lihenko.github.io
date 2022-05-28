@@ -53,6 +53,15 @@ header{
 		height: auto;
 		margin-left: -10%;
 	}
+	& .home-hero-image-column{
+		position: relative;
+		& .btn{
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 	& .hero-quote{
 		margin-bottom: 30px;
 		color: #fff;
@@ -179,7 +188,7 @@ header{
 				&:not(:last-child):after{
 					content:'';
 					position: absolute;
-					bottom: -38px;
+					bottom: -37px;
 					left: 0;
 					width: 0;
 					height: 0;
@@ -489,6 +498,9 @@ header{
 		& span{
 			color: $yellow;
 		}
+		&.for-investors-title{
+		text-align: center;
+	}
 	}
 	& .team-member-column{
 		flex-basis: 248px;
@@ -608,6 +620,73 @@ header{
 						&:hover{
 							color: #fff;
 						}
+					}
+				}
+			}
+		}
+	}
+	& .for-inverstors-image-column{
+		overflow: hidden;
+		position: relative;
+		margin-top: -50px;
+		text-align: center;
+		& img{
+			max-width: 130%;
+			margin-left: -5%;
+		}
+	}
+	& .for-invesotrs-data-column{
+		font-size: 1.25em;
+		font-weight: 700;
+		color: #fff;
+		margin-top: -50px;
+		& .our-mission{
+			font-size: 1.8em;
+			& span{
+				color: $yellow;
+			}
+
+		}
+	}
+	& .pitch-deck-form-wrap{
+		background-color: $yellow;
+		padding: 15px;
+		border-radius:20px;
+		& h3{
+			margin-top: 0;
+			text-align: center;
+		}
+		& input[type=email]{
+			margin-bottom: 12px;
+		}
+		& input[type=submit]{
+			width: 100%;
+			&:hover{
+				background-color: $blue;
+				color: $yellow;
+			}
+		}
+	}
+	& .chart-row{
+		& .chart-data-column{
+			& h2{
+				color: #fff;
+				text-align: center;
+				& span{
+					color: $yellow;
+				}
+			}
+			& #chart-list{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				& li{
+					font-size: 1.375em;
+					font-weight: 700;
+					color: #fff;
+					margin-bottom: 30px;
+					& span{
+						color: $yellow;
 					}
 				}
 			}
@@ -773,6 +852,8 @@ footer{
 		}
 	}
 }
+
+
 
 @import "countdown";
 @import "accordion";

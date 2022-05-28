@@ -173,6 +173,38 @@
 			}
 		}
 	}
+	#team{
+		& .for-inverstors-image-column{
+			overflow: hidden;
+			position: relative;
+			margin-top: -50px;
+			text-align: center;
+			& img{
+				max-width: 130%;
+				margin-left: unset;
+				margin-right: -3%;
+			}
+		}
+		& .pitch-deck-form-wrap{
+			padding: 30px;
+			& h3{
+				margin-top: 0;
+				text-align: center;
+			}
+			& form{
+				position: relative;
+			}
+			& input[type=email]{
+				margin-bottom: 0;
+			}
+			& input[type=submit]{
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 170px;
+			}
+		}
+	}
 		
 }
 
@@ -187,6 +219,9 @@
 	h2{
 	  font-size: 4em;
 	  line-height: 0.92;
+	}
+	h3{
+		font-size: 2.8em;
 	}
 	.header-row{
 		align-items:center;
@@ -527,7 +562,73 @@
 				}
 			}
 		}
-	}	
+	}
+	#team{
+		& .for-investors-row{
+			align-items:center;
+		}
+		& .for-invesotrs-data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			order: 1;
+			margin-right: -80px;
+			margin-top: 0;
+			& .our-mission{
+				font-size: 2.25em;
+			}
+		}
+		& .for-inverstors-image-column{
+			overflow: visible;
+			position: relative;
+			margin-top: 0;
+			text-align: center;
+			flex-basis: calc(50% + 80px);
+			max-width: calc(50% + 80px);
+			order: 2;
+			& img{
+				max-width: 100%;
+				margin-right: -100px;
+				margin-left: -40px;
+				z-index: 0;
+			}
+		}
+		& .pitch-deck-form-wrap{
+			padding: 50px 30px;
+			& .row{
+				align-items:center;
+				& .pitch-deck-form-title-column{
+					flex-basis: 50%;
+					max-width: 50%;
+					& h3{
+						text-align: left;
+						margin-bottom: 0;
+					}
+				}
+				& .pitch-deck-form-column{
+					flex-basis: 50%;
+					max-width: 50%;
+				}
+			}
+		}
+		& .chart-row{
+			align-items:center;
+			& .chart-data-column{
+				flex-basis: 42%;
+				max-width: 42%;
+				order: 2;
+				& h2{
+					text-align: left;
+					margin-top: 0;
+				}
+			}
+			& .chart-column{
+				flex-basis: 58%;
+				max-width: 58%;
+				order: 1;
+			}
+		}
+	}
+		
 }
 
 
@@ -552,6 +653,12 @@
 		& .column:nth-child(2){
 			flex-basis: 58.33%;
 			max-width: 58.33%;
+		}
+		& .home-hero-image-column{
+			& .btn{
+				position: absolute;
+				bottom: 160px;
+			}
 		}
 	}
 	#our-mission{
@@ -615,7 +722,7 @@
 						&:not(:last-child):after{
 							content:'';
 							position: absolute;
-							bottom: -38px;
+							bottom: -37px;
 							left: 0;
 							width: 0;
 							height: 0;
@@ -747,6 +854,12 @@
 		background-repeat: no-repeat;
 		padding-bottom: 500px;
 		margin-bottom: -480px;
+		& .pitch-deck-form-wrap{
+			padding: 50px;
+			max-width: 1100px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	.accordion{
 		width: 835px;
@@ -765,6 +878,24 @@
 					flex-basis: calc(100% - 408px);
 					max-width: calc(100% - 408px);
 				}
+			}
+		}
+	}
+	#team {
+		& .for-inverstors-image-column{
+			overflow: visible;
+			position: relative;
+			margin-top: 0;
+			text-align: center;
+			flex-basis: calc(50% + 80px);
+			max-width: calc(50% + 80px);
+			order: 2;
+			& img{
+				max-width: 877px;
+				margin-left: unset;
+				margin-right: -100px;
+				margin-left: -80px;
+				z-index: 0;
 			}
 		}
 	}
@@ -794,5 +925,16 @@
 	}
 	#our-mission{
 		margin-top: -800px;
+	}
+	#team{
+		& .for-inverstors-image-column{
+			margin-top: 0;
+			& img{
+				max-width: 877px;
+				margin-right: -120px;
+				margin-left: -80px;
+				z-index: 0;
+			}
+		}
 	}
 }

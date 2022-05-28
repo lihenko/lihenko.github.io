@@ -40,8 +40,8 @@ h2{
 }
 
 h3{
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.2em;
+  line-height: .92;
 }
 
 h4{
@@ -159,6 +159,18 @@ object, embed {
 	letter-spacing: 0.44px;
 	border-radius: 29.5px;
 	transition: all 0.3s ease-in-out;
+	&.video-button{
+		position: relative;
+		padding-left: 59px;
+		padding-right: 59px;
+		&:after{
+			content: url('../img/button-play.svg');
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+		}
+	}
 }
 
 .blue-button{
