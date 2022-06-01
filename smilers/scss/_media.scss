@@ -11,7 +11,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px){
-
+	.countdown-column{
+		display: none;
+	}
 }
 
 
@@ -111,6 +113,16 @@
 			& .column:nth-child(2){
 				flex-basis: 60%;
 				max-width: 60%;
+			}
+		}
+	}
+	#win-hero{
+		& .win-hero-image-column{
+			overflow: hidden;
+			& img{
+				max-width: 100%;
+				margin-left: 0;
+				height: auto;
 			}
 		}
 	}
@@ -589,7 +601,8 @@
 				max-width: 100%;
 				margin-right: -100px;
 				margin-left: -40px;
-				z-index: 0;
+				z-index: -1;
+				position: relative;
 			}
 		}
 		& .pitch-deck-form-wrap{
@@ -628,7 +641,113 @@
 			}
 		}
 	}
-		
+	#win-hero{
+		& h1{
+			text-align: left;
+		}
+		& .win-hero-subtitle{
+			text-align: left;
+			font-size: 2.25em;
+		}
+		& .win-options{
+			& .row{
+				max-width: 220px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		& .win-hero-description{
+			text-align: left;
+			font-size: 1.625em;
+		}
+		& .win-hero-note-wrap{
+			text-align: left;
+		}
+		& .win-hero-data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			margin-right: -90px;
+		}
+		& .win-hero-image-column{
+			text-align: center;
+			overflow: hidden;
+			flex-basis: calc(50% + 90px);
+			max-width: calc(50% + 90px);
+		}
+	}
+
+	#how-to-win{
+		& .how-to-win-wrap {
+		  padding: 60px 100px 60px;
+		  & .row{
+		  	align-items:center;
+		  	& .how-to-win-title-column{
+		  		flex-basis: 333px;
+		  		max-width: 333px;
+		  		& h2{
+		  			margin: 0 0 20px;
+		  		}
+		  	}
+		  	& .how-to-win-data-column{
+		  		flex-basis: calc(100% - 333px);
+		  		max-width: calc(100% - 333px);
+		  	}
+		  }
+		}
+		& .how-to-win-triangle {
+		  margin-right: 105px;
+		}
+	}
+	#prizes{
+		padding-top: 80px;
+		padding-bottom: 80px;
+		& .prizes-row{
+			& .column:nth-child(1){
+				display: block;
+				flex-basis: 25%;
+				max-width: 25%;
+			}
+			& .column:nth-child(3){
+				display: block;
+				flex-basis: 25%;
+				max-width: 25%;
+			}
+			& .column:nth-child(2){
+				flex-basis: 50%;
+				max-width: 50%;
+				& h2{
+					margin-bottom: 30px;
+				}
+				& .prizes-subtitle{
+					font-size: 2,875em;
+					font-weight: 700;
+					margin-bottom: 30px;
+					& span{
+						color: $yellow;
+					}
+				}
+				& .prizes-description{
+					font-size: 1.625em;
+					margin-left: -120px;
+					margin-right: -120px;
+				}
+			}
+		}
+	}
+	#guaranteed-nft{
+		padding-top: 120px;
+		& .row{
+			align-items: center;
+		}
+		& .guaranteed-nft-title-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .guaranteed-nft-data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}	
 }
 
 
@@ -660,6 +779,16 @@
 				bottom: 160px;
 			}
 		}
+	}
+	#win-hero{
+		background-image: url('../img/bg-hero.svg');
+		background-position: top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: -177px;
+		padding-top: 177px;
+		padding-bottom: 500px;
+		margin-bottom: -480px;
 	}
 	#our-mission{
 		margin-top: -700px;
@@ -895,8 +1024,39 @@
 				margin-left: unset;
 				margin-right: -100px;
 				margin-left: -80px;
-				z-index: 0;
 			}
+		}
+	}
+	#how-to-win{
+		& .container {
+			max-width: 1090px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#prizes{
+		& .container{
+			padding-left: 92px;
+			padding-right: 92px;
+		}
+		& .prizes-row{
+			& .column:nth-child(2){
+				
+				& .prizes-description{
+					margin-left: -140px;
+					margin-right: -140px;
+				}
+			}
+		}
+	}
+	#guaranteed-nft{
+		& .guaranteed-nft-title-column{
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		& .guaranteed-nft-data-column{
+			padding-right: 170px;
+			padding-left: 90px;
 		}
 	}
 }
@@ -933,7 +1093,17 @@
 				max-width: 877px;
 				margin-right: -120px;
 				margin-left: -80px;
-				z-index: 0;
+			}
+		}
+	}
+	#win-hero{
+
+		& .win-hero-image-column{
+			overflow: visible;
+			& img{
+				max-width: 834px;
+				margin-right: -110px;
+				margin-top: -50px;
 			}
 		}
 	}

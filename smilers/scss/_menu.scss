@@ -2,12 +2,15 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fff;
-	z-index: 99;
-	transform: translateY(-100%);
-	transition: transform 0.3s ease-in-out;
+	z-index: 1001;
+	width: 300px;
+	height: 100%;
+	background: $yellow;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+	transform: translate3d(-320px,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	& ul{
 		height: 100vh;
 		overflow-y: auto;
@@ -16,28 +19,90 @@
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
 		& li{
 			position: relative;
 			margin-bottom: 25px;
-
+			transform: translate3d(0,500px,0);
+			transition: transform 0s 0.4s;
+			transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+			&:nth-child(2){
+				transform: translate3d(0,1000px,0);
+			}
+			&:nth-child(3){
+				transform: translate3d(0,1500px,0);
+			}
+			&:nth-child(4){
+				transform: translate3d(0,2000px,0);
+			}
+			&:nth-child(5){
+				transform: translate3d(0,2500px,0);
+			}
+			&:nth-child(6){
+				transform: translate3d(0,3000px,0);
+			}
 			& a{
-				font-size: 1.5em;
+				font-size: 1em;
 				font-weight: 700;
 				color: $blue;
 				text-decoration: none;
 				&:hover{
-					color: $yellow;
+					color: #fff;
 					text-decoration: none;
 				}
 			}
 		}
 	}
+	& .close-button{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		right: 1em;
+		top: 1em;
+		overflow: hidden;
+		text-indent: 1em;
+		font-size: 0.75em;
+		border: none;
+		background: transparent;
+		color: transparent;
+		cursor: pointer;
+	}
+
+
+	& .close-button::before,
+	.close-button::after {
+		content: '';
+		position: absolute;
+		width: 3px;
+		height: 100%;
+		top: 0;
+		left: 50%;
+		background: $blue;
+	}
+
+	& .close-button::before {
+		transform: rotate(45deg);
+	}
+
+	& .close-button::after {
+		transform: rotate(-45deg);
+	}
 }
 
-#main-menu.open{
-	transform: translateY(0%);
+.show-menu #main-menu{
+	transform: translate3d(0,0,0);
+	transition: transform 0.8s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	& ul{
+		& li{
+			transform: translate3d(0,0,0);
+			transition: transform 0.8s;
+			transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+		}
+	}
 }
 
 /* Toggle */
@@ -46,7 +111,7 @@
   position: absolute;
   top: 35px;
   left: 15px;
-  z-index: 9999999; }
+  z-index: 999; }
 
 #toggle-btn .hamburger {
   background-color: transparent;
@@ -83,13 +148,20 @@
 @media only screen and (min-width: 992px){
 
 	#main-menu{
-		transform:translateY(0%);
+		transform: translate3d(0,0,0);
 		position: relative;
 		top: unset;
 		left: unset;
 		right: unset;
 		bottom:unset;
-		background-color: transparent;
+		background: transparent;
+		width: 100%;
+		height: unset;
+		padding: 0;
+		font-size: 1em;
+		& .close-button{
+			display: none;
+		}
 		& ul{
 			display: flex;
 			height: unset;
@@ -99,6 +171,7 @@
 				margin-bottom: 0;
 				padding-left: 25px;
 				padding-right: 25px;
+				transform: translate3d(0,0,0)!important;
 				&:first-child{
 					padding-left: 0;
 				}
@@ -109,6 +182,12 @@
 					color: #fff;
 					font-size: 1em;
 					font-weight: 400;
+					&:hover{
+						color: $yellow;
+					}
+				}
+				&.current-menu-item a{
+					color: $yellow;
 				}
 			}
 		}

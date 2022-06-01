@@ -78,6 +78,7 @@ button, button:hover, button:active, button:focus {
 
 input[type=text], input[type=email], input[type=tel]{
 	width: 100%;
+	height: 48px;
 	border:none;
 	font-family: inherit;
 	padding: 13.5px 32px;
@@ -154,6 +155,7 @@ object, embed {
 	padding: 16px 15px;
 	line-height: 1;
 	width: 296px;
+	height: 48px;
 	max-width: 100%;
 	font-weight: 700;
 	letter-spacing: 0.44px;
@@ -193,4 +195,25 @@ object, embed {
 
 .desktop{
 	display: none;
+}
+
+.email-error{
+	font-size: 10px;
+	font-weight: 400;
+	color: red;
+	position: absolute;
+	left: 25px;
+	margin-top: 2px;
+}
+
+.success-send{
+	font-size: 1.625em;
+	font-weight: 700;
+	color: green;
+}
+
+.error-send{
+	font-size: 1.625em;
+	font-weight: 700;
+	color: red;
 }

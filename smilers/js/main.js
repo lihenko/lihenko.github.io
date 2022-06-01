@@ -136,6 +136,136 @@ jQuery(window).scroll(function(){
 });
 
 jQuery(document).ready(function($){
+    var waitlist = $('.waitlist-form-wrap form');
+
+    waitlist.submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var actionUrl = 'https://assets.mailerlite.com/jsonp/60513/forms/56528599826564694/subscribe';
+
+    var email = form.find('input[type=email]').val();
+    var error = form.find('.email-error');
+
+    error.text('');
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+
+    if (!email){
+      error.text('Email is required to fill');
+    } else if(isEmail(email)){
+      $.ajax({
+          type: "POST",
+          url: actionUrl,
+          data: form.serialize(), // serializes the form's elements.
+          success: function(data)
+          {
+            if(data.success){
+              form.html('<div class="success-send">Thank you for submit!</div>');
+            } else {
+              form.html('<div class="error-send">Subscribe error, please contact website admin!</div>');
+            }
+          }
+      });
+    } else {
+      error.text('Email is invalid');
+    }
+    
+  });
+});
+
+
+jQuery(document).ready(function($){
+    var waitlist = $('.footer-form-wrap form');
+
+    waitlist.submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var actionUrl = 'https://assets.mailerlite.com/jsonp/60513/forms/56528599826564694/subscribe';
+
+    var email = form.find('input[type=email]').val();
+    var error = form.find('.email-error');
+
+    error.text('');
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+
+    if (!email){
+      error.text('Email is required to fill');
+    } else if(isEmail(email)){
+      $.ajax({
+          type: "POST",
+          url: actionUrl,
+          data: form.serialize(), // serializes the form's elements.
+          success: function(data)
+          {
+            if(data.success){
+              form.html('<div class="success-send">Thank you for submit!</div>')
+            } else {
+              form.html('<div class="error-send">Subscribe error, please contact website admin!</div>');
+            } 
+          }
+      });
+    } else {
+      error.text('Email is invalid');
+    }
+    
+  });
+});
+
+jQuery(document).ready(function($){
+    var waitlist = $('.pitch-deck-form-wrap form');
+
+    waitlist.submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var actionUrl = 'https://assets.mailerlite.com/jsonp/60513/forms/56596649978365923/subscribe';
+
+    var email = form.find('input[type=email]').val();
+    var error = form.find('.email-error');
+
+    error.text('');
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+
+    if (!email){
+      error.text('Email is required to fill');
+    } else if(isEmail(email)){
+      $.ajax({
+          type: "POST",
+          url: actionUrl,
+          data: form.serialize(), // serializes the form's elements.
+          success: function(data)
+          {
+            if(data.success){
+              form.html('<div class="success-send">Thank you for submit!</div>')
+            } else {
+              form.html('<div class="error-send">Subscribe error, please contact website admin!</div>');
+            }
+          }
+      });
+    } else {
+      error.text('Email is invalid');
+    }
+    
+  });
+});
+
+jQuery(document).ready(function($){
     var $page = $('html, body');
     $('a[href*="#"]').click(function() {
         $page.animate({

@@ -37,6 +37,7 @@
 							<li id="menu-item-206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-206"><a href="#">Whitepaper</a></li>
 						</ul>
 					</div>
+					<button class="close-button" id="close-button">Close Menu</button>
 				</div>
 			</div>
 			<div class="column language-column">
@@ -242,7 +243,8 @@
 								<h2 class="desktop">Join THE WaitList</h2>
 								<div class="waitlist-form">
 									<form action="#">
-										<input type="email" placeholder="Your Email:">
+										<input type="email" name="fields[email]" placeholder="Your Email:">
+								        <div class="email-error"></div>
 										<input type="submit" class="btn blue-button" value="SUBMIT">
 									</form>
 								</div>
@@ -757,7 +759,8 @@
 							</div>
 							<div class="column pitch-deck-form-column">
 								<form action="#">
-									<input type="email" placeholder="Your Email:">
+									<input type="email" name="fields[email]" placeholder="Your Email:">
+								    <div class="email-error"></div>
 									<input type="submit" class="btn blue-button" value="SUBMIT">
 								</form>
 							</div>
@@ -970,7 +973,8 @@
 						</div>
 						<div class="column">
 							<form action="#">
-								<input type="email" placeholder="Your Email:">
+								<input type="email" name="fields[email]" placeholder="Your Email:">
+								<div class="email-error"></div>
 								<input type="submit" class="btn blue-button" value="SUBMIT">
 							</form>
 						</div>
@@ -992,6 +996,7 @@
 	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
 	<script src="libs/countdown/jquery.flipper-responsive.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slider-menu/classie.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/main.js"></script>
 </body>
