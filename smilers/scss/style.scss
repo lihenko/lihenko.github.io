@@ -596,6 +596,7 @@ header{
 				z-index: -1;
 			}
 			& img{
+				border-radius:24px;
 			}
 		}
 		& .team-member-wrap{
@@ -1089,6 +1090,222 @@ footer{
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
+		}
+	}
+}
+
+#earn-hero{
+	& h1{
+		color: #fff;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .earn-hero-subtitle{
+		font-size: 1.625em;
+		font-weight: 700;
+		color: #fff;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .earn-hero-description{
+		color: #fff;
+		font-size: 1.25em;
+		font-weight: 700;
+	}
+	& .earn-hero-image-column{
+		text-align: center;
+		overflow: hidden;
+		& img{
+			max-width: 130%;
+			margin-left: -10%;
+			height: auto;
+		}
+	}
+}
+
+#meet-our-smilers{
+	& .meet-our-smilers-wrap{
+		padding: 30px 12px;
+		background-color: #004288;
+		border-radius:47px;
+	}
+	& h2{
+		color: #fff;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .meet-our-smilers-row{
+		justify-content: center;
+	}
+	& .meet-our-smilers-item{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 45px;
+		max-width: 248px;
+		& .meet-our-smiler-photo{
+			flex-basis: 224px;
+			width: 224px;
+			height: 180px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			position: relative;
+			margin-bottom: 20px;
+			&:before{
+				content: '';
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotate(-3deg);
+				border-radius: 29px;
+				z-index: 0;
+			}
+			& img{
+				position: relative;
+				z-index: 1;
+				border-radius:24px;
+			}
+		}
+		& .meet-our-smiler-name{
+			text-transform: uppercase;
+			font-weight: 700;
+			padding-left: 15px;
+			padding-right: 15px;
+			color: #fff;
+		}
+		& .meet-our-smiler-description{
+			padding-left: 15px;
+			padding-right: 15px;
+			color: $yellow;
+		}
+	}
+	& .meet-our-smilers-triangle{
+		text-align: right;
+		margin-right: 50px;
+	}
+}
+
+#smiler-properties{
+	padding-bottom: 80px;
+	& .smiler-properties-list-title{
+		color: $yellow;
+		font-size: 2.25em;
+		font-weight: 700;
+		margin-bottom: 30px;
+		margin-top: 60px;
+	}
+	& .smiler-properties-list-row{
+		align-items: center;
+		margin-bottom: 20px;
+		& .smiler-properties-icon-column{
+			flex-basis: 68px;
+			max-width: 68px;
+			& .smiler-properties-icon{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $yellow;
+				width: 44px;
+				height: 44px;
+				border-radius: 50%;
+			}
+		}
+		& .smiler-properties-content{
+			flex-basis: calc(100% - 68px);
+			max-width: calc(100% - 68px);
+			color: #fff;
+			font-size: 1.125em;
+			line-height: 1.1;
+			& span{
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+#marketplace{
+	position: relative;
+	background-color: #004288;
+	padding-top: 60px;
+	padding-bottom: 120px;
+	& h2{
+		color: #fff;
+		text-align: center;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .top-curve-marketplace{
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		& img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	& .bottom-curve-marketplace{
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		& img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	& .marketplace-description{
+		color: #fff;
+		font-size: 1.25em;
+		font-weight: 700;
+	}
+	& .marketplace-image-column{
+		overflow: hidden;
+		& img{
+			max-width: 130%;
+			margin-left: -15%;
+		}
+	}
+}
+
+#download{
+	padding-top: 80px;
+	& .download-wrap{
+		padding: 30px 12px;
+		border-radius: 47px;
+		background-color: $yellow;
+		& h2{
+			text-align: center;
+		}
+		& .download-buttons-title{
+			font-size: 1.625em;
+			font-weight: 700;
+			color: #005BBB;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		& .download-buttons{
+			text-align: center;
+			& ul{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				& li{
+					margin-bottom: 8px;
+				}
+			}
 		}
 	}
 }

@@ -1236,6 +1236,9 @@ header .language-switch ul li.lang-current a {
   border-radius: 24px;
   z-index: -1;
 }
+#team .team-backers-column .team-member-photo img {
+  border-radius: 24px;
+}
 #team .team-backers-column .team-member-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1800,6 +1803,256 @@ footer .footer-menu-row ul li.contact-link a:hover {
   transform: translateY(-50%);
 }
 
+#earn-hero h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#earn-hero h1 span {
+  color: #FFCC00;
+}
+#earn-hero .earn-hero-subtitle {
+  font-size: 1.625em;
+  font-weight: 700;
+  color: #fff;
+}
+#earn-hero .earn-hero-subtitle span {
+  color: #FFCC00;
+}
+#earn-hero .earn-hero-description {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+#earn-hero .earn-hero-image-column {
+  text-align: center;
+  overflow: hidden;
+}
+#earn-hero .earn-hero-image-column img {
+  max-width: 130%;
+  margin-left: -10%;
+  height: auto;
+}
+
+#meet-our-smilers .meet-our-smilers-wrap {
+  padding: 30px 12px;
+  background-color: #004288;
+  border-radius: 47px;
+}
+#meet-our-smilers h2 {
+  color: #fff;
+}
+#meet-our-smilers h2 span {
+  color: #FFCC00;
+}
+#meet-our-smilers .meet-our-smilers-row {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#meet-our-smilers .meet-our-smilers-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  max-width: 248px;
+}
+#meet-our-smilers .meet-our-smilers-item .meet-our-smiler-photo {
+  -webkit-flex-basis: 224px;
+  -ms-flex-preferred-size: 224px;
+  flex-basis: 224px;
+  width: 224px;
+  height: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+#meet-our-smilers .meet-our-smilers-item .meet-our-smiler-photo:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  border-radius: 29px;
+  z-index: 0;
+}
+#meet-our-smilers .meet-our-smilers-item .meet-our-smiler-photo img {
+  position: relative;
+  z-index: 1;
+  border-radius: 24px;
+}
+#meet-our-smilers .meet-our-smilers-item .meet-our-smiler-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+}
+#meet-our-smilers .meet-our-smilers-item .meet-our-smiler-description {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #FFCC00;
+}
+#meet-our-smilers .meet-our-smilers-triangle {
+  text-align: right;
+  margin-right: 50px;
+}
+
+#smiler-properties {
+  padding-bottom: 80px;
+}
+#smiler-properties .smiler-properties-list-title {
+  color: #FFCC00;
+  font-size: 2.25em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+#smiler-properties .smiler-properties-list-row {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#smiler-properties .smiler-properties-list-row .smiler-properties-icon-column {
+  -webkit-flex-basis: 68px;
+  -ms-flex-preferred-size: 68px;
+  flex-basis: 68px;
+  max-width: 68px;
+}
+#smiler-properties .smiler-properties-list-row .smiler-properties-icon-column .smiler-properties-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFCC00;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+#smiler-properties .smiler-properties-list-row .smiler-properties-content {
+  -webkit-flex-basis: calc(100% - 68px);
+  -ms-flex-preferred-size: calc(100% - 68px);
+  flex-basis: calc(100% - 68px);
+  max-width: calc(100% - 68px);
+  color: #fff;
+  font-size: 1.125em;
+  line-height: 1.1;
+}
+#smiler-properties .smiler-properties-list-row .smiler-properties-content span {
+  font-weight: 700;
+}
+
+#marketplace {
+  position: relative;
+  background-color: #004288;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+#marketplace h2 {
+  color: #fff;
+  text-align: center;
+}
+#marketplace h2 span {
+  color: #FFCC00;
+}
+#marketplace .top-curve-marketplace {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#marketplace .top-curve-marketplace img {
+  width: 100%;
+  height: auto;
+}
+#marketplace .bottom-curve-marketplace {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#marketplace .bottom-curve-marketplace img {
+  width: 100%;
+  height: auto;
+}
+#marketplace .marketplace-description {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+#marketplace .marketplace-image-column {
+  overflow: hidden;
+}
+#marketplace .marketplace-image-column img {
+  max-width: 130%;
+  margin-left: -15%;
+}
+
+#download {
+  padding-top: 80px;
+}
+#download .download-wrap {
+  padding: 30px 12px;
+  border-radius: 47px;
+  background-color: #FFCC00;
+}
+#download .download-wrap h2 {
+  text-align: center;
+}
+#download .download-wrap .download-buttons-title {
+  font-size: 1.625em;
+  font-weight: 700;
+  color: #005BBB;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#download .download-wrap .download-buttons {
+  text-align: center;
+}
+#download .download-wrap .download-buttons ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#download .download-wrap .download-buttons ul li {
+  margin-bottom: 8px;
+}
+
 .flipper {
   color: #000;
   display: block;
@@ -2199,6 +2452,23 @@ footer .footer-menu-row ul li.contact-link a:hover {
     max-width: 100%;
     margin-left: 0;
     height: auto;
+  }
+
+  #earn-hero .earn-hero-image-column {
+    overflow: hidden;
+  }
+  #earn-hero .earn-hero-image-column img {
+    max-width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  #marketplace .marketplace-image-column {
+    overflow: hidden;
+  }
+  #marketplace .marketplace-image-column img {
+    max-width: 100%;
+    margin-left: 0;
   }
 }
 /* Small Devices, Tablets */
@@ -2862,6 +3132,13 @@ footer .footer-menu-row ul li.contact-link a:hover {
     max-width: calc(50% + 90px);
   }
 
+  #meet-our-smilers .meet-our-smilers-wrap {
+    padding: 60px;
+  }
+  #meet-our-smilers .meet-our-smilers-triangle {
+    margin-right: 105px;
+  }
+
   #how-to-win .how-to-win-wrap {
     padding: 60px 100px 60px;
   }
@@ -2952,6 +3229,100 @@ footer .footer-menu-row ul li.contact-link a:hover {
     flex-basis: 50%;
     max-width: 50%;
   }
+
+  #earn-hero h1 {
+    text-align: left;
+  }
+  #earn-hero .earn-hero-title-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-right: -90px;
+  }
+  #earn-hero .earn-hero-image-column {
+    -webkit-flex-basis: calc(50% + 90px);
+    -ms-flex-preferred-size: calc(50% + 90px);
+    flex-basis: calc(50% + 90px);
+    max-width: calc(50% + 90px);
+  }
+
+  #meet-our-smilers h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  #meet-our-smilers .meet-our-smilers-wrap {
+    padding-bottom: 25px;
+  }
+
+  #smiler-properties .smiler-properties-list-title {
+    max-width: 329px;
+  }
+  #smiler-properties .smiler-properties-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #smiler-properties .smiler-properties-column:nth-child(1) {
+    padding-left: 45px;
+  }
+
+  #marketplace h2 {
+    text-align: left;
+  }
+  #marketplace .marketplace-description {
+    font-size: 1.625em;
+  }
+  #marketplace .row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #marketplace .marketplace-image-column {
+    -webkit-flex-basis: calc(50% + 90px);
+    -ms-flex-preferred-size: calc(50% + 90px);
+    flex-basis: calc(50% + 90px);
+    max-width: calc(50% + 90px);
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  #marketplace .marketplace-title-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: -90px;
+  }
+
+  #download .download-wrap {
+    padding: 70px 90px;
+  }
+  #download .download-row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #download .download-row .download-title-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #download .download-row .download-buttons-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1250px) {
@@ -2997,6 +3368,23 @@ footer .footer-menu-row ul li.contact-link a:hover {
     padding-top: 177px;
     padding-bottom: 500px;
     margin-bottom: -480px;
+  }
+  #win-hero .win-hero-data-column {
+    padding-left: 38px;
+  }
+
+  #earn-hero {
+    background-image: url("../img/bg-hero.svg");
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -177px;
+    padding-top: 177px;
+    padding-bottom: 500px;
+    margin-bottom: -480px;
+  }
+  #earn-hero .earn-hero-title-column {
+    padding-left: 38px;
   }
 
   #our-mission {
@@ -3298,6 +3686,29 @@ footer .footer-menu-row ul li.contact-link a:hover {
   #guaranteed-nft .guaranteed-nft-data-column {
     padding-right: 170px;
     padding-left: 90px;
+  }
+
+  #meet-our-smilers .meet-our-smilers-wrap {
+    position: relative;
+    margin-top: -180px;
+  }
+
+  #smiler-properties .smiler-properties-column:nth-child(1) {
+    padding-left: 80px;
+  }
+
+  #marketplace .marketplace-image-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #marketplace .marketplace-title-column {
+    margin-left: 0;
+  }
+
+  #download .container {
+    max-width: 1089px;
   }
 }
 @media only screen and (min-width: 1600px) {

@@ -126,6 +126,25 @@
 			}
 		}
 	}
+	#earn-hero{
+		& .earn-hero-image-column{
+			overflow: hidden;
+			& img{
+				max-width: 100%;
+				margin-left: 0;
+				height: auto;
+			}
+		}
+	}
+	#marketplace{
+		& .marketplace-image-column{
+			overflow: hidden;
+			& img{
+				max-width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
 
 }
 
@@ -217,6 +236,7 @@
 			}
 		}
 	}
+
 		
 }
 
@@ -676,6 +696,14 @@
 		}
 	}
 
+	#meet-our-smilers{
+		& .meet-our-smilers-wrap {
+		  padding: 60px;
+		}
+		& .meet-our-smilers-triangle {
+		  margin-right: 105px;
+		}
+	}
 	#how-to-win{
 		& .how-to-win-wrap {
 		  padding: 60px 100px 60px;
@@ -747,6 +775,79 @@
 			flex-basis: 50%;
 			max-width: 50%;
 		}
+	}
+	#earn-hero{
+		& h1{
+			text-align: left;
+		}
+		& .earn-hero-title-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			margin-right: -90px;
+		}
+		& .earn-hero-image-column{
+			flex-basis: calc(50% + 90px);
+			max-width: calc(50% + 90px);
+		}
+	}
+	#meet-our-smilers{
+		& h2{
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+		& .meet-our-smilers-wrap{
+			padding-bottom: 25px;
+		}
+	}
+	#smiler-properties{
+		& .smiler-properties-list-title{
+			max-width: 329px;
+		}
+		& .smiler-properties-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			&:nth-child(1){
+				padding-left: 45px;
+			}
+		}
+	}
+	#marketplace{
+		& h2{
+			text-align: left;
+		}
+		& .marketplace-description{
+			font-size: 1.625em;
+		}
+		& .row{
+			align-items: center;
+		}
+		& .marketplace-image-column{
+			flex-basis: calc(50% + 90px);
+			max-width: calc(50% + 90px);
+			order: 1;
+		}
+		& .marketplace-title-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			order: 2;
+			margin-left: -90px;
+		}
+	}
+	#download{
+		& .download-wrap{
+			padding: 70px 90px;
+		}
+		& .download-row{
+			align-items: center;
+			& .download-title-column{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+			& .download-buttons-column{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
 	}	
 }
 
@@ -789,6 +890,22 @@
 		padding-top: 177px;
 		padding-bottom: 500px;
 		margin-bottom: -480px;
+		& .win-hero-data-column{
+			padding-left: 38px;
+		}
+	}
+	#earn-hero{
+		background-image: url('../img/bg-hero.svg');
+		background-position: top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: -177px;
+		padding-top: 177px;
+		padding-bottom: 500px;
+		margin-bottom: -480px;
+		& .earn-hero-title-column{
+			padding-left: 38px;
+		}
 	}
 	#our-mission{
 		margin-top: -700px;
@@ -1057,6 +1174,31 @@
 		& .guaranteed-nft-data-column{
 			padding-right: 170px;
 			padding-left: 90px;
+		}
+	}
+	#meet-our-smilers .meet-our-smilers-wrap{
+		position: relative;
+		margin-top: -180px;
+	}
+	#smiler-properties{
+		& .smiler-properties-column{
+			&:nth-child(1){
+				padding-left: 80px;
+			}
+		}
+	}
+	#marketplace{
+		& .marketplace-image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .marketplace-title-column{
+			margin-left: 0;
+		}
+	}
+	#download{
+		& .container{
+			max-width: 1089px;
 		}
 	}
 }
