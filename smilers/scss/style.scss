@@ -349,6 +349,7 @@ header{
 			margin-left: 5px;
 			border-bottom: 1px dashed #fff;
 			padding-bottom: 3px;
+			white-space: nowrap;
 			&:hover{
 				color: #fff;
 			}
@@ -991,6 +992,7 @@ footer{
 			margin-left: 5px;
 			border-bottom: 1px dashed #fff;
 			padding-bottom: 3px;
+			white-space: nowrap;
 			&:hover{
 				color: #fff;
 			}
@@ -1308,6 +1310,246 @@ footer{
 			}
 		}
 	}
+}
+
+#bounty-hero{
+	& h1{
+		color: #fff;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .bounty-hero-subtitle{
+		font-size: 2.25em;
+		font-weight: 700;
+		color: $yellow;
+		margin-bottom: 20px;
+	}
+	& .bounty-hero-description{
+		color: #fff;
+		font-size: 1.625em;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	& .bounty-hero-image-column{
+		text-align: center;
+	}
+	& .bounty-hero-levels{
+		color: #fff;
+		& ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			counter-reset: level;
+			& li{
+				font-size: 1.125em;
+				font-weight: 700;
+				min-height: 154px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-left: 60px;
+				position: relative;
+				& .bounty-hero-levels-title{
+					color: $yellow;
+					font-size: 2.25em;
+				}
+				&:before{
+					font-family: Amatic, sans-serif;
+					font-weight: 700;
+					font-size: 6.56em;
+					color: #fff;
+					counter-increment: level;
+					content:counter(level);
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform:translateY(-50%);
+				}
+			}
+		}
+	}
+	& .bounty-hero-note{
+		font-size: 1.625em;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 60px;
+		& span{
+			color: $yellow;
+		}
+	}
+}
+
+#refferal-link{
+	& .refferal-link-wrap{
+		background-color: #004288;
+		border-radius:47px;
+		padding: 30px 15px;
+	}
+	& h2{
+		color: #fff;
+		margin: 0 0 40px;
+		text-align: center;
+		& span{
+			color: $yellow;
+		}
+	}
+	& .list-row{
+		align-items:center;
+		margin-bottom: 20px;
+	}
+	& .list-icon-column{
+		flex-basis: 68px;
+		max-width: 68%;
+		& .list-icon{
+			width: 44px;
+			height: 44px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			border-radius:50%;
+			background-color: $yellow;
+		}
+	}
+	& .list-data-column{
+		flex-basis: calc(100% - 68px);
+		max-width: calc(100% - 68px);
+		font-size: 1.125em;
+		font-weight: 700;
+		color: #fff;
+		line-height: 1.125;
+		& a{
+			color: $yellow;
+			margin-left: 5px;
+			border-bottom: 1px dashed #fff;
+			padding-bottom: 3px;
+			white-space: nowrap;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	& .refferal-link-triangle{
+		text-align: right;
+		margin-right: 50px;
+	}
+}
+
+#big-players{
+	padding-top: 30px;
+	padding-bottom: 80px;
+	& .big-players-title{
+		font-size: 2.25em;
+		font-weight: 700;
+		color: $yellow;
+		margin-bottom: 30px;
+	}
+	& .big-players-row{
+		& .column{
+			& h2{
+				text-align: center;
+			}
+			& .big-players-experience{
+				font-size: 1.625em;
+				font-weight: 700;
+				color: #fff;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			& .big-players-button{
+				text-align: center;
+			}
+		}
+	}
+	& .big-players-note{
+		margin-top: 60px;
+		font-size: 1.125em;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+		& a{
+			color: $yellow;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+
+#offer-for-talent{
+	position: relative;
+	background-color: #004288;
+	padding-top: 60px;
+	padding-bottom: 120px;
+	& h2{
+		margin-bottom: 60px;
+	}
+	& .top-curve-offer-for-talent{
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		& img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	& .bottom-curve-offer-for-talent{
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		& img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	& .list-row{
+		align-items:center;
+		margin-bottom: 22px;
+	}
+	& .list-icon-column{
+		flex-basis: 74px;
+		max-width: 74%;
+		& .list-icon{
+			width: 50px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			border-radius:50%;
+			background-color: $yellow;
+		}
+	}
+	& .list-data-column{
+		flex-basis: calc(100% - 74px);
+		max-width: calc(100% - 74px);
+		font-size: 1.625em;
+		font-weight: 700;
+		color: #fff;
+		line-height: 1.125;
+	}
+	& .talent-offer-column{
+		margin-top: 35px;
+		font-size: 1.625em;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+		& a{
+			color: $yellow;
+			border-bottom: 1px dashed #fff;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
 }
 
 @import "countdown";

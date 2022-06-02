@@ -848,6 +848,77 @@
 				max-width: 50%;
 			}
 		}
+	}
+	#bounty-hero{
+		& h1{
+			text-align: left;
+		}
+		& .row{
+			align-items:center;
+		}
+		& .bounty-hero-title-column{
+			flex-basis: 45%;
+			max-width: 45%;
+		}
+		& .bounty-hero-image-column{
+			flex-basis: 55%;
+			max-width: 55%;
+		}
+		& .bounty-hero-note{
+			margin-top: 45px;
+		}
+	}
+	#refferal-link{
+		& .refferal-link-wrap {
+		  padding: 60px 100px 60px;
+		  & .refferal-link-row{
+		  	align-items:center;
+		  	& .refferal-link-title-column{
+		  		flex-basis: 468px;
+		  		max-width: 468px;
+		  		& h2{
+		  			margin: 0 0 20px;
+		  		}
+		  	}
+		  	& .refferal-link-data-column{
+		  		flex-basis: calc(100% - 468px);
+		  		max-width: calc(100% - 468px);
+		  	}
+		  }
+		}
+		& .refferal-link-triangle {
+		  margin-right: 105px;
+		}
+	}
+	#big-players{
+		& .big-players-row{
+			& .column{
+				
+				& h2{
+					text-align: left;
+				}
+				& .big-players-experience{
+					text-align: left;
+				}
+				& .big-players-button{
+					text-align: left;
+				}
+				&:nth-child(1){
+					flex-basis: 45%;
+					max-width: 45%;
+				}
+				&:nth-child(2){
+					flex-basis: 55%;
+					max-width: 55%;
+				}
+			}
+		}
+	}
+	#offer-for-talent{
+		& .talent-list-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
 	}	
 }
 
@@ -904,6 +975,19 @@
 		padding-bottom: 500px;
 		margin-bottom: -480px;
 		& .earn-hero-title-column{
+			padding-left: 38px;
+		}
+	}
+	#bounty-hero{
+		background-image: url('../img/bg-hero.svg');
+		background-position: top center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: -177px;
+		padding-top: 177px;
+		padding-bottom: 500px;
+		margin-bottom: -480px;
+		& .bounty-hero-title-column{
 			padding-left: 38px;
 		}
 	}
@@ -1199,6 +1283,38 @@
 	#download{
 		& .container{
 			max-width: 1089px;
+		}
+	}
+	#refferal-link{
+		& .container{
+			max-width: 1089px;
+		}
+	}
+	#big-players{
+		& .big-players-row{
+			& .column{
+				&:nth-child(1){
+					flex-basis: 437px;
+					max-width: 437px;
+					margin-left: 80px;
+				}
+				&:nth-child(2){
+					flex-basis: 602px;
+					max-width: 602px;
+					margin-left: 110px;
+				}
+			}
+		}
+	}
+	#offer-for-talent{
+		padding-top: 120px;
+		& .talent-list-column{
+			&:nth-child(1){
+				padding-left: 200px;
+			}
+			&:nth-child(2){
+				padding-left: 90px;
+			}
 		}
 	}
 }
