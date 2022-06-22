@@ -72,6 +72,10 @@ a:hover, a:active, a:focus {
 	outline: none;
 }
 
+button{
+	cursor: pointer;
+}
+
 button, button:hover, button:active, button:focus {
 	outline: none;
 }
@@ -80,8 +84,27 @@ input::-moz-focus-inner {
   border: 0; 
 }
 
+input[type=text],input[type=email],input[type=tel]{
+	border:1px solid transparent;
+	width: 100%;
+	background-color: #fff;
+	font-size: 16px;
+	padding: 10px 48px 10px 24px;
+	height: 44px;
+}
+
+textarea{
+	border:1px solid transparent;
+	width: 100%;
+	background-color: #fff;
+	font-size: 16px;
+	padding: 10px 48px 10px 24px;
+	height: 212px;
+}
+
 input:focus, textarea:focus{
 	outline: none;
+	border:1px solid $blue;
 }
 
 object, embed { 
@@ -89,8 +112,9 @@ object, embed {
 }
 
 ::placeholder { 
-  color: $grey;
-  opacity: 1; 
+  color: $blue;
+  opacity: 1;
+  font-family: inherit; 
 }
 
 .container{
@@ -170,4 +194,36 @@ object, embed {
 
 .text-uppercase{
 	text-transform: uppercase;
+}
+
+.form-element{
+	margin-bottom: 12px;
+	&.name{
+		& input{
+			background-image: url('../img/form-user.svg');
+			background-repeat: no-repeat;
+			background-position: calc(100% - 12px) 10px;
+		}
+	}
+	&.email{
+		& input{
+			background-image: url('../img/form-email.svg');
+			background-repeat: no-repeat;
+			background-position: calc(100% - 12px) 10px;
+		}
+	}
+	&.phone{
+		& input{
+			background-image: url('../img/form-phone.svg');
+			background-repeat: no-repeat;
+			background-position: calc(100% - 12px) 10px;
+		}
+	}
+	&.company{
+		& input{
+			background-image: url('../img/form-company.svg');
+			background-repeat: no-repeat;
+			background-position: calc(100% - 12px) 10px;
+		}
+	}
 }

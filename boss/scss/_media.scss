@@ -214,6 +214,24 @@
 			}
 		}
 	}
+	#contact-form{
+		& .data-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .message-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#contact-data{
+		& .contact-data-wrap{
+			display: flex;
+			flex-basis: 100%;
+			max-width: 100%;
+			justify-content: space-around;
+		}
+	}
 }
 
 
@@ -350,6 +368,13 @@
 		transition: all 0.8s ease-in-out;
 		transform: translateY(0);
 	}
+	#page-title{
+		& .page-subtitle{
+			max-width: 881px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 	#page-links{
 		position: relative;
 		& .column{
@@ -389,6 +414,11 @@
 			& .about-managment-data{
 				justify-content: flex-start;
 			}
+		}
+	}
+	#contact-form{
+		& .contact-bg-column{
+			padding: 65px 90px 40px;
 		}
 	}
 }
@@ -632,6 +662,19 @@
 		& .about-managment-bio-column{
 			flex-basis: calc(100% - 450px);
 			max-width: calc(100% - 450px);
+		}
+	}
+	#contact-form{
+		& .container{
+			padding-left: 125px;
+			padding-right: 125px;
+		}
+	}
+	#contact-data{
+		padding-bottom: 40px;
+		& .container{
+			padding-left: 80px;
+			padding-right: 80px;
 		}
 	}
 }

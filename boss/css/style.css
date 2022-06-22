@@ -90,6 +90,10 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 button, button:hover, button:active, button:focus {
   outline: none;
 }
@@ -98,8 +102,27 @@ input::-moz-focus-inner {
   border: 0;
 }
 
+input[type=text], input[type=email], input[type=tel] {
+  border: 1px solid transparent;
+  width: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px 48px 10px 24px;
+  height: 44px;
+}
+
+textarea {
+  border: 1px solid transparent;
+  width: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px 48px 10px 24px;
+  height: 212px;
+}
+
 input:focus, textarea:focus {
   outline: none;
+  border: 1px solid #093A57;
 }
 
 object, embed {
@@ -107,28 +130,33 @@ object, embed {
 }
 
 ::-webkit-input-placeholder {
-  color: #A4B49F;
+  color: #093A57;
   opacity: 1;
+  font-family: inherit;
 }
 
 ::-moz-placeholder {
-  color: #A4B49F;
+  color: #093A57;
   opacity: 1;
+  font-family: inherit;
 }
 
 :-ms-input-placeholder {
-  color: #A4B49F;
+  color: #093A57;
   opacity: 1;
+  font-family: inherit;
 }
 
 ::-ms-input-placeholder {
-  color: #A4B49F;
+  color: #093A57;
   opacity: 1;
+  font-family: inherit;
 }
 
 ::placeholder {
-  color: #A4B49F;
+  color: #093A57;
   opacity: 1;
+  font-family: inherit;
 }
 
 .container {
@@ -213,6 +241,30 @@ object, embed {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.form-element {
+  margin-bottom: 12px;
+}
+.form-element.name input {
+  background-image: url("../img/form-user.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) 10px;
+}
+.form-element.email input {
+  background-image: url("../img/form-email.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) 10px;
+}
+.form-element.phone input {
+  background-image: url("../img/form-phone.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) 10px;
+}
+.form-element.company input {
+  background-image: url("../img/form-company.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) 10px;
 }
 
 #main-menu {
@@ -1119,6 +1171,74 @@ footer .copyright {
   padding-right: 8px;
 }
 
+#contact-form {
+  position: relative;
+}
+#contact-form .contact-bg-column {
+  background-color: #A4B49F;
+  padding: 35px 15px;
+}
+#contact-form button {
+  margin-top: 18px;
+}
+
+#contact-data {
+  padding: 35px 0 0;
+}
+#contact-data a {
+  color: #093A57;
+  position: relative;
+}
+#contact-data a:hover {
+  color: #CE2D15;
+}
+#contact-data .column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#contact-data .contact-data-address {
+  padding-left: 43px;
+  position: relative;
+  margin-bottom: 30px;
+}
+#contact-data .contact-data-address:before {
+  content: url("../img/contact-pin.svg");
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+}
+#contact-data .contact-data-phone {
+  padding-left: 43px;
+  position: relative;
+  margin-bottom: 30px;
+}
+#contact-data .contact-data-phone:before {
+  content: url("../img/contact-phone.svg");
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+}
+#contact-data .contact-data-linkedin {
+  padding-left: 43px;
+  position: relative;
+  margin-bottom: 30px;
+}
+#contact-data .contact-data-linkedin:before {
+  content: url("../img/contact-linkedin.svg");
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1321,6 +1441,31 @@ footer .copyright {
     flex-basis: calc(100% - 320px);
     max-width: calc(100% - 320px);
   }
+  #contact-form .data-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #contact-form .message-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #contact-data .contact-data-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -1481,6 +1626,11 @@ footer .copyright {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+  #page-title .page-subtitle {
+    max-width: 881px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #page-links {
     position: relative;
   }
@@ -1529,6 +1679,9 @@ footer .copyright {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+  #contact-form .contact-bg-column {
+    padding: 65px 90px 40px;
   }
 }
 /* Large Devices, Wide Screens */
@@ -1765,5 +1918,16 @@ footer .copyright {
     -ms-flex-preferred-size: calc(100% - 450px);
     flex-basis: calc(100% - 450px);
     max-width: calc(100% - 450px);
+  }
+  #contact-form .container {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+  #contact-data {
+    padding-bottom: 40px;
+  }
+  #contact-data .container {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }

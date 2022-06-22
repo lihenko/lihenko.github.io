@@ -636,4 +636,66 @@ footer{
 	}
 }
 
+#contact-form{
+	position: relative;
+	& .contact-bg-column{
+		background-color: $grey;
+		padding: 35px 15px;
+	}
+	& button{
+		margin-top: 18px;
+	}
+}
+
+#contact-data{
+	padding: 35px 0 0;
+	& a{
+		color: $blue;
+		position: relative;
+		&:hover{
+			color: $red;
+		}
+	}
+	& .column{
+		display: flex;
+		justify-content: center;
+	}
+	& .contact-data-address{
+		padding-left: 43px;
+		position: relative;
+		margin-bottom: 30px;
+		&:before{
+			content: url('../img/contact-pin.svg');
+			position: absolute;
+			top: -3px;
+			left: 0;
+			display: block;
+		}
+	}
+	& .contact-data-phone{
+		padding-left: 43px;
+		position: relative;
+		margin-bottom: 30px;
+		&:before{
+			content: url('../img/contact-phone.svg');
+			position: absolute;
+			top: -3px;
+			left: 0;
+			display: block;
+		}
+	}
+	& .contact-data-linkedin{
+		padding-left: 43px;
+		position: relative;
+		margin-bottom: 30px;
+		&:before{
+			content: url('../img/contact-linkedin.svg');
+			position: absolute;
+			top: -3px;
+			left: 0;
+			display: block;
+		}
+	}  
+}
+
 @import "media";
