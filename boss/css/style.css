@@ -37,6 +37,10 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow-y: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: DroidSans, sans-serif;
   font-weight: 700;
@@ -186,11 +190,6 @@ object, embed {
   background-color: #CE2D15;
 }
 .red-button:hover {
-  color: #fff;
-  background-color: #093A57;
-}
-
-.footer-social-column .red-button:hover {
   color: #093A57;
   background-color: #fff;
 }
@@ -414,6 +413,7 @@ object, embed {
 
 header {
   padding: 30px 0;
+  background-color: #fff;
 }
 
 #home-hero {
@@ -1185,6 +1185,25 @@ footer .copyright {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
+  }
+  header.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 89;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  header.sticky {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 /* Large Devices, Wide Screens */

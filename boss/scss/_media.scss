@@ -290,6 +290,20 @@
 		flex-basis: 25%;
 		max-width: 25%;
 	}
+	header.fixed{
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 89;
+		transform: translateY(-100%);
+		padding: 10px 0;
+		box-shadow: $shadow;
+	}
+	header.sticky{
+		transition: all 0.8s ease-in-out;
+		transform: translateY(0);
+	}
 }
 
 

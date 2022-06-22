@@ -20,6 +20,10 @@ body {
 	overflow-x: hidden;
 }
 
+body.menu-open{
+	overflow-y: hidden;
+}
+
 
 h1,h2,h3,h4,h5,h6{
 	font-family: DroidSans, sans-serif;
@@ -139,15 +143,11 @@ object, embed {
 	color: #fff;
 	background-color: $red;
 	&:hover{
-		color: #fff;
-		background-color: $blue;
+		color: $blue;
+	  background-color: #fff;
 	}
 }
 
-.footer-social-column .red-button:hover{
-	color: $blue;
-	background-color: #fff;
-}
 
 .text-white{
 	color: #fff;

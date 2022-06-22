@@ -1,12 +1,10 @@
 jQuery(window).scroll(function(){
   var current_position = jQuery(window).scrollTop();
-  //console.log(current_position);
   jQuery('#values .data-column .value-wrap').each(function(){
     var position = jQuery(this).offset();
     var current_height = jQuery(this).height();
     var title = jQuery('#values h2');
     var titleposition = jQuery('#values .title-column').offset();
-    console.log(position.top);
     if (current_position + 400 >= position.top && current_position + 400 - position.top < current_height + 60){
       jQuery(this).addClass('visible');
       if (jQuery(window).width() >= 1320){
@@ -67,4 +65,19 @@ jQuery(document).ready(function ($) {
       }
     ]
   });
+});
+
+jQuery(window).scroll(function(){
+  if (jQuery(window).scrollTop() >= 200) {
+    jQuery('header').addClass('fixed');
+   }
+   else {
+    jQuery('header').removeClass('fixed');
+   }
+  if (jQuery(window).scrollTop() >= 500) {
+    jQuery('header').addClass('sticky');
+   }
+   else {
+    jQuery('header').removeClass('sticky');
+   }
 });
