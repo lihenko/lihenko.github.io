@@ -68,16 +68,10 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(window).scroll(function(){
-  if (jQuery(window).scrollTop() >= 200) {
-    jQuery('header').addClass('fixed');
-   }
-   else {
-    jQuery('header').removeClass('fixed');
-   }
   if (jQuery(window).scrollTop() >= 500) {
-    jQuery('header').addClass('sticky');
+    jQuery('#sticky-header').addClass('sticky');
    }
    else {
-    jQuery('header').removeClass('sticky');
+    jQuery('#sticky-header').removeClass('sticky');
    }
 });

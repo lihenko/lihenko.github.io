@@ -170,6 +170,50 @@
 	footer .copyright{
 		margin-top: 40px;
 	}
+	#page-links{
+		& .column{
+			padding-bottom: 45px;
+		}
+		& .service-solution-wrap{
+			min-height: 150px;
+			& .service-solution-img{
+				flex-basis: 150px;
+				max-width: 150px;
+				height: 100%;
+			}
+			& .service-solution-data{
+				flex-basis: calc(100% - 150px);
+				max-width: calc(100% - 150px);
+				padding: 15px 35px 34px;
+				position: relative;
+			}
+
+			& .service-solution-link{
+				position: absolute;
+				bottom: 25px;
+				left: 35px;
+			}
+		}
+	}
+	#about-features{
+		& .about-features-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#about-features{
+		& .about-oracle-row{
+			align-items:center;
+			& .about-oracle-img-column{
+				flex-basis: 320px;
+				max-width: 320px;
+			}
+			& .about-oracle-text-column{
+				flex-basis: calc(100% - 320px);
+				max-width: calc(100% - 320px);
+			}
+		}
+	}
 }
 
 
@@ -290,8 +334,9 @@
 		flex-basis: 25%;
 		max-width: 25%;
 	}
-	header.fixed{
+	#sticky-header{
 		position: fixed;
+		display: block;
 		left: 0;
 		right: 0;
 		top: 0;
@@ -299,10 +344,52 @@
 		transform: translateY(-100%);
 		padding: 10px 0;
 		box-shadow: $shadow;
+		background-color: #fff;
 	}
-	header.sticky{
+	#sticky-header.sticky{
 		transition: all 0.8s ease-in-out;
 		transform: translateY(0);
+	}
+	#page-links{
+		position: relative;
+		& .column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#about-boss{
+		& .column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .row{
+			align-items:center;
+		}
+		& .about-boss-img-wrap{
+			padding-top: 0;
+		}
+	}
+	#about-features{
+		& .about-oracle-wrap{
+			padding-left: 65px;
+			padding-right: 65px;
+		}
+	}
+	#about-managment{
+		& .about-managment-photo-column{
+			flex-basis: 379px;
+			max-width: 379px;
+		}
+		& .about-managment-bio-column{
+			flex-basis: calc(100% - 379px);
+			max-width: calc(100% - 379px);
+			& h3{
+				text-align: left;
+			}
+			& .about-managment-data{
+				justify-content: flex-start;
+			}
+		}
 	}
 }
 
@@ -479,6 +566,72 @@
 					}
 				}
 			}
+		}
+	}
+	.title-container{
+		background-color: #fff;
+		height: 140px;
+		position: absolute;
+		bottom: 0;
+		left: 0;	
+		right: 0;	
+		width: 1320px;	
+		margin-left: auto;	
+		margin-right: auto;	
+	}
+	#page-title{
+		padding-bottom: 230px;
+		margin-bottom: -140px;
+	}
+	#page-links{
+		& .container{
+			padding-left: 125px;
+			padding-right: 125px;
+		}
+	}
+	#about-boss{
+		& .container{
+			padding-left: 125px;
+			padding-right: 125px;
+		}
+		& .about-boss-img-wrap{
+			margin-right: 0;
+		}
+	}
+	#about-features{
+		& .about-features-column{
+			flex-basis: 25%;
+			max-width: 25%;
+		}
+		& .about-features-description{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	#about-features{
+		& .about-oracle-wrap{
+			margin-left: 80px;
+			margin-right: 80px;
+		}
+		& .about-oracle-row{
+			& .about-oracle-img-column{
+				flex-basis: calc(100% - 662px);
+				max-width: calc(100% - 662px);
+			}
+			& .about-oracle-text-column{
+				flex-basis: 662px;
+				max-width: 662px;
+			}
+		}
+	}
+	#about-managment{
+		& .about-managment-photo-column{
+			flex-basis: 450px;
+			max-width: 450px;
+		}
+		& .about-managment-bio-column{
+			flex-basis: calc(100% - 450px);
+			max-width: calc(100% - 450px);
 		}
 	}
 }

@@ -148,6 +148,13 @@ object, embed {
 	}
 }
 
+.red-button.alt{
+	&:hover{
+		color: #fff;
+	  background-color: $blue;
+	}
+}
+
 
 .text-white{
 	color: #fff;
