@@ -248,6 +248,19 @@
 			}
 		}
 	}
+	.offered-services-row{
+		justify-content: center;
+		& .offered-services-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#other-services{
+		& .other-services-row .column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 
@@ -693,7 +706,11 @@
 			padding-right: 80px;
 		}
 	}
+	#page-title{
+		min-height: 450px;
+	}
 	#resources-grid{
+		padding-top: 0;
 		& .resource-grid-item{
 			flex-basis: 33.33%;
 			max-width: 33.33%;
@@ -716,6 +733,39 @@
 						left: 30px;
 					}
 			}
+		}
+	}
+	#page-description{
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 60px;
+		& .column{
+			flex-basis: 66.67%;
+			max-width: 66.67%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#offered-services .offered-services-row{
+		& .offered-services-column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		& .offered-services-wrap{
+			& .offered-services-title{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			& .offered-services-excerpt{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+	}
+	#other-services{
+		& .other-services-row .column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
 		}
 	}
 }

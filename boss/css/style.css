@@ -1384,6 +1384,104 @@ footer .copyright {
   background-color: #093A57;
 }
 
+#page-description {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+#offered-services {
+  background-color: #F9F8F8;
+  padding: 40px 0 60px;
+}
+#offered-services h3 {
+  margin-bottom: 55px;
+}
+#offered-services .offered-services-column {
+  margin-bottom: 30px;
+}
+#offered-services .offered-services-wrap {
+  background-color: #A4B49F;
+  position: relative;
+  padding-bottom: 80px;
+  height: 100%;
+}
+#offered-services .offered-services-wrap .offered-services-thumbnail {
+  height: 255px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#offered-services .offered-services-wrap .offered-services-title {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+#offered-services .offered-services-wrap .offered-services-title h6 {
+  margin-bottom: 20px;
+}
+#offered-services .offered-services-wrap .offered-services-excerpt {
+  font-size: 0.8em;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#offered-services .offered-services-wrap .offered-services-read-more {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  text-align: center;
+}
+#offered-services .offered-services-wrap:hover .offered-services-thumbnail {
+  opacity: 0.8;
+}
+
+#other-services {
+  padding: 60px 0;
+}
+#other-services .service-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 153px;
+  height: 153px;
+  background-color: #A4B49F;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+#other-services .service-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#other-services .service-description {
+  font-size: 0.8em;
+}
+#other-services .other-services-row {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#other-services .other-services-row .column {
+  margin-bottom: 45px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1630,6 +1728,24 @@ footer .copyright {
   .pagination .pagination-pages .page-numbers {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .offered-services-row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .offered-services-row .offered-services-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #other-services .other-services-row .column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
 /* Medium Devices, Desktops */
@@ -2095,6 +2211,12 @@ footer .copyright {
     padding-left: 80px;
     padding-right: 80px;
   }
+  #page-title {
+    min-height: 450px;
+  }
+  #resources-grid {
+    padding-top: 0;
+  }
   #resources-grid .resource-grid-item {
     -webkit-flex-basis: 33.33%;
     -ms-flex-preferred-size: 33.33%;
@@ -2117,5 +2239,38 @@ footer .copyright {
   }
   #resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more {
     left: 30px;
+  }
+  #page-description {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  #page-description .column {
+    -webkit-flex-basis: 66.67%;
+    -ms-flex-preferred-size: 66.67%;
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #offered-services .offered-services-row .offered-services-column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #offered-services .offered-services-row .offered-services-wrap .offered-services-title {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #offered-services .offered-services-row .offered-services-wrap .offered-services-excerpt {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #other-services .other-services-row .column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
   }
 }
