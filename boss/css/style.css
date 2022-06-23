@@ -1239,6 +1239,151 @@ footer .copyright {
   display: block;
 }
 
+#resources-grid {
+  position: relative;
+  padding: 60px 0;
+}
+#resources-grid .resource-grid-item {
+  margin-bottom: 30px;
+}
+#resources-grid .resource-grid-item:hover .resource-thumbnail {
+  opacity: 0.8;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap {
+  background-color: #A4B49F;
+  position: relative;
+  padding-bottom: 40px;
+  height: 100%;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-thumbnail {
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-title {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-title h6 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-excerpt {
+  font-size: 0.8em;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more a {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more a:after {
+  content: url("../img/arrow-more.svg");
+  padding-left: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more a:hover:after {
+  padding-left: 30px;
+}
+
+.pagination .pagination-pages {
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.pagination .pagination-pages .page-numbers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #CE2D15;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pagination .pagination-pages .page-numbers:hover:not(.dots) {
+  background-color: #CE2D15;
+  color: #fff;
+}
+.pagination .pagination-pages .page-numbers.current {
+  background-color: #CE2D15;
+  color: #fff;
+}
+.pagination .pagination-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.pagination .pagination-buttons .page-numbers {
+  background-color: #A4B49F;
+  padding: 12px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 75px;
+  height: 44px;
+}
+.pagination .pagination-buttons .page-numbers img {
+  width: 35px;
+  height: auto;
+}
+.pagination .pagination-buttons .page-numbers.prev {
+  margin-right: 15px;
+}
+.pagination .pagination-buttons .page-numbers:hover {
+  background-color: #093A57;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1465,6 +1610,26 @@ footer .copyright {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+  }
+  #resources-grid .resource-grid-item {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .pagination .pagination-pages .page-numbers {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 /* Medium Devices, Desktops */
@@ -1929,5 +2094,28 @@ footer .copyright {
   #contact-data .container {
     padding-left: 80px;
     padding-right: 80px;
+  }
+  #resources-grid .resource-grid-item {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #resources-grid .resource-grid-item .resource-grid-wrap .resource-thumbnail {
+    height: 255px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #resources-grid .resource-grid-item .resource-grid-wrap .resource-title {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #resources-grid .resource-grid-item .resource-grid-wrap .resource-excerpt {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #resources-grid .resource-grid-item .resource-grid-wrap .resource-learn-more {
+    left: 30px;
   }
 }

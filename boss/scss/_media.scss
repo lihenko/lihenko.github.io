@@ -232,6 +232,22 @@
 			justify-content: space-around;
 		}
 	}
+	#resources-grid{
+		& .resource-grid-item{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	.pagination{
+		display: flex;
+		justify-content: space-between;
+		& .pagination-pages{
+			& .page-numbers{
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+	}
 }
 
 
@@ -675,6 +691,31 @@
 		& .container{
 			padding-left: 80px;
 			padding-right: 80px;
+		}
+	}
+	#resources-grid{
+		& .resource-grid-item{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+				& .resource-grid-wrap{
+					& .resource-thumbnail{
+						height: 255px;
+						background-position: center;
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					& .resource-title{
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+					& .resource-excerpt{
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+					& .resource-learn-more{
+						left: 30px;
+					}
+			}
 		}
 	}
 }
