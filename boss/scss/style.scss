@@ -898,6 +898,7 @@ footer{
 			margin-bottom: 45px;
 		}
 	} 
+
 }
 
 .mb-45{
@@ -906,6 +907,9 @@ footer{
 
 #consulting-section{
 	margin-bottom: 70px;
+	& .consulting-section-image-column{
+		text-align: center;
+	}
 }
 
 #cta{
@@ -916,6 +920,9 @@ footer{
 		color: #fff;
 		& .text-column{
 			margin-bottom: 30px;
+		}
+		& .button-column{
+			text-align: center;
 		}
 	}
 }

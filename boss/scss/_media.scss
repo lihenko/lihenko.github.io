@@ -464,6 +464,9 @@
 					order:1;
 				}
 			}
+			& .consulting-section-image-column{
+				text-align: right;
+			}
 		}
 	}
 	#cta{
@@ -480,6 +483,7 @@
 			& .button-column{
 				flex-basis: 300px;
 				max-width: 300px;
+				text-align: right;
 			}
 		}
 	}

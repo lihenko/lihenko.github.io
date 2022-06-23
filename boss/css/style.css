@@ -1511,6 +1511,9 @@ footer .copyright {
 #consulting-section {
   margin-bottom: 70px;
 }
+#consulting-section .consulting-section-image-column {
+  text-align: center;
+}
 
 #cta .cta-wrap {
   background-color: #A4B49F;
@@ -1520,6 +1523,9 @@ footer .copyright {
 }
 #cta .cta-wrap .text-column {
   margin-bottom: 30px;
+}
+#cta .cta-wrap .button-column {
+  text-align: center;
 }
 
 /*==========  Desktop First  ==========*/
@@ -2028,6 +2034,9 @@ footer .copyright {
     -ms-flex-order: 1;
     order: 1;
   }
+  #consulting-section .consulting-section-row .consulting-section-image-column {
+    text-align: right;
+  }
   #cta .cta-wrap {
     padding: 65px;
   }
@@ -2049,6 +2058,7 @@ footer .copyright {
     -ms-flex-preferred-size: 300px;
     flex-basis: 300px;
     max-width: 300px;
+    text-align: right;
   }
 }
 /* Large Devices, Wide Screens */
