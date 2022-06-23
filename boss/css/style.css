@@ -267,6 +267,28 @@ object, embed {
   background-position: calc(100% - 12px) 10px;
 }
 
+main ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+main ul li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+main ul li:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #CE2D15;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+}
+
 #main-menu {
   position: fixed;
   top: 0;
@@ -1482,6 +1504,24 @@ footer .copyright {
   margin-bottom: 45px;
 }
 
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+#consulting-section {
+  margin-bottom: 70px;
+}
+
+#cta .cta-wrap {
+  background-color: #A4B49F;
+  margin-bottom: 70px;
+  padding: 25px 15px;
+  color: #fff;
+}
+#cta .cta-wrap .text-column {
+  margin-bottom: 30px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1964,6 +2004,52 @@ footer .copyright {
   #contact-form .contact-bg-column {
     padding: 65px 90px 40px;
   }
+  #consulting-section .consulting-section-row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #consulting-section .consulting-section-row .half-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #consulting-section .consulting-section-row .half-column:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #consulting-section .consulting-section-row .half-column:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  #cta .cta-wrap {
+    padding: 65px;
+  }
+  #cta .cta-wrap .row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #cta .cta-wrap .text-column {
+    margin-bottom: 0;
+    -webkit-flex-basis: calc(100% - 300px);
+    -ms-flex-preferred-size: calc(100% - 300px);
+    flex-basis: calc(100% - 300px);
+    max-width: calc(100% - 300px);
+  }
+  #cta .cta-wrap .button-column {
+    -webkit-flex-basis: 300px;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    max-width: 300px;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1320px) {
@@ -2272,5 +2358,25 @@ footer .copyright {
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
     max-width: 33.33%;
+  }
+  #consulting-section .container {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+  #cta .cta-wrap {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  #cta .cta-wrap .text-column {
+    -webkit-flex-basis: 727px;
+    -ms-flex-preferred-size: 727px;
+    flex-basis: 727px;
+    max-width: 727px;
+  }
+  #cta .cta-wrap .button-column {
+    -webkit-flex-basis: calc(100% - 727px);
+    -ms-flex-preferred-size: calc(100% - 727px);
+    flex-basis: calc(100% - 727px);
+    max-width: calc(100% - 727px);
   }
 }

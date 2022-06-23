@@ -261,6 +261,7 @@
 			max-width: 50%;
 		}
 	}
+	
 }
 
 
@@ -448,6 +449,38 @@
 	#contact-form{
 		& .contact-bg-column{
 			padding: 65px 90px 40px;
+		}
+	}
+	#consulting-section{
+		& .consulting-section-row{
+			align-items:center;
+			& .half-column{
+				flex-basis: 50%;
+				max-width: 50%;
+				&:nth-child(1){
+					order:2;
+				}
+				&:nth-child(2){
+					order:1;
+				}
+			}
+		}
+	}
+	#cta{
+		& .cta-wrap{
+			padding: 65px;
+			& .row{
+				align-items:center;
+			}
+			& .text-column{
+				margin-bottom: 0;
+				flex-basis: calc(100% - 300px);
+				max-width: calc(100% - 300px);
+			}
+			& .button-column{
+				flex-basis: 300px;
+				max-width: 300px;
+			}
 		}
 	}
 }
@@ -766,6 +799,26 @@
 		& .other-services-row .column{
 			flex-basis: 33.33%;
 			max-width: 33.33%;
+		}
+	}
+	#consulting-section{
+		& .container{
+			padding-left: 125px;
+			padding-right: 125px;
+		}
+	}
+	#cta{
+		& .cta-wrap{
+			padding-left: 110px;
+			padding-right: 110px;
+			& .text-column{
+				flex-basis: 727px;
+				max-width: 727px;
+			}
+			& .button-column{
+				flex-basis: calc(100% - 727px);
+				max-width: calc(100% - 727px);
+			}
 		}
 	}
 }

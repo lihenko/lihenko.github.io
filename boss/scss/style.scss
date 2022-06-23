@@ -900,4 +900,24 @@ footer{
 	} 
 }
 
+.mb-45{
+	margin-bottom: 45px;
+}
+
+#consulting-section{
+	margin-bottom: 70px;
+}
+
+#cta{
+	& .cta-wrap{
+		background-color: $grey;
+		margin-bottom: 70px;
+		padding: 25px 15px;
+		color: #fff;
+		& .text-column{
+			margin-bottom: 30px;
+		}
+	}
+}
+
 @import "media";
