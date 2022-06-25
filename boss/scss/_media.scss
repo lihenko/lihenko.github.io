@@ -72,6 +72,16 @@
 		flex-basis: 50%;
 		max-width: 50%;
 	}
+	#applications-logos{
+		& .row{
+			flex-direction: row;
+			justify-content: center;
+			& .column{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
+	}
 
 }
 
@@ -255,10 +265,33 @@
 			max-width: 50%;
 		}
 	}
+	.solutions-row{
+		justify-content: center;
+		& .solutions-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 	#other-services{
 		& .other-services-row .column{
 			flex-basis: 50%;
 			max-width: 50%;
+		}
+	}
+	#applications-scheme{
+		& .applications-chart-details-row{
+			& .application-chart-details-column{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+		}
+	}
+	#applications-logos{
+		& .row{
+			& .column{
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+			}
 		}
 	}
 	
@@ -469,6 +502,24 @@
 			}
 		}
 	}
+	#applications-section{
+		& .applications-section-row{
+			align-items:center;
+			& .half-column{
+				flex-basis: 50%;
+				max-width: 50%;
+				&:nth-child(1){
+					order:2;
+				}
+				&:nth-child(2){
+					order:1;
+				}
+			}
+			& .applications-section-image-column{
+				text-align: right;
+			}
+		}
+	}
 	#cta{
 		& .cta-wrap{
 			padding: 65px;
@@ -485,6 +536,40 @@
 				max-width: 300px;
 				text-align: right;
 			}
+		}
+	}
+	.mobile-chart-column{
+		display: none;
+	}
+	#applications-scheme{
+		& .applications-chart-details-row{
+			background-image: url('../img/desktop-chart.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 80%;
+			& .application-chart-details-column{
+				flex-basis: 336px;
+				max-width: 336px;
+				&:nth-child(2n){
+					margin-left: calc(100% - 336px - 336px);
+				}
+			}
+		}
+	}
+	#applications-logos{
+		& .row{
+			& .column{
+				flex-basis: 20%;
+				max-width: 20%;
+			}
+		}
+	}
+	#cta-title{
+		& .column{
+			flex-basis: 83.33%;
+			max-width: 83.33%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
@@ -748,6 +833,9 @@
 	}
 	#resources-grid{
 		padding-top: 0;
+		&.bg-grey{
+			padding-top: 60px;
+		}
 		& .resource-grid-item{
 			flex-basis: 33.33%;
 			max-width: 33.33%;
@@ -799,6 +887,22 @@
 			}
 		}
 	}
+	.solutions-row{
+		& .solutions-column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+		}
+		& .solutions-wrap{
+			& .solutions-title{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			& .solutions-excerpt{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+	}
 	#other-services{
 		& .other-services-row .column{
 			flex-basis: 33.33%;
@@ -811,18 +915,36 @@
 			padding-right: 125px;
 		}
 	}
+	#applications-section{
+		& .container{
+			padding-left: 125px;
+			padding-right: 125px;
+		}
+	}
 	#cta{
 		& .cta-wrap{
 			padding-left: 110px;
 			padding-right: 110px;
 			& .text-column{
-				flex-basis: 727px;
-				max-width: 727px;
+				flex-basis: 750px;
+				max-width: 750px;
 			}
 			& .button-column{
-				flex-basis: calc(100% - 727px);
-				max-width: calc(100% - 727px);
+				flex-basis: calc(100% - 750px);
+				max-width: calc(100% - 750px);
 			}
 		}
 	}
+	#applications-scheme{
+		.applications-scheme-title-column{
+			flex-basis: 1098px;
+			max-width: 1098px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#applications-scheme{
+		& .applications-chart-details-row{
+			background-size: 100%;
+			}}
 }

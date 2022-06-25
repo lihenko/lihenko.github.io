@@ -192,8 +192,24 @@ object, embed {
 	color: $red;
 }
 
+.text-aly{
+	color: $aly;
+}
+
+.text-grey{
+	color: $grey;
+}
+
 .text-uppercase{
 	text-transform: uppercase;
+}
+
+.mt-15{
+	margin-top: 15px;
+}
+
+.bg-grey{
+	background-color: #F9F8F8;
 }
 
 .form-element{
