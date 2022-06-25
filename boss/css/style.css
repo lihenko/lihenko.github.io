@@ -283,17 +283,17 @@ object, embed {
   background-position: calc(100% - 12px) 10px;
 }
 
-main ul {
+ul.styled-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-main ul li {
+ul.styled-list li {
   position: relative;
   padding-left: 40px;
   margin-bottom: 15px;
 }
-main ul li:before {
+ul.styled-list li:before {
   content: "";
   width: 9px;
   height: 9px;
