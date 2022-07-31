@@ -7,3 +7,12 @@ jQuery(document).ready(function($){
       dots:true,
   });
 });
+
+
+jQuery(document).ready(function($){
+  $(".video-wrap").videoPopup({
+    autoplay: 1,
+    showVideoInformations: 0,
+    width: 1018,
+  });
+});   

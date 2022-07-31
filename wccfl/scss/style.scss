@@ -274,4 +274,145 @@
 	}
 }
 
+#home-video-section{
+	padding: 30px 0;
+	& h2{
+		margin-bottom: 30px;
+	}
+	& .video-container{
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	& .video-wrap{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 56.19%;
+		position: relative;
+		height: 0; overflow: hidden;
+		margin-bottom: 30px;
+		& img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+				max-width: 25%;
+		}
+	}
+}
+
+#instagram-feed{
+	padding: 15px 9px;
+	& h2{
+		margin-bottom: 30px;
+	}
+}
+
+footer{
+	font-size: 0.8em;
+	& #get-in-touch{
+		padding: 26px 9px 26px 1px;
+		& h2{
+			margin-bottom: 45px;
+		}
+		& .get-in-touch-contact-row{
+			letter-spacing: -0.2px;
+			& a{
+				font-weight: 700;
+			}
+			& .column{
+				margin-bottom: 15px;
+			}
+			& .half-column{
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+			& h3{
+				margin-top: 0;
+			}
+		}
+	}
+	& #footer-menu-section{
+		padding: 26px 0;
+		background-color: #f2f2f2;
+		margin-bottom: 30px;
+		& .footer-menu-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			& ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				& li{
+					position: relative;
+					padding-left: 15px;
+					margin-bottom: 15px;
+					&:before{
+						content: url('../img/footer-menu-arrow.svg');
+						position: absolute;
+						top: -2px;
+						left: -5px;
+					}
+				}
+			}
+		}
+		& .footer-social{
+			flex-basis: 50%;
+			max-width: 50%;
+			& ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-align: right;
+				& li{
+					display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px;
+					&:first-child{
+						padding-left: 0;
+					}
+				}
+			}
+		}
+		& .footer-notes{
+			flex-basis: 50%;
+			max-width: 50%;
+			font-size: 0.67em;
+			color: $violet;
+			margin-left: auto;
+			transform:translateY(calc(-100% - 15px));
+		}
+		& .footer-copyright{
+			text-align: center;
+			font-size: 0.67em;
+		}
+	}
+}
+
+#bottom-bar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	z-index: 99;
+	& a{
+		padding: 3px 15px;
+		background-color: $yellow;
+		color: $violet;
+		width: 50%;
+		font-weight: 700;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		&:first-child{
+			border-right: 1px solid #fff;
+		}
+		& svg{
+			margin-right: 3px;
+		}
+	}
+}	
+
 @import "media";

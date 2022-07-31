@@ -9,6 +9,7 @@
 
 html, body {
 	position:relative;
+	overflow-x: hidden;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 	line-height: 1.33;
 	font-family: Quicksand, sans-serif;
 	height: 100%;
-	overflow-x: hidden;
+	
 }
 
 
@@ -37,8 +38,8 @@ h2{
 }
 
 h3{
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.38em;
+  line-height: 1;
 }
 
 h4{
@@ -57,10 +58,11 @@ img{
 }
 
 a{
-	color:$gold;
+	color:$red;
 	transition: all 0.3s ease-in-out;
+	text-decoration: none;
 	&:hover{
-		color:$gold;
+		color:$violet;
 	}
 }
 
