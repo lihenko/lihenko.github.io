@@ -8,6 +8,19 @@ jQuery(document).ready(function($){
   });
 });
 
+jQuery(document).ready(function($){
+  $('.about-us-slider').slick({
+      speed: 300,
+      autoplaySpeed: 4000,
+      autoplay:true,
+      arrows: false,
+      dots:true,
+      centerMode:true,
+      slidesToShow:1,
+      slidesToScroll:1,
+  });
+});
+
 
 jQuery(document).ready(function($){
   $(".video-wrap").videoPopup({

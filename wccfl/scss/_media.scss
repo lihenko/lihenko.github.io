@@ -47,13 +47,25 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px){
-
+	#about-us-slider{
+		& .slick-list{
+			padding-left: 20%!important;
+			padding-right: 20%!important;
+		}
+		& .about-us-slider-image{
+				height: 180px;
+			}
+	}
 }
 
 
 @media only screen and (min-width : 510px){
 
-
+	#about-us-slider{
+			& .about-us-slider-image{
+				height: 200px;
+			}
+		}
 }
 
 /* Small Devices, Tablets */
@@ -97,6 +109,11 @@
 			}
 		}
 	}
+	#about-us-slider{
+			& .about-us-slider-image{
+				height: 290px;
+			}
+		}
 
 }
 
@@ -387,6 +404,29 @@
 	#bottom-bar{
 		display: none;	
 	}
+	#about-us-slider{
+		& .slick-list{
+			padding-left: 25%!important;
+			padding-right: 25%!important;
+		}
+	}
+	#page-description{
+		padding: 60px 0;
+		& .container{
+			max-width: 1018px;
+		}
+	}
+	#service-description{
+		padding: 60px 0 0;
+		& .container{
+			max-width: 1065px;
+		}
+	}
+	#support-section{
+		& .container{
+			max-width: 1065px;
+		}
+	}
 }
 
 
@@ -452,6 +492,12 @@
 					}
 				}
 			}
+		}
+	}
+	#about-us-slider{
+		& .slick-list{
+			padding-left: 30%!important;
+			padding-right: 30%!important;
 		}
 	}
 		
