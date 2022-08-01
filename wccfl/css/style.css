@@ -1282,6 +1282,13 @@ footer #footer-menu-section .footer-copyright {
   padding-right: 20px;
 }
 
+#privacy-policy {
+  padding: 30px 9px 0;
+}
+#privacy-policy .container {
+  max-width: 1018px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1771,6 +1778,9 @@ footer #footer-menu-section .footer-copyright {
   }
   #location-instagram {
     padding: 95px 0 30px;
+  }
+  #privacy-policy {
+    padding: 60px 0 0;
   }
 }
 /* Large Devices, Wide Screens */
