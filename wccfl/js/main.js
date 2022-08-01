@@ -21,6 +21,15 @@ jQuery(document).ready(function($){
   });
 });
 
+jQuery(document).ready(function($){
+  $('.stories-slider').slick({
+      speed: 300,
+      autoplaySpeed: 4000,
+      autoplay:true,
+      arrows: false,
+      dots:true,
+  });
+});
 
 jQuery(document).ready(function($){
   $(".video-wrap").videoPopup({
