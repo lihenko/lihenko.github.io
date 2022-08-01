@@ -123,6 +123,32 @@
 			}
 		}
 	}
+	#location-gallery{
+		& .location-photo-column{
+			position: relative;
+			& img{
+				max-width: 190px;
+			}
+
+		}
+	}
+	#map-section{
+		padding: 60px 0;
+		& .address-column{
+			flex-basis: 50%;
+			max-width: 50%;
+			& .location-description{
+				text-align: left;
+			}
+			& h2{
+				text-align: left;
+			}
+		}
+		& .map-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 
@@ -471,6 +497,19 @@
 				}
 			}
 		}
+	}
+	#location-gallery{
+		& .location-photo-column{
+			position: relative;
+			margin-bottom: -30px;
+			& img{
+				max-width: 400px;
+			}
+
+		}
+	}
+	#location-instagram{
+		padding: 95px 0 30px;
 	}
 }
 
