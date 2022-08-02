@@ -66,6 +66,15 @@
 				height: 200px;
 			}
 		}
+	#contact-form{
+		& .column.half{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	.form-element{
+		padding-bottom: 15px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -148,6 +157,39 @@
 			flex-basis: 50%;
 			max-width: 50%;
 		}
+	}
+	#contact-phones{
+		& .contact-phone-title{
+			flex-basis: 687px;
+			max-width: 687px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+		}
+		& .contact-phones-row{
+			& .contact-phone-column{
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+				order: 1;
+			}
+			& .contact-hotline-column{
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+				order: 3;
+				text-align: left;
+				display: flex;
+				justify-content: flex-end;
+			}
+			& .contact-help-column{
+				flex-basis: 33.33%;
+				max-width: 33.33%;
+				order: 2;
+				& span{
+					display: block;
+				}
+			}
+		}
+			
 	}
 }
 
@@ -513,6 +555,21 @@
 	}
 	#privacy-policy{
 		padding: 60px 0 0;
+	}
+	#contact-phones{
+		& .container{
+			max-width: 980px;
+		}
+		& .contact-phones-row{
+			font-size: 1em;
+		}
+	}
+	#contact-form{
+		padding-top: 62px;
+		padding-bottom: 95px;
+		& .form-wrap{
+			padding: 52px 58px 32px;
+		}
 	}
 }
 
