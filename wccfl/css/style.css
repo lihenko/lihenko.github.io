@@ -1359,6 +1359,72 @@ footer #footer-menu-section .footer-copyright {
   padding-bottom: 10px;
 }
 
+#test-result {
+  padding-top: 30px;
+}
+#test-result .test-result-column {
+  text-align: center;
+}
+
+#common-signs {
+  padding: 30px 9px 0;
+}
+#common-signs .common-signs-row ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#common-signs .common-signs-row ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+#common-signs .common-signs-row ul li:before {
+  content: url("../img/list-marker.svg");
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#common-signs .common-signs-description {
+  text-align: center;
+}
+
+#pregnancy-gallery {
+  padding: 30px 5px 0;
+}
+#pregnancy-gallery .pregnancy-gallery-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -2.5px;
+  margin-right: -2.5px;
+}
+#pregnancy-gallery .pregnancy-gallery-wrap .pregnancy-gallery-column {
+  -webkit-flex-basis: 33.33%;
+  -ms-flex-preferred-size: 33.33%;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  margin-bottom: 5px;
+}
+#pregnancy-gallery .pregnancy-gallery-wrap .pregnancy-gallery-column .pregnancy-gallery-item {
+  width: 100%;
+  padding-bottom: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1518,6 +1584,32 @@ footer #footer-menu-section .footer-copyright {
   }
   #contact-phones .contact-phones-row .contact-help-column span {
     display: block;
+  }
+  #common-signs h2 {
+    margin-bottom: 45px;
+  }
+  #common-signs .common-signs-row {
+    margin-bottom: 15px;
+  }
+  #common-signs .common-signs-row .column {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  #common-signs .common-signs-row .column:last-child {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  #common-signs .common-signs-description {
+    text-align: left;
+    margin-bottom: 20px;
   }
 }
 /* Medium Devices, Desktops */
@@ -1924,6 +2016,51 @@ footer #footer-menu-section .footer-copyright {
   }
   #contact-form .form-wrap {
     padding: 52px 58px 32px;
+  }
+  #test-result {
+    padding-top: 60px;
+  }
+  #test-result .row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #test-result .column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  #test-result .test-result-column {
+    text-align: left;
+  }
+  #common-signs .common-signs-row {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  #pregnancy-gallery {
+    padding: 60px 15px 0;
+  }
+  #pregnancy-gallery .pregnancy-gallery-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  #pregnancy-gallery .pregnancy-gallery-wrap .pregnancy-gallery-column {
+    -webkit-flex-basis: 16.66%;
+    -ms-flex-preferred-size: 16.66%;
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 15px;
   }
 }
 /* Large Devices, Wide Screens */

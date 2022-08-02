@@ -708,4 +708,63 @@ footer{
 	padding-bottom: 10px;
 }
 
+#test-result{
+	padding-top: 30px;
+	& .test-result-column{
+		text-align: center;
+	}
+}
+
+#common-signs{
+	padding: 30px 9px 0;	
+	& .common-signs-row{
+		& ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			& li{
+				position: relative;
+				padding-left: 35px;
+				margin-bottom: 15px;
+				&:before{
+					content: url('../img/list-marker.svg');
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+	& .common-signs-description{
+		text-align: center;	
+	}
+}
+
+#pregnancy-gallery{
+	padding: 30px 5px 0;
+	& .pregnancy-gallery-wrap{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -2.5px;
+		margin-right: -2.5px;
+		& .pregnancy-gallery-column{
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+			padding-left: 2.5px;
+			padding-right: 2.5px;
+			margin-bottom: 5px;
+			& .pregnancy-gallery-item{
+				width: 100%;
+				padding-bottom: 100%;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
 @import "media";
