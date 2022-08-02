@@ -767,4 +767,57 @@ footer{
 	}
 }
 
+#faq-section{
+	& h2{
+		margin-top: 60px;
+	}
+	& .faq-list-column{
+		margin-bottom: 30px;
+	}
+}
+
+.faq-item{
+	border-bottom: 1px solid $violet;
+	padding-bottom: 18px;
+	& .faq-title{
+		padding: 30px 30px 15px 0;
+		font-family: PlayfairDisplay, serif;
+		color:$violet;
+		cursor: pointer;
+		position: relative;
+		& .faq-button{
+			width: 18.5px;
+			height: 18.5px;
+			border-radius:50%;
+			border:1px solid $red;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			& span{
+				width: 9px;
+				height: 1px;
+				background-color: $red;
+				position: absolute;
+				&:nth-child(2){
+					transform: rotate(90deg) translateX(1px);
+				}
+			}
+		}
+
+	}
+	&.open{
+		& .faq-button span:nth-child(2){
+			transform: rotate(0) translateX(0);
+		}
+	}
+
+	& .faq-answer{
+		margin-bottom: 15px;
+		display: none;
+	}
+}
+
 @import "media";

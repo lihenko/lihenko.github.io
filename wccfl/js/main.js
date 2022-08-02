@@ -38,3 +38,23 @@ jQuery(document).ready(function($){
     width: 1018,
   });
 });   
+
+jQuery(document).ready(function($){
+  $('.faq-list-column .faq-item:first-child').addClass('open');
+  $('.faq-list-column .faq-item:first-child .faq-answer').show();
+});
+
+jQuery(document).ready(function($){
+  $('.faq-title').click(function(){
+    if($(this).parents('.faq-item').hasClass('open')){
+      $(this).parents('.faq-list-column').find('.faq-answer').slideUp();
+      $(this).parents('.faq-list-column').find('.faq-item').removeClass('open');
+    } else {
+      $(this).parents('.faq-list-column').find('.faq-answer').slideUp();
+      $(this).parents('.faq-list-column').find('.faq-item').removeClass('open');
+      $(this).parents('.faq-item').addClass('open');
+      $(this).parents('.faq-item').find('.faq-answer').slideDown();
+    }
+      
+  })
+});
