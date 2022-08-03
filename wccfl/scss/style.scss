@@ -435,6 +435,9 @@ footer{
 #about-us-slider{
 	padding: 65px 0;
 	background-image: url('../img/first-appointment-bg-desktop.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	& .container{
 		padding: 0;
 	}
@@ -875,6 +878,53 @@ footer{
 	& .men-subscribtion-description{
 		color: #fff;
 		margin-bottom: 30px;
+	}
+}
+
+#services-free{
+	padding: 0 9px 30px;
+}
+
+#drop-section{
+	padding: 30px 9px;
+	background-color: $violet;
+	& .baby-item-name{
+		margin-bottom: 30px;
+	}
+	& .baby-item-photo{
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 162px;
+		max-width: 321px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#following-section{
+	padding: 30px 9px;
+	& .social-list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+#newsletter{
+	padding: 30px 9px;
+	background-color: #FBF9F5;
+}
+
+#seals{
+	padding: 30px 9px 0;
+	& img{
+		max-height: 100px;
 	}
 }
 

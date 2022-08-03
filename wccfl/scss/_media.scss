@@ -674,6 +674,37 @@
 			font-size: 1.77em;
 		}
 	}
+	#services-free{
+		padding: 0 0 60px;
+	}
+	#drop-section{
+		padding: 60px 0;
+	}
+	#following-section{
+		padding: 60px 0;
+		& .container{
+			max-width: 662px;
+		}
+		& .social-list{
+			& li{
+				margin-top: 15px;
+				padding-left: 15px;
+				padding-right: 15px;
+				& img{
+					height: 42px;
+				}
+			}
+		}
+	}
+	#newsletter{
+		padding: 60px 0;
+	}
+	#seals{
+		padding: 60px 0 0;
+		& img{
+			max-height: 196px;
+		}
+	}
 }
 
 
