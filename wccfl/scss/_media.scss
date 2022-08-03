@@ -75,6 +75,11 @@
 	.form-element{
 		padding-bottom: 15px;
 	}
+	#for-men-full-width-photo{
+		& .for-men-full-width-photo{
+			height: 280px;
+		}
+	}
 }
 
 /* Small Devices, Tablets */
@@ -211,6 +216,18 @@
 			margin-bottom: 20px;
 		}
 	}
+	#help-list{
+		padding: 0 0 60px;
+		& .column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#for-men-full-width-photo{
+		& .for-men-full-width-photo{
+			height: 350px;
+		}
+	}
 }
 
 
@@ -218,7 +235,11 @@
 @media only screen and (min-width : 992px){
 	h1{
 		font-size: 3.55em;
+		&.small{
+			font-size: 2.22em;
+		}
 	}
+
 	h2{
 		font-size: 1.77em;
 	}
@@ -629,6 +650,28 @@
 	#faq-section{
 		& .container{
 			max-width: 1090px;
+		}
+	}
+	#help-list{
+		& .container{
+			max-width: 1065px;
+		}
+	}
+	#for-men-full-width-photo{
+		margin-bottom: 40px;
+		& .for-men-full-width-photo{
+			height: 645px;
+			background-position: center top;
+		}
+	}
+	#for-men-subscribtion{
+		margin-bottom: 40px;
+		padding: 90px 0;
+		& .container{
+			max-width: 880px;
+		}
+		& .men-subscribtion-title{
+			font-size: 1.77em;
 		}
 	}
 }

@@ -424,6 +424,7 @@ footer{
 	& h1{
 		color: #fff;
 		font-family: PlayfairDisplay, serif;
+		line-height: 1.18;
 	}
 }
 
@@ -817,6 +818,63 @@ footer{
 	& .faq-answer{
 		margin-bottom: 15px;
 		display: none;
+	}
+}
+
+#for-men-page-description{
+	padding: 30px 9px;
+}
+
+#help-list{
+	padding: 0 9px 30px;
+	& ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 30px;
+			&:before{
+				content: url('../img/list-marker.svg');
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+
+#for-men-full-width-photo{
+	margin-bottom: 20px;
+	& .for-men-full-width-photo{
+		height: 213px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+#for-men-subscribtion{
+	margin-bottom: 20px;
+	padding: 50px 9px;
+	background-image: url('../img/for-men-subscribtion-bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	& .men-subscribtion-title{
+		color: #fff;
+		font-family: PlayfairDisplay, serif;
+		font-size: 1.47em;
+		line-height: 1.18;	
+		margin-bottom: 30px;
+	}
+	& .men-subscribtion-description{
+		color: #fff;
+		margin-bottom: 30px;
 	}
 }
 
