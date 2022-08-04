@@ -15,7 +15,7 @@ html, body {
 body {
 	color: $black;
 	font-size: 15px;
-	line-height: 1.33;
+	line-height: 1.55;
 	font-family: Quicksand, sans-serif;
 	height: 100%;
 	
@@ -198,3 +198,12 @@ textarea{
 	}
 }
 
+.violet-button{
+	background-color: $violet;
+	color: #fff;
+	&:hover{
+		background-color: #fff;
+		color: $violet;
+		border-color:$violet;
+	}
+}
