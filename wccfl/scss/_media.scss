@@ -246,6 +246,15 @@
 			margin-bottom: 0;
 		}
 	}
+	#support-gallery{
+		& .support-photo-column{
+			position: relative;
+			& img{
+				max-width: 190px;
+			}
+
+		}
+	}
 }
 
 
@@ -741,6 +750,31 @@
 				max-width: 384px;
 			}
 		}
+	}
+	#support-gallery{
+		& .support-photo-column{
+			position: relative;
+			margin-bottom: 120px;
+			& img{
+				max-width: 400px;
+			}
+
+		}
+	}
+	#focus-section{
+		padding: 60px 0;
+		& .focus-image-column{
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		& .focus-text-column{
+			text-align: left;
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+	#single-button{
+		padding: 60px 0;
 	}
 }
 
