@@ -311,6 +311,9 @@
 
 footer{
 	font-size: 0.8em;
+	& a{
+		text-decoration: none;
+	}
 	& #get-in-touch{
 		padding: 26px 9px 26px 1px;
 		& h2{
@@ -406,6 +409,7 @@ footer{
 		display: flex;
 		align-items:center;
 		justify-content: center;
+		text-decoration: none;
 		&:first-child{
 			border-right: 1px solid #fff;
 		}
@@ -1178,6 +1182,41 @@ footer{
 
 #considerando-abortar{
 	padding: 0;
+}
+
+#ultrasound-description{
+	padding: 30px 9px;
+}
+
+#ultrasound-schedule{
+	overflow: hidden;
+	background-color: #FF9086;
+	padding: 68px 0;
+	position: relative;
+	margin-bottom: 30px;
+	& img{
+		position: absolute;
+		z-index: 0;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		transform:translateY(-50%);
+	}
+	& .btn{
+		position: relative;
+	}
+}
+
+#ultrasound-faq{
+	padding: 0 9px 30px;
+	& h2{
+		margin-top: 45px;
+	}
+	& .btn{
+		margin-top: 45px;
+	}
 }
 
 @import "media";

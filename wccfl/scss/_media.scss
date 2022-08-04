@@ -80,6 +80,9 @@
 			height: 280px;
 		}
 	}
+	#ultrasound-schedule{
+		padding: 90px 0;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -254,6 +257,9 @@
 			}
 
 		}
+	}
+	#ultrasound-schedule{
+		padding: 120px 0;
 	}
 }
 
@@ -893,6 +899,25 @@
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
+		}
+	}
+	#ultrasound-schedule{
+		padding: 100px 0;
+		border-radius: 130px;
+		max-width: 1225px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+		& .column{
+			flex-basis: 50%;
+			max-width: 50%;
+			position: relative;
+		}
+	}
+	#ultrasound-faq{
+		padding: 30px 0 60px;
+		& .container{
+			max-width: 1062px;
 		}
 	}
 }

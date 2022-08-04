@@ -99,7 +99,7 @@ a {
   color: #FF6051;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #6466AF;
@@ -942,6 +942,9 @@ textarea {
 footer {
   font-size: 0.8em;
 }
+footer a {
+  text-decoration: none;
+}
 footer #get-in-touch {
   padding: 26px 9px 26px 1px;
 }
@@ -1059,6 +1062,7 @@ footer #footer-menu-section .footer-copyright {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-decoration: none;
 }
 #bottom-bar a:first-child {
   border-right: 1px solid #fff;
@@ -1889,6 +1893,43 @@ footer #footer-menu-section .footer-copyright {
   padding: 0;
 }
 
+#ultrasound-description {
+  padding: 30px 9px;
+}
+
+#ultrasound-schedule {
+  overflow: hidden;
+  background-color: #FF9086;
+  padding: 68px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+#ultrasound-schedule img {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#ultrasound-schedule .btn {
+  position: relative;
+}
+
+#ultrasound-faq {
+  padding: 0 9px 30px;
+}
+#ultrasound-faq h2 {
+  margin-top: 45px;
+}
+#ultrasound-faq .btn {
+  margin-top: 45px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1923,6 +1964,9 @@ footer #footer-menu-section .footer-copyright {
   }
   #for-men-full-width-photo .for-men-full-width-photo {
     height: 280px;
+  }
+  #ultrasound-schedule {
+    padding: 90px 0;
   }
 }
 /* Small Devices, Tablets */
@@ -2118,6 +2162,9 @@ footer #footer-menu-section .footer-copyright {
   }
   #support-gallery .support-photo-column img {
     max-width: 190px;
+  }
+  #ultrasound-schedule {
+    padding: 120px 0;
   }
 }
 /* Medium Devices, Desktops */
@@ -2814,6 +2861,27 @@ footer #footer-menu-section .footer-copyright {
   #considerando-abortar .container .btn {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  #ultrasound-schedule {
+    padding: 100px 0;
+    border-radius: 130px;
+    max-width: 1225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  #ultrasound-schedule .column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    position: relative;
+  }
+  #ultrasound-faq {
+    padding: 30px 0 60px;
+  }
+  #ultrasound-faq .container {
+    max-width: 1062px;
   }
 }
 /* Large Devices, Wide Screens */

@@ -64,7 +64,7 @@ img{
 a{
 	color:$red;
 	transition: all 0.3s ease-in-out;
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover{
 		color:$violet;
 	}
