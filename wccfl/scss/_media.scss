@@ -228,6 +228,24 @@
 			height: 350px;
 		}
 	}
+	#how-it-works{
+		& .how-it-works-row{
+			align-items:center;
+		}
+		& .how-it-works-image{
+			flex-basis: 50%;
+			max-width: 50%;
+			& img{
+				max-width: 248px;
+			}
+		}
+		& .how-it-works-text{
+			text-align: left;
+			flex-basis: 50%;
+			max-width: 50%;
+			margin-bottom: 0;
+		}
+	}
 }
 
 
@@ -703,6 +721,25 @@
 		padding: 60px 0 0;
 		& img{
 			max-height: 196px;
+		}
+	}
+	#call-section{
+		padding: 0 0 60px;
+	}
+	#abortion-insatgram{
+		padding: 60px 0;
+	}
+	#call-section{
+		& .container{
+			max-width: 1065px;
+		}
+	}
+	#how-it-works{
+		padding-top: 60px;
+		& .how-it-works-image{
+			& img{
+				max-width: 384px;
+			}
 		}
 	}
 }

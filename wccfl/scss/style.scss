@@ -928,4 +928,28 @@ footer{
 	}
 }
 
+#how-it-works{
+	padding: 30px 9px;
+	& .how-it-works-image{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	& .how-it-works-text{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+#call-section{
+	padding: 0 9px 30px;
+	& .call-section-text{
+		margin-bottom: 30px;
+	}
+}
+
+#abortion-insatgram{
+	padding: 30px 9px;
+	background-color: #f2f2f2;
+}
+
 @import "media";
