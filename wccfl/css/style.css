@@ -1930,6 +1930,32 @@ footer #footer-menu-section .footer-copyright {
   margin-top: 45px;
 }
 
+#open-letter {
+  padding: 52px 9px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #6466AF;
+}
+#open-letter .open-letter-title {
+  color: #fff;
+  font-family: PlayfairDisplay, serif;
+  font-size: 1.47em;
+  margin-bottom: 15px;
+}
+#open-letter .open-letter-subtitle {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#referral-hope {
+  padding: 30px 9px;
+}
+#referral-hope p {
+  margin-bottom: 25px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -2882,6 +2908,19 @@ footer #footer-menu-section .footer-copyright {
   }
   #ultrasound-faq .container {
     max-width: 1062px;
+  }
+  #open-letter {
+    padding: 75px 0;
+    background-position: 50% 45%;
+  }
+  #referral-hope {
+    padding: 60px 0;
+  }
+  #referral-hope p {
+    margin-bottom: 30px;
+  }
+  #referral-hope .container {
+    max-width: 937px;
   }
 }
 /* Large Devices, Wide Screens */

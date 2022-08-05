@@ -920,6 +920,19 @@
 			max-width: 1062px;
 		}
 	}
+	#open-letter{
+		padding: 75px 0;
+		background-position:50% 45%;
+	}
+	#referral-hope{
+		padding: 60px 0;
+		& p{
+			margin-bottom: 30px;
+		}
+		& .container{
+			max-width: 937px;
+		}
+	}
 }
 
 

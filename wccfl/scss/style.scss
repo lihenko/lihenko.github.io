@@ -1219,4 +1219,30 @@ footer{
 	}
 }
 
+#open-letter{
+	padding: 52px 9px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $violet;
+	& .open-letter-title{
+		color: #fff;
+		font-family: PlayfairDisplay, serif;
+		font-size: 1.47em;
+		margin-bottom: 15px;	
+	}
+	& .open-letter-subtitle{
+		font-weight: 700;
+		margin-bottom: 30px;
+		color: #fff;
+	}
+}
+
+#referral-hope{
+	padding: 30px 9px;
+	& p{
+		margin-bottom: 25px;
+	}
+}
+
 @import "media";
