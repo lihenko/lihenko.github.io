@@ -1956,6 +1956,54 @@ footer #footer-menu-section .footer-copyright {
   margin-bottom: 25px;
 }
 
+#if-you {
+  background-color: #FBF9F5;
+  padding: 30px 9px;
+}
+#if-you .if-you-list-column ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#if-you .if-you-list-column ul li {
+  position: relative;
+  padding: 25px 15px 25px 66px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  font-family: PlayfairDisplay, serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.25;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#if-you .if-you-list-column ul li:before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/if-you-list-marker.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#wellness-consultation {
+  padding: 30px 9px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -2191,6 +2239,15 @@ footer #footer-menu-section .footer-copyright {
   }
   #ultrasound-schedule {
     padding: 120px 0;
+  }
+  #if-you {
+    padding: 60px 0;
+  }
+  #if-you .if-you-list-column {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
 /* Medium Devices, Desktops */
@@ -2921,6 +2978,15 @@ footer #footer-menu-section .footer-copyright {
   }
   #referral-hope .container {
     max-width: 937px;
+  }
+  #if-you .container {
+    max-width: 1026px;
+  }
+  #wellness-consultation {
+    padding: 60px 0 30px;
+  }
+  #wellness-consultation h2 {
+    margin-bottom: 45px;
   }
 }
 /* Large Devices, Wide Screens */
