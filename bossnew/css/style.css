@@ -162,7 +162,56 @@ header .logo-column img {
   padding: 15px 0;
 }
 
+#inv-nav-main-btn {
+  background-color: rgba(206, 45, 21, 0.2);
+  padding: 10px 10px 3px;
+}
+
+#inv-nav-main-btn.is-active {
+  background: #f18272;
+}
+
+ul#inv-menu {
+  background: #f18272;
+  padding-bottom: 45px;
+}
+
+ul#inv-menu li ul .submenu-title a {
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+ul#inv-menu > li > a {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+ul#inv-menu li ul li a {
+  background-color: transparent;
+  padding-left: 25px;
+}
+
+ul#inv-menu li ul li.have-children {
+  position: relative;
+}
+ul#inv-menu li ul li.have-children svg {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+ul#inv-menu li ul li.have-children ul {
+  padding-left: 10px;
+}
+ul#inv-menu li ul li.have-children ul a {
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 768px) {
+  ul#inv-menu {
+    background: transparent;
+    padding-bottom: 0;
+  }
   ul#inv-menu li a {
     margin: 0;
     padding: 0 20px;
@@ -207,17 +256,18 @@ header .logo-column img {
     box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.18);
     border-bottom: 1px solid #ccc;
   }
-  ul#inv-menu > li:hover > ul.justify-end, ul#inv-menu > li.menu-show > ul.justify-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
   ul#inv-menu > li:hover > ul > li, ul#inv-menu > li.menu-show > ul > li {
     -webkit-flex-basis: 238px;
     -ms-flex-preferred-size: 238px;
     flex-basis: 238px;
     max-width: 238px;
+  }
+  ul#inv-menu > li.short {
+    position: relative;
+  }
+  ul#inv-menu > li.short ul {
+    left: -30px;
+    right: -30px;
   }
   ul#inv-menu > li:hover > ul > li > ul, ul#inv-menu > li.menu-show > ul > li > ul {
     display: block;
@@ -262,7 +312,6 @@ header .logo-column img {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 45px;
-    float: none;
   }
   ul#inv-menu li:hover ul li a, ul#inv-menu li.menu-show ul li a {
     font-size: 16px;
@@ -287,9 +336,14 @@ header .logo-column img {
   }
   ul#inv-menu li:hover ul li.have-children ul {
     display: none;
-    padding-left: 5px;
-    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: -230px;
+    width: 230px;
+    padding: 10px 15px;
     background-color: #fff;
+    box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.18);
   }
   ul#inv-menu li:hover ul li.have-children ul li a {
     font-size: 14px;
@@ -312,11 +366,7 @@ header .logo-column img {
     stroke: #CE2D15;
   }
 }
-@media only screen and (min-width: 1200px) {
-  ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+@media only screen and (min-width: 992px) {
   ul#inv-menu li:hover ul li.have-children {
     position: unset;
     float: none;
@@ -328,10 +378,9 @@ header .logo-column img {
     position: absolute;
     top: 0;
     min-height: 100%;
+    left: unset;
     right: -230px;
     width: 230px;
-    padding-left: 5px;
-    padding-right: 5px;
     background-color: #fff;
   }
   ul#inv-menu li:hover ul li.have-children ul li a {
@@ -342,7 +391,7 @@ header .logo-column img {
   }
   ul#inv-menu li:hover ul li.have-children svg {
     position: absolute;
-    top: 7px;
+    top: 8px;
     right: 5px;
   }
   ul#inv-menu li:hover ul li.have-children:hover > a {
@@ -353,6 +402,12 @@ header .logo-column img {
   }
   ul#inv-menu li:hover ul li.have-children:hover svg g#arrow polyline {
     stroke: #CE2D15;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 /*==========  Desktop First  ==========*/
