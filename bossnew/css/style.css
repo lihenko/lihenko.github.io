@@ -188,7 +188,7 @@ header .logo-column img {
     color: #CE2D15;
     text-decoration: none;
   }
-  ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
+  ul#inv-menu > li:hover > ul, ul#inv-menu > li.menu-show > ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -207,11 +207,25 @@ header .logo-column img {
     box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.18);
     border-bottom: 1px solid #ccc;
   }
-  ul#inv-menu li:hover ul > li, ul#inv-menu li.menu-show ul > li {
+  ul#inv-menu > li:hover > ul.justify-end, ul#inv-menu > li.menu-show > ul.justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  ul#inv-menu > li:hover > ul > li, ul#inv-menu > li.menu-show > ul > li {
     -webkit-flex-basis: 238px;
     -ms-flex-preferred-size: 238px;
     flex-basis: 238px;
     max-width: 238px;
+  }
+  ul#inv-menu > li:hover > ul > li > ul, ul#inv-menu > li.menu-show > ul > li > ul {
+    display: block;
+    padding: 0;
+  }
+  ul#inv-menu > li:hover > ul > li > ul li, ul#inv-menu > li.menu-show > ul > li > ul li {
+    margin-bottom: 0;
+    padding: 0;
   }
   ul#inv-menu {
     display: inline-block;
@@ -232,16 +246,23 @@ header .logo-column img {
     flex-basis: calc(100% - 230px);
     max-width: calc(100% - 230px);
   }
-  ul#inv-menu .submenu-title {
-    min-height: 50px;
+  ul#inv-menu li:hover .submenu-title, ul#inv-menu li.menu-show .submenu-title {
+    min-height: 60px;
+  }
+  ul#inv-menu li:hover .submenu-title a, ul#inv-menu li.menu-show .submenu-title a {
+    color: #CE2D15;
     font-weight: 700;
     font-size: 18px;
+  }
+  ul#inv-menu li:hover .submenu-title a:hover, ul#inv-menu li.menu-show .submenu-title a:hover {
+    color: #000;
   }
   ul#inv-menu li:hover ul li, ul#inv-menu li.menu-show ul li {
     width: auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 45px;
+    float: none;
   }
   ul#inv-menu li:hover ul li a, ul#inv-menu li.menu-show ul li a {
     font-size: 16px;
@@ -250,21 +271,88 @@ header .logo-column img {
     line-height: 20px;
     min-height: unset;
     padding: 5px 0;
-    text-transform: capitalize;
+    text-transform: none;
+    -webkit-transition-property: all;
+    transition-property: all;
   }
   ul#inv-menu li:hover ul li a:hover, ul#inv-menu li:hover ul li a:focus, ul#inv-menu li:hover ul li a:active, ul#inv-menu li.menu-show ul li a:hover, ul#inv-menu li.menu-show ul li a:focus, ul#inv-menu li.menu-show ul li a:active {
     color: #CE2D15;
     background-color: transparent;
   }
+  ul#inv-menu li:hover ul li.have-children {
+    position: unset;
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  ul#inv-menu li:hover ul li.have-children ul {
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+  }
+  ul#inv-menu li:hover ul li.have-children ul li a {
+    font-size: 14px;
+  }
+  ul#inv-menu li:hover ul li.have-children a {
+    position: relative;
+  }
+  ul#inv-menu li:hover ul li.have-children svg {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover > a {
+    color: #CE2D15;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover ul {
+    display: block;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover svg g#arrow polyline {
+    stroke: #CE2D15;
+  }
 }
 @media only screen and (min-width: 1200px) {
   ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  ul#inv-menu li:hover ul li.have-children {
+    position: unset;
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  ul#inv-menu li:hover ul li.have-children ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    right: -230px;
+    width: 230px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+  }
+  ul#inv-menu li:hover ul li.have-children ul li a {
+    font-size: 14px;
+  }
+  ul#inv-menu li:hover ul li.have-children a {
+    position: relative;
+  }
+  ul#inv-menu li:hover ul li.have-children svg {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover > a {
+    color: #CE2D15;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover ul {
+    display: block;
+  }
+  ul#inv-menu li:hover ul li.have-children:hover svg g#arrow polyline {
+    stroke: #CE2D15;
   }
 }
 /*==========  Desktop First  ==========*/

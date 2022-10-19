@@ -34,7 +34,7 @@ header .logo-column{
 		color: $red;
 		text-decoration: none;
 	}
-	ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
+	ul#inv-menu > li:hover > ul, ul#inv-menu > li.menu-show > ul{
 		display: flex;
 		flex-wrap: wrap;
 		background-color: #fff;
@@ -47,9 +47,20 @@ header .logo-column{
 		text-align: left;
 		box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.18);
 		border-bottom: 1px solid #ccc;
+		&.justify-end{
+			justify-content: flex-end;
+		}
 		& > li{
 			flex-basis: 238px;
 			max-width: 238px;
+		}
+	}
+	ul#inv-menu > li:hover > ul > li > ul, ul#inv-menu > li.menu-show > ul > li > ul{
+		display: block;
+		padding: 0;
+		& li{
+			margin-bottom: 0;
+			padding: 0;
 		}
 	}
 	ul#inv-menu {
@@ -67,16 +78,23 @@ header .logo-column{
 		flex-basis: calc(100% - 230px);
 		max-width: calc(100% - 230px);
 	}
-	ul#inv-menu .submenu-title{
-		min-height: 50px;
-		font-weight: 700;
-		font-size: 18px;
+	ul#inv-menu li:hover .submenu-title, ul#inv-menu li.menu-show .submenu-title{
+		min-height: 60px;
+		& a{
+			color: $red;
+			font-weight: 700;
+		  font-size: 18px;
+		  &:hover{
+		  	color:#000;
+		  }
+		}
 	}
 	ul#inv-menu li:hover ul li, ul#inv-menu li.menu-show ul li {
 		width: auto;
 		padding-left: 15px;
 		padding-right: 15px;
 		margin-bottom: 45px;
+		float:none;
 	}
 	ul#inv-menu li:hover ul li a, ul#inv-menu li.menu-show ul li a {
 		font-size: 16px;
@@ -85,18 +103,91 @@ header .logo-column{
 		line-height: 20px;
 		min-height: unset;
 		padding: 5px 0;
-		text-transform: capitalize;
+		text-transform: none;
+		transition-property: all;
 	}
 	ul#inv-menu li:hover ul li a:hover, ul#inv-menu li:hover ul li a:focus, ul#inv-menu li:hover ul li a:active, ul#inv-menu li.menu-show ul li a:hover, ul#inv-menu li.menu-show ul li a:focus, ul#inv-menu li.menu-show ul li a:active {
 		color: $red;
 		background-color: transparent;
 	}
+	ul#inv-menu li:hover ul li.have-children{
+		position: unset;
+		float: none;
+		display: block;
+		width: 100%;
+		& ul{
+			display: none;
+			padding-left: 5px;
+			padding-right: 5px;
+			background-color: #fff;
+			& li a{
+				font-size: 14px;
+			}
+		}
+		& a{
+			position: relative;
+		}
+		& svg{
+			position: absolute;
+			top: 7px;
+			right: 5px;
+		}
+		&:hover{
+			& > a{
+				color: $red;
+			}
+			& ul{
+				display: block;
+			}
+			& svg g#arrow polyline{
+				stroke:$red;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width : 1200px){
 	ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
-		justify-content: space-between;
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	ul#inv-menu li:hover ul li.have-children{
+		position: unset;
+		float: none;
+		display: block;
+		width: 100%;
+		& ul{
+			display: none;
+			position: absolute;
+			top: 0;
+			min-height: 100%;
+			right: -230px;
+			width: 230px;
+			padding-left: 5px;
+			padding-right: 5px;
+			background-color: #fff;
+			& li a{
+				font-size: 14px;
+			}
+		}
+		& a{
+			position: relative;
+		}
+		& svg{
+			position: absolute;
+			top: 7px;
+			right: 5px;
+		}
+		&:hover{
+			& > a{
+				color: $red;
+			}
+			& ul{
+				display: block;
+			}
+			& svg g#arrow polyline{
+				stroke:$red;
+			}
+		}
 	}
 }
