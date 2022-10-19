@@ -1,0 +1,102 @@
+header .contact-button-column{
+	display: none;
+}
+
+header .logo-column{
+	& img{
+		padding: 15px 0;
+	}
+}
+
+@media only screen and (min-width : 768px){
+	ul#inv-menu li a {
+		margin: 0;
+		padding: 0 20px;
+		line-height: 110px;
+		font-size: 16px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: PTSans, sans-serif;
+		color: $black;
+		background-color: transparent;
+		border: 0;
+	}
+	ul#inv-menu li:hover a, ul#inv-menu li.menu-show a {
+		color: $red;
+		background-color: transparent;
+	}
+	ul#inv-menu li:hover, ul#inv-menu li.menu-show {
+		color: $red;
+		background-color: transparent;
+	}
+	ul#inv-menu li a:hover, ul#inv-menu li a:focus, ul#inv-menu li a:active {
+		background: transparent;
+		color: $red;
+		text-decoration: none;
+	}
+	ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #fff;
+		position: absolute;
+		top: 110px;
+		left: -245px;
+		right: -15px;
+		padding: 45px 15px 0;
+		margin: 0;
+		text-align: left;
+		box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.18);
+		border-bottom: 1px solid #ccc;
+		& > li{
+			flex-basis: 238px;
+			max-width: 238px;
+		}
+	}
+	ul#inv-menu {
+		display: inline-block;
+		float: none;
+		text-align: center;
+		position: relative;
+		width: 100%;
+	}
+	header .logo-column{
+		flex-basis: 230px;
+		max-width: 230px;
+	}
+	header .menu-column{
+		flex-basis: calc(100% - 230px);
+		max-width: calc(100% - 230px);
+	}
+	ul#inv-menu .submenu-title{
+		min-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	ul#inv-menu li:hover ul li, ul#inv-menu li.menu-show ul li {
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 45px;
+	}
+	ul#inv-menu li:hover ul li a, ul#inv-menu li.menu-show ul li a {
+		font-size: 16px;
+		padding: 0;
+		color: $black;
+		line-height: 20px;
+		min-height: unset;
+		padding: 5px 0;
+		text-transform: capitalize;
+	}
+	ul#inv-menu li:hover ul li a:hover, ul#inv-menu li:hover ul li a:focus, ul#inv-menu li:hover ul li a:active, ul#inv-menu li.menu-show ul li a:hover, ul#inv-menu li.menu-show ul li a:focus, ul#inv-menu li.menu-show ul li a:active {
+		color: $red;
+		background-color: transparent;
+	}
+}
+
+@media only screen and (min-width : 1200px){
+	ul#inv-menu li:hover ul, ul#inv-menu li.menu-show ul {
+		justify-content: space-between;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
