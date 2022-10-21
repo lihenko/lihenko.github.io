@@ -320,6 +320,7 @@ ul#inv-menu li ul li.have-children ul a {
   ul#inv-menu {
     background: transparent;
     padding-bottom: 0;
+    top: 0;
   }
   ul#inv-menu li a {
     margin: 0;
