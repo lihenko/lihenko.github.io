@@ -222,6 +222,24 @@ object, embed {
   background-color: #F9F8F8;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 99;
+  height: 82px;
+}
+
+body {
+  padding-top: 82px;
+}
+
+#header.sticky {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 header .contact-button-column {
   display: none;
 }
@@ -231,19 +249,23 @@ header .logo-column img {
 }
 
 #inv-nav-main-btn {
-  background-color: rgba(206, 45, 21, 0.2);
+  background-color: #CE2D15;
   padding: 10px 10px 3px;
+  top: 14px;
+  right: 9px;
   z-index: 99;
 }
 
 #inv-nav-main-btn.is-active {
   background: #CE2D15;
+  right: 9px;
 }
 
 ul#inv-menu {
   background: #CE2D15;
   padding-bottom: 45px;
   z-index: 99;
+  top: 82px;
 }
 
 ul#inv-menu li ul .submenu-title a {
@@ -433,11 +455,14 @@ ul#inv-menu li ul li.have-children ul a {
     position: absolute;
     top: 0;
     min-height: 100%;
-    left: -230px;
-    width: 230px;
+    left: -270px;
+    width: 270px;
     padding: 10px 15px;
     background-color: #fff;
     box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.18);
+  }
+  ul#inv-menu li:hover ul li.have-children ul li {
+    float: right;
   }
   ul#inv-menu li:hover ul li.have-children ul li a {
     font-size: 14px;
@@ -473,9 +498,12 @@ ul#inv-menu li ul li.have-children ul a {
     top: 0;
     min-height: 100%;
     left: unset;
-    right: -230px;
-    width: 230px;
+    right: -270px;
+    width: 270px;
     background-color: #fff;
+  }
+  ul#inv-menu li:hover ul li.have-children ul li {
+    float: left;
   }
   ul#inv-menu li:hover ul li.have-children ul li a {
     font-size: 14px;
