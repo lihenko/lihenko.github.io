@@ -12,9 +12,9 @@ html, body {
 }
 
 body {
-	color: $black;
+	color: $blue;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 1.4;
 	font-family: PTSans, sans-serif;
 	height: 100%;
 	overflow-x: hidden;
@@ -22,17 +22,17 @@ body {
 
 
 h1,h2,h3,h4,h5,h6{
-	font-family: Garamond-Basiligo, serif;
+	font-family: DroidSans, sans-serif;
 }
 
 h1{
-  font-size: 3.3em;
+  font-size: 2.1em;
   line-height: 0.95;
 }
 
 h2{
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 2em;
+  line-height: 1.2;
 }
 
 h3{
@@ -41,8 +41,8 @@ h3{
 }
 
 h4{
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 1.3em;
+  line-height: 1.2;
 }
 
 h5{
@@ -56,10 +56,11 @@ img{
 }
 
 a{
+	text-decoration: none;
 	color:$red;
 	transition: all 0.3s ease-in-out;
 	&:hover{
-		color:$gold;
+		color:$blue;
 	}
 }
 
@@ -108,4 +109,73 @@ object, embed {
 
 .text-center{
 	text-align: center;
+}
+
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	border-radius: 23px;
+	border:none;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	padding: 15px 25px;
+	height: 46px;
+	min-width: 190px;
+	max-width: 100%;
+	&:hover{
+		text-decoration: none;
+	}
+	&.wide-button{
+		min-width: 270px;
+		max-width: 100%;
+	}
+}
+
+.red-button{
+	color: #fff;
+	background-color: $red;
+	&:hover{
+		color: $blue;
+	  background-color: #fff;
+	}
+}
+
+.red-button.alt{
+	&:hover{
+		color: #fff;
+	  background-color: $blue;
+	}
+}
+
+
+.text-white{
+	color: #fff;
+}
+
+.text-blue{
+	color: $blue;
+}
+
+.text-red{
+	color: $red;
+}
+
+.text-grey{
+	color: $grey;
+}
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.mt-15{
+	margin-top: 15px;
+}
+
+.bg-grey{
+	background-color: #F9F8F8;
 }
