@@ -9,15 +9,10 @@ $('document').ready(function(){
 		}
 	});
 	
-	checkAffix();
-	$(window).scroll(checkAffix);
+	$('body').on('click' , '#inv-menu a' , function(){
+		$('#inv-nav-main-btn').removeClass('is-active');
+		$('#inv-menu').removeClass('menu-show');
+	});
 	
 });
 
-function checkAffix(){
-	if($(window).scrollTop() > 45){
-		$('#header').addClass('header-affix');
-	} else {
-		$('#header').removeClass('header-affix');
-	}
-}

@@ -394,5 +394,96 @@
 		
 }
 
+section.page-title{
+	padding: 60px 0 80px;
+	color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	& .container{
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	& h1{
+		margin-bottom: 50px;
+	}
+}
+
+section.content-section{
+	padding: 65px 0;
+	&.background{
+		padding: 100px 0;
+		background-color: $background;
+	}
+}
+
+.team-grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	& .team-item{
+		flex-basis: 248px;
+		max-width: 248px;
+		text-align: center;
+		margin-bottom: 45px;
+		& .member-photo{
+			margin-bottom: 15px;
+		}
+		& .member-name{
+			& h5{
+				margin: 0;
+				text-transform: uppercase;
+			}
+		}
+		& .member-position{
+			color:#9DAFB3;
+		}
+	}
+}
+
+#contact-form{
+	padding-top: 0;
+	& .container{
+		background-color: $grey;
+		padding: 35px 15px;
+	}
+	& button{
+		margin-top: 18px;
+	}
+	& .form-element{
+		margin-bottom: 12px;
+			&.name{
+				& input{
+					background-image: url('../img/form-user.svg');
+					background-repeat: no-repeat;
+					background-position: calc(100% - 12px) 10px;
+				}
+			}
+			&.email{
+				& input{
+					background-image: url('../img/form-email.svg');
+					background-repeat: no-repeat;
+					background-position: calc(100% - 12px) 10px;
+				}
+			}
+			&.phone{
+				& input{
+					background-image: url('../img/form-phone.svg');
+					background-repeat: no-repeat;
+					background-position: calc(100% - 12px) 10px;
+				}
+			}
+			&.company{
+				& input{
+					background-image: url('../img/form-company.svg');
+					background-repeat: no-repeat;
+					background-position: calc(100% - 12px) 10px;
+				}
+			}
+	}
+}
+
+
 @import "footer";
 @import "media";
