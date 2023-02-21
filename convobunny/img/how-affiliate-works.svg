@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="412px" height="421px" viewBox="0 0 412 421" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0F6EB20B-A794-4D52-A1F8-0020C426C136</title>
+    <defs>
+        <circle id="path-1" cx="66.0011031" cy="79.0007354" r="48"></circle>
+        <filter x="-41.7%" y="-20.8%" width="183.3%" height="183.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18980141 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="337.001103" cy="79.0007354" r="48"></circle>
+        <filter x="-41.7%" y="-20.8%" width="183.3%" height="183.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18980141 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="0 0 130 0 130 73 0 73"></polygon>
+        <polygon id="path-7" points="0 0 17 0 17 23 0 23"></polygon>
+        <circle id="path-9" cx="66.0011031" cy="333.000735" r="48"></circle>
+        <filter x="-41.7%" y="-20.8%" width="183.3%" height="183.3%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18980141 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-11" cx="337.001103" cy="333.000735" r="48"></circle>
+        <filter x="-41.7%" y="-20.8%" width="183.3%" height="183.3%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18980141 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Affiliate-programme-" transform="translate(-753.000000, -1176.000000)">
+            <g id="Group-4" transform="translate(754.998897, 1175.999265)">
+                <path d="M0.0478029478,208.000735 C0.0257400488,206.741629 0,205.478852 0,204.216075 C0,99.640512 78.532889,13.3862293 179.933973,1.00073543 L205.001103,22.277061 L184.787811,46.343243 C106.332142,56.302296 45.6812324,123.189102 45.6812324,204.216075 C45.6812324,205.089741 45.6996181,205.959735 45.7143267,206.833401 L23.4638931,184.624676 L0.0478029478,208.000735 Z" id="Fill-1" fill="#E7B200"></path>
+                <path d="M209.001103,409.952933 C207.741997,409.974996 206.47922,410.000735 205.216443,410.000735 C100.64088,410.000735 14.386597,331.468269 2.00110314,230.071408 L23.2774287,205.000735 L47.3436107,225.213919 C57.3026637,303.669166 124.18947,364.319749 205.216443,364.319749 C206.090108,364.319749 206.960103,364.301363 207.833769,364.286655 L185.625044,386.536969 L209.001103,409.952933 Z" id="Fill-4" fill="#00ACE7"></path>
+                <path d="M409.954036,201.000735 C409.976099,202.263513 410.001839,203.518948 410.001839,204.785396 C410.001839,309.360959 331.46909,395.615242 230.071866,408.000735 L205.001103,386.728081 L225.21436,362.658228 C303.669888,352.699175 364.320688,285.812369 364.320688,204.785396 C364.320688,203.91173 364.302302,203.041736 364.287594,202.16807 L386.537988,224.376795 L409.954036,201.000735 Z" id="Fill-6" fill="#633E6B"></path>
+                <path d="M204.785764,2.27373675e-13 C309.357656,2.27373675e-13 395.615609,78.5327481 408.001103,179.929973 L386.724778,205.000735 L362.654925,184.787479 C352.695872,106.331951 285.812736,45.6811504 204.785764,45.6811504 C203.908427,45.6811504 203.038432,45.6995361 202.164767,45.7105676 L224.377163,23.463851 L201.001103,0.0478028621 C202.260209,0.0257400027 203.519316,2.27373675e-13 204.785764,2.27373675e-13" id="Fill-9" fill="#008CCF"></path>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <text id="1" font-family="Gardenia-Bold, Gardenia" font-size="51" font-weight="bold" line-spacing="40" fill="#008CCF">
+                    <tspan x="325.001103" y="98.0007354">1</tspan>
+                </text>
+                <g id="Group-3" transform="translate(110.001103, 102.000735)">
+                    <path d="M182,28 L181.972025,28 C139.198987,28 81,63.0086892 81,106.191586 L81,106.191586 C81,106.191586 139.694536,120.575126 182,28 Z" id="Fill-1" fill="#008CCF"></path>
+                    <path d="M75.0441801,96 C78.6012779,70.6180823 102.237993,48.7302574 129.495754,36.3178709 C133.32463,25.9510011 136.601957,13.9763711 139,0 L139,0 L138.972023,0.00795920905 C99.2124617,10.6772789 54.0413159,55.9452804 60.6479257,96 L75.0441801,96 Z" id="Fill-3" fill="#00ACE7"></path>
+                    <g id="Group-7" transform="translate(0.000000, 96.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-6"></g>
+                        <path d="M93.6571404,73 L36.3452524,73 C16.2735293,73 -0.00159520946,56.6594064 -0.00159520946,36.5020025 L-0.00159520946,36.4979975 C-0.00159520946,16.3405936 16.2735293,0 36.3452524,0 L93.6571404,0 C113.728863,0 130,16.3405936 130,36.4979975 L130,36.5020025 C130,56.6594064 113.728863,73 93.6571404,73" id="Fill-5" fill="#008CCF" mask="url(#mask-6)"></path>
+                    </g>
+                    <g id="Group-10" transform="translate(82.000000, 168.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Clip-9"></g>
+                        <polygon id="Fill-8" fill="#008CCF" mask="url(#mask-8)" points="0 0 17 0 17 23.0011527"></polygon>
+                    </g>
+                    <path d="M39.5,125 C35.359375,125 32,128.359375 32,132.5 C32,136.640625 35.359375,140 39.5,140 C43.640625,140 47,136.640625 47,132.5 C47,128.359375 43.640625,125 39.5,125" id="Fill-11" fill="#FEFEFE"></path>
+                    <path d="M65.5,125 C61.359375,125 58,128.359375 58,132.5 C58,136.640625 61.359375,140 65.5,140 C69.640625,140 73,136.640625 73,132.5 C73,128.359375 69.640625,125 65.5,125" id="Fill-13" fill="#FEFEFE"></path>
+                    <path d="M91.5,125 C87.359375,125 84,128.359375 84,132.5 C84,136.640625 87.359375,140 91.5,140 C95.640625,140 99,136.640625 99,132.5 C99,128.359375 95.640625,125 91.5,125" id="Fill-15" fill="#FEFEFE"></path>
+                </g>
+                <g id="Oval-Copy-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                </g>
+                <g id="Oval-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                </g>
+                <text id="2" font-family="Gardenia-Bold, Gardenia" font-size="51" font-weight="bold" line-spacing="40" fill="#633E6B">
+                    <tspan x="325.001103" y="351.000735">2</tspan>
+                </text>
+                <text id="3" font-family="Gardenia-Bold, Gardenia" font-size="51" font-weight="bold" line-spacing="40" fill="#00ACE7">
+                    <tspan x="53.0011031" y="351.000735">3</tspan>
+                </text>
+                <text id="3-copy" font-family="Gardenia-Bold, Gardenia" font-size="51" font-weight="bold" line-spacing="40" fill="#E7B200">
+                    <tspan x="53.0011031" y="97.0007354">4</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
