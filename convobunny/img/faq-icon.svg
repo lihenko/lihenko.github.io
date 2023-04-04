@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>E60B4490-C924-4866-8D8E-B28BE6EF3AB7</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="FAQ" transform="translate(-451.000000, -503.000000)">
-            <g id="chat-message-checkmark_1" transform="translate(451.000000, 503.000000)">
-                <polygon id="Path" points="0 0 40 0 40 40 0 40"></polygon>
-                <circle id="Oval" fill="#008CCF" cx="29.5" cy="10.5" r="7.5"></circle>
-                <path d="M29.81,12.9835872 L29.8,12.9825872 C29.77,12.9825872 29.75,13.0025872 29.75,13.0325872 C29.75,13.0525872 29.77,13.0825872 29.8,13.0825872 C29.82,13.0725872 29.85,13.0525872 29.85,13.0325872 L29.85,13.0235872 C29.85,12.9935872 29.82,12.9735872 29.8,12.9735872 C29.8,12.9735872 29.799,12.9735872 29.799,12.9735872" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M28.01,8.32358721 L28,8.32358721 C28.18,7.52358721 28.9,6.97358721 29.72,7.00358721 L29.71,7.00358721 C30.62,6.94358721 31.4,7.64358721 31.46,8.55358721 C31.46,9.71358721 29.78,10.1035872 29.78,10.8835872" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M16.6666667,5 L10,5 C7.23857625,5 5,7.23870041 5,10.0002773 L5,25.0011092 C5,27.7626861 7.23857625,30.0013865 10,30.0013865 L13.345,30.0013865 L13.345,34.0731124 C13.3450022,34.4294095 13.5492255,34.7541667 13.8703394,34.9085107 C14.1914533,35.0628546 14.5726093,35.019461 14.8508167,34.7968858 L20.845,30.0013865 L30,30.0013865 C32.7614237,30.0013865 35,27.7626861 35,25.0011092 L35,23.3343501" id="Path" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h40v40H0z"/><circle fill="#008CCF" cx="29.5" cy="10.5" r="7.5"/><path d="M29.81 12.984l-.01-.001c-.03 0-.05.02-.05.05 0 .02.02.05.05.05.02-.01.05-.03.05-.05v-.01c0-.03-.03-.05-.05-.05h-.001M28.01 8.324H28c.18-.8.9-1.35 1.72-1.32h-.01c.91-.06 1.69.64 1.75 1.55 0 1.16-1.68 1.55-1.68 2.33" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.667 5H10a5 5 0 00-5 5v15.001a5 5 0 005 5h3.345v4.072a.927.927 0 001.506.724L20.845 30H30a5 5 0 005-5v-1.667" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

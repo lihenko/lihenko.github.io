@@ -55,27 +55,33 @@
         <div class="text-base font-bold mb-8">
             Whether you are a rising model or an established super star, we got you covered!
         </div>
-
+        <div class="flex justify-center speakers-buttons">
+          <a href="#" class="btn-choose btn-shadow active" data-speakers="non-native">Non-Native English Speakers</a>
+          <a href="#" class="btn-choose btn-shadow" data-speakers="native">Native English Speakers</a>
+        </div>
     </div>
     <div class="how-convoBunny-works-bottom-curve"><img src="./img/curve-bottom.svg" alt=""></div>
   </section>
-  <section id="pricing" class="mb-20 lg:-mt-[120px]">
+  <section id="pricing" class="pb-40">
     <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -mx-3">
-            <div class="price-column w-full md:w-1/2 mb-6 px-3 lg:w-1/4">
+        <div id="non-native" class="tab active">
+          <h2 class="text-center mb-12 md:mb-20">Non-Native English Speakers</h2>
+          <div class="flex flex-wrap">
+            <div class="flex flex-wrap w-full lg:w-1/2 agency pl-5 ml-5 md:pl-0 md:ml-0">
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
                 <div class="price-item border-2 border-blue rounded-lg overflow-hidden h-full relative bg-white">
                     <div class="price-title min-h-[112px] bg-blue p-4 flex items-center justify-center text-center">
-                        <h4 class="text-white">$6 FLAT RATE<br>NO EXTRA</h4>
+                        <div class="text-white lg:text-[20px]"><strong>Shared Chatter Group</strong ><br>(2 models maximum)</div>
                     </div>
-                    <div class="price-body pt-5 pb-[200px]">
+                    <div class="price-body pt-5 pb-[150px]">
                         <div class="price-description px-4 text-center min-h-[60px] flex justify-center items-center mb-5">
-                            <div class="text-base"><strong>Shared Chatter Group</strong><br>(2 models maximum)</div>
+                            <div class="text-base font-bold">Tier 1<br>$6 Flat rate no extra</div>
                         </div>
                         <div class="price-options px-4">
                             <ul class="checked-right text-sm">
                                 <li>Instant Chatter replacement requests (Capped at 2 per month)</li>
-                                <li>Chatter Scheduling to suit your needs</li>
-                                <li>Secure multi-user-logins (optional)</li>
+                                <li>Chatter Scheduling changes to suit your needs</li>
+                                <li>Payroll services</li>
                             </ul>
                         </div>
                         <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
@@ -85,23 +91,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for earnings less than $8,000 gross per month </div>
-            </div>
-            <div class="price-column w-full md:w-1/2 mb-6 px-3 lg:w-1/4">
+                <div class="price-note text-center text-sm mt-5 px-4"></div>
+              </div>
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
                 <div class="price-item border-2 border-lightblue rounded-lg overflow-hidden h-full relative bg-white">
                     <div class="price-title min-h-[112px] bg-lightblue p-4 flex items-center justify-center text-center">
-                        <h4 class="text-white">$8 FLAT RATE<br>NO EXTRA</h4>
+                        <div class="text-white lg:text-[20px]"><strong>Dedicated Team</strong></div>
                     </div>
-                    <div class="price-body px-4 pt-5 pb-[200px]">
-                        <div class="price-description min-h-[60px] flex justify-center items-center mb-5">
-                            <div class="text-base"><strong>Dedicated Team</strong></div>
+                    <div class="price-body px-4 pt-5 pb-[150px]">
+                        <div class="price-description min-h-[60px] text-center flex justify-center items-center mb-5">
+                            <div class="text-base font-bold">Tier 2<br>$8 Flat rate no extra</div>
                         </div>
                         <div class="price-options">
                             <ul class="checked-right lightblue text-sm">
-                                <li>Dedicated Chatter Team</li>
-                                <li>Instant Chatter replacement requests (Unlimited)</li>
-                                <li>Chatter Scheduling to suit your needs</li>
-                                <li>Secure multi-user-logins (optional)</li>
+                                <li>Instant Chatter replacement requests (Capped at 3 per month)</li>
+                                <li>Chatter Scheduling changes to suit your needs</li>
+                                <li>Payroll services</li>
                             </ul>
                         </div>
                         <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
@@ -111,66 +116,185 @@
                         </div>
                     </div>
                 </div>
-                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for earnings over $10,000 net per month</div>
+                <div class="price-note text-center text-sm mt-5 px-4"></div>
+              </div>
             </div>
-            <div class="price-column w-full md:w-1/2 mb-6 px-3 lg:w-1/4 lg:-mt-[10px] relative">
-              <div class="price-label absolute py-1 px-3 bg-blue rounded -mt-3 z-10 text-white text-sm font-bold left-[50%] translate-x-[-50%]">MOST POPULAR</div>
-              <div class="price-item border-2 border-[#E7B200] rounded-lg overflow-hidden h-full relative bg-white">
-                  <div class="price-title min-h-[122px] bg-[#E7B200] p-4 flex items-center justify-center text-center">
-                      <h4 class="text-white">$3 FLAT RATE + 15% COMMISSION ON NET SALES</h4>
+            <div class="flex flex-wrap w-full lg:w-1/2 model pl-5 ml-5 md:pl-0 md:ml-0">
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+                    <div class="price-item border-2 border-[#E7B200] rounded-lg overflow-hidden h-full relative bg-white">
+                    <div class="price-title min-h-[112px] bg-[#E7B200] p-4 flex items-center justify-center text-center">
+                        <div class="text-white lg:text-[20px]"><strong>Shared Chatter Group</strong><br>(2 models maximum)</div>
+                    </div>
+                    <div class="price-body pt-5 pb-[150px]">
+                        <div class="price-description px-4 min-h-[60px] text-center flex justify-center items-center mb-5">
+                          <div class="text-base font-bold">Tier 3<br>$3 + 12% on Net Chatter Sales</div>
+                        </div>
+                        <div class="price-info text-center text-sm py-2 px-4 bg-[rgba(231,178,0,0.08)] mb-5">Pay only $3 per hour per chatter and only 12% on Net Sales. The commission is paid at the end of every month so if you don’t earn we won't earn either</div>
+                        <div class="price-options px-4">
+                            <ul class="checked-right yellow text-sm">
+                              <li>Instant Chatter replacement requests (Capped at 2 per month)</li>
+                              <li>Chatter Scheduling changes to suit your needs</li>
+                              <li>Payroll services</li>
+                            </ul>
+                        </div>
+                        <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
+                            <div class="font-bold text-base mb-2">Get Started</div>
+                            <a href="#" class="btn-secondary bg-[#E7B200] yellow btn-shadow text-white px-10 mb-2 w-[256px] hover:bg-opacity-80 hover:bg-[#E7B200]">Reach us on Telegram</a>
+                            <a href="#" class="btn-transparent border-[#E7B200] px-10 mb-2 w-[256px] hover:bg-[#E7B200]">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for earnings over $10,000 net per month</div>
+              </div>
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+              <div class="price-item border-2 border-[#633E6B] rounded-lg overflow-hidden h-full relative  bg-white">
+                  <div class="price-title min-h-[112px] bg-[#633E6B] p-4 flex items-center justify-center text-center">
+                      <div class="text-white lg:text-[20px]"><strong>Dedicated Team</strong></div>
                   </div>
-                  <div class="price-body pt-5 pb-[200px]">
-                      <div class="price-description px-4 min-h-[60px] flex justify-center items-center mb-5">
-                        <div class="text-base"><strong>Shared Chatter Group</strong><br>(2 models maximum)</div>
+                  <div class="price-body pt-5 pb-[150px]">
+                      <div class="price-description min-h-[60px] text-center flex justify-center items-center mb-5">
+                          <div class="text-base font-bold">Tier 4<br>$6 + 12% on Net Chatter Sales </div>
                       </div>
-                      <div class="price-info text-sm py-2 px-4 bg-[rgba(231,178,0,0.08)] mb-5">Pay only $3 per hour per chatter and only 15% on Net Sales generated by ConvoBunny chatters. Commission is paid at the end of every month so if you don’t earn we won't earn either!</div>
+                      <div class="price-info text-center text-sm py-2 px-4 bg-[rgba(163,0,231,0.08)] mb-5">Pay only $6 per hour per chatter and only 12% on Net Sales. The commission is paid at the end of every month so if you don’t earn we won't earn either</div>
                       <div class="price-options px-4">
-                          <ul class="checked-right yellow text-sm">
-                            <li>Instant Chatter replacement requests (Capped at 2 per month)</li>
-                            <li>Chatter Scheduling to suit your needs</li>
-                            <li>Secure multi-user-logins (optional)</li>
+                          <ul class="checked-right violet text-sm">
+                              <li>Instant Chatter replacement requests (Unlimited)</li>
+                              <li>Chatter Scheduling changes to suit your needs</li>
+                              <li>Payroll services</li>
                           </ul>
                       </div>
                       <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
                           <div class="font-bold text-base mb-2">Get Started</div>
-                          <a href="#" class="btn-secondary bg-[#E7B200] yellow btn-shadow text-white px-10 mb-2 w-[256px] hover:bg-opacity-80 hover:bg-[#E7B200]">Reach us on Telegram</a>
-                          <a href="#" class="btn-transparent border-[#E7B200] px-10 mb-2 w-[256px] hover:bg-[#E7B200]">Email Us</a>
+                          <a href="#" class="btn-secondary btn-shadow violet bg-[#633E6B] text-white px-10 mb-2 w-[256px] hover:bg-[#633E6B] hover:bg-opacity-80">Reach us on Telegram</a>
+                          <a href="#" class="btn-transparent border-[#633E6B] px-10 mb-2 w-[256px] hover:bg-[#633E6B]">Email Us</a>
                       </div>
                   </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for pages on 0.1 - 0.0%</div>
               </div>
-              <div class="price-note text-center text-sm mt-5 px-4">*Recommended for earnings over $10,000 net per month</div>
-          </div>
-          <div class="price-column w-full md:w-1/2 mb-6 px-3 lg:w-1/4">
-            <div class="price-item border-2 border-[#633E6B] rounded-lg overflow-hidden h-full relative  bg-white">
-                <div class="price-title min-h-[112px] bg-[#633E6B] p-4 flex items-center justify-center text-center">
-                    <h4 class="text-white">$6 FLAT RATE + 15% COMMISSION ON NET SALES</h4>
-                </div>
-                <div class="price-body pt-5 pb-[200px]">
-                    <div class="price-description min-h-[60px] flex justify-center items-center mb-5">
-                        <div class="text-base"><strong>Dedicated Team</strong></div>
-                    </div>
-                    <div class="price-info text-sm py-2 px-4 bg-[rgba(163,0,231,0.08)] mb-5">Pay only $3 per hour per chatter and only 15% on Net Sales generated by ConvoBunny chatters. Commission is paid at the end of every month so if you don’t earn we won't earn either!</div>
-                    <div class="price-options px-4">
-                        <ul class="checked-right violet text-sm">
-                            <li>Dedicated Chatter Team</li>
-                            <li>Instant Chatter replacement requests (Unlimited)</li>
-                            <li>Chatter Scheduling to suit your needs</li>
-                            <li>Secure multi-user-logins (optional)</li>
-                        </ul>
-                    </div>
-                    <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
-                        <div class="font-bold text-base mb-2">Get Started</div>
-                        <a href="#" class="btn-secondary btn-shadow violet bg-[#633E6B] text-white px-10 mb-2 w-[256px] hover:bg-[#633E6B] hover:bg-opacity-80">Reach us on Telegram</a>
-                        <a href="#" class="btn-transparent border-[#633E6B] px-10 mb-2 w-[256px] hover:bg-[#633E6B]">Email Us</a>
-                    </div>
-                </div>
             </div>
-            <div class="price-note text-center text-sm mt-5 px-4">*Recommended for pages on 0.1 - 0.0%</div>
+          </div>
         </div>
+        <div id="native" class="tab">
+          <h2 class="text-center mb-12 md:mb-20">Native English Speakers</h2>
+          <div class="flex flex-wrap">
+            <div class="flex flex-wrap w-full lg:w-1/2 agency pl-5 ml-5 md:pl-0 md:ml-0">
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+                <div class="price-item border-2 border-blue rounded-lg overflow-hidden h-full relative bg-white">
+                    <div class="price-title min-h-[112px] bg-blue p-4 flex items-center justify-center text-center">
+                        <div class="text-white lg:text-[20px]"><strong>Shared Chatter Group</strong ><br>(2 models maximum)</div>
+                    </div>
+                    <div class="price-body pt-5 pb-[150px]">
+                        <div class="price-description px-4 text-center min-h-[60px] flex justify-center items-center mb-5">
+                            <div class="text-base font-bold">Tier 1<br>$15 Flat rate no extra</div>
+                        </div>
+                        <div class="price-options px-4">
+                            <ul class="checked-right text-sm">
+                                <li>Instant Chatter replacement requests (Capped at 2 per month)</li>
+                                <li>Chatter Scheduling changes to suit your needs</li>
+                                <li>Payroll services</li>
+                            </ul>
+                        </div>
+                        <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
+                            <div class="font-bold text-base mb-2">Get Started</div>
+                            <a href="#" class="btn-primary btn-shadow text-white px-10 mb-2 w-[256px]">Reach us on Telegram</a>
+                            <a href="#" class="btn-transparent border-blue px-10 mb-2 w-[256px] hover:bg-blue">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4"></div>
+              </div>
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+                <div class="price-item border-2 border-lightblue rounded-lg overflow-hidden h-full relative bg-white">
+                    <div class="price-title min-h-[112px] bg-lightblue p-4 flex items-center justify-center text-center">
+                        <div class="text-white lg:text-[20px]"><strong>Dedicated Team</strong></div>
+                    </div>
+                    <div class="price-body px-4 pt-5 pb-[150px]">
+                        <div class="price-description min-h-[60px] text-center flex justify-center items-center mb-5">
+                            <div class="text-base font-bold">Tier 2<br>$20 Flat rate no extra</div>
+                        </div>
+                        <div class="price-options">
+                            <ul class="checked-right lightblue text-sm">
+                                <li>Instant Chatter replacement requests (Capped at 3 per month)</li>
+                                <li>Chatter Scheduling changes to suit your needs</li>
+                                <li>Payroll services</li>
+                            </ul>
+                        </div>
+                        <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
+                            <div class="font-bold text-base mb-2">Get Started</div>
+                            <a href="#" class="btn-secondary btn-shadow text-white px-10 mb-2 w-[256px]">Reach us on Telegram</a>
+                            <a href="#" class="btn-transparent border-lightblue px-10 mb-2 w-[256px] hover:bg-lightblue">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4"></div>
+              </div>
+            </div>
+            <div class="flex flex-wrap w-full lg:w-1/2 model pl-5 ml-5 md:pl-0 md:ml-0">
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+                    <div class="price-item border-2 border-[#E7B200] rounded-lg overflow-hidden h-full relative bg-white">
+                    <div class="price-title min-h-[112px] bg-[#E7B200] p-4 flex items-center justify-center text-center">
+                        <div class="text-white lg:text-[20px]"><strong>Shared Chatter Group</strong><br>(2 models maximum)</div>
+                    </div>
+                    <div class="price-body pt-5 pb-[150px]">
+                        <div class="price-description px-4 min-h-[60px] text-center flex justify-center items-center mb-5">
+                          <div class="text-base font-bold">Tier 3<br>$10 + 15% on Net Chatter Sales</div>
+                        </div>
+                        <div class="price-info text-center text-sm py-2 px-4 bg-[rgba(231,178,0,0.08)] mb-5">Pay only $8 per hour per chatter and only 15% on Net Sales. The commission is paid at the end of every month so if you don’t earn we won't earn either</div>
+                        <div class="price-options px-4">
+                            <ul class="checked-right yellow text-sm">
+                              <li>Instant Chatter replacement requests (Capped at 2 per month)</li>
+                              <li>Chatter Scheduling changes to suit your needs</li>
+                              <li>Payroll services</li>
+                            </ul>
+                        </div>
+                        <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
+                            <div class="font-bold text-base mb-2">Get Started</div>
+                            <a href="#" class="btn-secondary bg-[#E7B200] yellow btn-shadow text-white px-10 mb-2 w-[256px] hover:bg-opacity-80 hover:bg-[#E7B200]">Reach us on Telegram</a>
+                            <a href="#" class="btn-transparent border-[#E7B200] px-10 mb-2 w-[256px] hover:bg-[#E7B200]">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for earnings over $10,000 net per month</div>
+              </div>
+              <div class="price-column w-full md:w-1/2 mb-20 px-3 ">
+              <div class="price-item border-2 border-[#633E6B] rounded-lg overflow-hidden h-full relative  bg-white">
+                  <div class="price-title min-h-[112px] bg-[#633E6B] p-4 flex items-center justify-center text-center">
+                      <div class="text-white lg:text-[20px]"><strong>Dedicated Team</strong></div>
+                  </div>
+                  <div class="price-body pt-5 pb-[150px]">
+                      <div class="price-description min-h-[60px] text-center flex justify-center items-center mb-5">
+                          <div class="text-base font-bold">Tier 4<br>$15 + 15% on Net Chatter sales </div>
+                      </div>
+                      <div class="price-info text-center text-sm py-2 px-4 bg-[rgba(163,0,231,0.08)] mb-5">Pay only $10 per hour per chatter and only 15% on Net Sales. The commission is paid at the end of every month so if you don’t earn we won't earn either</div>
+                      <div class="price-options px-4">
+                          <ul class="checked-right violet text-sm">
+                              <li>Instant Chatter replacement requests (Unlimited)</li>
+                              <li>Chatter Scheduling changes to suit your needs</li>
+                              <li>Payroll services</li>
+                          </ul>
+                      </div>
+                      <div class="buttons-block absolute bottom-5 flex items-center flex-col px-4 text-center left-0 right-0">
+                          <div class="font-bold text-base mb-2">Get Started</div>
+                          <a href="#" class="btn-secondary btn-shadow violet bg-[#633E6B] text-white px-10 mb-2 w-[256px] hover:bg-[#633E6B] hover:bg-opacity-80">Reach us on Telegram</a>
+                          <a href="#" class="btn-transparent border-[#633E6B] px-10 mb-2 w-[256px] hover:bg-[#633E6B]">Email Us</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="price-note text-center text-sm mt-5 px-4">*Recommended for pages on 0.1 - 0.0%</div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
   </section>
- 
+  <section id="calculator" class="-mt-20 mb-10">
+    <div class="container mx-auto px-4">
+      <div class="calculator-wrap bg-[#F7F7F7] py-12 px-5 lg:px-10">
+        <h2 class="text-center opacity-20">Price Calculator to be added here</h2>
+      </div>
+    </div>
+  </section>
 
 </main>
 <footer>
