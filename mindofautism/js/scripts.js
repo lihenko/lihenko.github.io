@@ -133,3 +133,10 @@ jQuery('#explore-book-slider-wrap').slick({
   ]
 });
 
+let pagination = jQuery('.post-navigation .pagination');
+let prev = pagination.find('a.prev.page-numbers');
+let next = pagination.find('a.next.page-numbers');
+next.wrap('<div class="nav-arrows">');
+next.before(prev);
+let pages = jQuery('.post-navigation .pagination > .page-numbers');
+pages.wrapAll('<div class="nav-pages"></div>');
