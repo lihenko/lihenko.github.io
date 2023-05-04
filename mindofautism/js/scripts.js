@@ -110,8 +110,26 @@ jQuery('#pre-order-slider-wrap').slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     }
   ]
 });
+
+jQuery('#explore-book-slider-wrap').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  lazyLoad: 'ondemand',
+  dots: false,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
