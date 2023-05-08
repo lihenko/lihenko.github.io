@@ -1125,6 +1125,9 @@ a:hover{
 .leading-\[1\.05\]{
   line-height: 1.05;
 }
+.leading-\[1\]{
+  line-height: 1;
+}
 .leading-\[74px\]{
   line-height: 74px;
 }
@@ -1686,6 +1689,27 @@ a {
   transform: translate(-50%, -50%);
 }
 
+#page-title .post-date {
+  justify-content: center;
+}
+
+#post-content .post-tumbnail {
+  padding-bottom: 40%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#post-content .post-content {
+  padding: 25px 15px;
+  background-color: #000;
+}
+
+#post-content .post-content img {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 480px) {
   #pre-order-slider-wrap::after {
     content: "";
@@ -1779,6 +1803,9 @@ a {
     width: 60px;
     height: 60px;
   }
+  #post-content .post-content {
+    padding: 85px 80px;
+  }
 }
 @media screen and (min-width: 1250px) {
   .top-social-buttons li a {
@@ -1827,6 +1854,10 @@ a {
   }
   .md\:w-1\/2{
     width: 50%;
+  }
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .md\:px-9{
     padding-left: 2.25rem;
@@ -1959,6 +1990,9 @@ a {
   }
   .xl\:text-\[33px\]{
     font-size: 33px;
+  }
+  .xl\:text-\[36px\]{
+    font-size: 36px;
   }
   .xl\:text-\[48px\]{
     font-size: 48px;
