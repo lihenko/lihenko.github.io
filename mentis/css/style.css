@@ -2749,6 +2749,12 @@ pre[class*=language-] {
     content: attr(data-year);
     position: absolute;
     left: -179px;
+    color: #3E44A9;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 16px;
   }
   .gallery-wrap[data-point=true].now::after {
     background-color: #04E1FE;
