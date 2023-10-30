@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body class="open-right">
+  <section class="mobile-menu">
+    <ul class="omni-mobile-menu">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Why Choose Us?</a></li>
+      <li><a href="#">Mobile Tire Services</a></li>
+      <li><a href="#">In-Shop Services</a></li>
+      <li><a href="#">Locations & Facilities</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Service Request</a></li>
+    </ul><!-- omni-mobile-menu -->
+
+    <div class="toggle-btn z-50">
+        <div class="hamburger-icon">
+            <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+    </div>
+  </section>
+<div class="content-wrapper">
+  <header class="bg-black py-5 lg:pt-3 lg:pb-1">
+    <section id="main-menu" class="relative z-20">
+      <div class="container">
+        <div class="flex flex-wrap items-center lg:border-b lg:border-white lg:pb-8">
+          <div class="w-full lg:order-2 lg:w-9/12 lg:pl-8 xl:w-[calc(100%-230px)]">
+            <div class="top-bar flex items-center justify-between text-white text-micro py-3 lg:pb-6">
+              <div class="top-bar-contacts flex justify-between w-full lg:max-w-[350px]">
+                <div class="top-bar-location">
+                  <a href="#" class="flex text-white hover:text-grey">
+                    <svg class="mr-3" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.45669C0 1.99913 2.01881 0 4.5 0C6.98119 0 9 1.99913 9 4.45669C9 7.53581 5.03494 10.9699 4.86619 11.1144C4.76044 11.205 4.6305 11.25 4.5 11.25C4.3695 11.25 4.23956 11.205 4.13381 11.1144C3.96506 10.9699 0 7.53581 0 4.45669ZM4.5 6.1875C3.41437 6.1875 2.53125 5.30438 2.53125 4.21875C2.53125 3.13312 3.41437 2.25 4.5 2.25C5.58563 2.25 6.46875 3.13312 6.46875 4.21875C6.46875 5.30438 5.58563 6.1875 4.5 6.1875ZM4.5 3.375C4.03481 3.375 3.65625 3.75356 3.65625 4.21875C3.65625 4.68394 4.03481 5.0625 4.5 5.0625C4.96519 5.0625 5.34375 4.68394 5.34375 4.21875C5.34375 3.75356 4.96519 3.375 4.5 3.375Z" fill="white"/>
+                    </svg>
+                    Find Location Near You
+                  </a>
+                </div>
+                <div class="top-bar-phone">
+                  <a href="tel:800123412414" class="flex text-white hover:text-grey">
+                    <svg class="mr-3" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.15 1.3C9.65835 1.3 11.7 3.34165 11.7 5.85C11.7 6.20945 11.9906 6.5 12.35 6.5C12.7094 6.5 13 6.20945 13 5.85C13 2.62405 10.3759 0 7.15 0C6.7912 0 6.5 0.29055 6.5 0.65C6.5 1.00945 6.7912 1.3 7.15 1.3ZM7.15 3.9C8.2251 3.9 9.1 4.7749 9.1 5.85C9.1 6.20945 9.39055 6.5 9.75 6.5C10.1095 6.5 10.4 6.20945 10.4 5.85C10.4 4.05795 8.94205 2.6 7.15 2.6C6.7912 2.6 6.5 2.89055 6.5 3.25C6.5 3.60945 6.7912 3.9 7.15 3.9ZM12.3695 8.62043C12.5879 8.67048 12.7654 8.82908 12.8382 9.04033C12.8914 9.19308 12.9324 9.35233 12.9584 9.51483C12.9857 9.67668 13 9.84178 13 10.0101C13 11.6585 11.659 13.0001 10.01 13.0001C4.49085 13.0001 0 8.50993 0 2.98948C0 1.34108 1.3416 0.00013 2.99 0.00013C3.159 0.00013 3.32605 0.01443 3.4879 0.04238C3.64585 0.06773 3.8051 0.10803 3.95915 0.16133C4.17105 0.23478 4.32965 0.41223 4.3797 0.63063L5.26955 4.50658C5.31895 4.72043 5.2572 4.94403 5.10575 5.10198C5.0167 5.19493 5.01475 5.19688 4.20875 5.61808C4.86135 7.03183 5.9956 8.16153 7.38075 8.79268C7.80325 7.98603 7.8052 7.98343 7.8975 7.89438C8.0561 7.74293 8.27905 7.68248 8.4929 7.72993L12.3695 8.62043Z" fill="white"/>
+                    </svg>
+                    <strong>Call Us:</strong> 800-1234-12414
+                  </a>
+                </div>
+              </div>
+              <div class="top-bar-button hidden lg:block">
+                <a href="#" class="btn btn-white max-w-[240px]">Service Request</a>
+              </div>
+            </div>
+            <div class="hidden lg:block lg:w-full">
+              <div class="main-menu">
+                  <ul class="flex justify-between items-center">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Why Choose Us?</a></li>
+                    <li><a href="#">Mobile Tire Services</a></li>
+                    <li><a href="#">In-Shop Services</a></li>
+                    <li><a href="#">Locations & Facilities</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:order-1 lg:w-3/12 xl:w-[230px]">
+            <div class="brand text-center">
+              <a href="/">
+                <img src="./img/SLBT.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="home-hero" class="bg-black">
+      <div class="home-hero-bg" style="background-image: url(./img/home-hero-bg.png);"></div>
+      <div class="container">
+        <div class="flex relative">
+          <div class="w-full text-center lg:w-10/12 xl:w-8/12 lg:mx-auto">
+            <div class="bg-violete text-white font-bold inline-block uppercase py-2 px-8 tracking-wider mb-10">
+              National Fleet Service with a Local Touch
+            </div>
+            <h1 class="text-white mb-6">
+              Facilities, Expertise, & Excellence to Keep Your Fleet on the Road
+            </h1>
+            <div class="text-xl text-white mb-14">
+              SLBT Fleet Safe's National Accounts dedicated team will keep your fleet on the road and delivering with fleetwide repair, preventative maintenance, and specialty service.
+            </div>
+            <div class="home-hero-buttons flex flex-wrap justify-center">
+              <a href="#" class="btn btn-white mb-4 mx-2 md:mx-4">Contact Us for more details</a>
+              <a href="#" class="btn btn-white mb-4 mx-2 md:mx-4">Submit a Service Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mobile-services">
+      <div class="container">
+        <div class="flex flex-wrap bg-white mobile-services-wrap py-12 xl:px-20 xl:-mt-28">
+          <div class="w-full mb-16">
+            <h2 class="text-center lg:text-left mb-6">Mobile Tire Repair Services</h2>
+            <div class="flex flex-wrap items-center">
+              <div class="w-full mb-6 lg:mb-0 lg:w-[calc(100%-270px)]">
+                SLBT Safe Fleet has the equipment & expertise to offer roadside & emergency replacement and repairing of fleet vehicle tires. With an emphasis on safety, our team can be called the vehicle's location.
+              </div>
+              <div class="w-full text-center lg:w-[270px] lg:text-right">
+                <a href="#" class="btn btn-violete max-w-[254px]">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full border-b border-violete"></div>
+        </div>
+      </div>
+    </section>
+    <section id="inshop-services" class="pb-14">
+      <div class="container">
+        <div class="flex flex-wrap xl:px-20">
+          <div class="w-full">
+            <h2 class="text-center mb-12">
+              In-Shop Services
+            </h2>
+          </div>
+          <div class="w-full">
+            <div class="inshop-services-slider -mx-3">
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/Fleet Services.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">Fleet Services</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Preventative Maintenance: Extend the lifespan of your fleet with our top-notch preventative maintenance services.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/In-Shop Services.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">In-Shop Services</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Comprehensive repairs and maintenance services to keep your fleet in optimum condition.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/Agricultural & Industrial.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">Agricultural & Industrial</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Specialized services for agricultural and industrial vehicles to meet the demands of every sector.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/Fleet Services.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">Fleet Services</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Preventative Maintenance: Extend the lifespan of your fleet with our top-notch preventative maintenance services.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/In-Shop Services.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">In-Shop Services</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Comprehensive repairs and maintenance services to keep your fleet in optimum condition.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="inshop-services-slide px-3">
+                <div class="inshop-services-card bg-violete w-[335px] h-full pb-28 relative max-w-full mx-auto">
+                  <div class="inshop-services-card-image w-[335px] h-[185px] overflow-hidden max-w-full">
+                    <img src="./img/Agricultural & Industrial.png" alt="" class="object-cover h-full w-full">
+                  </div>
+                  <div class="inshop-services-card-title mt-6 px-3">
+                    <h3 class="text-white h-[73px] flex items-center justify-center text-center">Agricultural & Industrial</h3>
+                  </div>
+                  <div class="inshop-services-car-description text-center text-white px-3">
+                    Specialized services for agricultural and industrial vehicles to meet the demands of every sector.
+                  </div>
+                  <div class="inshop-services-card-button text-center absolute left-3 right-3 bottom-9">
+                    <a href="#" class="btn btn-transparent w-[254px]">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="why-us" class="py-20 lg:py-8">
+      <div class="container">
+        <div class="flex flex-wrap lg:items-center">
+          <div class="w-full lg:w-1/2 xl:pl-20">
+            <h2 class="mb-8">Why Choose SLBT Safe Fleet?</h2>
+            <ul id="why-us" class="marked-list">
+              <li><strong>17 Convenient Locations:</strong> Servicing the Treasure Coast with 17 locations ready to meet your fleet service needs.</li>
+
+              <li><strong>Expert Mechanics:</strong> Our team of skilled mechanics is trained to handle a variety of fleet service requirements.</li>
+
+              <li><strong>Deep Inventory of Specialty Tires & Parts:</strong> Ensuring quick turnaround times for service and repairs.</li>
+
+              <li><strong>Dedicated Facilities:</strong> Our facilities are equipped to accommodate large vehicles and provide rapid service.</li>
+            </ul>
+          </div>
+          <div class="relative p-10 w-full lg:w-1/2 lg:flex lg:items-center lg:justify-center">
+            <div class="why-us-bg"></div>
+            <img src="./img/why-us-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seals">
+      <div class="container">
+        <div class="seals-slider">
+          <div class="seals-slider-item">
+            <img src="./img/GSA-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Fleetio-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Enterprise-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Emkay-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Element-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Donlen-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/GSA-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Fleetio-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Enterprise-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Emkay-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Element-logo.png" alt="">
+          </div>
+          <div class="seals-slider-item">
+            <img src="./img/Donlen-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta">
+      <div class="flex flex-wrap">
+        <div class="left-column bg-violete">
+          <div class="cta-left-bg-img"></div>
+          <h3 class="text-white mb-4 text-center lg:text-left relative">
+            Ready to Learn More?
+          </h3>
+          <div class="flex flex-wrap">
+            <div class="cta-left-text text-white mb-4 text-center lg:text-left lg:mb-0 lg:pr-3">
+              Get in touch with us to discover how we can tailor our services to meet your unique fleet management needs.
+            </div>
+            <div class="cta-left-button text-center lg:text-left">
+              <a href="#" class="btn btn-transparent w-[254px]">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-column bg-grey">
+          <h3 class="text-white mb-4 text-center lg:text-left relative">
+            Already a Fleet Client?
+          </h3>
+          <div class="cta-right-button text-center lg:text-left relative">
+            <a href="#" class="btn btn-white">Submit a Service Request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="py-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full text-center">
+            <h2 class="mb-8">Extensive Facilities, Inventory, & Mechanics to Serve Your Fleet’ Vehicles</h2>
+          </div>
+          <div class="w-full mb-12 text-center xl:w-9/12 xl:mx-auto">
+            Keeping your fleet on the road is critical to your business’s success. At SLBT Safe Fleet, we provide a one-stop solution to all your fleet service needs. Our dedicated team of expert mechanics, extensive facilities, and vast inventory ensure your vehicles are serviced promptly and efficiently, minimizing downtime and maximizing productivity.
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 xl:px-40">
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Passenger Car.svg" alt=""></div>
+              <div class="feature-name pl-5">Passenger Car</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Passenger Truck.svg" alt=""></div>
+              <div class="feature-name pl-5">Passenger Truck</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/VanSUV.svg" alt=""></div>
+              <div class="feature-name pl-5">Van/SUV</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Dump Truck.svg" alt=""></div>
+              <div class="feature-name pl-5">Dump Truck</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Agricultural Vehicle.svg" alt=""></div>
+              <div class="feature-name pl-5">Agricultural Vehicle</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Bus.svg" alt=""></div>
+              <div class="feature-name pl-5">Bus</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Semi-trailer Truck.svg" alt=""></div>
+              <div class="feature-name pl-5">Semi-trailer Truck</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Heavy Industrial Vehicle.svg" alt=""></div>
+              <div class="feature-name pl-5">Heavy Industrial Vehicle</div>
+            </div>
+          </div>
+          <div class="w-full mb-11 sm:w-1/2 lg:w-1/3 px-3">
+            <div class="flex items-center justify-center sm:justify-start">
+              <div class="feature-icon"><img src="./img/Large Trailer Vehicle.svg" alt=""></div>
+              <div class="feature-name pl-5">Large Trailer Vehicle</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pb-20">
+    <div class="container">
+      <div class="border-t border-grey mb-16"></div>
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-7/12 xl:w-1/2">
+          <div class="footer-logo text-center mb-6 md:text-left">
+            <a href="/">
+              <img src="./img/footer-logo.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full mb-10 md:w-1/2 px-3 xl:pr-8 xl:border-r xl:border-grey">
+              <h3 class="mb-6 text-center md:text-left">Emergency?</h3>
+              <div class="mb-6 text-center md:text-left">Unexpected breakdown? We've got you covered round the clock.</div>
+              <div class="text-center md:text-left pb-2">
+                <a href="#" class="btn btn-violete">CALL: 800-1234-12414</a>
+              </div>
+            </div>
+            <div class="w-full mb-10 md:w-1/2 px-3 xl:pl-8">
+              <h3 class="mb-6 text-center md:text-left">Already a Fleet Client?</h3>
+              <div class="mb-6 text-center md:text-left">Submit your service request easily and quickly through our online portal.</div>
+              <div class="text-center md:text-left pb-2">
+                <a href="#" class="btn btn-violete">Service Request</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-5/12 lg:pl-8 xl:w-1/2 xl:pl-20 lg:pt-8">
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="footer-mune-tiitle uppercase text-grey font-bold text-lg mb-6">
+                LEarn More
+              </div>
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Why Choose Us?</a></li>
+
+                <li><a href="#">Mobile Fleet Services</a></li>
+
+                <li><a href="#">In-Shop Services</a></li>
+
+                <li><a href="#">Locations & Facilities</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="footer-mune-tiitle uppercase text-grey font-bold text-lg mb-6">
+                In-Shop Services
+              </div>
+              <ul class="footer-menu">
+                <li><a href="#">Preventative Maintenance</a></li>
+
+                <li><a href="#">DOT Inspections</a></li>
+
+                <li><a href="#">Emergency Service</a></li>
+
+                <li><a href="#">Agricultural & Industrial</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block fixed p-3 bg-blue text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-violete hover:shadow-lg focus:bg-violete focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
+</div>
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
