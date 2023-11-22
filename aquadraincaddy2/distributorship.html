@@ -3,45 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Distributorship</title>
+  <title>Home Page</title>
+  <link rel="stylesheet" id="aquadraincaddy-fancybox-style-css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?ver=1.0.0" media="all">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
-  <header class="z-50 relative">
-  <section id="top-bar" class="py-3">
-    <div class="container">
-      <div class="top-bar-content text-center text-sm font-medium">FREE SHIPPING + 90 DAY RETURNS</div>
+  <section class="mobile-menu">
+    <ul class="omni-mobile-menu">
+      <li><a href="#">Distributorship available</a></li>
+      <li><a href="#">Government order</a></li>
+      <li><a href="#">Fire departments</a></li>
+      <li><a href="#">International</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="#">Buy it now</a></li>
+    </ul><!-- omni-mobile-menu -->
+
+    <div class="toggle-btn">
+        <div class="hamburger-icon">
+            <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
     </div>
   </section>
-  <section id="main-menu" class="bg-black pt-3 xl:py-2">
-    <div class="container">
+  <div class="content-wrapper overflow-x-hidden">
+  <header class="relative">
+  <section id="top-bar" class="py-3 bg-red">
+    <div class="w-screen px-3 xl:px-16">
+      <div class="top-bar-content -mx-3 flex justify-center lg:justify-start">
+        <div class="top-bar-phone phone-1 px-3 border-r border-grey">
+          <a href="+18005410007" class="text-grey hover:text-darkgrey flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M8.725 11.375C8.16 11.375 7.565 11.24 6.95 10.98C6.35 10.725 5.745 10.375 5.155 9.95C4.57 9.52 4.005 9.04 3.47 8.515C2.94 7.98 2.46 7.415 2.035 6.835C1.605 6.235 1.26 5.635 1.015 5.055C0.755 4.435 0.625 3.835 0.625 3.27C0.625 2.88 0.695 2.51 0.83 2.165C0.97 1.81 1.195 1.48 1.5 1.195C1.885 0.815 2.325 0.625 2.795 0.625C2.99 0.625 3.19 0.67 3.36 0.75C3.555 0.84 3.72 0.975 3.84 1.155L5 2.79C5.105 2.935 5.185 3.075 5.24 3.215C5.305 3.365 5.34 3.515 5.34 3.66C5.34 3.85 5.285 4.035 5.18 4.21C5.105 4.345 4.99 4.49 4.845 4.635L4.505 4.99C4.51 5.005 4.515 5.015 4.52 5.025C4.58 5.13 4.7 5.31 4.93 5.58C5.175 5.86 5.405 6.115 5.635 6.35C5.93 6.64 6.175 6.87 6.405 7.06C6.69 7.3 6.875 7.42 6.985 7.475L6.975 7.5L7.34 7.14C7.495 6.985 7.645 6.87 7.79 6.795C8.065 6.625 8.415 6.595 8.765 6.74C8.895 6.795 9.035 6.87 9.185 6.975L10.845 8.155C11.03 8.28 11.165 8.44 11.245 8.63C11.32 8.82 11.355 8.995 11.355 9.17C11.355 9.41 11.3 9.65 11.195 9.875C11.09 10.1 10.96 10.295 10.795 10.475C10.51 10.79 10.2 11.015 9.84 11.16C9.495 11.3 9.12 11.375 8.725 11.375ZM2.795 1.375C2.52 1.375 2.265 1.495 2.02 1.735C1.79 1.95 1.63 2.185 1.53 2.44C1.425 2.7 1.375 2.975 1.375 3.27C1.375 3.735 1.485 4.24 1.705 4.76C1.93 5.29 2.245 5.84 2.645 6.39C3.045 6.94 3.5 7.475 4 7.98C4.5 8.475 5.04 8.935 5.595 9.34C6.135 9.735 6.69 10.055 7.24 10.285C8.095 10.65 8.895 10.735 9.555 10.46C9.81 10.355 10.035 10.195 10.24 9.965C10.355 9.84 10.445 9.705 10.52 9.545C10.58 9.42 10.61 9.29 10.61 9.16C10.61 9.08 10.595 9 10.555 8.91C10.54 8.88 10.51 8.825 10.415 8.76L8.755 7.58C8.655 7.51 8.565 7.46 8.48 7.425C8.37 7.38 8.325 7.335 8.155 7.44C8.055 7.49 7.965 7.565 7.865 7.665L7.485 8.04C7.29 8.23 6.99 8.275 6.76 8.19L6.625 8.13C6.42 8.02 6.18 7.85 5.915 7.625C5.675 7.42 5.415 7.18 5.1 6.87C4.855 6.62 4.61 6.355 4.355 6.06C4.12 5.785 3.95 5.55 3.845 5.355L3.785 5.205C3.755 5.09 3.745 5.025 3.745 4.955C3.745 4.775 3.81 4.615 3.935 4.49L4.31 4.1C4.41 4 4.485 3.905 4.535 3.82C4.575 3.755 4.59 3.7 4.59 3.65C4.59 3.61 4.575 3.55 4.55 3.49C4.515 3.41 4.46 3.32 4.39 3.225L3.23 1.585C3.18 1.515 3.12 1.465 3.045 1.43C2.965 1.395 2.88 1.375 2.795 1.375ZM6.975 7.505L6.895 7.845L7.03 7.495C7.005 7.49 6.985 7.495 6.975 7.505Z" fill="#FBFBFB"/>
+            </svg>
+            <span class="text-sm">1 800 541 0007</span>
+          </a>
+        </div>
+        <div class="top-bar-phone phone-2 px-3">
+          <a href="+18005410007" class="text-grey hover:text-darkgrey flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+              <g clip-path="url(#clip0_463_97)">
+                <path d="M8.93748 10.4688H8.86873C2.13123 10.0906 1.16873 4.38437 1.03123 2.63125C0.99686 2.08125 1.40936 1.56563 1.99373 1.53125C1.99373 1.53125 2.02811 1.53125 2.06248 1.53125H3.88436C4.15936 1.53125 4.43436 1.70313 4.53748 1.97813L5.01873 3.25C5.12186 3.49063 5.05311 3.8 4.88123 4.00625L4.15936 4.72813C4.39999 6.06875 5.43124 7.1 6.77186 7.34062L7.52811 6.61875C7.73436 6.4125 8.00936 6.37812 8.28436 6.48125L9.59061 6.99687C9.83123 7.1 10.0031 7.34062 10.0031 7.65V9.4375C9.96873 10.0219 9.52186 10.4688 8.93748 10.4688ZM2.06248 2.21875C1.85623 2.21875 1.71873 2.35625 1.71873 2.5625V2.59687C1.89061 4.625 2.88748 9.4375 8.90311 9.78125C9.10936 9.78125 9.24686 9.64375 9.28123 9.47188C9.28123 9.47188 9.28123 9.47188 9.28123 9.4375V7.61563L7.97499 7.1L6.97811 8.09688L6.84061 8.0625C3.84998 7.68437 3.43748 4.69375 3.43748 4.65938L3.40311 4.4875L4.36561 3.49062L3.88436 2.21875H2.06248Z" fill="#FBFBFB"/>
+                <path d="M6.875 1.875V2.5625H8.45625L6.1875 4.83125L6.66875 5.3125L8.9375 3.04375V4.625H9.625V1.875H6.875Z" fill="#FBFBFB"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_463_97">
+                  <rect width="11" height="11" fill="#FBFBFB" transform="translate(0 0.5)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="text-sm">570 507 8853</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="main-menu" class="bg-white pt-3 xl:py-2">
+    <div class="w-screen px-3 xxl:px-16">
       <div class="flex flex-wrap items-center">
-        <div class="w-full xl:w-2/12 text-center xl:text-left">
-          <div class="brand">
+        <div class="w-full lg:w-1/12 xl:w-2/12 text-center lg:text-left">
+          <div class="brand flex">
             <a href="/">
-              <img src="./img/Logo.svg" alt="">
+              <img src="./img/logo.png" alt="">
             </a>
           </div>
         </div>
-        <div class="w-full flex items-center justify-center xl:justify-end xl:w-10/12">
-          <div class="main-menu flex items-center">
-              <ul class="omni-mobile-menu items-center">
-                <li><a href="#">More Products</a></li>
+        <div class="hidden lg:flex items-center justify-center w-9/12 xl:w-8/12">
+          <div class="main-menu">
+              <ul class="flex items-center">
                 <li class="current-menu-item"><a href="#">Distributorship available</a></li>
                 <li><a href="#">Government order</a></li>
                 <li><a href="#">Fire departments</a></li>
-                <li><a href="#">international</a></li>
-                <li class="menu-button"><a href="#">Buy it now</a></li>
-              </ul><!-- omni-mobile-menu -->
-            <div class="toggle-btn">
-                <div class="hamburger-icon">
-                    <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
-                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                        <path class="line middle" d="m 30,50 h 40" />
-                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                    </svg>
-                </div>
-            </div>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="hidden lg:flex items-center justify-end w-2/12">
+          <div class="main-menu-button pl-3 pb-3 xl:pb-0">
+            <a href="#" class="btn btn-primary flex items-center px-6 xl:px-8">
+              <span class="mr-1">Buy Now</span>
+              <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.93359 2.65625V1.39844C8.93359 0.824219 9.64453 0.523438 10.0547 0.933594L12.4062 3.3125C12.6797 3.55859 12.6797 3.96875 12.4062 4.21484L10.0547 6.59375C9.64453 7.00391 8.93359 6.70312 8.93359 6.12891V4.84375H0.703125C0.511719 4.84375 0.375 4.70703 0.375 4.51562V2.98438C0.375 2.82031 0.511719 2.65625 0.703125 2.65625H8.93359Z" fill="white"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -49,11 +96,65 @@
   </section>
 </header>
 <main>
-  <section id="page-title" style="background-image: url(./img/distribution-bg.png);" class="bg-cover bg-center pt-28 pb-36">
+  <section id="page-title" class="bg-cover bg-center py-24 md:py-32 lg:py-52" style="background-image: url(./img/distributionship-bg.png);">
+    <div class="gradient"></div>
+    <div class="container relative">
+      <h1 class="text-center text-white h2 max-w-[975px] mx-auto">APPLY NOW TO BECAME A AQUA DRAIN CADDY DISTRIBUTOR</h1>
+      <div class="page-title-button pt-4">
+        <a href="#distribution-form" class="btn btn-primary flex items-center w-[283px] justify-center mx-auto mb-6">
+          <span class="mr-1">Apply Now</span>
+          <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.93359 2.65625V1.39844C8.93359 0.824219 9.64453 0.523438 10.0547 0.933594L12.4062 3.3125C12.6797 3.55859 12.6797 3.96875 12.4062 4.21484L10.0547 6.59375C9.64453 7.00391 8.93359 6.70312 8.93359 6.12891V4.84375H0.703125C0.511719 4.84375 0.375 4.70703 0.375 4.51562V2.98438C0.375 2.82031 0.511719 2.65625 0.703125 2.65625H8.93359Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-down-button text-center absolute bottom-8 left-0 right-0">
+      <a href="#opportunity"><span class="text-white mb-3 block font-semibold">Scroll Down</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="mx-auto">
+        <path d="M7.29289 15.6492C7.68342 16.0398 8.31658 16.0398 8.70711 15.6492L15.0711 9.28528C15.4616 8.89476 15.4616 8.2616 15.0711 7.87107C14.6805 7.48055 14.0474 7.48055 13.6569 7.87107L8 13.5279L2.34315 7.87107C1.95262 7.48055 1.31946 7.48055 0.928932 7.87107C0.538408 8.26159 0.538408 8.89476 0.928932 9.28528L7.29289 15.6492ZM7 0.942139L7 14.9421L9 14.9421L9 0.942139L7 0.942139Z" fill="white"/>
+      </svg></a>
+    </div>
+  </section> 
+  <section id="opportunity" class="py-16">
     <div class="container">
-      <div class="flex flex-wrap items-center min-h-[580px]">
-        <div class="w-full text-center">
-          <h1 class="text-white mb-8 fadeinup">Apply now to became a Aqua Drain Caddy distributor</h1>
+      <div class="text-center text-red uppercase mb-3">UNIFIED AND FOCUSED - AQUA DRAIN CADDY - </div>
+      <h2 class="h3 text-center tracking-tighter mb-3">ONE TEAM, ONE MISSION</h2>
+      <h3 class="h4 text-center mb-8">Exceptional distributor opportunity:</h3>
+      <div class="distribution-opportunities custom-shadow w-[1150px] max-w-full mx-auto pt-9 px-4 pb-6 border-b-4 border-red mb-28">
+        <ul class="decorated-list text-black text-lg xxl:text-xl font-semibold">
+          <li>High-Profit, low investment</li>
+          <li>Work from home and enjoy your success, focus on what really matters – performance.</li>
+          <li>Minimum Liquid Capital $50,000 for exclusive territory plus inventory to start.</li>
+        </ul>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-5/12 lg:pr-3 lg:pt-3 lg:pb-8 xxl:pr-5">
+          <div class="opportunities-image pb-[60%] bg-cover bg-center mb-6 lg:mb-0 lg:h-full rounded-md" style="background-image: url(https://aquadraincaddy.com/wp-content/uploads/2023/08/Rectangle-17.png);"></div>
+        </div>
+        <div class="w-full lg:w-7/12 lg:pl-3 xxl:pl-5">
+          <p>You can own the exclusive distribution rights for your territory. Great venture for an investor. Take the new area operation who has great profits that is recession and inflation proof. As a new owner with great sales skills, you can grow this business by soliciting new accounts. Secure now you exclusive territory. Aqua Drain Caddy has a fantastic business model. We handle all sale operations through a logistics company and do all warehousing and transportation for deliveries for our distributor’s.<br>
+          The business can be home based or work from your existing established company as a second firm.<br>
+          Enjoy the benefits of working from home with our exceptional distributor opportunity. Seize the exclusive rights to distribute in your territory and unlock a world of high profits. This venture is perfect for savvy investors like you.<br>
+          With a recession and inflation-proof business model, Aqua Drain Caddy offers immense potential. As the new territory owner, you can leverage your exceptional sales skills to expand the business by attracting new accounts. Act now to secure your exclusive territory and unleash unlimited growth.<br>
+          Partnering with Aqua Drain Caddy means you don’t have to worry about sales operations, logistics, or warehousing. We take care of everything, providing a seamless experience for our distributors. Whether you prefer a home-based setup or want to integrate it into your existing established company as a second firm, the possibilities are endless.<br>
+          Don’t miss out on this game-changing opportunity. Join Aqua Drain Caddy as a distributor and redefine success on your own terms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tagline" class="bg-[#F9F8F8] py-16">
+    <div class="container">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full lg:w-1/2 lg:order-2 lg:pl-3 xl:pl-6">
+          <h2 class="h3 tracking-tighter mb-8 lg:min-h-[100px] text-center lg:text-left">AQUA DRAIN CADDY</h2>
+          <div class="mb-9 lg:mb-0">
+            This tagline is more than just a catchy phrase. It is a statement of purpose for the Aqua Drain Caddy team. We are unified in our mission to prevent basement flooding, and we are focused on providing our customers with the best possible product and service.<br>
+            We believe that when we work together, we can achieve anything. That’s why we are committed to building a strong team of dedicated professionals who are passionate about preventing basement flooding. We are also committed to providing our customers with the best possible product
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 lg:order-1 lg:pr-3 xl:pr-6">
+          <img src="./img/why-choose.png" alt="" class="mx-auto">
         </div>
       </div>
     </div>
@@ -62,379 +163,311 @@
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-3/4 xl:w-1/2 lg:mx-auto">
-          <h2 class="text-orange text-center mb-20 fadeinup">
-            YOUR INFORMATION
-          </h2>
-          <div id="distribution-form-wrap" class="text-base fadeinup">
+          <h2 class="h3 tracking-tighter text-center">YOUR INFORMATION</h2>
+          <div class="text-sm lg:text-base text-center mb-10">Become an Aqua Drain Caddy Distributor</div>
+          <div id="distribution-form-wrap" class="text-base">
             <form action="#">
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Full Name
-                  </div>
+              <div class="flex flex-wrap items-center lg:mb-14">
+                <div class="w-full lg:w-1/2 mb-5 lg:pr-3 xxl:pr-16">
+                  <label for="">First Name</label>
+                  <input type="text" name="name">
                 </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full mb-3 md:w-1/2 md:pr-1 md:mb-0">
-                      <input type="text" name="name" placeholder="First Name">
-                    </div>
-                    <div class="w-full md:w-1/2 md:pl-1">
-                      <input type="text" name="lastname" placeholder="Last Name">
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/2 mb-5 lg:pl-3 xxl:pl-16">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lastname">
                 </div>
               </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Email
-                  </div>
+              <div class="flex flex-wrap items-center lg:mb-14">
+                <div class="w-full lg:w-1/2 mb-5 lg:pr-3 xxl:pr-16">
+                  <label for="">Email</label>
+                  <input type="email" name="email">
                 </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <input type="email" name="email" placeholder="you@yourdomain.com">
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/2 mb-5 lg:pl-3 xxl:pl-16">
+                    <label for="">Phone Number</label>
+                    <input type="tel" name="phone">
                 </div>
               </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Phone Number
-                  </div>
+              <div class="flex flex-wrap items-center lg:mb-14">
+                <div class="w-full lg:w-1/2 mb-5 lg:pr-3 xxl:pr-16">
+                  <label for="">Company Website</label>
+                  <input type="url" name="website">
                 </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <input type="tel" name="phone" placeholder="Phone Number">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Company Website
-                  </div>
-                </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <input type="url" name="website" placeholder="www.yourdomain.com">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Country
-                  </div>
-                </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <select name="country">
-                        <option value="Afghanistan">Afghanistan</option>
-                        <option value="Åland Islands">Åland Islands</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="American Samoa">American Samoa</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Anguilla">Anguilla</option>
-                        <option value="Antarctica">Antarctica</option>
-                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Aruba">Aruba</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bermuda">Bermuda</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                        <option value="Botswana">Botswana</option>
-                        <option value="Bouvet Island">Bouvet Island</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-                        <option value="Brunei Darussalam">Brunei Darussalam</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Burkina Faso">Burkina Faso</option>
-                        <option value="Burundi">Burundi</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Cameroon">Cameroon</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Cape Verde">Cape Verde</option>
-                        <option value="Cayman Islands">Cayman Islands</option>
-                        <option value="Central African Republic">Central African Republic</option>
-                        <option value="Chad">Chad</option>
-                        <option value="Chile">Chile</option>
-                        <option value="China">China</option>
-                        <option value="Christmas Island">Christmas Island</option>
-                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Comoros">Comoros</option>
-                        <option value="Congo">Congo</option>
-                        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
-                        <option value="Cook Islands">Cook Islands</option>
-                        <option value="Costa Rica">Costa Rica</option>
-                        <option value="Cote D'ivoire">Cote D'ivoire</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Djibouti">Djibouti</option>
-                        <option value="Dominica">Dominica</option>
-                        <option value="Dominican Republic">Dominican Republic</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Equatorial Guinea">Equatorial Guinea</option>
-                        <option value="Eritrea">Eritrea</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-                        <option value="Faroe Islands">Faroe Islands</option>
-                        <option value="Fiji">Fiji</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="French Guiana">French Guiana</option>
-                        <option value="French Polynesia">French Polynesia</option>
-                        <option value="French Southern Territories">French Southern Territories</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Gambia">Gambia</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Gibraltar">Gibraltar</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Grenada">Grenada</option>
-                        <option value="Guadeloupe">Guadeloupe</option>
-                        <option value="Guam">Guam</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Guernsey">Guernsey</option>
-                        <option value="Guinea">Guinea</option>
-                        <option value="Guinea-bissau">Guinea-bissau</option>
-                        <option value="Guyana">Guyana</option>
-                        <option value="Haiti">Haiti</option>
-                        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
-                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Isle of Man">Isle of Man</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jersey">Jersey</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kiribati">Kiribati</option>
-                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
-                        <option value="Korea, Republic of">Korea, Republic of</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Lesotho">Lesotho</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
-                        <option value="Liechtenstein">Liechtenstein</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Macao">Macao</option>
-                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
-                        <option value="Madagascar">Madagascar</option>
-                        <option value="Malawi">Malawi</option>
-                        <option value="Malaysia">Malaysia</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Mali">Mali</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Marshall Islands">Marshall Islands</option>
-                        <option value="Martinique">Martinique</option>
-                        <option value="Mauritania">Mauritania</option>
-                        <option value="Mauritius">Mauritius</option>
-                        <option value="Mayotte">Mayotte</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
-                        <option value="Moldova, Republic of">Moldova, Republic of</option>
-                        <option value="Monaco">Monaco</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Montenegro">Montenegro</option>
-                        <option value="Montserrat">Montserrat</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Namibia">Namibia</option>
-                        <option value="Nauru">Nauru</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="Netherlands Antilles">Netherlands Antilles</option>
-                        <option value="New Caledonia">New Caledonia</option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="Niue">Niue</option>
-                        <option value="Norfolk Island">Norfolk Island</option>
-                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="Palau">Palau</option>
-                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Papua New Guinea">Papua New Guinea</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Peru</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Pitcairn">Pitcairn</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Puerto Rico">Puerto Rico</option>
-                        <option value="Qatar">Qatar</option>
-                        <option value="Reunion">Reunion</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Russian Federation">Russian Federation</option>
-                        <option value="Rwanda">Rwanda</option>
-                        <option value="Saint Helena">Saint Helena</option>
-                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                        <option value="Saint Lucia">Saint Lucia</option>
-                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
-                        <option value="Samoa">Samoa</option>
-                        <option value="San Marino">San Marino</option>
-                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="Senegal">Senegal</option>
-                        <option value="Serbia">Serbia</option>
-                        <option value="Seychelles">Seychelles</option>
-                        <option value="Sierra Leone">Sierra Leone</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Solomon Islands">Solomon Islands</option>
-                        <option value="Somalia">Somalia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
-                        <option value="Sudan">Sudan</option>
-                        <option value="Suriname">Suriname</option>
-                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-                        <option value="Swaziland">Swaziland</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
-                        <option value="Taiwan">Taiwan</option>
-                        <option value="Tajikistan">Tajikistan</option>
-                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Timor-leste">Timor-leste</option>
-                        <option value="Togo">Togo</option>
-                        <option value="Tokelau">Tokelau</option>
-                        <option value="Tonga">Tonga</option>
-                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                        <option value="Tunisia">Tunisia</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Turkmenistan">Turkmenistan</option>
-                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                        <option value="Tuvalu">Tuvalu</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="United Arab Emirates">United Arab Emirates</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option selected="selected" value="United States">United States</option>
-                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Vanuatu">Vanuatu</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Viet Nam">Viet Nam</option>
-                        <option value="Virgin Islands, British">Virgin Islands, British</option>
-                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-                        <option value="Wallis and Futuna">Wallis and Futuna</option>
-                        <option value="Western Sahara">Western Sahara</option>
-                        <option value="Yemen">Yemen</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Zimbabwe">Zimbabwe</option>
-                      </select>
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/2 mb-5 lg:pl-3 xxl:pl-16">
+                    <label for="">Country</label>
+                    <select name="country">
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Åland Islands">Åland Islands</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antarctica">Antarctica</option>
+                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Aruba">Aruba</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Azerbaijan">Azerbaijan</option>
+                      <option value="Bahamas">Bahamas</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="Barbados">Barbados</option>
+                      <option value="Belarus">Belarus</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Belize">Belize</option>
+                      <option value="Benin">Benin</option>
+                      <option value="Bermuda">Bermuda</option>
+                      <option value="Bhutan">Bhutan</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                      <option value="Botswana">Botswana</option>
+                      <option value="Bouvet Island">Bouvet Island</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                      <option value="Brunei Darussalam">Brunei Darussalam</option>
+                      <option value="Bulgaria">Bulgaria</option>
+                      <option value="Burkina Faso">Burkina Faso</option>
+                      <option value="Burundi">Burundi</option>
+                      <option value="Cambodia">Cambodia</option>
+                      <option value="Cameroon">Cameroon</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Cape Verde">Cape Verde</option>
+                      <option value="Cayman Islands">Cayman Islands</option>
+                      <option value="Central African Republic">Central African Republic</option>
+                      <option value="Chad">Chad</option>
+                      <option value="Chile">Chile</option>
+                      <option value="China">China</option>
+                      <option value="Christmas Island">Christmas Island</option>
+                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Comoros">Comoros</option>
+                      <option value="Congo">Congo</option>
+                      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                      <option value="Cook Islands">Cook Islands</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Cote D'ivoire">Cote D'ivoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                      <option value="France">France</option>
+                      <option value="French Guiana">French Guiana</option>
+                      <option value="French Polynesia">French Polynesia</option>
+                      <option value="French Southern Territories">French Southern Territories</option>
+                      <option value="Gabon">Gabon</option>
+                      <option value="Gambia">Gambia</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Gibraltar">Gibraltar</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Greenland">Greenland</option>
+                      <option value="Grenada">Grenada</option>
+                      <option value="Guadeloupe">Guadeloupe</option>
+                      <option value="Guam">Guam</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Guernsey">Guernsey</option>
+                      <option value="Guinea">Guinea</option>
+                      <option value="Guinea-bissau">Guinea-bissau</option>
+                      <option value="Guyana">Guyana</option>
+                      <option value="Haiti">Haiti</option>
+                      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Iceland">Iceland</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                      <option value="Iraq">Iraq</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Isle of Man">Isle of Man</option>
+                      <option value="Israel">Israel</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Jamaica">Jamaica</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Jersey">Jersey</option>
+                      <option value="Jordan">Jordan</option>
+                      <option value="Kazakhstan">Kazakhstan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kiribati">Kiribati</option>
+                      <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                      <option value="Korea, Republic of">Korea, Republic of</option>
+                      <option value="Kuwait">Kuwait</option>
+                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                      <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                      <option value="Latvia">Latvia</option>
+                      <option value="Lebanon">Lebanon</option>
+                      <option value="Lesotho">Lesotho</option>
+                      <option value="Liberia">Liberia</option>
+                      <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                      <option value="Liechtenstein">Liechtenstein</option>
+                      <option value="Lithuania">Lithuania</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Macao">Macao</option>
+                      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                      <option value="Madagascar">Madagascar</option>
+                      <option value="Malawi">Malawi</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Maldives">Maldives</option>
+                      <option value="Mali">Mali</option>
+                      <option value="Malta">Malta</option>
+                      <option value="Marshall Islands">Marshall Islands</option>
+                      <option value="Martinique">Martinique</option>
+                      <option value="Mauritania">Mauritania</option>
+                      <option value="Mauritius">Mauritius</option>
+                      <option value="Mayotte">Mayotte</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                      <option value="Moldova, Republic of">Moldova, Republic of</option>
+                      <option value="Monaco">Monaco</option>
+                      <option value="Mongolia">Mongolia</option>
+                      <option value="Montenegro">Montenegro</option>
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="Mozambique">Mozambique</option>
+                      <option value="Myanmar">Myanmar</option>
+                      <option value="Namibia">Namibia</option>
+                      <option value="Nauru">Nauru</option>
+                      <option value="Nepal">Nepal</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="Netherlands Antilles">Netherlands Antilles</option>
+                      <option value="New Caledonia">New Caledonia</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Niue">Niue</option>
+                      <option value="Norfolk Island">Norfolk Island</option>
+                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                      <option value="Norway">Norway</option>
+                      <option value="Oman">Oman</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Palau">Palau</option>
+                      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                      <option value="Panama">Panama</option>
+                      <option value="Papua New Guinea">Papua New Guinea</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Peru">Peru</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Pitcairn">Pitcairn</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Puerto Rico">Puerto Rico</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="Reunion">Reunion</option>
+                      <option value="Romania">Romania</option>
+                      <option value="Russian Federation">Russian Federation</option>
+                      <option value="Rwanda">Rwanda</option>
+                      <option value="Saint Helena">Saint Helena</option>
+                      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                      <option value="Saint Lucia">Saint Lucia</option>
+                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                      <option value="Samoa">Samoa</option>
+                      <option value="San Marino">San Marino</option>
+                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Senegal">Senegal</option>
+                      <option value="Serbia">Serbia</option>
+                      <option value="Seychelles">Seychelles</option>
+                      <option value="Sierra Leone">Sierra Leone</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Slovakia">Slovakia</option>
+                      <option value="Slovenia">Slovenia</option>
+                      <option value="Solomon Islands">Solomon Islands</option>
+                      <option value="Somalia">Somalia</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sudan">Sudan</option>
+                      <option value="Suriname">Suriname</option>
+                      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                      <option value="Swaziland">Swaziland</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                      <option value="Taiwan">Taiwan</option>
+                      <option value="Tajikistan">Tajikistan</option>
+                      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Timor-leste">Timor-leste</option>
+                      <option value="Togo">Togo</option>
+                      <option value="Tokelau">Tokelau</option>
+                      <option value="Tonga">Tonga</option>
+                      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                      <option value="Tunisia">Tunisia</option>
+                      <option value="Turkey">Turkey</option>
+                      <option value="Turkmenistan">Turkmenistan</option>
+                      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                      <option value="Tuvalu">Tuvalu</option>
+                      <option value="Uganda">Uganda</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option selected="selected" value="United States">United States</option>
+                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Uzbekistan">Uzbekistan</option>
+                      <option value="Vanuatu">Vanuatu</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Viet Nam">Viet Nam</option>
+                      <option value="Virgin Islands, British">Virgin Islands, British</option>
+                      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                      <option value="Wallis and Futuna">Wallis and Futuna</option>
+                      <option value="Western Sahara">Western Sahara</option>
+                      <option value="Yemen">Yemen</option>
+                      <option value="Zambia">Zambia</option>
+                      <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
                 </div>
               </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Street Address 1
-                  </div>
+              <div class="flex flex-wrap items-center lg:mb-14">
+                <div class="w-full lg:w-1/2 mb-5 lg:pr-3 xxl:pr-16">
+                  <label for="">Street Address 1</label>
+                  <input type="text" name="address_1">
                 </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <input type="text" name="address_1" placeholder="Street Address 1">
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/2 mb-5 lg:pl-3 xxl:pl-16">
+                    <label for="">Street Address 2</label>
+                    <input type="text" name="address_2">
                 </div>
               </div>
-              <div class="flex flex-wrap items-center mb-5">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    Street Address 2
-                  </div>
+              <div class="flex flex-wrap items-center mb-8 lg:mb-14">
+                <div class="w-full lg:w-1/3 mb-5 lg:pr-3">
+                  <label for="">City</label>
+                  <input type="text" name="city">
                 </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full">
-                      <input type="text" name="address_2" placeholder="Street Address 2">
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/3 mb-5 lg:px-3">
+                    <label for="">State</label>
+                    <input type="text" name="state">
                 </div>
-              </div>
-              <div class="flex flex-wrap items-center mb-8">
-                <div class="w-full lg:w-1/4">
-                  <div class="font-bold">
-                    City, State, Zip
-                  </div>
-                </div>
-                <div class="w-full lg:w-3/4">
-                  <div class="flex flex-wrap">
-                    <div class="w-full mb-3 md:w-1/3 md:pr-1 md:mb-0">
-                      <input type="text" name="city" placeholder="City">
-                    </div>
-                    <div class="w-full mb-3 md:w-1/3 md:px-1 md:mb-0">
-                      <input type="text" name="state" placeholder="State">
-                    </div>
-                    <div class="w-full md:w-1/3 md:pl-1">
-                      <input type="text" name="zip" placeholder="Zip">
-                    </div>
-                  </div>
+                <div class="w-full lg:w-1/3 mb-5 lg:pl-3">
+                  <label for="">Zip</label>
+                  <input type="text" name="zip">
                 </div>
               </div>
               <div class="flex flex-wrap items-center">
-                <div class="w-full text-right">
+                <div class="w-full text-center">
                   <input type="submit" name="submit" value="Sign Up">
                 </div>
               </div>
@@ -444,81 +477,43 @@
       </div>
     </div>
   </section>
-  <section id="distribution-description" class="pb-28">
+</main>
+<footer>
+  <div class="footer-menu bg-red bg-opacity-5 pt-12 pb-14">
     <div class="container">
-      <div class="flex">
-        <div class="w-full text-center lg:w-10/12 lg:mx-auto">
-          <h2 class="mb-20 fadeinup">Unified and Focused - Aqua Drain Caddy - One Team, One Mission</h2>
-        </div>
+      <div id="footer-menu" class="font-semibold mb-12">
+        <ul class="flex flex-col text-center md:flex-row md:gap-3 md:flex-wrap md:justify-center xl:gap-8">
+          <li><a href="#">Distributorship Available</a></li>
+          <li><a href="#">Government Orders</a></li>
+          <li><a href="#">Fire Department</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
       </div>
-      <div class="flex flex-wrap items-center mb-10">
-        <div class="w-full lg:w-1/2 lg:pr-4">
-          <div class="fadeinup">
-            <p>Exceptional distributor opportunity:</p> 
-            
-            <ul>
-              <li>High-Profit, low investment</li>
-              <li>Work from home and enjoy your success, focus on what really matters - performance.</li>
-              <li>Minimum Liquid Capital $50,000 for exclusive territory plus inventory to start.</li>
-            </ul>
-            
-            <p>You can own the exclusive distribution rights for your territory. Great venture for an investor. Take the new area operation who has great profits that is recession and inflation proof. As a new owner with great sales skills, you can grow this business by soliciting new accounts. Secure now you exclusive territory. Aqua Drain Caddy has a fantastic business model. We handle all sale operations through a logistics company and do all warehousing and transportation for deliveries for our distributor’s.</p>
-            
-            <p>The business can be home based or work from your existing established company as a second firm.</p>
-            
-            <p>Enjoy the benefits of working from home with our exceptional distributor opportunity. Seize the exclusive rights to distribute in your territory and unlock a world of high profits. This venture is perfect for savvy investors like you.</p>
-            
-            <p>With a recession and inflation-proof business model, Aqua Drain Caddy offers immense potential. As the new territory owner, you can leverage your exceptional sales skills to expand the business by attracting new accounts. Act now to secure your exclusive territory and unleash unlimited growth.</p>
-            
-            <p>Partnering with Aqua Drain Caddy means you don't have to worry about sales operations, logistics, or warehousing. We take care of everything, providing a seamless experience for our distributors. Whether you prefer a home-based setup or want to integrate it into your existing established company as a second firm, the possibilities are endless.</p>
-            
-            <p>Don't miss out on this game-changing opportunity. Join Aqua Drain Caddy as a distributor and redefine success on your own terms.</p>
+      <div id="subscribe-form" class="flex items-center justify-center">
+        <div class="form-title pr-3 text-lg font-medium">Newsletter</div>
+        <form action="#">
+          <div class="sunscribe-form-wrap relative">
+            <input type="email" name="email" placeholder="email" class="lg:min-w-[377px]">
+            <input type="image" src="./img/subscribe-arrow.svg" alt="Submit Form" />
           </div>
-          
-        </div>
-        <div class="w-full lg:w-1/2 lg:pl-4">
-          <img src="./img/Rectangle 16.png" alt="" class="fadeinup">
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center mb-10">
-        <div class="w-full lg:w-1/2 lg:pl-4 lg:order-2">
-          <div class="fadeinup">
-            <h3 class="mb-8">Aqua Drain Caddy</h3>
-            <p>This tagline is more than just a catchy phrase. It is a statement of purpose for the Aqua Drain Caddy team. We are unified in our mission to prevent basement flooding, and we are focused on providing our customers with the best possible product and service.</p>
-            <p>We believe that when we work together, we can achieve anything. That's why we are committed to building a strong team of dedicated professionals who are passionate about preventing basement flooding. We are also committed to providing our customers with the best possible product</p>
-          </div>
-          
-        </div>
-        <div class="w-full lg:w-1/2 lg:pr-4 lg:order-1">
-          <img src="./img/Rectangle 17.png" alt="" class="fadeinup">
-        </div>
+        </form>
       </div>
     </div>
-  </section>
-</main>
-<footer class="bg-black">
-  <div class="container pl-0 pr-0">
-    <div class="footer-wrap bg-green py-5 px-8">
-      <div class="flex flex-wrap">
-        <div class="w-full mb-6 footer-menu">
-          <ul>
-            <li><a href="#">More Products</a></li>
-            <li><a href="#">Distributorship available</a></li>
-            <li><a href="#">Government order</a></li>
-            <li><a href="#">Fire departments</a></li>
-            <li><a href="#">international</a></li>
-          </ul>
-        </div>
-        <div class="w-full px-3 text-center">
-          <div class="text-sm font-light text-white">© 2023 Copyright The Aqua Drain Caddy. All right reserved.</div>
-        </div>
+  </div>
+  <div class="copyright bg-[#41444B] py-4">
+    <div class="container pl-0 pr-0">
+      <div class="w-full px-3 text-center">
+        <div class="text-sm font-light text-white">© 2023 Copyright The Aqua Drain Caddy. All right reserved.</div>
       </div>
     </div>
   </div>
 </footer>
-<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block fixed p-3 bg-orange text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue hover:shadow-lg focus:bg-blue focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block fixed p-3 bg-red text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue hover:shadow-lg focus:bg-blue focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
   <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
 </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?ver=1.0.0" id="aquadraincaddy-fancybox-js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
