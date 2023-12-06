@@ -1,1 +1,12 @@
-<svg width="20" height="70" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M12.562 67.965c1.99-8.831 10.461-52.22-11.435-67.093" stroke="#C5A7CD" stroke-width="1.5"/><path fill="#C5A7CD" d="M7.536 61.83l1.285-.775 3.818 6.334 6.039-4.272.866 1.227-7.356 5.2z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="70px" viewBox="0 0 20 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BFE2DC75-94C2-4320-AAD0-62CB8897C8BE</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services" transform="translate(-1520, -1653)">
+            <g id="Group-22" transform="translate(1530.3355, 1688.208) scale(-1, 1) rotate(90) translate(-1530.3355, -1688.208)translate(1496, 1679)">
+                <path d="M67.092,11.435 C58.261,13.425 14.873,21.896 -2.27373675e-13,0" id="Stroke-280" stroke="#C5A7CD" stroke-width="1.5"></path>
+                <polygon id="Fill-282" fill="#C5A7CD" points="60.958 6.4081 60.182 7.6931 66.516 11.5111 62.244 17.5501 63.471 18.4161 68.671 11.0601"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

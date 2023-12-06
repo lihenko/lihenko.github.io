@@ -1,1 +1,14 @@
-<svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l12 12M1 13L13 1M1 1l12 12M1 13L13 1" stroke="#233044" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>EECCCC8F-122B-4D61-BACE-EFDF7EC05AC3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Services" transform="translate(-384, -815)" stroke="#233044">
+            <g id="close-medium-copy" transform="translate(385, 816)">
+                <line x1="0" y1="0" x2="12" y2="12" id="Path"></line>
+                <line x1="0" y1="12" x2="12" y2="0" id="Path"></line>
+                <line x1="0" y1="0" x2="12" y2="12" id="Path"></line>
+                <line x1="0" y1="12" x2="12" y2="0" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,1 +1,110 @@
-function stopScroll(e){return e.preventDefault(),!1}const body=document.body,hamburger=document.getElementById("hamburger"),mobileMenu=document.querySelector(".omni-mobile-menu"),menuLinks=document.querySelectorAll(".omni-mobile-menu a"),dropdownToggles=document.querySelectorAll(".omni-dropdown-toggle"),toggleBtn=document.querySelector(".toggle-btn");function toggleMenu(){body.classList.toggle("menu-open"),body.removeEventListener("touchmove",stopScroll),hamburger.classList.toggle("active"),body.classList.contains("menu-open")&&body.addEventListener("touchmove",stopScroll)}function closeMenu(){body.classList.contains("menu-open")&&(body.removeEventListener("touchmove",stopScroll),body.classList.remove("menu-open"),hamburger.classList.remove("active"))}mobileMenu.addEventListener("touchmove",(function(e){e.stopPropagation()}));for(let e=0;e<dropdownToggles.length;e++)dropdownToggles[e].addEventListener("click",(function(){let e=this.nextElementSibling;this.classList.toggle("omni-menu-open"),e.classList.toggle("menu-collapsed")}));for(let e=0;e<menuLinks.length;e++)menuLinks[e].addEventListener("click",(function(){-1!==this.href.indexOf("#")&&closeMenu()}));toggleBtn.addEventListener("click",toggleMenu),window.addEventListener("resize",closeMenu);let mybutton=document.getElementById("btn-back-to-top");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.style.display="block":mybutton.style.display="none"}function backToTop(){window.scrollTo({top:0,behavior:"smooth"})}window.onscroll=function(){scrollFunction()},mybutton.addEventListener("click",backToTop),jQuery(".input-file input[type=file]").on("change",(function(){let e=this.files[0];jQuery(this).closest(".input-file").find(".input-file-name").html(e.name)})),jQuery(document).on("click",'a[href^="#"]',(function(e){"#"!=jQuery(this).attr("href")&&(e.preventDefault(),jQuery("html, body").animate({scrollTop:jQuery($.attr(this,"href")).offset().top},500))}));
+//libraries like jquery etc
+
+// Menu Toggles
+function stopScroll (event) {
+    event.preventDefault();
+    return false;
+}
+
+const body = document.body;
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.querySelector('.omni-mobile-menu');
+const menuLinks = document.querySelectorAll('.omni-mobile-menu a');
+const dropdownToggles = document.querySelectorAll('.omni-dropdown-toggle');
+const toggleBtn = document.querySelector('.toggle-btn');
+
+function toggleMenu () {
+    body.classList.toggle('menu-open');
+    body.removeEventListener('touchmove', stopScroll);
+    hamburger.classList.toggle('active');
+
+    if (body.classList.contains('menu-open')) {
+        body.addEventListener('touchmove', stopScroll);
+    }
+}
+
+function closeMenu () {
+    if (body.classList.contains('menu-open')) {
+        body.removeEventListener('touchmove', stopScroll);
+        body.classList.remove('menu-open');
+        hamburger.classList.remove('active');
+    }
+}
+
+mobileMenu.addEventListener('touchmove', function (event) {
+    event.stopPropagation();
+});
+
+// Submenus
+for (let i = 0; i < dropdownToggles.length; i++) {
+    dropdownToggles[i].addEventListener('click', function () {
+        let toggle = this;
+        let menu = this.nextElementSibling;
+        toggle.classList.toggle('omni-menu-open');
+        menu.classList.toggle('menu-collapsed');
+    });
+}
+
+// Close Menu on Links With '#'
+for (let i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', function () {
+        if (this.href.indexOf('#') === -1) {
+            return;
+        }
+        closeMenu();
+    });
+}
+
+// Toggle the menu
+toggleBtn.addEventListener('click', toggleMenu);
+
+// Close menu on resize
+window.addEventListener('resize', closeMenu);
+
+//main.js file
+
+
+
+
+// Scroll to top
+let mybutton = document.getElementById("btn-back-to-top");
+
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+mybutton.addEventListener("click", backToTop);
+
+
+function backToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+jQuery('.input-file input[type=file]').on('change', function(){
+	let file = this.files[0];
+	jQuery(this).closest('.input-file').find('.input-file-name').html(file.name);
+});
+
+jQuery(document).on('click', 'a[href^="#"]', function (event) {
+  if (jQuery(this).attr('href') == '#') {
+    return;
+  } else {
+    event.preventDefault();
+    jQuery('html, body').animate({
+        scrollTop: jQuery($.attr(this, 'href')).offset().top
+    }, 500);
+  }
+  
+});
