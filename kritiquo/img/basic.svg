@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>DCD4D052-7046-4BD4-943B-D556364AD832</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Services" transform="translate(-573, -423)" fill="#C5A7CD">
-            <path d="M702.383445,487.357207 C702.567983,523.084871 673.753885,552.197109 638.02622,552.383428 C602.298556,552.567966 573.186318,523.753867 573,488.026203 C572.815462,452.298539 601.62956,423.186301 637.357224,423 C673.084889,422.817262 702.197127,451.629543 702.383445,487.357207" id="Fill-54" transform="translate(637.6917, 487.6917) scale(-1, 1) rotate(90) translate(-637.6917, -487.6917)"></path>
-        </g>
-    </g>
-</svg>
+<svg width="130" height="130" xmlns="http://www.w3.org/2000/svg"><path d="M64.357 129.383c35.728.185 64.84-28.63 65.026-64.357C129.568 29.3 100.753.186 65.026 0 29.3-.185.186 28.63 0 64.357c-.183 35.728 28.63 64.84 64.357 65.026" fill="#C5A7CD" fill-rule="evenodd"/></svg>

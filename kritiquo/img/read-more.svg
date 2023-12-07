@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="51px" viewBox="0 0 50 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>3A39A91F-CB09-4366-82A4-4BC9D910BB47</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Blog" transform="translate(-1101, -1213)" fill-rule="nonzero">
-            <g id="Group-4-Copy" transform="translate(764, 734)">
-                <g id="Green-Arrow-Icon-(1)-Copy" transform="translate(362, 504.5) rotate(36) translate(-362, -504.5)translate(345, 486)">
-                    <polygon id="Path" fill="#2EECA6" points="15.0766487 0 0 10.9131932 1.92300281 29.4135413 18.9226543 37 34 26.0861105 32.0763002 7.58645867"></polygon>
-                    <polygon id="Path" fill="#171C26" points="24.6030402 23.0871742 21.8242006 22.6330541 22.4932059 18.346638 22.9702835 17.1660662 22.6035644 16.8867156 21.6788839 17.8139067 10.6464659 26 9 23.6732488 20.032418 15.4871555 21.1805572 14.875813 21.0352405 14.4322212 19.790452 14.5283796 15.6050562 13.844041 16.0492319 11 24.8011371 12.4304431 26 14.1254972"></polygon>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="50" height="51" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path fill="#2EECA6" d="M34.318 9.403L15.706 9.37 6.388 25.467l9.293 16.13 18.613.033 9.318-16.098z"/><path fill="#171C26" d="M28.455 33.68l-1.981-2 3.06-3.075 1.08-.675-.132-.441-1.293.206-13.738.138.036-2.85 13.737-.138 1.288.18.144-.444-1.064-.654-2.984-3.014 2.031-2.04 6.24 6.302-.027 2.076z"/></g></svg>
