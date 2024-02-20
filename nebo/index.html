@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body class="open-left">
+  <ul class="omni-mobile-menu">
+    <li><a href="#">Збори на ЗСУ</a></li>
+    <li>
+        <a class="omni-dropdown-toggle">Дрони</a>
+        <ul class="omni-dropdown-menu">
+            <li><a href="#">Дрони</a></li>
+            <li><a href="#">Як отримати БПЛА</a></li>
+        </ul>
+    </li>
+    <li>
+      <a class="omni-dropdown-toggle">Про фонд</a>
+      <ul class="omni-dropdown-menu">
+          <li><a href="#">Про фонд</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Відео звіти</a></li>
+          <li><a href="#">Блог</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Часті запитання</a></li>
+    <li><a href="#">Контакти</a></li>
+    <div class="flex items-center">
+      <a href="#">UA</a>
+      <span>|</span>
+      <a href="#">ENG</a>
+    </div>
+  </ul><!-- omni-mobile-menu -->
+  <div class="toggle-btn">
+    <div class="hamburger-icon">
+        <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+            <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+    </div>
+  </div>
+<div class="content-wrapper">
+  <div class="py-2 shadow" id="fixed-header">
+    <div class="container">
+      <div class="flex flex-wrap items-center -mx-3">
+        <div class="w-[40%] px-3 order-1 md:w-[162px]">
+          <div class="brand">
+            <a href="/">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="hidden px-3 md:block md:w-[calc(50%-81px-31px)] md:order-2 lg:w-[127px] xl:w-[150px]">
+          <ul id="social" class="flex gap-3 justify-center items-center xl:gap-4 xxl:gap-5">
+            <li>
+              <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-3 lg:w-[calc(100%-162px-127px-70px-180px)] xl:w-[calc(100%-162px-150px-70px-240px)] xxl:w-[calc(100%-162px-150px-100px-240px)]">
+          <ul id="main-menu">
+            <li><a href="#">Збори на ЗСУ</a></li>
+            <li class="has-child">
+                <a href="#">Дрони</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Дрони</a></li>
+                    <li><a href="#">Як отримати БПЛА</a></li>
+                </ul>
+            </li>
+            <li class="has-child">
+              <a href="#">Про фонд</a>
+              <ul class="sub-menu">
+                  <li><a href="#">Про фонд</a></li>
+                  <li><a href="#">Новини</a></li>
+                  <li><a href="#">Відео звіти</a></li>
+                  <li><a href="#">Блог</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-4 lg:w-[70px] xxl:w-[100px]">
+          <ul id="main-lang">
+            <li><a href="#" class="current">UA</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+        </div>
+        <div class="w-[calc(60%-62px)] px-3 order-2 md:w-[calc(50%-81px-31px)] md:order-3 lg:order-5 lg:w-[180px] xl:w-[240px]">
+          <a href="#" class="btn btn-yellow">підтримати</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <header class="py-4">
+    <div class="container">
+      <div class="flex flex-wrap items-center -mx-3">
+        <div class="w-[40%] px-3 order-1 md:w-[162px]">
+          <div class="brand">
+            <a href="/">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="hidden px-3 md:block md:w-[calc(50%-81px-31px)] md:order-2 lg:w-[127px] xl:w-[150px]">
+          <ul id="social" class="flex gap-3 justify-center items-center xl:gap-4 xxl:gap-5">
+            <li>
+              <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-3 lg:w-[calc(100%-162px-127px-70px-180px)] xl:w-[calc(100%-162px-150px-70px-240px)] xxl:w-[calc(100%-162px-150px-100px-240px)]">
+          <ul id="main-menu">
+            <li><a href="#">Збори на ЗСУ</a></li>
+            <li class="has-child">
+                <a href="#">Дрони</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Дрони</a></li>
+                    <li><a href="#">Як отримати БПЛА</a></li>
+                </ul>
+            </li>
+            <li class="has-child">
+              <a href="#">Про фонд</a>
+              <ul class="sub-menu">
+                  <li><a href="#">Про фонд</a></li>
+                  <li><a href="#">Новини</a></li>
+                  <li><a href="#">Відео звіти</a></li>
+                  <li><a href="#">Блог</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-4 lg:w-[70px] xxl:w-[100px]">
+          <ul id="main-lang">
+            <li><a href="#" class="current">UA</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+        </div>
+        <div class="w-[calc(60%-62px)] px-3 order-2 md:w-[calc(50%-81px-31px)] md:order-3 lg:order-5 lg:w-[180px] xl:w-[240px]">
+          <a href="#" class="btn btn-yellow">підтримати</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="home-hero">
+      <div class="container">
+        <div class="bg-blue text-white rounded-2xl py-14">
+          <div class="second-container">
+            <div class="flex flex-wrap items-center">
+              <div class="w-full text-center lg:w-1/2 lg:text-left">
+                <div class="text-xxl animate" xyz="in-left">Благодійний фонд <span class="uppercase">Небо Перемоги</span></div>
+                <h1 class="mb-10 animate" xyz="in-left">Крізь небо до перемоги!</h1>
+                <div class="flex mb-11 gap-5 flex-wrap justify-center lg:justify-start lg:mb-0 animate" xyz="in-fade down stagger">
+                  <a href="#" class="btn btn-yellow alternate xyz-nested">Зробити внесок</a>
+                  <a href="#" class="btn btn-white xyz-nested">Більше про дрони</a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <div class="js-modal-btn video-button-wrap cursor-pointer relative animate" data-video-url="https://neboperemogy.fund/wp-content/themes/nebo-peremogy/img/video.mov" xyz="in-right">
+                  <img src="./img/hero-video-thumbnail.png" alt="" class="mx-auto rounded-xl">
+                  <div class="video-button absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="64" cy="64" r="64" fill="black" fill-opacity="0.253321"/>
+                    <circle id="video-button" cx="64.5" cy="64.5" r="42.5" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M72.4223 62.7111C73.8964 63.4482 73.8964 65.5518 72.4223 66.2889L55.8944 74.5528C54.5646 75.2177 53 74.2507 53 72.7639V56.2361C53 54.7493 54.5646 53.7823 55.8944 54.4472L72.4223 62.7111Z" fill="#011F75"/>
+                    </svg>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="home-video-reports" class="py-10">
+      <div class="container px-0">
+        <div class="second-container">
+          <div class="home-video-report-controls flex flex-wrap items-center mb-10 xxl:px-8">
+            <div class="w-full text-center mb-6 md:w-1/2 md:text-left md:mb-0">
+              <h2 class="animate" xyz="in-left">Відеозвіти</h2>
+            </div>
+            <div class="w-full flex gap-2 md:gap-4 md:w-1/2 justify-center md:justify-end items-center">
+              <div class="home-video-repots-prev cursor-pointer">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                  <path d="M18.01 24.975H32.0107" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.889 20.0252L18.0093 24.9742L22.889 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="home-video-repots-next cursor-pointer">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                  <path d="M31.9399 24.975H17.9392" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M27.0609 20.0252L31.9407 24.9742L27.0609 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="home-video-more-reports">
+                <a href="#" class="btn btn-blue">Більше відео</a>
+              </div>
+            </div>
+          </div>
+          <div class="home-video-reports-slider -mx-3">
+            <div class="home-video-reports-slider-item px-3">
+              <div class="video-reports-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-14 h-full">
+                <div class="js-modal-btn report-button cursor-pointer relative pb-[61%] bg-cover bg-center rounded-lg mb-6" data-video-url="https://neboperemogy.fund/wp-content/themes/nebo-peremogy/img/video.mov" style="background-image: url(./img/video-1.png);">
+                  <div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewBox="0 0 60 42" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5207 0.365599L30 0L49.4793 0.365599C55.0553 0.470253 59.5626 4.90042 59.7126 10.4238L60 21L59.7126 31.5762C59.5626 37.0996 55.0553 41.5297 49.4793 41.6344L30 42L10.5207 41.6344C4.94473 41.5297 0.437426 37.0996 0.287355 31.5762L0 21L0.287355 10.4238C0.437426 4.90042 4.94473 0.470253 10.5207 0.365599ZM24 12V30L40 21L24 12Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <h5 class="mb-5">Громовий стоп-сигнал для Урала</h5>
+                <div class="video-report-description">
+                  Трохи літа вам у стрічку. Урал гнав, як на Париж-Дакар, але наш FPV-дрон ГРІМ показав, що на його трасі швидкість не рятує
+                </div>
+              </div>
+            </div>
+            <div class="home-video-reports-slider-item px-3">
+              <div class="video-reports-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-14 h-full">
+                <div class="js-modal-btn report-button cursor-pointer relative pb-[61%] bg-cover bg-center rounded-lg mb-6" data-video-url="https://neboperemogy.fund/wp-content/themes/nebo-peremogy/img/video.mov" style="background-image: url(./img/video-2.png);">
+                  <div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewBox="0 0 60 42" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5207 0.365599L30 0L49.4793 0.365599C55.0553 0.470253 59.5626 4.90042 59.7126 10.4238L60 21L59.7126 31.5762C59.5626 37.0996 55.0553 41.5297 49.4793 41.6344L30 42L10.5207 41.6344C4.94473 41.5297 0.437426 37.0996 0.287355 31.5762L0 21L0.287355 10.4238C0.437426 4.90042 4.94473 0.470253 10.5207 0.365599ZM24 12V30L40 21L24 12Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <h5 class="mb-5">Танкове «лото” від FPV-дрона ГРІМ</h5>
+                <div class="video-report-description mb-6">
+                  Два танки в полі – як номери в лото. ГРІМ вибирає, кому “щастить” сьогодні. Запальне відео.
+                </div>
+                <div class="video-report-additional-buttons flex justify-between items-center absolute bottom-6 left-4 right-4">
+                  <div class="video-report-additional-link">
+                    <a href="#" class="flex gap-4 items-center">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                        <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Збір для 3-ї окремої штурмової
+                    </a>
+                  </div>
+                  <div class="video-report-monobank-link">
+                    <a href="#">
+                      <img src="./img/mono-banka-icon.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-video-reports-slider-item px-3">
+              <div class="video-reports-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-14 h-full">
+                <div class="js-modal-btn report-button cursor-pointer relative pb-[61%] bg-cover bg-center rounded-lg mb-6" data-video-url="https://neboperemogy.fund/wp-content/themes/nebo-peremogy/img/video.mov" style="background-image: url(./img/video-3.png);">
+                  <div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewBox="0 0 60 42" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5207 0.365599L30 0L49.4793 0.365599C55.0553 0.470253 59.5626 4.90042 59.7126 10.4238L60 21L59.7126 31.5762C59.5626 37.0996 55.0553 41.5297 49.4793 41.6344L30 42L10.5207 41.6344C4.94473 41.5297 0.437426 37.0996 0.287355 31.5762L0 21L0.287355 10.4238C0.437426 4.90042 4.94473 0.470253 10.5207 0.365599ZM24 12V30L40 21L24 12Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <h5 class="mb-5">Вітаємо на конвеєрі «ГРІМ»!</h5>
+                <div class="video-report-description mb-6">
+                  Тут ми перетворюємо старі русняві танки на купи металобрухту. Арт-інсталяція від дрону ГРІМ. Хочеш наближати перемогу разом із нами?
+                </div>
+                <div class="video-report-additional-buttons flex justify-between items-center absolute bottom-6 left-4 right-4">
+                  <div class="video-report-additional-link">
+                    <a href="#" class="flex gap-4 items-center">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                        <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Донать для 58-ї бригади
+                    </a>
+                  </div>
+                  <div class="video-report-monobank-link">
+                    <a href="#">
+                      <img src="./img/mono-banka-icon.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-video-reports-slider-item px-3">
+              <div class="video-reports-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-14 h-full">
+                <div class="js-modal-btn report-button cursor-pointer relative pb-[61%] bg-cover bg-center rounded-lg mb-6" data-video-url="https://neboperemogy.fund/wp-content/themes/nebo-peremogy/img/video.mov" style="background-image: url(./img/video-1.png);">
+                  <div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewBox="0 0 60 42" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5207 0.365599L30 0L49.4793 0.365599C55.0553 0.470253 59.5626 4.90042 59.7126 10.4238L60 21L59.7126 31.5762C59.5626 37.0996 55.0553 41.5297 49.4793 41.6344L30 42L10.5207 41.6344C4.94473 41.5297 0.437426 37.0996 0.287355 31.5762L0 21L0.287355 10.4238C0.437426 4.90042 4.94473 0.470253 10.5207 0.365599ZM24 12V30L40 21L24 12Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <h5 class="mb-5">Громовий стоп-сигнал для Урала</h5>
+                <div class="video-report-description">
+                  Трохи літа вам у стрічку. Урал гнав, як на Париж-Дакар, але наш FPV-дрон ГРІМ показав, що на його трасі швидкість не рятує
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="pt-12">
+      <div class="container">
+        <div class="second-container">
+          <div class="flex flex-wrap -mx-3 items-center">
+            <div class="w-full px-3 lg:w-1/2 lg:order-2 xxl:px-24 bg-no-repeat bg-[center_right]" style="background-image: url(./img/about-bg.svg);">
+              <h2 class="text-center mb-6 lg:text-left animate" xyz="in-right">Про фонд:</h2>
+              <p class="animate" xyz="in-fade right">Наша команда завзятих українців заснувала БО «БФ «НЕБО ПЕРЕМОГИ» у березні 2023 року. До війни працівники та волонтери Фонду виготовляли сільськогосподарські дрони для агроскаутингу й розпилення добрив.</p>
+
+              <p class="animate" xyz="in-fade right">Розуміючи, що наші навички можуть ефективно підтримати українські війська, ми налагодили серійне виробництво дронів відповідно до їхніх потреб. Наша місія - закупівля, виготовлення, ремонт і постачання цієї важливої техніки.</p>
+
+              <p class="animate" xyz="in-fade right">Працюючи на некомерційних засадах, фонд прагне прискорити перемогу завдяки прозорій, законній діяльності. Ми покладаємось на благодійні внески партнерів і пожертви громадян. </p>
+
+              <p class="text-blue font-bold animate" xyz="in-fade right">Разом ми віримо, що над Україною знову запанує мирне небо.</p>
+
+
+            </div>
+            <div class="w-full px-3 mb-9 lg:mb-0 lg:w-1/2 lg:order-1">
+              <img src="./img/volyniaka.png" alt="" class="mx-auto mb-14 lg:mb-24 animate" xyz="in-left">
+              <div class="flex flex-wrap gap-2 lg:gap-4 justify-center animate" xyz="in-fade down stagger ">
+                <a href="#" class="btn btn-yellow xyz-nested">Зробити внесок</a>
+                <a href="#" class="btn btn-blue xyz-nested">Більше про ФОНД</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aims" class="bg-[#F4F4F4] rounded-2xl py-14 lg:py-24">
+      <div class="container">
+        <div class="second-container">
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 lg:w-1/2 xxl:w-[440px]">
+              <h3 class="text-blue leading-8 mb-9 animate" xyz="in-left">Наша ціль та потенційні можливості виробництва:</h3>
+              <div class="h-[1px] w-[95%] bg-[#DFDFDF] mb-9"></div>
+              <h3 class="h1 animate" xyz="in-left">5000</h3>
+              <p class="font-bold animate mb-2" xyz="in-left">Виробів на місяць</p>
+              <p class="text-lg text-[#707070] animate mb-8" xyz="in-left">Ціль для вироблення дронів «Грім»</p>
+              <div class="h-[1px] w-[95%] bg-[#DFDFDF] mb-9"></div>
+              <h3 class="h1 animate" xyz="in-left">50</h3>
+              <p class="font-bold animate mb-2" xyz="in-left">Виробів на місяць</p>
+              <p class="text-lg text-[#707070] animate mb-8" xyz="in-left">Ціль для вироблення дронів «Волиняка»</p>
+            </div>
+            <div class="w-full px-3 lg:w-1/2 xxl:w-[calc(100%-440px)] xxl:pl-14 xxl:pr-0">
+              <div class="flex flex-wrap -mx-3 animate" xyz="in-right stagger">
+                <div class="w-full p-3 md:w-1/2 lg:w-full xxl:w-1/2 xyz-nested">
+                  <div class="bg-blue rounded-2xl py-12 bg-no-repeat bg-[center_right] px-6 lg:pl-12" style="background-image: url(./img/grim-schema.png);">
+                    <h4 class="h1 text-white">10 002</h4>
+                    <div class="font-bold text-lg text-yellow font-nebofont mb-2">fpv-дрони "Грім"</div>
+                    <div class="text-white">Відправлено на фронт</div>
+                  </div>
+                </div>
+                <div class="w-full p-3 md:w-1/2 lg:w-full xxl:w-1/2 xyz-nested">
+                  <div class="bg-blue rounded-2xl py-12 bg-no-repeat bg-[center_right] px-6 lg:pl-12" style="background-image: url(./img/volyniaka-schema.png);">
+                    <h4 class="h1 text-white">50</h4>
+                    <div class="font-bold text-lg text-yellow font-nebofont mb-2">Гексакоптерів "Волиняка"</div>
+                    <div class="text-white">Відправлено на фронт</div>
+                  </div>
+                </div>
+                <div class="w-full p-3 md:w-1/2 lg:w-full xxl:w-1/2 xyz-nested">
+                  <div class="bg-blue rounded-2xl py-12  px-6 lg:pl-12">
+                    <h4 class="h1 text-white">94</h4>
+                    <div class="font-bold text-lg text-yellow font-nebofont mb-2">Наземних станцій</div>
+                    <div class="text-white">Відправлено на фронт</div>
+                  </div>
+                </div>
+                <div class="w-full p-3 md:w-1/2 lg:w-full xxl:w-1/2 xyz-nested">
+                  <div class="bg-blue rounded-2xl py-12  px-6 lg:pl-12">
+                    <h4 class="h1 text-white">137 564 048</h4>
+                    <div class="font-bold text-lg text-yellow font-nebofont mb-2">Гривень</div>
+                    <div class="text-white">Зібрано</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="drones" class="py-14 lg:py-24">
+      <div class="container">
+        <div class="second-container">
+          <div class="flex flex-wrap -mx-3 xxl:items-center">
+            <div class="w-full px-3 lg:w-1/2 xxl:w-[440px]">
+              <h2 class="text-center mb-6 lg:text-left animate" xyz="in-left">Арсенал дронів</h2>
+              <p class="animate" xyz="in-left">Фонд «Небо Перемоги» вдячний фінансовій допомозі, адже <a href="#" class="underline">кожна сума</a>, витрачена фондом на виробництво дронів – це не тільки ваш благодійний вклад, а й прямі інвестиції у ефективне знищення ворога.</p>
+
+              <p class="animate mb-10 xxl:mb-20" xyz="in-left">Слідкуйте за результатами використання донатів у <a href="#" class="underline">відео-звітах</a> фонду «Небо Перемоги». Слава Україні!</p>
+              <a href="#" class="btn btn-yellow mb-3 animate" xyz="in-fade down">Зробити внесок</a>
+              <p class="animate underline" xyz="in-fade down"><a href="#">Анкетні дані</a> для отримання FPV-дронів “Грім”</p>
+            </div>
+            <div class="w-full lg:w-1/2 xxl:w-[calc(100%-440px)] xxl:pl-14 xxl:pr-0">
+              <div class="drone-wrap animate flex flex-wrap items-center" xyz="in-right stagger">
+                <div class="drone-image relative w-[340px] max-w-full bg-cover rounded-xl mb-6 xyz-nested md:max-w-1/2 xxl:mb-0" style="background-image: url(./img/grim-photo.jpg);">
+                  <div class="pb-[63%]"></div>
+                  <a href="#" class="btn btn-blue absolute right-3 bottom-3 w-[162px] py-2">Дізнатися більше</a>
+                </div>
+                <div class="drone-data xyz-nested w-full md:w-1/2 md:pl-6 lg:w-full lg:pl-0 xxl:w-1/2 xxl:pl-6">
+                  <h5 class="uppercase mb-4">fpv-дрон "Грім"</h5>
+                  <div>
+                    Унікальна міцна рама власного виробництва з карбону. Вітростійкість і маневреність на великих швидкостях, своя система ініціації вибуху, дуже якісні, посилені та потужні батареї, що дозволяють літати з навантаженням 12 км.
+                  </div>
+                </div>
+              </div>
+              <div class="h-[1px] w-[100%] bg-[#DFDFDF] my-9"></div>
+              <div class="drone-wrap animate flex flex-wrap items-center" xyz="in-right stagger">
+                <div class="drone-image relative w-[340px] max-w-full bg-cover rounded-xl mb-6 xyz-nested md:max-w-1/2 xxl:mb-0" style="background-image: url(./img/volyniaka-photo.png);">
+                  <div class="pb-[63%]"></div>
+                  <a href="#" class="btn btn-blue absolute right-3 bottom-3 w-[162px] py-2">Дізнатися більше</a>
+                </div>
+                <div class="drone-data xyz-nested w-full md:w-1/2 md:pl-6 lg:w-full lg:pl-0 xxl:w-1/2 xxl:pl-6">
+                  <h5 class="mb-4">Гексакоптер "Волиняка"</h5>
+                  <div>
+                    Розбірна рама власної розробки. Унікальна багатоканальна система зв'язку, сучасна тепловізійна камера, а також унікальна система скидання, що дозволяє використовувати до 80% всіх типів БК, що стоять на озброєнні ЗСУ.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fundraising" class="bg-[#F4F4F4] rounded-2xl py-14 lg:py-24">
+      <div class="container px-0">
+        <div class="second-container">
+          <h2 class="text-center animate mb-14" xyz="in-down">
+            Активні збори
+          </h2>
+          <div class="fundraise-wrap animate bg-blue px-3 py-8 rounded-lg mb-5 lg:px-8" xyz="in-down">
+            <div class="flex flex-wrap -mx-3 items-center">
+              <div class="w-full px-3 lg:w-1/2 xxl:pr-8">
+                <div class="fundraise-image w-full bg-cover rounded-lg mb-6 lg:mb-0" style="background-image: url(./img/terra.png);">
+                  <div class="pb-[54%]"></div>
+                </div>
+              </div>
+              <div class="w-full px-3 lg:w-1/2 xxl:pl-8">
+                <h4 class="text-white mb-3 min-h-16">Збір на 100 fpv-дронів “Грім” та 2 гексакоптера “Волиняка” для підрозділу “Terra” (3 ОШБР)</h4>
+                <p class="text-white">Збір на дрони «Грім», виробництва БФ «Небо перемоги». Саме ці дрони пройшли наші польові випробування та ефективно знищують цілі ворога в складних умовах.</p>
+                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                  <a href="#" class="btn btn-yellow alternate">підтримати</a>
+                  <a href="#" class="btn btn-white">ДЕТАЛЬНІШЕ ПРО ЗБІР</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fundraise-wrap animate bg-blue px-3 py-8 rounded-lg mb-5 lg:px-8" xyz="in-down">
+            <div class="flex flex-wrap -mx-3 items-center">
+              <div class="w-full px-3 lg:w-1/2 xxl:pr-8">
+                <div class="fundraise-image w-full bg-cover rounded-lg mb-6 lg:mb-0" style="background-image: url(./img/58brigade.png);">
+                  <div class="pb-[54%]"></div>
+                </div>
+              </div>
+              <div class="w-full px-3 lg:w-1/2 xxl:pl-8">
+                <h4 class="text-white mb-3 min-h-16">Збір на 100 FPV-дронів “Грім” для 58 бригади</h4>
+                <p class="text-white">Збір на дрони «Грім», виробництва БФ «Небо перемоги». Саме ці дрони пройшли наші польові випробування та ефективно знищують цілі ворога в складних умовах.</p>
+                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                  <a href="#" class="btn btn-yellow alternate">підтримати</a>
+                  <a href="#" class="btn btn-white">ДЕТАЛЬНІШЕ ПРО ЗБІР</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fundraise-wrap animate bg-blue px-3 py-8 rounded-lg mb-5 lg:px-8" xyz="in-down">
+            <div class="flex flex-wrap -mx-3 items-center">
+              <div class="w-full px-3 lg:w-1/2 xxl:pr-8">
+                <div class="fundraise-image w-full bg-cover rounded-lg mb-6 lg:mb-0" style="background-image: url(./img/pvp.png);">
+                  <div class="pb-[54%]"></div>
+                </div>
+              </div>
+              <div class="w-full px-3 lg:w-1/2 xxl:pl-8">
+                <h4 class="text-white mb-3 min-h-16">Збір на 100 FPV-дронів “Грім” та гексакоптер “Волиняка” для підрозділу аеророзвідки PVP</h4>
+                <p class="text-white">Дрони виробництва БФ “Небо Перемоги” пройшли польові випробування та ефективно знищують цілі ворога у складних умовах.</p>
+                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                  <a href="#" class="btn btn-yellow alternate">підтримати</a>
+                  <a href="#" class="btn btn-white">ДЕТАЛЬНІШЕ ПРО ЗБІР</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fundraise-wrap animate bg-blue px-3 py-8 rounded-lg mb-5 lg:px-8" xyz="in-down">
+            <div class="flex flex-wrap -mx-3 items-center">
+              <div class="w-full px-3 lg:w-1/2 xxl:pr-8">
+                <div class="fundraise-image w-full bg-cover rounded-lg mb-6 lg:mb-0" style="background-image: url(./img/kraken.png);">
+                  <div class="pb-[54%]"></div>
+                </div>
+              </div>
+              <div class="w-full px-3 lg:w-1/2 xxl:pl-8">
+                <h4 class="text-white mb-3 min-h-16">Збір для спецпідрозділу “KRAKEN” на 100 дронів “Грім”</h4>
+                <p class="text-white">Збір на дрони «Грім», виробництва БФ «Небо перемоги». Саме ці дрони пройшли наші польові випробування та ефективно знищують цілі ворога в складних умовах.</p>
+                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                  <a href="#" class="btn btn-yellow alternate">підтримати</a>
+                  <a href="#" class="btn btn-white">ДЕТАЛЬНІШЕ ПРО ЗБІР</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fundraising-archives" class="py-14 lg:py-24">
+      <div class="container px-0">
+        <div class="second-container">
+          <h2 class="text-center animate mb-14" xyz="in-down">
+            Архівні збори
+          </h2>
+          <div class="fundraise-wrap animate bg-blue px-3 py-8 rounded-lg mb-5 lg:px-8" xyz="in-down">
+            <div class="flex flex-wrap -mx-3 items-center">
+              <div class="w-full px-3 lg:w-1/2 xxl:pr-8">
+                <div class="fundraise-image w-full bg-cover rounded-lg mb-6 lg:mb-0" style="background-image: url(./img/azov.png);">
+                  <div class="pb-[54%]"></div>
+                </div>
+              </div>
+              <div class="w-full px-3 lg:w-1/2 xxl:pl-8">
+                <h4 class="text-white mb-3">Збір для Азову на 25 дронів "Грім”</h4>
+                <div class="font-bold uppercase text-yellow mb-3">Збір завершено</div>
+                <div class="flex flex-wrap text-white">
+                  <div class="w-1/2 mb-6">
+                    <div>Початок збору:</div>
+                    <div class="font-bold">18.07.2023р.</div>
+                  </div>
+                  <div class="w-1/2 mb-6">
+                    <div>Закрито збір:</div>
+                    <div class="font-bold">15.09.2023р.</div>
+                  </div>
+                  <div class="w-1/2 mb-6">
+                    <div>Мета збору:</div>
+                    <div class="font-bold">600 000 грн на 25 дронів "Грім"</div>
+                  </div>
+                  <div class="w-1/2 mb-6">
+                    <div>Зібрано:</div>
+                    <div class="font-bold">1 039 000 грн.</div>
+                  </div>
+                </div>
+                <div class="fundraising-more">
+                  <a href="#" class="flex gap-4 items-center text-white hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    ДЕТАЛЬНІШЕ ПРО ЗБІР
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="home-news" class="pb-10">
+      <div class="container px-0">
+        <div class="second-container">
+          <div class="home-news-controls flex flex-wrap items-center mb-10 xxl:px-8">
+            <div class="w-full text-center mb-6 md:w-1/2 md:text-left md:mb-0">
+              <h2 class="animate" xyz="in-left">Новини</h2>
+            </div>
+            <div class="w-full flex gap-2 md:gap-4 md:w-1/2 justify-center md:justify-end items-center">
+              <div class="home-news-prev cursor-pointer">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                  <path d="M18.01 24.975H32.0107" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.889 20.0252L18.0093 24.9742L22.889 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="home-news-next cursor-pointer">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                  <path d="M31.9399 24.975H17.9392" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M27.0609 20.0252L31.9407 24.9742L27.0609 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="home-news-more">
+                <a href="#" class="btn btn-blue">Більше НОВИН</a>
+              </div>
+            </div>
+          </div>
+          <div class="home-news-slider -mx-3">
+            <div class="home-news-slider-item px-3">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-1.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Україна нарощує виробництво БПЛА: вже працюють 200 компаній</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="home-news-slider-item px-3">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-2.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Bayraktar TB2 україні більше не потрібні україні?</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="home-news-slider-item px-3">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-3.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Данія передала україні морські безпілотники Seabat!</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="home-news-slider-item px-3">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-1.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Україна нарощує виробництво БПЛА: вже працюють 200 компаній</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-partners" class="pt-10 pb-24">
+      <div class="container">
+        <div class="second-container">
+          <div class="w-full text-center mb-6">
+            <h2 class="animate" xyz="in-down">Наші партнери</h2>
+          </div>
+          <div class="flex flex-wrap justify-end gap-4 lg:justify-center lg:items-center">
+            <div class="w-[50px] home-partners-prev cursor-pointer lg:order-1 lg:mb-[30px]">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                <path d="M18.01 24.975H32.0107" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.889 20.0252L18.0093 24.9742L22.889 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="w-[50px] home-partners-next cursor-pointer lg:order-3 lg:mb-[30px]">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                <path d="M31.9399 24.975H17.9392" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.0609 20.0252L31.9407 24.9742L27.0609 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="w-full lg:w-[calc(100%-132px)] lg:order-2">
+              <div class="partners-slider">
+                <div class="partners-slider-item">
+                  <img src="./img/uklon.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/orthomol.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/usik.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/volyn.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/uklon.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/orthomol.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/usik.png" alt="">
+                </div>
+                <div class="partners-slider-item">
+                  <img src="./img/volyn.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="bg-blue pt-14 pb-20 lg:py-24">
+      <div class="container px-0">
+        <div class="second-container">
+          <div class="w-full text-center mb-16">
+            <h2 class="animate text-white" xyz="in-down">Як працює фонд?</h2>
+          </div>
+          <div class="flex flex-col animate xl:flex-row xl:gap-5" xyz="in-down stagger">
+              <div class="w-[300px] h-[200px] mx-auto how-it-works-step relative bg-white rounded-lg pt-16 px-10 pb-12 mb-20 xyz-nested xl:h-[230px]">
+                <div class="how-it-works-step-number absolute right-4 bottom-16 z-0 text-[172px] font-bold font-nebofont text-[#F4F4F4]">1</div>
+                <div class="how-it-works-step-icon absolute left-9 -top-[43px] flex justify-center items-center w-[86px] h-[86px] bg-yellow rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="36" viewBox="0 0 44 36" fill="none">
+                    <path d="M23.9626 20H39C40.6569 20 42 18.6569 42 17V5C42 3.34315 40.6569 2 39 2H19C17.3431 2 16 3.34315 16 5V18" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M26.879 8.87888C28.052 7.71685 29.9435 7.72129 31.111 8.88881C32.2786 10.0563 32.283 11.9479 31.121 13.1209" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M16 8H11.4164C10.4849 7.99998 9.56627 8.21684 8.73316 8.63342L7.56274 9.21862C6.54216 9.72887 5.68826 10.5196 5.1012 11.498L2 16.6666" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M4 34.0002L15.5237 29.8362C17.1321 29.255 18.512 28.1737 19.4608 26.7509L25.4466 17.7749C26.3172 16.4694 26.1451 14.7308 25.0356 13.6213V13.6213C23.7504 12.3361 21.6667 12.3359 20.3812 13.6208L16 18.0002H12" stroke="#242C6C" stroke-width="2.66667"/>
+                  </svg>
+                </div>
+                <p class="relative text-base">Фонд отримує кошти на власний рахунок через платформу збору та від партнерів.</p>
+              </div>
+              <div class="w-[300px] h-[200px] mx-auto how-it-works-step relative bg-white rounded-lg pt-16 px-10 pb-12 mb-20 xyz-nested xl:h-[230px]">
+                <div class="how-it-works-step-number absolute right-4 bottom-16 z-0 text-[172px] font-bold font-nebofont text-[#F4F4F4]">2</div>
+                <div class="how-it-works-step-icon absolute left-9 -top-[43px] flex justify-center items-center w-[86px] h-[86px] bg-yellow rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                    <path d="M27.3684 39.8947H35.7895C38.1149 39.8947 40 38.0096 40 35.6842V13.3983C40 12.84 39.7782 12.3045 39.3834 11.9097L30.0903 2.61661C29.6955 2.2218 29.16 2 28.6017 2H10.5263C8.20091 2 6.3158 3.88512 6.3158 6.21053V12.5263" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M40 14.6316H31.5789C29.2535 14.6316 27.3684 12.7465 27.3684 10.4211V2" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M6.75438 39.6315C6.75438 39.4861 6.8722 39.3683 7.01754 39.3683C7.16287 39.3683 7.28069 39.4861 7.28069 39.6315" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M7.28069 39.6315C7.28069 39.7768 7.16287 39.8947 7.01754 39.8947C6.8722 39.8947 6.75438 39.7768 6.75438 39.6315" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M17.2807 39.6315C17.2807 39.4861 17.3985 39.3683 17.5438 39.3683C17.6892 39.3683 17.807 39.4861 17.807 39.6315" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M17.807 39.6315C17.807 39.7768 17.6892 39.8947 17.5438 39.8947C17.3985 39.8947 17.2807 39.7768 17.2807 39.6315" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M3.43884 24.1051H19.9995C20.3236 24.1051 20.6297 24.2544 20.8292 24.5099C21.0286 24.7654 21.0993 25.0985 21.0207 25.413L19.1786 32.7814C19.0614 33.25 18.6404 33.5787 18.1574 33.5787H6.58211C6.09909 33.5787 5.67806 33.25 5.56091 32.7814L2.33918 19.8945H0" stroke="#242C6C" stroke-width="2.66667"/>
+                  </svg>
+                </div>
+                <p class="relative text-base">Здійснюється замовлення та оплата запасних частин для виготовлення дронів як в Україні, так і по всьому світу.</p>
+              </div>
+              <div class="w-[300px] h-[200px] mx-auto how-it-works-step relative bg-white rounded-lg pt-16 px-10 pb-12 mb-20 xyz-nested xl:h-[230px]">
+                <div class="how-it-works-step-number absolute right-4 bottom-16 z-0 text-[172px] font-bold font-nebofont text-[#F4F4F4]">3</div>
+                <div class="how-it-works-step-icon absolute left-9 -top-[43px] flex justify-center items-center w-[86px] h-[86px] bg-yellow rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1713 27.5538L30.363 24.7455C28.2943 22.6762 28.2943 19.3239 30.363 17.2546L33.1713 14.4463L27.5537 8.82972L24.7454 11.638C22.6766 13.7062 19.3243 13.7062 17.2556 11.638L14.4473 8.82972L8.83014 14.4463L11.6379 17.2546C13.7066 19.3239 13.7066 22.6762 11.6379 24.7455L8.83014 27.5538L14.4473 33.1704L17.2556 30.3621C19.3243 28.2939 22.6766 28.2939 24.7454 30.3621L27.5537 33.1704L33.1713 27.5538Z" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M30.363 11.6382L38.307 3.69427" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M11.6379 11.6382L3.69403 3.69427" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M30.363 30.3622L38.307 38.3062" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M11.6379 30.3622L3.69403 38.3062" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M12.9154 1.00014L1 12.916" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M1 29.0841L12.9154 41" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M41.001 29.0841L29.0851 41" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M29.0851 1.00014L41.001 12.916" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M17.2556 17.2548L19.1282 19.1279" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M22.8727 22.8724L24.7453 24.7456" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M22.8727 19.1279L24.7453 17.2548" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M19.1282 22.8724L17.2556 24.7456" stroke="#242C6C" stroke-width="2.66667"/>
+                  </svg>
+                </div>
+                <p class="relative text-base">Відбувається збирання готової продукції в Україні на власному виробництві.</p>
+              </div>
+              <div class="w-[300px] h-[200px] mx-auto how-it-works-step relative bg-white rounded-lg pt-16 px-10 pb-12 mb-20 xyz-nested xl:h-[230px]">
+                <div class="how-it-works-step-number absolute right-4 bottom-16 z-0 text-[172px] font-bold font-nebofont text-[#F4F4F4]">4</div>
+                <div class="how-it-works-step-icon absolute left-9 -top-[43px] flex justify-center items-center w-[86px] h-[86px] bg-yellow rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                    <path d="M5.25942 14.6232H2.10376" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M5.25942 27.2457H2.10376" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M4.20754 20.9342H0" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path d="M6.95362 33.557C12.1872 39.4082 20.4887 41.423 27.8222 38.6218C35.1558 35.8206 40.0001 28.7845 40 20.9342C40 13.0838 35.1556 6.04779 27.822 3.24666C20.4885 0.445528 12.187 2.46039 6.95349 8.3117" stroke="#242C6C" stroke-width="2.66667"/>
+                    <rect x="11.5708" y="12.519" width="18.9339" height="16.8302" rx="2" stroke="#242C6C" stroke-width="2.66667"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8821 12.519H24.1934V17.7785C24.1934 18.3594 23.7224 18.8304 23.1415 18.8304H18.934C18.353 18.8304 17.8821 18.3594 17.8821 17.7785V12.519Z" stroke="#242C6C" stroke-width="2.66667"/>
+                  </svg>
+                </div>
+                <p class="relative text-base">Готові БПЛА віддаються напряму військовим частинам за актами прийому-передачі.</p>
+              </div>
+          </div>
+          <div class="w-full">
+            <div class="flex mb-11 gap-5 flex-wrap justify-center lg:mb-0 animate" xyz="in-fade down stagger">
+              <a href="#" class="btn btn-yellow alternate xyz-nested">Зробити внесок</a>
+              <a href="#" class="btn btn-white xyz-nested">Більше про ФОНД</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fin-report" class="py-14 lg:py-24 bg-[#F4F4F4] rounded-b-2xl">
+      <div class="container">
+        <div class="second-container">
+          <div class="w-full text-center mb-16">
+            <h2 class="animate" xyz="in-down">Фінансова звітність</h2>
+          </div>
+          <div class="flex flex-wrap animate" xyz="in-fade down stagger">
+            <div class="w-full text-center xyz-nested mb-10 md:w-1/2 md:border-r md:border-[#DFDFDF] xl:w-1/4">
+              <div class="mb-3">Закриті збори</div>
+              <div class="text-blue h1 mb-3 number-animation" data-number="137564048">137 564 048</div>
+              <h5>Гривень</h5>
+            </div>
+            <div class="w-full text-center xyz-nested mb-10 md:w-1/2 xl:w-1/4 xl:border-r xl:border-[#DFDFDF]">
+              <div class="mb-3">Відправлено на фронт</div>
+              <div class="text-blue h1 mb-3 number-animation" data-number="10002">10 002</div>
+              <h5>FPV-дрони "Грім"</h5>
+            </div>
+            <div class="w-full text-center xyz-nested mb-10 md:w-1/2 md:border-r md:border-[#DFDFDF] xl:w-1/4 ">
+              <div class="mb-3">Відправлено на фронт</div>
+              <div class="text-blue h1 mb-3 number-animation" data-number="50">50</div>
+              <h5>Гексакоптерів "Волиняка"</h5>
+            </div>
+            <div class="w-full text-center xyz-nested mb-10 md:w-1/2 xl:w-1/4">
+              <div class="mb-3">Відправлено на фронт</div>
+              <div class="text-blue h1 mb-3 number-animation" data-number="94">94</div>
+              <h5>Наземних станцій</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="respect" class="py-14 lg:py-24">
+      <div class="container">
+        <div class="second-container">
+          <div class="w-full text-center mb-16">
+            <h2 class="animate" xyz="in-down">Подяки</h2>
+          </div>
+          <div class="flex flex-wrap justify-end gap-4 lg:justify-center lg:items-center">
+            <div class="w-[50px] home-respect-prev cursor-pointer lg:order-1 lg:mb-[30px]">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                <path d="M18.01 24.975H32.0107" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.889 20.0252L18.0093 24.9742L22.889 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="w-[50px] home-respect-next cursor-pointer lg:order-3 lg:mb-[30px]">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" rx="25" fill="#FBD91D"/>
+                <path d="M31.9399 24.975H17.9392" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.0609 20.0252L31.9407 24.9742L27.0609 29.9247" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="w-full lg:w-[calc(100%-132px)] lg:order-2">
+              <div class="respect-slider">
+                <div class="respect-slider-item">
+                  <img src="./img/sbu1.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+                <div class="respect-slider-item">
+                  <img src="./img/thanks-3oshb.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+                <div class="respect-slider-item">
+                  <img src="./img/thanks-rozvidka.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+                <div class="respect-slider-item">
+                  <img src="./img/thanks-sec-img-new1.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+                <div class="respect-slider-item">
+                  <img src="./img/thanks-sec-img2.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+                <div class="respect-slider-item">
+                  <img src="./img/thanks-sec-img3-new33.png" alt="" class="border-[#F4F4F4] border-[5px]">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="donate">
+      <div class="container">
+        <div class="bg-blue text-white rounded-2xl py-14 animate" xyz="in-fade down">
+          <div class="second-container">
+            <div class="flex flex-wrap items-center mb-10 animate" xyz="in-fade down stagger">
+              <div class="w-full lg:w-1/2 lg:pr-8 xl:w-[calc(100%-640px)] xl:pr-16 xyz-nested">
+                <h2 class="mb-8">Не можете визначитися із дроном?</h2>
+                <div class="mb-10 xl:pr-16">
+                  Ви можете підтримати фонд благодійним внеском, який буде розподілений між наявними позиціями дронів та наблизить нашу перемогу!
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 xl:w-[640px] xyz-nested">
+                <form action="#" id="donate-form">
+                  <div class="donate-form-wrap bg-yellow rounded-lg px-3 py-4 lg:py-14 xl:px-11">
+                    <h6 class="text-black mb-3 lg:mb-5">Внесок карткою:</h6>
+                    <div class="flex -mx-2 mb-3 lg:mb-5">
+                      <div class="w-1/3 px-2">
+                        <div class="add-funds-button bg-white rounded-lg text-black font-nebofont font-bold flex items-center justify-center w-full min-h-14 gap-2 px-2 leading-none cursor-pointer" data-amount="200">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V16" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 12H8" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          200 грн.
+                        </div>
+                      </div>
+                      <div class="w-1/3 px-2">
+                        <div class="add-funds-button bg-white rounded-lg text-black font-nebofont font-bold flex items-center justify-center w-full min-h-14 gap-2 px-2 leading-none cursor-pointer" data-amount="500">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V16" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 12H8" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          500 грн.
+                        </div>
+                      </div>
+                      <div class="w-1/3 px-2">
+                        <div class="add-funds-button bg-white rounded-lg text-black font-nebofont font-bold flex items-center justify-center w-full min-h-14 gap-2 px-2 leading-none cursor-pointer" data-amount="1000">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V16" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 12H8" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          1000 грн.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-2">
+                      <div class="w-full px-2 lg:w-2/3 mb-6">
+                        <div class="donate-amount text-black flex bg-white px-2 rounded-lg min-h-14 items-center lg:px-5">
+                          <div class="font-bold w-[110px]">Ваш внесок:</div>
+                          <div class="font-bold border-b border-black border-dashed w-[calc(100%-155px)]"><input min="1" id="amount" type="number" class="max-w-full"></div>
+                          <div class="font-bold w-[45px] pl-2">грн.</div>
+                        </div>
+                      </div>
+                      <div class="w-full px-2 lg:w-1/3 text-center lg:text-left">
+                        <input type="submit" value="Зробити внесок" class="btn btn-blue min-h-14 alternate cursor-pointer">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 animate" xyz="in-fade down stagger">
+                <div class="w-full flex flex-wrap px-3 lg:w-1/2 mb-10 xyz-nested">
+                    <div class="mb-6 w-[86px] h-[86px] bg-yellow rounded-full flex justify-center items-center mx-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="36" viewBox="0 0 44 36" fill="none">
+                        <path d="M23.9626 20H39C40.6569 20 42 18.6569 42 17V5C42 3.34315 40.6569 2 39 2H19C17.3431 2 16 3.34315 16 5V18" stroke="#242C6C" stroke-width="2.66667"/>
+                        <path d="M26.879 8.87888C28.052 7.71685 29.9435 7.72129 31.111 8.88881C32.2786 10.0563 32.283 11.9479 31.121 13.1209" stroke="#242C6C" stroke-width="2.66667"/>
+                        <path d="M16 8H11.4164C10.4849 7.99998 9.56627 8.21684 8.73316 8.63342L7.56274 9.21862C6.54216 9.72887 5.68826 10.5196 5.1012 11.498L2 16.6666" stroke="#242C6C" stroke-width="2.66667"/>
+                        <path d="M4 34.0002L15.5237 29.8362C17.1321 29.255 18.512 28.1737 19.4608 26.7509L25.4466 17.7749C26.3172 16.4694 26.1451 14.7308 25.0356 13.6213V13.6213C23.7504 12.3361 21.6667 12.3359 20.3812 13.6208L16 18.0002H12" stroke="#242C6C" stroke-width="2.66667"/>
+                      </svg>
+                    </div>
+                    <div class="w-full sm:w-[calc(100%-86px)] pl-3 lg:pl-8">
+                      <div class="font-bold text-yellow font-nebofont text-lg mb-4">
+                        Банківський переказ по україні
+                      </div>
+                      <div class="text-base leading-7">
+                        <strong>Одержувач:</strong> НЕБО ПЕРЕМОГИ БФ БО<br>
+                        <strong>ЄДРПОУ:</strong> 45109890<br>
+                        <strong>Призначення платежу:</strong> Благодійний внесок<br>
+                        <strong>Рахунок:</strong> <span class="text-yellow font-bold">UA023052990000026003015016733</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap px-3 lg:w-1/2 mb-10 xyz-nested">
+                  <div class="mb-6 w-[86px] h-[86px] bg-yellow rounded-full flex justify-center items-center mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                      <path d="M17.3884 7.37506C17.7436 6.90733 18.1088 6.44461 18.534 6.0194C23.8841 0.669313 32.6383 0.669313 37.9884 6.0194C43.3385 11.3695 43.3385 20.1237 37.9884 25.4738C37.5607 25.9015 37.093 26.2592 36.6202 26.6069" stroke="#242C6C" stroke-width="2.66667"/>
+                      <path d="M15.7551 42.0094C23.3213 42.0094 29.5143 35.8189 29.5143 28.2553C29.5143 20.6916 23.3213 14.4961 15.7551 14.4961C8.18897 14.4961 2.00098 20.6866 2.00098 28.2553C2.00098 31.3418 3.04398 34.1881 4.77482 36.4892C7.29104 39.8309 11.278 42.0094 15.7551 42.0094" stroke="#242C6C" stroke-width="2.66667"/>
+                      <path d="M15.7551 22.6274V19.1274" stroke="#242C6C" stroke-width="2.66667"/>
+                      <path d="M15.7551 33.8828V37.1334" stroke="#242C6C" stroke-width="2.66667"/>
+                      <path d="M12.4985 32.5398C12.9838 33.3352 13.8142 33.8855 14.8172 33.8855H15.7551H16.8732C18.3289 33.8855 19.5069 32.7049 19.5069 31.2517C19.5069 30.0436 18.684 28.9906 17.5135 28.6954L13.9968 27.8125C12.8262 27.5199 12.0033 26.4669 12.0033 25.2588C12.0033 23.8031 13.1839 22.625 14.6371 22.625H15.7551H16.6931C17.6936 22.625 18.5215 23.1728 19.0067 23.9656" stroke="#242C6C" stroke-width="2.66667"/>
+                    </svg>
+                  </div>
+                  <div class="w-full sm:w-[calc(100%-86px)] pl-3 lg:pl-8">
+                    <div class="font-bold text-yellow font-nebofont text-lg mb-4">
+                      Переказ на карту у іншій валюті
+                    </div>
+                    <div class="text-base leading-7">
+                      <strong>Одержувач:</strong> НЕБО ПЕРЕМОГИ БФ БО<br>
+                      <strong>ЄДРПОУ:</strong> 45109890<br>
+                      <strong>Призначення платежу:</strong> Благодійний внесок<br>
+                      <strong>Рахунок:</strong> <span class="text-yellow font-bold">UA653805820000026006010333314</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 mb-10">
+                  <div class="border-b border-yellow"></div>
+                </div>
+                <div class="w-full px-3 xyz-nested">
+                  <div class="flex">
+                    <div class="w-[75px] pl-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <circle cx="10.5" cy="10.5" r="9.5" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 14.5H12" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 14V10H9" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.75 6.5V6.5C10.75 6.63807 10.6381 6.75 10.5 6.75C10.3619 6.75 10.25 6.63807 10.25 6.5C10.25 6.36193 10.3619 6.25 10.5 6.25" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.375 6.375V6.375C10.5131 6.375 10.625 6.48693 10.625 6.625" stroke="#FBD91D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="w-[calc(100%-75px)] text-[13px]">
+                      БО «БФ «НЕБО ПЕРЕМОГИ», збирає благодійні пожертви у вигляді грошових коштів, з метою підтримки на постійній основі українських військових. Під час перерахунку благодійних внесків через інструмент LiqPay та/або у випадку оплати за реквізитами БО «БФ «НЕБО ПЕРЕМОГИ», Ви надаєте автоматичну згоду на перерозподіл коштів на інші проєкти Фонду (якщо збір коштів закритий або неактуальний), а також погоджуєтесь на те, що сума пожертвування не підлягає поверненню.
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="py-14 lg:py-24">
+      <div class="container">
+        <div class="second-container">
+          <div class="w-full text-center mb-16">
+            <h2 class="animate" xyz="in-down">Часті запитання</h2>
+          </div>
+          <div id="faq-wrap" class="max-w-[840px] mx-auto animate" xyz="in-fade down stagger">
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested active">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Які саме БпЛА виготовляєте?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Виробництво масштабоване на власних потужностях. Основні прес форми робимо на верстатах. Частково закупка деталей відбувається  за кордоном. На виробництві проводимо кінцеву збірку. Кожний виріб проходить багатоетапну систему тестувань та цифрових перевірок, після чого передаються у військові частини. Дрони укомплектовані системами скидання б/к та системами наведення на ціль, розробленими нашими інженерами.
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Як я можу відслідковувати надходження коштів?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Ми звітуємо на офіційній сторінці Фонду, а також можемо надати всю необхідну інформацію за особистим запитом.
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Я не можу визначитися із дроном, але хочу допомогти</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Ви можете підтримати фонд благодійним внеском, який буде розподілений між наявними позиціями дронів та наблизить нашу Перемогу!
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Чи можна стати партнером фонду?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Відкриті до будь-якої співпраці як з приватними особами так і з організаціями, незалежно від того, де знаходитися і суми, яку вони готові витратити на благодійність.
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Де я можу переглянути офіційні документи фонду?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Можна отримати за запитом, з офіційних джерел, а також на сторінці сайту Установчі документи.
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">За які кошти функціонує фонд?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Фонд функціонує в основному за рахунок благодійних внесків наших партнерів, благодійників та публічних зборів благодійних пожертв.
+              </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#f4f4f4] xyz-nested">
+              <div class="faq-question relative pr-16 cursor-pointer">
+                <h4 class="min-h-24 flex items-center py-6">Який обсяг планується?</h4>
+                <div class="faq-button absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3537 13.6939C15.3537 14.7504 16.2181 15.6149 17.2748 15.6151H23.8975C24.954 15.6151 25.8185 14.7506 25.8187 13.6939L25.8187 13.1758C25.8185 12.1191 24.954 11.2546 23.8975 11.2546H17.2748C16.2183 11.2546 15.3537 12.1193 15.3537 13.1758L15.3537 13.6939Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5166 13.1758C11.5166 12.1193 10.6521 11.2548 9.59541 11.2546H2.97271C1.91619 11.2546 1.05173 12.1191 1.05154 13.1758L1.05173 13.6941C1.05173 14.7506 1.91619 15.6151 2.97271 15.6151H9.59541C10.6519 15.6151 11.5166 14.7504 11.5166 13.6939L11.5166 13.1758Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6153 2.97262C15.6153 1.9161 14.7508 1.05165 13.6941 1.05145H13.176C12.1195 1.05145 11.2548 1.9161 11.2548 2.97262L11.2548 9.59532C11.255 10.652 12.1195 11.5165 13.176 11.5165H13.6941C14.7508 11.5163 15.6153 10.6518 15.6153 9.59532L15.6153 2.97262Z" fill="#242C6C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 23.8976C11.2549 24.9541 12.1194 25.8185 13.1761 25.8187H13.6942C14.7508 25.8187 15.6152 24.9543 15.6154 23.8976L15.6154 17.2749C15.6154 16.2183 14.7508 15.3537 13.6942 15.3537H13.1761C12.1194 15.3539 11.2549 16.2183 11.2549 17.2749L11.2549 23.8976Z" fill="#242C6C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq-answer pb-12 lg:pr-16">
+                Потенційно ми можемо виробляти без збільшення виробничих потужностей на місяць: 2000 дронів камікадзе, 50 ударних гексокоптерів, 30 БпЛА дальньої дії, 30 БпЛА наддальньої дії
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bg-blue py-12">
+      <div class="container">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full mb-6 md:w-1/2 md:order-1 lg:w-1/4 xl:w-[203px] xl:mb-0">
+            <a href="/" class="flex justify-center lg:justify-start">
+              <img src="./img/logo-white.svg" alt="">
+            </a>
+          </div>
+          <div class="w-full mb-6 md:order-3 lg:w-1/2 xl:w-[calc(100%-203px-200px-225px)] xl:mb-0 xxl:w-[calc(100%-203px-280px-225px)]">
+            <h3 class="text-white text-center">Крізь небо до перемоги!</h3>
+          </div>
+          <div class="w-full mb-6 md:w-1/2 md:order-2 lg:w-1/4 xl:w-[200px] xl:mb-0 xxl:w-[280px]">
+            <ul id="footer-social" class="flex justify-center gap-4 xxl:gap-8">
+              <li>
+                <a href="#">
+                  <img src="./img/telegram-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/youtube-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/facebook-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/instagram-white.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full text-center md:order-4 xl:w-[225px]">
+            <a href="#" class="btn btn-yellow alternate">підтримати</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#f4f4f4] py-12">
+      <div class="container">
+        <ul id="footer-menu" class="flex flex-wrap gap-4 justify-center lg:justify-between">
+          <li><a href="#">Дрони</a></li>
+          <li><a href="#">Про фонд</a></li>
+          <li><a href="#">Часті запитання</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+          <li><a href="#">Установчі документи</a></li>
+          <li><a href="#">Публічна оферта</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="fixed inline-block p-3 bg-blue text-white font-bold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow hover:text-blue hover:shadow-lg focus:bg-yellow focus:text-blue focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
