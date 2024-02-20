@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body class="open-left">
+  <ul class="omni-mobile-menu">
+    <li><a href="#">Збори на ЗСУ</a></li>
+    <li>
+        <a class="omni-dropdown-toggle">Дрони</a>
+        <ul class="omni-dropdown-menu">
+            <li><a href="#">Дрони</a></li>
+            <li><a href="#">Як отримати БПЛА</a></li>
+        </ul>
+    </li>
+    <li>
+      <a class="omni-dropdown-toggle">Про фонд</a>
+      <ul class="omni-dropdown-menu">
+          <li><a href="#">Про фонд</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Відео звіти</a></li>
+          <li><a href="#">Блог</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Часті запитання</a></li>
+    <li><a href="#">Контакти</a></li>
+    <div class="flex items-center">
+      <a href="#">UA</a>
+      <span>|</span>
+      <a href="#">ENG</a>
+    </div>
+  </ul><!-- omni-mobile-menu -->
+  <div class="toggle-btn">
+    <div class="hamburger-icon">
+        <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+            <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+    </div>
+  </div>
+<div class="content-wrapper">
+  <div class="py-2 shadow" id="fixed-header">
+    <div class="container">
+      <div class="flex flex-wrap items-center -mx-3">
+        <div class="w-[40%] px-3 order-1 md:w-[162px]">
+          <div class="brand">
+            <a href="/">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="hidden px-3 md:block md:w-[calc(50%-81px-31px)] md:order-2 lg:w-[127px] xl:w-[150px]">
+          <ul id="social" class="flex gap-3 justify-center items-center xl:gap-4 xxl:gap-5">
+            <li>
+              <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-3 lg:w-[calc(100%-162px-127px-70px-180px)] xl:w-[calc(100%-162px-150px-70px-240px)] xxl:w-[calc(100%-162px-150px-100px-240px)]">
+          <ul id="main-menu">
+            <li><a href="#">Збори на ЗСУ</a></li>
+            <li class="has-child">
+                <a href="#">Дрони</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Дрони</a></li>
+                    <li><a href="#">Як отримати БПЛА</a></li>
+                </ul>
+            </li>
+            <li class="has-child">
+              <a href="#">Про фонд</a>
+              <ul class="sub-menu">
+                  <li><a href="#">Про фонд</a></li>
+                  <li><a href="#">Новини</a></li>
+                  <li><a href="#">Відео звіти</a></li>
+                  <li><a href="#">Блог</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-4 lg:w-[70px] xxl:w-[100px]">
+          <ul id="main-lang">
+            <li><a href="#" class="current">UA</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+        </div>
+        <div class="w-[calc(60%-62px)] px-3 order-2 md:w-[calc(50%-81px-31px)] md:order-3 lg:order-5 lg:w-[180px] xl:w-[240px]">
+          <a href="#" class="btn btn-yellow">підтримати</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <header class="py-4">
+    <div class="container">
+      <div class="flex flex-wrap items-center -mx-3">
+        <div class="w-[40%] px-3 order-1 md:w-[162px]">
+          <div class="brand">
+            <a href="/">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="hidden px-3 md:block md:w-[calc(50%-81px-31px)] md:order-2 lg:w-[127px] xl:w-[150px]">
+          <ul id="social" class="flex gap-3 justify-center items-center xl:gap-4 xxl:gap-5">
+            <li>
+              <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-3 lg:w-[calc(100%-162px-127px-70px-180px)] xl:w-[calc(100%-162px-150px-70px-240px)] xxl:w-[calc(100%-162px-150px-100px-240px)]">
+          <ul id="main-menu">
+            <li><a href="#">Збори на ЗСУ</a></li>
+            <li class="has-child">
+                <a href="#">Дрони</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Дрони</a></li>
+                    <li><a href="#">Як отримати БПЛА</a></li>
+                </ul>
+            </li>
+            <li class="has-child">
+              <a href="#">Про фонд</a>
+              <ul class="sub-menu">
+                  <li><a href="#">Про фонд</a></li>
+                  <li><a href="#">Новини</a></li>
+                  <li><a href="#">Відео звіти</a></li>
+                  <li><a href="#">Блог</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:order-4 lg:w-[70px] xxl:w-[100px]">
+          <ul id="main-lang">
+            <li><a href="#" class="current">UA</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+        </div>
+        <div class="w-[calc(60%-62px)] px-3 order-2 md:w-[calc(50%-81px-31px)] md:order-3 lg:order-5 lg:w-[180px] xl:w-[240px]">
+          <a href="#" class="btn btn-yellow">підтримати</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section id="page-title" class="py-12">
+        <div class="container">
+            <div class="second-container">
+                <h1 class="animate" xyz="in-left">Новини</h1>
+            </div>
+        </div>
+    </section>
+    <section id="news-grid" class="pb-10">
+      <div class="container px-0">
+        <div class="second-container">
+          <div class="news-grid flex flex-wrap -mx-3 animate" xyz="in-fade down stagger">
+            <div class="news-item px-3 w-full md:w-1/2 lg:w-1/3 mb-6 xyz-nested">
+              <div class="news-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-1.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Україна нарощує виробництво БПЛА: вже працюють 200 компаній</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item px-3 w-full md:w-1/2 lg:w-1/3 mb-6 xyz-nested">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-2.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Bayraktar TB2 україні більше не потрібні україні?</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item px-3 w-full md:w-1/2 lg:w-1/3 mb-6 xyz-nested">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-3.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Данія передала україні морські безпілотники Seabat!</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news-item px-3 w-full md:w-1/2 lg:w-1/3 mb-6 xyz-nested">
+              <div class="news-slider-item-wrap relative bg-[#F4F4F4] rounded-lg px-4 pt-4 pb-16 h-full">
+                <a href="#" class="flex flex-col">
+                  <div class="news-thumbnail w-full bg-cover rounded-lg mb-6" style="background-image: url(./img/news-1.png);">
+                    <div class="pb-[61%]"></div>
+                  </div>
+                  <h5 class="text-black leading-7">Україна нарощує виробництво БПЛА: вже працюють 200 компаній</h5>
+                </a>
+                <div class="news-more absolute bottom-5">
+                  <a href="#" class="flex gap-4 items-center text-blue uppercase hover:text-yellow">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FBD91D"/>
+                      <path d="M16.9 7.04999L7 16.95" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.95001 7L16.9 7.049L16.95 14" stroke="#011F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    подробиці
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="bg-blue py-12">
+      <div class="container">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full mb-6 md:w-1/2 md:order-1 lg:w-1/4 xl:w-[203px] xl:mb-0">
+            <a href="/" class="flex justify-center lg:justify-start">
+              <img src="./img/logo-white.svg" alt="">
+            </a>
+          </div>
+          <div class="w-full mb-6 md:order-3 lg:w-1/2 xl:w-[calc(100%-203px-200px-225px)] xl:mb-0 xxl:w-[calc(100%-203px-280px-225px)]">
+            <h3 class="text-white text-center">Крізь небо до перемоги!</h3>
+          </div>
+          <div class="w-full mb-6 md:w-1/2 md:order-2 lg:w-1/4 xl:w-[200px] xl:mb-0 xxl:w-[280px]">
+            <ul id="footer-social" class="flex justify-center gap-4 xxl:gap-8">
+              <li>
+                <a href="#">
+                  <img src="./img/telegram-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/youtube-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/facebook-white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/instagram-white.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full text-center md:order-4 xl:w-[225px]">
+            <a href="#" class="btn btn-yellow alternate">підтримати</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#f4f4f4] py-12">
+      <div class="container">
+        <ul id="footer-menu" class="flex flex-wrap gap-4 justify-center lg:justify-between">
+          <li><a href="#">Дрони</a></li>
+          <li><a href="#">Про фонд</a></li>
+          <li><a href="#">Часті запитання</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+          <li><a href="#">Установчі документи</a></li>
+          <li><a href="#">Публічна оферта</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="fixed inline-block p-3 bg-blue text-white font-bold text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow hover:text-blue hover:shadow-lg focus:bg-yellow focus:text-blue focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
