@@ -47,16 +47,16 @@
     </div>
   </header>
   <main>
-    <section id="hero" style="background-image: url(./img/hero-bg.png);" class="pt-36 pb-28 lg:pt-52 lg:pb-64 -mt-28 overflow-x-clip">
+    <section id="hero" style="background-image: url(./img/hero-bg.png);" class="bg-cover pt-36 pb-28 lg:pt-52 lg:pb-64 -mt-28 lg:overflow-x-clip">
       <div class="container relative">
         <div class="flex">
           <div class="w-full">
-            <div class="hero-title-wrap flex flex-col justify-center py-10 md:pl-16 md:pr-16 bg-white rounded-2xl -skew-x-[25deg] max-w-[707px] lg:py-16">
-              <div class="skew-x-[25deg]">
-                <h1 class="text-green uppercase relative mb-7 pl-16 md:pl-0">
+            <div class="hero-title-wrap flex flex-col justify-center py-10 md:pl-16 md:pr-16 bg-white rounded-2xl lg:-skew-x-[25deg] max-w-[707px] mx-auto lg:ml-0 lg:py-16">
+              <div class="lg:skew-x-[25deg]">
+                <h1 class="text-green uppercase relative mb-7 text-center lg:text-left">
                   Accurate. Versatile. Proven.
                 </h1>
-                <div class="text-blue font-extrabold relative text-base lg:text-lg pr-8 pl-6 md:pr-0 md:pl-0">
+                <div class="text-blue font-extrabold relative text-base lg:text-lg text-center lg:text-left">
                   Precise fluid control and dosing systems for Fertigation, Industrial Cleaning and Medical applications
                 </div>
               </div>
@@ -128,24 +128,27 @@
       </div>
     </section>
     <section id="about-us" class="overflow-x-clip">
-      <div class="bg-[rgba(84,117,84,0.08)] py-20 rounded-2xl -skew-x-[25deg] xl:pt-36">
-        <div class="container skew-x-[25deg]">
+      <div class="bg-[rgba(84,117,84,0.08)] pt-20 pb-40 sm:pb-52 lg:pb-36 xl:pb-24 rounded-2xl lg:-skew-x-[25deg] lg:pt-36 lg:pl-24">
+        <div class="container lg:skew-x-[25deg] pr-0">
           <div class="flex flex-wrap">
-            <div class="w-full mb-8 lg:w-1/2 xl:pl-16">
-              <h2 class="h1 mb-8 pl-28 xl:pl-0 xl:mb-10">About Us</h2>
-              <div class="mb-8 pl-16 pr-4 xl:px-0 xl:mb-10">
+            <div class="w-full mb-8 pr-3 lg:w-1/2 xl:pl-16">
+              <h2 class="h1 mb-8 text-center lg:text-left xl:mb-10">About Us</h2>
+              <div class="mb-8 xl:mb-10">
                 CFV Innovations’ fluid control and dosing systems are designed to save money, reduce waste and deliver exceptional performance.  With over 20 years of field experience in multiple industries, our proven technology delivers high-ratio mixing and metering with extreme accuracy.
               </div>
-              <a href="#contact-us" class="ml-16 btn btn-green xl:ml-0">GET IN TOUCH</a>
-            </div>
-            <div class="w-full lg:w-1/2">
-              <img src="./img/about-image.png" alt="" class="-mb-[50%] lg:absolute xl:-mt-[90px]">
+              <div class="w-full text-center lg:text-left">
+                <a href="#contact-us" class="btn btn-green">GET IN TOUCH</a>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
+      <div class="about-big-image w-full">
+        <img src="./img/about-image.png" alt="" class="absolute max-h-[230px] sm:max-h-[350px] lg:left-[50%] right-0 -mt-[120px] sm:-mt-[170px] lg:top-[70px] lg:mt-0 lg:max-h-[unset]">
+      </div>
     </section>
-    <section id="location" class="pt-44 sm:pt-80 md:pt-96 lg:pt-72 xl:pt-44">
+    <section id="location" class="pt-44 sm:pt-80 lg:pt-44 xl:pt-44">
       <div class="container">
         <h2 class="h1 text-center mb-8">Location</h2>
         <div class="flex uppercase font-bold gap-4 items-center mb-10 justify-center lg:text-lg">
