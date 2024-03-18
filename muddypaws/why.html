@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Why MPA?</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
@@ -37,7 +37,7 @@
         </div>
         <div class="hidden md:block md:w-[calc(100%-260px-200px)] md:pr-5 lg:w-[calc(100%-288px-217px)] lg:pr-0 xl:px-16">
           <ul id="main-menu">
-            <li><a href="#">Why MPA?</a></li>
+            <li class="current-menu-item"><a href="#">Why MPA?</a></li>
             <li><a href="#">Our Services</a></li>
             <li><a href="#">About</a></li>
           </ul>
@@ -49,154 +49,180 @@
     </div>
   </header>
   <main>
-    <section id="home-hero" class="relative pt-32 -mt-32 md:pt-48 md:pb-48 xl:pt-48 xl:pb-56 overflow-x-clip">
-      <div class="container px-10">
-        <div class="flex">
-          <div class="w-full max-w-[300px] mx-auto md:ml-0 md:w-1/2 lg:max-w-[unset] xl:pl-24 xl:pr-20 relative">
-            <div class="hero-label px-4 py-0 bg-yellow text-[9px] font-lexenddeca font-bold uppercase tracking-wider text-white absolute -rotate-3 top-16 -left-8 lg:text-[12px] lg:py-1 lg:top-28 lg:px-6 lg:-left-10 xl:left-14 xl:top-36">Unconditional</div>
-            <h1 class="text-brown mb-9 uppercase">
-              Loyalty.<br>
-              <span class="text-darkbrown">Focus.</span><br>
-              Results.
-            </h1>
-            <div class="lg:pr-10 text-darkbrown lg:text-lg">
-              We are digital transformation engineers for <strong>plant systems & water utilities</strong>.
+    <section id="why-hero-page" class="relative pt-32 -mt-32 md:pt-48 md:pb-16 xl:pt-32 xl:pb-16 pb-16 overflow-x-clip">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 xl:pl-24 mb-16 lg:mb-0">
+                    <h1 class="h2 text-brown mb-9 text-center lg:text-left">Why MPA?</h1>
+                    <div class="mb-9">
+                        We are digital transformation consultants, engineers, and technicians that build from a operations centric position. Plant system and Operators. All the technology in the world is useless if the people using it don’t benefit and they can’t maintain it.  We have been doing this for decades but it went by many other names. Modernization, Recontrol, Automation, Green.  
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <a href="#" class="btn btn-yellow">GET IN TOUCH</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 xl:pl-16">
+                    <div class="how-we-started-composition relative flex flex-col items-center pr-20">
+                      <div class="top-image rounded-xl w-[366px] max-w-[75%] xl:max-w-[unset] border-[11px] border-darkbrown bg-darkbrown overflow-hidden">
+                        <img src="./img/yellow-blank.jpg" alt="" class="rounded-lg">
+                      </div>
+                      <div class="bottom-image rounded-xl w-[366px] max-w-[75%] xl:max-w-[unset] border-[11px] border-brown bg-brown overflow-hidden translate-x-20 -translate-y-20">
+                        <img src="./img/Why-MPA-1.webp" alt="" class="rounded-lg">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-curve-white">
+            <img src="./img/bottom-curve-white.svg" alt="">
+        </div>
+    </section>
+    <section id="automation-industry" class="py-16 bg-white overflow-x-clip">
+        <div class="container">
+            <div class="flex">
+                <div class="w-full">
+                    <h2 class="text-center text-brown uppercase mb-16">Active in the water and automation industry</h2>
+                </div>
+            </div>
+        </div>
+        <div class="automation-industry-slider-wrap lg:px-24">
+            <div class="automation-industry-slider">
+                <div class="automation-industry-slider-item">
+                    <img src="./img/awwa.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/isa.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/swan.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/the-water-research.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/workforce.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/awwa.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/isa.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/swan.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/the-water-research.png" alt="">
+                </div>
+                <div class="automation-industry-slider-item">
+                    <img src="./img/workforce.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="committees" class="pt-16 pb-16 overflow-x-clip xl:pt-28">
+      <div class="top-curve-white">
+        <img src="./img/top-curve-white.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="w-full mb-9">
+          <h2 class="text-center text-brown uppercase">Standards Committees</h2>
+        </div>
+        <div class="w-full mb-20">
+          <div class="flex flex-wrap -mx-3 justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-9">
+              <div class="rounded-lg flex justify-center items-center h-11 mb-5 bg-white border border-brown font-bold committees-title max-w-[216px] mx-auto">
+                ISA88
+              </div>
+              <div class="text-center">Batch Control</div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-9">
+              <div class="rounded-lg flex justify-center items-center h-11 mb-5 bg-white border border-brown font-bold committees-title max-w-[216px] mx-auto">
+                ISA95
+              </div>
+              <div class="text-center">Enterprise Control Systems</div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-9">
+              <div class="rounded-lg flex justify-center items-center h-11 mb-5 bg-white border border-brown font-bold committees-title max-w-[216px] mx-auto">
+                ISA99
+              </div>
+              <div class="text-center">Industrial Control System Cybersecuirty <span class="whitespace-nowrap">(ANSI/IEC 62443)</span></div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-9">
+              <div class="rounded-lg flex justify-center items-center h-11 mb-5 bg-white border border-brown font-bold committees-title max-w-[216px] mx-auto">
+                ISA101
+              </div>
+              <div class="text-center">Human Machine Interface</div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-9">
+              <div class="rounded-lg flex justify-center items-center h-11 mb-5 bg-white border border-brown font-bold committees-title max-w-[216px] mx-auto">
+                ISA101
+              </div>
+              <div class="text-center">SCADA</div>
             </div>
           </div>
         </div>
-        
-      </div>
-      <div class="bottom-curve-brown">
-        <img src="./img/bottom-curve-brown.svg" alt="">
-      </div>
-    </section>
-    <section id="what-we-do" class="py-10 bg-darkbrown">
-      <div class="container">
-        <div class="flex flex-wrap lg:gap-3 lg:justify-center xl:gap-9">
-            <div class="w-full mb-6 lg:w-[468px] lg:mb-0">
-              <div class="what-we-do-wrap bg-yellow rounded-lg overflow-hidden flex items-center min-h-[150px] max-w-[468px] mx-auto">
-                <div class="w-[161px]">
-                  <img src="./img/what-we-do-img.png" alt="">
-                </div>
-                <div class="w-[calc(100%-161px)] pl-2 sm:pl-10">
-                  <h3 class="text-brown uppercase leading-6">
-                    What We Do
-                  </h3>
-                  <a href="#" class="text-[14px] uppercase">Explore Our Services</a>
-                </div>
+        <div class="w-full mb-28">
+          <div class="flex flex-wrap -mx-3 items-center">
+            <div class="w-full px-3 lg:w-1/2 xl:w-3/5 xl:pr-40 mb-20 lg:mb-0">
+              <h3 class="uppercase text-brown mb-9">Vendor Agnostic</h3>
+              <p>We don’t have any allegiance to anyone but also stay on top of who is doing what, who is better at what, who has a better model, a better community, etc</p>
+              <p>Accomplished several extensive platform selection processes using a comprehensive methodology</p>
+            </div>
+            <div class="w-full px-3 lg:w-1/2 xl:w-2/5">
+              <div class="relative paw-img w-max mx-auto lg:mr-6">
+                <img src="./img/no-img-brown.svg" alt="" class="border-[11px] rounded-lg border-brown bg-brown">
               </div>
             </div>
-            <div class="w-full mb-6 lg:w-[468px] lg:mb-0">
-              <div class="estimate-wrap bg-white rounded-lg overflow-hidden flex items-center min-h-[150px] max-w-[468px] mx-auto">
-                <div class="w-[161px]">
-                  <img src="./img/estimate-img.png" alt="">
-                </div>
-                <div class="w-[calc(100%-161px)] pl-2 sm:pl-10">
-                  <h3 class="text-brown uppercase leading-6">
-                    Looking for an Estimate?
-                  </h3>
-                  <a href="#" class="text-[14px] uppercase">Let’s Talk</a>
-                </div>
+          </div>
+          
+        </div>
+        <div class="w-full mb-28">
+          <div class="flex flex-wrap -mx-3 items-center">
+            <div class="w-full px-3 lg:w-1/2 lg:order-2 xl:w-3/5 xl:pr-32 mb-20 lg:mb-0">
+              <h3 class="uppercase text-brown mb-9">Appropriate application of Technology</h3>
+              <ul class="yellow-dots">
+                <li>Just because we can doesn’t mean we should</li>
+                <li>We take a very holistic approach and look to maximize the investments our client’s have already made.</li>
+                <li>We don’t implement point solutions.  We implement systems.</li>
+              </ul>
+            </div>
+            <div class="w-full px-3 lg:w-1/2 lg:order-1 xl:w-2/5">
+              <div class="relative paw-img w-max mx-auto lg:ml-6">
+                <img src="./img/no-img-brown.svg" alt="" class="border-[11px] rounded-lg border-brown bg-brown">
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="how-we-started" class="pt-16 pb-96 -mb-80 relative overflow-x-clip">
-      <div class="top-curve-brown">
-        <img src="./img/top-curve-brown.svg" alt="">
+      <div class="bottom-curve-lightbrown">
+        <img src="./img/bottom-curve-lightbrown.svg" alt="">
       </div>
+    </section>
+    <section id="accomplishments" class="py-16 bg-[#F0EEEB] overflow-x-clip xl:py-28">
       <div class="container">
         <div class="flex flex-wrap items-center">
-          <div class="w-full lg:w-1/2 xl:pl-32">
-            <h2 class="text-brown uppercase mb-6 text-center lg:text-left">How we got started.</h2>
-            <p>
-              When we started this adventure, we searched high and low for a name that meant something to us and too the spirit of the business. As we were walking our dogs one day, we started talking about how better off the world would be if more people expressed the unconditional love dogs do. How dogs will focus on a task and stay on it no matter what is going on around them. That is when it hit us. <strong>Muddy Paws Automation</strong> is the name for us.  
-            </p>
+          <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+            <h2 class="text-brown uppercase mb-12 text-center lg:text-left">Accomplishments</h2>
+            <ul class="yellow-dots">
+              <li>Developed AIM methodology – Assess – Implement – Maintain</li>
+              <li>Develop Utility Operations Framework assessment methodology</li>
+              <li>Comprehensive approach to technology application at Utilities</li>
+              <li>Automation Maturity Model</li>
+              <li>Evergreen Automation</li>
+              <li>IT-OT-ET-ST Convergence</li>
+            </ul>
           </div>
-          <div class="w-full lg:w-1/2 xl:pl-16">
-            <div class="how-we-started-composition relative flex flex-col items-center pr-20 pt-20">
-              <div class="top-image rounded-xl w-[366px] max-w-[75%] xl:max-w-[unset] border-[11px] border-darkbrown bg-darkbrown overflow-hidden">
-                <img src="./img/how-we-got-started-2.webp" alt="" class="rounded-lg">
-              </div>
-              <div class="bottom-image rounded-xl w-[366px] max-w-[75%] xl:max-w-[unset] border-[11px] border-brown bg-brown overflow-hidden translate-x-20 -translate-y-20">
-                <img src="./img/how-we-got-started-1.webp" alt="" class="rounded-lg">
-              </div>
-            </div>
+          <div class="w-full lg:w-1/2">
+            <img src="./img/no-img-brown-big.png" alt="" class="border-[11px] rounded-lg border-brown bg-brown mx-auto">
           </div>
         </div>
       </div>
     </section>
-    <section id="our-services" class="pb-16 relative overflow-x-clip">
-      <div class="container">
-        <h2 class="text-center uppercase text-brown mb-14">
-          Our Services
-        </h2>
-        <div class="flex flex-wrap -mx-3 xl:mx-0">
-          <div class="w-full mt-28 mb-14 px-3 lg:w-1/3 xl:px-5">
-            <div class="service-wrap h-full rounded-lg border border-brown bg-white pb-28 relative px-7 max-w-[360px] mx-auto">
-              <div class="service-icon bg-yellow rounded-full w-[187px] h-[187px] mx-auto mb-9 -mt-[90px] relative flex justify-center items-center">
-                <img src="./img/big-paw.svg" alt="" class="absolute -left-4 -top-7">
-                <img src="./img/assessment-icon.svg" alt="">
-              </div>
-              <div class="service-title mb-6">
-                <h3 class="text-brown text-center uppercase">
-                  Assessment
-                </h3>
-              </div>
-              <div class="service-description leading-[26px] tracking-wider text-center">
-                Comprehensive assessments and strategic planning for efficient, secure operations.
-              </div>
-              <div class="service-link absolute bottom-12 left-0 right-0 text-center">
-                <a href="#">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mt-28 mb-14 px-3 lg:w-1/3 xl:px-5">
-            <div class="service-wrap h-full rounded-lg border border-brown bg-white pb-28 relative px-7 max-w-[360px] mx-auto">
-              <div class="service-icon bg-yellow rounded-full w-[187px] h-[187px] mx-auto mb-9 -mt-[90px] relative flex justify-center items-center">
-                <img src="./img/big-paw.svg" alt="" class="absolute -right-4 -bottom-7">
-                <img src="./img/implementation-icon.svg" alt="">
-              </div>
-              <div class="service-title mb-6">
-                <h3 class="text-brown text-center uppercase">
-                  Implementation 
-                </h3>
-              </div>
-              <div class="service-description leading-[26px] tracking-wider text-center">
-                Develop standards, integrate systems, administer construction, and enhance processes.
-              </div>
-              <div class="service-link absolute bottom-12 left-0 right-0 text-center">
-                <a href="#">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mt-28 mb-14 px-3 lg:w-1/3 xl:px-5">
-            <div class="service-wrap h-full rounded-lg border border-brown bg-white pb-28 relative px-7 max-w-[360px] mx-auto">
-              <div class="service-icon bg-yellow rounded-full w-[187px] h-[187px] mx-auto mb-9 -mt-[90px] relative flex justify-center items-center">
-                <img src="./img/big-paw.svg" alt="" class="absolute -right-4 -top-7">
-                <img src="./img/management-icon.svg" alt="">
-              </div>
-              <div class="service-title mb-6">
-                <h3 class="text-brown text-center uppercase">
-                  Management  
-                </h3>
-              </div>
-              <div class="service-description leading-[26px] tracking-wider text-center">
-                Maintain standards, optimize platforms, manage alarms, and provide remote support.
-              </div>
-              <div class="service-link absolute bottom-12 left-0 right-0 text-center">
-                <a href="#">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="testimonials" class="bg-white pt-16 pb-28 overflow-x-clip xl:pt-28">
+      <div class="top-curve-lightbrown">
+        <img src="./img/top-curve-lightbrown.svg" alt="">
       </div>
-      <div class="bottom-curve-white">
-        <img src="./img/bottom-curve-white.svg" alt="">
-      </div>
-    </section>
-    <section id="testimonials" class="bg-white pt-16 pb-28">
       <div class="container">
         <h2 class="text-brown text-center lg:text-left uppercase lg:pl-20 xl:pl-32">
           Testimonials
