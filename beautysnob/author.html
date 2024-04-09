@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="open-right">
+  <section class="mobile-menu">
+    <div class="omni-mobile-menu">
+      <ul >
+        <li><a href="#">MAKIJAŻ</a></li>
+        <li>
+          <a class="omni-dropdown-toggle">PIELĘGNACJA</a>
+            <ul class="omni-dropdown-menu">
+                <li>
+                  <a class="omni-dropdown-toggle">Sub Item</a>
+                    <ul class="omni-dropdown-menu">
+                        <li><a href="#">Sub Item</a></li>
+                        <li><a href="#">Another Sub Item</a></li>
+                        <li><a href="#">Last Sub Item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Another Sub Item</a></li>
+                <li><a href="#">Last Sub Item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">WŁOSY</a></li>
+        <li><a href="#">PERFUMY</a></li>
+        <li><a href="#">PAZNOKCIE</a></li>
+        <li><a href="#">AKCESORIA</a></li>
+        <li><a href="#">SUPLEMENTY</a></li>
+      </ul><!-- omni-mobile-menu -->
+      <form action="/" method="get">
+        <div class="flex">
+          <input type="text" name="s" placeholder="Enter text here"/>
+          <input type="image" src="./img/search.svg" alt="Submit" />
+        </div>
+      </form>
+      <div class="flex justify-center mobile-buttons">
+        <div>
+          <a href="#" id="favorite-button">
+            <img src="./img/heart-white.svg" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="#" id="login-button">
+            <img src="./img/user-white.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="toggle-btn">
+        <div class="hamburger-icon">
+            <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+    </div>
+  </section>
+  <div class="content-wrapper">
+  <header class="py-6 z-40 relative">
+    <div class="container-fluid">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full xl:w-[260px]">
+          <div class="brand pr-20 lg:pr-0 lg:text-center lg:mb-3 xl:text-left xl:mb-0">
+            <a href="/">
+              <img src="./img/beauty-snob-black.svg" alt="Logo">
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:block lg:w-[calc(100%-138px)] xl:w-[calc(100%-260px-138px)] header-main-menu-column">
+          <ul id="main-menu">
+            <li><a href="#">MAKIJAŻ</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">PIELĘGNACJA</a>
+                <ul class="sub-menu">
+                  <li class="menu-item-has-children">
+                    <a>Sub Item</a>
+                      <ul class="sub-menu">
+                          <li><a href="#">Sub Item</a></li>
+                          <li><a href="#">Another Sub Item</a></li>
+                          <li><a href="#">Last Sub Item</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Another Sub Item</a></li>
+                  <li><a href="#">Last Sub Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">WŁOSY</a></li>
+            <li><a href="#">PERFUMY</a></li>
+            <li><a href="#">PAZNOKCIE</a></li>
+            <li><a href="#">AKCESORIA</a></li>
+            <li><a href="#">SUPLEMENTY</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:block lg:w-[138px] header-buttons-column">
+          <div class="flex pl-3 items-center justify-between">
+            <div class="relative">
+              <div id="search-form-wrap">
+                <form action="/" method="get">
+                  <div class="flex">
+                    <input type="text" name="s" placeholder="Enter text here"/>
+                    <input type="submit" value="Search">
+                  </div>
+                </form>
+              </div>
+              <a href="#" id="search-button">
+                <img src="./img/search.svg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#" id="favorite-button">
+                <img src="./img/heart.svg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#" id="login-button">
+                <img src="./img/user.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="author-header" class="py-6">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full mb-6 md:w-[210px] md:mb-0">
+                    <a href="#">
+                        <img src="./img/author-ava.png" alt="">
+                    </a>
+                </div>
+                <div class="w-full lg:w-[calc(100%-210px)] lg:pt-3 lg:pl-6 xl:pl-10">
+                    <div class="author-name text-[28px] lg:text-[36px] font-light mb-6">Johanna K.</div>
+                    <div class="flex flex-wrap">
+                        <div class="w-1/2 md:w-1/4 lg:w-1/6 mb-8">
+                            <div class="text-xs uppercase font-semibold">Member Since</div>
+                            <div class="text-xs uppercase">17 Mar 2018</div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 lg:w-1/5 mb-8">
+                            <div class="text-xs uppercase font-semibold">Products Rated</div>
+                            <div class="text-xs uppercase">182</div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 lg:w-1/5 mb-8">
+                            <div class="text-xs uppercase font-semibold">Reviews</div>
+                            <div class="text-xs uppercase">182</div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 lg:w-1/5 mb-8">
+                            <div class="text-xs uppercase font-semibold">Comments</div>
+                            <div class="text-xs uppercase">82</div>
+                        </div>
+                        <div class="w-full xl:w-5/6 mb-8">
+                            <div class="text-xs uppercase font-semibold">About Me</div>
+                            <div class="text-sm">Minimum 35 words. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tempor massa, at cursus turpis pretium in. Quisque imperdiet venenatis euismod. Quisque sit amet mauris ultrices, euismod risus vel, consectetur neque. Donec non ex eu. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="brand-sorting-wrap" class="py-8 bg-grey">
+        <div class="container">
+            <div class="flex items-center">
+                <div class="sorting-title text-sm">
+                  Sort by:
+                </div>
+                <div class="sorting-menu pl-8">
+                  <div class="sorting-menu-form md:hidden">
+                    <form class="woocommerce-ordering" method="get">
+                      <select name="orderby" class="orderby" aria-label="Shop order">
+                      <option value="score" selected="selected">Most popular</option>
+                      <option value="price">Most recent</option>
+                      <option value="price-desc">Highest</option>
+                      <option value="date">Lowest</option>
+                      <option value="date">Most helpful</option>
+                      </select>
+                    </form>
+                  </div>
+                  
+                  <ul class="hidden md:flex gap-3 text-xs uppercase font-semibold">
+                    <li class="selected">
+                      <a href="#">Most popular</a>
+                    </li>
+                    <li>
+                      <a href="#">most recent</a>
+                    </li>
+                    <li>
+                      <a href="#">highest</a>
+                    </li>
+                    <li>
+                      <a href="#">lowest</a>
+                    </li>
+                    <li>
+                      <a href="#"> most helpful</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="author-reviews" class="py-12">
+        <div class="container">
+            <div class="flex flex-wrap -mx-3">
+                <div class="w-full lg:w-1/2 px-3">
+                    <h2 class="mb-3">
+                        <span class="font-bold">Most Popular</span> Reviewed Products
+                    </h2>
+                    <div class="text-sm mb-6">
+                        The most popular as voted by our users.
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines Extended title to cover 3 lines</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-full px-3 md:w-1/2 mb-8">
+                        <div class="product-wrap max-w-[290px] mx-auto">
+                            <div class="product-tumbnail text-center mb-4">
+                            <a href="#">
+                                <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                            </a>
+                            </div>
+                            <div class="product-title">
+                            <a href="#">
+                                <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                            </a>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                            <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                            </div>
+                            <div class="price-title text-xs font-semibold uppercase mb-2">
+                            Approximate Price
+                            </div>
+                            <div class="product-price font-bold text-xl">
+                            £15.00
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-3">
+                    <h2 class="mb-3">
+                        <span class="font-bold">Most Popular</span> Reviews
+                    </h2>
+                    <div class="text-sm mb-6">
+                        The most popular as voted by our users.
+                    </div>
+                    <div class="review-grid flex flex-wrap -mx-3 mb-8">
+                        <div class="w-full mb-4 px-3">
+                            <div class="review-wrap h-full border border-grey">
+                                <div class="review-title py-4 px-3 flex border-b border-grey items-center">
+                                    <div class="review-author-avatar w-[50px]">
+                                        <img alt="" src="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=110&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=220&amp;d=mm&amp;r=g 2x" class="avatar avatar-110 photo" height="50" width="50" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="review-author-data pl-3">
+                                        <div class="fn text-[16px] font-semibold">Lindsay K.</div>
+                                        <div class="authoir-reviews-quantity text-xs uppercase">
+                                            3 reviews
+                                        </div>
+                                    </div>
+                                    <div class="review-helpfull flex flex-wrap items-center pl-3 ml-auto justify-center">
+                                      <div class="text-xs font-semibold uppercase w-full sm:w-auto sm:pr-3 sm:ml-auto text-center sm:text-right sm:m-0">Helpful?</div>
+                                      <div class="flex items-center gap-3 text-[9px] sm:text-sm">
+                                        <div class="dislike-button flex">
+                                          <a href="#">
+                                            <img src="./img/dislike.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="dislike-quantity">0</div>
+                                        <div class="like-button flex">
+                                          <a href="#">
+                                            <img src="./img/like.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="like-quantity">1,716</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="review-body py-4 px-3">
+                                    <div class="review-label text-xs font-semibold uppercase">
+                                        Reviewing:
+                                    </div>
+                                    <div class="review-subject flex mb-3">
+                                        <a href="#" class="underline text-xs">
+                                            Acqua di Gioia Giorgio Armani Extended title to cover 2 lines
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-wrap justify-between items-center mb-6">
+                                        <div class="star-rating text-[18px] md:text-[24px] pr-3 mb-3 sm:mb-0" style="--rating: 4.0;" title="User rating 4.0 of 5.0"></div>
+                                        <div class="comment-date-column w-full sm:w-auto sm:pl-3 text-xs">SEP 01, 2024</div>
+                                    </div>
+                                    <div class="review-text text-sm mb-3">
+                                        I agree with the sentiments that this fragrance is quite flat. I like clean scents and thought this would work but it's very one dimensional. It doesn't change much so the olfactory experience is limited.
+                                    </div>
+                                    <div class="detailed-rating flex flex-wrap -mx-2">
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Effectiveness</div>
+                                          <div class="review-option-data text-xs">89%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Ease of use</div>
+                                          <div class="review-option-data text-xs">12%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Packaging</div>
+                                          <div class="review-option-data text-xs">62%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Value for money</div>
+                                          <div class="review-option-data text-xs">67%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Used for</div>
+                                          <div class="review-option-data text-xs">More than a year</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Would buy again</div>
+                                          <div class="review-option-data text-xs">Yes</div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mb-4 px-3">
+                            <div class="review-wrap h-full border border-grey">
+                                <div class="review-title py-4 px-3 flex border-b border-grey items-center">
+                                    <div class="review-author-avatar w-[50px]">
+                                        <img alt="" src="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=110&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=220&amp;d=mm&amp;r=g 2x" class="avatar avatar-110 photo" height="50" width="50" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="review-author-data pl-3">
+                                        <div class="fn text-[16px] font-semibold">Lindsay K.</div>
+                                        <div class="authoir-reviews-quantity text-xs uppercase">
+                                            3 reviews
+                                        </div>
+                                    </div>
+                                    <div class="review-helpfull flex flex-wrap items-center pl-3 ml-auto justify-center">
+                                      <div class="text-xs font-semibold uppercase w-full sm:w-auto sm:pr-3 sm:ml-auto text-center sm:text-right sm:m-0">Helpful?</div>
+                                      <div class="flex items-center gap-3 text-[9px] sm:text-sm">
+                                        <div class="dislike-button flex">
+                                          <a href="#">
+                                            <img src="./img/dislike.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="dislike-quantity">0</div>
+                                        <div class="like-button flex">
+                                          <a href="#">
+                                            <img src="./img/like.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="like-quantity">1,716</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="review-body py-4 px-3">
+                                    <div class="review-label text-xs font-semibold uppercase">
+                                        Reviewing:
+                                    </div>
+                                    <div class="review-subject flex mb-3">
+                                        <a href="#" class="underline text-xs">
+                                            Acqua di Gioia Giorgio Armani Extended title to cover 2 lines
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-wrap justify-between items-center mb-6">
+                                        <div class="star-rating text-[18px] md:text-[24px] pr-3 mb-3 sm:mb-0" style="--rating: 4.0;" title="User rating 4.0 of 5.0"></div>
+                                        <div class="comment-date-column w-full sm:w-auto sm:pl-3 text-xs">SEP 01, 2024</div>
+                                    </div>
+                                    <div class="review-text text-sm mb-3">
+                                        <p>I agree with the sentiments that this fragrance is quite flat. I like clean scents and thought this would work but it's very one dimensional. It doesn't change much so the olfactory experience is limited.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa rem, veritatis quibusdam minus nam recusandae consequatur sit minima similique dolores fugiat nostrum iusto voluptates odio quod magnam fuga. Laudantium voluptatem eum neque, quisquam consequuntur hic natus vitae nobis et repudiandae voluptate labore animi nesciunt dolores temporibus quaerat libero officia esse pariatur nulla voluptas tempora quod. Vel nihil numquam harum tenetur dolorum minus eos hic molestiae soluta?</p>
+                                    </div>
+                                    <div class="detailed-rating flex flex-wrap -mx-2">
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Effectiveness</div>
+                                          <div class="review-option-data text-xs">89%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Ease of use</div>
+                                          <div class="review-option-data text-xs">12%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Packaging</div>
+                                          <div class="review-option-data text-xs">62%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Value for money</div>
+                                          <div class="review-option-data text-xs">67%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Used for</div>
+                                          <div class="review-option-data text-xs">More than a year</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Would buy again</div>
+                                          <div class="review-option-data text-xs">Yes</div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mb-4 px-3">
+                            <div class="review-wrap h-full border border-grey">
+                                <div class="review-title py-4 px-3 flex border-b border-grey items-center">
+                                    <div class="review-author-avatar w-[50px]">
+                                        <img alt="" src="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=110&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=220&amp;d=mm&amp;r=g 2x" class="avatar avatar-110 photo" height="50" width="50" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="review-author-data pl-3">
+                                        <div class="fn text-[16px] font-semibold">Lindsay K.</div>
+                                        <div class="authoir-reviews-quantity text-xs uppercase">
+                                            3 reviews
+                                        </div>
+                                    </div>
+                                    <div class="review-helpfull flex flex-wrap items-center pl-3 ml-auto justify-center">
+                                      <div class="text-xs font-semibold uppercase w-full sm:w-auto sm:pr-3 sm:ml-auto text-center sm:text-right sm:m-0">Helpful?</div>
+                                      <div class="flex items-center gap-3 text-[9px] sm:text-sm">
+                                        <div class="dislike-button flex">
+                                          <a href="#">
+                                            <img src="./img/dislike.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="dislike-quantity">0</div>
+                                        <div class="like-button flex">
+                                          <a href="#">
+                                            <img src="./img/like.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="like-quantity">1,716</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="review-body py-4 px-3">
+                                    <div class="review-label text-xs font-semibold uppercase">
+                                        Reviewing:
+                                    </div>
+                                    <div class="review-subject flex mb-3">
+                                        <a href="#" class="underline text-xs">
+                                            Acqua di Gioia Giorgio Armani Extended title to cover 2 lines
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-wrap justify-between items-center mb-6">
+                                        <div class="star-rating text-[18px] md:text-[24px] pr-3 mb-3 sm:mb-0" style="--rating: 4.0;" title="User rating 4.0 of 5.0"></div>
+                                        <div class="comment-date-column w-full sm:w-auto sm:pl-3 text-xs">SEP 01, 2024</div>
+                                    </div>
+                                    <div class="review-text text-sm mb-3">
+                                        <p>I agree with the sentiments that this fragrance is quite flat. I like clean scents and thought this would work but it's very one dimensional. It doesn't change much so the olfactory experience is limited.</p>
+                                        <p>Laudantium voluptatem eum neque, quisquam consequuntur hic natus vitae nobis et repudiandae voluptate labore animi nesciunt dolores temporibus quaerat voluptas tempora quod. Vel nihil numquam harum tenetur dolorum minus eos hic molestiae soluta?</p>
+                                    </div>
+                                    <div class="detailed-rating flex flex-wrap -mx-2">
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Effectiveness</div>
+                                          <div class="review-option-data text-xs">89%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Ease of use</div>
+                                          <div class="review-option-data text-xs">12%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Packaging</div>
+                                          <div class="review-option-data text-xs">62%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Value for money</div>
+                                          <div class="review-option-data text-xs">67%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Used for</div>
+                                          <div class="review-option-data text-xs">More than a year</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Would buy again</div>
+                                          <div class="review-option-data text-xs">Yes</div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mb-4 px-3">
+                            <div class="review-wrap h-full border border-grey">
+                                <div class="review-title py-4 px-3 flex border-b border-grey items-center">
+                                    <div class="review-author-avatar w-[50px]">
+                                        <img alt="" src="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=110&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/43131d0e67b97f5ea11be02cbbbf27f4?s=220&amp;d=mm&amp;r=g 2x" class="avatar avatar-110 photo" height="50" width="50" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="review-author-data pl-3">
+                                        <div class="fn text-[16px] font-semibold">Lindsay K.</div>
+                                        <div class="authoir-reviews-quantity text-xs uppercase">
+                                            3 reviews
+                                        </div>
+                                    </div>
+                                    <div class="review-helpfull flex flex-wrap items-center pl-3 ml-auto justify-center">
+                                      <div class="text-xs font-semibold uppercase w-full sm:w-auto sm:pr-3 sm:ml-auto text-center sm:text-right sm:m-0">Helpful?</div>
+                                      <div class="flex items-center gap-3 text-[9px] sm:text-sm">
+                                        <div class="dislike-button flex">
+                                          <a href="#">
+                                            <img src="./img/dislike.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="dislike-quantity">0</div>
+                                        <div class="like-button flex">
+                                          <a href="#">
+                                            <img src="./img/like.svg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="like-quantity">1,716</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="review-body py-4 px-3">
+                                    <div class="review-label text-xs font-semibold uppercase">
+                                        Reviewing:
+                                    </div>
+                                    <div class="review-subject flex mb-3">
+                                        <a href="#" class="underline text-xs">
+                                            Acqua di Gioia Giorgio Armani Extended title to cover 2 lines
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-wrap justify-between items-center mb-6">
+                                        <div class="star-rating text-[18px] md:text-[24px] pr-3 mb-3 sm:mb-0" style="--rating: 4.0;" title="User rating 4.0 of 5.0"></div>
+                                        <div class="comment-date-column w-full sm:w-auto sm:pl-3 text-xs">SEP 01, 2024</div>
+                                    </div>
+                                    <div class="review-text text-sm mb-3">
+                                        <p>I agree with the sentiments that this fragrance is quite flat. I like clean scents and thought this would work but it's very one dimensional. It doesn't change much so the olfactory experience is limited.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa rem, veritatis quibusdam minus nam recusandae consequatur sit minima similique dolores dolores temporibus quaerat libero officia esse pariatur nulla voluptas tempora quod. Vel nihil numquam harum tenetur dolorum minus eos hic molestiae soluta?</p>
+                                    </div>
+                                    <div class="detailed-rating flex flex-wrap -mx-2">
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Effectiveness</div>
+                                          <div class="review-option-data text-xs">89%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Ease of use</div>
+                                          <div class="review-option-data text-xs">12%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Packaging</div>
+                                          <div class="review-option-data text-xs">62%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Value for money</div>
+                                          <div class="review-option-data text-xs">67%</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Used for</div>
+                                          <div class="review-option-data text-xs">More than a year</div>
+                                        </div>
+                                        <div class="w-1/2 sm:w-1/3 mb-5 px-2">
+                                          <div class="review-option text-xs font-semibold uppercase leading-none">Would buy again</div>
+                                          <div class="review-option-data text-xs">Yes</div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-grid-button text-center">
+                <a href="#" class="btn btn-outline w-[320px] max-w-full">VIEW ALL REVIEWED PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+    <section class="py-11 bg-grey">
+        <div class="container">
+          <div class="flex items-center mb-11">
+            <div class="category-name">
+              <h2>Category Most Popular 3</h2>
+            </div>
+            <div class="category-button ml-auto">
+              <a href="#" class="btn btn-outline w-[145px]">VIEW ALL</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-11">
+        <div class="container">
+          <div class="flex items-center mb-11">
+            <div class="category-name">
+              <h2>Category Most Popular</h2>
+            </div>
+            <div class="category-button ml-auto">
+              <a href="#" class="btn btn-outline w-[145px]">VIEW ALL</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-11 bg-grey">
+        <div class="container">
+          <div class="flex items-center mb-11">
+            <div class="category-name">
+              <h2>Category Most Popular 3</h2>
+            </div>
+            <div class="category-button ml-auto">
+              <a href="#" class="btn btn-outline w-[145px]">VIEW ALL</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+              <div class="product-wrap max-w-[290px] mx-auto">
+                <div class="product-tumbnail text-center mb-4">
+                  <a href="#">
+                    <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                  </a>
+                </div>
+                <div class="product-title">
+                  <a href="#">
+                    <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                  </a>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                  <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                </div>
+                <div class="price-title text-xs font-semibold uppercase mb-2">
+                  Approximate Price
+                </div>
+                <div class="product-price font-bold text-xl">
+                  £15.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products-grid" class="pt-8 pb-16">
+        <div class="container">
+            <h2 class="mb-6">All Reviewed Products</h2>
+            <div class="all-brand-product-grid flex flex-wrap -mx-3 mb-8">
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines Extended title to cover 3 lines</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                  <div class="product-wrap max-w-[290px] mx-auto">
+                    <div class="product-tumbnail text-center mb-4">
+                      <a href="#">
+                        <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-title">
+                      <a href="#">
+                        <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                      </a>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                      <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                    </div>
+                    <div class="price-title text-xs font-semibold uppercase mb-2">
+                      Approximate Price
+                    </div>
+                    <div class="product-price font-bold text-xl">
+                      £15.00
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines Extended title to cover 3 lines</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 3.7;" title="User rating 3.7 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">3.7 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-3.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani-4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia </h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 md:w-1/2 xl:w-1/4 mb-8">
+                    <div class="product-wrap max-w-[290px] mx-auto">
+                      <div class="product-tumbnail text-center mb-4">
+                        <a href="#">
+                          <img src="./img/Acqua-di-Gioia-Giorgio-Armani.png" alt="">
+                        </a>
+                      </div>
+                      <div class="product-title">
+                        <a href="#">
+                          <h4 class="md:min-h-12">Acqua di Gioia Giorgio Armani Extended title to cover 2 lines</h4>
+                        </a>
+                      </div>
+                      <div class="flex items-center mb-3">
+                        <div class="star-rating" style="--rating: 4.6;" title="User rating 4.6 of 5.0"></div>
+                        <div class="rating-data font-semibold text-xs">4.6 / 143 reviews</div>
+                      </div>
+                      <div class="price-title text-xs font-semibold uppercase mb-2">
+                        Approximate Price
+                      </div>
+                      <div class="product-price font-bold text-xl">
+                        £15.00
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="review-grid-button text-center">
+                <a href="#" class="btn btn-outline w-[320px] max-w-full">LOAD MORE BRAND NAME PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer class="py-16 lg:py-28 bg-black">
+    <div class="container">
+      <div class="flex flex-wrap pb-16 mb-16 border-b border-white">
+        <div class="w-full md:w-1/2 md:pr-6">
+          <div class="footer-brand mb-6 lg:mb-16">
+            <a href="/">
+              <img src="./img/beauty-snob-white.svg" alt="">
+            </a>
+          </div>
+          <div class="text-white text-sm mb-6">
+            Nunc vitae dolor dui. Quisque vehicula gravida accumsan. In tortor urna, sollicitudin eu felis elementum, ornare sodales lacus. Nam feugiat posuere elit, et congue lorem semper nec. Nullam sed sem elementum ipsum facilisis luctus non in felis. Vivamus mattis, quam eget blandit dignissim, leo ligula facilisis sapien, sed euismod sapien augue sit amet neque.
+          </div>
+          <div class="footer-social mb-6">
+            <ul class="flex gap-4 lg:gap-8 xl:gap-11">
+              <li>
+                <a href="#">
+                  <img src="./img/telegram.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/Twitter.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/Facebook.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/instagram.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/LinkedIn.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-1/2 text-white footer-widget md:w-1/4 xl:pl-20">
+          <h2>Footer One</h2>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">Parfum</a>
+            </li>
+            <li>
+              <a href="#">Parfummarken</a>
+            </li>
+            <li>
+              <a href="#">Parfümeure</a>
+            </li>
+            <li>
+              <a href="#">Duftnoten</a>
+            </li>
+            <li>
+              <a href="#">Duftzwillinge</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/2 text-white footer-widget md:w-1/4 xl:pl-10">
+          <h2>Footer Two</h2>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">Community Guidelines</a>
+            </li>
+            <li>
+              <a href="#">Parfumo Team</a>
+            </li>
+            <li>
+              <a href="#">Hilfe</a>
+            </li>
+            <li>
+              <a href="#">Parfumo App</a>
+            </li>
+            <li>
+              <a href="#">Parfumberatung</a>
+            </li>
+            <li>
+              <a href="#">Kosmetik</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap">
+        <div class="language w-full mb-6 sm:w-1/2 md:w-1/3 md:order-2 md:mb-0 md:pl-6 lg:w-1/4 xl:pl-20">
+          <div class="flex items-center">
+            <div class="uppercase text-white pr-3 text-xs">Language</div>
+            <div class="language-menu">
+                <a class="country_selector_dropdown">
+                  <div class="country_selector_dropbtn flex items-center gap-2 text-xs">
+                    <span class="flag-icon flag-icon-un">
+                      <img src="./img/flag-en.png" alt="">
+                    </span>
+                    English
+                  </div>
+                </a>
+                <div class="country_selector_dropdown-content hidden">
+                <ul class="wordpress-multilingual-multisite-country-selector">
+                  <a href="https://www.myintimacy.com/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-un"></span>English</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/es/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-es"></span>Spanish</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/it/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-it"></span>Italian</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/de/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-de"></span>German</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/nl/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-nl"></span>Dutch</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/fr/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-fr"></span>French</li>
+                  </a>
+                  <a href="https://www.myintimacy.com/pl/lovense-nora/" data-wpel-link="internal">
+                    <li><span class="flag-icon flag-icon-pl"></span>Polish</li>
+                  </a>
+                </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mb-6 sm:w-1/2 md:w-1/3 md:order-3 md:mb-0 lg:w-1/4">
+          <ul id="policy-menu">
+            <li>
+              <a href="#">Terms Policy</a>
+            </li>
+            <li>
+              <a href="#">Coockie Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full sm:text-center md:w-1/3 md:order-1 md:text-left lg:w-1/2">
+          <div class="text-white text-sm">Copyright 2024. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block fixed p-3 bg-darkgrey text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:text-black hover:bg-grey hover:shadow-lg focus:bg-grey focus:shadow-lg focus:outline-none focus:ring-0 active:bg-grey active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
+</div>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
