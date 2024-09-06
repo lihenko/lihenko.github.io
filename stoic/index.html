@@ -7,17 +7,17 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
-  <header class="px-3 lg:px-16 py-8 relative z-10">
+  <header class="px-3 xl:px-16 py-8 relative z-10">
     <div class="flex items-center lg:justify-between">
-      <div class="brand">
+      <div class="brand w-[100px] sm:w-[150px] lg:w-[229px]">
         <a href="/">
           <img src="./img/Logo.svg" alt="Logo">
         </a>
       </div>
-      <div class="header-social">
+      <div class="header-social ml-auto">
         <div class="flex flex-wrap items-center">
-          <div class="header-sosial-title pr-8">Join the Community:</div>
-          <div class="flex gap-10 xl:pr-12">
+          <div class="header-sosial-title pr-8 hidden lg:block">Join the Community:</div>
+          <div class="flex gap-4 lg:gap-10 xl:pr-12">
             <div class="social-item">
               <a href="https://hoo.be/georgiy" target="_blank">
                 <img src="./img/Hoobe.svg" alt="Hoobe">
@@ -44,20 +44,87 @@
     </div>
   </header>
   <main>
-    <section id="hero" style="background-image: url(./img/hero-bg.png);" class="bg-cover bg-center relative">
+    <section id="mobile-hero" class="lg:hidden" >
+      <div class="hero-title relative bg-cover" style="background-image: url(./img/wall.png);">
+        <div class="container">
+          <h1 class="text-blue text-center uppercase">Science-Backed Fitness</h1>
+          
+          <div class="hero-title-image block">
+            <img src="./img/strong-man.png" alt="" class="mx-auto -mt-6 block">
+          </div>
+          <div class="hero-subtitle text-center uppercase font-extrabold absolute">
+            Learn the Why, Master the How, Own your Personal Fitness for Life.
+          </div>
+        </div>
+        <div class="hero-title-overlay"></div>
+      </div>
+      <div class="mobile-hero-form mb-6">
+        <div class="container">
+          <div class="hero-form-wrap">
+          <h3 class="uppercase text-center tracking-wide mb-9">Fill out YOUR details to discuss your goals and the right system to reach them</h3>
+          <form action="">
+            <div class="form-item form-input-name mb-5">
+              <input type="text" placeholder="Full Name:">
+            </div>
+            <div class="form-item form-input-instagram mb-5">
+              <input type="text" placeholder="Your Instagram handle:">
+            </div>
+            <div class="form-item form-input-phone mb-5">
+              <input type="tel" placeholder="Phone Number:">
+            </div>
+            <div class="form-item form-input-email mb-8">
+              <input type="email" placeholder="Email:">
+            </div>
+            <div class="form-item form-button">
+              <input type="submit" value="GET STARTED">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26.98" height="14.782" viewBox="0 0 26.98 14.782">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 2px;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(1 1.414) rotate(-90)">
+                  <path class="cls-1" d="M-.5,0V24.98" transform="translate(-5.487)"/>
+                  <path data-name="Path" class="cls-1" d="M0,0-5.977,5.976-11.954,0" transform="translate(0 18.997)"/>
+                </g>
+              </svg>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="font-bold text-lg lg:text-xl mb-10 text-center">
+          Achieve Lasting Results With A Personalized Approach That Educates You All Along The Way
+        </div>
+        <div class="tracking-wide">
+          <p>Gone are the days of generic workout routines and diets. When it comes to transforming your health and fitness, a one-size-fits-all solution simply won't cut it.</p>
+          <p>The key lies in combining the right system tailored to your unique lifestyle, habits, and genetic makeup, along with our Stoic Physique Pillars that educate you a lifelong application.</p>
+        </div> 
+      </div>
+    </section>
+    <section id="desctop-hero" class="hidden lg:block lg:bg-cover lg:bg-center relative" style="background-image: url(./img/hero-bg.png);">
       <div class="hero-overlay"></div>
-      <div class="flex flex-wrap px-3 lg:px-16">
-        <div class="hero-title w-full lg:w-1/2 xl:w-[610px]">
-          <h1 class="uppercase mb-10"><span class="text-violet">Science-Backed Fitness:</span> Learn the Why, Master 
+      <div class="flex flex-wrap px-3 xl:px-16">
+        <div class="hero-title w-full lg:w-1/2 xl:w-[610px] lg:pr-3">
+          <h1 class="uppercase mb-10"><span class="text-blue">Science-Backed Fitness:</span> Learn the Why, Master 
           the How, Own your Personal Fitness for Life.</h1> 
           <div class="font-bold text-lg lg:text-xl mb-10">
             Achieve Lasting Results With A Personalized Approach That Educates You All Along The Way
           </div>
           <div class="tracking-wide">
-            Gone are the days of generic workout routines and diets. When it comes to transforming your health and fitness, a one-size-fits-all solution simply won't cut it. The key lies in combining the right system tailored to your unique lifestyle, habits, and genetic makeup, along with our Stoic Physique Pillars that educate you a lifelong application.
+            <p>Gone are the days of generic workout routines and diets. When it comes to transforming your health and fitness, a one-size-fits-all solution simply won't cut it.</p>
+            <p>The key lies in combining the right system tailored to your unique lifestyle, habits, and genetic makeup, along with our Stoic Physique Pillars that educate you a lifelong application.</p>
           </div> 
         </div>
-        <div class="hero-form w-full max-w-[594px] lg:ml-auto relative">
+        <div class="hero-form w-full lg:w-1/2 max-w-[594px] lg:ml-auto relative">
           <div class="hero-form-wrap">
             <h3 class="uppercase text-center tracking-wide mb-9">Fill out YOUR details to discuss your goals and the right system to reach them</h3>
             <form action="">
@@ -99,80 +166,85 @@
         </div>
       </div>
     </section>
-    <section id="physique-pillars">
-      <div class="pillars-bg-img absolute left-0 right-0 bottom-8">
-        <img src="./img/stoic.svg" alt="" class="w-full h-auto">
+    <section id="physique-pillars" class="lg:mb-20">
+      <div class="pillars-bg-img absolute left-0 right-0 bottom-40 lg:bottom-8">
+        <img src="./img/stoic.svg" alt="" class="w-full h-auto hidden lg:block">
+        <img src="./img/stoic-mobile.svg" alt="" class="w-full h-auto lg:hidden">
       </div>
       <h2 class="text-center mb-10 uppercase">THE STOIC PHYSIQUE PILLARS</h2>
-      <div class="container">
-        <div class="pillars-slider">
-          <div class="pillars-slider-item px-3">
-            <div class="pillar-wrap mb-10">
-              <div class="pillar-title-data">
-                <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
-                  <img src="./img/DATA-DRIVEN.svg" alt="">
+
+        <div class="pillars-slider-wrap relative">
+          <div class="pillars-prev-button"></div>
+          <div class="pillars-next-button"></div>
+          <div class="pillars-slider">
+            <div class="pillars-slider-item px-3">
+              <div class="pillar-wrap mb-10">
+                <div class="pillar-title-data">
+                  <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
+                    <img src="./img/DATA-DRIVEN.svg" alt="">
+                  </div>
+                  <div class="pllar-title text-center">
+                    <h3 class="text-blue uppercase">DATA-DRIVEN</h3>
+                  </div>
                 </div>
-                <div class="pllar-title text-center">
-                  <h3 class="text-violet uppercase">DATA-DRIVEN</h3>
+                <div class="pillar-description px-5 py-5">
+                  <div class="mb-6">Using metrics to our advantage to help:</div>
+                  <ul class="bullet-list">
+                    <li>Avoid hitting walls/plateaus</li>
+                    <li>Allow for more meticulous adjustments to drive truly sustainable changes.</li>
+                    <li>Take out the guesswork and help plot out a step-by-step formula specifically for you to be able to use for the rest of your life.</li> 
+                  </ul>
                 </div>
-              </div>
-              <div class="pillar-description px-5 py-5">
-                <div class="mb-6">Using metrics to our advantage to help:</div>
-                <ul class="bullet-list">
-                  <li>Avoid hitting walls/plateaus</li>
-                  <li>Allow for more meticulous adjustments to drive truly sustainable changes.</li>
-                  <li>Take out the guesswork and help plot out a step-by-step formula specifically for you to be able to use for the rest of your life.</li> 
-                </ul>
               </div>
             </div>
-          </div>
-          <div class="pillars-slider-item px-3">
-            <div class="pillar-wrap mb-10">
-              <div class="pillar-title-data">
-                <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
-                  <img src="./img/NUTRITION PRECISION.svg" alt="">
+            <div class="pillars-slider-item px-3">
+              <div class="pillar-wrap mb-10">
+                <div class="pillar-title-data">
+                  <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
+                    <img src="./img/NUTRITION PRECISION.svg" alt="">
+                  </div>
+                  <div class="pllar-title text-center">
+                    <h3 class="text-blue uppercase">NUTRITION PRECISION</h3>
+                  </div>
                 </div>
-                <div class="pllar-title text-center">
-                  <h3 class="text-violet uppercase">NUTRITION PRECISION</h3>
+                <div class="pillar-description px-5 py-5">
+                  <div class="mb-6">Taking R.A.D (Random Acts of Dieting) out of your life to bring consistent week-over-week progress by:</div>
+                  <ul class="bullet-list">
+                    <li>Creating a structure of meals and recipes that fit your lifestyle, preferences and everything you have going on.</li>
+                    <li>Manipulating timing, portions and macro ratios to improve energy levels and performance in and out of the gym.</li>
+                    <li>Working with your cravings and appetite spikes rather than against them so the results you see....last a lifetime.</li>
+                  </ul>
                 </div>
-              </div>
-              <div class="pillar-description px-5 py-5">
-                <div class="mb-6">Taking R.A.D (Random Acts of Dieting) out of your life to bring consistent week-over-week progress by:</div>
-                <ul class="bullet-list">
-                  <li>Creating a structure of meals and recipes that fit your lifestyle, preferences and everything you have going on.</li>
-                  <li>Manipulating timing, portions and macro ratios to improve energy levels and performance in and out of the gym.</li>
-                  <li>Working with your cravings and appetite spikes rather than against them so the results you see....last a lifetime.</li>
-                </ul>
               </div>
             </div>
-          </div>
-          <div class="pillars-slider-item px-3">
-            <div class="pillar-wrap mb-10">
-              <div class="pillar-title-data">
-                <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
-                  <img src="./img/TRAINING OPTIMIZATION.svg" alt="">
+            <div class="pillars-slider-item px-3">
+              <div class="pillar-wrap mb-10">
+                <div class="pillar-title-data">
+                  <div class="pillar-icon w-[210px] h-[210px] rounded-full bg-black mt-[-118px] mb-10 flex justify-center items-center mx-auto">
+                    <img src="./img/TRAINING OPTIMIZATION.svg" alt="">
+                  </div>
+                  <div class="pllar-title text-center">
+                    <h3 class="text-blue uppercase">TRAINING OPTIMIZATION</h3>
+                  </div>
                 </div>
-                <div class="pllar-title text-center">
-                  <h3 class="text-violet uppercase">TRAINING OPTIMIZATION</h3>
+                <div class="pillar-description px-5 py-5">
+                  <div class="mb-6">Not just exercising. But, training with a goal and vision by:</div>
+                  <ul class="bullet-list">
+                    <li>Designing a customized routine around weak points, injuries, and mobility sticking points to sculpt a balanced physique.</li>
+                    <li>Varying training phases and periodizations within each phase to maximize progressive overload and drive muscle growth</li>
+                    <li>Creating sustainability by balancing your recovery to fatigue ratio that may be caused by external variables (work, stress, sleep...etc).</li> 
+                  </ul>
                 </div>
-              </div>
-              <div class="pillar-description px-5 py-5">
-                <div class="mb-6">Not just exercising. But, training with a goal and vision by:</div>
-                <ul class="bullet-list">
-                  <li>Designing a customized routine around weak points, injuries, and mobility sticking points to sculpt a balanced physique.</li>
-                  <li>Varying training phases and periodizations within each phase to maximize progressive overload and drive muscle growth</li>
-                  <li>Creating sustainability by balancing your recovery to fatigue ratio that may be caused by external variables (work, stress, sleep...etc).</li> 
-                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
     </section>
-    <section id="video" class="py-60 px-3 bg-cover bg-center relative" style="background-image: url(./img/video-bg.png);">
+    <section id="video" class="pt-14 pb-1 lg:py-60 px-3 bg-[length:200%] bg-[center_top] bg-no-repeat mb-12 lg:mb-0 lg:bg-cover lg:bg-center relative" style="background-image: url(./img/video-bg.png);">
       <div class="video-overlay"></div>
       <h2 class="text-center mb-10">TAKE A LOOK INSIDE THE PROGRAM!</h2>
-      <div class="text-center max-w-[916px] mx-auto text-xl tracking-wide mb-10">
+      <div class="text-center max-w-[916px] mx-auto lg:text-xl tracking-wide mb-10 relative">
         Press play below and watch an in-depth case study of how Chris (at 49 years young) was able to shed off 20lbs and reach sub 10% BF in just 12 weeks! And all while balancing family, work and everything in between.
       </div>
       <div class="video-button text-center">
@@ -237,7 +309,7 @@
     </section>
     <section id="before-after" class="py-16">
       <h2 class="text-center mb-10 px-3 uppercase">Check out the BEFORE & AFTERS</h2>
-      <div class="px-3 text-xl text-center max-w-[1032px] mx-auto mb-10">
+      <div class="px-3 lg:text-xl text-center max-w-[1032px] mx-auto mb-10">
         It's one thing to get a cookie-cutter meal plan and workout routine....<br>
         It's another to have a fully built-out <strong>SYSTEM</strong> around you that will bring you all the way to the finish line and provide the formula and knowledge to keep the results <strong>LONG-TERM</strong>.
       </div>
@@ -333,7 +405,7 @@
     <section class="top-curve -mb-[2px]">
       <img src="./img/top-curve.svg" alt="curve">
     </section>
-    <section id="components-of-success" class="bg-darkviolet relative px-3">
+    <section id="components-of-success" class="bg-darkviolet relative px-3 pt-8 lg:pt-0">
       <h2 class="text-center uppercase mb-6 tracking-wide">
         THE CRUCIAL COMPONENTS OF SUCCESS
       </h2>
@@ -414,7 +486,6 @@
         <div class="testimonials-bg-img">
           <img src="./img/testimonials-bg.svg" alt="">
         </div>
-        <div class="container">
           <div class="testimonials-slider-wrap relative lg:px-24">
             <div class="testimonials-prev-button"></div>
             <div class="testimonials-next-button"></div>
@@ -501,7 +572,7 @@
               </div>
             </div>
           </div>
-        </div>
+
         
       </div>
     </section>
@@ -516,7 +587,7 @@
         <h2 class="text-center mb-10 uppercase z-30 relative">
           READY TO GET STARTED?
         </h2>
-        <div class="text-center max-w-[1041px] mx-auto text-xl mb-10 z-30 relative">
+        <div class="text-center max-w-[1041px] mx-auto lg:text-xl mb-10 z-30 relative">
           Learn about how a fully built-out system can help you break through barriers, get back to your prime, and acquire a confidence looking in the mirror knowing <strong>YOU DID THAT</strong>!
         </div>
         <div class="get-started-form-wrap xl:px-16 z-30 relative">
@@ -579,10 +650,10 @@
       <h2 class="text-center mb-10 uppercase tracking-wide">
         Join My Weekly Newsletter
       </h2>
-      <div class="mb-10 text-center tracking-wide text-xl font-bold">
+      <div class="mb-10 text-center tracking-wide lg:text-xl font-bold">
         For all the tips & tricks to get you from 80% to 100%.
       </div>
-      <div class="footer-form max-w-[904px] mx-auto mb-12">
+      <div class="footer-form max-w-[904px] mx-auto mb-12 px-8">
         <form action="">
           <div class="relative">
             <div class="footer-form-item">
@@ -596,7 +667,7 @@
       </div>
       <div class="footer-social">
         <div class="flex flex-wrap items-center justify-center">
-          <div class="footer-sosial-title pr-8">Join the Community:</div>
+          <div class="footer-sosial-title mb-3 lg:mb-0">Join the Community:</div>
           <div class="flex gap-10 xl:pr-12">
             <div class="social-item">
               <a href="https://hoo.be/georgiy" target="_blank">
