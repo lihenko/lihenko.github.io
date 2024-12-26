@@ -955,7 +955,7 @@ a{
 }
 a:hover{
   --tw-text-opacity: 1;
-  color: rgb(128 171 218 / var(--tw-text-opacity, 1));
+  color: rgb(68 102 186 / var(--tw-text-opacity, 1));
 }
 .btn{
   display: inline-block;
@@ -994,7 +994,7 @@ a:hover{
 }
 .black-btn:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(128 171 218 / var(--tw-bg-opacity, 1));
+  background-color: rgb(68 102 186 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -1154,7 +1154,7 @@ a:hover{
 }
 .bg-blue{
   --tw-bg-opacity: 1;
-  background-color: rgb(128 171 218 / var(--tw-bg-opacity, 1));
+  background-color: rgb(68 102 186 / var(--tw-bg-opacity, 1));
 }
 .bg-darkgrey{
   --tw-bg-opacity: 1;
@@ -1170,6 +1170,10 @@ a:hover{
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -1226,7 +1230,7 @@ a:hover{
 }
 .text-blue{
   --tw-text-opacity: 1;
-  color: rgb(128 171 218 / var(--tw-text-opacity, 1));
+  color: rgb(68 102 186 / var(--tw-text-opacity, 1));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -1476,7 +1480,7 @@ body, html {
 .schedule-wrap a:hover {
   text-decoration: none;
   --tw-text-opacity: 1;
-  color: rgb(128 171 218 / var(--tw-text-opacity, 1));
+  color: rgb(68 102 186 / var(--tw-text-opacity, 1));
 }
 .schedule-wrap a .schedule-avatar {
   width: 80px;
@@ -1485,6 +1489,7 @@ body, html {
 .schedule-wrap a .schedule-avatar img {
   aspect-ratio: 1/1;
   border-radius: 50%;
+  border: 1px solid #000;
 }
 
 .home-slider-bg {
@@ -1568,7 +1573,7 @@ body, html {
 }
 .home-hero-slider-buttons .slick-dots li.slick-active button:before{
   --tw-bg-opacity: 1;
-  background-color: rgb(128 171 218 / var(--tw-bg-opacity, 1));
+  background-color: rgb(68 102 186 / var(--tw-bg-opacity, 1));
   opacity: 1;
 }
 
@@ -1584,11 +1589,11 @@ body, html {
   bottom: -60px;
 }
 .featured-products-slider .slick-dots li {
-  width: 50px;
+  width: 30px;
 }
 .featured-products-slider .slick-dots li button:before {
   content: "";
-  width: 50px;
+  width: 30px;
   height: 6px;
   --tw-bg-opacity: 1;
   background-color: rgb(192 222 219 / var(--tw-bg-opacity, 1));
@@ -1597,7 +1602,7 @@ body, html {
 }
 .featured-products-slider .slick-dots li.slick-active button:before{
   --tw-bg-opacity: 1;
-  background-color: rgb(128 171 218 / var(--tw-bg-opacity, 1));
+  background-color: rgb(68 102 186 / var(--tw-bg-opacity, 1));
   opacity: 1;
 }
 
@@ -1665,7 +1670,7 @@ body, html {
 }
 .article-read-more a:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(128 171 218 / var(--tw-bg-opacity, 1));
+  background-color: rgb(68 102 186 / var(--tw-bg-opacity, 1));
 }
 
 .article-grid-title {
@@ -1824,11 +1829,11 @@ body, html {
   }
   .main-menu ul li a:hover{
     --tw-text-opacity: 1;
-    color: rgb(128 171 218 / var(--tw-text-opacity, 1));
+    color: rgb(68 102 186 / var(--tw-text-opacity, 1));
   }
   .main-menu ul li.current-menu-item a{
     --tw-text-opacity: 1;
-    color: rgb(128 171 218 / var(--tw-text-opacity, 1));
+    color: rgb(68 102 186 / var(--tw-text-opacity, 1));
   }
   .home-slider-bg {
     padding-bottom: 48px;
@@ -1972,6 +1977,9 @@ body, html {
   .md\:mb-0{
     margin-bottom: 0px;
   }
+  .md\:ml-0{
+    margin-left: 0px;
+  }
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2039,6 +2047,9 @@ body, html {
   }
   .lg\:pr-0{
     padding-right: 0px;
+  }
+  .lg\:text-left{
+    text-align: left;
   }
 }
 @media (min-width: 1294px){

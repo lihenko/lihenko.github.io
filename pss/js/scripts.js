@@ -146,6 +146,7 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
 
 jQuery('.home-hero-slider').slick({
   autoplay: true,
+  autoplaySpeed: 5000,
   slidesToScroll: 1,
   slidesToShow: 1,
   arrows: true,
@@ -158,6 +159,7 @@ jQuery('.home-hero-slider').slick({
 
 jQuery('.featured-products-slider').slick({
   autoplay: true,
+  autoplaySpeed: 3000,
   slidesToScroll: 3,
   slidesToShow: 4,
   arrows: false,
