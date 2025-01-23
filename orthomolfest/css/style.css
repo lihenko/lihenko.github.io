@@ -973,6 +973,17 @@ a.blue-btn:hover::after {
   background-size: cover;
   background-position: center;
 }
+.additional-info h2.time::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/time.svg);
+  background-size: cover;
+  background-position: center;
+}
 
 #org {
   padding-top: 80px;
@@ -1420,5 +1431,15 @@ footer .footer-social {
   }
   footer .footer-social {
     justify-content: flex-end;
+  }
+  .additional-info h2.mail::after {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .additional-info h2.time::after {
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
