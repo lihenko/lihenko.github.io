@@ -555,6 +555,12 @@ body.menu-open .omni-mobile-menu {
   font-display: swap;
 }
 @font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.ttf");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
   font-family: "Unbounded";
   src: url("../fonts/Unbounded-Regular.ttf");
   font-weight: 400;
@@ -570,6 +576,12 @@ body.menu-open .omni-mobile-menu {
   font-family: "Unbounded";
   src: url("../fonts/Unbounded-ExtraBold.ttf");
   font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Black.ttf");
+  font-weight: 900;
   font-display: swap;
 }
 body, html {
@@ -899,12 +911,12 @@ a.blue-btn:hover::after {
 }
 .dist-card .dist-count-title {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
   color: #063477;
 }
 .dist-card .dist-count-number {
   font-family: "Unbounded";
-  font-weight: 800;
+  font-weight: 900;
   color: #FFD200;
   margin-bottom: 25px;
 }
@@ -1317,12 +1329,12 @@ footer .footer-social {
   }
   .dist-card .dist-count-title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
     color: #063477;
   }
   .dist-card .dist-count-number {
     font-family: "Unbounded";
-    font-weight: 800;
+    font-weight: 900;
     color: #FFD200;
     font-size: 32px;
   }
