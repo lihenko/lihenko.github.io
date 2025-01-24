@@ -891,6 +891,7 @@ a.blue-btn:hover::after {
   font-weight: 700;
   color: #063477;
   opacity: 1;
+  min-height: 54px;
 }
 .dist-card .dist-description span {
   font-weight: 400;
@@ -905,16 +906,34 @@ a.blue-btn:hover::after {
   font-family: "Unbounded";
   font-weight: 800;
   color: #FFD200;
+  margin-bottom: 25px;
 }
-.dist-card::after {
-  content: "";
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/Arrow.svg);
-  background-size: cover;
+.dist-card .dist-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.dist-card .dist-links a {
+  padding: 7px;
+  background-color: #F2F5F7;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.dist-card .dist-links a svg {
+  width: 21px;
+  height: 21px;
+}
+.dist-card .dist-links a:hover {
+  background-color: #FFD200;
+}
+.dist-card .dist-links a span {
+  text-transform: uppercase;
+  color: #063477;
+  font-size: 8.5px;
+  font-weight: 600;
+  padding-left: 7px;
+  letter-spacing: normal;
 }
 
 #meta {
@@ -1294,6 +1313,7 @@ footer .footer-social {
   .dist-card .dist-description {
     padding-right: 0;
     font-size: 24px;
+    min-height: 101px;
   }
   .dist-card .dist-count-title {
     font-size: 24px;
@@ -1306,11 +1326,22 @@ footer .footer-social {
     color: #FFD200;
     font-size: 32px;
   }
-  .dist-card::after {
-    right: 32px;
-    bottom: 32px;
+  .dist-card .dist-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .dist-card .dist-links a {
+    padding: 12px;
+  }
+  .dist-card .dist-links a svg {
     width: 40px;
     height: 40px;
+  }
+  .dist-card .dist-links a span {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 12px;
   }
   .xl-w-1117 {
     max-width: 1117px;
