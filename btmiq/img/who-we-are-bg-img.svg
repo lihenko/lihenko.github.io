@@ -1,0 +1,21 @@
+<svg width="716.198242" height="655.294922" viewBox="0 0 716.198 655.295" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	<defs>
+		<filter id="filter_99_916_dd" x="191.991455" y="131.088013" width="524.206787" height="524.206909" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="51.3333" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_99_917_dd" x="0.000000" y="0.000000" width="517.554443" height="517.554321" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="51.3333" result="effect_layerBlur_1"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_99_916_dd)">
+		<circle id="Ellipse 4" r="108.103386" transform="matrix(0.00696696 -0.999976 0.999976 0.00696696 454.095 393.191)" fill="#FF7A00" fill-opacity="1.000000"/>
+	</g>
+	<g filter="url(#filter_99_917_dd)">
+		<circle id="Ellipse 8" r="104.777130" transform="matrix(0.00696696 -0.999976 0.999976 0.00696696 258.777 258.777)" fill="#00DDFF" fill-opacity="1.000000"/>
+	</g>
+</svg>
