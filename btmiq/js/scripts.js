@@ -143,81 +143,14 @@ jQuery('.why-us-slider-wrap').slick({
   ]
 });
 
-jQuery('.for-renters-slider').slick({
-  autoplay: false,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  arrows: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-});
 
-
-jQuery('.for-subleasers-slider').slick({
-  autoplay: false,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  arrows: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-});
-
-
-jQuery('.for-landlords-slider').slick({
-  autoplay: false,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  arrows: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-});
-
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('header');
-  if (window.scrollY > 100) {
-      header.classList.add('fixed');
-  } else {
-      header.classList.remove('fixed');
-  }
-  if (window.scrollY > 200) {
-    header.classList.add('show');
-} else {
-    header.classList.remove('show');
-}
-});
-
-
-const faqQuestions = document.querySelectorAll('.home-faq-question');
+const faqQuestions = document.querySelectorAll('.feature-title');
 
 faqQuestions.forEach(question => {
     question.addEventListener('click', () => {
         const faqItem = question.parentElement;
 
-        document.querySelectorAll('.home-faq-item').forEach(item => {
+        document.querySelectorAll('.feature-item').forEach(item => {
             if (item !== faqItem) {
                 item.classList.remove('active');
             }
@@ -229,4 +162,49 @@ faqQuestions.forEach(question => {
 
 Fancybox.bind("[data-fancybox]", {
 
+});
+
+
+const video = document.getElementById('what-we-offer-video');
+const playButton = document.getElementById('video-play-button');
+const pauseButton = document.getElementById('video-pause-button');
+const soundOnButton = document.getElementById('video-soundon-button');
+const soundOffButton = document.getElementById('video-soundoff-button');
+
+
+video.muted = true;
+video.play();
+
+
+playButton.addEventListener('click', () => {
+  video.play();
+  playButton.style.display = 'none';  
+  pauseButton.style.display = 'flex';  
+});
+
+
+pauseButton.addEventListener('click', () => {
+  video.pause();
+  pauseButton.style.display = 'none';  
+  playButton.style.display = 'flex';  
+});
+
+
+soundOnButton.addEventListener('click', () => {
+  video.muted = false;
+  soundOnButton.style.display = 'none';  
+  soundOffButton.style.display = 'flex';  
+});
+
+
+soundOffButton.addEventListener('click', () => {
+  video.muted = true;
+  soundOffButton.style.display = 'none';  
+  soundOnButton.style.display = 'flex';  
+});
+
+
+window.addEventListener('load', () => {
+  playButton.style.display = 'none';  
+  soundOffButton.style.display = 'none';  
 });
