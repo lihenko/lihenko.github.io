@@ -40,7 +40,7 @@ mobileMenu.addEventListener('touchmove', function (event) {
 for (let i = 0; i < dropdownToggles.length; i++) {
 
     dropdownToggles[i].classList.toggle('omni-menu-open');
-    dropdownToggles[i].nextElementSibling.classList.toggle('menu-collapsed');
+    //dropdownToggles[i].nextElementSibling.classList.toggle('menu-collapsed');
 
 }
 
@@ -166,3 +166,23 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 const locomotiveScroll = new LocomotiveScroll();
+
+
+let superMenuButton = document.getElementById('super-menu-button');
+let superMenu = document.getElementById('super-menu');
+
+superMenuButton.addEventListener('click', function(event) {
+    event.stopPropagation();
+    superMenuButton.classList.toggle('active');
+    document.body.classList.toggle('super-menu-open');
+});
+
+document.addEventListener('click', function(event) {
+    if (!superMenu.contains(event.target) && !superMenuButton.contains(event.target)) {
+        if (superMenuButton.classList.contains('active')) {
+            superMenuButton.classList.remove('active');
+            document.body.classList.remove('super-menu-open');
+        }
+    }
+});
+

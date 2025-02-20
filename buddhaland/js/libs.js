@@ -40,7 +40,7 @@ mobileMenu.addEventListener('touchmove', function (event) {
 for (let i = 0; i < dropdownToggles.length; i++) {
 
     dropdownToggles[i].classList.toggle('omni-menu-open');
-    dropdownToggles[i].nextElementSibling.classList.toggle('menu-collapsed');
+    //dropdownToggles[i].nextElementSibling.classList.toggle('menu-collapsed');
 
 }
 

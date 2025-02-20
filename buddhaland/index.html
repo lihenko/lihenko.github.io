@@ -10,10 +10,44 @@
   <section class="mobile-menu">
     <div class="omni-mobile-menu">
       <ul>
-        <li><a href="#about">Features</a></li>
-        <li><a href="#for-subleasers">About Us</a></li>
-        <li><a href="#for-renters">Contact Us</a></li>
-        <li><a href="#for-renters">Request a Demo</a></li>
+        <li>
+          <a href="#" class="omni-dropdown-toggle omni-menu-open">Our Story</a>
+          <ul class="omni-dropdown-menu">
+            <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">
+                  Origins of Buddhaland
+                </a>
+            </li>
+            <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">
+                  Buddhaland Ecosystem
+                </a>
+            </li>
+            <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">
+                  People of Buddhaland
+                </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="omni-dropdown-toggle omni-menu-open">Membership</a>
+          <ul class="omni-dropdown-menu">
+            <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">
+                  More Than a Community
+                </a>
+            </li>
+            <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">
+                  Calendar
+                </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Connect</a></li>
       </ul><!-- omni-mobile-menu -->
     </div>
     
@@ -30,7 +64,7 @@
   <div class="content-wrapper overflow-x-clip">
   <div class="bg-image"></div>
   <header class="py-6 z-[100] lg:py-11 relative">
-    <div class="container">
+    <div class="container relative">
       <div class="flex flex-wrap items-center justify-between">
         <div class="brand-wrap mb-5 pr-16 md:mb-3 lg:w-[222px] lg:pr-3 ">
           <div class="brand">
@@ -42,16 +76,256 @@
         <div class="main-menu-wrap hidden lg:block lg:w-[calc(100%-210px-222px)] px-3 py-3">
           <div class="main-menu mx-auto">
             <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Membership</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Our Story</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">
+                          <div class="megamenu-icon-wrap">
+                            <div class="megamenu-splash"></div>
+                            <div class="megamenu-icon" style="background-image: url('./img/Origins of Buddhaland mega.webp');"></div>
+                          </div>
+                          Origins of Buddhaland
+                        </a>
+                    </li>
+                    <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">
+                          <div class="megamenu-icon-wrap">
+                            <div class="megamenu-splash"></div>
+                            <div class="megamenu-icon" style="background-image: url('./img/Buddhaland Ecosystem mega.webp');"></div>
+                          </div>
+                          Buddhaland Ecosystem
+                        </a>
+                    </li>
+                    <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">
+                          <div class="megamenu-icon-wrap">
+                            <div class="megamenu-splash"></div>
+                            <div class="megamenu-icon" style="background-image: url('./img/People of Buddhaland mega.webp');"></div>
+                          </div>
+                          People of Buddhaland
+                        </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Membership</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">
+                          <div class="megamenu-icon-wrap">
+                            <div class="megamenu-splash"></div>
+                            <div class="megamenu-icon" style="background-image: url('./img/More\ Than\ a\ Community\ mega.webp');"></div>
+                          </div>
+                          More Than a Community
+                        </a>
+                    </li>
+                    <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">
+                          <div class="megamenu-icon-wrap">
+                            <div class="megamenu-splash"></div>
+                            <div class="megamenu-icon" style="background-image: url('./img/Calendar\ mega.webp');"></div>
+                          </div>
+                          Calendar
+                        </a>
+                    </li>
+                    <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <img src="./img/empty-mega-item.svg" alt="" class="mx-auto">
+                    </li>
+                  </ul>
+                </li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Press</a></li>
-                <li><a href="#">Connect</a></li>
+                <li class="menu-item-has-children contact">
+                  <a href="#">Connect</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <h2 class="uppercase mb-10">Connect<br>with us</h2>
+                      <div class="menu-social">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                                <defs/>
+                                <path id="10.Linkedin" d="M30 0C24.06 0 18.26 1.75 13.33 5.05C8.39 8.35 4.55 13.03 2.28 18.51C0.01 24 -0.59 30.03 0.57 35.85C1.73 41.67 4.59 47.01 8.78 51.21C12.98 55.4 18.32 58.26 24.14 59.42C29.96 60.58 35.99 59.98 41.48 57.71C46.96 55.44 51.64 51.6 54.94 46.66C58.24 41.73 60 35.93 60 30C60 22.04 56.83 14.41 51.21 8.78C45.58 3.16 37.95 0 30 0ZM21.27 45.78L14.73 45.78L14.73 24.7L21.27 24.7L21.27 45.78ZM18 21.82C17.24 21.83 16.5 21.61 15.88 21.19C15.25 20.78 14.76 20.18 14.47 19.49C14.18 18.79 14.1 18.03 14.24 17.29C14.38 16.55 14.74 15.87 15.27 15.33C15.8 14.8 16.48 14.43 17.22 14.28C17.96 14.13 18.72 14.2 19.42 14.49C20.12 14.77 20.71 15.26 21.14 15.88C21.56 16.51 21.78 17.24 21.79 18C21.79 19 21.39 19.98 20.68 20.69C19.97 21.41 19.01 21.82 18 21.82ZM45.78 45.78L39.24 45.78L39.24 35.52C39.24 33.07 39.2 29.94 35.84 29.94C32.49 29.94 31.89 32.6 31.89 35.34L31.89 45.78L25.38 45.78L25.38 24.7L31.66 24.7L31.66 27.58L31.75 27.58C32.62 25.92 34.76 24.17 37.94 24.17C44.56 24.17 45.78 28.53 45.78 34.2L45.78 45.78Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                                <defs>
+                                  <clipPath id="clip36_37">
+                                    <rect id="fi_1384015" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                  </clipPath>
+                                </defs>
+                                <rect id="fi_1384015" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip36_37)">
+                                  <path id="Vector" d="M35.74 30C35.74 33.17 33.17 35.74 30 35.74C26.82 35.74 24.25 33.17 24.25 30C24.25 26.82 26.82 24.25 30 24.25C33.17 24.25 35.74 26.82 35.74 30Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path id="Vector" d="M43.42 19.84C43.15 19.09 42.71 18.41 42.14 17.85C41.58 17.28 40.9 16.84 40.15 16.57C39.55 16.33 38.64 16.05 36.96 15.97C35.14 15.89 34.59 15.87 30 15.87C25.39 15.87 24.85 15.89 23.03 15.97C21.35 16.05 20.44 16.33 19.84 16.57C19.09 16.84 18.41 17.28 17.85 17.85C17.28 18.41 16.84 19.09 16.57 19.84C16.33 20.44 16.05 21.35 15.97 23.03C15.89 24.85 15.87 25.4 15.87 30C15.87 34.6 15.89 35.14 15.97 36.96C16.05 38.64 16.33 39.55 16.57 40.16C16.84 40.9 17.28 41.58 17.85 42.14C18.41 42.71 19.09 43.15 19.83 43.42C20.44 43.66 21.35 43.94 23.03 44.02C24.85 44.1 25.39 44.12 29.99 44.12C34.6 44.12 35.14 44.1 36.96 44.02C38.64 43.94 39.55 43.66 40.15 43.42C41.66 42.84 42.84 41.66 43.42 40.16C43.66 39.55 43.94 38.64 44.02 36.96C44.1 35.14 44.12 34.6 44.12 30C44.12 25.4 44.1 24.85 44.02 23.03C43.94 21.35 43.66 20.44 43.42 19.84ZM30 38.84C25.11 38.84 21.15 34.88 21.15 30C21.15 25.11 25.11 21.15 30 21.15C34.88 21.15 38.84 25.11 38.84 30C38.84 34.88 34.88 38.84 30 38.84ZM39.19 22.87C38.05 22.87 37.12 21.94 37.12 20.8C37.12 19.66 38.05 18.73 39.19 18.73C40.33 18.73 41.26 19.66 41.26 20.8C41.26 21.94 40.33 22.87 39.19 22.87Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path id="Vector" d="M30 0C13.43 0 0 13.43 0 30C0 46.56 13.43 60 30 60C46.56 60 60 46.56 60 30C60 13.43 46.56 0 30 0ZM47.12 37.1C47.03 38.93 46.74 40.18 46.32 41.28C45.42 43.59 43.59 45.42 41.28 46.32C40.18 46.74 38.93 47.03 37.1 47.12C35.26 47.2 34.67 47.22 30 47.22C25.32 47.22 24.73 47.2 22.89 47.12C21.06 47.03 19.81 46.74 18.71 46.32C17.56 45.88 16.52 45.21 15.66 44.33C14.78 43.47 14.11 42.43 13.67 41.28C13.25 40.18 12.96 38.93 12.87 37.1C12.79 35.26 12.77 34.67 12.77 30C12.77 25.32 12.79 24.73 12.87 22.89C12.96 21.06 13.25 19.81 13.67 18.71C14.11 17.56 14.78 16.52 15.66 15.66C16.52 14.78 17.56 14.11 18.71 13.67C19.81 13.25 21.06 12.96 22.89 12.87C24.73 12.79 25.32 12.77 30 12.77C34.67 12.77 35.26 12.79 37.1 12.87C38.93 12.96 40.18 13.25 41.28 13.67C42.43 14.11 43.47 14.78 44.33 15.66C45.21 16.52 45.88 17.56 46.32 18.71C46.74 19.81 47.03 21.06 47.12 22.89C47.2 24.73 47.22 25.32 47.22 30C47.22 34.67 47.2 35.26 47.12 37.1Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                                <defs>
+                                  <clipPath id="clip346_102">
+                                    <rect id="fi_5969020" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                  </clipPath>
+                                </defs>
+                                <rect id="fi_5969020" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip346_102)">
+                                  <path id="Vector" d="M30 0C13.43 0 0 13.43 0 30C0 46.56 13.43 60 30 60C46.56 60 60 46.56 60 30C60 13.43 46.56 0 30 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path class="filledblack" d="M33.28 27.28L46.12 12.35L43.08 12.35L31.93 25.31L23.02 12.35L12.75 12.35L26.21 31.95L12.75 47.61L15.79 47.61L27.57 33.92L36.97 47.61L47.24 47.61L33.28 27.28L33.28 27.28ZM16.89 14.64L21.56 14.64L43.08 45.42L38.4 45.42L16.89 14.64Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                                <defs>
+                                  <clipPath id="clip346_107">
+                                    <rect id="fi_5968933" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                  </clipPath>
+                                </defs>
+                                <rect id="fi_5968933" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip346_107)">
+                                  <path id="Vector" d="M60 30C60 46.56 46.56 60 30 60C13.43 60 0 46.56 0 30C0 13.43 13.43 0 30 0C46.56 0 60 13.43 60 30Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                  <path class="filledblack" d="M32.91 30C32.91 37.14 27.16 42.94 20.06 42.94C12.96 42.94 7.2 37.14 7.2 30C7.2 22.85 12.96 17.05 20.06 17.05C27.16 17.05 32.91 22.85 32.91 30Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path class="filledblack" d="M47.02 30C47.02 36.73 44.14 42.18 40.59 42.18C37.04 42.18 34.16 36.73 34.16 30C34.16 23.27 37.04 17.81 40.59 17.81C44.14 17.81 47.02 23.27 47.02 30Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path class="filledblack" d="M52.79 30C52.79 36.02 51.78 40.91 50.53 40.91C49.28 40.91 48.27 36.02 48.27 30C48.27 23.97 49.28 19.08 50.53 19.08C51.78 19.08 52.79 23.97 52.79 30Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </svg>              
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                                <defs>
+                                  <clipPath id="clip36_42">
+                                    <rect id="fi_3669688" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                  </clipPath>
+                                </defs>
+                                <rect id="fi_3669688" rx="0.000000" width="59.000000" height="59.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip36_42)">
+                                  <path id="Vector" d="M25.83 34.83L34.16 30.01L25.83 25.16L25.83 34.83Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  <path id="Vector" d="M30 0C24.06 0 18.26 1.75 13.33 5.05C8.39 8.35 4.55 13.03 2.28 18.51C0.01 24 -0.59 30.03 0.57 35.85C1.73 41.67 4.59 47.01 8.78 51.21C12.98 55.4 18.32 58.26 24.14 59.42C29.96 60.58 35.99 59.98 41.48 57.71C46.96 55.44 51.64 51.6 54.94 46.66C58.24 41.73 60 35.93 60 30C60 22.04 56.83 14.41 51.21 8.78C45.58 3.16 37.95 0 30 0ZM45.78 35.3C45.79 36.09 45.63 36.87 45.33 37.59C45.03 38.32 44.59 38.98 44.04 39.53C43.48 40.08 42.82 40.53 42.1 40.83C41.37 41.13 40.6 41.28 39.81 41.28L20.18 41.28C19.39 41.28 18.62 41.13 17.89 40.83C17.17 40.53 16.51 40.08 15.95 39.53C15.4 38.98 14.96 38.32 14.66 37.59C14.36 36.87 14.21 36.09 14.21 35.3L14.21 24.69C14.21 23.9 14.36 23.12 14.66 22.4C14.96 21.67 15.4 21.02 15.95 20.46C16.51 19.91 17.17 19.46 17.89 19.16C18.62 18.86 19.39 18.71 20.18 18.71L39.81 18.71C40.6 18.71 41.37 18.86 42.1 19.16C42.82 19.46 43.48 19.91 44.04 20.46C44.59 21.02 45.03 21.67 45.33 22.4C45.63 23.12 45.79 23.9 45.78 24.69L45.78 35.3Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <div class="mega-contact-form-wrap">
+                        <form action="#">
+                          <div class="flex flex-wrap -mx-3">
+                            <div class="w-1/2 px-3 mb-6">
+                              <input type="text" placeholder="Name:">
+                            </div>
+                            <div class="w-1/2 px-3 mb-6">
+                              <input type="email" placeholder="Email:">
+                            </div>
+                            <div class="w-full px-3 mb-3">
+                              <textarea name="" id="" placeholder="Message:"></textarea>
+                            </div>
+                            <div class="w-full px-3 text-right">
+                              <input type="submit" value="CONNECT" class="btn submit-btn">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
             </ul>
           </div>
         </div>
-        <div class="menu-button hidden lg:block lg:pr-0 text-center">
-          
+        <div class="super-menu-button hidden lg:block lg:pr-0 text-center">
+          <div id="super-menu-button" class="">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container relative">
+      <div id="super-menu" class="hidden lg:block">
+        <div class="flex">
+          <div class="w-1/3">
+            <div class="font-bold text-sm uppercase text-gold mb-8 tracking-widest relative z-10">Our Story</div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="./img/Origins of Buddhaland thumbnail.webp" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">Origins of<br>Buddhaland</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="./img/Buddhaland Ecosystem thumbnail.webp" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">Buddhaland<br>Ecosystem</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="./img/People of Buddhaland thumbnail.webp" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">People of<br>Buddhaland</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/3">
+            <div class="font-bold text-sm uppercase text-gold mb-8 tracking-widest relative z-10">Membership</div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="./img/More Than a Community.webp" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">More Than<br>a Community</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="./img/Calendar.webp" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">Calendar</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/3">
+            <div class="font-bold text-sm uppercase text-gold mb-8 tracking-widest relative z-10">Resources</div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="super-menu-item-icon w-[74px]">
+                    <img src="#" alt="">
+                  </div>
+                  <div class="w-[calc(100%-74px)]">The limited edition 1000 spiritual collectibles</div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -187,10 +461,11 @@
       </div>
     </section>
     <section id="home-cta" class="xxl:mt-20">
+      <div class="cta-bg-image"></div>
       <div class="container">
         <h2 class="text-center uppercase mb-20">Become a Buddhaland <br>Founding Member</h2>
         <div class="flex flex-wrap -mx-3 justify-center mb-10">
-          <div class="w-full px-3 mb-6 max-w-[635px]">
+          <div class="w-full px-3 mb-6 max-w-[635px] z-20">
             <div class="bg-[#000] h-full py-4 pr-3 pl-36 relative sm:py-20 lg:py-28 xl:pr-10 xxl:pr-16">
               <div class="backlight-left"></div>
               <div class="cta-card-icon"><img src="./img/Invitation-Only Access.svg" alt=""></div>
@@ -200,7 +475,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-3 mb-6 max-w-[635px]">
+          <div class="w-full px-3 mb-6 max-w-[635px] z-20">
             <div class="bg-[#000] h-full py-4 pr-3 pl-36 relative sm:py-20 lg:py-28 xl:pr-10 xxl:pr-36 xxl:pl-16">
               <div class="backlight-right"></div>
               <div class="cta-card-icon xxl:left-[unset] xxl:-right-[100px]"><img src="./img/Referral System.svg" alt=""></div>
