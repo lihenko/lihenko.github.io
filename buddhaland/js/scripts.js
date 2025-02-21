@@ -186,3 +186,26 @@ document.addEventListener('click', function(event) {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.btn[data-tab]');
+    const tabContents = document.querySelectorAll('[id^="tab-content-"]');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(content => content.style.display = 'none');
+
+            const target = this.getAttribute('data-tab');
+            this.classList.add('active');
+            document.getElementById(`tab-content-${target}`).style.display = 'block';
+        });
+    });
+
+    tabs[0].classList.add('active');
+    tabContents.forEach((content, index) => {
+        content.style.display = index === 0 ? 'block' : 'none';
+    });
+});
+

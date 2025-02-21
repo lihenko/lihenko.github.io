@@ -912,6 +912,9 @@ a:hover{
 .h-full{
   height: 100%;
 }
+.min-h-\[450px\]{
+  min-height: 450px;
+}
 .w-1\/2{
   width: 50%;
 }
@@ -990,8 +993,17 @@ a:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(95 99 104 / var(--tw-bg-opacity, 1));
 }
+.bg-cover{
+  background-size: cover;
+}
+.bg-center{
+  background-position: center;
+}
 .p-3{
   padding: 0.75rem;
+}
+.p-9{
+  padding: 2.25rem;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -1036,6 +1048,9 @@ a:hover{
 }
 .pt-10{
   padding-top: 2.5rem;
+}
+.pt-8{
+  padding-top: 2rem;
 }
 .text-center{
   text-align: center;
@@ -3514,6 +3529,10 @@ body, html {
     --tw-text-opacity: 1;
     color: rgb(173 149 79 / var(--tw-text-opacity, 1));
   }
+  .main-menu > ul > li.current-menu-item a{
+    --tw-text-opacity: 1;
+    color: rgb(173 149 79 / var(--tw-text-opacity, 1));
+  }
   .main-menu .sub-menu {
     position: absolute;
     left: 12px;
@@ -3966,6 +3985,12 @@ body, html {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .sm\:pb-20{
+    padding-bottom: 5rem;
+  }
+  .sm\:pt-12{
+    padding-top: 3rem;
+  }
   .sm\:pt-20{
     padding-top: 5rem;
   }
@@ -3980,6 +4005,12 @@ body, html {
   .md\:w-\[113px\]{
     width: 113px;
   }
+  .md\:pb-28{
+    padding-bottom: 7rem;
+  }
+  .md\:pt-16{
+    padding-top: 4rem;
+  }
   .md\:text-base{
     font-size: 16px;
     line-height: 24px;
@@ -3991,6 +4022,12 @@ body, html {
   }
   .lg\:right-\[5px\]{
     right: 5px;
+  }
+  .lg\:order-1{
+    order: 1;
+  }
+  .lg\:order-2{
+    order: 2;
   }
   .lg\:-mb-12{
     margin-bottom: -3rem;
@@ -4063,6 +4100,9 @@ body, html {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+  .lg\:pb-32{
+    padding-bottom: 8rem;
+  }
   .lg\:pl-36{
     padding-left: 9rem;
   }
@@ -4086,6 +4126,9 @@ body, html {
   }
   .lg\:pr-44{
     padding-right: 11rem;
+  }
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
   .lg\:pt-48{
     padding-top: 12rem;
@@ -4139,8 +4182,25 @@ body, html {
   .xl\:ml-48{
     margin-left: 12rem;
   }
+  .xl\:gap-16{
+    gap: 4rem;
+  }
+  .xl\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .xl\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .xl\:pb-0{
     padding-bottom: 0px;
+  }
+  .xl\:pb-28{
+    padding-bottom: 7rem;
+  }
+  .xl\:pb-40{
+    padding-bottom: 10rem;
   }
   .xl\:pl-14{
     padding-left: 3.5rem;
@@ -4163,6 +4223,9 @@ body, html {
   .xl\:pt-10{
     padding-top: 2.5rem;
   }
+  .xl\:pt-28{
+    padding-top: 7rem;
+  }
   .xl\:pt-64{
     padding-top: 16rem;
   }
@@ -4179,6 +4242,9 @@ body, html {
   }
   .xxl\:-ml-72{
     margin-left: -18rem;
+  }
+  .xxl\:mb-10{
+    margin-bottom: 2.5rem;
   }
   .xxl\:mb-20{
     margin-bottom: 5rem;
@@ -4199,6 +4265,9 @@ body, html {
   .xxl\:pb-20{
     padding-bottom: 5rem;
   }
+  .xxl\:pb-52{
+    padding-bottom: 13rem;
+  }
   .xxl\:pl-20{
     padding-left: 5rem;
   }
@@ -4217,6 +4286,9 @@ body, html {
   .xxl\:pt-16{
     padding-top: 4rem;
   }
+  .xxl\:pt-36{
+    padding-top: 9rem;
+  }
   .xxl\:pt-80{
     padding-top: 20rem;
   }
@@ -4225,5 +4297,9 @@ body, html {
   }
   .xxl\:text-\[31px\]{
     font-size: 31px;
+  }
+  .xxl\:text-lg{
+    font-size: 18px;
+    line-height: 26px;
   }
 }
