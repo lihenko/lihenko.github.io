@@ -879,6 +879,9 @@ a:hover{
 .-ml-8{
   margin-left: -2rem;
 }
+.-mt-20{
+  margin-top: -5rem;
+}
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -965,6 +968,9 @@ a:hover{
 }
 .w-full{
   width: 100%;
+}
+.max-w-\[1032px\]{
+  max-width: 1032px;
 }
 .max-w-\[1230px\]{
   max-width: 1230px;
@@ -1089,11 +1095,20 @@ a:hover{
 .pb-16{
   padding-bottom: 4rem;
 }
+.pb-24{
+  padding-bottom: 6rem;
+}
+.pb-9{
+  padding-bottom: 2.25rem;
+}
 .pr-16{
   padding-right: 4rem;
 }
 .pt-10{
   padding-top: 2.5rem;
+}
+.pt-28{
+  padding-top: 7rem;
 }
 .text-center{
   text-align: center;
@@ -1125,6 +1140,9 @@ a:hover{
 }
 .uppercase{
   text-transform: uppercase;
+}
+.italic{
+  font-style: italic;
 }
 .leading-\[1\.08\]{
   line-height: 1.08;
@@ -3382,6 +3400,87 @@ body, html {
   left: 15px;
 }
 
+.about-why-bg-img {
+  background-image: url(../img/waved-bg.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 2293/1346;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.british-buddhaland {
+  position: relative;
+  z-index: 10;
+}
+.british-buddhaland::after {
+  content: "";
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 149 79 / var(--tw-bg-opacity, 1));
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.british-buddhaland::before {
+  content: "";
+  filter: blur(75px);
+  background: rgb(173, 149, 79);
+  position: absolute;
+  width: 208px;
+  height: 208px;
+  border-radius: 50%;
+  z-index: -1;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-30%);
+}
+
+.british-buddhaland-content {
+  background-image: url(../img/Logo-bg-icon.svg);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#members-path {
+  background: linear-gradient(to bottom, rgb(15, 15, 15) 0%, rgb(30, 30, 30) 40%, rgb(30, 30, 30) 60%, rgb(15, 15, 15) 100%);
+  padding: 250px 0;
+  margin-top: -250px;
+  margin-bottom: -200px;
+}
+#members-path .backlight-right {
+  filter: blur(75px);
+  background: rgb(173, 149, 79);
+  position: absolute;
+  width: 208px;
+  height: 208px;
+  border-radius: 50%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: unset;
+  right: -45px;
+}
+#members-path .gold-btn.arrow-left {
+  width: 100%;
+}
+#members-path .gold-btn.arrow-left span {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 375px) {
+  #members-path .gold-btn.arrow-left span {
+    margin-right: 5px;
+  }
+}
 @media screen and (min-width: 480px) {
   .hero-decor {
     position: absolute;
@@ -3452,6 +3551,9 @@ body, html {
     transform: translateY(-50%);
     left: 0;
   }
+  #members-path .gold-btn.arrow-left span {
+    margin-right: 25px;
+  }
 }
 @media screen and (min-width: 640px) {
   #how-it-works-steps {
@@ -3517,6 +3619,9 @@ body, html {
     top: 50%;
     transform: translateY(-50%);
     left: 25px;
+  }
+  #members-path .gold-btn.arrow-left {
+    width: 250px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -3983,6 +4088,12 @@ body, html {
   .footer-social ul a:hover svg path:not(.filledblack) {
     fill: #AD954F;
   }
+  .members-path-button {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-decor {
@@ -4051,6 +4162,38 @@ body, html {
     left: 15px;
     right: 15px;
   }
+  .british-buddhaland {
+    position: relative;
+    z-index: 10;
+  }
+  .british-buddhaland::after {
+    content: "";
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(173 149 79 / var(--tw-bg-opacity, 1));
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .british-buddhaland::before {
+    content: "";
+    filter: blur(75px);
+    background: rgb(173, 149, 79);
+    position: absolute;
+    width: 208px;
+    height: 208px;
+    border-radius: 50%;
+    z-index: -1;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-30%);
+  }
+  .members-path-button {
+    right: -12px;
+  }
 }
 @media screen and (min-width: 1500px) {
   .bg-image {
@@ -4072,6 +4215,21 @@ body, html {
   }
   .main-menu ul li.menu-item-has-children.contact .mega-contact-form-wrap {
     padding: 78px 93px 47px 80px;
+  }
+  #members-path {
+    padding: 350px 0 400px;
+    margin-top: -300px;
+    margin-bottom: -250px;
+  }
+  #members-path .members-path-button {
+    right: -120px;
+  }
+  #members-path .members-path-button .btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  #members-path .gold-btn.arrow-left {
+    width: 325px;
   }
 }
 .hover\:bg-gold:hover{
@@ -4120,6 +4278,9 @@ body, html {
   }
   .xs\:ml-28{
     margin-left: 7rem;
+  }
+  .xs\:ml-6{
+    margin-left: 1.5rem;
   }
   .xs\:max-w-\[330px\]{
     max-width: 330px;
@@ -4178,6 +4339,10 @@ body, html {
   .sm\:grid-rows-2{
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
+  .sm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4195,6 +4360,9 @@ body, html {
   }
 }
 @media (min-width: 768px){
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
   .md\:mb-16{
     margin-bottom: 4rem;
   }
@@ -4210,6 +4378,12 @@ body, html {
   .md\:min-h-\[175px\]{
     min-height: 175px;
   }
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+  .md\:w-2\/3{
+    width: 66.666667%;
+  }
   .md\:w-\[113px\]{
     width: 113px;
   }
@@ -4218,6 +4392,15 @@ body, html {
   }
   .md\:pb-28{
     padding-bottom: 7rem;
+  }
+  .md\:pl-16{
+    padding-left: 4rem;
+  }
+  .md\:pr-0{
+    padding-right: 0px;
+  }
+  .md\:text-left{
+    text-align: left;
   }
   .md\:text-center{
     text-align: center;
@@ -4324,6 +4507,9 @@ body, html {
   .lg\:pl-36{
     padding-left: 9rem;
   }
+  .lg\:pl-44{
+    padding-left: 11rem;
+  }
   .lg\:pl-9{
     padding-left: 2.25rem;
   }
@@ -4344,6 +4530,9 @@ body, html {
   }
   .lg\:pr-44{
     padding-right: 11rem;
+  }
+  .lg\:pr-72{
+    padding-right: 18rem;
   }
   .lg\:pt-48{
     padding-top: 12rem;
@@ -4394,11 +4583,32 @@ body, html {
   .xl\:-ml-20{
     margin-left: -5rem;
   }
+  .xl\:-mt-64{
+    margin-top: -16rem;
+  }
+  .xl\:mb-14{
+    margin-bottom: 3.5rem;
+  }
+  .xl\:mb-32{
+    margin-bottom: 8rem;
+  }
+  .xl\:mb-48{
+    margin-bottom: 12rem;
+  }
+  .xl\:ml-20{
+    margin-left: 5rem;
+  }
   .xl\:ml-48{
     margin-left: 12rem;
   }
   .xl\:min-h-\[274px\]{
     min-height: 274px;
+  }
+  .xl\:w-5\/12{
+    width: 41.666667%;
+  }
+  .xl\:w-6\/12{
+    width: 50%;
   }
   .xl\:gap-16{
     gap: 4rem;
@@ -4414,11 +4624,26 @@ body, html {
   .xl\:pb-0{
     padding-bottom: 0px;
   }
+  .xl\:pb-14{
+    padding-bottom: 3.5rem;
+  }
+  .xl\:pb-16{
+    padding-bottom: 4rem;
+  }
   .xl\:pb-28{
     padding-bottom: 7rem;
   }
+  .xl\:pb-48{
+    padding-bottom: 12rem;
+  }
   .xl\:pl-14{
     padding-left: 3.5rem;
+  }
+  .xl\:pl-24{
+    padding-left: 6rem;
+  }
+  .xl\:pl-28{
+    padding-left: 7rem;
   }
   .xl\:pr-10{
     padding-right: 2.5rem;
@@ -4429,6 +4654,9 @@ body, html {
   .xl\:pr-16{
     padding-right: 4rem;
   }
+  .xl\:pr-20{
+    padding-right: 5rem;
+  }
   .xl\:pr-32{
     padding-right: 8rem;
   }
@@ -4438,8 +4666,14 @@ body, html {
   .xl\:pt-10{
     padding-top: 2.5rem;
   }
+  .xl\:pt-20{
+    padding-top: 5rem;
+  }
   .xl\:pt-64{
     padding-top: 16rem;
+  }
+  .xl\:pt-80{
+    padding-top: 20rem;
   }
 }
 @media (min-width: 1500px){
@@ -4448,6 +4682,10 @@ body, html {
   }
   .xxl\:-right-\[100px\]{
     right: -100px;
+  }
+  .xxl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
   .xxl\:-mb-24{
     margin-bottom: -6rem;
@@ -4476,6 +4714,9 @@ body, html {
   .xxl\:min-h-\[335px\]{
     min-height: 335px;
   }
+  .xxl\:max-w-\[1236px\]{
+    max-width: 1236px;
+  }
   .xxl\:max-w-\[635px\]{
     max-width: 635px;
   }
@@ -4501,6 +4742,9 @@ body, html {
   .xxl\:pr-72{
     padding-right: 18rem;
   }
+  .xxl\:pr-80{
+    padding-right: 20rem;
+  }
   .xxl\:pt-16{
     padding-top: 4rem;
   }
@@ -4516,5 +4760,9 @@ body, html {
   .xxl\:text-lg{
     font-size: 18px;
     line-height: 26px;
+  }
+  .xxl\:text-xl{
+    font-size: 20px;
+    line-height: 25px;
   }
 }
