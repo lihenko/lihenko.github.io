@@ -189,8 +189,8 @@ document.addEventListener('click', function(event) {
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.btn[data-tab]');
     const tabContents = document.querySelectorAll('[id^="tab-content-"]');
-
-    tabs.forEach(tab => {
+    if (tabs.length > 0) {
+      tabs.forEach(tab => {
         tab.addEventListener('click', function(e) {
             e.preventDefault();
 
@@ -207,5 +207,43 @@ document.addEventListener('DOMContentLoaded', function() {
     tabContents.forEach((content, index) => {
         content.style.display = index === 0 ? 'block' : 'none';
     });
+    }
+    
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const privtabs = document.querySelectorAll(".members-privileges-tabs-control-item");
+    const privcontentItems = document.querySelectorAll(".members-privileges-tabs-content-wrap > div");
+
+    function activateTab(tab) {
+
+        privtabs.forEach(t => t.classList.remove("active"));
+        privcontentItems.forEach(content => content.style.display = "none");
+        privcontentItems.forEach(content => content.style.opacity = "0");
+
+        tab.classList.add("active");
+
+        const tabContentId = tab.getAttribute("data-tab");
+        const contentToShow = document.getElementById(tabContentId);
+        if (contentToShow) {
+            contentToShow.style.display = "block";
+            setTimeout(function() {
+              contentToShow.style.opacity = "1";
+            }, 100);
+        }
+    }
+
+    if (privtabs.length > 0) {
+        privtabs.forEach(tab => {
+          tab.addEventListener("click", function() {
+              activateTab(tab);
+          });
+      });
+       activateTab(privtabs[0]);
+    }
+});
+
 
