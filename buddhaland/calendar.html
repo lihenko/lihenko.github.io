@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>More Than a Community</title>
+  <title>Calendar</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
@@ -108,7 +109,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item-has-children current-menu-item">
+                <li class="menu-item-has-children">
                   <a href="#">Membership</a>
                   <ul class="sub-menu">
                     <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -134,7 +135,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class=""><a href="#">Resources</a></li>
+                <li class="current-menu-item"><a href="#">Resources</a></li>
                 <li><a href="#">Press</a></li>
                 <li class="menu-item-has-children contact">
                   <a href="#">Connect</a>
@@ -335,66 +336,121 @@
   </div>
   <main>
     <section id="page-title" class="relative py-8 mb-6 min-h-[130px] sm:min-h-[148px] sm:mb-10 md:min-h-[175px] md:mb-16 lg:min-h-[226px] xl:min-h-[274px] xxl:min-h-[335px] xxl:mb-28 flex items-center">
-      <h1 class="text-center uppercase px-9 lg:px-3 w-full" data-scroll data-scroll-speed="0.7">People of<br>Buddhaland</h1>
+        <h1 class="text-center uppercase px-9 lg:px-3 w-full" data-scroll data-scroll-speed="0.7">calendar</h1>
     </section>
-    <section id="people" class="pb-16 xl:pb-28">
-        <div class="container relative">
-                <div id="dashed-ring" class="hidden lg:block lg:absolute lg:w-[1100px] lg:-top-[175px] lg:left-[305px] xl:w-[1159px] xl:-top-[182px] xl:left-[268px] xxl:w-[1551px] xxl:left-[456px] xxl:-top-[393px]">
-                    <img src="./img/dashed-circle.svg" alt="">
+    <section class="pb-16 relative md:pb-28">
+        <div class="container">
+            <div class="flex flex-wrap gap-4 justify-center xl:gap-16">
+                <div class="experience relative">
+                    <input type="hidden" id="experience-type">
+                    <a href="#" class="btn gold-btn" id="experience">
+                        Choose Experience
+                    </a>
+                    <ul id="experience-list">
+                        <li data-experience="1">
+                            experience 1
+                        </li>
+                        <li data-experience="2">
+                            experience 2
+                        </li>
+                    </ul>
                 </div>
-                <div class="flex flex-wrap">
-                    <div class="w-full lg:w-1/2 relative mb-10">
-                        <div class="backlight-img top-0 left-0 md:left-[10%] xl:left-[20%]"></div>
-                        <img src="./img/Guoying Stacy Zhang.webp" alt="" class="mx-auto mb-11 relative">
-                        <div class="absolute w-[71px] h-[71px] sm:w-[100px] sm:h-[100px] bg-gold rounded-full top-0 sm:top-3 sm:right-[15%] right-[10%] md:right-[23%] lg:right-[10%] xl:right-[23%] xl:top-0"></div>
-                        <h2 class="uppercase text-center mb-6">Guoying Stacy Zhang</h2>
-                        <div class="uppercase text-gold font-bold xxl:text-xl text-center">
-                            Founder & Visionary 
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-1/2 mb-20">
-                        <div class="h-full xl:px-24">
-                            <div class="mb-6 text-sm lg:text-base xxl:text-lg xxl:mb-10 z-10 relative">
-                                <div class="absolute -right-10 -bottom-16 xl:-right-24 xl:-bottom-32">
-                                    <img src="./img/people-bg-icon.svg" alt="">
-                                </div>
-                                <p>Trained as an art historian, Stacy began her career at Sotheby’s and Christie’s. Soon she found her true passion to foster cross-cultural understanding and inspire the contemporary world with ancient cultural heritage. Over the past decade, she has focused on writing, curatorial work, art and cultural advisory, and forging international and interdisciplinary collaborations, while working with prominent museums, private collections, and cultural and religious institutions. </p>
-
-                                <p>Among her many contributions, Stacy has published extensively on Buddhist art and wisdom on leading magazines, journals, and her own column. She curated the "Exhibition on Shanxi Buddhist Art and Intangible Cultural Heritage" at the sacred site Mount Wutai, introduced classical Chinese dance at the Qatar National Day, served as an associate curator at Tsz Shan Monastery, directed the documentary interview series "Feminine and Spiritual: Buddhist Women in Hong Kong." </p>
-
-                                <p>Stacy earned her MA (Distinction) in Art History from the School of Oriental and African Studies, as well as MA (Distinction) in Buddhist Art from the Courtauld Institute of Art. Before that, she received her education at Fudan University and UC Berkeley.</p>
-
+                
+                <div class="date relative">
+                    <a href="#" class="btn gold-btn icon" id="select-date">
+                        <svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+                            <defs>
+                                <clipPath id="clip383_465">
+                                    <rect id="fi_10883735" rx="0.000000" width="31.000000" height="31.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                            </defs>
+                            <rect id="fi_10883735" rx="0.000000" width="31.000000" height="31.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip383_465)">
+                                <path id="Vector" d="M26 4L23 4L23 3C23 2.73 22.89 2.48 22.7 2.29C22.51 2.1 22.26 2 22 2C21.73 2 21.48 2.1 21.29 2.29C21.1 2.48 21 2.73 21 3L21 4L11 4L11 3C11 2.73 10.89 2.48 10.7 2.29C10.51 2.1 10.26 2 10 2C9.73 2 9.48 2.1 9.29 2.29C9.1 2.48 9 2.73 9 3L9 4L6 4C5.46 4 4.96 4.21 4.58 4.58C4.21 4.96 4 5.46 4 6L4 26C4 26.53 4.21 27.03 4.58 27.41C4.96 27.78 5.46 28 6 28L26 28C26.53 28 27.03 27.78 27.41 27.41C27.78 27.03 28 26.53 28 26L28 6C28 5.46 27.78 4.96 27.41 4.58C27.03 4.21 26.53 4 26 4ZM21.18 16.72L15.35 22.22C15.25 22.31 15.15 22.38 15.03 22.43C14.91 22.47 14.78 22.5 14.66 22.5C14.4 22.5 14.15 22.4 13.97 22.22L10.81 19.22C10.71 19.13 10.62 19.02 10.56 18.9C10.51 18.78 10.47 18.65 10.47 18.51C10.46 18.38 10.48 18.24 10.53 18.12C10.57 17.99 10.65 17.88 10.74 17.78C10.83 17.68 10.94 17.6 11.07 17.55C11.19 17.5 11.32 17.47 11.46 17.47C11.59 17.47 11.73 17.49 11.85 17.54C11.98 17.6 12.09 17.67 12.18 17.77L14.66 20.12L19.81 15.27C19.9 15.18 20.01 15.11 20.14 15.06C20.26 15.01 20.39 14.99 20.52 14.99C20.65 14.99 20.78 15.02 20.9 15.08C21.02 15.13 21.13 15.21 21.22 15.31C21.4 15.5 21.5 15.76 21.49 16.02C21.49 16.29 21.37 16.54 21.18 16.72ZM26 10L6 10L6 6L9 6L9 7C9 7.26 9.1 7.51 9.29 7.7C9.48 7.89 9.73 8 10 8C10.26 8 10.51 7.89 10.7 7.7C10.89 7.51 11 7.26 11 7L11 6L21 6L21 7C21 7.26 21.1 7.51 21.29 7.7C21.48 7.89 21.73 8 22 8C22.26 8 22.51 7.89 22.7 7.7C22.89 7.51 23 7.26 23 7L23 6L26 6L26 10Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                        </svg>
+                        Select DATE
+                    </a>
+                    <input type="text" id="datepicker">
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    <section id="calendar" class="pb-16 xl:pb-28">
+        <div class="container">
+            <div id="calendar-wrap">
+                <div class="calendar-item flex flex-wrap mb-9">
+                    <div class="w-full md:w-1/2 md:order-2">
+                        <div class="h-full bg-[#000] p-9 lg:py-16 lg:px-24">
+                            <div class="calendar-item-status uppercase text-gold font-bold">
+                                ONGOING
+                            </div>
+                            <div class="calendar-item-type mb-8">
+                                Online and Various Locations
+                            </div>
+                            <div class="calendar-item-title mb-8">
+                                <a href="#" class="text-white no-underline hover:text-gold">
+                                    <h3 class="uppercase">Rubin Museum — “Project Himalayan Art”</h3>
+                                </a>
+                            </div>
+                            <div class="calendar-item-description">
+                                Project Himalayan Art is an interdisciplinary resource for learning about Himalayan, Tibetan, and Inner Asian art and cultures. This three part-initiative is designed to support the inclusion of these cultures into undergraduate teaching on Asia and presents Himalayan art to the general public. The project focuses on cross-cultural exchange with Tibet at the center and Buddhism as the thread that connects the diverse cultural regions. The Rubin Museum of Himalayan Art presents exhibitions, projects, and collaborative initiatives that deepen awareness of Himalayan art and cultures.
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-            <div class="flex flex-wrap -mx-3">
-                <div class="w-full px-3 lg:w-1/2 relative mb-10">
-                    <div class="backlight-img top-0 right-[40%] xl:right-[40%]"></div>
-                    <img src="./img/Uli Sigg.webp" alt="" class="mx-auto mb-11 relative">
-                    <div class="absolute w-[71px] h-[71px] sm:w-[100px] sm:h-[100px] bg-gold rounded-full top-0 sm:top-3 sm:right-[15%] right-[10%] md:right-[23%] lg:right-[10%] xl:right-[23%] xl:top-0"></div>
-                    <h2 class="uppercase text-center mb-6">Uli Sigg</h2>
-                    <div class="uppercase text-gold font-bold xxl:text-xl text-center mb-6">
-                        Council of Innovation 
-                    </div>
-                    <div class="mb-6 text-sm xl:px-24 text-center lg:text-base xxl:text-lg xxl:mb-10 z-10 relative lg:px-9">
-                        Dr. Uli Sigg is a serial entrepreneur and the former Swiss ambassador to China, North Korea and Mongolia. He is the leading collector of Chinese contemporary art and donated 1,463 artworks to the M+ Museum in Hong Kong. He is on the boards of M+; the International Council of the Museum of Modern Art, New York; and the International Advisory Council of Tate, London.
+                    <div class="w-full md:w-1/2 md:order-1">
+                        <div class="h-full bg-cover bg-center min-h-[70vw] md:min-h-[unset]" style="background-image: url(./img/Project\ Himalayan\ Art.webp);"></div>
                     </div>
                 </div>
-                <div class="w-full px-3 lg:w-1/2 relative mb-10 lg:mt-40 xxl:mt-[370px]">
-                    <div class="backlight-img top-0 left-0 md:left-[10%] xl:left-[20%]"></div>
-                    <img src="./img/Ryan Zurrer.webp" alt="" class="mx-auto mb-11 relative">
-                    <div class="absolute w-[71px] h-[71px] sm:w-[100px] sm:h-[100px] bg-gold rounded-full top-0 sm:top-3 sm:right-[15%] right-[10%] md:right-[23%] lg:left-[10%] xl:left-[15%] xxl:left-[25%]"></div>
-                    <h2 class="uppercase text-center mb-6">Ryan Zurrer</h2>
-                    <div class="uppercase text-gold font-bold xxl:text-xl text-center mb-6">
-                        Council of Innovation 
+                <div class="calendar-item flex flex-wrap mb-9">
+                    <div class="w-full md:w-1/2 md:order-2">
+                        <div class="h-full bg-[#000] p-9 lg:py-16 lg:px-24">
+                            <div class="calendar-item-status uppercase text-gold font-bold">
+                                ONGOING
+                            </div>
+                            <div class="calendar-item-type mb-8">
+                                Online and Various Locations
+                            </div>
+                            <div class="calendar-item-title mb-8">
+                                <a href="#" class="text-white no-underline hover:text-gold">
+                                    <h3 class="uppercase">Rubin Museum — “Project Himalayan Art”</h3>
+                                </a>
+                            </div>
+                            <div class="calendar-item-description">
+                                Project Himalayan Art is an interdisciplinary resource for learning about Himalayan, Tibetan, and Inner Asian art and cultures. This three part-initiative is designed to support the inclusion of these cultures into undergraduate teaching on Asia and presents Himalayan art to the general public. The project focuses on cross-cultural exchange with Tibet at the center and Buddhism as the thread that connects the diverse cultural regions. The Rubin Museum of Himalayan Art presents exhibitions, projects, and collaborative initiatives that deepen awareness of Himalayan art and cultures.
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-6 text-sm xl:px-24 text-center lg:text-base xxl:text-lg xxl:mb-10 z-10 relative lg:px-9">
-                        Ryan Zurrer is an eminent collector of digital art and the founder of Dialectic, a Swiss-based family office focused on alternative assets. He was a very early investor of the best-performing ventures including, Ethereum, MakerDAO, Polychain Capital, Filecoin, Polkadot, Definity, Solana, Near, Avalanche, Axie Infinity and many others. 
+                    <div class="w-full md:w-1/2 md:order-1">
+                        <div class="h-full bg-cover bg-center min-h-[70vw] md:min-h-[unset]" style="background-image: url(./img/calendar-2.webp);"></div>
                     </div>
                 </div>
-            </div>    
+                <div class="calendar-item flex flex-wrap mb-9">
+                    <div class="w-full md:w-1/2 md:order-2">
+                        <div class="h-full bg-[#000] p-9 lg:py-16 lg:px-24">
+                            <div class="calendar-item-status uppercase text-gold font-bold">
+                                ONGOING
+                            </div>
+                            <div class="calendar-item-type mb-8">
+                                Online and Various Locations
+                            </div>
+                            <div class="calendar-item-title mb-8">
+                                <a href="#" class="text-white no-underline hover:text-gold">
+                                    <h3 class="uppercase">Rubin Museum — “Project Himalayan Art”</h3>
+                                </a>
+                            </div>
+                            <div class="calendar-item-description">
+                                Project Himalayan Art is an interdisciplinary resource for learning about Himalayan, Tibetan, and Inner Asian art and cultures. This three part-initiative is designed to support the inclusion of these cultures into undergraduate teaching on Asia and presents Himalayan art to the general public. The project focuses on cross-cultural exchange with Tibet at the center and Buddhism as the thread that connects the diverse cultural regions. The Rubin Museum of Himalayan Art presents exhibitions, projects, and collaborative initiatives that deepen awareness of Himalayan art and cultures.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:order-1">
+                        <div class="h-full bg-cover bg-center min-h-[70vw] md:min-h-[unset]" style="background-image: url(./img/calendar-3.webp);"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
   </main>
@@ -529,6 +585,7 @@
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous">
 </script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

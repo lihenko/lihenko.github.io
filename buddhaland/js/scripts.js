@@ -246,4 +246,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+jQuery( "#datepicker" ).datepicker();
 
+jQuery("#select-date").click(function(event){
+  event.preventDefault();
+  jQuery( "#datepicker" ).datepicker("show");
+});
+
+jQuery(document).click(function (event) {
+  if (!jQuery(event.target).closest('#experience-list, #experience').length) {
+    jQuery("#experience-list").removeClass("active");
+  }
+});
+
+jQuery("#experience").click(function (event) {
+  event.preventDefault();
+  jQuery("#experience-list").toggleClass("active");
+  event.stopPropagation();
+})
+
+var experience = document.querySelectorAll("#experience-list li");
+var experience_data = document.getElementById("experience-type");
+
+experience.forEach(exp => {
+  exp.addEventListener('click', () => {
+    const exp_type = exp.getAttribute('data-experience'); 
+    experience_data.value = exp_type; 
+    jQuery("#experience-list").removeClass("active"); 
+  });
+});
