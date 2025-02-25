@@ -1,0 +1,13 @@
+<svg width="202.000000" height="202.000000" viewBox="0 0 202 202" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	<defs>
+		<clipPath id="clip1_550">
+			<rect id="fi_11042704" rx="0.000000" width="201.000000" height="201.000000" transform="translate(202.500000 202.500000) rotate(180.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="fi_11042704" rx="0.000000" width="201.000000" height="201.000000" transform="translate(202.500000 202.500000) rotate(180.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_550)">
+		<path id="Combined-Shape" d="M147.29 176.75C120.4 176.75 101 154.55 101 121.69C101.17 73.94 137.06 40.18 188.85 33.69C193.65 33.09 195.5 39.75 191.08 41.72C171.21 50.55 161.17 61.76 159.88 72.86C158.91 81.15 163.42 88.41 169.08 89.77C183.75 93.3 193.58 111.57 193.58 130.45C193.58 156.02 172.85 176.75 147.29 176.75Z" fill="#F0F0F0" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Combined-Shape" d="M46.29 176.75C19.4 176.75 0 154.55 0 121.69C0.17 73.94 36.06 40.18 87.85 33.69C92.65 33.09 94.5 39.75 90.08 41.72C70.21 50.55 60.17 61.76 58.88 72.86C57.91 81.15 62.42 88.41 68.08 89.77C82.75 93.3 92.58 111.57 92.58 130.45C92.58 156.02 71.85 176.75 46.29 176.75Z" fill="#F0F0F0" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
