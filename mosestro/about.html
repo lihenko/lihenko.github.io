@@ -66,7 +66,7 @@
           </div>
           <div class="main-menu hidden lg:block lg:px-3 lg:w-[calc(100%-218px)] xl:px-10">
             <ul class="flex items-center">
-              <li>
+              <li class="current-menu-item">
                 <a href="#">מי אנחנו</a>
               </li>
               <li>
@@ -116,23 +116,36 @@
       </div>
     </header>
     <main>
-      <style>
-        #home-hero{
-          background-image: url('./img/home-hero-img\ 1x.webp');
-          @media(min-resolution: 2dppx) {
-            background-image: url('./img/home-hero-img\ 2x.webp');
-          }
-          @media(min-resolution: 3dppx) {
-            background-image: url('./img/home-hero-img\ 3x.webp');
-          }
-        }
-      </style>
-      <section id="home-hero" class="bg-cover bg-center min-h-[calc(100vh-80px-492px)] sm:min-h-[calc(100vh-80px-450px)] lg:min-h-[calc(100vh-130px-322px)] xl:min-h-[calc(100vh-130px-250px)] xxl:min-h-[calc(100vh-130px-271px)] flex justify-center items-center py-16">
-        <div class="container text-center">
-          <h1 class="text-white text-[74px] xl:text-[151px] font-bold">מוזסטרו</h1>
-          <div class="text-white text-[28px] xl:text-[54px] font-bold leading-none">אנרגיה לישראל</div>
-        </div>
-      </section>
+        <section id="page-title" class="pt-24">
+            <div class="container">
+                <h1 class="text-center text-white text-[64px] sm:text-[78px] lg:text-[86px] xxl:text-[115px]">מי אנחנו</h1>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="container">
+                <div class="flex flex-wrap -mx-4 items-center">
+                    <div class="w-full px-4 lg:w-1/2">
+                        <picture>
+                           <img src="./img/about-img-1x.webp" alt="" srcset="./img/about-img-1x.webp 1x, ./img/about-img-2x.webp 2x, ./img/about-img-3x.webp 3x">
+                        </picture>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2">
+                        <h3 class="mb-12">חברת מוזסטרו הינה חברה עסקית – יזמית אשר הוקמה מתוך חזון מייסדיה למציאת משאבי אנרגיה של גז ונפט בישראל</h3>
+                        <div>
+                            <p>אנרגיה היא מקור החיים. מציאת משאבי אנרגיה היא משימה מאתגרת וקשה, אך גם זכות גדולה התורמת לשגשוג המדינה ולביצור בטחונה. עמידה באתגרים אלה מחזקת את הביטחון האנרגטי של מדינת ישראל על כל המשמעויות התורמות לחוסן הלאומי.</p>
+                            <p> השם "מוזסטרו" משלב בתוכו את שמו של משה רבנו עם המילה MAESTRO ובתרגומה, "רב -אומן". השילוב ביניהן מרמז על האתגר בשילוב מקצועיות ומצוינות במחקר עם מטרת על לאומית של חיזוק מדינת ישראל.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container">
+                <div class="text-center max-w-[1007px] mx-auto">
+                    חברת מוזסטרו קמה כחברה עסקית – כלכלית. יחד עם זאת, חברו לכך מוטיבציות מקצועיות שעניינן פיתוח ומחקר של מודלים גיאולוגיים לטובת מציאת חומרי גלם חשובים אלה. עמידה באתגרים אלה תורמת לכל האמור לעיל ובעיקר מחזקת את הביטחון האנרגטי של מדינת ישראל על כל המשמעויות התורמות לחוסן הלאומי. 
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="h-[492px] sm:h-[450px] lg:h-[322px] xl:h-[250px] xxl:h-[271px]">
       <section class="bg-violet py-9">
