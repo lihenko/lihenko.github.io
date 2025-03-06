@@ -755,8 +755,8 @@ a:hover{
 .max-w-\[1007px\]{
   max-width: 1007px;
 }
-.max-w-\[1181px\]{
-  max-width: 1181px;
+.max-w-\[1100px\]{
+  max-width: 1100px;
 }
 .max-w-\[1278px\]{
   max-width: 1278px;
@@ -3133,6 +3133,10 @@ svg {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+  .xl\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   .xl\:text-right{
     text-align: right;
   }
@@ -3145,6 +3149,13 @@ svg {
 }
 
 @media (min-width: 1560px){
+  .xxl\:-mx-7{
+    margin-left: -1.75rem;
+    margin-right: -1.75rem;
+  }
+  .xxl\:mb-28{
+    margin-bottom: 7rem;
+  }
   .xxl\:h-\[271px\]{
     height: 271px;
   }
@@ -3153,6 +3164,18 @@ svg {
   }
   .xxl\:w-auto{
     width: auto;
+  }
+  .xxl\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  .xxl\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .xxl\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   .xxl\:pl-20{
     padding-left: 5rem;
