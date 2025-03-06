@@ -39,7 +39,6 @@ if (mobileMenu !== null) {
 for (let i = 0; i < dropdownToggles.length; i++) {
     dropdownToggles[i].addEventListener('click', function (event) {
         event.stopPropagation();
-        console.log('click');
         let toggle = this;
         let menu = this.nextElementSibling;
         toggle.classList.toggle('omni-menu-open');
@@ -48,14 +47,14 @@ for (let i = 0; i < dropdownToggles.length; i++) {
 }
 
 // Close Menu on Links With '#'
-/*for (let i = 0; i < menuLinks.length; i++) {
+for (let i = 0; i < menuLinks.length; i++) {
     menuLinks[i].addEventListener('click', function () {
         if (this.href.indexOf('#') === -1) {
             return;
         }
         closeMenu();
     });
-}*/
+}
 
 // Toggle the menu
 if (toggleBtn !== null) {
