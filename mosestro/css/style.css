@@ -656,7 +656,7 @@ a{
   display: inline-block;
   cursor: pointer;
   --tw-text-opacity: 1;
-  color: rgb(15 25 35 / var(--tw-text-opacity, 1));
+  color: rgb(73 144 192 / var(--tw-text-opacity, 1));
   text-decoration-line: none;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3002,6 +3002,38 @@ svg {
   border-radius: 50%;
 }
 
+.numbered-list {
+  counter-reset: list-counter;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.numbered-list li {
+  counter-increment: list-counter;
+  margin-bottom: 35px;
+  padding-right: 65px;
+  font-size: 14px;
+  position: relative;
+}
+
+.numbered-list li::before {
+  content: counter(list-counter);
+  position: absolute;
+  right: 0;
+  top: -8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4990C0;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 992px) {
   .main-menu > ul {
     display: flex;
@@ -3275,6 +3307,12 @@ svg {
   .xl\:pl-20{
     padding-left: 5rem;
   }
+  .xl\:pr-10{
+    padding-right: 2.5rem;
+  }
+  .xl\:pt-10{
+    padding-top: 2.5rem;
+  }
   .xl\:text-right{
     text-align: right;
   }
@@ -3320,6 +3358,9 @@ svg {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  .xxl\:pb-28{
+    padding-bottom: 7rem;
+  }
   .xxl\:pl-20{
     padding-left: 5rem;
   }
@@ -3331,6 +3372,9 @@ svg {
   }
   .xxl\:pt-24{
     padding-top: 6rem;
+  }
+  .xxl\:pt-28{
+    padding-top: 7rem;
   }
   .xxl\:text-\[115px\]{
     font-size: 115px;
