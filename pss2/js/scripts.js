@@ -185,136 +185,26 @@ jQuery('.products-slider').slick({
 
 
 
+    document.addEventListener("DOMContentLoaded", function() {
+        const faqItems = document.querySelectorAll(".faq-item");
 
+        faqItems.forEach(item => {
+            const question = item.querySelector(".faq-question");
+            const answer = item.querySelector(".faq-answer");
 
+            question.addEventListener("click", function() {
+                const isActive = question.classList.contains("active");
 
-const faqQuestions = document.querySelectorAll('.feature-title');
+                faqItems.forEach(i => {
+                    i.querySelector(".faq-question").classList.remove("active");
+                    i.querySelector(".faq-answer").classList.remove("active");
+                });
 
-faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-        const faqItem = question.parentElement;
-
-        document.querySelectorAll('.feature-item').forEach(item => {
-            if (item !== faqItem) {
-                item.classList.remove('active');
-            }
-        });
-
-        faqItem.classList.toggle('active');
-    });
-});
-
-Fancybox.bind("[data-fancybox]", {
-
-});
-
-const locomotiveScroll = new LocomotiveScroll();
-
-
-let superMenuButton = document.getElementById('super-menu-button');
-let superMenu = document.getElementById('super-menu');
-
-superMenuButton.addEventListener('click', function(event) {
-    event.stopPropagation();
-    superMenuButton.classList.toggle('active');
-    document.body.classList.toggle('super-menu-open');
-});
-
-document.addEventListener('click', function(event) {
-    if (!superMenu.contains(event.target) && !superMenuButton.contains(event.target)) {
-        if (superMenuButton.classList.contains('active')) {
-            superMenuButton.classList.remove('active');
-            document.body.classList.remove('super-menu-open');
-        }
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.btn[data-tab]');
-    const tabContents = document.querySelectorAll('[id^="tab-content-"]');
-    if (tabs.length > 0) {
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            tabs.forEach(t => t.classList.remove('active'));
-            tabContents.forEach(content => content.style.display = 'none');
-
-            const target = this.getAttribute('data-tab');
-            this.classList.add('active');
-            document.getElementById(`tab-content-${target}`).style.display = 'block';
+                if (!isActive) {
+                    question.classList.add("active");
+                    answer.classList.add("active");
+                }
+            });
         });
     });
 
-    tabs[0].classList.add('active');
-    tabContents.forEach((content, index) => {
-        content.style.display = index === 0 ? 'block' : 'none';
-    });
-    }
-    
-});
-
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const privtabs = document.querySelectorAll(".members-privileges-tabs-control-item");
-    const privcontentItems = document.querySelectorAll(".members-privileges-tabs-content-wrap > div");
-
-    function activateTab(tab) {
-
-        privtabs.forEach(t => t.classList.remove("active"));
-        privcontentItems.forEach(content => content.style.display = "none");
-        privcontentItems.forEach(content => content.style.opacity = "0");
-
-        tab.classList.add("active");
-
-        const tabContentId = tab.getAttribute("data-tab");
-        const contentToShow = document.getElementById(tabContentId);
-        if (contentToShow) {
-            contentToShow.style.display = "block";
-            setTimeout(function() {
-              contentToShow.style.opacity = "1";
-            }, 100);
-        }
-    }
-
-    if (privtabs.length > 0) {
-        privtabs.forEach(tab => {
-          tab.addEventListener("click", function() {
-              activateTab(tab);
-          });
-      });
-       activateTab(privtabs[0]);
-    }
-});
-
-jQuery( "#datepicker" ).datepicker();
-
-jQuery("#select-date").click(function(event){
-  event.preventDefault();
-  jQuery( "#datepicker" ).datepicker("show");
-});
-
-jQuery(document).click(function (event) {
-  if (!jQuery(event.target).closest('#experience-list, #experience').length) {
-    jQuery("#experience-list").removeClass("active");
-  }
-});
-
-jQuery("#experience").click(function (event) {
-  event.preventDefault();
-  jQuery("#experience-list").toggleClass("active");
-  event.stopPropagation();
-})
-
-var experience = document.querySelectorAll("#experience-list li");
-var experience_data = document.getElementById("experience-type");
-
-experience.forEach(exp => {
-  exp.addEventListener('click', () => {
-    const exp_type = exp.getAttribute('data-experience'); 
-    experience_data.value = exp_type; 
-    jQuery("#experience-list").removeClass("active"); 
-  });
-});

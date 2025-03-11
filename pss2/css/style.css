@@ -838,6 +838,9 @@ a:hover{
 .mb-8{
   margin-bottom: 2rem;
 }
+.mt-12{
+  margin-top: 3rem;
+}
 .block{
   display: block;
 }
@@ -876,6 +879,9 @@ a:hover{
 }
 .w-full{
   width: 100%;
+}
+.max-w-\[1237px\]{
+  max-width: 1237px;
 }
 .max-w-\[863px\]{
   max-width: 863px;
@@ -1007,6 +1013,10 @@ a:hover{
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1043,6 +1053,9 @@ a:hover{
 .pl-3{
   padding-left: 0.75rem;
 }
+.pl-4{
+  padding-left: 1rem;
+}
 .pr-16{
   padding-right: 4rem;
 }
@@ -1069,6 +1082,9 @@ a:hover{
 }
 .text-\[13px\]{
   font-size: 13px;
+}
+.text-\[26px\]{
+  font-size: 26px;
 }
 .text-lg{
   font-size: 18px;
@@ -3278,6 +3294,39 @@ footer .bottom-line a {
   fill: #678CB6;
 }
 
+.faq-question {
+  position: relative;
+  padding-right: 50px;
+  line-height: 1.1;
+  cursor: pointer;
+}
+.faq-question::after {
+  content: url(../img/plus.svg);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+}
+.faq-question.active::after {
+  transform: translateY(-50%) rotate(-225deg);
+}
+
+.faq-answer {
+  min-height: 180px;
+  padding-right: 50px;
+  background-image: url(../img/faq.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  display: none;
+}
+.faq-answer.active {
+  display: block;
+}
+
 @media screen and (min-width: 640px) {
   .subscribe-form input[type=email] {
     padding-right: 260px;
@@ -3315,6 +3364,17 @@ footer .bottom-line a {
     position: relative;
     top: unset;
     right: unset;
+  }
+  .faq-question {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .faq-question::after {
+    right: 40px;
+  }
+  .faq-answer {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -3367,6 +3427,13 @@ footer .bottom-line a {
     top: 0;
     right: 0;
     border-radius: 5px;
+  }
+  .faq-question {
+    padding-left: 150px;
+  }
+  .faq-answer {
+    padding-right: 260px;
+    padding-left: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3582,6 +3649,9 @@ footer .bottom-line a {
   }
   .lg\:text-\[21px\]{
     font-size: 21px;
+  }
+  .lg\:text-\[34px\]{
+    font-size: 34px;
   }
   .lg\:text-base{
     font-size: 16px;
