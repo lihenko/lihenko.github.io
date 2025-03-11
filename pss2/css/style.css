@@ -862,6 +862,9 @@ a:hover{
 .max-w-\[863px\]{
   max-width: 863px;
 }
+.max-w-\[929px\]{
+  max-width: 929px;
+}
 .scale-\[1\.3\]{
   --tw-scale-x: 1.3;
   --tw-scale-y: 1.3;
@@ -3413,6 +3416,10 @@ footer .bottom-line a {
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   .lg\:py-6{
     padding-top: 1.5rem;
