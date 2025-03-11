@@ -155,6 +155,39 @@ jQuery('.products-slider').slick({
 });
 
 
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const teamMembers = document.querySelectorAll('.team-member-read-more');
+        const popup = document.querySelector('#team-member-read-more-popup');
+        const closeButton = popup.querySelector('.close-button');
+        const dataWrap = popup.querySelector('#team-member-read-more-data-wrap');
+        const overlay = document.querySelector('.overlay');
+        
+        teamMembers.forEach(function (teamMember) {
+            const showMoreButton = teamMember.querySelector('a');
+            const dataContent = teamMember.querySelector('.team-member-read-more-data').innerHTML;
+
+            showMoreButton.addEventListener('click', function (e) {
+                e.preventDefault(); 
+                dataWrap.innerHTML = dataContent; 
+                popup.classList.add('active'); 
+                overlay.classList.add('active');
+            });
+
+            closeButton.addEventListener('click', function () {
+              popup.classList.remove('active');  
+              overlay.classList.remove('active'); 
+            });
+        });
+    });
+
+
+
+
+
+
+
+
 const faqQuestions = document.querySelectorAll('.feature-title');
 
 faqQuestions.forEach(question => {
