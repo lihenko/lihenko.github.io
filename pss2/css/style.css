@@ -993,6 +993,9 @@ a:hover{
 .pb-20{
   padding-bottom: 5rem;
 }
+.pb-24{
+  padding-bottom: 6rem;
+}
 .pb-28{
   padding-bottom: 7rem;
 }
@@ -1013,6 +1016,9 @@ a:hover{
 }
 .pt-24{
   padding-top: 6rem;
+}
+.pt-28{
+  padding-top: 7rem;
 }
 .text-center{
   text-align: center;
@@ -3413,6 +3419,9 @@ footer .bottom-line a {
   .lg\:w-\[calc\(100\%-250px\)\]{
     width: calc(100% - 250px);
   }
+  .lg\:gap-8{
+    gap: 2rem;
+  }
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -3424,6 +3433,9 @@ footer .bottom-line a {
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .lg\:pb-32{
+    padding-bottom: 8rem;
   }
   .lg\:pl-8{
     padding-left: 2rem;
