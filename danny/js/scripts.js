@@ -116,34 +116,3 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
   
 });
 
-var select = jQuery('.select-wrap');
-
-select.on('click', function () {
-  var input = jQuery(this).find('input');
-  var select_title = jQuery(this).find('.select-title');
-  var select_list = jQuery(this).find('.select-list');
-
-  jQuery(this).toggleClass('active');
-  select_list.toggleClass('active');
-
-  select_list.find('li')
-    .off('click') 
-    .on('click', function (e) {
-      e.stopPropagation(); 
-      var select_value = jQuery(this).text();
-      input.val(select_value);
-      select_title.html(select_value);
-
-      select_list.removeClass('active'); 
-      select.removeClass('active'); 
-    });
-});
-
-
-jQuery(document).on('click', function (e) {
-  if (!jQuery(e.target).closest('.select-wrap').length) {
-    jQuery('.select-list').removeClass('active');
-    jQuery('.select-wrap').removeClass('active');
-  }
-});
-
