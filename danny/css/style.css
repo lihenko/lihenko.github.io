@@ -2903,11 +2903,22 @@ body, html {
 #home-hero {
   background-image: url(../img/Hero-bg.webp);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 250px;
   padding-bottom: 250px;
   margin-top: -230px;
   margin-bottom: -150px;
+}
+@media (min-resolution: 2dppx) {
+  #home-hero {
+    background-image: url(../img/Hero-bg-x2.webp);
+  }
+}
+@media (min-resolution: 3dppx) {
+  #home-hero {
+    background-image: url(../img/Hero-bg-x3.webp);
+  }
 }
 
 .hero-title-wrap {
