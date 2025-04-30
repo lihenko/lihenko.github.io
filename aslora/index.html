@@ -65,14 +65,14 @@
           <div class="px-3 text-sm w-1/3 hidden md:block">
             SHOP
           </div>
-          <div class="w-full md:w-1/3 flex justify-between items-center pl-12 pr-3 gap-3 lg:px-3 lg:justify-center">
-            <a href="#" class="md:hidden pt-6" id="mobile-search">
+          <div class="w-full md:w-1/3 flex justify-between items-center gap-3 px-3 lg:justify-center">
+            <a href="#" class="md:hidden pt-6 w-[103px] pl-12" id="mobile-search">
               <img src="./img/search-icon.svg" alt="search">
             </a>
-            <a href="/">
-              <img src="./img/aslora-logo.svg" alt="aslora logo">
+            <a href="/" class="w-[calc(100%-245px)] md:w-full">
+              <img src="./img/aslora-logo.svg" alt="aslora logo" class="mx-auto">
             </a>
-            <div class="md:hidden flex gap-[20px]">
+            <div class="md:hidden w-[103px] flex gap-[20px]">
               <localization-form>
                 <div class="disclosure currency-selector pt-5">
                   <button type="button" class="disclosure__button flex justify-between w-[65px]" aria-expanded="false"
@@ -105,7 +105,7 @@
                 </div>
               </localization-form>
               <a href="#" class="pt-5">
-                <img src="./img/user-icon.svg" alt="customer-login">
+                <img src="./img/cart-icon.svg" alt="cart">
               </a>
             </div>
 
@@ -562,13 +562,16 @@
         </div>
       </section>
       <section id="swan-collection" class="py-[58px]" style="background-image: url(./img/SWAN-COLLECTION-BG.webp);">
-        <div class="container h-full">
+        <video class="background-video" autoplay muted loop playsinline>
+          <source src="./img/SWAN-COLLECTION-VIDEO.mp4" type="video/mp4">
+        </video>
+        <div class="container h-full relative">
           <div class="flex h-full flex-col justify-end items-center sm:items-end">
             <div class="lowercase font-mackinacpro text-white text-xl mb-[26px]">
               ASLORA SWAN COLLECTION
             </div>
             <div
-              class="max-w-[540px] text-white tracking-[0.14px] text-sm leading-6 text-center sm:text-right mb-[26px]">
+              class="max-w-[542px] text-white tracking-[0.14px] text-sm leading-6 text-center sm:text-right mb-[26px]">
               Effortless elegance. Aslora Swan redefines swimwear with timeless designs and a flawless fit, blending
               comfort and sophistication for every sun-soaked moment.
             </div>
