@@ -209,3 +209,91 @@ jQuery('.aslora-babes-slider').slick({
     }
   ]
 });
+
+jQuery(document).ready(function () {
+  const titles = jQuery('.accordion-title');
+  const data = jQuery('.accordion-data');
+
+  titles.first().addClass('active');
+  data.hide(); 
+  data.first().show(); 
+
+  titles.on('click', function () {
+    const current = jQuery(this);
+    const currentData = current.next('.accordion-data');
+
+    titles.not(this).removeClass('active');
+    data.not(currentData).hide();
+
+    const isActive = current.hasClass('active');
+    if (!isActive) {
+      current.addClass('active');
+      currentData.show();
+    } else {
+      current.removeClass('active');
+      currentData.hide();
+    }
+  });
+});
+
+
+jQuery(document).ready(function () {
+  const $window = jQuery(window);
+  const $sticky = jQuery('.product-data-wrap');
+  const $left = jQuery('.product-gallery');
+  const $right = jQuery('.product-details');
+  const marginTop = 20;
+
+  let staticWidth = $right.width(); 
+
+  function updateSticky() {
+    if ($window.width() < 992) {
+      $sticky.css({ position: '', top: '', bottom: '', width: '' });
+      return;
+    }
+
+    staticWidth = $right.width(); 
+
+    const leftTop = $left.offset().top;
+    const leftHeight = $left.outerHeight();
+    const stickyHeight = $sticky.outerHeight();
+    const rightTop = $right.offset().top;
+    const scrollTop = $window.scrollTop();
+    const maxScroll = leftTop + leftHeight - stickyHeight;
+
+    if (stickyHeight >= leftHeight) {
+      $sticky.css({ position: '', top: '', bottom: '', width: '' });
+      return;
+    }
+
+    if (scrollTop + marginTop > rightTop && scrollTop < maxScroll) {
+      $sticky.css({
+        position: 'fixed',
+        top: marginTop + 'px',
+        bottom: '',
+        width: staticWidth + 'px' 
+      });
+    } else if (scrollTop >= maxScroll) {
+      const bottomOffset = leftHeight - stickyHeight;
+      $sticky.css({
+        position: 'absolute',
+        top: bottomOffset + 'px',
+        bottom: '',
+        width: '100%'
+      });
+    } else {
+      $sticky.css({ position: '', top: '', bottom: '', width: '' });
+    }
+  }
+
+  $window.on('scroll resize', updateSticky);
+  updateSticky();
+});
+
+Fancybox.bind("[data-fancybox='gallery']", {
+  infinite: false,
+  arrows: true,
+  thumbs: {
+    autoStart: true
+  }
+});
