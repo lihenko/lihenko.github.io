@@ -4217,6 +4217,9 @@ header.fixed-header-active {
 .product-data-accordion .accordion-data {
   margin-bottom: 20px;
   display: none;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px;
 }
 .product-data-accordion .accordion-title.active + .accordion-data {
   display: block;
