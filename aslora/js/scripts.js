@@ -241,6 +241,44 @@ jQuery(document).ready(function () {
 });
 
 
+
+
+Fancybox.bind("[data-fancybox='gallery']", {
+  infinite: false,
+  arrows: true,
+  thumbs: {
+    autoStart: true
+  }
+});
+
+jQuery(document).ready(function () {
+jQuery(document).on('click', '.customer-care-menu .footer-menu-title', function () {
+  if (window.innerWidth >= 640) return;
+  jQuery(this).next('ul').toggleClass('hidden');
+})
+
+jQuery(document).on('click', '.about-us-menu .footer-menu-title', function () {
+  if (window.innerWidth >= 640) return;
+  jQuery(this).next('ul').toggleClass('hidden');
+})
+
+jQuery(document).on('click', '.shop-menu-button', function () {
+  jQuery('.shop-menu').toggleClass('active');
+})
+
+jQuery(document).on('click', function (e) {
+  if (
+    jQuery(e.target).closest('.shop-menu').length > 0 ||
+    jQuery(e.target).closest('.shop-menu-button').length > 0
+  ) {
+    return;
+  }
+  jQuery('.shop-menu').removeClass('active');
+});
+
+});
+
+
 jQuery(document).ready(function () {
   const $window = jQuery(window);
   const $sticky = jQuery('.product-data-wrap');
@@ -292,39 +330,4 @@ jQuery(document).ready(function () {
 
   $window.on('scroll resize', updateSticky);
   updateSticky();
-});
-
-Fancybox.bind("[data-fancybox='gallery']", {
-  infinite: false,
-  arrows: true,
-  thumbs: {
-    autoStart: true
-  }
-});
-
-jQuery(document).ready(function () {
-jQuery(document).on('click', '.customer-care-menu .footer-menu-title', function () {
-  if (window.innerWidth >= 640) return;
-  jQuery(this).next('ul').toggleClass('hidden');
-})
-
-jQuery(document).on('click', '.about-us-menu .footer-menu-title', function () {
-  if (window.innerWidth >= 640) return;
-  jQuery(this).next('ul').toggleClass('hidden');
-})
-
-jQuery(document).on('click', '.shop-menu-button', function () {
-  jQuery('.shop-menu').toggleClass('active');
-})
-
-jQuery(document).on('click', function (e) {
-  if (
-    jQuery(e.target).closest('.shop-menu').length > 0 ||
-    jQuery(e.target).closest('.shop-menu-button').length > 0
-  ) {
-    return;
-  }
-  jQuery('.shop-menu').removeClass('active');
-});
-
 });
