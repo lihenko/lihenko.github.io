@@ -713,6 +713,10 @@ a:hover{
   margin-left: -2px;
   margin-right: -2px;
 }
+.-mx-\[4px\]{
+  margin-left: -4px;
+  margin-right: -4px;
+}
 .-mx-\[5px\]{
   margin-left: -5px;
   margin-right: -5px;
@@ -775,6 +779,9 @@ a:hover{
 .w-1\/3{
   width: 33.333333%;
 }
+.w-1\/6{
+  width: 16.666667%;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -804,6 +811,9 @@ a:hover{
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .cursor-zoom-in{
   cursor: zoom-in;
@@ -872,6 +882,10 @@ a:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 252 245 / var(--tw-bg-opacity, 1));
 }
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
 .p-3{
   padding: 0.75rem;
 }
@@ -886,6 +900,10 @@ a:hover{
 .px-\[2px\]{
   padding-left: 2px;
   padding-right: 2px;
+}
+.px-\[4px\]{
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .px-\[5px\]{
   padding-left: 5px;
@@ -3912,9 +3930,13 @@ html.with-fancybox body.hide-scrollbar {
 body, html {
   position: relative;
 }
+.top-bar {
+  z-index: 100;
+}
+
 header {
   background-color: #fff;
-  z-index: 999999999999;
+  z-index: 99;
 }
 header.fixed-header {
   width: 100%;
@@ -3926,6 +3948,11 @@ header.fixed-header {
 header.fixed-header-active {
   transform: translateY(0);
   transition: transform 0.8s ease-in-out;
+}
+header .shop-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -4260,6 +4287,29 @@ header.fixed-header-active {
   }
   #home-hero {
     aspect-ratio: 1728/920;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .shop-menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding-bottom: 27px;
+    padding-top: 27px;
+  }
+  header .shop-menu a {
+    display: block;
+  }
+  header .shop-menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .shop-menu-img {
+    aspect-ratio: 190/248;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1600px) {
