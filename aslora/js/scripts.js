@@ -297,3 +297,14 @@ Fancybox.bind("[data-fancybox='gallery']", {
     autoStart: true
   }
 });
+
+
+jQuery(document).on('click', '.customer-care-menu .footer-menu-title', function () {
+  if (window.innerWidth >= 640) return;
+  jQuery(this).next('ul').toggleClass('hidden');
+})
+
+jQuery(document).on('click', '.about-us-menu .footer-menu-title', function () {
+  if (window.innerWidth >= 640) return;
+  jQuery(this).next('ul').toggleClass('hidden');
+})
