@@ -80,6 +80,8 @@ toggleBtn.addEventListener('click', toggleMenu);
 
 
 // Scroll to top
+jQuery(document).ready(function () {
+
 let mybutton = document.getElementById("btn-back-to-top");
 
 
@@ -210,6 +212,8 @@ jQuery('.aslora-babes-slider').slick({
   ]
 });
 
+});
+
 jQuery(document).ready(function () {
   const titles = jQuery('.accordion-title');
   const data = jQuery('.accordion-data');
@@ -298,7 +302,7 @@ Fancybox.bind("[data-fancybox='gallery']", {
   }
 });
 
-
+jQuery(document).ready(function () {
 jQuery(document).on('click', '.customer-care-menu .footer-menu-title', function () {
   if (window.innerWidth >= 640) return;
   jQuery(this).next('ul').toggleClass('hidden');
@@ -321,4 +325,6 @@ jQuery(document).on('click', function (e) {
     return;
   }
   jQuery('.shop-menu').removeClass('active');
+});
+
 });
