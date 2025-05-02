@@ -236,7 +236,7 @@ jQuery(document).ready(function () {
   });
 });
 
-/*
+
 jQuery(document).ready(function () {
   const $window = jQuery(window);
   const $sticky = jQuery('.product-data-wrap');
@@ -288,7 +288,7 @@ jQuery(document).ready(function () {
 
   $window.on('scroll resize', updateSticky);
   updateSticky();
-});*/
+});
 
 Fancybox.bind("[data-fancybox='gallery']", {
   infinite: false,
