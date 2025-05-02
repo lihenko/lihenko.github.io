@@ -463,9 +463,9 @@ video {
     max-width: 992px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   .container{
-    max-width: 1280px;
+    max-width: 1470px;
   }
 }
 body{
@@ -495,7 +495,7 @@ h1, .h1{
     font-size: 28px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   h1, .h1{
     font-size: 40px;
   }
@@ -511,7 +511,7 @@ h2, .h2{
     font-size: 26px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   h2, .h2{
     font-size: 36px;
   }
@@ -527,7 +527,7 @@ h3, .h3{
     font-size: 24px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   h3, .h3{
     font-size: 32px;
   }
@@ -543,7 +543,7 @@ h4, .h4{
     font-size: 22px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   h4, .h4{
     font-size: 26px;
   }
@@ -559,7 +559,7 @@ h5, .h5{
     font-size: 18px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   h5, .h5{
     font-size: 22px;
   }
@@ -3902,9 +3902,6 @@ body, html {
 header {
   background-color: #fff;
   z-index: 999999999999;
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(229 108 148 / var(--tw-border-opacity, 1));
 }
 header.fixed-header {
   width: 100%;
@@ -4151,6 +4148,7 @@ header.fixed-header-active {
   font-size: 15px;
   border: 1px solid #000;
   margin-right: 7px;
+  margin-bottom: 7px;
   position: relative;
   line-height: 58px;
   cursor: pointer;
@@ -4369,7 +4367,7 @@ header.fixed-header-active {
     padding-left: 45px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1470px){
   .xl\:w-\[648px\]{
     width: 648px;
   }
