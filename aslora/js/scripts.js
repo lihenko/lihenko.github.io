@@ -286,6 +286,8 @@ jQuery(document).ready(function () {
   const $right = jQuery('.product-details');
   const marginTop = 20;
 
+  if($sticky.length>0 && $left.length>0 && $right.length>0){
+
   let staticWidth = $right.width(); 
 
   function updateSticky() {
@@ -330,4 +332,5 @@ jQuery(document).ready(function () {
 
   $window.on('scroll resize', updateSticky);
   updateSticky();
+  }
 });
