@@ -757,6 +757,9 @@ a:hover{
 .mb-7{
   margin-bottom: 1.75rem;
 }
+.mb-9{
+  margin-bottom: 2.25rem;
+}
 .mb-\[16px\]{
   margin-bottom: 16px;
 }
@@ -845,6 +848,9 @@ a:hover{
 }
 .max-w-\[542px\]{
   max-width: 542px;
+}
+.max-w-\[853px\]{
+  max-width: 853px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1068,6 +1074,9 @@ a:hover{
 }
 .leading-6{
   line-height: 1.5rem;
+}
+.leading-\[18px\]{
+  line-height: 18px;
 }
 .leading-tight{
   line-height: 1.25;
@@ -4595,6 +4604,10 @@ header .shop-menu {
   .lg\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .lg\:pb-\[20px\]{
     padding-bottom: 20px;
