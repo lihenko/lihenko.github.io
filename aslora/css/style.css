@@ -663,6 +663,23 @@ a:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.rouse-btn{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 108 148 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 108 148 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.rouse-btn:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
 .outline-btn{
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -764,6 +781,26 @@ a:hover{
 .hidden{
   display: none;
 }
+.size-1{
+  width: 0.25rem;
+  height: 0.25rem;
+}
+.size-2{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.size-3{
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.size-4{
+  width: 1rem;
+  height: 1rem;
+}
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
 .h-10{
   height: 2.5rem;
 }
@@ -830,6 +867,9 @@ a:hover{
 .items-center{
   align-items: center;
 }
+.justify-start{
+  justify-content: flex-start;
+}
 .justify-end{
   justify-content: flex-end;
 }
@@ -841,6 +881,9 @@ a:hover{
 }
 .gap-3{
   gap: 0.75rem;
+}
+.gap-4{
+  gap: 1rem;
 }
 .gap-\[15px\]{
   gap: 15px;
@@ -925,6 +968,9 @@ a:hover{
   padding-top: 58px;
   padding-bottom: 58px;
 }
+.pb-10{
+  padding-bottom: 2.5rem;
+}
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -942,6 +988,12 @@ a:hover{
 }
 .pr-3{
   padding-right: 0.75rem;
+}
+.pt-1{
+  padding-top: 0.25rem;
+}
+.pt-10{
+  padding-top: 2.5rem;
 }
 .pt-3{
   padding-top: 0.75rem;
@@ -4252,6 +4304,85 @@ header .shop-menu {
   border-bottom: 1px solid #EBEBEB;
 }
 
+.filters-button {
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.filters-button::after {
+  content: "+";
+  position: absolute;
+  font-size: 19px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filters-button.active::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.filters-wrap {
+  display: none;
+}
+.filters-wrap.active {
+  display: block;
+}
+.filters-wrap .filter-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.filters-wrap .categories-filter a {
+  font-size: 13px;
+  font-weight: 500;
+}
+.filters-wrap .categories-filter a.active{
+  --tw-text-opacity: 1;
+  color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+}
+.filters-wrap ul li {
+  font-size: 13px;
+  font-weight: 500;
+}
+.filters-wrap ul li label {
+  cursor: pointer;
+}
+.filters-wrap ul li label input {
+  display: none;
+}
+.filters-wrap ul li label input:checked ~ span{
+  --tw-text-opacity: 1;
+  color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+}
+.filters-wrap ul li label input:disabled ~ span {
+  opacity: 0.5;
+}
+.filters-wrap a.reset {
+  font-size: 13px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+}
+
+#filter-list-filter\.v\.t\.shopify\.size {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+#filter-list-filter\.v\.t\.shopify\.size input ~ .size-label {
+  width: 60px;
+  height: 58px;
+  display: flex;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+#filter-list-filter\.v\.t\.shopify\.size input:checked ~ .size-label {
+  background-color: #F9DCE3;
+  color: #000;
+}
+
 @media screen and (max-width: 639px) {
   .customer-care-menu .footer-menu-title {
     position: relative;
@@ -4310,6 +4441,12 @@ header .shop-menu {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #products-grid .product-wrap .product-thumbnail-second {
+    left: 10px;
+    right: 10px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -4425,8 +4562,15 @@ header .shop-menu {
   .md\:pb-\[76px\]{
     padding-bottom: 76px;
   }
+  .md\:pt-5{
+    padding-top: 1.25rem;
+  }
 }
 @media (min-width: 992px){
+  .lg\:-mx-\[10px\]{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -4444,6 +4588,13 @@ header .shop-menu {
   }
   .lg\:justify-center{
     justify-content: center;
+  }
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+  .lg\:px-\[10px\]{
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .lg\:pb-\[20px\]{
     padding-bottom: 20px;

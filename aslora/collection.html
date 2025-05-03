@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Page</title>
+  <link rel="stylesheet" href="https://use.typekit.net/vbd3uwa.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer>
+    </script>
+</head>
+
+<body class="open-left">
+  <section class="mobile-menu">
+    <div class="omni-mobile-menu">
+      <ul>
+        <li>
+          <a href="#">Mobile menu 1</a>
+        </li>
+        <li>
+          <a href="#">Mobile menu 2</a>
+        </li>
+        <li>
+          <a href="#">Mobile menu 3</a>
+        </li>
+        <li>
+          <a href="#">Mobile menu 4</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="toggle-btn">
+      <div class="hamburger-icon">
+        <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
+          <path class="line top"
+            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  <div class="content-wrapper overflow-hidden">
+    <div class="top-bar bg-superlihgtrouse py-[10.5px] z-10 relative">
+      <div class="container">
+        <div class="flex flex-wrap -mx-3 top-bar-slider">
+          <div class="w-full px-3 uppercase text-xs tracking-widest font-medium text-center md:w-1/2 ">
+            NEW COLLECTION ‘ASLORA SWAN’ <a href="#" class="underline">AVAILABLE NOW</a>
+          </div>
+          <div class="w-full px-3 uppercase text-xs tracking-widest font-medium text-center md:w-1/2">
+            Free shipping to United Kingdom on all orders above £70
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="py-2 md:py-[13.25px] relative">
+        <div id="search-form" class="py-2 pl-12 pr-3">
+          <form action="#">
+            <input type="text" placeholder="Search" name="q">
+            <input type="image" src="img/search-icon.svg" alt="Search">
+          </form>
+        </div>
+        <div class="container">
+          <div class="flex -mx-3 items-center">
+            <div class="px-3 text-sm w-1/3 hidden md:block cursor-pointer shop-menu-button">
+              SHOP
+            </div>
+            <div class="w-full md:w-1/3 flex justify-between items-center gap-3 px-3 lg:justify-center">
+              <a href="#" class="md:hidden pt-6 w-[103px] pl-12" id="mobile-search">
+                <img src="./img/search-icon.svg" alt="search">
+              </a>
+              <a href="/" class="w-[calc(100%-245px)] md:w-full">
+                <img src="./img/aslora-logo.svg" alt="aslora logo" class="mx-auto h-10 lg:h-auto">
+              </a>
+              <div class="md:hidden w-[103px] flex gap-[20px]">
+                <localization-form>
+                  <div class="disclosure currency-selector pt-5">
+                    <button type="button" class="disclosure__button flex items-center justify-between w-[65px]" aria-expanded="false"
+                      aria-controls="CountryList">
+                      <div class="w-10">
+                        £ GBP
+                      </div>
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
+                        viewBox="0 0 10 6" width="10">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                          fill="currentColor">
+                      </svg>
+                    </button>
+  
+                    <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                      <li class="disclosure__item" tabindex="-1">
+                        <a href="#">
+                          £ GBP
+                        </a>
+                      </li>
+                      <li class="disclosure__item" tabindex="-1">
+                        <a href="#">
+                          $ USD
+                        </a>
+                      </li>
+                    </ul>
+  
+                    <input type="hidden" name="country_code" value="">
+                  </div>
+                </localization-form>
+                <a href="#" class="pt-5">
+                  <img src="./img/cart-icon.svg" alt="cart">
+                </a>
+              </div>
+  
+            </div>
+            <div class="px-3 text-sm w-1/3 hidden md:block">
+              <div class="flex gap-[30px] justify-end">
+                <localization-form>
+  
+                  <div class="disclosure currency-selector">
+                    <button type="button" class="disclosure__button flex items-center justify-between w-[68px]" aria-expanded="false"
+                      aria-controls="CountryList">
+                      <div class="w-11">
+                        £ GBP
+                      </div>
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
+                        viewBox="0 0 10 6" width="10">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                          fill="currentColor">
+                      </svg>
+                    </button>
+  
+                    <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                      <li class="disclosure__item" tabindex="-1">
+                        <a href="#">
+                          £ GBP
+                        </a>
+                      </li>
+                      <li class="disclosure__item" tabindex="-1">
+                        <a href="#">
+                          $ USD
+                        </a>
+                      </li>
+                    </ul>
+  
+                    <input type="hidden" name="country_code" value="">
+                  </div>
+                </localization-form>
+                <div class="shopping-menu">
+                  <ul class="flex gap-[30px]">
+                    <li>
+                      <a href="#">
+                        <img src="./img/user-icon.svg" alt="customer-login">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="desktop-search">
+                        <img src="./img/search-icon.svg" alt="search">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/cart-icon.svg" alt="cart">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop-menu bg-white">
+          <div class="container">
+            <div class="flex -mx-[4px]">
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-1.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">New arrivals</div>
+                </a>
+              </div>
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-2.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">All swim</div>
+                </a>
+              </div>
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Best sellers</div>
+                </a>
+              </div>
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-4.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Tops</div>
+                </a>
+              </div>
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-5.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Bottoms</div>
+                </a>
+              </div>
+              <div class="w-1/6 px-[4px]">
+                <a href="#">
+                  <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
+                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">ACCESSORIES</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <main>
+        <section id="filters" class="pb-10 md:pt-5">
+            <div class="container">
+                <div class="flex items-center gap-[30px]">
+                    <div class="collection-title">
+                        <h1 class="text-rouse lowercase text-xxl">New arrivals</h1>
+                    </div>
+                    <div class="filters-button text-[12px] pt-1">
+                        FILTERS
+                    </div>
+                </div>
+                <div class="filters-wrap pt-10">
+                    <div class="flex " bis_skin_checked="1">
+                            <form class="w-full">
+                                <div class="flex flex-wrap justify-start lg:justify-between gap-4" bis_skin_checked="1">
+                                    
+                                    <div bis_skin_checked="1" class="mb-5">
+                                        <div>
+                                          <div class="filter-title" bis_skin_checked="1">
+                                            <span>Categories</span>
+                                          </div>
+                                        </div>
+                                        <ul class="categories-filter">
+                                          <li>
+                                            
+                                              <a href="/collections/all" class="active">all swim</a>
+                                            
+                                          </li>
+                                          <li>
+                                            
+                                              <a href="/collections/new-arrivals">new arrivals</a>
+                                            
+                                          </li>
+                                          <li>
+                                            
+                                              <a href="/collections/best-sellers">best sellers</a>
+                                            
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    
+                                    
+                                    <div bis_skin_checked="1" class="mb-5">
+                                    
+                                    <div bis_skin_checked="1">
+                                        <div>
+                                        <div class="filter-title" bis_skin_checked="1">
+                                            <span>Product type</span>
+                                        </div>
+                                        </div>
+                            
+                                        <div bis_skin_checked="1"><ul id="filter-list-filter.p.m.custom.product_type"><li>
+                                                    <label for="Filter-filter.p.m.custom.product_type-1">
+                                                    <input type="checkbox" name="filter.p.m.custom.product_type" value="gid://shopify/Metaobject/183344169224" id="Filter-filter.p.m.custom.product_type-1" disabled="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>tops</span>
+                                                    </label>
+                                                </li></ul>
+                                            <div bis_skin_checked="1"></div></div>
+                                    </div>
+                                    </div><div class="mb-5" bis_skin_checked="1">
+                                    
+                                    <div bis_skin_checked="1">
+                                        <div>
+                                        <div class="filter-title" bis_skin_checked="1">
+                                            <span>Top style</span>
+                                        </div>
+                                        </div>
+                            
+                                        <div bis_skin_checked="1"><ul id="filter-list-filter.p.m.custom.top_style"><li>
+                                                    <label for="Filter-filter.p.m.custom.top_style-1">
+                                                    <input type="checkbox" name="filter.p.m.custom.top_style" value="gid://shopify/Metaobject/183345479944" id="Filter-filter.p.m.custom.top_style-1" checked="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>bralette</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.p.m.custom.top_style-2">
+                                                    <input type="checkbox" name="filter.p.m.custom.top_style" value="gid://shopify/Metaobject/183345512712" id="Filter-filter.p.m.custom.top_style-2" disabled="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>triangle shoulder</span>&nbsp;
+                                                    </label>
+                                                </li></ul>
+                                            <div bis_skin_checked="1"><p><a class="reset" href="/collections/all?filter.p.m.custom.bottom_coverage=gid%3A%2F%2Fshopify%2FMetaobject%2F183421174024&amp;filter.v.t.shopify.size=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F17089">Reset</a></p></div></div>
+                                    </div>
+                                    </div><div class="mb-5" bis_skin_checked="1">
+                                    
+                                    <div bis_skin_checked="1">
+                                        <div>
+                                        <div class="filter-title" bis_skin_checked="1">
+                                            <span>Bottom coverage</span>
+                                        </div>
+                                        </div>
+                            
+                                        <div bis_skin_checked="1"><ul id="filter-list-filter.p.m.custom.bottom_coverage"><li>
+                                                    <label for="Filter-filter.p.m.custom.bottom_coverage-1">
+                                                    <input type="checkbox" name="filter.p.m.custom.bottom_coverage" value="gid://shopify/Metaobject/183421174024" id="Filter-filter.p.m.custom.bottom_coverage-1" checked="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>medium coverage</span>
+                                                    </label>
+                                                </li></ul>
+                                            <div bis_skin_checked="1"><p><a class="reset" href="/collections/all?filter.p.m.custom.top_style=gid%3A%2F%2Fshopify%2FMetaobject%2F183345479944&amp;filter.v.t.shopify.size=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F17089">Reset</a></p></div></div>
+                                    </div>
+                                    </div><div class="mb-5" bis_skin_checked="1">
+                                    
+                                    <div bis_skin_checked="1">
+                                        <div>
+                                        <div class="filter-title" bis_skin_checked="1">
+                                            <span>Accessories</span>
+                                        </div>
+                                        </div>
+                            
+                                        <div bis_skin_checked="1"><ul id="filter-list-filter.p.m.custom.accessories"><li>
+                                                    <label for="Filter-filter.p.m.custom.accessories-1">
+                                                    <input type="checkbox" name="filter.p.m.custom.accessories" value="gid://shopify/Metaobject/183424221448" id="Filter-filter.p.m.custom.accessories-1">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>headscarves</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.p.m.custom.accessories-2">
+                                                    <input type="checkbox" name="filter.p.m.custom.accessories" value="gid://shopify/Metaobject/183424254216" id="Filter-filter.p.m.custom.accessories-2" disabled="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span>sarongs</span>
+                                                    </label>
+                                                </li></ul>
+                                            <div bis_skin_checked="1"></div></div>
+                                    </div>
+                                    </div><div class="mb-5" bis_skin_checked="1">
+                                    
+                                    <div bis_skin_checked="1">
+                                        <div>
+                                        <div class="filter-title" bis_skin_checked="1">
+                                            <span>Size</span>
+                                        </div>
+                                        </div>
+                            
+                                        <div bis_skin_checked="1"><ul id="filter-list-filter.v.t.shopify.size"><li>
+                                                    <label for="Filter-filter.v.t.shopify.size-1">
+                                                    <input type="checkbox" name="filter.v.t.shopify.size" value="gid://shopify/TaxonomyValue/17086" id="Filter-filter.v.t.shopify.size-1">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span class="size-label">XS</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.v.t.shopify.size-2">
+                                                    <input type="checkbox" name="filter.v.t.shopify.size" value="gid://shopify/TaxonomyValue/17087" id="Filter-filter.v.t.shopify.size-2">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span class="size-label">S</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.v.t.shopify.size-3">
+                                                    <input type="checkbox" name="filter.v.t.shopify.size" value="gid://shopify/TaxonomyValue/17088" id="Filter-filter.v.t.shopify.size-3">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span class="size-label">M</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.v.t.shopify.size-4">
+                                                    <input type="checkbox" name="filter.v.t.shopify.size" value="gid://shopify/TaxonomyValue/17089" id="Filter-filter.v.t.shopify.size-4" checked="">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span class="size-label">L</span>
+                                                    </label>
+                                                </li><li>
+                                                    <label for="Filter-filter.v.t.shopify.size-5">
+                                                    <input type="checkbox" name="filter.v.t.shopify.size" value="gid://shopify/TaxonomyValue/17090" id="Filter-filter.v.t.shopify.size-5">
+                                                    <span><span class="visual-display__child"></span></span>
+                                                    <span class="size-label">XL</span>
+                                                    </label>
+                                                </li></ul>
+                                            <div bis_skin_checked="1"><p><a class="reset" href="/collections/all?filter.p.m.custom.bottom_coverage=gid%3A%2F%2Fshopify%2FMetaobject%2F183421174024&amp;filter.p.m.custom.top_style=gid%3A%2F%2Fshopify%2FMetaobject%2F183345479944">Reset</a></p></div></div>
+                                    </div>
+                                    </div></div>
+                                <div bis_skin_checked="1">
+                                    <p><a href="/collections/all?sort_by=" class="reset">Clear all</a></p>
+                                </div>
+                                </form>
+
+                        
+                      </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="products-grid">
+            <div class="container">
+                <div class="flex flex-wrap justify-center -mx-[5px] lg:-mx-[10px]">
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-4.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-5.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                    <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
+                        <a href="#" class="w-full">
+                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                          </div>
+                          <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                            ASLORA SWAN <span class="px-1">|</span> PEACH
+                          </div>
+                        </a>
+                        <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                          £165
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-collection text-center pt-5">
+                    <a href="#" class="btn rouse-btn">Load More</a>
+                </div>
+            </div>
+        </section>
+        <section id="new-arrivals" class="py-10 lg:pt-[45px] lg:pb-[20px]">
+          <div class="container">
+            <h2 class="text-rouse lowercase text-xxl mb-4">complete the look</h2>
+            <div class="flex flex-wrap -mx-[5px] justify-center">
+              <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
+                <a href="#" class="w-full">
+                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                  <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
+                  </div>
+                  <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                    ASLORA SWAN <span class="px-1">|</span> PEACH
+                  </div>
+                </a>
+                <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                  £165
+                </div>
+              </div>
+              <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
+                <a href="#" class="w-full">
+                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                  <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                  </div>
+                  <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                    ASLORA SWAN <span class="px-1">|</span> PEACH
+                  </div>
+                </a>
+                <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                  £165
+                </div>
+              </div>
+              <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
+                <a href="#" class="w-full">
+                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                  <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                  </div>
+                  <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                    ASLORA SWAN <span class="px-1">|</span> PEACH
+                  </div>
+                </a>
+                <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                  £165
+                </div>
+              </div>
+              <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
+                <a href="#" class="w-full">
+                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-4.webp);"></div>
+                  <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-5.webp);">
+                  </div>
+                  <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                    ASLORA SWAN <span class="px-1">|</span> PEACH
+                  </div>
+                </a>
+                <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                  £165
+                </div>
+              </div>
+              <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
+                <a href="#" class="w-full">
+                  <div class="product-thumbnail mb-5" style="background-image: url(./img/product-5.webp);"></div>
+                  <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-6.webp);">
+                  </div>
+                  <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
+                    ASLORA SWAN <span class="px-1">|</span> PEACH
+                  </div>
+                </a>
+                <div class="product-price text-[12px] leading-4 font-medium tracking-widest">
+                  £165
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-wrap bg-lightrouse pt-[54px] pb-[20px] px-3 rounded-lg xl:px-[63px]">
+          <div class="flex flex-wrap">
+            <div class="footer-menu w-full lg:w-2/3 xl:w-[648px] mb-6 lg:mb-0">
+              <div class="flex flex-wrap -mx-[5px] justify-center sm:justify-start">
+                <div class="customer-care-menu w-full px-[5px] sm:mb-6 sm:w-1/3 pt-3 sm:pt-0 border-t border-b border-[#8C8C8B] sm:border-none">
+                  <div class="footer-menu-title text-lg font-bold mb-3">
+                    customer care
+                  </div>
+                  <ul class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping and Delivery</a></li>
+                    <li><a href="#">Returns and Exchanges</a></li>
+                  </ul>
+                </div>
+                <div class="about-us-menu w-full px-[5px] mb-6 pt-3 sm:pt-0 sm:w-1/3 border-b border-[#8C8C8B] sm:border-none">
+                  <div class="footer-menu-title text-lg font-bold mb-3">
+                    about us
+                  </div>
+                  <ul  class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="social-menu w-full px-[5px] mb-6 sm:w-1/3">
+                  <div class="footer-menu-title hidden sm:block text-lg font-bold mb-4">
+                    socials
+                  </div>
+                  <div class="flex justify-center sm:justify-start items-center gap-[15px]">
+                    <a href="#">
+                      <svg width="33.000000" height="33.000000" viewBox="0 0 33 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <defs>
+                          <clipPath>
+                            <rect rx="0.000000" width="32.000000" height="32.000000"
+                              transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                          </clipPath>
+                        </defs>
+                        <rect rx="0.000000" width="32.000000" height="32.000000"
+                          transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <g clip-path="url(#clip126_60)">
+                          <path
+                            d="M32.96 9.7C32.89 7.94 32.6 6.74 32.2 5.69C31.78 4.58 31.13 3.59 30.29 2.77C29.46 1.93 28.46 1.28 27.37 0.87C26.32 0.46 25.12 0.18 23.36 0.1C21.6 0.01 21.04 0 16.56 0C12.08 0 11.52 0.01 9.76 0.09C8 0.17 6.8 0.45 5.75 0.86C4.64 1.28 3.65 1.92 2.83 2.77C1.99 3.59 1.34 4.59 0.92 5.69C0.52 6.74 0.23 7.94 0.16 9.69C0.07 11.46 0.05 12.02 0.05 16.5C0.05 20.98 0.07 21.54 0.15 23.3C0.23 25.05 0.51 26.26 0.92 27.3C1.34 28.41 1.99 29.4 2.83 30.23C3.65 31.07 4.65 31.72 5.75 32.13C6.8 32.54 8 32.82 9.75 32.9C11.51 32.98 12.07 33 16.55 33C21.03 33 21.59 32.98 23.35 32.9C25.1 32.82 26.31 32.54 27.35 32.13C29.57 31.27 31.33 29.52 32.18 27.3C32.59 26.25 32.87 25.05 32.95 23.3C33.03 21.54 33.05 20.98 33.05 16.5C33.05 12.02 33.04 11.46 32.96 9.7ZM29.99 23.17C29.92 24.78 29.65 25.65 29.42 26.23C28.87 27.67 27.73 28.81 26.29 29.37C25.71 29.59 24.83 29.86 23.23 29.93C21.49 30.01 20.97 30.03 16.56 30.03C12.16 30.03 11.63 30.01 9.9 29.93C8.29 29.86 7.41 29.59 6.83 29.37C6.12 29.1 5.47 28.68 4.94 28.13C4.39 27.6 3.97 26.95 3.71 26.24C3.48 25.66 3.21 24.78 3.14 23.18C3.06 21.44 3.04 20.91 3.04 16.51C3.04 12.11 3.06 11.58 3.14 9.85C3.21 8.23 3.48 7.36 3.71 6.78C3.97 6.07 4.39 5.42 4.95 4.89C5.48 4.34 6.13 3.92 6.84 3.66C7.42 3.43 8.3 3.16 9.9 3.09C11.64 3.01 12.17 2.99 16.57 2.99C20.98 2.99 21.5 3.01 23.24 3.09C24.85 3.16 25.72 3.43 26.3 3.66C27.01 3.92 27.66 4.34 28.19 4.89C28.74 5.42 29.16 6.07 29.42 6.78C29.65 7.36 29.92 8.24 29.99 9.85C30.07 11.59 30.09 12.11 30.09 16.51C30.09 20.91 30.07 21.43 29.99 23.17Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                          <path
+                            d="M16.56 8.02C11.88 8.02 8.08 11.82 8.08 16.5C8.08 21.18 11.88 24.98 16.56 24.98C21.24 24.98 25.03 21.18 25.03 16.5C25.03 11.82 21.24 8.02 16.56 8.02ZM16.56 22C13.52 22 11.06 19.53 11.06 16.5C11.06 13.46 13.52 11 16.56 11C19.59 11 22.06 13.46 22.06 16.5C22.06 19.53 19.59 22 16.56 22Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                          <path
+                            d="M27.35 7.69C27.35 8.78 26.46 9.66 25.37 9.66C24.28 9.66 23.39 8.78 23.39 7.69C23.39 6.59 24.28 5.71 25.37 5.71C26.46 5.71 27.35 6.59 27.35 7.69Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg width="27.000000" height="27.000000" viewBox="0 0 27 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <defs>
+                          <clipPath>
+                            <rect rx="0.000000" width="26.000000" height="26.000000"
+                              transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                          </clipPath>
+                        </defs>
+                        <rect rx="0.000000" width="26.000000" height="26.000000"
+                          transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <g clip-path="url(#clip126_64)">
+                          <path
+                            d="M25.32 6.77C23.78 6.77 22.36 6.26 21.22 5.39C19.91 4.41 18.97 2.96 18.64 1.29C18.56 0.88 18.51 0.45 18.51 0.02L14.11 0.02L14.11 12.04L14.1 18.63C14.1 20.39 12.95 21.89 11.36 22.41C10.9 22.56 10.4 22.64 9.88 22.61C9.22 22.57 8.6 22.37 8.06 22.05C6.91 21.36 6.14 20.12 6.11 18.69C6.08 16.46 7.88 14.65 10.11 14.65C10.55 14.65 10.97 14.72 11.36 14.85L11.36 11.56L11.36 10.38C10.95 10.32 10.52 10.29 10.09 10.29C7.66 10.29 5.38 11.3 3.75 13.12C2.52 14.5 1.78 16.26 1.67 18.11C1.52 20.53 2.41 22.83 4.12 24.53C4.38 24.78 4.64 25.01 4.92 25.22C6.39 26.36 8.2 26.97 10.09 26.97C10.52 26.97 10.95 26.94 11.36 26.88C13.14 26.62 14.77 25.81 16.06 24.53C17.65 22.96 18.53 20.88 18.53 18.67L18.51 8.83C19.27 9.41 20.1 9.89 20.98 10.27C22.37 10.85 23.83 11.15 25.34 11.15L25.34 7.95L25.34 6.76C25.34 6.77 25.33 6.77 25.32 6.77Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg width="29.000000" height="29.000000" viewBox="0 0 29 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <defs />
+                        <path
+                          d="M14.78 7C9.02 7 5.96 10.68 5.96 14.71C5.96 16.57 7.01 18.9 8.67 19.63C9.15 19.85 9.09 19.59 9.5 18.02C9.53 17.89 9.51 17.78 9.41 17.66C7.02 14.9 8.94 9.23 14.44 9.23C22.4 9.23 20.91 20.23 15.82 20.23C14.51 20.23 13.54 19.21 13.85 17.93C14.22 16.42 14.95 14.79 14.95 13.69C14.95 10.94 10.85 11.35 10.85 15C10.85 16.12 11.25 16.89 11.25 16.89C11.25 16.89 9.93 22.22 9.68 23.22C9.27 24.9 9.74 27.63 9.78 27.87C9.81 28 9.95 28.04 10.03 27.93C10.16 27.76 11.76 25.49 12.21 23.84C12.37 23.24 13.04 20.81 13.04 20.81C13.48 21.6 14.75 22.27 16.1 22.27C20.12 22.27 23.03 18.73 23.03 14.35C23.01 10.14 19.41 7 14.78 7Z"
+                          fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                        <circle cx="14.500000" cy="14.500000" r="13.500000" stroke="#000000" stroke-opacity="1.000000"
+                          stroke-width="2.000000" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="footer-subscribe w-full lg:w-1/3 xl:w-[calc(100%-648px)] lg:pl-[20px]">
+              <div class="footer-menu-title text-lg font-bold mb-3">
+                wanna be beach besties? ☀️
+              </div>
+              <div class="subscribe-form">
+                <input type="email" placeholder="email address">
+                <input type="submit" value="subscribe">
+              </div>
+              <div class="font-medium text-md">
+                by signing up you agree to our <a href="#">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+      class="inline-block fixed p-3 bg-rouse text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:text-black hover:bg-lightrouse hover:shadow-lg focus:bg-lightrouse focus:shadow-lg focus:outline-none focus:ring-0 active:bg-lightrouse active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+      id="btn-back-to-top">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+        </path>
+      </svg>
+    </button>
+  </div>
+  
+  <script src="js/scripts.js" defer></script>
+</body>
+
+</html>

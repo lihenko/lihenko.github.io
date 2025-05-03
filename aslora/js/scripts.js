@@ -276,6 +276,22 @@ jQuery(document).on('click', function (e) {
   jQuery('.shop-menu').removeClass('active');
 });
 
+jQuery(document).on('click', '.filters-button', function () {
+  jQuery(this).toggleClass('active');
+  jQuery('.filters-wrap').toggleClass('active');
+})
+
+jQuery(document).on('click', function (e) {
+  if (
+    jQuery(e.target).closest('.filters-button').length > 0 ||
+    jQuery(e.target).closest('.filters-wrap').length > 0
+  ) {
+    return;
+  }
+  jQuery('.filters-button').removeClass('active');
+  jQuery('.filters-wrap').removeClass('active');
+});
+
 });
 
 
