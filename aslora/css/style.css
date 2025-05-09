@@ -4603,6 +4603,42 @@ header .shop-menu {
   min-width: 800px;
 }
 
+.faq-wrap {
+  margin-bottom: 73px;
+}
+.faq-wrap .faq-item {
+  border-bottom: 1px solid #F9DCE3;
+}
+.faq-wrap .faq-item .faq-question {
+  padding: 22px 55px 22px 0;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+.faq-wrap .faq-item .faq-question::after {
+  content: url(../img/faq-button.svg);
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.faq-wrap .faq-item.active .faq-question::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.faq-wrap .faq-item .faq-answer {
+  display: none;
+  padding-bottom: 38px;
+  line-height: 1.75;
+}
+.faq-wrap .faq-item .faq-answer p {
+  margin-bottom: 0;
+}
+.faq-wrap .faq-item.active .faq-answer {
+  display: block;
+}
+
 @media screen and (max-width: 639px) {
   .customer-care-menu .footer-menu-title {
     position: relative;
@@ -4674,6 +4710,18 @@ header .shop-menu {
   #content ul li::before {
     content: "";
     top: 11px;
+  }
+  .faq-wrap .faq-item {
+    margin-right: 55px;
+  }
+  .faq-wrap .faq-item .faq-question {
+    padding: 22px 0 22px 55px;
+  }
+  .faq-wrap .faq-item .faq-question::after {
+    right: -45px;
+  }
+  .faq-wrap .faq-item .faq-answer {
+    padding-left: 55px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -4873,6 +4921,9 @@ header .shop-menu {
   }
   .lg\:pl-\[20px\]{
     padding-left: 20px;
+  }
+  .lg\:pl-\[55px\]{
+    padding-left: 55px;
   }
   .lg\:pt-16{
     padding-top: 4rem;

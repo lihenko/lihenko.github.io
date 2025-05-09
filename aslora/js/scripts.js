@@ -352,3 +352,7 @@ jQuery(document).ready(function () {
   updateSticky();
   }
 });
+
+jQuery(document).on('click', '.faq-question', function () {
+  jQuery(this).parent('.faq-item').toggleClass('active');
+})
