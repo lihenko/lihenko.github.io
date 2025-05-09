@@ -263,6 +263,7 @@ jQuery(document).on('click', '.about-us-menu .footer-menu-title', function () {
 })
 
 jQuery(document).on('click', '.shop-menu-button', function () {
+  jQuery('#shop-hamburger').toggleClass('active');
   jQuery('.shop-menu').toggleClass('active');
 })
 
@@ -273,6 +274,7 @@ jQuery(document).on('click', function (e) {
   ) {
     return;
   }
+  jQuery('#shop-hamburger').removeClass('active');
   jQuery('.shop-menu').removeClass('active');
 });
 

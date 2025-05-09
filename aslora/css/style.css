@@ -485,9 +485,9 @@ body{
   }
 }
 h1, .h1{
-  font-family: p22-mackinac-pro, serif;
+  font-family: Krub, sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -501,9 +501,9 @@ h1, .h1{
   }
 }
 h2, .h2{
-  font-family: p22-mackinac-pro, serif;
+  font-family: Krub, sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -517,9 +517,9 @@ h2, .h2{
   }
 }
 h3, .h3{
-  font-family: p22-mackinac-pro, serif;
+  font-family: Krub, sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -533,9 +533,9 @@ h3, .h3{
   }
 }
 h4, .h4{
-  font-family: p22-mackinac-pro, serif;
+  font-family: Krub, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -549,9 +549,9 @@ h4, .h4{
   }
 }
 h5, .h5{
-  font-family: p22-mackinac-pro, serif;
+  font-family: Krub, sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -741,6 +741,9 @@ a:hover{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 .mb-3{
   margin-bottom: 0.75rem;
@@ -1037,6 +1040,9 @@ a:hover{
 .text-\[18px\]{
   font-size: 18px;
 }
+.text-\[20px\]{
+  font-size: 20px;
+}
 .text-lg{
   font-size: 18px;
   line-height: 26px;
@@ -1074,6 +1080,9 @@ a:hover{
 }
 .leading-6{
   line-height: 1.5rem;
+}
+.leading-9{
+  line-height: 2.25rem;
 }
 .leading-\[18px\]{
   line-height: 18px;
@@ -4392,6 +4401,56 @@ header .shop-menu {
   color: #000;
 }
 
+.shop-menu-button {
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.shop-menu-button .hamburger-icon {
+  height: 40px;
+  transition: all 0.3s ease;
+  width: 40px;
+}
+
+#shop-hamburger {
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+#shop-hamburger .top {
+  stroke-dasharray: 40 160;
+}
+#shop-hamburger .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: all 0.3s ease;
+}
+#shop-hamburger .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: all 0.3s ease;
+}
+#shop-hamburger.active {
+  transform: rotate(45deg);
+}
+#shop-hamburger.active .top {
+  stroke-dashoffset: -64px;
+}
+#shop-hamburger.active .middle {
+  transform: rotate(90deg);
+}
+#shop-hamburger.active .bottom {
+  stroke-dashoffset: -64px;
+}
+#shop-hamburger .line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 639px) {
   .customer-care-menu .footer-menu-title {
     position: relative;
@@ -4568,6 +4627,10 @@ header .shop-menu {
     padding-top: 13.25px;
     padding-bottom: 13.25px;
   }
+  .md\:py-\[13px\]{
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
   .md\:pb-\[76px\]{
     padding-bottom: 76px;
   }
@@ -4609,8 +4672,14 @@ header .shop-menu {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+  .lg\:pb-\[18px\]{
+    padding-bottom: 18px;
+  }
   .lg\:pb-\[20px\]{
     padding-bottom: 20px;
+  }
+  .lg\:pb-\[224px\]{
+    padding-bottom: 224px;
   }
   .lg\:pl-3{
     padding-left: 0.75rem;
@@ -4639,7 +4708,13 @@ header .shop-menu {
     padding-left: 63px;
     padding-right: 63px;
   }
+  .xl\:pl-16{
+    padding-left: 4rem;
+  }
   .xl\:pl-\[50px\]{
     padding-left: 50px;
+  }
+  .xl\:pr-16{
+    padding-right: 4rem;
   }
 }
