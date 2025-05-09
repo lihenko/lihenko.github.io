@@ -745,6 +745,12 @@ a:hover{
 .mb-1{
   margin-bottom: 0.25rem;
 }
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+.mb-12{
+  margin-bottom: 3rem;
+}
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -789,6 +795,9 @@ a:hover{
 }
 .flex{
   display: flex;
+}
+.table{
+  display: table;
 }
 .hidden{
   display: none;
@@ -861,14 +870,14 @@ a:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[1015px\]{
+  max-width: 1015px;
+}
 .max-w-\[1252px\]{
   max-width: 1252px;
 }
 .max-w-\[542px\]{
   max-width: 542px;
-}
-.max-w-\[916px\]{
-  max-width: 916px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4461,6 +4470,78 @@ header .shop-menu {
   stroke-width: 4;
   stroke-linecap: round;
   transition: all 0.3s ease;
+}
+
+#content ul {
+  margin: 0 0 48px;
+  padding: 0;
+  list-style: none;
+}
+#content ul li {
+  position: relative;
+  padding-left: 40px;
+}
+#content ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+#content a {
+  text-decoration: underline;
+}
+#content table {
+  width: 100%;
+  margin-bottom: 48px;
+}
+#content table thead th{
+  border-right-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(249 220 227 / var(--tw-border-opacity, 1));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+}
+#content table thead th:last-child {
+  border: none;
+  padding-left: 91px;
+}
+#content table thead th:first-child {
+  padding-right: 91px;
+}
+#content table tbody td{
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(249 220 227 / var(--tw-border-opacity, 1));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+#content table tbody td:first-child {
+  padding-right: 91px;
+}
+#content table tbody td:last-child {
+  padding-left: 91px;
+  border-right: none;
+}
+#content table tbody tr:last-child td {
+  border-bottom: none;
+}
+#content .table-flex {
+  max-width: 100%;
+  overflow-x: auto;
+}
+#content .table-flex table {
+  min-width: 800px;
 }
 
 @media screen and (max-width: 639px) {
