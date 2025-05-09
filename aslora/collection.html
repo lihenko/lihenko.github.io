@@ -57,163 +57,171 @@
         </div>
       </div>
     </div>
-    <header class="py-2 md:py-[13.25px] relative">
-        <div id="search-form" class="py-2 pl-12 pr-3">
-          <form action="#">
-            <input type="text" placeholder="Search" name="q">
-            <input type="image" src="img/search-icon.svg" alt="Search">
-          </form>
-        </div>
-        <div class="container">
-          <div class="flex -mx-3 items-center">
-            <div class="px-3 text-sm w-1/3 hidden md:block cursor-pointer shop-menu-button">
-              SHOP
+    <header class="py-2 md:py-[13px] relative">
+      <div id="search-form" class="py-2 pl-12 pr-3">
+        <form action="#">
+          <input type="text" placeholder="Search" name="q">
+          <input type="image" src="img/search-icon.svg" alt="Search">
+        </form>
+      </div>
+      <div class="container">
+        <div class="flex -mx-3 items-center">
+          <div class="px-3 text-sm w-1/3 hidden md:block cursor-pointer shop-menu-button">
+            <div class="hamburger-icon">
+              <svg class="hamburger" viewBox="0 0 100 100" id="shop-hamburger">
+                <path class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+              </svg>
             </div>
-            <div class="w-full md:w-1/3 flex justify-between items-center gap-3 px-3 lg:justify-center">
-              <a href="#" class="md:hidden pt-6 w-[103px] pl-12" id="mobile-search">
-                <img src="./img/search-icon.svg" alt="search">
-              </a>
-              <a href="/" class="w-[calc(100%-245px)] md:w-full">
-                <img src="./img/aslora-logo.svg" alt="aslora logo" class="mx-auto h-10 lg:h-auto">
-              </a>
-              <div class="md:hidden w-[103px] flex gap-[20px]">
-                <localization-form>
-                  <div class="disclosure currency-selector pt-5">
-                    <button type="button" class="disclosure__button flex items-center justify-between w-[65px]" aria-expanded="false"
-                      aria-controls="CountryList">
-                      <div class="w-10">
-                        £ GBP
-                      </div>
-                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
-                        viewBox="0 0 10 6" width="10">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-                          fill="currentColor">
-                      </svg>
-                    </button>
-  
-                    <ul id="CountryList" role="list" class="disclosure__list" hidden>
-                      <li class="disclosure__item" tabindex="-1">
-                        <a href="#">
-                          £ GBP
-                        </a>
-                      </li>
-                      <li class="disclosure__item" tabindex="-1">
-                        <a href="#">
-                          $ USD
-                        </a>
-                      </li>
-                    </ul>
-  
-                    <input type="hidden" name="country_code" value="">
-                  </div>
-                </localization-form>
-                <a href="#" class="pt-5">
-                  <img src="./img/cart-icon.svg" alt="cart">
-                </a>
-              </div>
-  
-            </div>
-            <div class="px-3 text-sm w-1/3 hidden md:block">
-              <div class="flex gap-[30px] justify-end">
-                <localization-form>
-  
-                  <div class="disclosure currency-selector">
-                    <button type="button" class="disclosure__button flex items-center justify-between w-[68px]" aria-expanded="false"
-                      aria-controls="CountryList">
-                      <div class="w-11">
-                        £ GBP
-                      </div>
-                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
-                        viewBox="0 0 10 6" width="10">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-                          fill="currentColor">
-                      </svg>
-                    </button>
-  
-                    <ul id="CountryList" role="list" class="disclosure__list" hidden>
-                      <li class="disclosure__item" tabindex="-1">
-                        <a href="#">
-                          £ GBP
-                        </a>
-                      </li>
-                      <li class="disclosure__item" tabindex="-1">
-                        <a href="#">
-                          $ USD
-                        </a>
-                      </li>
-                    </ul>
-  
-                    <input type="hidden" name="country_code" value="">
-                  </div>
-                </localization-form>
-                <div class="shopping-menu">
-                  <ul class="flex gap-[30px]">
-                    <li>
+          </div>
+          <div class="w-full md:w-1/3 flex justify-between items-center gap-3 px-3 lg:justify-center">
+            <a href="#" class="md:hidden pt-6 w-[103px] pl-12" id="mobile-search">
+              <img src="./img/search-icon.svg" alt="search">
+            </a>
+            <a href="/" class="w-[calc(100%-245px)] md:w-full">
+              <img src="./img/aslora-logo.svg" alt="aslora logo" class="mx-auto h-10 lg:h-auto">
+            </a>
+            <div class="md:hidden w-[103px] flex gap-[20px]">
+              <localization-form>
+                <div class="disclosure currency-selector pt-5">
+                  <button type="button" class="disclosure__button flex items-center justify-between w-[65px]" aria-expanded="false"
+                    aria-controls="CountryList">
+                    <div class="w-10 font-medium">
+                      £ GBP
+                    </div>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
+                      viewBox="0 0 10 6" width="10">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor">
+                    </svg>
+                  </button>
+
+                  <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                    <li class="disclosure__item" tabindex="-1">
                       <a href="#">
-                        <img src="./img/user-icon.svg" alt="customer-login">
+                        £ GBP
                       </a>
                     </li>
-                    <li>
-                      <a href="#" id="desktop-search">
-                        <img src="./img/search-icon.svg" alt="search">
-                      </a>
-                    </li>
-                    <li>
+                    <li class="disclosure__item" tabindex="-1">
                       <a href="#">
-                        <img src="./img/cart-icon.svg" alt="cart">
+                        $ USD
                       </a>
                     </li>
                   </ul>
+
+                  <input type="hidden" name="country_code" value="">
                 </div>
+              </localization-form>
+              <a href="#" class="pt-5">
+                <img src="./img/cart-icon.svg" alt="cart">
+              </a>
+            </div>
+
+          </div>
+          <div class="px-3 text-sm w-1/3 hidden md:block">
+            <div class="flex gap-[30px] justify-end">
+              <localization-form>
+
+                <div class="disclosure currency-selector">
+                  <button type="button" class="disclosure__button flex items-center justify-between w-[68px]" aria-expanded="false"
+                    aria-controls="CountryList">
+                    <div class="w-11 font-medium">
+                      £ GBP
+                    </div>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret"
+                      viewBox="0 0 10 6" width="10">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor">
+                    </svg>
+                  </button>
+
+                  <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                    <li class="disclosure__item" tabindex="-1">
+                      <a href="#">
+                        £ GBP
+                      </a>
+                    </li>
+                    <li class="disclosure__item" tabindex="-1">
+                      <a href="#">
+                        $ USD
+                      </a>
+                    </li>
+                  </ul>
+
+                  <input type="hidden" name="country_code" value="">
+                </div>
+              </localization-form>
+              <div class="shopping-menu">
+                <ul class="flex gap-[30px]">
+                  <li>
+                    <a href="#">
+                      <img src="./img/user-icon.svg" alt="customer-login">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" id="desktop-search">
+                      <img src="./img/search-icon.svg" alt="search">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/cart-icon.svg" alt="cart">
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="shop-menu bg-white">
-          <div class="container">
-            <div class="flex -mx-[4px]">
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-1.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">New arrivals</div>
-                </a>
-              </div>
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-2.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">All swim</div>
-                </a>
-              </div>
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Best sellers</div>
-                </a>
-              </div>
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-4.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Tops</div>
-                </a>
-              </div>
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-5.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Bottoms</div>
-                </a>
-              </div>
-              <div class="w-1/6 px-[4px]">
-                <a href="#">
-                  <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
-                  <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">ACCESSORIES</div>
-                </a>
-              </div>
+      </div>
+      <div class="shop-menu bg-white">
+        <div class="container">
+          <div class="flex -mx-[4px]">
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-1.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">New arrivals</div>
+              </a>
+            </div>
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-2.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">All swim</div>
+              </a>
+            </div>
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Best sellers</div>
+              </a>
+            </div>
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-4.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Tops</div>
+              </a>
+            </div>
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-5.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">Bottoms</div>
+              </a>
+            </div>
+            <div class="w-1/6 px-[4px]">
+              <a href="#">
+                <div class="shop-menu-img" style="background-image: url(./img/product-3.webp);"></div>
+                <div class="shop-menu-title uppercase text-[12px] font-medium tracking-widest">ACCESSORIES</div>
+              </a>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
     <main>
         <section id="filters" class="pb-10 md:pt-5">
             <div class="container">
@@ -399,7 +407,7 @@
                 <div class="flex flex-wrap justify-center -mx-[5px] lg:-mx-[10px]">
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-1.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -412,7 +420,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-2.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -425,7 +433,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-3.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -438,7 +446,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-2.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -451,7 +459,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-3.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -464,7 +472,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-4.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-4.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-5.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -477,7 +485,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-1.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -490,7 +498,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-2.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -503,7 +511,7 @@
                     </div>
                     <div class="product-wrap px-[5px] lg:px-[10px] w-1/2 sm:w-1/3 mb-6">
                         <a href="#" class="w-full">
-                          <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                          <div class="product-thumbnail mb-2" style="background-image: url(./img/product-3.webp);"></div>
                           <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
                           </div>
                           <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -520,13 +528,13 @@
                 </div>
             </div>
         </section>
-        <section id="new-arrivals" class="py-10 lg:pt-[45px] lg:pb-[20px]">
+        <section id="new-arrivals" class="py-10 lg:pt-[45px] lg:pb-[48px]">
           <div class="container">
             <h2 class="text-rouse lowercase text-xxl mb-4">complete the look</h2>
             <div class="flex flex-wrap -mx-[5px] justify-center">
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-1.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -539,7 +547,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-2.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -552,7 +560,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-3.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -565,7 +573,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-4.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-4.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-5.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -578,7 +586,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-5" style="background-image: url(./img/product-5.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-5.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-6.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -592,28 +600,18 @@
             </div>
           </div>
         </section>
-        <section id="collection-description" class="pb-10 lg:py-16">
-            <div class="container">
-                <div class="description-title text-center mb-9">
-                    <h2 class="text-rouse lowercase text-xxl">New arrivals: Women’s Swimwear & Apparel & Matching Sets</h2>
-                </div>
-                <div class="description-body text-xs font-medium leading-[18px] text-center max-w-[853px] mx-auto">
-                    Designed by Francesca Aiello, our collection of trendy women’s swimwear and apparel features the highest quality bikinis, one piece swimsuits, knits, dresses, and matching sets. We introduce new arrivals monthly, blending timeless trends with versatile silhouettes designed to flatter every body type. From cozy knitwear to statement swim, our collections offer something special for every season of the year. Explore limited-edition designs, premium fabrics, and must-have styles that transition from the beach to everyday wear. Plus, enjoy free shipping and returns.
-                </div>
-            </div>
-        </section>
     </main>
-    <footer>
+    <footer class="bg-lightrouse">
       <div class="container">
-        <div class="footer-wrap bg-lightrouse pt-[54px] pb-[20px] px-3 rounded-lg xl:px-[63px]">
+        <div class="footer-wrap  pt-[54px] pb-[20px] px-3 xl:px-[63px]">
           <div class="flex flex-wrap">
             <div class="footer-menu w-full lg:w-2/3 xl:w-[648px] mb-6 lg:mb-0">
               <div class="flex flex-wrap -mx-[5px] justify-center sm:justify-start">
                 <div class="customer-care-menu w-full px-[5px] sm:mb-6 sm:w-1/3 pt-3 sm:pt-0 border-t border-b border-[#8C8C8B] sm:border-none">
-                  <div class="footer-menu-title text-lg font-bold mb-3">
+                  <div class="footer-menu-title text-[20px] font-bold mb-2">
                     customer care
                   </div>
-                  <ul class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                  <ul class="font-medium text-md leading-9 hidden sm:block pb-3 sm:pb-0">
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Size Guide</a></li>
@@ -622,10 +620,10 @@
                   </ul>
                 </div>
                 <div class="about-us-menu w-full px-[5px] mb-6 pt-3 sm:pt-0 sm:w-1/3 border-b border-[#8C8C8B] sm:border-none">
-                  <div class="footer-menu-title text-lg font-bold mb-3">
+                  <div class="footer-menu-title text-[20px] font-bold mb-2">
                     about us
                   </div>
-                  <ul  class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                  <ul class="font-medium text-md leading-9 hidden sm:block pb-3 sm:pb-0">
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Sustainability</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -633,7 +631,7 @@
                   </ul>
                 </div>
                 <div class="social-menu w-full px-[5px] mb-6 sm:w-1/3">
-                  <div class="footer-menu-title hidden sm:block text-lg font-bold mb-4">
+                  <div class="footer-menu-title text-[20px] font-bold mb-3">
                     socials
                   </div>
                   <div class="flex justify-center sm:justify-start items-center gap-[15px]">
@@ -698,8 +696,8 @@
               </div>
             </div>
             <div
-              class="footer-subscribe w-full lg:w-1/3 xl:w-[calc(100%-648px)] lg:pl-[20px]">
-              <div class="footer-menu-title text-lg font-bold mb-3">
+              class="footer-subscribe w-full lg:w-1/3 xl:w-[calc(100%-648px)] lg:pl-[20px] xl:pl-16 xl:pr-16">
+              <div class="footer-menu-title text-[20px] font-bold mb-3">
                 wanna be beach besties? ☀️
               </div>
               <div class="subscribe-form">

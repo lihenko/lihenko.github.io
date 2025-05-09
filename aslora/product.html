@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <header class="py-2 md:py-[13.25px] relative">
+    <header class="py-2 md:py-[13px] relative">
       <div id="search-form" class="py-2 pl-12 pr-3">
         <form action="#">
           <input type="text" placeholder="Search" name="q">
@@ -67,7 +67,15 @@
       <div class="container">
         <div class="flex -mx-3 items-center">
           <div class="px-3 text-sm w-1/3 hidden md:block cursor-pointer shop-menu-button">
-            SHOP
+            <div class="hamburger-icon">
+              <svg class="hamburger" viewBox="0 0 100 100" id="shop-hamburger">
+                <path class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+              </svg>
+            </div>
           </div>
           <div class="w-full md:w-1/3 flex justify-between items-center gap-3 px-3 lg:justify-center">
             <a href="#" class="md:hidden pt-6 w-[103px] pl-12" id="mobile-search">
@@ -221,10 +229,10 @@
                     <div class="w-full product-gallery lg:w-2/3 xl:w-[736px] mb-6 lg:mb-0">
                         <div class="flex flex-wrap -mx-[2px]">
                             <div class="px-[2px] w-1/2 mb-[4px]">
-                                <img src="./img/product-picture-1.webp" alt="product" data-fancybox="gallery" class="cursor-zoom-in">
+                                <img src="./img/ASLORA_150425_085.webp" alt="product" data-fancybox="gallery" class="cursor-zoom-in">
                             </div>
                             <div class="px-[2px] w-1/2 mb-[4px]">
-                                <img src="./img/product-picture-2.webp" alt="product" data-fancybox="gallery" class="cursor-zoom-in">
+                                <img src="./img/ASLORA_150425_054.webp" alt="product" data-fancybox="gallery" class="cursor-zoom-in">
                             </div> 
                             <div class="px-[2px] w-1/2 mb-[4px]">
                                 <img src="./img/product-picture-3.webp" alt="product" data-fancybox="gallery" class="cursor-zoom-in">
@@ -239,7 +247,7 @@
                     </div>
                     <div class="w-full product-details lg:w-1/3 lg:pl-3 xl:pl-[50px] xl:w-[calc(100%-736px)] relative">
                         <div class="product-data-wrap">
-                            <h1 class="lowercase text-xxl font-medium mb-3">Montecito Boat Neck Knit Shirt</h1>
+                            <h1 class="lowercase text-xxl font-mackinacpro font-medium mb-3">Montecito Boat Neck Knit Shirt</h1>
                             <div class="product-price text-[15px] font-medium tracking-widest mb-7">
                                 £175.00 GBP
                             </div>
@@ -309,13 +317,13 @@
                 </div>
             </div>
         </section>
-        <section id="new-arrivals" class="py-10 lg:pt-[45px] lg:pb-[20px]">
+        <section id="new-arrivals" class="py-10 lg:pt-[45px] lg:pb-[18px]">
           <div class="container">
-            <h2 class="text-rouse lowercase text-xxl mb-4">Shop new arrivals</h2>
+            <h2 class="text-rouse lowercase text-xxl mb-4">complete the look</h2>
             <div class="flex flex-wrap -mx-[5px] justify-center">
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-1.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-1.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-2.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -328,7 +336,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-2.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-2.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-3.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -341,7 +349,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-3.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-3.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-4.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -354,7 +362,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-4" style="background-image: url(./img/product-4.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-4.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-5.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -367,7 +375,7 @@
               </div>
               <div class="product-wrap px-[5px] w-1/2 sm:w-1/3 lg:w-1/5 mb-6">
                 <a href="#" class="w-full">
-                  <div class="product-thumbnail mb-5" style="background-image: url(./img/product-5.webp);"></div>
+                  <div class="product-thumbnail mb-2" style="background-image: url(./img/product-5.webp);"></div>
                   <div class="product-thumbnail-second" style="background-image: url(./img/aslora-babes-slider-6.webp);">
                   </div>
                   <div class="product-name text-[12px] leading-4 font-medium tracking-widest">
@@ -381,93 +389,93 @@
             </div>
           </div>
         </section>
-      <section id="aslora-babes" class="pt-[45px] pb-[79px]">
-        <div class="container">
-          <div class="text-center">
-            <h2 class="text-rouse lowercase text-xxl mb-[16px]">aslora babes</h2>
+        <section id="aslora-babes" class="pb-[79px]">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="text-rouse lowercase text-xxl mb-[16px]">aslora babes</h2>
+            </div>
+            <div class="aslora-babes-slider sm:px-[24px]">
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-1.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-2.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-5.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-6.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-1.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-2.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-3.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-4.webp);">
+                  </div>
+                </a>
+              </div>
+              <div class="aslora-babes-slider-item">
+                <a href="#">
+                  <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-5.webp);">
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="aslora-babes-slider sm:px-[24px]">
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-1.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-2.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-3.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-4.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-5.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-6.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-1.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-2.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-3.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-4.webp);">
-                </div>
-              </a>
-            </div>
-            <div class="aslora-babes-slider-item">
-              <a href="#">
-                <div class="aslora-babes-slider-image" style="background-image: url(./img/aslora-babes-slider-5.webp);">
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer>
+    <footer class="bg-lightrouse">
       <div class="container">
-        <div class="footer-wrap bg-lightrouse pt-[54px] pb-[20px] px-3 rounded-lg xl:px-[63px]">
+        <div class="footer-wrap  pt-[54px] pb-[20px] px-3 xl:px-[63px]">
           <div class="flex flex-wrap">
             <div class="footer-menu w-full lg:w-2/3 xl:w-[648px] mb-6 lg:mb-0">
               <div class="flex flex-wrap -mx-[5px] justify-center sm:justify-start">
                 <div class="customer-care-menu w-full px-[5px] sm:mb-6 sm:w-1/3 pt-3 sm:pt-0 border-t border-b border-[#8C8C8B] sm:border-none">
-                  <div class="footer-menu-title text-lg font-bold mb-3">
+                  <div class="footer-menu-title text-[20px] font-bold mb-2">
                     customer care
                   </div>
-                  <ul class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                  <ul class="font-medium text-md leading-9 hidden sm:block pb-3 sm:pb-0">
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Size Guide</a></li>
@@ -476,10 +484,10 @@
                   </ul>
                 </div>
                 <div class="about-us-menu w-full px-[5px] mb-6 pt-3 sm:pt-0 sm:w-1/3 border-b border-[#8C8C8B] sm:border-none">
-                  <div class="footer-menu-title text-lg font-bold mb-3">
+                  <div class="footer-menu-title text-[20px] font-bold mb-2">
                     about us
                   </div>
-                  <ul  class="font-medium text-md hidden sm:block pb-3 sm:pb-0">
+                  <ul class="font-medium text-md leading-9 hidden sm:block pb-3 sm:pb-0">
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Sustainability</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -487,7 +495,7 @@
                   </ul>
                 </div>
                 <div class="social-menu w-full px-[5px] mb-6 sm:w-1/3">
-                  <div class="footer-menu-title hidden sm:block text-lg font-bold mb-4">
+                  <div class="footer-menu-title text-[20px] font-bold mb-3">
                     socials
                   </div>
                   <div class="flex justify-center sm:justify-start items-center gap-[15px]">
@@ -552,8 +560,8 @@
               </div>
             </div>
             <div
-              class="footer-subscribe w-full lg:w-1/3 xl:w-[calc(100%-648px)] lg:pl-[20px]">
-              <div class="footer-menu-title text-lg font-bold mb-3">
+              class="footer-subscribe w-full lg:w-1/3 xl:w-[calc(100%-648px)] lg:pl-[20px] xl:pl-16 xl:pr-16">
+              <div class="footer-menu-title text-[20px] font-bold mb-3">
                 wanna be beach besties? ☀️
               </div>
               <div class="subscribe-form">

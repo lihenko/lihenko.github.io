@@ -742,6 +742,12 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
 }
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+.mb-16{
+  margin-bottom: 4rem;
+}
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -760,8 +766,8 @@ a:hover{
 .mb-7{
   margin-bottom: 1.75rem;
 }
-.mb-9{
-  margin-bottom: 2.25rem;
+.mb-8{
+  margin-bottom: 2rem;
 }
 .mb-\[16px\]{
   margin-bottom: 16px;
@@ -813,6 +819,9 @@ a:hover{
 .h-4{
   height: 1rem;
 }
+.h-\[90px\]{
+  height: 90px;
+}
 .h-full{
   height: 100%;
 }
@@ -843,6 +852,9 @@ a:hover{
 .w-\[68px\]{
   width: 68px;
 }
+.w-\[90px\]{
+  width: 90px;
+}
 .w-\[calc\(100\%-245px\)\]{
   width: calc(100% - 245px);
 }
@@ -852,8 +864,8 @@ a:hover{
 .max-w-\[542px\]{
   max-width: 542px;
 }
-.max-w-\[853px\]{
-  max-width: 853px;
+.max-w-\[916px\]{
+  max-width: 916px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -908,9 +920,6 @@ a:hover{
 }
 .rounded-full{
   border-radius: 9999px;
-}
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 .border-b{
   border-bottom-width: 1px;
@@ -980,6 +989,9 @@ a:hover{
 .pb-10{
   padding-bottom: 2.5rem;
 }
+.pb-16{
+  padding-bottom: 4rem;
+}
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -1016,9 +1028,6 @@ a:hover{
 .pt-\[19px\]{
   padding-top: 19px;
 }
-.pt-\[45px\]{
-  padding-top: 45px;
-}
 .pt-\[54px\]{
   padding-top: 54px;
 }
@@ -1042,10 +1051,6 @@ a:hover{
 }
 .text-\[20px\]{
   font-size: 20px;
-}
-.text-lg{
-  font-size: 18px;
-  line-height: 26px;
 }
 .text-sm{
   font-size: 14px;
@@ -1083,9 +1088,6 @@ a:hover{
 }
 .leading-9{
   line-height: 2.25rem;
-}
-.leading-\[18px\]{
-  line-height: 18px;
 }
 .leading-tight{
   line-height: 1.25;
@@ -4178,6 +4180,10 @@ header .shop-menu {
   font-size: 20px;
   font-weight: 700;
 }
+.subscribe-form input[type=submit]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+}
 .subscribe-form:after {
   content: "";
   width: 1px;
@@ -4502,13 +4508,16 @@ header .shop-menu {
   header .shop-menu.active {
     opacity: 1;
     visibility: visible;
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 108 148 / var(--tw-border-opacity, 1));
   }
   header .shop-menu-img {
     aspect-ratio: 190/248;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -4572,6 +4581,9 @@ header .shop-menu {
   .sm\:mb-6{
     margin-bottom: 1.5rem;
   }
+  .sm\:ml-0{
+    margin-left: 0px;
+  }
   .sm\:block{
     display: block;
   }
@@ -4580,6 +4592,12 @@ header .shop-menu {
   }
   .sm\:w-1\/4{
     width: 25%;
+  }
+  .sm\:w-\[100px\]{
+    width: 100px;
+  }
+  .sm\:w-\[calc\(100\%-100px\)\]{
+    width: calc(100% - 100px);
   }
   .sm\:items-end{
     align-items: flex-end;
@@ -4597,8 +4615,14 @@ header .shop-menu {
   .sm\:pb-0{
     padding-bottom: 0px;
   }
+  .sm\:pl-3{
+    padding-left: 0.75rem;
+  }
   .sm\:pt-0{
     padding-top: 0px;
+  }
+  .sm\:text-left{
+    text-align: left;
   }
   .sm\:text-right{
     text-align: right;
@@ -4622,10 +4646,6 @@ header .shop-menu {
   }
   .md\:w-full{
     width: 100%;
-  }
-  .md\:py-\[13\.25px\]{
-    padding-top: 13.25px;
-    padding-bottom: 13.25px;
   }
   .md\:py-\[13px\]{
     padding-top: 13px;
@@ -4668,21 +4688,23 @@ header .shop-menu {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .lg\:pb-24{
+    padding-bottom: 6rem;
   }
   .lg\:pb-\[18px\]{
     padding-bottom: 18px;
   }
-  .lg\:pb-\[20px\]{
-    padding-bottom: 20px;
-  }
   .lg\:pb-\[224px\]{
     padding-bottom: 224px;
   }
+  .lg\:pb-\[48px\]{
+    padding-bottom: 48px;
+  }
   .lg\:pl-3{
     padding-left: 0.75rem;
+  }
+  .lg\:pl-8{
+    padding-left: 2rem;
   }
   .lg\:pl-\[20px\]{
     padding-left: 20px;
