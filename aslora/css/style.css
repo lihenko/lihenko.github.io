@@ -4507,16 +4507,21 @@ header .shop-menu {
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 1;
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(229 108 148 / var(--tw-text-opacity, 1));
+  padding-left: 46px;
+  padding-right: 46px;
 }
 #content table thead th:last-child {
   border: none;
-  padding-left: 91px;
+  padding-left: 46px;
+  padding-right: 0;
 }
 #content table thead th:first-child {
-  padding-right: 91px;
+  padding-right: 46px;
+  padding-left: 0;
 }
 #content table tbody td{
   border-right-width: 1px;
@@ -4525,13 +4530,17 @@ header .shop-menu {
   border-color: rgb(249 220 227 / var(--tw-border-opacity, 1));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  padding-left: 46px;
+  padding-right: 46px;
 }
 #content table tbody td:first-child {
-  padding-right: 91px;
+  padding-right: 46px;
+  padding-left: 0;
 }
 #content table tbody td:last-child {
-  padding-left: 91px;
+  padding-left: 46px;
   border-right: none;
+  padding-right: 0;
 }
 #content table tbody tr:last-child td {
   border-bottom: none;
