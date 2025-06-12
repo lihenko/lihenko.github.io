@@ -77,10 +77,16 @@ jQuery('.projects-slider-wrap').slick({
   dots: false,
   rtl:true,
   centerMode: true,
-  centerPadding: "150px",
+  centerPadding: "20vw",
   prevArrow: jQuery('.projects-prev-button'),
   nextArrow: jQuery('.projects-next-button'),
   responsive: [
+    {
+      breakpoint: 1920,
+      settings: {
+        centerPadding: "150px"
+      }
+    },
     {
       breakpoint: 992,
       settings: {

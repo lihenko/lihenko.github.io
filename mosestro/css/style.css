@@ -654,7 +654,7 @@ textarea{
   --tw-text-opacity: 1;
   color: rgb(46 37 85 / var(--tw-text-opacity, 1));
     width: 100%;
-    height: 110px;
+    height: 153px;
     padding: 12px 23px;
 }
 textarea:focus {
@@ -729,6 +729,12 @@ a.read-more-button:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.blue-btn:hover.cf-btn, .menu-button a:hover.cf-btn{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(15 158 255 / var(--tw-text-opacity, 1));
+}
 .visible{
   visibility: visible;
 }
@@ -753,6 +759,10 @@ a.read-more-button:hover{
 .z-10{
   z-index: 10;
 }
+.-mx-2\.5{
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
 .-mx-3{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -768,6 +778,9 @@ a.read-more-button:hover{
 .-mt-\[80px\]{
   margin-top: -80px;
 }
+.mb-10{
+  margin-bottom: 2.5rem;
+}
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -782,6 +795,9 @@ a.read-more-button:hover{
 }
 .mb-3{
   margin-bottom: 0.75rem;
+}
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -881,6 +897,10 @@ a.read-more-button:hover{
 .p-3{
   padding: 0.75rem;
 }
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -900,6 +920,10 @@ a.read-more-button:hover{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-10{
   padding-bottom: 2.5rem;
@@ -3442,6 +3466,14 @@ ul.numbered li:before {
     margin-left: 90px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .projects-next-button {
+    right: 19vw;
+  }
+  .projects-prev-button {
+    left: 19vw;
+  }
+}
 .hover\:bg-lightblue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(15 158 255 / var(--tw-bg-opacity, 1));
@@ -3535,9 +3567,13 @@ ul.numbered li:before {
   .lg\:justify-start{
     justify-content: flex-start;
   }
-  .lg\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  .lg\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .lg\:py-24{
     padding-top: 6rem;
@@ -3554,6 +3590,9 @@ ul.numbered li:before {
   .lg\:pb-24{
     padding-bottom: 6rem;
   }
+  .lg\:pb-32{
+    padding-bottom: 8rem;
+  }
   .lg\:pl-10{
     padding-left: 2.5rem;
   }
@@ -3562,6 +3601,9 @@ ul.numbered li:before {
   }
   .lg\:pr-20{
     padding-right: 5rem;
+  }
+  .lg\:pr-3{
+    padding-right: 0.75rem;
   }
   .lg\:pt-20{
     padding-top: 5rem;
@@ -3593,9 +3635,14 @@ ul.numbered li:before {
   .xl\:justify-end{
     justify-content: flex-end;
   }
-  .xl\:px-10{
-    padding-left: 2.5rem;
+  .xl\:pl-9{
+    padding-left: 2.25rem;
+  }
+  .xl\:pr-10{
     padding-right: 2.5rem;
+  }
+  .xl\:pr-9{
+    padding-right: 2.25rem;
   }
   .xl\:text-right{
     text-align: right;
