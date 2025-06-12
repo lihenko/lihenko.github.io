@@ -3276,13 +3276,6 @@ ul.numbered li:before {
   user-select: none;
 }
 
-.project-details {
-  display: none;
-}
-.project-details.active {
-  display: block;
-}
-
 .projects-menu ul {
   display: flex;
   column-gap: 15px;
@@ -3299,10 +3292,10 @@ ul.numbered li:before {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.projects-menu ul li.active {
+.projects-menu ul li.current-menu-item {
   border-color: #0F9EFF;
 }
-.projects-menu ul li.active a {
+.projects-menu ul li.current-menu-item a {
   color: #0F9EFF;
 }
 
@@ -3614,10 +3607,10 @@ ul.numbered li:before {
     padding-bottom: 50px;
     display: block;
   }
-  .projects-menu ul li.active {
+  .projects-menu ul li.current-menu-item {
     z-index: 10;
   }
-  .projects-menu ul li.active::after {
+  .projects-menu ul li.current-menu-item::after {
     content: url(../img/project-menu-arrow.svg);
     position: absolute;
     top: 50%;
@@ -3626,7 +3619,7 @@ ul.numbered li:before {
     width: 31px;
     height: 17px;
   }
-  .projects-menu ul li.active::before {
+  .projects-menu ul li.current-menu-item::before {
     content: "";
     width: 64px;
     height: 64px;

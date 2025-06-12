@@ -290,56 +290,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Отримуємо всі пункти меню
-    const menuLinks = document.querySelectorAll('.projects-menu a');
-    
-    // Отримуємо всі блоки з деталями проектів
-    const projectDetails = document.querySelectorAll('.project-details');
-    const menuItems = document.querySelectorAll('.projects-menu li');
-    
-    // Функція для активації вибраного проекту
-    function activateProject(projectName) {
-        // Видаляємо клас active з усіх елементів меню та проектів
-        menuLinks.forEach(link => link.classList.remove('active'));
-        menuItems.forEach(item => item.classList.remove('active'));
-        projectDetails.forEach(project => project.classList.remove('active'));
 
-        // Додаємо клас active до вибраного елемента меню
-        const activeLink = document.querySelector(`.projects-menu a[data-project="${projectName}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active');
-        }
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollMenu = document.querySelector('.scroll-menu');
+    const originalOffsetTop = scrollMenu.offsetTop;
 
-        // Додаємо клас active до відповідного елемента меню (li)
-        const activeItem = activeLink.closest('li');
-        if (activeItem) {
-            activeItem.classList.add('active');
-        }
+    function handleScroll() {
+      const screenWidth = window.innerWidth;
 
-        // Додаємо клас active до відповідного проекту
-        const activeProject = document.querySelector(`.project-details[data-project-details="${projectName}"]`);
-        if (activeProject) {
-            activeProject.classList.add('active');
-        }
+      if (screenWidth >= 992) {
+        const scrollY = window.scrollY;
+        const offset = Math.max(originalOffsetTop, scrollY);
+
+        scrollMenu.style.position = 'sticky';
+        scrollMenu.style.top = '0px';
+      } else {
+        // Скидання стилів, якщо ширина менше 992
+        scrollMenu.style.position = '';
+        scrollMenu.style.top = '';
+      }
     }
 
-    // Спочатку активуємо перший проект автоматично, без потреби знати його назву
-    const firstProject = menuLinks[0].getAttribute('data-project');
-    if (firstProject) {
-        activateProject(firstProject); // активуємо перший проект
-    }
-
-    // Додаємо обробник для натискання на пункти меню
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault(); // Запобігаємо переходу по лінку
-            const projectName = this.getAttribute('data-project');
-            activateProject(projectName);
-        });
-    });
-});
-
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    handleScroll(); // виклик одразу при завантаженні
+  });
 
 
 
