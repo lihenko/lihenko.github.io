@@ -2582,8 +2582,8 @@ svg {
   border-bottom-left-radius: 50px;
   align-items: center;
   width: 287px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 29px;
   transition: all 0.3s ease-in-out;
   transform: translateX(225px);
@@ -2784,8 +2784,26 @@ svg {
 .benefits-item .benefits-description .benefits-link a:hover svg path {
   fill: #CB9597;
 }
+.benefits-item .benefits-icon {
+  background-color: #E0C5C6;
+}
+.benefits-item .benefits-icon .hover-icon {
+  display: none;
+}
+.benefits-item .benefits-icon .main-icon {
+  display: block;
+}
 .benefits-item:hover .benefits-description {
   display: block;
+}
+.benefits-item:hover .benefits-icon {
+  background-color: #E0C5C6;
+}
+.benefits-item:hover .benefits-icon .hover-icon {
+  display: block;
+}
+.benefits-item:hover .benefits-icon .main-icon {
+  display: none;
 }
 
 .benefits-slider-prev {
@@ -3003,6 +3021,10 @@ svg {
     max-width: 639px;
     margin-right: auto;
     bottom: 80px;
+  }
+  #buttons .sprechstunden {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 .hover\:bg-pink:hover{
