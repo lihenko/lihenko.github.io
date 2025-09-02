@@ -1279,7 +1279,7 @@ a:hover{
 .toggle-btn {
   align-items: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 18px;
   transition: all 0.5s ease;
@@ -3055,6 +3055,10 @@ svg {
   right: 0;
 }
 
+#fixed-header {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
   .contact-slider-prev {
     position: absolute;
@@ -3116,6 +3120,19 @@ svg {
   }
   .contact-slider-next {
     bottom: 86px;
+  }
+  #fixed-header {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transition: all 0.8 ease-in-out;
+    background-color: #fff;
+    z-index: 99999;
+  }
+  #fixed-header.fixed {
+    top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
