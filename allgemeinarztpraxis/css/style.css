@@ -503,19 +503,19 @@ body{
 @media (min-width: 640px){
   body{
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
   }
 }
 @media (min-width: 992px){
   body{
     font-size: 18px;
-    line-height: 26px;
+    line-height: 28px;
   }
 }
 @media (min-width: 1500px){
   body{
     font-size: 22px;
-    line-height: 30px;
+    line-height: 32px;
   }
 }
 h1, .h1{
@@ -637,7 +637,7 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
   border-color: rgb(73 144 192 / var(--tw-border-opacity, 1));
   font-family: Poppins, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
   --tw-text-opacity: 1;
   color: rgb(46 37 85 / var(--tw-text-opacity, 1));
     width: 100%;
@@ -662,7 +662,7 @@ textarea{
   border-color: rgb(73 144 192 / var(--tw-border-opacity, 1));
   font-family: Poppins, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
   --tw-text-opacity: 1;
   color: rgb(46 37 85 / var(--tw-text-opacity, 1));
     width: 100%;
@@ -814,6 +814,10 @@ a:hover{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
+.-mx-\[1px\]{
+  margin-left: -1px;
+  margin-right: -1px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -850,6 +854,9 @@ a:hover{
 }
 .mb-8{
   margin-bottom: 2rem;
+}
+.ml-4{
+  margin-left: 1rem;
 }
 .mt-2{
   margin-top: 0.5rem;
@@ -1039,6 +1046,10 @@ a:hover{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.px-\[1px\]{
+  padding-left: 1px;
+  padding-right: 1px;
+}
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1062,6 +1073,10 @@ a:hover{
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+.py-\[10px\]{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .pb-16{
   padding-bottom: 4rem;
@@ -1101,15 +1116,15 @@ a:hover{
 }
 .text-base{
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
 }
 .text-lg{
   font-size: 18px;
-  line-height: 26px;
+  line-height: 28px;
 }
 .text-sm{
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
 }
 .text-xs{
   font-size: 12px;
@@ -2660,8 +2675,8 @@ svg {
   transition: all 0.8s ease-in-out;
 }
 #buttons .sprechstunden .buttons-data {
-  font-size: 8px;
-  line-height: 14px;
+  font-size: 10px;
+  line-height: 18px;
   height: 0;
   overflow: hidden;
 }
@@ -2687,11 +2702,14 @@ svg {
 }
 #buttons .sprechstunden:hover {
   transform: translateX(0);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom-right-radius: 50px;
 }
 #buttons .sprechstunden:hover .buttons-data {
   height: auto;
   padding-top: 25px;
-  padding-left: 45px;
+  padding-left: 35px;
   padding-right: 15px;
 }
 #buttons .sprechstunden:hover .buttons-icon {
@@ -3115,6 +3133,10 @@ svg {
     --tw-text-opacity: 1;
     color: rgb(203 149 151 / var(--tw-text-opacity, 1));
   }
+  .main-menu ul li.current-menu-item a{
+    --tw-text-opacity: 1;
+    color: rgb(203 149 151 / var(--tw-text-opacity, 1));
+  }
   .contact-slider-prev {
     bottom: 85px;
   }
@@ -3308,11 +3330,15 @@ svg {
   }
   .lg\:text-base{
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
   }
   .lg\:text-lg{
     font-size: 18px;
-    line-height: 26px;
+    line-height: 28px;
+  }
+  .lg\:text-xs{
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 @media (min-width: 1200px){
