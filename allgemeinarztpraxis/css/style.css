@@ -927,11 +927,17 @@ a:hover{
 .max-w-\[484px\]{
   max-width: 484px;
 }
+.max-w-\[610px\]{
+  max-width: 610px;
+}
 .max-w-\[821px\]{
   max-width: 821px;
 }
 .max-w-\[881px\]{
   max-width: 881px;
+}
+.max-w-\[946px\]{
+  max-width: 946px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -966,11 +972,17 @@ a:hover{
 .gap-2{
   gap: 0.5rem;
 }
+.gap-3{
+  gap: 0.75rem;
+}
 .gap-4{
   gap: 1rem;
 }
 .gap-8{
   gap: 2rem;
+}
+.gap-y-4{
+  row-gap: 1rem;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -2604,7 +2616,8 @@ svg {
   z-index: 50;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(225px);
+  transition: all 0.8s ease-in-out;
 }
 #buttons .termin-buchen {
   display: flex;
@@ -2618,7 +2631,6 @@ svg {
   padding-left: 29px;
   margin-bottom: 4px;
   transition: all 0.8s ease-in-out;
-  transform: translateX(225px);
 }
 #buttons .termin-buchen .buttons-icon {
   width: 44px;
@@ -2629,7 +2641,7 @@ svg {
   font-weight: 500;
 }
 #buttons .termin-buchen:hover {
-  transform: translateX(0);
+  transform: translateX(-225px);
 }
 #buttons .rezept-bestellen {
   display: flex;
@@ -2643,7 +2655,6 @@ svg {
   padding-left: 29px;
   margin-bottom: 4px;
   transition: all 0.8s ease-in-out;
-  transform: translateX(225px);
 }
 #buttons .rezept-bestellen .buttons-icon {
   width: 44px;
@@ -2654,7 +2665,7 @@ svg {
   font-weight: 500;
 }
 #buttons .rezept-bestellen:hover {
-  transform: translateX(0);
+  transform: translateX(-225px);
 }
 #buttons .sprechstunden {
   display: flex;
@@ -2668,7 +2679,6 @@ svg {
   padding-bottom: 13px;
   padding-left: 29px;
   transition: all 0.8s ease-in-out;
-  transform: translateX(225px);
 }
 #buttons .sprechstunden .buttons-icon {
   width: 44px;
@@ -2701,7 +2711,7 @@ svg {
   fill: #fff;
 }
 #buttons .sprechstunden:hover {
-  transform: translateX(0);
+  transform: translateX(-225px);
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom-right-radius: 50px;
@@ -3158,6 +3168,67 @@ svg {
   display: none;
 }
 
+#content a{
+  --tw-text-opacity: 1;
+  color: rgb(63 72 87 / var(--tw-text-opacity, 1));
+  text-decoration-line: underline;
+}
+
+#content a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(203 149 151 / var(--tw-text-opacity, 1));
+}
+#content ul {
+  margin-bottom: 1.5em;
+  list-style: disc;
+  list-style-position: inside;
+}
+#content strong{
+  font-weight: 500;
+}
+#content.datenschutz h2 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 45px;
+  --tw-text-opacity: 1;
+  color: rgb(153 180 190 / var(--tw-text-opacity, 1));
+}
+#content.datenschutz p {
+  line-height: 24px;
+  font-size: 10px;
+}
+#content.datenschutz p strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#content.datenschutz ul {
+  font-size: 10px;
+  margin-left: 16px;
+}
+
+#page-navigation {
+  position: relative;
+}
+#page-navigation a {
+  line-height: 13px;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(63 72 87 / var(--tw-text-opacity, 1));
+}
+#page-navigation a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(203 149 151 / var(--tw-text-opacity, 1));
+}
+#page-navigation a svg path{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+#page-navigation a:hover svg path{
+  fill: #CB9597;
+}
+
 @media screen and (min-width: 640px) {
   .contact-slider-prev {
     position: absolute;
@@ -3244,7 +3315,8 @@ svg {
   }
   .home-slider .slide-item.slide-1 .slide-data {
     max-width: 784px;
-    margin-left: auto;
+    left: 50px;
+    margin-right: auto;
     bottom: 80px;
   }
   .home-slider .slide-item.slide-2 .slide-data {
@@ -3351,6 +3423,17 @@ svg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+@media (min-width: 768px){
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 992px){
   .lg\:mb-0{
