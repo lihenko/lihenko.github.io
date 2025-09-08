@@ -17,6 +17,12 @@
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../fonts/LexendDeca-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -659,7 +665,7 @@ textarea:focus {
 textarea::placeholder{
   font-family: LexendDeca, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(46 37 85 / var(--tw-text-opacity, 1));
+  color: rgb(86 77 135 / var(--tw-text-opacity, 1));
 }
 a{
   display: inline-block;
@@ -865,6 +871,10 @@ input[type=submit]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(66 101 255 / var(--tw-bg-opacity, 1));
 }
+.bg-violet{
+  --tw-bg-opacity: 1;
+  background-color: rgb(86 77 135 / var(--tw-bg-opacity, 1));
+}
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -953,6 +963,9 @@ input[type=submit]:hover{
 }
 .underline{
   text-decoration-line: underline;
+}
+.opacity-90{
+  opacity: 0.9;
 }
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -2355,6 +2368,10 @@ body.menu-open .content-wrapper {
   transform: perspective(2500px) rotateX(0);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   position: relative;
 }
@@ -2398,6 +2415,10 @@ svg {
 }
 
 .hero-decoration {
+  display: none;
+}
+
+.page-title-decoration {
   display: none;
 }
 
@@ -2445,6 +2466,33 @@ svg {
 .footer-contact a:hover{
   --tw-text-opacity: 1;
   color: rgb(66 101 255 / var(--tw-text-opacity, 1));
+}
+
+.page-title-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(24, 25, 75, 0.8);
+}
+
+.product-number {
+  position: absolute;
+  display: block;
+  color: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 800;
+}
+.product-number.left {
+  left: 100%;
+  transform: translateX(-100%);
+}
+.product-number.right {
+  left: 100%;
+  transform: translateX(-100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -2520,6 +2568,30 @@ svg {
     height: 100%;
     width: auto;
   }
+  .page-title-decoration {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .page-title-decoration img {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    height: 100%;
+    width: auto;
+  }
+  .product-number {
+    font-size: 250px;
+  }
+  .product-number.left {
+    left: 50%;
+    transform: translateX(-100%);
+  }
 }
 @media screen and (min-width: 1200px) {
   .home-hero-decoration {
@@ -2542,6 +2614,28 @@ svg {
     transform: translateY(-50%);
     height: 100%;
     width: auto;
+  }
+  .page-title-decoration {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .page-title-decoration img {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    height: 100%;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1760px) {
+  .product-number {
+    font-size: 430px;
   }
 }
 .hover\:bg-blue:hover{
@@ -2589,6 +2683,18 @@ svg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 @media (min-width: 992px){
+  .lg\:left-1\/2{
+    left: 50%;
+  }
+  .lg\:right-1\/2{
+    right: 50%;
+  }
+  .lg\:order-1{
+    order: 1;
+  }
+  .lg\:order-2{
+    order: 2;
+  }
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -2621,9 +2727,16 @@ svg {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
   .lg\:py-36{
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+  .lg\:pb-28{
+    padding-bottom: 7rem;
   }
   .lg\:pb-64{
     padding-bottom: 16rem;
@@ -2652,11 +2765,21 @@ svg {
   .xl\:gap-8{
     gap: 2rem;
   }
+  .xl\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
   .xl\:pl-20{
     padding-left: 5rem;
   }
   .xl\:pl-8{
     padding-left: 2rem;
+  }
+  .xl\:pl-\[160px\]{
+    padding-left: 160px;
+  }
+  .xl\:pr-\[128px\]{
+    padding-right: 128px;
   }
   .xl\:text-xl{
     font-size: 20px;
@@ -2689,6 +2812,9 @@ svg {
   .xxl\:pb-48{
     padding-bottom: 12rem;
   }
+  .xxl\:pb-64{
+    padding-bottom: 16rem;
+  }
   .xxl\:pl-32{
     padding-left: 8rem;
   }
@@ -2703,6 +2829,9 @@ svg {
   }
   .xxl\:pt-40{
     padding-top: 10rem;
+  }
+  .xxl\:pt-44{
+    padding-top: 11rem;
   }
   .xxl\:text-xxl{
     font-size: 22px;
