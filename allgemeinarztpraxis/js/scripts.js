@@ -424,3 +424,8 @@ AOS.init({
   once: true,
   
 });
+
+
+jQuery('.terminbuchung-trigger').on('click', function (event) {
+  event.preventDefault();
+});
