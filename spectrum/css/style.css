@@ -852,6 +852,9 @@ input[type=submit]:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[575px\]{
+  max-width: 575px;
+}
 .max-w-\[824px\]{
   max-width: 824px;
 }
@@ -878,6 +881,9 @@ input[type=submit]:hover{
 }
 .justify-between{
   justify-content: space-between;
+}
+.gap-10{
+  gap: 2.5rem;
 }
 .gap-4{
   gap: 1rem;
@@ -939,6 +945,9 @@ input[type=submit]:hover{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
 }
 .pb-20{
   padding-bottom: 5rem;
@@ -2546,6 +2555,26 @@ svg {
   margin-bottom: -430px;
 }
 
+.marked-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.marked-list li {
+  position: relative;
+  margin-bottom: 60px;
+  padding-left: 80px;
+}
+.marked-list li::before {
+  content: url(../img/white-marker-for-list.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.marked-list li:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 640px) {
   #our-vision {
     padding-bottom: 590px;
@@ -2814,6 +2843,9 @@ svg {
     padding-top: 9rem;
     padding-bottom: 9rem;
   }
+  .lg\:pb-24{
+    padding-bottom: 6rem;
+  }
   .lg\:pb-28{
     padding-bottom: 7rem;
   }
@@ -2850,6 +2882,9 @@ svg {
   .xl\:py-40{
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+  .xl\:pb-32{
+    padding-bottom: 8rem;
   }
   .xl\:pl-20{
     padding-left: 5rem;
@@ -2897,6 +2932,9 @@ svg {
   .xxl\:py-64{
     padding-top: 16rem;
     padding-bottom: 16rem;
+  }
+  .xxl\:pb-44{
+    padding-bottom: 11rem;
   }
   .xxl\:pb-48{
     padding-bottom: 12rem;
