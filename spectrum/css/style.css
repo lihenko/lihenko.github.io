@@ -487,8 +487,8 @@ video {
 }
 body{
   font-family: LexendDeca, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 24px;
   line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -513,7 +513,7 @@ body{
 }
 h1, .h1{
   font-family: LexendDeca, sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   line-height: 1.1;
 }
 @media (min-width: 992px){
@@ -553,31 +553,32 @@ h2, .h2{
 }
 h3, .h3{
   font-family: LexendDeca, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.1;
 }
 @media (min-width: 992px){
-  h3, .h3{
-    font-size: 24px;
-  }
-}
-@media (min-width: 1200px){
-  h3, .h3{
-    font-size: 26px;
-  }
-}
-@media (min-width: 1760px){
   h3, .h3{
     font-size: 32px;
   }
 }
+@media (min-width: 1200px){
+  h3, .h3{
+    font-size: 36px;
+  }
+}
+@media (min-width: 1760px){
+  h3, .h3{
+    font-size: 40px;
+  }
+}
 h4, .h4{
-  font-size: 18px;
+  font-family: LexendDeca, sans-serif;
+  font-size: 22px;
   line-height: 1.1;
 }
 @media (min-width: 992px){
   h4, .h4{
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1200px){
@@ -585,18 +586,29 @@ h4, .h4{
     font-size: 26px;
   }
 }
+@media (min-width: 1760px){
+  h4, .h4{
+    font-size: 32px;
+  }
+}
 h5, .h5{
-  font-size: 16px;
+  font-family: LexendDeca, sans-serif;
+  font-size: 20px;
   line-height: 1.1;
 }
 @media (min-width: 992px){
   h5, .h5{
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1200px){
   h5, .h5{
     font-size: 24px;
+  }
+}
+@media (min-width: 1760px){
+  h5, .h5{
+    font-size: 30px;
   }
 }
 p{
@@ -610,8 +622,8 @@ p{
 .container{
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 @media (min-width: 992px){
   .container{
@@ -773,6 +785,10 @@ input[type=submit]:hover{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -784,6 +800,12 @@ input[type=submit]:hover{
 }
 .mb-20{
   margin-bottom: 5rem;
+}
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+.mb-40{
+  margin-bottom: 10rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -830,11 +852,17 @@ input[type=submit]:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[824px\]{
+  max-width: 824px;
+}
 .max-w-\[886px\]{
   max-width: 886px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .resize{
   resize: both;
@@ -895,6 +923,10 @@ input[type=submit]:hover{
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -963,6 +995,9 @@ input[type=submit]:hover{
 }
 .underline{
   text-decoration-line: underline;
+}
+.opacity-80{
+  opacity: 0.8;
 }
 .opacity-90{
   opacity: 0.9;
@@ -2368,10 +2403,6 @@ body.menu-open .content-wrapper {
   transform: perspective(2500px) rotateX(0);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body, html {
   position: relative;
 }
@@ -2495,6 +2526,32 @@ svg {
   transform: translateX(-100%);
 }
 
+.bio-more-button {
+  color: #4265FF;
+  font-size: 20px;
+}
+.bio-more-button::after {
+  content: url(../img/arrow-down.svg);
+  width: 28px;
+  height: 28px;
+}
+.bio-more-button.active::after {
+  transform: rotate(180deg);
+}
+
+#our-vision {
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 590px;
+  margin-bottom: -430px;
+}
+
+@media screen and (min-width: 640px) {
+  #our-vision {
+    padding-bottom: 590px;
+    margin-bottom: -430px;
+  }
+}
 @media screen and (min-width: 768px) {
   .home-hero-decoration {
     position: absolute;
@@ -2592,6 +2649,10 @@ svg {
     left: 50%;
     transform: translateX(-100%);
   }
+  #our-vision {
+    padding-bottom: 680px;
+    margin-bottom: -470px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .home-hero-decoration {
@@ -2632,10 +2693,21 @@ svg {
     height: 100%;
     width: auto;
   }
+  #our-vision {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 1100px;
+    margin-bottom: -670px;
+  }
 }
 @media screen and (min-width: 1760px) {
   .product-number {
     font-size: 430px;
+  }
+  #our-vision {
+    padding-bottom: 50vw;
+    margin-bottom: -40vw;
   }
 }
 .hover\:bg-blue:hover{
@@ -2695,6 +2767,9 @@ svg {
   .lg\:order-2{
     order: 2;
   }
+  .lg\:-mt-6{
+    margin-top: -1.5rem;
+  }
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -2727,6 +2802,10 @@ svg {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
   .lg\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -2743,6 +2822,9 @@ svg {
   }
   .lg\:pl-3{
     padding-left: 0.75rem;
+  }
+  .lg\:pt-24{
+    padding-top: 6rem;
   }
   .lg\:pt-36{
     padding-top: 9rem;
@@ -2781,6 +2863,9 @@ svg {
   .xl\:pr-\[128px\]{
     padding-right: 128px;
   }
+  .xl\:pt-32{
+    padding-top: 8rem;
+  }
   .xl\:text-xl{
     font-size: 20px;
     line-height: 30px;
@@ -2808,6 +2893,10 @@ svg {
   .xxl\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+  .xxl\:py-64{
+    padding-top: 16rem;
+    padding-bottom: 16rem;
   }
   .xxl\:pb-48{
     padding-bottom: 12rem;
