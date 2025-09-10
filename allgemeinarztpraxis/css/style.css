@@ -30,6 +30,30 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Thin.ttf");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: 300;
+  font-display: swap;
+}
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -509,13 +533,7 @@ body{
 @media (min-width: 992px){
   body{
     font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 1500px){
-  body{
-    font-size: 22px;
-    line-height: 32px;
+    line-height: 30px;
   }
 }
 h1, .h1{
@@ -882,9 +900,6 @@ a:hover{
 .hidden{
   display: none;
 }
-.h-10{
-  height: 2.5rem;
-}
 .h-4{
   height: 1rem;
 }
@@ -1026,9 +1041,9 @@ a:hover{
   --tw-border-opacity: 1;
   border-color: rgb(247 242 125 / var(--tw-border-opacity, 1));
 }
-.bg-\[\#EFD8D4\]{
+.bg-\[\#F3E8E5\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(239 216 212 / var(--tw-bg-opacity, 1));
+  background-color: rgb(243 232 229 / var(--tw-bg-opacity, 1));
 }
 .bg-black{
   --tw-bg-opacity: 1;
@@ -1117,11 +1132,20 @@ a:hover{
 .text-center{
   text-align: center;
 }
+.font-opensans{
+  font-family: OpenSans, sans-serif;
+}
 .text-\[12px\]{
   font-size: 12px;
 }
 .text-\[13\.5px\]{
   font-size: 13.5px;
+}
+.text-\[13px\]{
+  font-size: 13px;
+}
+.text-\[15px\]{
+  font-size: 15px;
 }
 .text-\[28px\]{
   font-size: 28px;
@@ -1132,7 +1156,7 @@ a:hover{
 }
 .text-lg{
   font-size: 18px;
-  line-height: 28px;
+  line-height: 30px;
 }
 .text-sm{
   font-size: 14px;
@@ -1154,11 +1178,20 @@ a:hover{
 .font-semibold{
   font-weight: 600;
 }
+.font-thin{
+  font-weight: 100;
+}
 .uppercase{
   text-transform: uppercase;
 }
 .leading-\[1\.1\]{
   line-height: 1.1;
+}
+.leading-\[25px\]{
+  line-height: 25px;
+}
+.leading-none{
+  line-height: 1;
 }
 .leading-normal{
   line-height: 1.5;
@@ -2616,7 +2649,7 @@ svg {
   z-index: 50;
   top: 50%;
   right: 0;
-  transform: translateY(-50%) translateX(225px);
+  transform: translateY(-50%) translateX(240px);
   transition: all 0.8s ease-in-out;
 }
 #buttons .termin-buchen {
@@ -2626,9 +2659,9 @@ svg {
   border-bottom-left-radius: 50px;
   align-items: center;
   width: 287px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 29px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  padding-left: 18px;
   margin-bottom: 4px;
   transition: all 0.8s ease-in-out;
 }
@@ -2650,9 +2683,9 @@ svg {
   border-bottom-left-radius: 50px;
   align-items: center;
   width: 287px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 29px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 18px;
   margin-bottom: 4px;
   transition: all 0.8s ease-in-out;
 }
@@ -2675,9 +2708,9 @@ svg {
   border-bottom-left-radius: 50px;
   align-items: center;
   width: 287px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
   transition: all 0.8s ease-in-out;
 }
 #buttons .sprechstunden .buttons-icon {
@@ -2743,7 +2776,7 @@ svg {
   color: #fff;
   font-size: 28px;
   line-height: 1.15;
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: -0.02em;
   opacity: 0;
   transition: all 1s ease-in-out;
@@ -2946,7 +2979,7 @@ svg {
 }
 
 .benefits-slider .slick-list {
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
 .benefits-item {
@@ -2955,7 +2988,12 @@ svg {
   cursor: pointer;
 }
 .benefits-item .benefits-description {
-  display: none;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.benefits-item .benefits-description .benefits-link {
+  opacity: 0;
+  transition: all 500ms ease-in-out 300ms;
 }
 .benefits-item .benefits-description .benefits-link a{
   display: block;
@@ -2980,7 +3018,7 @@ svg {
   fill: #CB9597;
 }
 .benefits-item .benefits-icon {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .benefits-item .benefits-icon .hover-icon {
   display: none;
@@ -2989,7 +3027,10 @@ svg {
   display: block;
 }
 .benefits-item:hover .benefits-description {
-  display: block;
+  opacity: 1;
+}
+.benefits-item:hover .benefits-description .benefits-link {
+  opacity: 1;
 }
 .benefits-item:hover .benefits-icon {
   background-color: #E0C5C6;
@@ -3107,11 +3148,11 @@ svg {
   top: 50%;
   transform: translateY(-50%);
 }
+.faq-item .faq-answer p:first-child {
+  padding-top: 36px;
+}
 .faq-item.open .faq-question::after {
   content: "-";
-}
-.faq-item.open .faq-question {
-  margin-bottom: 36px;
 }
 
 .google-link svg path{
@@ -3244,6 +3285,124 @@ svg {
     cursor: pointer;
     z-index: 99;
   }
+  #buttons {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(240px);
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen {
+    display: flex;
+    background-color: #3F4857;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .termin-buchen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .termin-buchen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .rezept-bestellen {
+    display: flex;
+    background-color: #CB9597;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .rezept-bestellen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .rezept-bestellen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .rezept-bestellen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .sprechstunden {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EFD8D4;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-icon {
+    width: 44px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-data {
+    font-size: 10px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+  }
+  #buttons .sprechstunden .buttons-data a{
+    --tw-text-opacity: 1;
+    color: rgb(63 72 87 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a svg {
+    display: inline-block;
+  }
+  #buttons .sprechstunden .buttons-data a svg path {
+    fill: #3F4857;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  #buttons .sprechstunden .buttons-data a:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a:hover svg path {
+    fill: #fff;
+  }
+  #buttons .sprechstunden:hover {
+    transform: translateX(-225px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 50px;
+  }
+  #buttons .sprechstunden:hover .buttons-data {
+    height: auto;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 15px;
+  }
+  #buttons .sprechstunden:hover .buttons-icon {
+    width: 100%;
+  }
+  #buttons .sprechstunden:hover .buttons-icon img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .home-slider .slide-item {
@@ -3255,7 +3414,6 @@ svg {
   .home-slider .slide-item .slide-data {
     color: #fff;
     font-size: 42px;
-    font-weight: 200;
   }
   .benefits-slider-left-transparence {
     background: linear-gradient(270deg, rgba(247, 235, 233, 0), rgb(247, 235, 233) 100%);
@@ -3273,11 +3431,124 @@ svg {
     bottom: 0;
     width: 166px;
   }
+  #buttons {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(225px);
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen {
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 29px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .termin-buchen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .termin-buchen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .rezept-bestellen {
+    display: flex;
+    background-color: #CB9597;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 29px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .rezept-bestellen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .rezept-bestellen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .rezept-bestellen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .sprechstunden {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EFD8D4;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 29px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-icon {
+    width: 44px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-data {
+    font-size: 10px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+  }
+  #buttons .sprechstunden .buttons-data a{
+    --tw-text-opacity: 1;
+    color: rgb(63 72 87 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a svg {
+    display: inline-block;
+  }
+  #buttons .sprechstunden .buttons-data a svg path {
+    fill: #3F4857;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  #buttons .sprechstunden .buttons-data a:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a:hover svg path {
+    fill: #fff;
+  }
+  #buttons .sprechstunden:hover {
+    transform: translateX(-225px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 50px;
+  }
+  #buttons .sprechstunden:hover .buttons-data {
+    height: auto;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 15px;
+  }
+  #buttons .sprechstunden:hover .buttons-icon {
+    width: 100%;
+  }
+  #buttons .sprechstunden:hover .buttons-icon img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 992px) {
   .main-menu ul li a {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     --tw-text-opacity: 1;
     color: rgb(63 72 87 / var(--tw-text-opacity, 1));
   }
@@ -3308,6 +3579,119 @@ svg {
   #fixed-header.fixed {
     top: 0;
   }
+  #buttons {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(225px);
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen {
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 29px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .termin-buchen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .termin-buchen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .termin-buchen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .rezept-bestellen {
+    display: flex;
+    background-color: #CB9597;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 29px;
+    margin-bottom: 4px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .rezept-bestellen .buttons-icon {
+    width: 44px;
+  }
+  #buttons .rezept-bestellen .buttons-link a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  #buttons .rezept-bestellen:hover {
+    transform: translateX(-225px);
+  }
+  #buttons .sprechstunden {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EFD8D4;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    width: 287px;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+    padding-left: 29px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-icon {
+    width: 44px;
+    transition: all 0.8s ease-in-out;
+  }
+  #buttons .sprechstunden .buttons-data {
+    font-size: 10px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+  }
+  #buttons .sprechstunden .buttons-data a{
+    --tw-text-opacity: 1;
+    color: rgb(63 72 87 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a svg {
+    display: inline-block;
+  }
+  #buttons .sprechstunden .buttons-data a svg path {
+    fill: #3F4857;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  #buttons .sprechstunden .buttons-data a:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+  #buttons .sprechstunden .buttons-data a:hover svg path {
+    fill: #fff;
+  }
+  #buttons .sprechstunden:hover {
+    transform: translateX(-225px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 50px;
+  }
+  #buttons .sprechstunden:hover .buttons-data {
+    height: auto;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 15px;
+  }
+  #buttons .sprechstunden:hover .buttons-icon {
+    width: 100%;
+  }
+  #buttons .sprechstunden:hover .buttons-icon img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .services .service:nth-child(even) {
@@ -3315,53 +3699,57 @@ svg {
   }
   .home-slider .slide-item.slide-1 .slide-data {
     max-width: 784px;
-    left: 50px;
+    left: 80px;
     margin-right: auto;
-    bottom: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-2 .slide-data {
     max-width: 621px;
+    right: 80px;
     margin-left: auto;
-    bottom: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-3 .slide-data {
     max-width: 659px;
     margin-right: auto;
-    left: 50px;
-    bottom: 80px;
+    left: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-4 .slide-data {
     max-width: 571px;
+    right: 80px;
     margin-left: auto;
-    bottom: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-5 .slide-data {
     max-width: 639px;
     margin-right: auto;
-    left: 50px;
-    bottom: 80px;
+    left: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-6 .slide-data {
     max-width: 639px;
     margin-right: auto;
-    left: 50px;
-    bottom: 80px;
+    left: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-7 .slide-data {
     max-width: 639px;
     margin-right: auto;
-    left: 50px;
-    bottom: 80px;
+    left: 80px;
+    bottom: 100px;
   }
   .home-slider .slide-item.slide-8 .slide-data {
     max-width: 639px;
     margin-right: auto;
-    left: 50px;
-    bottom: 80px;
+    left: 80px;
+    bottom: 100px;
   }
+}
+@media screen and (min-width: 1500px) {
   #buttons .sprechstunden {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
   }
 }
 .hover\:border-pink:hover{
@@ -3445,9 +3833,6 @@ svg {
   .lg\:flex{
     display: flex;
   }
-  .lg\:h-12{
-    height: 3rem;
-  }
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -3486,6 +3871,9 @@ svg {
   .lg\:text-left{
     text-align: left;
   }
+  .lg\:text-\[15px\]{
+    font-size: 15px;
+  }
   .lg\:text-\[38px\]{
     font-size: 38px;
   }
@@ -3498,11 +3886,17 @@ svg {
   }
   .lg\:text-lg{
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
   }
   .lg\:text-xs{
     font-size: 12px;
     line-height: 18px;
+  }
+  .lg\:leading-\[25px\]{
+    line-height: 25px;
+  }
+  .lg\:leading-\[52px\]{
+    line-height: 52px;
   }
 }
 @media (min-width: 1200px){
@@ -3512,8 +3906,15 @@ svg {
   .xl\:block{
     display: block;
   }
+  .xl\:w-1\/3{
+    width: 33.333333%;
+  }
   .xl\:w-1\/4{
     width: 25%;
+  }
+  .xl\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   .xl\:pr-20{
     padding-right: 5rem;
@@ -3535,17 +3936,23 @@ svg {
   .xxl\:pr-40{
     padding-right: 10rem;
   }
+  .xxl\:pr-44{
+    padding-right: 11rem;
+  }
+  .xxl\:pt-44{
+    padding-top: 11rem;
+  }
   .xxl\:text-\[16px\]{
     font-size: 16px;
   }
-  .xxl\:text-\[21px\]{
-    font-size: 21px;
+  .xxl\:text-\[22px\]{
+    font-size: 22px;
   }
-  .xxl\:text-\[24px\]{
-    font-size: 24px;
+  .xxl\:text-\[28px\]{
+    font-size: 28px;
   }
-  .xxl\:text-\[32px\]{
-    font-size: 32px;
+  .xxl\:text-\[38px\]{
+    font-size: 38px;
   }
   .xxl\:text-\[42px\]{
     font-size: 42px;
@@ -3553,7 +3960,7 @@ svg {
   .xxl\:text-\[62px\]{
     font-size: 62px;
   }
-  .xxl\:leading-normal{
-    line-height: 1.5;
+  .xxl\:leading-\[52px\]{
+    line-height: 52px;
   }
 }

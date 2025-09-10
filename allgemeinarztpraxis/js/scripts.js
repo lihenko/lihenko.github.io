@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
   // ініціалізація slick
   slider.slick({
     autoplay: false,
-  slidesToScroll: 1,
+  slidesToScroll: 5,
   slidesToShow: 9,
   arrows: true,
   dots: false,
@@ -120,35 +120,35 @@ jQuery(document).ready(function () {
       breakpoint: 1500,
       settings: {
         slidesToShow: 6,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
       },
     },
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
       },
     },
     {
       breakpoint: 992,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 680,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 510,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
       },
     },
     {
