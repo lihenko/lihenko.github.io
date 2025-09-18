@@ -849,6 +849,12 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
 }
+.-mr-12{
+  margin-right: -3rem;
+}
+.-mt-\[200px\]{
+  margin-top: -200px;
+}
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -875,6 +881,9 @@ a:hover{
 }
 .mb-9{
   margin-bottom: 2.25rem;
+}
+.ml-auto{
+  margin-left: auto;
 }
 .mt-10{
   margin-top: 2.5rem;
@@ -915,6 +924,9 @@ a:hover{
 .h-full{
   height: 100%;
 }
+.max-h-\[350px\]{
+  max-height: 350px;
+}
 .w-20{
   width: 5rem;
 }
@@ -935,6 +947,9 @@ a:hover{
 }
 .max-w-\[1039px\]{
   max-width: 1039px;
+}
+.max-w-\[1206px\]{
+  max-width: 1206px;
 }
 .max-w-\[630px\]{
   max-width: 630px;
@@ -961,6 +976,9 @@ a:hover{
 }
 .items-center{
   align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -1009,11 +1027,11 @@ a:hover{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.pb-0{
+  padding-bottom: 0px;
+}
 .pb-14{
   padding-bottom: 3.5rem;
-}
-.pb-16{
-  padding-bottom: 4rem;
 }
 .pb-20{
   padding-bottom: 5rem;
@@ -1042,11 +1060,15 @@ a:hover{
 .font-judson{
   font-family: Judson, serif;
 }
-.text-\[22px\]{
-  font-size: 22px;
+.text-\[28px\]{
+  font-size: 28px;
 }
 .text-\[48px\]{
   font-size: 48px;
+}
+.text-lg{
+  font-size: 18px;
+  line-height: 28px;
 }
 .text-xs{
   font-size: 12px;
@@ -1192,7 +1214,7 @@ a:hover{
   cursor: pointer;
   position: absolute;
   right: 15px;
-  top: 22px;
+  top: 54px;
   transition: all 0.5s ease;
   z-index: 2;
 }
@@ -4026,19 +4048,105 @@ svg {
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* Додайте у ваш CSS */
 .member-bio-extended {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
 
+.faq-tabs-menu ul li a {
+  padding: 15px 5px;
+  font-size: 20px;
+  color: #616C33;
+  border-bottom: 1px solid #E7E7E7;
+  position: relative;
+}
+.faq-tabs-menu ul li:hover a, .faq-tabs-menu ul li.active a {
+  color: #58469C;
+}
+.faq-tabs-menu ul li.active a {
+  border-bottom: 4px solid #58469C;
+}
+.faq-tabs-menu ul li.active a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 9px solid #58469C;
+}
+
+.faq-question {
+  position: relative;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.faq-question::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 15px;
+  right: 0;
+  background: url("../img/olive-cross.svg") center center no-repeat;
+  background-size: contain;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  display: block;
+}
+.faq-question.active::after {
+  transform: rotate(225deg);
+}
+
+.faq-answer {
+  transition: max-height 0.4s ease;
+  overflow: hidden;
+}
+
+.faq-item {
+  margin-bottom: 43px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.faq-item:not(:last-child):after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #FFFFFF 23.26%, #E6E6E6 61.63%, #FFFFFF 100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .faq-tabs-menu ul li a {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .faq-tabs-menu ul li a {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 @media screen and (min-width: 768px) {
   .opportunity-flower {
     display: block;
     position: absolute;
     right: -50px;
     bottom: 0;
+  }
+  .faq-tabs-menu ul li a {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -4179,6 +4287,11 @@ svg {
     margin-top: -149px;
     padding-bottom: 100px;
   }
+  .faq-tabs-menu ul li a {
+    font-size: 34px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   header {
@@ -4299,6 +4412,9 @@ svg {
   }
 }
 @media (min-width: 768px){
+  .md\:-mt-\[300px\]{
+    margin-top: -300px;
+  }
   .md\:w-1\/2{
     width: 50%;
   }
@@ -4320,11 +4436,20 @@ svg {
   .lg\:ml-0{
     margin-left: 0px;
   }
+  .lg\:mr-auto{
+    margin-right: auto;
+  }
+  .lg\:mt-auto{
+    margin-top: auto;
+  }
   .lg\:block{
     display: block;
   }
   .lg\:h-40{
     height: 10rem;
+  }
+  .lg\:max-h-full{
+    max-height: 100%;
   }
   .lg\:w-1\/2{
     width: 50%;
@@ -4353,9 +4478,6 @@ svg {
   .lg\:items-end{
     align-items: flex-end;
   }
-  .lg\:justify-start{
-    justify-content: flex-start;
-  }
   .lg\:justify-between{
     justify-content: space-between;
   }
@@ -4373,6 +4495,12 @@ svg {
   .lg\:pb-24{
     padding-bottom: 6rem;
   }
+  .lg\:pl-20{
+    padding-left: 5rem;
+  }
+  .lg\:pr-10{
+    padding-right: 2.5rem;
+  }
   .lg\:pr-3{
     padding-right: 0.75rem;
   }
@@ -4387,9 +4515,6 @@ svg {
   }
   .lg\:text-left{
     text-align: left;
-  }
-  .lg\:text-\[28px\]{
-    font-size: 28px;
   }
   .lg\:text-\[76px\]{
     font-size: 76px;
@@ -4433,6 +4558,10 @@ svg {
   }
   .xl\:pt-6{
     padding-top: 1.5rem;
+  }
+  .xl\:text-xxl{
+    font-size: 22px;
+    line-height: 33px;
   }
 }
 @media (min-width: 1520px){

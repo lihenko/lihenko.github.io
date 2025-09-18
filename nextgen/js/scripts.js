@@ -236,3 +236,81 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Сховати неактивні таби
+  document.querySelectorAll('.faq-tab').forEach(function (tab) {
+    if (!tab.classList.contains('active')) {
+      tab.style.display = 'none';
+    } else {
+      tab.style.display = '';
+    }
+  });
+
+  // Перемикання табів
+  document.querySelectorAll('.faq-tabs-menu li').forEach(function (tabBtn) {
+    tabBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Зняти active з усіх табів
+      document.querySelectorAll('.faq-tabs-menu li').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      // Додати active до поточного
+      tabBtn.classList.add('active');
+      // Сховати всі таби
+      document.querySelectorAll('.faq-tab').forEach(function (tab) {
+        tab.classList.remove('active');
+        tab.style.display = 'none';
+        // Ховати всі відповіді та знімати active з питань при перемиканні табів
+        tab.querySelectorAll('.faq-answer').forEach(function (ans) {
+          ans.style.maxHeight = '0';
+          ans.style.overflow = 'hidden';
+        });
+        tab.querySelectorAll('.faq-question').forEach(function (q) {
+          q.classList.remove('active');
+        });
+      });
+      // Показати потрібний таб
+      const tabId = tabBtn.getAttribute('data-tab');
+      const currentTab = document.getElementById(tabId);
+      if (currentTab) {
+        currentTab.classList.add('active');
+        currentTab.style.display = '';
+      }
+    });
+  });
+
+  // Акордеон для питань
+  document.querySelectorAll('.faq-question').forEach(function (question) {
+    question.addEventListener('click', function () {
+      const answer = question.nextElementSibling;
+      if (!answer) return;
+      const tab = question.closest('.faq-tab');
+      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+      // Закрити всі відповіді та зняти active з усіх питань у цьому табі
+      tab.querySelectorAll('.faq-answer').forEach(function (ans) {
+        ans.style.maxHeight = '0';
+        ans.style.overflow = 'hidden';
+      });
+      tab.querySelectorAll('.faq-question').forEach(function (q) {
+        q.classList.remove('active');
+      });
+
+      // Якщо була закрита — відкрити, якщо була відкрита — залишити закритою
+      if (!isOpen) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.overflow = 'visible';
+        question.classList.add('active');
+      }
+    });
+    // Початково сховати всі відповіді
+    const answer = question.nextElementSibling;
+    if (answer) {
+      answer.style.maxHeight = '0';
+      answer.style.overflow = 'hidden';
+      answer.style.transition = 'max-height 0.4s ease';
+    }
+  });
+});
