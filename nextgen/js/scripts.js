@@ -72,58 +72,61 @@ window.addEventListener('resize', closeMenu);
 
 
 jQuery(document).ready(function () {
-  const slider = jQuery('.benefits-slider');
-
-  // ініціалізація slick
-  slider.slick({
-    autoplay: false,
-  slidesToScroll: 1,
-  slidesToShow: 9,
+  jQuery('#products-slider').slick({
+  autoplay: true,
+  slidesToScroll: 3,
+  slidesToShow: 4,
+  centerMode: true,
+  centerPadding: '300px',
   arrows: true,
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 800,
-  prevArrow: jQuery('.benefits-slider-prev'),
-  nextArrow: jQuery('.benefits-slider-next'),
   responsive: [
     {
-      breakpoint: 1500,
+      breakpoint: 1731,
       settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1,
+        centerPadding: '280px',
+        slidesToShow: 3,
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
+        centerPadding: '150px',
       },
     },
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 680,
-      settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
+        centerPadding: '90px',
       },
     },
     {
-      breakpoint: 510,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        centerPadding: '110px',
       },
     },
     {
-      breakpoint: 410,
+      breakpoint: 640,
       settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '90px',
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerPadding: '10px',
         slidesToShow: 1,
         slidesToScroll: 1,
       },

@@ -876,6 +876,9 @@ a:hover{
 .mb-6{
   margin-bottom: 1.5rem;
 }
+.mb-7{
+  margin-bottom: 1.75rem;
+}
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -948,6 +951,9 @@ a:hover{
 .max-w-\[1039px\]{
   max-width: 1039px;
 }
+.max-w-\[1064px\]{
+  max-width: 1064px;
+}
 .max-w-\[1206px\]{
   max-width: 1206px;
 }
@@ -956,6 +962,9 @@ a:hover{
 }
 .max-w-\[960px\]{
   max-width: 960px;
+}
+.max-w-\[993px\]{
+  max-width: 993px;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -1032,6 +1041,9 @@ a:hover{
 }
 .pb-14{
   padding-bottom: 3.5rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
 }
 .pb-20{
   padding-bottom: 5rem;
@@ -4126,6 +4138,118 @@ svg {
   bottom: 0;
 }
 
+#products-slider {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#products-slider .product-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#products-slider .product-item .product-item-wrap {
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: radial-gradient(70.86% 70.86% at 29.14% 36.29%, #FFFFFF 0%, #DDE1E5 100%);
+}
+#products-slider .slick-prev {
+  left: 30px;
+  width: 54px;
+  height: 54px;
+  background-color: #58469C;
+  z-index: 50;
+}
+#products-slider .slick-prev::before {
+  content: url(../img/slider-arrow-left.svg);
+}
+#products-slider .slick-next {
+  right: 30px;
+  width: 54px;
+  height: 54px;
+  background-color: #58469C;
+  z-index: 50;
+}
+#products-slider .slick-next::before {
+  content: url(../img/slider-arrow-right.svg);
+}
+#products-slider .slick-dots {
+  bottom: -50px;
+}
+#products-slider .slick-dots li {
+  width: 10px;
+  height: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#products-slider .slick-dots li button {
+  width: 10px;
+  height: 8px;
+}
+#products-slider .slick-dots li button::before {
+  content: "";
+  width: 10px;
+  height: 8px;
+  background-color: #D9D9D9;
+  opacity: 1;
+}
+#products-slider .slick-dots li.slick-active button::before {
+  background-color: #58469C;
+}
+#products-slider .slick-dots li:hover button::before {
+  background-color: #58469C;
+}
+
+.support-icon .support-back-light {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 429px;
+}
+
+#afaya {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#afaya .afaya-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+ul.marked-violet {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.marked-violet li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 32px;
+}
+ul.marked-violet li::before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 70 156 / var(--tw-bg-opacity, 1));
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.3em;
+  left: 0;
+}
+
 @media screen and (min-width: 480px) {
   .faq-tabs-menu ul li a {
     font-size: 26px;
@@ -4147,6 +4271,19 @@ svg {
   .faq-tabs-menu ul li a {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  #products-slider .slick-dots {
+    bottom: -50px;
+  }
+  #products-slider .slick-dots li {
+    width: 50px;
+  }
+  #products-slider .slick-dots li button {
+    width: 50px;
+  }
+  #products-slider .slick-dots li button::before {
+    content: "";
+    width: 50px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -4325,6 +4462,19 @@ svg {
     margin-top: -149px;
     padding-bottom: 150px;
   }
+  #products-slider .slick-dots {
+    bottom: -77px;
+  }
+  #products-slider .slick-dots li {
+    width: 100px;
+  }
+  #products-slider .slick-dots li button {
+    width: 100px;
+  }
+  #products-slider .slick-dots li button::before {
+    content: "";
+    width: 100px;
+  }
 }
 @media screen and (min-width: 1520px) {
   .main-menu ul li a {
@@ -4418,6 +4568,12 @@ svg {
   .md\:w-1\/2{
     width: 50%;
   }
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+  .md\:w-2\/3{
+    width: 66.666667%;
+  }
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -4453,6 +4609,9 @@ svg {
   }
   .lg\:w-1\/2{
     width: 50%;
+  }
+  .lg\:w-1\/3{
+    width: 33.333333%;
   }
   .lg\:w-40{
     width: 10rem;
@@ -4523,6 +4682,10 @@ svg {
     font-size: 14px;
     line-height: 24px;
   }
+  .lg\:text-xl{
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 1200px){
   .xl\:flex{
@@ -4559,6 +4722,9 @@ svg {
   .xl\:pt-6{
     padding-top: 1.5rem;
   }
+  .xl\:text-\[36px\]{
+    font-size: 36px;
+  }
   .xl\:text-xxl{
     font-size: 22px;
     line-height: 33px;
@@ -4579,6 +4745,13 @@ svg {
   .xxl\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+  .xxl\:py-36{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+  .xxl\:pl-32{
+    padding-left: 8rem;
   }
   .xxl\:pl-40{
     padding-left: 10rem;
