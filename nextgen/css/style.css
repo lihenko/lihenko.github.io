@@ -619,6 +619,11 @@ p{
     margin-bottom: 1.5rem;
   }
 }
+@media (min-width: 1200px){
+  p{
+    margin-bottom: 2rem;
+  }
+}
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -3954,6 +3959,80 @@ svg {
   color: rgb(97 108 51 / var(--tw-text-opacity, 1));
 }
 
+.member {
+  position: relative;
+  padding-bottom: 84px;
+  margin-bottom: 97px;
+}
+.member:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #FFFFFF 23.26%, #E6E6E6 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.member:last-child {
+  margin-bottom: 0;
+}
+
+.member ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.member ul li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 32px;
+}
+.member ul li::before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 108 51 / var(--tw-bg-opacity, 1));
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+}
+
+.learn-more-member a {
+  position: relative;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(88 70 156 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
+}
+
+.learn-more-member a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(97 108 51 / var(--tw-text-opacity, 1));
+}
+.learn-more-member a::after {
+  content: url(../img/arrow-down.svg);
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}
+.learn-more-member a.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Додайте у ваш CSS */
+.member-bio-extended {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
 @media screen and (min-width: 768px) {
   .opportunity-flower {
     display: block;
@@ -4238,6 +4317,9 @@ svg {
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
   .lg\:block{
     display: block;
   }
@@ -4256,8 +4338,14 @@ svg {
   .lg\:w-\[274px\]{
     width: 274px;
   }
+  .lg\:w-\[374px\]{
+    width: 374px;
+  }
   .lg\:w-\[calc\(100\%-274px\)\]{
     width: calc(100% - 274px);
+  }
+  .lg\:w-\[calc\(100\%-374px\)\]{
+    width: calc(100% - 374px);
   }
   .lg\:w-full{
     width: 100%;
@@ -4288,8 +4376,14 @@ svg {
   .lg\:pr-3{
     padding-right: 0.75rem;
   }
+  .lg\:pt-20{
+    padding-top: 5rem;
+  }
   .lg\:pt-28{
     padding-top: 7rem;
+  }
+  .lg\:pt-3{
+    padding-top: 0.75rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -4333,6 +4427,12 @@ svg {
   }
   .xl\:pl-20{
     padding-left: 5rem;
+  }
+  .xl\:pl-24{
+    padding-left: 6rem;
+  }
+  .xl\:pt-6{
+    padding-top: 1.5rem;
   }
 }
 @media (min-width: 1520px){

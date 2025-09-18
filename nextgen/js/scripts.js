@@ -208,3 +208,31 @@ function setFooterCtaBorder() {
 
 window.addEventListener('DOMContentLoaded', setFooterCtaBorder);
 window.addEventListener('resize', setFooterCtaBorder);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Ховаємо всі .member-bio-extended
+  document.querySelectorAll('.member-bio-extended').forEach(function (el) {
+    el.style.maxHeight = '0';
+    el.style.overflow = 'hidden';
+    el.style.transition = 'max-height 0.5s ease';
+  });
+
+  document.querySelectorAll('.learn-more-member a').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const bioExtended = btn.closest('.member').querySelector('.member-bio-extended');
+      if (!bioExtended) return;
+
+      if (bioExtended.style.maxHeight === '0px' || !bioExtended.style.maxHeight) {
+        bioExtended.style.maxHeight = bioExtended.scrollHeight + 'px';
+        btn.classList.add('open');
+        btn.textContent = 'Show less';
+      } else {
+        bioExtended.style.maxHeight = '0';
+        btn.classList.remove('open');
+        btn.textContent = 'Learn more';
+      }
+    });
+  });
+});
