@@ -54,6 +54,13 @@
   font-weight: 300;
   font-display: swap;
 }
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -632,11 +639,6 @@ h5, .h5{
 p{
   margin-bottom: 0.75rem;
 }
-@media (min-width: 640px){
-  p{
-    margin-bottom: 1.5rem;
-  }
-}
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -939,8 +941,14 @@ a:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[380px\]{
+  max-width: 380px;
+}
 .max-w-\[484px\]{
   max-width: 484px;
+}
+.max-w-\[570px\]{
+  max-width: 570px;
 }
 .max-w-\[610px\]{
   max-width: 610px;
@@ -1126,8 +1134,8 @@ a:hover{
 .pr-6{
   padding-right: 1.5rem;
 }
-.pt-24{
-  padding-top: 6rem;
+.pt-16{
+  padding-top: 4rem;
 }
 .text-center{
   text-align: center;
@@ -1183,6 +1191,9 @@ a:hover{
 }
 .uppercase{
   text-transform: uppercase;
+}
+.italic{
+  font-style: italic;
 }
 .leading-\[1\.1\]{
   line-height: 1.1;
@@ -2958,15 +2969,11 @@ svg {
   margin-bottom: 20px;
 }
 
-#benefits {
-  background-color: rgba(239, 216, 212, 0.5);
-}
-
 .benefits-icon {
   width: 152px;
   height: 139px;
   border-radius: 20px;
-  box-shadow: 0px 5px 4px 0px rgb(229, 218, 219);
+  box-shadow: 0px 1px 3px 0px rgba(63, 72, 87, 0.15), 0px 3px 6px 0px rgb(229, 218, 219);
   background: #fff;
   display: flex;
   align-items: center;
@@ -3110,12 +3117,30 @@ svg {
 
 #appointment {
   background: rgb(252, 247, 246);
-  padding-top: 80px;
+  padding-top: 50px;
   position: relative;
   z-index: 2;
 }
 #appointment .container {
   margin-top: -130px;
+}
+#appointment .eresept-img {
+  position: absolute;
+  top: 80px;
+  left: 16%;
+}
+#appointment .Terminbuchung-img {
+  position: absolute;
+  bottom: -50px;
+  right: -30px;
+}
+
+.appointment-top-curve {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .social-buttons a svg path.circle {
@@ -3403,6 +3428,19 @@ svg {
     margin-left: auto;
     margin-right: auto;
   }
+  #appointment {
+    padding-top: 80px;
+  }
+  #appointment .eresept-img {
+    position: absolute;
+    top: 80px;
+    left: 12%;
+  }
+  #appointment .Terminbuchung-img {
+    position: absolute;
+    bottom: -80px;
+    right: -30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .home-slider .slide-item {
@@ -3543,6 +3581,20 @@ svg {
   #buttons .sprechstunden:hover .buttons-icon img {
     margin-left: auto;
     margin-right: auto;
+  }
+  #appointment {
+    padding-top: 80px;
+  }
+  #appointment .Rezeptbestellung-img {
+    margin-left: 16px;
+  }
+  #appointment .eresept-img {
+    position: absolute;
+    left: 12%;
+  }
+  #appointment .Terminbuchung-img {
+    position: absolute;
+    right: 0px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -3692,6 +3744,20 @@ svg {
     margin-left: auto;
     margin-right: auto;
   }
+  #appointment {
+    padding-top: 130px;
+  }
+  #appointment .Rezeptbestellung-img {
+    margin-left: 0;
+  }
+  #appointment .eresept-img {
+    position: absolute;
+    left: 16%;
+  }
+  #appointment .Terminbuchung-img {
+    position: absolute;
+    right: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .services .service:nth-child(even) {
@@ -3745,11 +3811,17 @@ svg {
     left: 80px;
     bottom: 100px;
   }
+  #appointment .eresept-img {
+    left: 12%;
+  }
 }
 @media screen and (min-width: 1500px) {
   #buttons .sprechstunden {
     padding-top: 13.5px;
     padding-bottom: 13.5px;
+  }
+  #appointment .eresept-img {
+    left: 78px;
   }
 }
 .hover\:border-pink:hover{
@@ -3868,6 +3940,9 @@ svg {
   .lg\:pl-16{
     padding-left: 4rem;
   }
+  .lg\:pt-16{
+    padding-top: 4rem;
+  }
   .lg\:text-left{
     text-align: left;
   }
@@ -3922,6 +3997,9 @@ svg {
   .xl\:pt-20{
     padding-top: 5rem;
   }
+  .xl\:pt-24{
+    padding-top: 6rem;
+  }
 }
 @media (min-width: 1500px){
   .xxl\:pb-52{
@@ -3941,9 +4019,6 @@ svg {
   }
   .xxl\:pt-44{
     padding-top: 11rem;
-  }
-  .xxl\:text-\[16px\]{
-    font-size: 16px;
   }
   .xxl\:text-\[22px\]{
     font-size: 22px;

@@ -106,13 +106,14 @@ jQuery(document).ready(function () {
 
   // ініціалізація slick
   slider.slick({
-    autoplay: false,
+  autoplay: false,
   slidesToScroll: 5,
   slidesToShow: 9,
   arrows: true,
   dots: false,
   infinite: true,
-  speed: 800,
+  cssEase: 'ease-in-out',
+  speed: 1500,
   prevArrow: jQuery('.benefits-slider-prev'),
   nextArrow: jQuery('.benefits-slider-next'),
   responsive: [
@@ -242,7 +243,7 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
   } else {
     event.preventDefault();
     jQuery('html, body').animate({
-        scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+        scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top - 50
     }, 500);
   }
   
@@ -420,12 +421,40 @@ document.addEventListener("scroll", function () {
 
 
 AOS.init({
-  duration: 1000, // тривалість анімації
+  duration: 400, // нова тривалість анімації
+  easing: 'ease-in-out', // плавність анімації
   once: true,
-  
+  offset: 80,
+  delay: 50,
 });
 
 
 jQuery('.terminbuchung-trigger').on('click', function (event) {
   event.preventDefault();
+});
+
+
+window.addEventListener('scroll', function() {
+  const img = document.querySelector('.Rezeptbestellung-img');
+  if (!img) return;
+  const rect = img.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  // Від 0 (зображення вгорі viewport) до 1 (зображення внизу viewport)
+  const visibleRatio = 1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
+  // Множник для сили ефекту
+  const offset = 150 - visibleRatio * 300; 
+  img.style.transform = 'translateY(' + offset + 'px)';
+});
+
+
+window.addEventListener('scroll', function() {
+  const img = document.querySelector('.Terminbuchung-img');
+  if (!img) return;
+  const rect = img.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  // Від 0 (зображення вгорі viewport) до 1 (зображення внизу viewport)
+  const visibleRatio = 1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
+  // Множник для сили ефекту
+  const offset = 150 - visibleRatio * 450; 
+  img.style.transform = 'translateY(' + offset + 'px)';
 });
