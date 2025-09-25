@@ -162,22 +162,32 @@ jQuery(document).ready(function () {
   ],
 });
 
-  let scrolledOnce = false; // прапорець, щоб не повторювати автопрокрутку
+  let scrolledOnce = false;
 
-  // IntersectionObserver
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !scrolledOnce) {
-        slider.slick('slickNext');
-        scrolledOnce = true; // тільки один раз
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !scrolledOnce) {
+      const sliderEl = document.querySelector('.benefits-slider');
+
+      if (sliderEl) {
+        sliderEl.classList.add('bounce');
+
+        // прибрати клас після анімації, щоб можна було використати ще раз, якщо треба
+        sliderEl.addEventListener('animationend', () => {
+          sliderEl.classList.remove('bounce');
+        }, { once: true });
       }
-    });
-  }, { threshold: 0.5 }); // коли видно мінімум 50% слайдера
 
-  const sliderEl = document.querySelector('.benefits-slider');
-  if (sliderEl) {
-    observer.observe(sliderEl);
-  }
+      scrolledOnce = true;
+    }
+  });
+}, { threshold: 0.5 });
+
+const sliderEl = document.querySelector('.benefits-slider');
+if (sliderEl) {
+  observer.observe(sliderEl);
+}
+
 });
 
 jQuery('.contact-slider').slick({
