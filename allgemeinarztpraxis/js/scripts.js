@@ -162,31 +162,22 @@ jQuery(document).ready(function () {
   ],
 });
 
-  let scrolledOnce = false;
+  let scrolledOnce = false; // прапорець, щоб не повторювати автопрокрутку
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !scrolledOnce) {
-      const sliderEl = document.querySelector('.benefits-slider');
-
-      if (sliderEl) {
-        sliderEl.classList.add('bounce');
-
-        // прибрати клас після анімації, щоб можна було використати ще раз, якщо треба
-        sliderEl.addEventListener('animationend', () => {
-          sliderEl.classList.remove('bounce');
-        }, { once: true });
+  // IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !scrolledOnce) {
+        slider.slick('slickNext');
+        scrolledOnce = true; // тільки один раз
       }
+    });
+  }, { threshold: 0.5 }); // коли видно мінімум 50% слайдера
 
-      scrolledOnce = true;
-    }
-  });
-}, { threshold: 0.5 });
-
-const sliderEl = document.querySelector('.benefits-slider');
-if (sliderEl) {
-  observer.observe(sliderEl);
-}
+  const sliderEl = document.querySelector('.benefits-slider');
+  if (sliderEl) {
+    observer.observe(sliderEl);
+  }
 
 });
 
@@ -431,7 +422,7 @@ document.addEventListener("scroll", function () {
 
 
 AOS.init({
-  duration: 400, // нова тривалість анімації
+  duration: 800, // нова тривалість анімації
   easing: 'ease-in-out', // плавність анімації
   once: true,
   offset: 80,
@@ -444,27 +435,35 @@ jQuery('.terminbuchung-trigger').on('click', function (event) {
 });
 
 
-window.addEventListener('scroll', function() {
-  const img = document.querySelector('.Rezeptbestellung-img');
-  if (!img) return;
-  const rect = img.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-  // Від 0 (зображення вгорі viewport) до 1 (зображення внизу viewport)
-  const visibleRatio = 1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
-  // Множник для сили ефекту
-  const offset = 150 - visibleRatio * 300; 
-  img.style.transform = 'translateY(' + offset + 'px)';
+window.addEventListener("scroll", () => {
+  const r1 = moveWithScroll(".Rezeptbestellung-img", 150, 300);
+  const r2 = moveWithScroll(".Terminbuchung-img", 150, 450);
+
+  const eresept = document.querySelector(".eresept-img");
+  if (!eresept) return;
+
+  if (r1.reached && r2.reached) {
+    eresept.classList.add("zoom-in");
+  } else {
+    eresept.classList.remove("zoom-in"); // ховаємо в будь-якому іншому випадку
+  }
 });
 
+function moveWithScroll(selector, startOffset, distance) {
+  const el = document.querySelector(selector);
+  if (!el) return { reached: false };
 
-window.addEventListener('scroll', function() {
-  const img = document.querySelector('.Terminbuchung-img');
-  if (!img) return;
-  const rect = img.getBoundingClientRect();
+  const rect = el.getBoundingClientRect();
   const windowHeight = window.innerHeight;
-  // Від 0 (зображення вгорі viewport) до 1 (зображення внизу viewport)
-  const visibleRatio = 1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
-  // Множник для сили ефекту
-  const offset = 150 - visibleRatio * 450; 
-  img.style.transform = 'translateY(' + offset + 'px)';
-});
+
+  // від 0 до 1
+  const progress = 1 - Math.min(Math.max(rect.top / windowHeight, 0), 1);
+  let offset = startOffset - progress * distance;
+  if (offset < 0) offset = 0;
+
+  el.style.transform = `translateY(${offset}px)`;
+
+  // вважаємо "на місці", якщо offset == 0
+  return { reached: offset === 0 };
+}
+
