@@ -91,7 +91,7 @@ jQuery('.line-wrap').slick({
     autoplay: true,
     autoplaySpeed: 1,
     variableWidth: true,
-    speed: 10000,
+    speed: 30000,
     dots: false,
     arrows: false,
     cssEase: 'linear',
