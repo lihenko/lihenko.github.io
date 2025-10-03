@@ -4100,7 +4100,8 @@ svg {
 #content.datenschutz h2 {
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
+  margin-top: 45px;
   --tw-text-opacity: 1;
   color: rgb(153 180 190 / var(--tw-text-opacity, 1));
 }
@@ -4116,6 +4117,9 @@ svg {
 #content.datenschutz ul {
   font-size: 10px;
   margin-left: 16px;
+}
+#content.datenschutz ul li ul {
+  list-style: none;
 }
 
 #page-navigation {
