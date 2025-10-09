@@ -92,6 +92,21 @@ jQuery(document).ready(function () {
 // Scroll to top
 let mybutton = document.getElementById("btn-back-to-top");
 
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
 mybutton.addEventListener("click", backToTop);
 
 
