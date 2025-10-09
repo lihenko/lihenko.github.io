@@ -846,6 +846,9 @@ input[type=submit]:hover{
 .mb-10{
   margin-bottom: 2.5rem;
 }
+.mb-11{
+  margin-bottom: 2.75rem;
+}
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -857,6 +860,9 @@ input[type=submit]:hover{
 }
 .mb-20{
   margin-bottom: 5rem;
+}
+.mb-28{
+  margin-bottom: 7rem;
 }
 .mb-5{
   margin-bottom: 1.25rem;
@@ -912,6 +918,12 @@ input[type=submit]:hover{
 .max-w-\[1072px\]{
   max-width: 1072px;
 }
+.max-w-\[1238px\]{
+  max-width: 1238px;
+}
+.max-w-\[1256px\]{
+  max-width: 1256px;
+}
 .max-w-\[307px\]{
   max-width: 307px;
 }
@@ -935,6 +947,9 @@ input[type=submit]:hover{
 }
 .resize{
   resize: both;
+}
+.flex-col{
+  flex-direction: column;
 }
 .flex-wrap{
   flex-wrap: wrap;
@@ -968,6 +983,10 @@ input[type=submit]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
+.bg-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 79 53 / var(--tw-bg-opacity, 1));
+}
 .bg-opacity-\[87\%\]{
   --tw-bg-opacity: 87%;
 }
@@ -979,6 +998,9 @@ input[type=submit]:hover{
 }
 .object-cover{
   object-fit: cover;
+}
+.object-fill{
+  object-fit: fill;
 }
 .p-3{
   padding: 0.75rem;
@@ -998,6 +1020,9 @@ input[type=submit]:hover{
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
 }
 .pb-20{
   padding-bottom: 5rem;
@@ -3034,6 +3059,35 @@ ul#footer-social a:hover svg path {
   padding-right: 0;
 }
 
+#page-title {
+  background-image: url(../img/page-title-bg.webp);
+  background-position: top center;
+  background-size: cover;
+  margin-top: -120px;
+}
+
+#what-we-do-bg {
+  background-image: url(../img/what-we-do-bg.webp);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image {
+  position: relative;
+}
+.bg-image::before {
+  content: "";
+  background: rgba(127, 108, 134, 0.4);
+  transform: rotate(-5.36deg) skewX(3deg);
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
 @media screen and (min-width: 640px) {
   .footer-phone {
     flex-basis: 200px;
@@ -3082,6 +3136,9 @@ ul#footer-social a:hover svg path {
     text-decoration: none;
   }
   .main-menu ul li a:hover {
+    border-color: #fff;
+  }
+  .main-menu ul li.current-menu-item a {
     border-color: #fff;
   }
   .left {
@@ -3223,6 +3280,9 @@ ul#footer-social a:hover svg path {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 @media (min-width: 768px){
+  .md\:w-1\/2{
+    width: 50%;
+  }
   .md\:py-28{
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -3240,6 +3300,9 @@ ul#footer-social a:hover svg path {
   }
   .lg\:-mb-6{
     margin-bottom: -1.5rem;
+  }
+  .lg\:-mt-24{
+    margin-top: -6rem;
   }
   .lg\:mb-0{
     margin-bottom: 0px;
@@ -3287,8 +3350,15 @@ ul#footer-social a:hover svg path {
   .lg\:gap-10{
     gap: 2.5rem;
   }
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
   .lg\:pb-16{
     padding-bottom: 4rem;
+  }
+  .lg\:pb-24{
+    padding-bottom: 6rem;
   }
   .lg\:pl-16{
     padding-left: 4rem;
@@ -3334,6 +3404,10 @@ ul#footer-social a:hover svg path {
   .xl\:gap-12{
     gap: 3rem;
   }
+  .xl\:px-11{
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
   .xl\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -3347,6 +3421,9 @@ ul#footer-social a:hover svg path {
   }
   .xl\:pl-14{
     padding-left: 3.5rem;
+  }
+  .xl\:pr-12{
+    padding-right: 3rem;
   }
   .xl\:text-left{
     text-align: left;
@@ -3366,14 +3443,23 @@ ul#footer-social a:hover svg path {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  .xxl\:pb-48{
+    padding-bottom: 12rem;
+  }
   .xxl\:pl-24{
     padding-left: 6rem;
   }
   .xxl\:pl-44{
     padding-left: 11rem;
   }
+  .xxl\:pr-24{
+    padding-right: 6rem;
+  }
   .xxl\:pt-36{
     padding-top: 9rem;
+  }
+  .xxl\:pt-44{
+    padding-top: 11rem;
   }
   .xxl\:pt-64{
     padding-top: 16rem;
@@ -3383,5 +3469,8 @@ ul#footer-social a:hover svg path {
   }
   .xxl\:text-\[20px\]{
     font-size: 20px;
+  }
+  .xxl\:text-\[38px\]{
+    font-size: 38px;
   }
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>About Page</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
@@ -54,7 +54,7 @@
                 <li>
                   <a href="#">site development</a>
                 </li>
-                <li>
+                <li class="current-menu-item">
                   <a href="#">About Us</a>
                 </li>
                 <li>
@@ -72,104 +72,79 @@
         </div>
     </header>
     <main>
-      <section id="home-hero" class="pt-16 xxl:pt-64 lg:pb-16">
-        <div class="container">
-          <h1 class="text-center uppercase max-w-[956px] mx-auto mb-16">
-            Bring out the best in your land
-          </h1>
-          <div class="flex flex-wrap gap-6 lg:gap-10 justify-center mb-16 lg:mb-36">
-            <a href="#" class="btn orange-btn">Get a free estimate</a>
-            <a href="https://www.youtube.com/watch?v=PUdyuKaGQd4" class="btn white-btn video-btn" data-fancybox data-width="100%" data-height="100%">
-              <span>WATCH MORE</span>
-              <img src="./img/video-button-thumbnail.webp" alt="">
-            </a>
-          </div>
-          <div class="text-center tracking-wider font-semibold mb-5 lg:mb-9">
-            Serving the Olympic Peninsula
-          </div>
-        </div>
-        <div id="locations" class="py-20 xl:py-24 xxl:py-32">
-          <div class="container">
-            <ul id="location-list" class="font-semibold uppercase tracking-wider">
-              <li>
-                Port Angeles
-              </li>
-              <li>
-                Sequim
-              </li>
-              <li>
-                Port Townsend
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-      </section>
-      <section>
-        <div class="flex flex-wrap">
-          <div class="w-full px-3 lg:w-1/2 left">
-            <h2 class="text-violet uppercase mb-16">Transform a single tree or your entire landscape</h2>
-          </div>
-          <div class="w-full lg:w-1/2 right relative min-h-[636px] flex items-center">
-            <div class="absolute top-0 left-0 bottom-0 right-0">
-              <img src="./img/tree-services-bg.webp" alt="" class="w-full h-full object-cover">
+        <section id="page-title" class="pt-16 pb-16 xxl:pt-44 lg:pb-24 xxl:pb-48">
+            <div class="container">
+                <div class="text-center">
+                    <div class="font-semibold tracking-wider text-orange mb-8">ABOUT SITKUM TREE SERVICES</div>
+                    <h1 class="uppercase mb-8 max-w-[956px] mx-auto">Your land holds your future</h1>
+                    <div class="max-w-[1256px] mx-auto tracking-wider font-semibold">
+                        It’s where your home will stand. It’s where your memories will grow. And it’s one of your most important investments—one that deserves the same care and foresight you’d give your home itself.
+                    </div>
+                </div>
             </div>
-            <div class="absolute top-0 left-0 bottom-0 right-0 bg-[#121B26] bg-opacity-[87%]"></div>
-            <div class="w-full text-center relative pt-36 pb-36 lg:text-right">
-              <h3 class="uppercase mb-8">Tree Services</h3>
-              <div class="mb-9 max-w-[350px] tracking-wider font-semibold mx-auto lg:mr-0">
-                Care for the trees that shape your space — the right way.
-              </div>
-              <div class="max-w-[307px] mx-auto lg:mr-0">
-                <a href="#" class="btn orange-btn">Explore SERVICES</a>
-              </div>
+        </section>
+        <section>
+            <div class="flex flex-wrap">
+                <div class="w-full px-3 bg-green left lg:w-1/2 min-h-[636px] flex flex-col justify-center xl:pr-12 xxl:pr-24">
+                    <h3 class="uppercase mb-12 leading-tight">What gets 
+overlooked today<br> <span class="text-orange">becomes a loss tomorrow</span></h3>
+                    <div class="font-semibold tracking-wider">
+                        Too many times, we’ve arrived at a site 5, 10, even 15 years after development—only to condemn trees that clients built their dream homes around. All because the original site work didn't carefully consider what those trees would need to thrive.
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 min-h-[636px] relative">
+                    <img src="./img/about-team-photo.webp" alt="" class="object-fill lg:-mt-24">
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="bg-cover bg-center" style="background-image: url(./img/bg-img.webp);">
-        <div class="flex flex-wrap">
-          <div class="w-full px-3 lg:w-1/2 right lg:pl-16 xxl:pl-44 pt-36 xxl:pt-80 lg:order-2">
-            <h3 class="uppercase">Rooted</h3>
-            <h4 class="uppercase text-orange mb-10">in science</h4>
-            <div class="max-w-[596px] tracking-wider font-semibold mb-16">
-              We’re certified arborists with deep knowledge of tree biology. We know how trees grow. We know how they fail. And that’s what guides every cut, every recommendation, and every long-term plan.
+        </section>
+        <section id="what-we-do-bg" class="py-16 lg:py-24">
+            <div class="container">
+                <h2 class="text-center uppercase mb-14">That’s why<br>we do things differently</h2>
+                <div class="max-w-[350px] mx-auto mb-16">
+                    <a href="https://www.youtube.com/watch?v=PUdyuKaGQd4" class="btn white-btn video-btn" data-fancybox data-width="100%" data-height="100%">
+                        <span>WATCH MORE</span>
+                        <img src="./img/video-button-thumbnail.webp" alt="">
+                    </a>
+                </div>
+                <div class="font-semibold tracking-wider text-center max-w-[1238px] mx-auto mb-16">
+                    We started Sitkum to care for the land in a way that balances your vision with the long-term health of the landscape. That means thinking in tree years, not just people years—and helping you make choices that hold their value for decades.
+                </div>
+                <div class="flex flex-wrap -mx-3 justify-center">
+                    <div class="w-full px-3 md:w-1/2 lg:w-1/3 xl:px-11 mb-16">
+                        <div class="mb-14 bg-image">
+                            <img src="./img/Certified-arborists.webp" alt="">
+                        </div>
+                        <h3 class="uppercase text-center mb-11 xxl:text-[38px]">Certified arborists</h3>
+                        <div class="text-center font-semibold tracking-wider">
+                            Who know trees—and explain every recommendation.
+                        </div>
+                    </div>
+                    <div class="w-full px-3 md:w-1/2 lg:w-1/3 xl:px-11 mb-16">
+                        <div class="mb-14 bg-image">
+                            <img src="./img/Craftsman-level-care.webp" alt="">
+                        </div>
+                        <h3 class="uppercase text-center mb-11 xxl:text-[38px]">Craftsman-level care</h3>
+                        <div class="text-center font-semibold tracking-wider">
+                            That adds value to your property for years to come.
+                        </div>
+                    </div>
+                    <div class="w-full px-3 md:w-1/2 lg:w-1/3 xl:px-11 mb-16">
+                        <div class="mb-14 bg-image">
+                            <img src="./img/Client-centered service.webp" alt="">
+                        </div>
+                        <h3 class="uppercase text-center mb-11 xxl:text-[38px]">Client-centered service</h3>
+                        <div class="text-center font-semibold tracking-wider">
+                            With honest communication and reliable follow-through.
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[307px] mx-auto mb-28">
+                    <a href="#" class="btn orange-btn">Meet the crew</a>
+                </div>
             </div>
-          </div>
-          <div class="w-full lg:w-1/2 left relative min-h-[636px] flex items-center lg:order-1 lg:-translate-y-[250px]">
-            <div class="absolute top-0 left-0 bottom-0 right-0">
-              <img src="./img/site-development-img.webp" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="absolute top-0 left-0 bottom-0 right-0 bg-[#121B26] bg-opacity-[87%]"></div>
-            <div class="w-full text-center relative pt-36 pb-36 lg:text-left">
-              <h3 class="uppercase mb-8">Site<br>Development</h3>
-              <div class="mb-9 max-w-[502px] tracking-wider font-semibold mx-auto lg:ml-0">
-                Start your project with thoughtful planning that protects what matters.
-              </div>
-              <div class="max-w-[307px] mx-auto lg:ml-0">
-                <a href="#" class="btn orange-btn">START HERE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap mb-20">
-          <div class="w-full px-3 lg:w-1/2 right lg:pl-16 xxl:pl-44 pt-16 xxl:pt-36 lg:order-2">
-            <h3 class="uppercase">Refined</h3>
-            <h4 class="uppercase text-orange mb-10">by craft</h4>
-            <div class="max-w-[596px] tracking-wider font-semibold mb-16">
-              Artistry has guided our work since 2010. Every branch is considered. Every cut is intentional. And every project is designed to add lasting value to your land.
-            </div>
-          </div>
-          <div class="w-full px-3 left lg:w-1/2 lg:order-1">
-            <h2 class="text-violet uppercase mb-20">Not your average tree crew </h2>
-            <div class="max-w-[307px] mx-auto lg:ml-0 mb-16">
-              <a href="#" class="btn orange-btn">Explore our story</a>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <h6 class="text-center text-orange mb-8">The people we’ve worked with say it best.</h6>
-          <h3 class="text-center mb-14 uppercase testimonials-slider-title">Heard it through the treeline</h3>
+            <div class="container">
+          <h6 class="text-center text-orange mb-8">Since trees can’t talk…</h6>
+          <h3 class="text-center mb-14 uppercase testimonials-slider-title">Here’s what their humans had to say.</h3>
           <div class="testimonials-slider pb-60">
             <div class="testimonials-slider-item">
               <div class="flex flex-wrap -mx-3">
@@ -205,18 +180,7 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="home-team" class="py-16 md:py-28 lg:-mb-6 xl:py-64 xl:-mb-20" style="background-image: url(./img/team-bg.webp);">
-        <div class="container">
-          <h2 class="uppercase mb-12">More than “tree” people.<br>We’re “people” people, too.</h2>
-          <div class="font-semibold tracking-wider max-w-[1072px] mb-12">
-            From your first call to final cleanup, we keep you in the loop. Our office team responds promptly. Your questions get answered. And you always know what to expect.
-          </div>
-          <div class="max-w-[307px] mx-auto lg:ml-0">
-              <a href="#" class="btn orange-btn">Meet the crew</a>
-            </div>
-        </div>
-      </section>
+        </section>
     </main>
     <footer class="relative">
       <section id="footer-cta" class="relative">
