@@ -148,3 +148,73 @@ window.addEventListener("scroll", () => {
 
   montagne.style.transform = `translateY(-60%) translateX(${-offset}px)`;
 });
+
+
+
+function connectCircles() {
+  const steps = document.querySelectorAll('.how-it-works-step h3');
+  const svg = document.querySelector('.how-it-works-lines');
+  const container = document.querySelector('.how-it-works-steps');
+
+  if (!steps.length || !svg || !container) return;
+
+  // Очищуємо старі лінії
+  svg.innerHTML = '';
+  svg.style.width = '100%';
+  svg.style.height = container.scrollHeight + 'px';
+
+  const containerRect = container.getBoundingClientRect();
+  const circleSize = window.innerWidth >= 992 ? 52 : 40;
+  const border = 7; // як у CSS
+  const offset = 75; // відступ псевдоелемента
+  const rightOffsetVW = 10;
+
+  const circles = Array.from(steps).map((h3, idx) => {
+    const rect = h3.getBoundingClientRect();
+    let x;
+
+    if (window.innerWidth >= 992) {
+      if (idx % 2 === 0) {
+        // парні елементи — справа
+        x = rect.right - containerRect.left + offset + circleSize / 4;
+      } else {
+        // непарні — зліва
+        x = rect.left - containerRect.left - offset + circleSize / 2;
+      }
+    } else {
+      // мобільна — всі справа
+      x = rect.right - containerRect.left + (window.innerWidth * rightOffsetVW) / 100;
+    }
+
+    const y = rect.top - containerRect.top + border + circleSize / 2;
+    return { x, y };
+  });
+
+  // Малюємо лінії між центрами кружків
+  for (let i = 0; i < circles.length - 1; i++) {
+    const c1 = circles[i];
+    const c2 = circles[i + 1];
+
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', c1.x);
+    line.setAttribute('y1', c1.y);
+    line.setAttribute('x2', c2.x);
+    line.setAttribute('y2', c2.y);
+    line.setAttribute('stroke', '#244F35');
+    line.setAttribute('stroke-width', '8');
+    line.setAttribute('stroke-dasharray', '12 12');
+    line.setAttribute('stroke-linecap', 'round');
+    svg.appendChild(line);
+  }
+}
+
+// Виклик при завантаженні
+window.addEventListener('load', connectCircles);
+
+// Ресайз з debounce
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(connectCircles, 150);
+});
+
