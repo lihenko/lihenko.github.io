@@ -491,6 +491,7 @@ body{
   line-height: 24px;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -832,6 +833,9 @@ input[type=submit]:hover{
 .top-0{
   top: 0px;
 }
+.z-10{
+  z-index: 10;
+}
 .z-50{
   z-index: 50;
 }
@@ -860,6 +864,9 @@ input[type=submit]:hover{
 }
 .mb-20{
   margin-bottom: 5rem;
+}
+.mb-24{
+  margin-bottom: 6rem;
 }
 .mb-28{
   margin-bottom: 7rem;
@@ -915,6 +922,12 @@ input[type=submit]:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[1047px\]{
+  max-width: 1047px;
+}
+.max-w-\[1055px\]{
+  max-width: 1055px;
+}
 .max-w-\[1072px\]{
   max-width: 1072px;
 }
@@ -935,6 +948,12 @@ input[type=submit]:hover{
 }
 .max-w-\[596px\]{
   max-width: 596px;
+}
+.max-w-\[808px\]{
+  max-width: 808px;
+}
+.max-w-\[845px\]{
+  max-width: 845px;
 }
 .max-w-\[956px\]{
   max-width: 956px;
@@ -974,6 +993,13 @@ input[type=submit]:hover{
 }
 .border{
   border-width: 1px;
+}
+.border-b-2{
+  border-bottom-width: 2px;
+}
+.border-b-green{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(36 79 53 / var(--tw-border-opacity, 1));
 }
 .bg-\[\#121B26\]{
   --tw-bg-opacity: 1;
@@ -1027,6 +1053,9 @@ input[type=submit]:hover{
 .pb-20{
   padding-bottom: 5rem;
 }
+.pb-24{
+  padding-bottom: 6rem;
+}
 .pb-36{
   padding-bottom: 9rem;
 }
@@ -1067,9 +1096,6 @@ input[type=submit]:hover{
 }
 .leading-tight{
   line-height: 1.25;
-}
-.tracking-wider{
-  letter-spacing: 0.05em;
 }
 .text-orange{
   --tw-text-opacity: 1;
@@ -3088,6 +3114,36 @@ ul#footer-social a:hover svg path {
   z-index: -1;
 }
 
+#team {
+  background-image: url(../img/team-bg-img.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+}
+
+.member-positions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #F15A2E;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.member-positions li {
+  position: relative;
+  padding-left: 30px;
+}
+.member-positions li:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #F15A2E;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
 @media screen and (min-width: 640px) {
   .footer-phone {
     flex-basis: 200px;
@@ -3422,8 +3478,14 @@ ul#footer-social a:hover svg path {
   .xl\:pl-14{
     padding-left: 3.5rem;
   }
+  .xl\:pl-20{
+    padding-left: 5rem;
+  }
   .xl\:pr-12{
     padding-right: 3rem;
+  }
+  .xl\:pr-20{
+    padding-right: 5rem;
   }
   .xl\:text-left{
     text-align: left;
@@ -3472,5 +3534,8 @@ ul#footer-social a:hover svg path {
   }
   .xxl\:text-\[38px\]{
     font-size: 38px;
+  }
+  .xxl\:text-\[50px\]{
+    font-size: 50px;
   }
 }
