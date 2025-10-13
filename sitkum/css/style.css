@@ -699,52 +699,51 @@ p{
   }
 }
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(66 101 255 / var(--tw-border-opacity, 1));
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(239 240 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(8 13 10 / var(--tw-bg-opacity, 1));
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
     width: 100%;
-    padding: 12px 23px;
+    padding: 16px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 input:focus {
     outline: none !important;
     --tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+    border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
   }
 input::placeholder{
   font-family: Montserrat, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 textarea{
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(66 101 255 / var(--tw-border-opacity, 1));
+  border-radius: 30px;
   --tw-bg-opacity: 1;
-  background-color: rgb(239 240 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(8 13 10 / var(--tw-bg-opacity, 1));
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
     width: 100%;
-    height: 242px;
-    padding: 12px 23px;
+    height: 141px;
+    padding: 16px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 textarea:focus {
     outline: none !important;
-    border-color: #2E2554;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
   }
 textarea::placeholder{
   font-family: Montserrat, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(127 108 134 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 a{
   display: inline-block;
@@ -820,18 +819,14 @@ a:hover{
     transform: translateY(-50%);
   }
 input[type=submit]{
-  --tw-border-opacity: 1;
-  border-color: rgb(66 101 255 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(66 101 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(36 79 53 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 input[type=submit]:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(241 90 46 / var(--tw-bg-opacity, 1));
 }
 .pointer-events-none{
   pointer-events: none;
@@ -885,6 +880,10 @@ input[type=submit]:hover{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
+.-mx-\[10px\]{
+  margin-left: -10px;
+  margin-right: -10px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -892,6 +891,9 @@ input[type=submit]:hover{
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.-mt-\[600px\]{
+  margin-top: -600px;
 }
 .mb-10{
   margin-bottom: 2.5rem;
@@ -917,6 +919,9 @@ input[type=submit]:hover{
 .mb-28{
   margin-bottom: 7rem;
 }
+.mb-3{
+  margin-bottom: 0.75rem;
+}
 .mb-32{
   margin-bottom: 8rem;
 }
@@ -931,6 +936,9 @@ input[type=submit]:hover{
 }
 .mb-9{
   margin-bottom: 2.25rem;
+}
+.mt-12{
+  margin-top: 3rem;
 }
 .block{
   display: block;
@@ -977,6 +985,9 @@ input[type=submit]:hover{
 .w-\[200px\]{
   width: 200px;
 }
+.w-\[331px\]{
+  width: 331px;
+}
 .w-\[365px\]{
   width: 365px;
 }
@@ -1007,11 +1018,17 @@ input[type=submit]:hover{
 .max-w-\[1072px\]{
   max-width: 1072px;
 }
+.max-w-\[1121px\]{
+  max-width: 1121px;
+}
 .max-w-\[1238px\]{
   max-width: 1238px;
 }
 .max-w-\[1256px\]{
   max-width: 1256px;
+}
+.max-w-\[1310px\]{
+  max-width: 1310px;
 }
 .max-w-\[1377px\]{
   max-width: 1377px;
@@ -1045,6 +1062,9 @@ input[type=submit]:hover{
 }
 .max-w-\[956px\]{
   max-width: 956px;
+}
+.max-w-\[986px\]{
+  max-width: 986px;
 }
 .max-w-full{
   max-width: 100%;
@@ -1103,6 +1123,10 @@ input[type=submit]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(18 27 38 / var(--tw-bg-opacity, 1));
 }
+.bg-\[\#1E1E1E\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity, 1));
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -1141,6 +1165,14 @@ input[type=submit]:hover{
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-16{
   padding-top: 4rem;
@@ -3378,11 +3410,17 @@ ul#footer-social a:hover svg path {
   opacity: 1;
 }
 
-#faqs {
+#faqs .faqs-bg {
   background-image: url(../img/what-we-do-bg.webp);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #faqs .faq-item .question {
@@ -3399,6 +3437,43 @@ ul#footer-social a:hover svg path {
   right: 0;
   transform: translateY(-50%);
   z-index: -1;
+}
+
+#contact-form label{
+  padding-left: 1rem;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(241 90 46 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 992px){
+  #contact-form label{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.btn.whatsup, input.whatsup[type=submit] {
+  position: relative;
+}
+
+.btn.whatsup svg, input.whatsup[type=submit] svg {
+  position: absolute;
+  top: 50%;
+  right: 69px;
+  transform: translateY(-50%);
+}
+
+#serving {
+  background-image: url(../img/Serving-bg-img.webp);
+  background-position: center;
+  background-size: cover;
+  padding-top: 835px;
+  padding-bottom: 632px;
+  margin-top: -800px;
 }
 
 @media screen and (min-width: 640px) {
@@ -3773,9 +3848,17 @@ ul#footer-social a:hover svg path {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+  .lg\:px-28{
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
   .lg\:px-\[58px\]{
     padding-left: 58px;
     padding-right: 58px;
+  }
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .lg\:py-24{
     padding-top: 6rem;
