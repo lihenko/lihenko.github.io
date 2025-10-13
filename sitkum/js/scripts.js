@@ -89,6 +89,32 @@ jQuery(document).ready(function () {
 });
 
 
+jQuery(document).ready(function () {
+  const slider = jQuery('.transformations-slider');
+
+  // ініціалізація slick
+  slider.slick({
+  autoplay: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  arrows: true,
+  dots: true,
+  infinite: true,
+  speed: 800,
+  prevArrow: jQuery('.transformation-slider-prev'),
+  nextArrow: jQuery('.transformation-slider-next'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
+});
+});
+
+
 // Scroll to top
 let mybutton = document.getElementById("btn-back-to-top");
 

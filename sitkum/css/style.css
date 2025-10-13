@@ -917,6 +917,9 @@ input[type=submit]:hover{
 .mb-28{
   margin-bottom: 7rem;
 }
+.mb-32{
+  margin-bottom: 8rem;
+}
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -953,14 +956,23 @@ input[type=submit]:hover{
 .h-4{
   height: 1rem;
 }
+.h-\[172px\]{
+  height: 172px;
+}
 .h-full{
   height: 100%;
+}
+.min-h-\[280px\]{
+  min-height: 280px;
 }
 .min-h-\[636px\]{
   min-height: 636px;
 }
 .w-4{
   width: 1rem;
+}
+.w-\[172px\]{
+  width: 172px;
 }
 .w-\[200px\]{
   width: 200px;
@@ -983,6 +995,9 @@ input[type=submit]:hover{
 .w-full{
   width: 100%;
 }
+.max-w-\[1023px\]{
+  max-width: 1023px;
+}
 .max-w-\[1047px\]{
   max-width: 1047px;
 }
@@ -997,6 +1012,12 @@ input[type=submit]:hover{
 }
 .max-w-\[1256px\]{
   max-width: 1256px;
+}
+.max-w-\[1377px\]{
+  max-width: 1377px;
+}
+.max-w-\[1515px\]{
+  max-width: 1515px;
 }
 .max-w-\[1758px\]{
   max-width: 1758px;
@@ -1105,9 +1126,6 @@ input[type=submit]:hover{
 }
 .object-cover{
   object-fit: cover;
-}
-.object-fill{
-  object-fit: fill;
 }
 .p-3{
   padding: 0.75rem;
@@ -3299,6 +3317,90 @@ ul#footer-social a:hover svg path {
   z-index: 1;
 }
 
+#way-to-build {
+  background-image: url(../img/way-to-build.webp);
+  background-position: top center;
+  background-size: cover;
+}
+
+.slide-label-before {
+  width: 150px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(36 79 53 / var(--tw-text-opacity, 1));
+  position: absolute;
+  top: 39px;
+  left: 12px;
+}
+
+.slide-label-after {
+  width: 150px;
+  height: 60px;
+  background-color: #F15A2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  top: 39px;
+  left: 12px;
+}
+
+.transformations-slider-wrap .slick-dots {
+  bottom: -44px;
+}
+
+.transformations-slider-wrap .slick-dots li button:before {
+  font-size: 40px;
+  color: #244F35;
+  opacity: 1;
+}
+
+.transformations-slider-wrap .slick-dots li.slick-active button:before {
+  font-size: 40px;
+  color: #F15A2E;
+  opacity: 1;
+}
+
+.transformations-slider-wrap .slick-dots li:hover button:before {
+  font-size: 40px;
+  color: #F15A2E;
+  opacity: 1;
+}
+
+#faqs {
+  background-image: url(../img/what-we-do-bg.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#faqs .faq-item .question {
+  position: relative;
+  z-index: 10;
+}
+#faqs .faq-item .question::after {
+  content: "?";
+  font-size: 180px;
+  font-weight: 800;
+  color: rgba(127, 108, 134, 0.3);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
 @media screen and (min-width: 640px) {
   .footer-phone {
     flex-basis: 200px;
@@ -3339,7 +3441,7 @@ ul#footer-social a:hover svg path {
   .main-menu ul li a {
     color: #fff;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     padding: 11px 10px;
     border-radius: 99999px;
@@ -3442,6 +3544,40 @@ ul#footer-social a:hover svg path {
   .how-it-works-step:last-child .step-description {
     margin-right: -500px;
   }
+  .transformation-slider-prev {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .transformation-slider-prev:hover {
+    background-color: #F15A2E;
+  }
+  .transformation-slider-next {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .transformation-slider-next:hover {
+    background-color: #F15A2E;
+  }
 }
 @media screen and (min-width: 1200px) {
   .left {
@@ -3481,6 +3617,14 @@ ul#footer-social a:hover svg path {
   }
   .testimonials-slider-next {
     bottom: 260px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .transformation-slider-prev {
+    left: -75px;
+  }
+  .transformation-slider-next {
+    right: -75px;
   }
 }
 .hover\:bg-orange:hover{
@@ -3549,9 +3693,6 @@ ul#footer-social a:hover svg path {
   .lg\:-mb-6{
     margin-bottom: -1.5rem;
   }
-  .lg\:-mt-24{
-    margin-top: -6rem;
-  }
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -3594,21 +3735,43 @@ ul#footer-social a:hover svg path {
   .lg\:w-\[479px\]{
     width: 479px;
   }
+  .lg\:w-\[calc\(100\%-172px\)\]{
+    width: calc(100% - 172px);
+  }
   .lg\:w-\[calc\(100\%-250px\)\]{
     width: calc(100% - 250px);
   }
   .lg\:w-\[calc\(100\%-479px\)\]{
     width: calc(100% - 479px);
   }
+  .lg\:-translate-y-12{
+    --tw-translate-y: -3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .lg\:-translate-y-24{
+    --tw-translate-y: -6rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
   .lg\:-translate-y-\[250px\]{
     --tw-translate-y: -250px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .lg\:translate-y-32{
+    --tw-translate-y: 8rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
   .lg\:flex-wrap{
     flex-wrap: wrap;
   }
+  .lg\:items-center{
+    align-items: center;
+  }
   .lg\:gap-10{
     gap: 2.5rem;
+  }
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .lg\:px-\[58px\]{
     padding-left: 58px;
@@ -3628,11 +3791,17 @@ ul#footer-social a:hover svg path {
   .lg\:pb-24{
     padding-bottom: 6rem;
   }
+  .lg\:pb-36{
+    padding-bottom: 9rem;
+  }
   .lg\:pl-16{
     padding-left: 4rem;
   }
   .lg\:pt-11{
     padding-top: 2.75rem;
+  }
+  .lg\:pt-24{
+    padding-top: 6rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -3720,6 +3889,10 @@ ul#footer-social a:hover svg path {
   }
 }
 @media (min-width: 1472px){
+  .xxl\:-mx-20{
+    margin-left: -5rem;
+    margin-right: -5rem;
+  }
   .xxl\:w-1\/6{
     width: 16.666667%;
   }
@@ -3731,6 +3904,18 @@ ul#footer-social a:hover svg path {
   }
   .xxl\:w-\[calc\(100\%-377px\)\]{
     width: calc(100% - 377px);
+  }
+  .xxl\:-translate-y-24{
+    --tw-translate-y: -6rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xxl\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .xxl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .xxl\:py-32{
     padding-top: 8rem;
