@@ -940,6 +940,9 @@ input[type=submit]:hover{
 .mt-12{
   margin-top: 3rem;
 }
+.mt-8{
+  margin-top: 2rem;
+}
 .block{
   display: block;
 }
@@ -973,8 +976,8 @@ input[type=submit]:hover{
 .min-h-\[280px\]{
   min-height: 280px;
 }
-.min-h-\[636px\]{
-  min-height: 636px;
+.min-h-\[350px\]{
+  min-height: 350px;
 }
 .w-4{
   width: 1rem;
@@ -1000,6 +1003,9 @@ input[type=submit]:hover{
 .w-\[435px\]{
   width: 435px;
 }
+.w-\[438px\]{
+  width: 438px;
+}
 .w-\[80\%\]{
   width: 80%;
 }
@@ -1020,6 +1026,9 @@ input[type=submit]:hover{
 }
 .max-w-\[1121px\]{
   max-width: 1121px;
+}
+.max-w-\[1126px\]{
+  max-width: 1126px;
 }
 .max-w-\[1238px\]{
   max-width: 1238px;
@@ -1111,6 +1120,10 @@ input[type=submit]:hover{
 .border-b-2{
   border-bottom-width: 2px;
 }
+.border-green{
+  --tw-border-opacity: 1;
+  border-color: rgb(36 79 53 / var(--tw-border-opacity, 1));
+}
 .border-orange{
   --tw-border-opacity: 1;
   border-color: rgb(241 90 46 / var(--tw-border-opacity, 1));
@@ -1145,14 +1158,24 @@ input[type=submit]:hover{
 .bg-cover{
   background-size: cover;
 }
+.bg-\[center_top\]{
+  background-position: center top;
+}
 .bg-center{
   background-position: center;
+}
+.bg-repeat-y{
+  background-repeat: repeat-y;
 }
 .object-cover{
   object-fit: cover;
 }
 .p-3{
   padding: 0.75rem;
+}
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1195,8 +1218,8 @@ input[type=submit]:hover{
 .pb-24{
   padding-bottom: 6rem;
 }
-.pb-36{
-  padding-bottom: 9rem;
+.pb-40{
+  padding-bottom: 10rem;
 }
 .pb-60{
   padding-bottom: 15rem;
@@ -3093,7 +3116,7 @@ header {
 .testimonials-slider-prev {
   position: absolute;
   right: 94px;
-  bottom: 200px;
+  bottom: 100px;
   width: 58px;
   height: 58px;
   display: flex;
@@ -3110,7 +3133,7 @@ header {
 .testimonials-slider-next {
   position: absolute;
   right: 0;
-  bottom: 200px;
+  bottom: 100px;
   width: 58px;
   height: 58px;
   display: flex;
@@ -3266,11 +3289,11 @@ ul#footer-social a:hover svg path {
   background-image: url(../img/team-bg-img.webp);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 250px;
+  padding-bottom: 100px;
 }
 
 .member-positions {
-  margin: 0;
+  margin: 0 0 35px;
   padding: 0;
   list-style: none;
   color: #F15A2E;
@@ -3288,7 +3311,7 @@ ul#footer-social a:hover svg path {
   border-radius: 50%;
   background-color: #F15A2E;
   position: absolute;
-  top: 13px;
+  top: 0.5rem;
   left: 13px;
 }
 
@@ -3476,6 +3499,32 @@ ul#footer-social a:hover svg path {
   margin-top: -800px;
 }
 
+.review {
+  position: relative;
+}
+.review::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/open-quote.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30px;
+  left: -18px;
+}
+.review::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/close-quote.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30px;
+  right: -18px;
+}
+
 @media screen and (min-width: 640px) {
   .footer-phone {
     flex-basis: 200px;
@@ -3530,10 +3579,10 @@ ul#footer-social a:hover svg path {
     border-color: #fff;
   }
   .left {
-    padding-left: calc((100vw - 968px) / 2);
+    padding-left: calc((100vw - 968px) / 2) !important;
   }
   .right {
-    padding-right: calc((100vw - 968px) / 2);
+    padding-right: calc((100vw - 968px) / 2) !important;
   }
   .testimonials-slider-title {
     position: relative;
@@ -3551,6 +3600,12 @@ ul#footer-social a:hover svg path {
     height: 87px;
     top: -40px;
     right: 0;
+  }
+  .testimonials-slider-prev {
+    bottom: 200px;
+  }
+  .testimonials-slider-next {
+    bottom: 200px;
   }
   ul#footer-social {
     gap: 50px;
@@ -3653,13 +3708,33 @@ ul#footer-social a:hover svg path {
   .transformation-slider-next:hover {
     background-color: #F15A2E;
   }
+  #team {
+    padding-bottom: 250px;
+  }
+  .review {
+    position: relative;
+  }
+  .review::before {
+    content: "";
+    width: 87px;
+    height: 87px;
+    top: -40px;
+    left: 0;
+  }
+  .review::after {
+    content: "";
+    width: 87px;
+    height: 87px;
+    top: -40px;
+    right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .left {
-    padding-left: calc((100vw - 1176px) / 2);
+    padding-left: calc((100vw - 1176px) / 2) !important;
   }
   .right {
-    padding-right: calc((100vw - 1176px) / 2);
+    padding-right: calc((100vw - 1176px) / 2) !important;
   }
   ul#footer-social {
     justify-content: flex-end;
@@ -3682,10 +3757,10 @@ ul#footer-social a:hover svg path {
     margin-top: -200px;
   }
   .left {
-    padding-left: calc((100vw - 1448px) / 2);
+    padding-left: calc((100vw - 1448px) / 2) !important;
   }
   .right {
-    padding-right: calc((100vw - 1448px) / 2);
+    padding-right: calc((100vw - 1448px) / 2) !important;
   }
   .testimonials-slider-prev {
     bottom: 260px;
@@ -3771,6 +3846,9 @@ ul#footer-social a:hover svg path {
   .lg\:mb-0{
     margin-bottom: 0px;
   }
+  .lg\:mb-16{
+    margin-bottom: 4rem;
+  }
   .lg\:mb-36{
     margin-bottom: 9rem;
   }
@@ -3852,6 +3930,14 @@ ul#footer-social a:hover svg path {
     padding-left: 7rem;
     padding-right: 7rem;
   }
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .lg\:px-\[156px\]{
+    padding-left: 156px;
+    padding-right: 156px;
+  }
   .lg\:px-\[58px\]{
     padding-left: 58px;
     padding-right: 58px;
@@ -3877,6 +3963,12 @@ ul#footer-social a:hover svg path {
   .lg\:pb-36{
     padding-bottom: 9rem;
   }
+  .lg\:pb-48{
+    padding-bottom: 12rem;
+  }
+  .lg\:pb-60{
+    padding-bottom: 15rem;
+  }
   .lg\:pl-16{
     padding-left: 4rem;
   }
@@ -3885,6 +3977,9 @@ ul#footer-social a:hover svg path {
   }
   .lg\:pt-24{
     padding-top: 6rem;
+  }
+  .lg\:pt-36{
+    padding-top: 9rem;
   }
   .lg\:text-left{
     text-align: left;
