@@ -115,6 +115,36 @@ jQuery(document).ready(function () {
 });
 
 
+jQuery(document).ready(function ($) {
+  $('.project-slider-wrap').each(function () {
+    const slider = $(this);
+
+    const prev = slider.closest('.project-slider-container').find('.project-slider-prev');
+    const next = slider.closest('.project-slider-container').find('.project-slider-next');
+
+    slider.slick({
+       slidesToScroll: 1,
+      slidesToShow: 1,
+      arrows: true,
+      dots: true,
+      infinite: true,
+      speed: 800,
+      prevArrow: prev,
+      nextArrow: next,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false,
+          }
+        }
+      ]
+    });
+  });
+});
+
+
+
 // Scroll to top
 let mybutton = document.getElementById("btn-back-to-top");
 
