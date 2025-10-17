@@ -913,6 +913,9 @@ input[type=submit]:hover{
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.-mt-36{
+  margin-top: -9rem;
+}
 .-mt-\[600px\]{
   margin-top: -600px;
 }
@@ -945,6 +948,9 @@ input[type=submit]:hover{
 }
 .mb-32{
   margin-bottom: 8rem;
+}
+.mb-36{
+  margin-bottom: 9rem;
 }
 .mb-5{
   margin-bottom: 1.25rem;
@@ -3124,8 +3130,18 @@ header {
   left: 0;
 }
 
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 27, 38, 0.13);
+}
+
 .testimonials-slider-title {
   position: relative;
+  padding-top: 40px;
 }
 .testimonials-slider-title::before {
   content: "";
@@ -3135,8 +3151,8 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -30px;
-  left: -18px;
+  top: 0;
+  left: 0;
 }
 .testimonials-slider-title::after {
   content: "";
@@ -3146,8 +3162,8 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -30px;
-  right: -18px;
+  top: 0;
+  right: 0;
 }
 
 .testimonials-slider-prev {
@@ -3224,13 +3240,16 @@ footer {
 
 .footer-phone {
   position: relative;
-  padding-left: 70px;
-  flex-basis: 175px;
+  padding-left: 42px;
+  flex-basis: auto;
 }
 .footer-phone::before {
-  content: url(../img/phone.svg);
+  content: "";
+  background-image: url(../img/phone.svg);
+  background-size: cover;
   position: absolute;
-  height: 39px;
+  width: 22px;
+  height: 22px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -3246,13 +3265,16 @@ footer {
 
 .footer-email {
   position: relative;
-  padding-left: 70px;
-  flex-basis: 175px;
+  padding-left: 50px;
+  flex-basis: auto;
 }
 .footer-email::before {
-  content: url(../img/email.svg);
+  content: "";
+  background-image: url(../img/email.svg);
+  background-size: cover;
   position: absolute;
-  height: 39px;
+  width: 32px;
+  height: 22px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -3271,6 +3293,9 @@ ul#footer-social {
   gap: 30px;
   align-items: center;
   justify-content: center;
+}
+ul#footer-social svg {
+  transform: scale(0.6);
 }
 ul#footer-social a svg path{
   transition-property: all;
@@ -3536,10 +3561,10 @@ ul#footer-social a:hover svg path {
   margin-top: -800px;
 }
 
-.review {
+.review-wrap {
   position: relative;
 }
-.review::before {
+.review-wrap::before {
   content: "";
   width: 45px;
   height: 45px;
@@ -3547,10 +3572,11 @@ ul#footer-social a:hover svg path {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -30px;
-  left: -18px;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.review::after {
+.review-wrap::after {
   content: "";
   width: 45px;
   height: 45px;
@@ -3558,8 +3584,9 @@ ul#footer-social a:hover svg path {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -30px;
-  right: -18px;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #project-list a {
@@ -3682,6 +3709,25 @@ ul#footer-social a:hover svg path {
     left: 50%;
     bottom: -62px;
     transform: translateX(-50%);
+  }
+  .footer-phone {
+    padding-left: 70px;
+    flex-basis: 197px;
+  }
+  .footer-phone::before {
+    width: 39px;
+    height: 39px;
+  }
+  .footer-email {
+    padding-left: 70px;
+    flex-basis: 175px;
+  }
+  .footer-email::before {
+    width: 56px;
+    height: 39px;
+  }
+  ul#footer-social svg {
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 992px) {
@@ -3841,22 +3887,26 @@ ul#footer-social a:hover svg path {
   #team {
     padding-bottom: 250px;
   }
-  .review {
+  .review-wrap {
     position: relative;
   }
-  .review::before {
+  .review-wrap::before {
     content: "";
     width: 87px;
     height: 87px;
-    top: -40px;
+    top: 110px;
     left: 0;
+    transform: translateX(0);
   }
-  .review::after {
+  .review-wrap::after {
     content: "";
     width: 87px;
     height: 87px;
-    top: -40px;
+    top: 110px;
+    left: unset;
     right: 0;
+    transform: translateX(0);
+    bottom: unset;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3976,8 +4026,14 @@ ul#footer-social a:hover svg path {
   .lg\:mb-0{
     margin-bottom: 0px;
   }
+  .lg\:mb-11{
+    margin-bottom: 2.75rem;
+  }
   .lg\:mb-16{
     margin-bottom: 4rem;
+  }
+  .lg\:mb-20{
+    margin-bottom: 5rem;
   }
   .lg\:mb-36{
     margin-bottom: 9rem;
@@ -4137,6 +4193,9 @@ ul#footer-social a:hover svg path {
   }
   .xl\:mb-0{
     margin-bottom: 0px;
+  }
+  .xl\:mb-11{
+    margin-bottom: 2.75rem;
   }
   .xl\:min-h-\[740px\]{
     min-height: 740px;
