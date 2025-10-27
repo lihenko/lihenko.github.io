@@ -119,7 +119,53 @@ jQuery(document).ready(function ($) {
 });
 
 
+jQuery(document).ready(function ($) {
+  const $slider = $('.who-we-serve-slider-wrap');
 
+  // Ініціалізація Slick
+  $slider.slick({
+    autoplay: true,
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '250px',
+    speed: 800,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '80px',
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '40px',
+        },
+      },
+    ],
+  });
+
+});
 
 
 // Scroll to top
