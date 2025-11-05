@@ -152,19 +152,6 @@ function backToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-jQuery(document).on('click', 'a[href^="#"]', function (event) {
-  if (jQuery(this).attr('href') == '#') {
-    return;
-  } else {
-    event.preventDefault();
-    jQuery('html, body').animate({
-        scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-    }, 500);
-  }
-  
-});
-
-
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
@@ -179,4 +166,52 @@ document.addEventListener("scroll", function () {
     header.classList.remove("fixed");
     document.body.classList.remove("menu-fixed");
   }
+});
+
+
+
+const dropdown = document.querySelector(".dropdown");
+const label = dropdown.querySelector(".dropdown-label");
+const items = dropdown.querySelectorAll(".dropdown-item a");
+
+// toggle open
+label.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("is-active");
+});
+
+// click item
+items.forEach(item => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    const id = item.getAttribute('href');
+    label.innerHTML = `${item.textContent} <i class="bx-chevron-down"></i>`;
+    dropdown.classList.remove("is-active");
+    const offset = jQuery(id).offset().top - 100;
+
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth"
+    });
+  });
+});
+
+// click outside
+window.addEventListener("click", () => {
+  dropdown.classList.remove("is-active");
+});
+
+
+jQuery(document).on('click', 'a[href^="#"]', function (e) {
+  e.preventDefault();
+  const id = jQuery(this).attr('href');
+  if (id === '#') return;
+
+  const offset = jQuery(id).offset().top - 100;
+
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth"
+  });
 });
