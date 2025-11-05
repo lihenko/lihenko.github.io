@@ -12,6 +12,10 @@ const body = document.body;
 const mobileHamburger = document.getElementById('mobile-hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileToggleBtn = document.querySelector('.toggle-btn.mobile');
+const desktopHamburger = document.getElementById('desktop-hamburger');
+const desktopMenu = document.getElementById('desktop-menu');
+const desktopToggleBtn = document.querySelectorAll('.toggle-btn.desktop');
+const overlay = document.getElementById('page-overlay');
 
 // 1️⃣ Додаємо кнопки
 document.querySelectorAll('ul > li.menu-item-has-children').forEach(item => {
@@ -58,11 +62,39 @@ function mobileCloseMenu () {
     }
 }
 
+function toggleDesktopMenu () {
+    body.classList.toggle('desktop-menu-open');
+    body.removeEventListener('touchmove', stopScroll);
+    desktopMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+
+    if (body.classList.contains('desktop-menu-open')) {
+        body.addEventListener('touchmove', stopScroll);
+    }
+}
+
+function desktopCloseMenu () {
+    if (body.classList.contains('desktop-menu-open')) {
+        body.removeEventListener('touchmove', stopScroll);
+        body.classList.remove('desktop-menu-open');
+        desktopMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    }
+}
+
 if (mobileMenu !== null) {
     mobileMenu.addEventListener('touchmove', function (event) {
         event.stopPropagation();
     });
 }
+
+if (desktopMenu !== null) {
+    desktopMenu.addEventListener('touchmove', function (event) {
+        event.stopPropagation();
+    });
+}
+
+
 
 // Submenus
 /*for (let i = 0; i < dropdownToggles.length; i++) {
@@ -90,8 +122,18 @@ if (mobileToggleBtn !== null) {
     mobileToggleBtn.addEventListener('click', toggleMobileMenu);
 }
 
+if (desktopToggleBtn !== null) {
+    desktopToggleBtn.forEach(item => {
+      item.addEventListener('click', toggleDesktopMenu);
+    });
+}
+
 // Close menu on resize
 window.addEventListener('resize', mobileCloseMenu);
+
+window.addEventListener('resize', desktopCloseMenu);
+
+overlay.addEventListener('click', desktopCloseMenu);
 
 
 jQuery(document).ready(function ($) {

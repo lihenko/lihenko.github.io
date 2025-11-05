@@ -104,8 +104,9 @@
     </div> 
   </div>
   
-  <div class="content-wrapper">
-    <div id="fixed-header" class="relative">
+  <div class="content-wrapper relative">
+    <div id="page-overlay"></div>
+    <div id="fixed-header" class="relative px-3">
       <div class="container">
           <div class="flex -mx-3 items-center justify-center xxl:px-16">
             <div class="w-[160px] lg:w-[192px] px-3 flex py-6 lg:py-0">
@@ -113,7 +114,7 @@
                 <img src="./img/Logo-Black.svg" alt="">
               </a>
             </div>
-            <div class="hidden lg:block px-3 w-[calc(100%-192px)]">
+            <div class="hidden lg:flex lg:items-center lg:justify-end px-3 w-[calc(100%-192px)]">
               <div class="main-menu">
                 <ul>
                   <li>
@@ -139,19 +140,156 @@
                       </div>
                   </div>
               </div>
+              <div class="toggle-btn desktop fixed">
+                  <div class="hamburger-icon">
+                      <div id="desktop-fixed-hamburger" class="hamburger">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                      </div>
+                  </div>
+              </div> 
             </div>
           </div> 
       </div>
     </div>
+    <div id="desktop-menu" class="relative">
+      <div class="toggle-btn desktop close">
+          <div class="hamburger-icon">
+              <div id="desktop-close-hamburger" class="hamburger active">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+      <div class="desktop-menu-wrap">
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="#">Våra kök</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Jobba hos oss</a>
+              </li>
+              <li>
+                <a href="#">Historien om Kulladal</a>
+              </li>
+              <li>
+                <a href="#">Team Kulladal</a>
+              </li>
+              <li>
+                <a href="#">Kontakt</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+          <a href="#">Förvaring</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Kontakt</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">WEBSHOP</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Blogg</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Ritprogram</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        </ul>
+        <ul id="aditional-desktop-link">
+          <li class="international-order">
+            <a href="#">International order</a>
+          </li>
+          <li class="guide-ritprogram">
+            <a href="#">Guide ritprogram</a>
+          </li>
+          <li class="katalog-order">
+            <a href="#">Beställ vår katalog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="relative z-10">
       <div class="container">
-          <div class="flex -mx-3 items-center justify-center xxl:px-16">
+          <div class="flex -mx-3 px-3 items-center justify-center xxl:px-16">
             <div class="w-[160px] lg:w-[192px] px-3 flex py-6 lg:py-0">
               <a href="/">
                 <img src="./img/Logo-Black.svg" alt="">
               </a>
             </div>
-            <div class="hidden lg:block px-3 w-[calc(100%-192px)]">
+            <div class="hidden lg:flex lg:justify-end lg:items-center px-3 w-[calc(100%-192px)]">
               <div class="main-menu">
                 <ul>
                   <li>
@@ -171,6 +309,15 @@
               <div class="toggle-btn mobile">
                   <div class="hamburger-icon">
                       <div class="hamburger">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="toggle-btn desktop">
+                  <div class="hamburger-icon">
+                      <div id="desktop-hamburger" class="hamburger">
                           <div class="line"></div>
                           <div class="line"></div>
                           <div class="line"></div>
