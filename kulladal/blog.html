@@ -6,32 +6,102 @@
   <title>Blog Page</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<body class="open-left">
-  <ul class="omni-mobile-menu">
-      <li>
-        <a href="#">Våra kök</a>
-      </li>
-      <li>
-        <a href="#">Förvaring</a>
-      </li>
-      <li>
-        <a href="#">Kontakt</a>
-      </li>
-      <li>
-        <a href="#">Ritprogram</a>
-      </li>
-    </ul>
-
+<body>
+  <div id="mobile-menu">
+    <div class="mobile-menu-wrap">
+      <ul>
+        <li class="menu-item-has-children">
+          <a href="#">Våra kök</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Förvaring</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Kontakt</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Ritprogram</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Jobba hos oss</a>
+            </li>
+            <li>
+              <a href="#">Historien om Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Team Kulladal</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="aditional-mobile-link">
+        <li class="international-order">
+          <a href="#">International order</a>
+        </li>
+        <li class="guide-ritprogram">
+          <a href="#">Guide ritprogram</a>
+        </li>
+        <li class="katalog-order">
+          <a href="#">Beställ vår katalog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="container relative">
-    <div class="toggle-btn">
-            <div class="hamburger-icon">
-                <svg class="hamburger" viewBox="0 0 100 100" id="hamburger">
-                    <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                    <path class="line middle" d="m 30,50 h 40" />
-                    <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                </svg>
+    <div class="toggle-btn mobile">
+        <div class="hamburger-icon">
+            <div id="mobile-hamburger" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-          </div> 
+        </div>
+    </div> 
   </div>
   
   <div class="content-wrapper">
@@ -59,6 +129,15 @@
                     <a href="#">Ritprogram</a>
                   </li>
                 </ul>
+              </div>
+              <div class="toggle-btn fixed">
+                  <div class="hamburger-icon">
+                      <div class="hamburger">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                      </div>
+                  </div>
               </div>
             </div>
           </div> 
@@ -89,6 +168,15 @@
                   </li>
                 </ul>
               </div>
+              <div class="toggle-btn mobile">
+                  <div class="hamburger-icon">
+                      <div class="hamburger">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                      </div>
+                  </div>
+              </div>
             </div>
           </div> 
       </div>
@@ -103,9 +191,9 @@
         </div>
       </section>
       <section id="blog-grid" class="pb-28">
-        <div class="container">
+        <div class="container-fluid">
           <div class="flex flex-wrap -mx-1 mb-12">
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -120,13 +208,13 @@
                 </div>
                 <div class="blog-read-more absolute bottom-0 left-8">
                   <a href="#">
-                    <img src="./img/read-more-icon.svg" alt="">
+                    <img src="./img/read-more-arrow.svg" alt="">
                   </a>
                 </div> 
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -147,7 +235,7 @@
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -168,7 +256,7 @@
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -183,13 +271,13 @@
                 </div>
                 <div class="blog-read-more absolute bottom-0 left-8">
                   <a href="#">
-                    <img src="./img/read-more-icon.svg" alt="">
+                    <img src="./img/read-more-arrow.svg" alt="">
                   </a>
                 </div> 
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -204,13 +292,13 @@
                 </div>
                 <div class="blog-read-more absolute bottom-0 left-8">
                   <a href="#">
-                    <img src="./img/read-more-icon.svg" alt="">
+                    <img src="./img/read-more-arrow.svg" alt="">
                   </a>
                 </div> 
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -225,13 +313,13 @@
                 </div>
                 <div class="blog-read-more absolute bottom-0 left-8">
                   <a href="#">
-                    <img src="./img/read-more-icon.svg" alt="">
+                    <img src="./img/read-more-arrow.svg" alt="">
                   </a>
                 </div> 
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -252,7 +340,7 @@
               </div>
                            
             </div>
-            <div class="w-full px-1 lg:w-1/2 mb-12">
+            <div class="w-full px-1 md:w-1/2 xxl:w-1/3 mb-12">
               <div class="relative pb-10 h-full">
                 <a href="#" class="block"> 
                   <div class="blog-tumbnail w-full aspect-[860/570] mb-6">
@@ -283,14 +371,14 @@
       </section>
     </main>
     <footer class="bg-brown pt-24">
-      <div class="container max-w-[1568px]">
-        <div class="flex flex-wrap">
+      <div class="container xxl:px-14">
+        <div class="flex flex-wrap lg:justify-between">
           <div class="w-full px-6 xxl:px-0 text-center lg:text-left lg:w-1/2 mb-10 lg:mb-0">
             <a href="#">
               <img src="./img/Logo-White.svg" alt="">
             </a>
           </div>
-          <div class="w-full px-6 xxl:px-0 lg:w-1/2 xxl:pl-32">
+          <div class="w-full px-6 xxl:px-0 lg:w-1/2 max-w-[581px]">
             <div class="flex flex-wrap">
               <div class="w-1/2 px-3 md:w-1/4 mb-8">
                 <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
