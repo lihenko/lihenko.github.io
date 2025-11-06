@@ -2473,6 +2473,16 @@ body.desktop-menu-open {
   display: none;
 }
 
+.page-template-template-hero-page .hamburger-icon .hamburger .line {
+  background-color: #fff;
+}
+.page-template-template-hero-page .hamburger-icon .hamburger.active .line {
+  background-color: #222222;
+}
+.page-template-template-hero-page.menu-fixed .hamburger-icon .hamburger .line {
+  background-color: #222222;
+}
+
 @media screen and (min-width: 992px) {
   .toggle-btn.mobile {
     display: none;
@@ -3192,6 +3202,10 @@ a:hover .video-button svg circle{
   background-color: #fff;
 }
 
+#hero {
+  margin-top: -125px;
+}
+
 @media screen and (min-width: 768px) {
   .copyright-menu {
     justify-content: flex-end;
@@ -3229,66 +3243,36 @@ a:hover .video-button svg circle{
     --tw-text-opacity: 1;
     color: rgb(79 74 69 / var(--tw-text-opacity, 1));
   }
-  .main-menu ul li.menu-button {
-    padding-right: 0;
+  #hero {
+    margin-top: -140px;
   }
-  .main-menu ul li.menu-button a{
-    display: inline-block;
-    width: 194px;
-    max-width: 100%;
-    cursor: pointer;
-    border-radius: 9999px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(14 163 219 / var(--tw-bg-opacity, 1));
-    padding-top: 15.5px;
-    padding-bottom: 15.5px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1;
-    text-decoration-line: none;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    color: #fff;
-  }
-  .main-menu ul li.menu-button a:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(4 53 103 / var(--tw-bg-opacity, 1));
-  }
-  .main-menu ul li .sub-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
+  .page-template-template-hero-page .main-menu ul {
     display: flex;
-    flex-direction: column;
-    z-index: 50;
-    background-color: #fff;
-    width: 230px;
-    display: none;
+    align-items: center;
+    justify-content: flex-end;
   }
-  .main-menu ul li .sub-menu li {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
+  .page-template-template-hero-page .main-menu ul li {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
   }
-  .main-menu ul li .sub-menu li a {
-    text-align: left;
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-  .main-menu ul li .sub-menu li a:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(14 163 219 / var(--tw-bg-opacity, 1));
+  .page-template-template-hero-page .main-menu ul li a{
+    font-size: 16px;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    text-decoration-line: none;
   }
-  .main-menu ul li:hover .sub-menu {
-    display: block;
+  .page-template-template-hero-page .main-menu ul li a:hover{
+    --tw-text-opacity: 1;
+    color: rgb(236 234 228 / var(--tw-text-opacity, 1));
+  }
+  .page-template-template-hero-page .main-menu ul li a {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .page-template-template-hero-page .main-menu ul li.current-menu-item a{
+    --tw-text-opacity: 1;
+    color: rgb(236 234 228 / var(--tw-text-opacity, 1));
   }
 }
 @media screen and (min-width: 1200px) {
