@@ -514,19 +514,19 @@ body{
 }
 h1, .h1{
   font-family: EBGaramond, sans-serif;
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.1em;
 }
-@media (min-width: 992px){
+@media (min-width: 640px){
   h1, .h1{
-    font-size: 32px;
+    font-size: 38px;
   }
 }
 @media (min-width: 1200px){
   h1, .h1{
-    font-size: 38px;
+    font-size: 42px;
   }
 }
 @media (min-width: 1728px){
@@ -765,11 +765,17 @@ input[type=submit]:hover {
 .bottom-5{
   bottom: 1.25rem;
 }
+.left-1\/2{
+  left: 50%;
+}
 .left-8{
   left: 2rem;
 }
 .right-5{
   right: 1.25rem;
+}
+.top-1\/2{
+  top: 50%;
 }
 .z-10{
   z-index: 10;
@@ -784,6 +790,10 @@ input[type=submit]:hover {
 .-mx-3{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-10{
   margin-bottom: 2.5rem;
@@ -830,6 +840,9 @@ input[type=submit]:hover {
 .h-4{
   height: 1rem;
 }
+.h-dvh{
+  height: 100dvh;
+}
 .h-full{
   height: 100%;
 }
@@ -844,6 +857,9 @@ input[type=submit]:hover {
 }
 .w-\[calc\(100\%-192px\)\]{
   width: calc(100% - 192px);
+}
+.w-dvw{
+  width: 100dvw;
 }
 .w-full{
   width: 100%;
@@ -2308,6 +2324,10 @@ body.desktop-menu-open {
   overflow-y: hidden;
 }
 
+#desktop-menu {
+  display: none;
+}
+
 #mobile-menu {
   position: fixed;
   top: 0;
@@ -2471,6 +2491,7 @@ body.desktop-menu-open {
     z-index: 9999999;
   }
   #desktop-menu {
+    display: block;
     width: 440px;
     background-color: #ECEAE4;
     position: fixed;
@@ -2838,16 +2859,14 @@ svg {
   height: auto;
 }
 
-/*.slick-track
- {
-     display: flex !important;
- }
+.slick-track {
+  display: flex !important;
+}
 
- .slick-slide
- {
-     height: inherit !important;
- }
-*/
+.slick-slide {
+  height: inherit !important;
+}
+
 .top-bar-contacts ul {
   display: flex;
   align-items: flex-end;
@@ -3127,6 +3146,52 @@ a:hover .video-button svg circle{
   padding-right: 0;
 }
 
+.hero-title {
+  transform: translate(-50%, -50%);
+}
+
+.hero-slider .slick-dots {
+  bottom: 38px;
+}
+.hero-slider .slick-dots li {
+  width: 16px;
+  height: 6px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.hero-slider .slick-dots li button {
+  width: 16px;
+  height: 6px;
+}
+.hero-slider .slick-dots li button::before {
+  content: "";
+  width: 16px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  opacity: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.hero-slider .slick-dots li button:hover::before {
+  background-color: #fff;
+}
+.hero-slider .slick-dots li.slick-active {
+  width: 24px;
+  height: 6px;
+}
+.hero-slider .slick-dots li.slick-active button {
+  width: 24px;
+  height: 6px;
+}
+.hero-slider .slick-dots li.slick-active button::before {
+  width: 24px;
+  height: 6px;
+  background-color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .copyright-menu {
     justify-content: flex-end;
@@ -3278,6 +3343,11 @@ a:hover .video-button svg circle{
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+@media (min-width: 640px){
+  .sm\:max-w-\[600px\]{
+    max-width: 600px;
+  }
+}
 @media (min-width: 835px){
   .md\:order-1{
     order: 1;
@@ -3329,6 +3399,11 @@ a:hover .video-button svg circle{
   }
   .lg\:text-\[15px\]{
     font-size: 15px;
+  }
+}
+@media (min-width: 1200px){
+  .xl\:max-w-\[1120px\]{
+    max-width: 1120px;
   }
 }
 @media (min-width: 1728px){

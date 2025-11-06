@@ -135,11 +135,23 @@ window.addEventListener('resize', desktopCloseMenu);
 
 overlay.addEventListener('click', desktopCloseMenu);
 
+jQuery(document).ready(function ($) {
+  const hero_sider = $('.hero-slider');
+  hero_sider.slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+});
+});
+
 
 jQuery(document).ready(function ($) {
-  const $slider = $('.features-slider-wrap');
+  const $slider = $('.hero-slider');
 
-  // Ініціалізація Slick
   /*$slider.slick({
     //autoplay: true,
     slidesToScroll: 1,
