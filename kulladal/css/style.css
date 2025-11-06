@@ -3246,31 +3246,17 @@ a:hover .video-button svg circle{
   #hero {
     margin-top: -140px;
   }
-  .page-template-template-hero-page .main-menu ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .page-template-template-hero-page .main-menu ul li {
-    padding-right: 15px;
-    padding-left: 15px;
-    position: relative;
-  }
-  .page-template-template-hero-page .main-menu ul li a{
+  .page-template-template-hero-page:not(.menu-fixed) .main-menu ul li a{
     font-size: 16px;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
     text-decoration-line: none;
   }
-  .page-template-template-hero-page .main-menu ul li a:hover{
+  .page-template-template-hero-page:not(.menu-fixed) .main-menu ul li a:hover{
     --tw-text-opacity: 1;
     color: rgb(236 234 228 / var(--tw-text-opacity, 1));
   }
-  .page-template-template-hero-page .main-menu ul li a {
-    padding-top: 33px;
-    padding-bottom: 33px;
-  }
-  .page-template-template-hero-page .main-menu ul li.current-menu-item a{
+  .page-template-template-hero-page:not(.menu-fixed) .main-menu ul li.current-menu-item a{
     --tw-text-opacity: 1;
     color: rgb(236 234 228 / var(--tw-text-opacity, 1));
   }
