@@ -488,16 +488,10 @@ body{
   --tw-text-opacity: 1;
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
 }
-@media (min-width: 640px){
+@media (min-width: 992px){
   body{
     font-size: 16px;
     line-height: 24px;
-  }
-}
-@media (min-width: 992px){
-  body{
-    font-size: 18px;
-    line-height: 26px;
   }
 }
 h1, .h1{
@@ -732,6 +726,18 @@ a:hover{
   --tw-text-opacity: 1;
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
 }
+.darkblue-btn{
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 53 103 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.darkblue-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(25 31 48 / var(--tw-text-opacity, 1));
+}
 .white-btn{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -793,11 +799,17 @@ input[type=submit]:hover {
 .mb-12{
   margin-bottom: 3rem;
 }
+.mb-14{
+  margin-bottom: 3.5rem;
+}
 .mb-16{
   margin-bottom: 4rem;
 }
 .mb-3{
   margin-bottom: 0.75rem;
+}
+.mb-4{
+  margin-bottom: 1rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -852,6 +864,9 @@ input[type=submit]:hover {
 }
 .w-\[160px\]{
   width: 160px;
+}
+.w-\[263px\]{
+  width: 263px;
 }
 .w-\[calc\(100\%-192px\)\]{
   width: calc(100% - 192px);
@@ -920,6 +935,14 @@ input[type=submit]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(25 31 48 / var(--tw-bg-opacity, 1));
 }
+.bg-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 163 219 / var(--tw-bg-opacity, 1));
+}
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 25 75 / var(--tw-bg-opacity, 1));
+}
 .bg-darkblue{
   --tw-bg-opacity: 1;
   background-color: rgb(4 53 103 / var(--tw-bg-opacity, 1));
@@ -943,6 +966,14 @@ input[type=submit]:hover {
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-12{
   padding-top: 3rem;
@@ -3103,6 +3134,19 @@ a:hover .video-button svg circle{
   height: auto;
 }
 
+.communication-decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+}
+.communication-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .top-bar-contacts ul {
     display: flex;
@@ -3533,6 +3577,10 @@ a:hover .video-button svg circle{
   .md\:w-1\/3{
     width: 33.333333%;
   }
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 @media (min-width: 992px){
   .lg\:mb-0{
@@ -3540,6 +3588,9 @@ a:hover .video-button svg circle{
   }
   .lg\:ml-0{
     margin-left: 0px;
+  }
+  .lg\:ml-auto{
+    margin-left: auto;
   }
   .lg\:block{
     display: block;
@@ -3572,6 +3623,18 @@ a:hover .video-button svg circle{
   .lg\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .lg\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   .lg\:py-44{
     padding-top: 11rem;
@@ -3615,12 +3678,19 @@ a:hover .video-button svg circle{
   .xl\:w-\[calc\(100\%-600px\)\]{
     width: calc(100% - 600px);
   }
+  .xl\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
   .xl\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
   .xl\:pr-11{
     padding-right: 2.75rem;
+  }
+  .xl\:pr-24{
+    padding-right: 6rem;
   }
 }
 @media (min-width: 1432px){
