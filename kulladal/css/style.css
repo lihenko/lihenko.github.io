@@ -580,7 +580,7 @@ h3, .h3{
 h4, .h4{
   font-family: EBGaramond, sans-serif;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1.1;
 }
@@ -844,6 +844,9 @@ input[type=submit]:hover {
 .hidden{
   display: none;
 }
+.aspect-\[533\/800\]{
+  aspect-ratio: 533/800;
+}
 .aspect-\[825\/1238\]{
   aspect-ratio: 825/1238;
 }
@@ -924,9 +927,6 @@ input[type=submit]:hover {
 }
 .object-cover{
   object-fit: cover;
-}
-.object-fill{
-  object-fit: fill;
 }
 .p-3{
   padding: 0.75rem;
@@ -3242,12 +3242,62 @@ a:hover .video-button svg circle{
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 768px) {
+.carousel .carousel-wrap .carousel-item {
+  padding-right: 4px;
+}
+.carousel .carousel-wrap .carousel-item .carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel .carousel-wrap .slick-list {
+  padding: 0 20% 0 0;
+}
+.carousel .carousel-wrap .slick-next {
+  right: 0;
+}
+.carousel .carousel-wrap .slick-next::before {
+  content: url(../img/carousel-arrows.svg);
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.carousel .carousel-wrap .slick-prev {
+  left: 0;
+  z-index: 2;
+}
+.carousel .carousel-wrap .slick-prev::before {
+  content: url(../img/carousel-arrows.svg);
+  transform: rotate(180deg);
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.carousel .carousel-wrap .slick-prev, .carousel .carousel-wrap .slick-next {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+.carousel .carousel-wrap .slick-prev.slick-disabled, .carousel .carousel-wrap .slick-next.slick-disabled {
+  display: none !important;
+}
+
+@media screen and (min-width: 835px) {
   .copyright-menu {
     justify-content: flex-end;
   }
   .social-menu {
     justify-content: flex-end;
+  }
+  .carousel .carousel-wrap .carousel-item {
+    padding-right: 8px;
+  }
+  .carousel .carousel-wrap .slick-list {
+    padding: 0 160px 0 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -3296,6 +3346,12 @@ a:hover .video-button svg circle{
     --tw-text-opacity: 1;
     color: rgb(236 234 228 / var(--tw-text-opacity, 1));
   }
+  .carousel .carousel-wrap .carousel-item {
+    padding-right: 12px;
+  }
+  .carousel .carousel-wrap .slick-list {
+    padding: 0 343px 0 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-menu ul li {
@@ -3307,6 +3363,9 @@ a:hover .video-button svg circle{
   .main-menu ul li {
     padding-right: 48px;
     padding-left: 48px;
+  }
+  .carousel .carousel-wrap .slick-list {
+    padding: 0 13% 0 0;
   }
 }
 .hover\:bg-brown:hover{
@@ -3417,6 +3476,10 @@ a:hover .video-button svg circle{
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .lg\:text-left{
     text-align: left;

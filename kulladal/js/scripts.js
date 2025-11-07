@@ -150,56 +150,36 @@ jQuery(document).ready(function ($) {
 
 
 jQuery(document).ready(function ($) {
-  const $slider = $('.hero-slider');
+  const carousel = $('.carousel-wrap');
 
-  /*$slider.slick({
-    //autoplay: true,
+  carousel.slick({
     slidesToScroll: 1,
-    slidesToShow: 3,
-    arrows: false,
+    slidesToShow: 4,
+    arrows: true,
     dots: false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: '80px',
+    infinite: false,
     speed: 800,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1729,
         settings: {
           slidesToShow: 3,
-          centerPadding: '40px',
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 835,
         settings: {
-          slidesToShow: 1,
-          centerPadding: '120px',
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: '120px',
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: '80px',
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerPadding: '40px',
         },
       },
     ],
-  });*/
+  });
 
 
 });
