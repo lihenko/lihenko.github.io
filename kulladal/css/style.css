@@ -579,18 +579,24 @@ h3, .h3{
 }
 h4, .h4{
   font-family: EBGaramond, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.3;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
 @media (min-width: 992px){
   h4, .h4{
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1200px){
   h4, .h4{
-    font-size: 22.5px;
+    font-size: 26px;
+  }
+}
+@media (min-width: 1728px){
+  h4, .h4{
+    font-size: 28px;
   }
 }
 h5, .h5{
@@ -791,6 +797,10 @@ input[type=submit]:hover {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
+.-mx-\[6px\]{
+  margin-left: -6px;
+  margin-right: -6px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -834,6 +844,9 @@ input[type=submit]:hover {
 .hidden{
   display: none;
 }
+.aspect-\[825\/1238\]{
+  aspect-ratio: 825/1238;
+}
 .aspect-\[860\/570\]{
   aspect-ratio: 860/570;
 }
@@ -863,6 +876,9 @@ input[type=submit]:hover {
 }
 .w-lvw{
   width: 100lvw;
+}
+.max-w-\[196px\]{
+  max-width: 196px;
 }
 .max-w-\[581px\]{
   max-width: 581px;
@@ -909,6 +925,9 @@ input[type=submit]:hover {
 .object-cover{
   object-fit: cover;
 }
+.object-fill{
+  object-fit: fill;
+}
 .p-3{
   padding: 0.75rem;
 }
@@ -927,6 +946,10 @@ input[type=submit]:hover {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.px-\[6px\]{
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .py-6{
   padding-top: 1.5rem;
@@ -950,6 +973,9 @@ input[type=submit]:hover {
 }
 .pt-12{
   padding-top: 3rem;
+}
+.pt-16{
+  padding-top: 4rem;
 }
 .pt-24{
   padding-top: 6rem;
@@ -976,6 +1002,9 @@ input[type=submit]:hover {
 }
 .leading-tight{
   line-height: 1.25;
+}
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 .text-\[\#DFDED7\]{
   --tw-text-opacity: 1;
@@ -3202,8 +3231,15 @@ a:hover .video-button svg circle{
   background-color: #fff;
 }
 
-#hero {
+.hero {
   margin-top: -125px;
+}
+
+.kitchen-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -3243,7 +3279,7 @@ a:hover .video-button svg circle{
     --tw-text-opacity: 1;
     color: rgb(79 74 69 / var(--tw-text-opacity, 1));
   }
-  #hero {
+  .hero {
     margin-top: -140px;
   }
   .page-template-template-hero-page:not(.menu-fixed) .main-menu ul li a{
@@ -3314,8 +3350,14 @@ a:hover .video-button svg circle{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 @media (min-width: 640px){
+  .sm\:max-w-\[572px\]{
+    max-width: 572px;
+  }
   .sm\:max-w-\[600px\]{
     max-width: 600px;
+  }
+  .sm\:pb-16{
+    padding-bottom: 4rem;
   }
 }
 @media (min-width: 835px){
@@ -3327,6 +3369,12 @@ a:hover .video-button svg circle{
   }
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+  .md\:mb-14{
+    margin-bottom: 3.5rem;
+  }
+  .md\:mb-3{
+    margin-bottom: 0.75rem;
   }
   .md\:w-1\/2{
     width: 50%;
@@ -3342,6 +3390,9 @@ a:hover .video-button svg circle{
   .lg\:mb-0{
     margin-bottom: 0px;
   }
+  .lg\:mb-16{
+    margin-bottom: 4rem;
+  }
   .lg\:flex{
     display: flex;
   }
@@ -3350,6 +3401,9 @@ a:hover .video-button svg circle{
   }
   .lg\:w-\[192px\]{
     width: 192px;
+  }
+  .lg\:max-w-\[640px\]{
+    max-width: 640px;
   }
   .lg\:items-center{
     align-items: center;
@@ -3372,8 +3426,14 @@ a:hover .video-button svg circle{
   }
 }
 @media (min-width: 1200px){
+  .xl\:w-1\/3{
+    width: 33.333333%;
+  }
   .xl\:max-w-\[1120px\]{
     max-width: 1120px;
+  }
+  .xl\:pb-24{
+    padding-bottom: 6rem;
   }
 }
 @media (min-width: 1728px){
@@ -3392,7 +3452,13 @@ a:hover .video-button svg circle{
     padding-left: 4rem;
     padding-right: 4rem;
   }
+  .xxl\:pb-32{
+    padding-bottom: 8rem;
+  }
   .xxl\:pr-40{
     padding-right: 10rem;
+  }
+  .xxl\:text-\[35px\]{
+    font-size: 35px;
   }
 }
