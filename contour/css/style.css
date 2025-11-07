@@ -884,6 +884,9 @@ input[type=submit]:hover {
 .w-\[263px\]{
   width: 263px;
 }
+.w-\[353px\]{
+  width: 353px;
+}
 .w-\[calc\(100\%-192px\)\]{
   width: calc(100% - 192px);
 }
@@ -3220,6 +3223,24 @@ a:hover .video-button svg circle{
   margin-right: auto;
 }
 
+#minerals {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 992px){
+  .left{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .top-bar-contacts ul {
     display: flex;
@@ -3496,11 +3517,19 @@ a:hover .video-button svg circle{
     height: 900px !important;
     padding-bottom: 400px;
   }
+  .left {
+    padding-left: calc((100% - 512px) / 2);
+    padding-right: 64px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-menu ul li {
     padding-right: 25px;
     padding-left: 25px;
+  }
+  .left {
+    padding-left: calc(50vw - 584px);
+    padding-right: 64px;
   }
 }
 @media screen and (min-width: 1432px) {
@@ -3591,6 +3620,10 @@ a:hover .video-button svg circle{
     align-items: center !important;
     height: 900px !important;
     padding-bottom: 400px;
+  }
+  .left {
+    padding-left: calc(50vw - 708px);
+    padding-right: 108px;
   }
 }
 .hover\:bg-blue:hover{
@@ -3685,6 +3718,9 @@ a:hover .video-button svg circle{
   }
   .lg\:w-2\/3{
     width: 66.666667%;
+  }
+  .lg\:w-3\/5{
+    width: 60%;
   }
   .lg\:w-\[130px\]{
     width: 130px;
