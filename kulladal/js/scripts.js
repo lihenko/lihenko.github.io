@@ -222,6 +222,13 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
   
 });
 
+document.addEventListener('click', e => {
+  const question = e.target.closest('.faq-question');
+  if (!question) return;
+  const item = question.closest('.faq-item');
+  item.classList.toggle('active');
+});
+
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options

@@ -814,6 +814,9 @@ input[type=submit]:hover {
 .mb-2{
   margin-bottom: 0.5rem;
 }
+.mb-3{
+  margin-bottom: 0.75rem;
+}
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -935,6 +938,10 @@ input[type=submit]:hover {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -950,6 +957,10 @@ input[type=submit]:hover {
 .px-\[6px\]{
   padding-left: 6px;
   padding-right: 6px;
+}
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .py-6{
   padding-top: 1.5rem;
@@ -3286,6 +3297,70 @@ a:hover .video-button svg circle{
   display: none !important;
 }
 
+.text-transform-none {
+  text-transform: none;
+}
+
+.faq-item {
+  border-bottom: 1px solid #BFBDB6;
+  margin-bottom: 12px;
+}
+.faq-item .faq-question {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-right: 48px;
+  position: relative;
+  cursor: pointer;
+}
+.faq-item .faq-question::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/faq-arrow.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.faq-item .faq-answer {
+  padding-bottom: 12px;
+  display: none;
+}
+.faq-item .faq-answer a {
+  color: #626C75;
+  text-decoration: underline;
+}
+.faq-item .faq-answer a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity, 1));
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active .faq-question::after {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 640px) {
+  .faq-item {
+    margin-bottom: 24px;
+  }
+  .faq-item .faq-question {
+    font-size: 19px;
+    margin-bottom: 24px;
+    padding-right: 60px;
+  }
+  .faq-item .faq-question::after {
+    width: 32px;
+    height: 32px;
+  }
+  .faq-item .faq-answer {
+    padding-bottom: 24px;
+  }
+}
 @media screen and (min-width: 835px) {
   .copyright-menu {
     justify-content: flex-end;
@@ -3409,6 +3484,9 @@ a:hover .video-button svg circle{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 @media (min-width: 640px){
+  .sm\:mb-16{
+    margin-bottom: 4rem;
+  }
   .sm\:max-w-\[572px\]{
     max-width: 572px;
   }
@@ -3497,6 +3575,9 @@ a:hover .video-button svg circle{
   }
   .xl\:pb-24{
     padding-bottom: 6rem;
+  }
+  .xl\:pr-24{
+    padding-right: 6rem;
   }
 }
 @media (min-width: 1728px){
