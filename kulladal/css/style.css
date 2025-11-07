@@ -840,11 +840,11 @@ input[type=submit]:hover {
 .h-4{
   height: 1rem;
 }
-.h-dvh{
-  height: 100dvh;
-}
 .h-full{
   height: 100%;
+}
+.h-svh{
+  height: 100svh;
 }
 .w-1\/2{
   width: 50%;
@@ -858,11 +858,11 @@ input[type=submit]:hover {
 .w-\[calc\(100\%-192px\)\]{
   width: calc(100% - 192px);
 }
-.w-dvw{
-  width: 100dvw;
-}
 .w-full{
   width: 100%;
+}
+.w-lvw{
+  width: 100lvw;
 }
 .max-w-\[581px\]{
   max-width: 581px;
