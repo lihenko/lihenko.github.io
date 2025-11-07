@@ -789,9 +789,16 @@ input[type=submit]:hover {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
+.-mx-\[10px\]{
+  margin-left: -10px;
+  margin-right: -10px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.-mt-16{
+  margin-top: -4rem;
 }
 .mb-10{
   margin-bottom: 2.5rem;
@@ -805,6 +812,9 @@ input[type=submit]:hover {
 .mb-16{
   margin-bottom: 4rem;
 }
+.mb-24{
+  margin-bottom: 6rem;
+}
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -816,6 +826,9 @@ input[type=submit]:hover {
 }
 .mb-7{
   margin-bottom: 1.75rem;
+}
+.mb-72{
+  margin-bottom: 18rem;
 }
 .mb-8{
   margin-bottom: 2rem;
@@ -853,6 +866,9 @@ input[type=submit]:hover {
 .h-\[130px\]{
   height: 130px;
 }
+.h-full{
+  height: 100%;
+}
 .w-1\/2{
   width: 50%;
 }
@@ -874,8 +890,21 @@ input[type=submit]:hover {
 .w-full{
   width: 100%;
 }
+.max-w-\[1003px\]{
+  max-width: 1003px;
+}
 .max-w-\[1143px\]{
   max-width: 1143px;
+}
+.max-w-\[1291px\]{
+  max-width: 1291px;
+}
+.max-w-\[1345px\]{
+  max-width: 1345px;
+}
+.translate-y-36{
+  --tw-translate-y: 9rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -963,6 +992,10 @@ input[type=submit]:hover {
 .p-3{
   padding: 0.75rem;
 }
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -970,6 +1003,10 @@ input[type=submit]:hover {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -1005,8 +1042,14 @@ input[type=submit]:hover {
 .pb-16{
   padding-bottom: 4rem;
 }
+.pt-10{
+  padding-top: 2.5rem;
+}
 .pt-14{
   padding-top: 3.5rem;
+}
+.pt-16{
+  padding-top: 4rem;
 }
 .pt-\[235px\]{
   padding-top: 235px;
@@ -3028,13 +3071,21 @@ a:hover .video-button svg circle{
 }
 
 #page-title {
-  background-image: url(../img/page-title-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 145px;
   padding-bottom: 100px;
   min-height: 450px;
+}
+
+.page-title-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(1.1925141811, 26.0661678314, 51.4474334717, 0.9), rgb(4, 53, 103) 100%);
 }
 
 .dropdown-wrapper {
@@ -3145,6 +3196,28 @@ a:hover .video-button svg circle{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.bg-overlay {
+  background: rgba(4, 53, 103, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.values-backlight {
+  width: 221px;
+  height: 164px;
+  filter: blur(53px);
+  background: rgb(159, 205, 238);
+  position: absolute;
+  bottom: -46px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -3583,6 +3656,12 @@ a:hover .video-button svg circle{
   }
 }
 @media (min-width: 992px){
+  .lg\:order-1{
+    order: 1;
+  }
+  .lg\:order-2{
+    order: 2;
+  }
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -3600,6 +3679,9 @@ a:hover .video-button svg circle{
   }
   .lg\:w-1\/3{
     width: 33.333333%;
+  }
+  .lg\:w-1\/4{
+    width: 25%;
   }
   .lg\:w-2\/3{
     width: 66.666667%;
@@ -3644,11 +3726,17 @@ a:hover .video-button svg circle{
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
+  .lg\:pb-32{
+    padding-bottom: 8rem;
+  }
   .lg\:pl-8{
     padding-left: 2rem;
   }
   .lg\:pr-10{
     padding-right: 2.5rem;
+  }
+  .lg\:pt-32{
+    padding-top: 8rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -3686,8 +3774,14 @@ a:hover .video-button svg circle{
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  .xl\:pl-8{
+    padding-left: 2rem;
+  }
   .xl\:pr-11{
     padding-right: 2.75rem;
+  }
+  .xl\:pr-14{
+    padding-right: 3.5rem;
   }
   .xl\:pr-24{
     padding-right: 6rem;
@@ -3706,11 +3800,11 @@ a:hover .video-button svg circle{
   .xxl\:pl-24{
     padding-left: 6rem;
   }
+  .xxl\:pl-28{
+    padding-left: 7rem;
+  }
   .xxl\:pr-24{
     padding-right: 6rem;
-  }
-  .xxl\:pr-28{
-    padding-right: 7rem;
   }
   .xxl\:pt-10{
     padding-top: 2.5rem;
