@@ -914,6 +914,9 @@ a:hover{
 .max-w-\[220px\]{
   max-width: 220px;
 }
+.max-w-\[566px\]{
+  max-width: 566px;
+}
 .translate-y-36{
   --tw-translate-y: 9rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3380,6 +3383,17 @@ a:hover .video-button svg circle{
 .solution-option-decor img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.page-title-decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-title-decor img {
+  width: 100%;
   object-fit: cover;
 }
 
