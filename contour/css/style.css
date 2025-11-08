@@ -641,9 +641,12 @@ p{
   }
 }
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
-  border-radius: 9999px;
+  border-radius: 5px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(4 53 103 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   font-family: Sora, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -652,6 +655,7 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
     width: 100%;
     padding: 12px 23px;
+    box-shadow: inset 0px 4px 4px 0px rgba(4, 53, 103, 0.26);
 }
 input:focus {
     outline: none !important;
@@ -662,9 +666,12 @@ input::placeholder{
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
 }
 textarea{
-  border-radius: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(4 53 103 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   font-family: Sora, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -672,8 +679,9 @@ textarea{
   --tw-text-opacity: 1;
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
     width: 100%;
-    height: 111px;
+    height: 159px;
     padding: 12px 23px;
+    box-shadow: inset 0px 4px 4px 0px rgba(4, 53, 103, 0.26);
 }
 textarea:focus {
     outline: none !important;
@@ -726,13 +734,13 @@ a:hover{
   --tw-text-opacity: 1;
   color: rgb(25 31 48 / var(--tw-text-opacity, 1));
 }
-.darkblue-btn{
+.darkblue-btn, input[type=submit]{
   --tw-bg-opacity: 1;
   background-color: rgb(4 53 103 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-.darkblue-btn:hover{
+.darkblue-btn:hover, input[type=submit]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
@@ -750,14 +758,6 @@ a:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-input[type=submit] {
-    width: 191px;
-    background: linear-gradient(139.04deg, rgb(26, 186, 255), rgb(3, 3, 173) 100%);
-    color: #fff;
-  }
-input[type=submit]:hover {
-    background: linear-gradient(139.04deg, rgb(3, 3, 173), rgb(26, 186, 255) 100%);
-  }
 .visible{
   visibility: visible;
 }
@@ -803,6 +803,9 @@ input[type=submit]:hover {
 .mb-10{
   margin-bottom: 2.5rem;
 }
+.mb-11{
+  margin-bottom: 2.75rem;
+}
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -835,6 +838,9 @@ input[type=submit]:hover {
 }
 .mb-9{
   margin-bottom: 2.25rem;
+}
+.mb-\[20px\]{
+  margin-bottom: 20px;
 }
 .mt-6{
   margin-top: 1.5rem;
@@ -904,6 +910,9 @@ input[type=submit]:hover {
 }
 .max-w-\[1345px\]{
   max-width: 1345px;
+}
+.max-w-\[220px\]{
+  max-width: 220px;
 }
 .translate-y-36{
   --tw-translate-y: 9rem;
@@ -1044,6 +1053,9 @@ input[type=submit]:hover {
 }
 .pb-16{
   padding-bottom: 4rem;
+}
+.pb-9{
+  padding-bottom: 2.25rem;
 }
 .pt-10{
   padding-top: 2.5rem;
@@ -3241,6 +3253,64 @@ a:hover .video-button svg circle{
   }
 }
 
+.checked {
+  padding-left: 65px;
+}
+.checked::before {
+  content: url(../img/checked-icon.svg);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.minerals-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 42%;
+}
+.minerals-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form-contact a {
+  color: #000;
+}
+.contact-form-contact a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(14 163 219 / var(--tw-text-opacity, 1));
+}
+
+.optional {
+  position: relative;
+}
+.optional::after {
+  content: "OPTIONAL";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.contact-form-backlight {
+  width: 221px;
+  height: 164px;
+  filter: blur(53px);
+  background: rgb(159, 205, 238);
+  position: absolute;
+  bottom: -46px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
 @media screen and (min-width: 768px) {
   .top-bar-contacts ul {
     display: flex;
@@ -3521,6 +3591,16 @@ a:hover .video-button svg circle{
     padding-left: calc((100% - 512px) / 2);
     padding-right: 64px;
   }
+  .icon-bg {
+    position: absolute;
+    width: calc(50% - 80px);
+    margin-left: auto;
+    right: 0;
+    bottom: 6rem;
+    top: 6rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 163 219 / var(--tw-bg-opacity, 1));
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-menu ul li {
@@ -3680,12 +3760,19 @@ a:hover .video-button svg circle{
   }
 }
 @media (min-width: 768px){
+  .md\:w-1\/2{
+    width: 50%;
+  }
   .md\:w-1\/3{
     width: 33.333333%;
   }
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .md\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 @media (min-width: 992px){
@@ -3728,8 +3815,14 @@ a:hover .video-button svg circle{
   .lg\:w-\[192px\]{
     width: 192px;
   }
+  .lg\:w-\[392px\]{
+    width: 392px;
+  }
   .lg\:w-\[calc\(100\%-130px\)\]{
     width: calc(100% - 130px);
+  }
+  .lg\:w-\[calc\(100\%-392px\)\]{
+    width: calc(100% - 392px);
   }
   .lg\:justify-between{
     justify-content: space-between;
@@ -3796,6 +3889,9 @@ a:hover .video-button svg circle{
   .xl\:w-2\/3{
     width: 66.666667%;
   }
+  .xl\:w-2\/5{
+    width: 40%;
+  }
   .xl\:w-\[600px\]{
     width: 600px;
   }
@@ -3809,6 +3905,9 @@ a:hover .video-button svg circle{
   .xl\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  .xl\:pl-24{
+    padding-left: 6rem;
   }
   .xl\:pl-8{
     padding-left: 2rem;
