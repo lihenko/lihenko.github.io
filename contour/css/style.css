@@ -972,6 +972,10 @@ a:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(201 109 17 / var(--tw-bg-opacity, 1));
 }
+.bg-\[\#CBEDFC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 237 252 / var(--tw-bg-opacity, 1));
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(25 31 48 / var(--tw-bg-opacity, 1));
@@ -1054,6 +1058,9 @@ a:hover{
 .pb-16{
   padding-bottom: 4rem;
 }
+.pb-8{
+  padding-bottom: 2rem;
+}
 .pb-9{
   padding-bottom: 2.25rem;
 }
@@ -1065,6 +1072,9 @@ a:hover{
 }
 .pt-16{
   padding-top: 4rem;
+}
+.pt-24{
+  padding-top: 6rem;
 }
 .pt-\[235px\]{
   padding-top: 235px;
@@ -1093,6 +1103,9 @@ a:hover{
 .font-medium{
   font-weight: 500;
 }
+.font-semibold{
+  font-weight: 600;
+}
 .uppercase{
   text-transform: uppercase;
 }
@@ -1102,6 +1115,10 @@ a:hover{
 .text-blue{
   --tw-text-opacity: 1;
   color: rgb(14 163 219 / var(--tw-text-opacity, 1));
+}
+.text-darkblue{
+  --tw-text-opacity: 1;
+  color: rgb(4 53 103 / var(--tw-text-opacity, 1));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -3311,6 +3328,61 @@ a:hover .video-button svg circle{
   z-index: -1;
 }
 
+.solution-logo {
+  left: 0;
+  top: -161px;
+}
+
+.marked-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.marked-list li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 61px;
+}
+.marked-list li::before {
+  content: url(../img/checkmark-list.svg);
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.solution-options-img {
+  display: inline-block;
+  position: relative;
+}
+.solution-options-img::before {
+  content: "";
+  display: block;
+  width: calc(100% - 38px);
+  height: calc(100% - 14px);
+  background-color: #28A9E0;
+  position: absolute;
+  top: -30px;
+  left: -28px;
+  z-index: 0;
+}
+.solution-options-img img {
+  z-index: 22;
+}
+
+.solution-option-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  z-index: 2;
+}
+.solution-option-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .top-bar-contacts ul {
     display: flex;
@@ -3601,6 +3673,9 @@ a:hover .video-button svg circle{
     --tw-bg-opacity: 1;
     background-color: rgb(14 163 219 / var(--tw-bg-opacity, 1));
   }
+  .solution-logo {
+    top: -193px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-menu ul li {
@@ -3815,6 +3890,9 @@ a:hover .video-button svg circle{
   .lg\:w-\[192px\]{
     width: 192px;
   }
+  .lg\:w-\[234px\]{
+    width: 234px;
+  }
   .lg\:w-\[392px\]{
     width: 392px;
   }
@@ -3855,6 +3933,12 @@ a:hover .video-button svg circle{
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
+  .lg\:pb-14{
+    padding-bottom: 3.5rem;
+  }
+  .lg\:pb-20{
+    padding-bottom: 5rem;
+  }
   .lg\:pb-32{
     padding-bottom: 8rem;
   }
@@ -3866,6 +3950,12 @@ a:hover .video-button svg circle{
   }
   .lg\:pt-32{
     padding-top: 8rem;
+  }
+  .lg\:pt-44{
+    padding-top: 11rem;
+  }
+  .lg\:pt-6{
+    padding-top: 1.5rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -3898,6 +3988,9 @@ a:hover .video-button svg circle{
   .xl\:w-\[calc\(100\%-600px\)\]{
     width: calc(100% - 600px);
   }
+  .xl\:gap-12{
+    gap: 3rem;
+  }
   .xl\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -3920,6 +4013,9 @@ a:hover .video-button svg circle{
   }
   .xl\:pr-24{
     padding-right: 6rem;
+  }
+  .xl\:pr-32{
+    padding-right: 8rem;
   }
 }
 @media (min-width: 1432px){
