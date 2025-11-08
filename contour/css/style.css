@@ -923,6 +923,9 @@ a:hover{
 .max-w-\[566px\]{
   max-width: 566px;
 }
+.max-w-\[973px\]{
+  max-width: 973px;
+}
 .translate-y-36{
   --tw-translate-y: 9rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
