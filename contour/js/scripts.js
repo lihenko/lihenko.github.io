@@ -171,35 +171,97 @@ document.addEventListener("scroll", function () {
 
 
 const dropdown = document.querySelector(".dropdown");
-const label = dropdown.querySelector(".dropdown-label");
-const items = dropdown.querySelectorAll(".dropdown-item a");
+if (dropdown){
+  const label = dropdown.querySelector(".dropdown-label");
+  const items = dropdown.querySelectorAll(".dropdown-item a");
 
-// toggle open
-label.addEventListener("click", (e) => {
-  e.stopPropagation();
-  dropdown.classList.toggle("is-active");
-});
-
-// click item
-items.forEach(item => {
-  item.addEventListener("click", (e) => {
+  // toggle open
+  label.addEventListener("click", (e) => {
     e.stopPropagation();
-    e.preventDefault();
-    const id = item.getAttribute('href');
-    label.innerHTML = `${item.textContent} <i class="bx-chevron-down"></i>`;
-    dropdown.classList.remove("is-active");
-    const offset = jQuery(id).offset().top - 100;
+    dropdown.classList.toggle("is-active");
+  });
 
-    window.scrollTo({
-      top: offset,
-      behavior: "smooth"
+  // click item
+  items.forEach(item => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const id = item.getAttribute('href');
+      label.innerHTML = `${item.textContent} <i class="bx-chevron-down"></i>`;
+      dropdown.classList.remove("is-active");
+      const offset = jQuery(id).offset().top - 100;
+
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+      });
     });
   });
-});
 
-// click outside
-window.addEventListener("click", () => {
-  dropdown.classList.remove("is-active");
+  // click outside
+  window.addEventListener("click", () => {
+    dropdown.classList.remove("is-active");
+  });
+}
+
+
+jQuery('.solutions-slider-wrap').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots:false,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-solution-nav'
+});
+jQuery('.slider-solution-nav').slick({
+  asNavFor: '.solutions-slider-wrap',
+
+  focusOnSelect: true,
+  slidesToScroll: 1,
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '80px',
+    speed: 800,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: '40px',
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '80px',
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '40px',
+        },
+      },
+    ],
 });
 
 
@@ -215,3 +277,5 @@ jQuery(document).on('click', 'a[href^="#"]', function (e) {
     behavior: "smooth"
   });
 });
+
+
