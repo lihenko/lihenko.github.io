@@ -219,46 +219,40 @@ jQuery('.slider-solution-nav').slick({
   focusOnSelect: true,
   slidesToScroll: 1,
     slidesToShow: 3,
-    arrows: false,
+    arrows: true,
     dots: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '80px',
     speed: 800,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          centerPadding: '40px',
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
-          centerPadding: '120px',
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerPadding: '120px',
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerPadding: '80px',
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerPadding: '40px',
         },
       },
     ],

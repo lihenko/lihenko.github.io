@@ -863,14 +863,17 @@ a:hover{
 .hidden{
   display: none;
 }
-.aspect-\[1736\/742\]{
-  aspect-ratio: 1736/742;
-}
 .h-4{
   height: 1rem;
 }
 .h-\[130px\]{
   height: 130px;
+}
+.h-\[400px\]{
+  height: 400px;
+}
+.h-\[800px\]{
+  height: 800px;
 }
 .h-full{
   height: 100%;
@@ -3339,8 +3342,8 @@ a:hover .video-button svg circle{
   display: flex !important;
 }
 .slider-solution-nav .slider-solution-nav-item {
-  padding-left: 57px;
-  padding-right: 57px;
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
 }
 .slider-solution-nav .slider-solution-nav-item .slider-solution-nav-item-wrap {
@@ -3351,6 +3354,10 @@ a:hover .video-button svg circle{
   padding-bottom: 61px;
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .slider-solution-nav .slider-solution-nav-item .slider-solution-nav-item-wrap .slider-solution-icon {
   margin-bottom: 26px;
@@ -3395,7 +3402,46 @@ a:hover .video-button svg circle{
 .slider-solution-nav .slider-solution-nav-item.slick-slide {
   height: inherit !important;
 }
+.slider-solution-nav .slick-list {
+  padding: 0 10% 0 10% !important;
+}
+.slider-solution-nav .slick-arrow {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider-solution-nav .slick-next {
+  right: 0;
+  top: calc(50% - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-solution-nav .slick-prev {
+  left: 0;
+  top: calc(50% - 125px);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.solutions-slider-wrap.slick-slider {
+  height: inherit !important;
+}
+.solutions-slider-wrap .slick-track {
+  display: flex !important;
+}
+
+@media screen and (min-width: 480px) {
+  .slider-solution-nav {
+    position: relative;
+    margin-top: -150px;
+  }
+  .slider-solution-nav .slick-list {
+    padding: 0 15% 0 15% !important;
+  }
+}
 @media screen and (min-width: 768px) {
   .top-bar-contacts ul {
     display: flex;
@@ -3607,6 +3653,10 @@ a:hover .video-button svg circle{
   .solution-logo {
     top: -193px;
   }
+  .slider-solution-nav {
+    position: relative;
+    margin-top: -250px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-menu ul li {
@@ -3626,6 +3676,10 @@ a:hover .video-button svg circle{
   .left {
     padding-left: calc(50vw - 708px);
     padding-right: 108px;
+  }
+  .slider-solution-nav {
+    position: relative;
+    margin-top: -150px;
   }
 }
 .hover\:bg-blue:hover{
@@ -3715,6 +3769,15 @@ a:hover .video-button svg circle{
   }
   .lg\:block{
     display: block;
+  }
+  .lg\:aspect-\[1736\/742\]{
+    aspect-ratio: 1736/742;
+  }
+  .lg\:h-auto{
+    height: auto;
+  }
+  .lg\:h-full{
+    height: 100%;
   }
   .lg\:w-1\/2{
     width: 50%;
