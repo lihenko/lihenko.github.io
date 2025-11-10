@@ -655,10 +655,19 @@ p{
   margin-left: auto;
   margin-right: auto;
 }
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+  }
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
-  border-radius: 9999px;
+  border-radius: 3px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(143 140 127 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(236 234 228 / var(--tw-bg-opacity, 1));
   font-family: Jost, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -666,15 +675,17 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity, 1));
     width: 100%;
-    padding: 12px 23px;
+    padding: 10px 12px;
 }
 input:focus {
     outline: none !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(34 34 34 / var(--tw-border-opacity, 1));
   }
 input::placeholder{
   font-family: Jost, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(34 34 34 / var(--tw-text-opacity, 1));
+  color: rgb(79 74 69 / var(--tw-text-opacity, 1));
 }
 textarea{
   border-radius: 30px;
@@ -698,6 +709,27 @@ textarea::placeholder{
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity, 1));
 }
+select{
+  border-radius: 3px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(143 140 127 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 234 228 / var(--tw-bg-opacity, 1));
+  font-family: Jost, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity, 1));
+    width: 100%;
+    padding: 10px 12px;
+}
+select:focus {
+    outline: none !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(34 34 34 / var(--tw-border-opacity, 1));
+  }
 a{
   display: inline-block;
   cursor: pointer;
@@ -729,26 +761,18 @@ a:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.load-more-btn{
+.load-more-btn, input[type=submit]{
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity, 1));
 }
-.load-more-btn:hover{
+.load-more-btn:hover, input[type=submit]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-.load-more-btn {
+.load-more-btn, input[type=submit] {
     background-color: rgba(34, 34, 34, 0.05);
-  }
-input[type=submit] {
-    width: 191px;
-    background: linear-gradient(139.04deg, rgb(26, 186, 255), rgb(3, 3, 173) 100%);
-    color: #fff;
-  }
-input[type=submit]:hover {
-    background: linear-gradient(139.04deg, rgb(3, 3, 173), rgb(26, 186, 255) 100%);
   }
 .visible{
   visibility: visible;
@@ -810,6 +834,9 @@ input[type=submit]:hover {
 }
 .mb-12{
   margin-bottom: 3rem;
+}
+.mb-16{
+  margin-bottom: 4rem;
 }
 .mb-2{
   margin-bottom: 0.5rem;
@@ -938,6 +965,10 @@ input[type=submit]:hover {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -957,6 +988,10 @@ input[type=submit]:hover {
 .px-\[6px\]{
   padding-left: 6px;
   padding-right: 6px;
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .py-20{
   padding-top: 5rem;
@@ -3344,6 +3379,140 @@ a:hover .video-button svg circle{
   transform: rotate(180deg);
 }
 
+.checkcontainer {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radiobtn {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 2px solid #8F8C7F;
+}
+
+/* On mouse-over, add a grey background color */
+.checkcontainer:hover input ~ .radiobtn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkcontainer input:checked ~ .radiobtn {
+  border: 2px solid #222222;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkcontainer input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkcontainer .radiobtn:after {
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #222222;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #8F8C7F;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkcontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkcontainer input:checked ~ .checkmark {
+  border: 2px solid #222222;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkcontainer input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkcontainer .checkmark::after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #222222;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.footer-menu {
+  display: none;
+  padding-left: 16px;
+}
+.footer-menu.active {
+  display: block;
+}
+
+.footer-menu-title {
+  cursor: pointer;
+  position: relative;
+}
+.footer-menu-title::after {
+  content: url(../img/plus-mobile-menu.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer-menu-title.active::after {
+  content: url(../img/minus-mobile-footer-menu.svg);
+}
+
 @media screen and (min-width: 640px) {
   .faq-item {
     margin-bottom: 24px;
@@ -3373,6 +3542,16 @@ a:hover .video-button svg circle{
   }
   .carousel .carousel-wrap .slick-list {
     padding: 0 160px 0 0;
+  }
+  .footer-menu {
+    display: block;
+    padding-left: 0;
+  }
+  .footer-menu-title {
+    cursor: auto;
+  }
+  .footer-menu-title::after {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -3530,6 +3709,9 @@ a:hover .video-button svg circle{
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
   .lg\:flex{
     display: flex;
   }
@@ -3550,6 +3732,10 @@ a:hover .video-button svg circle{
   }
   .lg\:justify-between{
     justify-content: space-between;
+  }
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .lg\:py-0{
     padding-top: 0px;
@@ -3573,11 +3759,21 @@ a:hover .video-button svg circle{
   .xl\:max-w-\[1120px\]{
     max-width: 1120px;
   }
+  .xl\:max-w-\[581px\]{
+    max-width: 581px;
+  }
+  .xl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   .xl\:pb-24{
     padding-bottom: 6rem;
   }
   .xl\:pr-24{
     padding-right: 6rem;
+  }
+  .xl\:text-\[35px\]{
+    font-size: 35px;
   }
 }
 @media (min-width: 1728px){

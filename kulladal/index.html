@@ -486,6 +486,85 @@
             </div>
           </div>
         </section>
+        <section class="order-catalog py-16">
+          <div class="container">
+            <div class="flex flex-wrap xl:px-20">
+              <div class="w-full px-6 mb-12 lg:mb-0 lg:w-1/2">
+                <img src="./img/katalog-img.webp" alt="" class="mx-auto px-12 lg:ml-0">
+              </div>
+              <div class="w-full px-6 lg:w-1/2 lg:px-16">
+                <h3 class="xl:text-[35px] mb-3">Beställ vår katalog</h3>
+                <div class="mb-4">Få exklusiv köksinspiration i vår 112-sidiga katalog. Fyll i dina uppgifter så skickar vi ett kostnadsfritt exemplar hem till dig.</div>
+                <div class="form-selector mb-16">
+                  <p class="font-medium mb-2">1. VÄLJ VERSION:</p>
+                  <form action="">
+                    <label class="checkcontainer">Fysisk katalog, skickas per post
+                      <input type="radio" name="katalog-type">
+                      <span class="radiobtn"></span>
+                    </label>
+                    <label class="checkcontainer">Digital version, för nerladdning
+                      <input type="radio" name="katalog-type">
+                      <span class="radiobtn"></span>
+                    </label>
+                    <label class="checkcontainer">Både och!
+                      <input type="radio" name="katalog-type">
+                      <span class="radiobtn"></span>
+                    </label>
+                  </form>
+                </div>
+                <div class="form-order hidden">
+                  <p class="font-medium mb-2">2. DINA UPPGIFTER</p>
+                  <form action="">
+                    <div class="flex flex-wrap -mx-3">
+                      <div class="w-full px-3 mb-3">
+                        <label for="">Namn *</label>
+                        <input type="text" placeholder="Förnamn Efternamn">
+                      </div>
+                      <div class="w-full px-3 mb-3">
+                        <label for="">E-postadress *</label>
+                        <input type="email">
+                      </div>
+                      <div class="w-full px-3 mb-3">
+                        <label for="">Adress *</label>
+                        <input type="text">
+                      </div>
+                      <div class="w-1/2 px-3 mb-3">
+                        <label for="">Postnr *</label>
+                        <input type="text">
+                      </div>
+                      <div class="w-1/2 px-3 mb-3">
+                        <label for="">Ort *</label>
+                        <input type="text">
+                      </div>
+                      <div class="w-full px-3 mb-3">
+                        <label for="">Land *</label>
+                        <select name="" id="">
+                          <option value="">Välj</option>
+                          <option value="">Götaland</option>
+                          <option value="">Svealand</option>
+                          <option value="">Norrland</option>
+                        </select>
+                      </div>
+                      <div class="w-full px-3 mb-3">
+                        <label class="checkcontainer">Ja tack till nyhetsmail med inspiration och tips!
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="checkcontainer">Jag godkänner Kulladals integritetspolicy
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="w-full px-3">
+                        <input type="submit" value="BESTÄLL">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer class="bg-brown pt-24">
       <div class="container xxl:px-14">
@@ -495,10 +574,10 @@
               <img src="./img/Logo-White.svg" alt="">
             </a>
           </div>
-          <div class="w-full px-6 xxl:px-0 lg:w-1/2 max-w-[581px]">
+          <div class="w-full px-6 xxl:px-0 lg:w-1/2 xl:max-w-[581px]">
             <div class="flex flex-wrap">
-              <div class="w-1/2 px-3 md:w-1/4 mb-8">
-                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-full px-3 md:w-1/4 mb-8">
+                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   UPPTÄCK
                 </div>
                 <ul class="footer-menu">
@@ -516,8 +595,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/2 px-3 md:w-1/4 mb-8">
-                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-full px-3 md:w-1/4 mb-8">
+                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   RUBRIK
                 </div>
                 <ul class="footer-menu">
@@ -538,8 +617,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/2 px-3 md:w-1/4 mb-8">
-                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-full px-3 md:w-1/4 mb-8">
+                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   RUBRIK
                 </div>
                 <ul class="footer-menu">
@@ -560,8 +639,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/2 px-3 md:w-1/4 mb-8">
-                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-full px-3 md:w-1/4 mb-8">
+                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   INSPIRATION
                 </div>
                 <ul class="footer-menu">
@@ -610,7 +689,10 @@
           </div>
         </div>
         <div class="flex flex-wrap px-6 xxl:px-0 py-8">
-          <div class="w-full text-center md:text-left md:w-1/2 mb-6 md:mb-0 md:order-2">
+          <div class="w-full text-center md:text-left md:w-1/2 mb-6 md:mb-0">
+            <div class="text-sm lg:text-[15px] text-[#DFDED7] uppercase ">©Kulladal, 2025.</div>
+          </div>
+          <div class="w-full text-center md:text-left md:w-1/2">
             <ul class="copyright-menu">
               <li>
                 <a href="#">Sekretesspolicy</a>
@@ -620,9 +702,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-full text-center md:text-left md:w-1/2 md:order-1">
-            <div class="text-sm lg:text-[15px] text-[#DFDED7] uppercase ">©Kulladal, 2025.</div>
-          </div>
+          
           
         </div>
       </div>

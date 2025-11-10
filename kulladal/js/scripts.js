@@ -230,6 +230,46 @@ document.addEventListener('click', e => {
 });
 
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const radios = document.querySelectorAll('input[name="katalog-type"]');
+  const formOrder = document.querySelector('.form-order');
+
+  radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      formOrder.classList.remove('hidden');
+    });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const titles = document.querySelectorAll('.footer-menu-title');
+
+  titles.forEach(title => {
+    title.addEventListener('click', () => {
+      const menu = title.nextElementSibling;
+      const isActive = title.classList.contains('active');
+
+      // Спочатку прибираємо active з усіх
+      titles.forEach(t => {
+        t.classList.remove('active');
+        t.nextElementSibling.classList.remove('active');
+      });
+
+      // Якщо клік був по вже відкритому — не відкриваємо знову
+      if (!isActive) {
+        title.classList.add('active');
+        if (menu && menu.classList.contains('footer-menu')) {
+          menu.classList.add('active');
+        }
+      }
+    });
+  });
+});
+
+
+
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
