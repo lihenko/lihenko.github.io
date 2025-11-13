@@ -268,6 +268,73 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.wpcf7-list-item').forEach(item => {
+    const label = item.querySelector('.wpcf7-list-item-label');
+    const input = item.querySelector('input[type="checkbox"], input[type="radio"]');
+    
+    if (label && input) {
+      // Перемістити label перед input
+      input.parentNode.insertBefore(label, input);
+
+      // Додати <span class="checkmark"></span> після input
+      const checkmark = document.createElement('span');
+      checkmark.className = 'checkmark';
+      input.insertAdjacentElement('afterend', checkmark);
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const filterLinks = document.querySelectorAll('.filterera [data-color]');
+  const products = document.querySelectorAll('.product-color-list [data-color]');
+
+  filterLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const selectedColor = link.dataset.color;
+      const isAlreadyActive = link.classList.contains('selected');
+
+      // зняти активність з усіх
+      filterLinks.forEach(l => l.classList.remove('active', 'selected'));
+      
+      // якщо повторний клік — показати все
+      if (isAlreadyActive) {
+        products.forEach(showProduct);
+        return;
+      }
+
+      // позначити активний фільтр
+      link.classList.add('active', 'selected');
+
+      // фільтруємо
+      products.forEach(product => {
+        const colors = product.dataset.color.split(' ');
+        if (colors.includes(selectedColor)) {
+          showProduct(product);
+        } else {
+          hideProduct(product);
+        }
+      });
+    });
+  });
+
+  // функції для анімації
+  function showProduct(el) {
+    el.style.display = 'block';
+    requestAnimationFrame(() => {
+      el.style.opacity = '1';
+      el.style.transform = 'scale(1)';
+    });
+  }
+
+  function hideProduct(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'scale(0.95)';
+    setTimeout(() => el.style.display = 'none', 300);
+  }
+});
 
 
 Fancybox.bind("[data-fancybox]", {

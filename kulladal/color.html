@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blocks Page</title>
+  <title>Blog Page</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<body class="page-template-template-hero-page">
+<body>
   <div id="mobile-menu">
     <div class="mobile-menu-wrap">
       <ul>
@@ -286,7 +286,7 @@
           <div class="flex -mx-3 px-3 items-center justify-center xxl:px-16">
             <div class="w-[160px] lg:w-[192px] px-3 flex py-6 lg:py-0">
               <a href="/">
-                <img src="./img/Logo-Hero.svg" alt="">
+                <img src="./img/Logo-Black.svg" alt="">
               </a>
             </div>
             <div class="hidden lg:flex lg:justify-end lg:items-center px-3 w-[calc(100%-192px)]">
@@ -329,243 +329,121 @@
       </div>
     </header>
     <main class="pt-11">
-        <section class="hero relative">
-            <div class="hero-title px-3 absolute z-10 top-1/2 left-1/2 text-center w-full sm:max-w-[600px] xl:max-w-[1120px] mx-auto">
-                <h1 class="text-white uppercase">Handgjorda massiva träkök med modern funktion</h1>
+      <section class="colors-grid pt-12 pb-28">
+        <div class="max-w-[674px] mx-auto py-12 px-6 md:py-16 md:px-8 xl:max-w-[682px] xl:text-center">
+            <h2 class="mb-4">Kärleken till linoljefärg</h2>
+            <div>
+                <p>Våra kök målas med linoljefärg, så som möbler målades förr. Vi har tagit fram en egen färgpalett med flera kulörer som du kan välja på om du väljer linoljefärg. Ditt kök grundmålas i snickeriet, två strykningar, och slutstryks sedan hemma hos dig efter montering.</p>
+                <p>Du kan också få ditt kök målat i konventionell färg. Du kan även välja att få köket grundmålat eller helt omålat, och sedan måla själv.</p>
             </div>
-            <div class="hero-slider-wrap">
-                <div class="hero-slider">
-                    <div class="hero-slider-item">
-                        <img src="./img/hero-slider-1.webp" alt="" class="w-lvw h-svh object-cover">
+        </div>
+        <div class="filterera mb-8">
+            <div class="container px-6 md:px-8">
+                <div class="font-medium text-[15px]">Filterera</div>
+                <ul>
+                    <li>
+                        <a href="#" data-color="beige">Beige</a>
+                    </li>
+                    <li>
+                        <a href="#" data-color="röd">röd</a>
+                    </li>
+                    <li>
+                        <a href="#" data-color="gul">Gul</a>
+                    </li>
+                    <li>
+                        <a href="#" data-color="neutral">Neutral</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-color-list">
+            <div class="container px-6 md:px-8">
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="beige neutral">
+                        <a href="./img/colors-1.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="Item name">
+                            <img src="./img/colors-1.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">Item name</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
                     </div>
-                    <div class="hero-slider-item">
-                        <img src="./img/hero-slider-2.webp" alt="" class="w-lvw h-svh object-cover">
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="röd">
+                        <a href="./img/colors-2.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 12">
+                            <img src="./img/colors-2.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 12</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
                     </div>
-                    <div class="hero-slider-item">
-                        <img src="./img/hero-slider-3.webp" alt="" class="w-lvw h-svh object-cover">
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="beige neutral">
+                        <a href="./img/colors-3.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 69">
+                            <img src="./img/colors-3.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 69</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
                     </div>
-                    <div class="hero-slider-item">
-                        <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" playsinline="" autoplay="" muted="" loop="" class="w-lvw h-svh object-cover"></video>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="gul neutral">
+                        <a href="./img/colors-4.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 31">
+                            <img src="./img/colors-4.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 31</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="beige neutral">
+                        <a href="./img/colors-1.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="Item name">
+                            <img src="./img/colors-1.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">Item name</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="röd">
+                        <a href="./img/colors-2.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 12">
+                            <img src="./img/colors-2.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 12</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="beige neutral">
+                        <a href="./img/colors-3.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 69">
+                            <img src="./img/colors-3.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 69</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="gul neutral">
+                        <a href="./img/colors-4.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 31">
+                            <img src="./img/colors-4.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 31</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2 md:w-1/3 mb-12" data-color="gul neutral">
+                        <a href="./img/colors-5.webp" class="block w-full aspect-[507/760] mb-3" data-fancybox="colors-1" data-caption="NR. 48">
+                            <img src="./img/colors-5.webp" alt="" class="w-full h-full object-cover">
+                        </a>
+                        <div class="flex -mx-3">
+                            <div class="product-color-name px-3 font-medium text-[15px]">NR. 48</div>
+                            <div class="product-color-link px-3"><a href="#" class="font-medium text-[15px] underline text-[#6A635D]">Mer info</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="kitchen-style pb-8 sm:pb-16 xl:pb-24 xxl:pb-32">
-          <div class="px-6 pt-16 pb-8">
-            <div class="py-8 px-6">
-              <div class="text-center">
-                <h3 class="xxl:text-[35px] mb-4">VÅRA STILAR</h3>
-                <div class="sm:max-w-[572px] lg:max-w-[640px] mx-auto mb-8 md:mb-14 lg:mb-16">
-                  Kulladals kök byggs i massivt trä och ges sin unika karaktär genom handmålning. Varje lösning anpassas efter ditt hem och din smak, så att oavsett stil får du ett kök som känns personligt och genuint.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap -mx-[6px]">
-              <div class="w-full px-[6px] md:w-1/2 xl:w-1/3 mb-2 md:mb-3">
-                <div class="h-full relative">
-                  <div class="kitchen-title max-w-[196px]">
-                    <h4 class="text-white text-center tracking-wider">LEGACY</h4>
-                  </div>
-                  <img src="./img/kitchen-styles.webp" alt="" class="w-full aspect-[825/1238] object-cover">
-                </div>
-              </div>
-              <div class="w-full px-[6px] md:w-1/2 xl:w-1/3 mb-2 md:mb-3">
-                <div class="h-full relative">
-                  <div class="kitchen-title max-w-[196px]">
-                    <h4 class="text-white text-center tracking-wider">LEG ACY sd sdf xd fg</h4>
-                  </div>
-                  <img src="./img/kitchen-styles.webp" alt="" class="w-full aspect-[825/1238] object-cover">
-                </div>
-              </div>
-              <div class="w-full px-[6px] md:w-1/2 xl:w-1/3 mb-2 md:mb-3">
-                <div class="h-full relative">
-                  <div class="kitchen-title max-w-[196px]">
-                    <h4 class="text-white text-center tracking-wider">Cabinette</h4>
-                  </div>
-                  <img src="./img/kitchen-styles.webp" alt="" class="w-full aspect-[825/1238] object-cover">
-                </div>
-              </div>
-          </div>
-        </section>
-        <section class="carousel py-8 lg:py-12">
-          <div class="carousel-wrap">
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">Praesent amet vel sed feugiat</h4></div>
-                <img src="./img/hero-slider-2.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">vel sed feugiat</h4></div>
-                <img src="./img/hero-slider-1.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">Praesent amet</h4></div>
-                <img src="./img/hero-slider-3.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">Praesent amet vel sed feugiat</h4></div>
-                <img src="./img/kitchen-styles.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">Praesent amet</h4></div>
-                <img src="./img/Blog-5.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="h-full aspect-[533/800] relative">
-                <div class="carousel-title"><h4 class="text-white text-center">Lorem ipsum dolor</h4></div>
-                <img src="./img/Blog-1.webp" alt="" class="w-full h-full object-cover">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="faq py-20">
-          <div class="container">
-            <div class="flex flex-wrap">
-              <div class="w-full px-16 mb-12 sm:mb-16 lg:mb-0 lg:w-1/2 xl:pr-24 xxl:pr-40">
-                <h2 class="h1 mb-3 text-transform-none">Vanliga frågor</h2>
-                <div>
-                  Här har vi samlat de vanligaste funderingarna vi får om våra kök, vårt hantverk och hur processen går till. Hittar du inte det du söker? Hör gärna av dig – vi hjälper dig gärna vidare.
-                </div>
-              </div>
-              <div class="w-full px-16 lg:w-1/2">
-                <div class="faq-list">
-                  <div class="faq-item">
-                    <div class="faq-question">Byggs Kulladalkök i standardmått?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett <a href="#">gammalt hus med udda mått</a>. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Köken pusslades ihop likt legobitar?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett <a href="#">gammalt hus med udda mått</a>. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Hur lång är leveranstiden?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett <a href="#">gammalt hus med udda mått</a>. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Byggs Kulladalkök i standardmått?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett gammalt hus med udda mått. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Kan ni bygga kök för gamla, sneda hus?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett gammalt hus med udda mått. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Var tillverkas köken?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett gammalt hus med udda mått. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question">Kan jag måla köket själv?</div>
-                    <div class="faq-answer">
-                      Ja, standarden togs fram för att effektivisera byggprocessen, och användes fullt ut i till exempel miljonprogrammen. Köken pusslades ihop likt legobitar, där varje skåp hade sitt bestämda mått. Nackdelen med standardmått är förstås att det aldrig passar perfekt, särskilt om det är ett gammalt hus med udda mått. Det blir alltid kompromisser för att legobitarna ska passa.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="order-catalog py-16">
-          <div class="container">
-            <div class="flex flex-wrap xl:px-20">
-              <div class="w-full px-6 mb-12 lg:mb-0 lg:w-1/2">
-                <img src="./img/katalog-img.webp" alt="" class="mx-auto px-12 lg:ml-0">
-              </div>
-              <div class="w-full px-6 lg:w-1/2 lg:px-16">
-                <h3 class="xl:text-[35px] mb-3">Beställ vår katalog</h3>
-                <div class="mb-4">Få exklusiv köksinspiration i vår 112-sidiga katalog. Fyll i dina uppgifter så skickar vi ett kostnadsfritt exemplar hem till dig.</div>
-                <div class="form-selector mb-16">
-                  <p class="font-medium mb-2">1. VÄLJ VERSION:</p>
-                  <form action="">
-                    <label class="checkcontainer">Fysisk katalog, skickas per post
-                      <input type="radio" name="katalog-type">
-                      <span class="radiobtn"></span>
-                    </label>
-                    <label class="checkcontainer">Digital version, för nerladdning
-                      <input type="radio" name="katalog-type">
-                      <span class="radiobtn"></span>
-                    </label>
-                    <label class="checkcontainer">Både och!
-                      <input type="radio" name="katalog-type">
-                      <span class="radiobtn"></span>
-                    </label>
-                  </form>
-                </div>
-                <div class="form-order hidden">
-                  <p class="font-medium mb-2">2. DINA UPPGIFTER</p>
-                  <form action="">
-
-<div class="flex flex-wrap -mx-3">
-<div class="w-full px-3 mb-3">
-<label for="">Namn *</label>
-<input type="text" placeholder="Förnamn Efternamn">
-</div>
-<div class="w-full px-3 mb-3">
-<label for="">E-postadress *</label>
-<input type="email">
-</div>
-<div class="w-full px-3 mb-3">
-<label for="">Adress *</label>
-<input type="text">
-</div>
-<div class="w-1/2 px-3 mb-3">
-<label for="">Postnr *</label>
-<input type="text">
-</div>
-<div class="w-1/2 px-3 mb-3">
-<label for="">Ort *</label>
-<input type="text">
-</div>
-<div class="w-full px-3 mb-3">
-<label for="">Land *</label>
-<select name="" id="">
-  <option value="">Välj</option>
-  <option value="">Götaland</option>
-  <option value="">Svealand</option>
-  <option value="">Norrland</option>
-</select>
-</div>
-<div class="w-full px-3 mb-3">
-<label class="checkcontainer">Ja tack till nyhetsmail med inspiration och tips!
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="checkcontainer">Jag godkänner Kulladals integritetspolicy
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-</div>
-<div class="w-full px-3">
-<input type="submit" value="BESTÄLL">
-</div>
-</div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
     </main>
     <footer class="bg-brown pt-24">
       <div class="container xxl:px-14">
@@ -575,10 +453,10 @@
               <img src="./img/Logo-White.svg" alt="">
             </a>
           </div>
-          <div class="w-full px-6 xxl:px-0 lg:w-1/2 xl:max-w-[581px]">
+          <div class="w-full px-6 xxl:px-0 lg:w-1/2 max-w-[581px]">
             <div class="flex flex-wrap">
-              <div class="w-full px-3 md:w-1/4 mb-8">
-                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-1/2 px-3 md:w-1/4 mb-8">
+                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   UPPTÄCK
                 </div>
                 <ul class="footer-menu">
@@ -596,8 +474,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-full px-3 md:w-1/4 mb-8">
-                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-1/2 px-3 md:w-1/4 mb-8">
+                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   RUBRIK
                 </div>
                 <ul class="footer-menu">
@@ -618,8 +496,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-full px-3 md:w-1/4 mb-8">
-                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-1/2 px-3 md:w-1/4 mb-8">
+                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   RUBRIK
                 </div>
                 <ul class="footer-menu">
@@ -640,8 +518,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-full px-3 md:w-1/4 mb-8">
-                <div class="footer-menu-title text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
+              <div class="w-1/2 px-3 md:w-1/4 mb-8">
+                <div class="text-[17px] text-[#F6F4F0] font-medium mb-4 uppercase">
                   INSPIRATION
                 </div>
                 <ul class="footer-menu">
@@ -661,7 +539,7 @@
         </div>
         <div class="flex flex-wrap pb-8 border-b border-white border-opacity-30 items-center">
           <div class="w-full px-6 xxl:px-0 md:w-1/2">
-            <h4 class="text-[#DFDED7] text-center md:text-left mb-6 md:mb-0 text-transform-none">Beställ vår <a href="#" class="text-[#DFDED7] hover:text-white underline">katalog</a></h4>
+            <h4 class="text-[#DFDED7] text-center md:text-left mb-6 md:mb-0">Beställ vår <a href="#" class="text-[#DFDED7] hover:text-white underline">katalog</a></h4>
           </div>
           <div class="w-full px-6 xxl:px-0 md:w-1/2">
             <ul class="social-menu">
@@ -690,10 +568,7 @@
           </div>
         </div>
         <div class="flex flex-wrap px-6 xxl:px-0 py-8">
-          <div class="w-full text-center md:text-left md:w-1/2 mb-6 md:mb-0">
-            <div class="text-sm lg:text-[15px] text-[#DFDED7] uppercase ">©Kulladal, 2025.</div>
-          </div>
-          <div class="w-full text-center md:text-left md:w-1/2">
+          <div class="w-full text-center md:text-left md:w-1/2 mb-6 md:mb-0 md:order-2">
             <ul class="copyright-menu">
               <li>
                 <a href="#">Sekretesspolicy</a>
@@ -703,7 +578,9 @@
               </li>
             </ul>
           </div>
-          
+          <div class="w-full text-center md:text-left md:w-1/2 md:order-1">
+            <div class="text-sm lg:text-[15px] text-[#DFDED7] uppercase ">©Kulladal, 2025.</div>
+          </div>
           
         </div>
       </div>

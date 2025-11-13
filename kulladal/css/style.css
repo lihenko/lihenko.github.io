@@ -536,24 +536,23 @@ h1, .h1{
 }
 h2, .h2{
   font-family: EBGaramond, sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
   line-height: 1.1;
 }
 @media (min-width: 992px){
   h2, .h2{
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (min-width: 1200px){
   h2, .h2{
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 @media (min-width: 1728px){
   h2, .h2{
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 h3, .h3{
@@ -874,6 +873,9 @@ a:hover{
 .hidden{
   display: none;
 }
+.aspect-\[507\/760\]{
+  aspect-ratio: 507/760;
+}
 .aspect-\[533\/800\]{
   aspect-ratio: 533/800;
 }
@@ -915,6 +917,9 @@ a:hover{
 }
 .max-w-\[581px\]{
   max-width: 581px;
+}
+.max-w-\[674px\]{
+  max-width: 674px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -989,6 +994,10 @@ a:hover{
   padding-left: 6px;
   padding-right: 6px;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1029,6 +1038,9 @@ a:hover{
 .text-center{
   text-align: center;
 }
+.text-\[15px\]{
+  font-size: 15px;
+}
 .text-\[17px\]{
   font-size: 17px;
 }
@@ -1051,6 +1063,10 @@ a:hover{
 }
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+.text-\[\#6A635D\]{
+  --tw-text-opacity: 1;
+  color: rgb(106 99 93 / var(--tw-text-opacity, 1));
 }
 .text-\[\#DFDED7\]{
   --tw-text-opacity: 1;
@@ -3278,7 +3294,7 @@ a:hover .video-button svg circle{
 }
 
 .hero {
-  margin-top: -125px;
+  margin-top: -81px;
 }
 
 .kitchen-title {
@@ -3513,6 +3529,36 @@ a:hover .video-button svg circle{
   content: url(../img/minus-mobile-footer-menu.svg);
 }
 
+.filterera ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filterera ul li a {
+  padding: 9px 10px;
+  font-size: 12px;
+  color: #6A635D;
+  text-transform: uppercase;
+  border: 1px solid #D5D3CC;
+  border-radius: 2px;
+  line-height: 1;
+  transition: 0.2s;
+}
+.filterera ul li a.active {
+  background-color: #4F4A45;
+  color: #fff;
+}
+.filterera ul li a:hover {
+  background-color: #4F4A45;
+  color: #fff;
+}
+
+.product-color-list [data-color] {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 @media screen and (min-width: 640px) {
   .faq-item {
     margin-bottom: 24px;
@@ -3584,7 +3630,7 @@ a:hover .video-button svg circle{
     color: rgb(79 74 69 / var(--tw-text-opacity, 1));
   }
   .hero {
-    margin-top: -140px;
+    margin-top: -96px;
   }
   .page-template-template-hero-page:not(.menu-fixed) .main-menu ul li a{
     font-size: 16px;
@@ -3666,6 +3712,9 @@ a:hover .video-button svg circle{
   .sm\:mb-16{
     margin-bottom: 4rem;
   }
+  .sm\:w-1\/2{
+    width: 50%;
+  }
   .sm\:max-w-\[572px\]{
     max-width: 572px;
   }
@@ -3695,8 +3744,19 @@ a:hover .video-button svg circle{
   .md\:w-1\/2{
     width: 50%;
   }
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
   .md\:w-1\/4{
     width: 25%;
+  }
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .md\:text-left{
     text-align: left;
@@ -3762,6 +3822,9 @@ a:hover .video-button svg circle{
   .xl\:max-w-\[581px\]{
     max-width: 581px;
   }
+  .xl\:max-w-\[682px\]{
+    max-width: 682px;
+  }
   .xl\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -3771,6 +3834,9 @@ a:hover .video-button svg circle{
   }
   .xl\:pr-24{
     padding-right: 6rem;
+  }
+  .xl\:text-center{
+    text-align: center;
   }
   .xl\:text-\[35px\]{
     font-size: 35px;
