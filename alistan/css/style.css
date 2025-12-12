@@ -987,10 +987,6 @@ a:hover{
 .leading-tight{
   line-height: 1.25;
 }
-.text-\[\#DFDED7\]{
-  --tw-text-opacity: 1;
-  color: rgb(223 222 215 / var(--tw-text-opacity, 1));
-}
 .text-blue{
   --tw-text-opacity: 1;
   color: rgb(0 80 157 / var(--tw-text-opacity, 1));
@@ -3734,6 +3730,15 @@ svg {
 }
 .footer-menu a:hover {
   color: #FDC500;
+}
+
+.social-menu a svg path, .footer-phone a svg path, .footer-email a svg path{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.social-menu a:hover svg path, .footer-phone a:hover svg path, .footer-email a:hover svg path {
+  fill: #FDC500;
 }
 
 @media screen and (min-width: 992px) {
