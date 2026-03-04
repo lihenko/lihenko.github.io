@@ -119,3 +119,52 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const selects = document.querySelectorAll(".custom-select");
+  selects.forEach((selectWrapper) => {
+    const select = selectWrapper.querySelector("select");
+    const trigger = document.createElement("div");
+    trigger.classList.add("custom-select-trigger");
+    trigger.innerHTML = `
+      <span>${select.options[select.selectedIndex].text}</span>
+      <div class="custom-select-arrow"></div>
+    `;
+    selectWrapper.appendChild(trigger);
+    const optionsContainer = document.createElement("div");
+    optionsContainer.classList.add("custom-options");
+    Array.from(select.options).forEach((option) => {
+      const customOption = document.createElement("div");
+      customOption.classList.add("custom-option");
+      customOption.textContent = option.text;
+      customOption.dataset.value = option.value;
+      if (option.selected) {
+        customOption.classList.add("selected");
+      }
+      customOption.addEventListener("click", function() {
+        select.value = this.dataset.value;
+        trigger.querySelector("span").textContent = this.textContent;
+        optionsContainer.querySelectorAll(".custom-option").forEach((opt) => opt.classList.remove("selected"));
+        this.classList.add("selected");
+        selectWrapper.classList.remove("open");
+        select.dispatchEvent(new Event("change"));
+      });
+      optionsContainer.appendChild(customOption);
+    });
+    selectWrapper.appendChild(optionsContainer);
+    trigger.addEventListener("click", function(e) {
+      e.stopPropagation();
+      document.querySelectorAll(".custom-select.open").forEach((el) => {
+        if (el !== selectWrapper) el.classList.remove("open");
+      });
+      selectWrapper.classList.toggle("open");
+    });
+  });
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".custom-select.open").forEach((el) => el.classList.remove("open"));
+  });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".custom-select.open").forEach((el) => el.classList.remove("open"));
+    }
+  });
+});
