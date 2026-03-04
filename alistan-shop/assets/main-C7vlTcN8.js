@@ -1,17 +1,26 @@
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
-const clodebutton = document.getElementById("close-button");
+const closebutton = document.getElementById("close-button");
+const overlay = document.getElementById("overlay");
 burger.addEventListener("click", () => {
   mobileMenu.classList.add("active");
+  overlay.classList.add("active");
   document.body.classList.add("overflow-hidden");
 });
-clodebutton.addEventListener("click", () => {
+closebutton.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("overflow-hidden");
+});
+overlay.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
   document.body.classList.remove("overflow-hidden");
 });
 mobileMenu.addEventListener("click", (e) => {
   if (e.target.tagName === "A") {
     mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
     document.body.classList.remove("overflow-hidden");
   }
 });
@@ -85,5 +94,28 @@ backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const languageSwitchers = document.querySelectorAll(".language-switch");
+  languageSwitchers.forEach(function(switcher) {
+    const button = switcher.querySelector(".lang-select-btn");
+    const list = switcher.querySelector(".lang-select-list");
+    if (!button || !list) return;
+    button.addEventListener("click", function(e) {
+      e.stopPropagation();
+      document.querySelectorAll(".language-switch.open").forEach((el) => {
+        if (el !== switcher) el.classList.remove("open");
+      });
+      switcher.classList.toggle("open");
+    });
+  });
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".language-switch.open").forEach((el) => el.classList.remove("open"));
+  });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".language-switch.open").forEach((el) => el.classList.remove("open"));
+    }
   });
 });
