@@ -8242,3 +8242,16 @@ F.bind("[data-fancybox='gallery']", {
   Toolbar: true,
   closeButton: "top"
 });
+F.bind(".alistan-gallery a", {
+  Thumbs: true,
+  Toolbar: true,
+  closeButton: "top"
+});
+F.bind(".alistan-video a", {
+  Thumbs: false,
+  Toolbar: true,
+  closeButton: "top",
+  Youtube: {
+    autoplay: 1
+  }
+});
