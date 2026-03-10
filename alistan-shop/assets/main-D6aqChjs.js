@@ -8240,12 +8240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 F.bind("[data-fancybox='gallery']", {
   Thumbs: true,
   Toolbar: true,
-  closeButton: "top"
-});
-F.bind(".alistan-gallery a", {
-  Thumbs: true,
-  Toolbar: true,
-  closeButton: "top"
+  closeButton: false
 });
 F.bind(".alistan-video a", {
   Thumbs: false,
