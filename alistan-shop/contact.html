@@ -65,7 +65,7 @@
     <header class="relative z-50">
       <div id="top-bar" class="bg-green">
         <div class="container">
-          <div class="flex justify-end gap-8 py-2">
+          <div class="flex justify-end items-center gap-8 py-2">
             <div class="top-bar-email ">
               <a href="mailto:alistanagro2016@gmail.com" class="text-white text-xs md:text-sm lg:text-base hover:text-yellow flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -83,6 +83,21 @@
                 </svg>
                 <span class="hidden md:block">+49 322 111 222 84</span>
               </a>
+            </div>
+            <div class="language-switch">
+              <button type="button" class="lang-select-btn">
+                <img src="https://shop.alistan-agro.com/wp-content/plugins/multisite-language-switcher/flags/gb.png" alt="en_GB">
+                <span class="arrow">▾</span></button>
+              <ul class="lang-select-list">
+                <li>
+                  <a href="https://shop.alistan-agro.com/" title="en_GB" class="current_language">
+                    <img src="https://shop.alistan-agro.com/wp-content/plugins/multisite-language-switcher/flags/gb.png" alt="en_GB"></a>
+                </li>
+                <li>
+                  <a href="https://shop.alistan-agro.com/fr/" title="fr_FR">
+                    <img src="https://shop.alistan-agro.com/wp-content/plugins/multisite-language-switcher/flags/fr.png" alt="fr_FR"></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -160,109 +175,96 @@
       <section id="page-title" class="relative bg-gradient-to-r from-lightgreen to-white py-16">
         <div class="container">
           <div class="text-center">
-            <h1 class="text-green mb-6">Catalog</h1>
+            <h1 class="text-green mb-6">Contact Our Team</h1>
+            <p class="text-gray-600 max-w-[960px] mx-auto">Have questions about our grain cleaning equipment or need
+              help choosing the right solution?<br>Our specialists are ready to assist you.</p>
           </div>
         </div>
       </section>
-      <section id="catalog-header" class="py-5">
+      <section id="contact-form" class="py-16 lg:py-24">
         <div class="container">
           <div class="flex flex-wrap -mx-3">
-            <div class="w-full px-3 mb-6">
-              <nav class="woocommerce-breadcrumb breadcrumbs uppercase">
-                <a href="https://shop.alistan-agro.com">Home</a>
-                <span class="divider">/</span> Catalog
-              </nav>
+            <div class="w-full px-3 lg:w-1/2">
+              <div class="mb-3">
+                <strong>Alistan Agro LLC</strong><br>
+                KRS 0000570393<br>
+                REGON 362231029<br>
+                NIP 5252626351
+              </div>
+              <div class="contact-phone mb-3">
+                <a href="tel:+4932211122284" class="hover:text-yellow inline-flex items-center gap-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>+49 322 111 222 84</span>
+                </a>
+              </div>
+              <div class="contact-email mb-10">
+                <a href="mailto:alistanagro2016@gmail.com" class="hover:text-yellow inline-flex items-center gap-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"></path>
+                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"></path>
+                  </svg>
+                  <span>alistanagro2016@gmail.com</span>
+                </a>
+              </div>
+              <div class="contact-address mb-16">
+                <strong>Warehouses in Poland:</strong><br>
+                Kąty (05-532), Puławska 26<br>
+                Szówsko (37-522), ul. Wyszyńskiego 22
+              </div>
+            </div>
+            <div class="w-full px-3 lg:w-1/2">
+              <div class="contact-form-wrap bg-lightgreen p-6 lg:py-16 lg:px-10 rounded-xl">
+                <form action="#">
+                  <div class="flex flex-wrap -mx-3">
+                    <div class="w-full lg:w-1/2 px-3 mb-6">
+                      <input type="text" placeholder="First Name:">
+                    </div>
+                    <div class="w-full lg:w-1/2 px-3 mb-6">
+                      <input type="text" placeholder="Last Name:">
+                    </div>
+                    <div class="w-full lg:w-1/2 px-3 mb-6">
+                      <input type="email" placeholder="Email:">
+                    </div>
+                    <div class="w-full lg:w-1/2 px-3 mb-6">
+                      <input type="hidden" name="full_phone">
+                      <input type="tel" id="phone-field" placeholder="Phone:">
+                    </div>
+                    <div class="w-full px-3 mb-6 custom-select">
+                      <select id="subject" name="subject">
+                        <option value="">Subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Aerodynamic grain cleaners ALS">Aerodynamic grain cleaners ALS</option>
+                        <option value="Rotary drum grain cleaners RBS">Rotary drum grain cleaners RBS</option>
+                        <option value="Scalpers for grain cleaning">Scalpers for grain cleaning</option>
+                        <option value="Machines for pre-sowing seed treatment">Machines for pre-sowing seed treatment</option>
+                        <option value="Inclined screw conveyors">Inclined screw conveyors</option>
+                        <option value="Round straw balers">Round straw balers</option>
+                      </select>
+                    </div>
+                    <div class="w-full px-3 mb-8">
+                      <textarea name="" id="" placeholder="Message:"></textarea>
+                    </div>
+                    <div class="w-full px-3 text-center">
+                      <input type="submit" class="btn green-btn" value="Submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="catalog-grid">
+      <section id="maps" class="py-16 lg:py-24 mb-24">
         <div class="container">
-          <div class="flex flex-wrap -mx-3 mb-10">
-            <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg relative pb-8 h-full hover:scale-105 hover:shadow-xl transition-transform duration-300">
-                <a href="#">
-                  <div class="grid-product-image aspect-[6/5] overflow-hidden mb-8 p-6">
-                    <div class="main-product-image w-full h-full">
-                      <img src="./img/als-3-01-2.png" alt="ALS-3" class="w-full h-full object-contain">
-                    </div>
-                  </div>
-                </a>
-                <div class="product-category-button px-4">
-                  <a href="#" class="w-full text-center text-black hover:text-green">
-                    <h4>Aerodynamic grain cleaners</h4>
-                  </a>
-                </div>
-              </div>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 lg:w-1/2 mb-8 lg:mb-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.0447325994387!2d21.163697199999998!3d52.006062799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eb59fa06b43b7%3A0x4a2b50429a9c881e!2sAlistan%20Agro%20Sp.%20z%20o.%20o.%20-Poliw%C4%99glan%20komorowy%20i%20lity%2C%20Plexi%20PMMA%2C%20Akryl!5e0!3m2!1sen!2sua!4v1773137764829!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg relative pb-8 h-full hover:scale-105 hover:shadow-xl transition-transform duration-300">
-                <a href="#">
-                  <div class="grid-product-image aspect-[6/5] overflow-hidden mb-8 p-6">
-                    <div class="main-product-image w-full h-full">
-                      <img src="./img/rbs-75-600x514.png" alt="RBS-75" class="w-full h-full object-contain">
-                    </div>
-                  </div>
-                </a>
-                <div class="product-category-button px-4">
-                  <a href="#" class="w-full text-center text-black hover:text-green">
-                    <h4>Rotary drum grain cleaners</h4>
-                  </a>
-                </div>
-              </div>
+            <div class="w-full px-3 lg:w-1/2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.000977913163!2d22.716713399999996!3d50.0300775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c994489ef0a47%3A0x9212c8e2efc49d01!2sAlistan%20Agro%20Ltd!5e0!3m2!1sen!2sua!4v1773137822318!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg relative pb-8 h-full hover:scale-105 hover:shadow-xl transition-transform duration-300">
-                <a href="#">
-                  <div class="grid-product-image aspect-[6/5] overflow-hidden mb-8 p-6">
-                    <div class="main-product-image w-full h-full">
-                      <img src="./img/СКМ40-1200x675.jpg" alt="RBS-75" class="w-full h-full object-contain">
-                    </div>
-                  </div>
-                </a>
-                <div class="product-category-button px-4">
-                  <a href="#" class="w-full text-center text-black hover:text-green">
-                    <h4>Scalpers (vibro-sieves)</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg relative pb-8 h-full hover:scale-105 hover:shadow-xl transition-transform duration-300">
-                <a href="#">
-                  <div class="grid-product-image aspect-[6/5] overflow-hidden mb-8 p-6">
-                    <div class="main-product-image w-full h-full">
-                      <img src="./img/pc2001-05.png" alt="ALS-3" class="w-full h-full object-contain">
-                    </div>
-                  </div>
-                </a>
-                <div class="product-category-button px-4">
-                  <a href="#" class="w-full text-center text-black hover:text-green">
-                    <h4>Seed treaters</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg relative pb-8 h-full hover:scale-105 hover:shadow-xl transition-transform duration-300">
-                <a href="#">
-                  <div class="grid-product-image aspect-[6/5] overflow-hidden mb-8 p-6">
-                    <div class="main-product-image w-full h-full">
-                      <img src="./img/alistan-noria-przenos-nobckg.jpg" alt="RBS-75" class="w-full h-full object-contain">
-                    </div>
-                  </div>
-                </a>
-                <div class="product-category-button px-4">
-                  <a href="#" class="w-full text-center text-black hover:text-green">
-                    <h4>Conveyors</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="catalog-description py-16 lg:py-24 max-w-[960px] mx-auto text-center">
-            <p class="text-gray-700 mb-4">Grain cleaners are essential machines in the agricultural industry, designed to remove impurities and foreign materials from harvested grains. These machines play a crucial role in ensuring the quality and safety of grains before they are processed or stored. Grain cleaners use various methods such as sieving, aspiration, and gravity separation to effectively clean the grains, improving their market value and reducing the risk of contamination.</p>
           </div>
         </div>
       </section>
@@ -277,7 +279,7 @@
           </div>
           <div class="w-full px-3 lg:w-3/4">
             <div class="flex flex-wrap -mx-3">
-              <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
+              <div class="w-1/2 md:w-1/3 px-3 mb-6">
                 <h4 class="text-white font-bold mb-4">Menu</h4>
                 <ul class="footer-menu">
                   <li><a href="#" class="text-white hover:text-yellow">Home</a></li>
@@ -288,7 +290,7 @@
                   <li><a href="#" class="text-white hover:text-yellow">Contact</a></li>
                 </ul>
               </div>
-              <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
+              <div class="w-1/2 md:w-1/3 px-3 mb-6">
                 <h4 class="text-white font-bold mb-4">Shop</h4>
                 <ul class="footer-menu">
                   <li><a href="#" class="text-white hover:text-yellow">Aerodynamic grain cleaners</a></li>
@@ -299,7 +301,7 @@
                   <li><a href="#" class="text-white hover:text-yellow">Screw conveyors</a></li>
                 </ul>
               </div>
-              <div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6">
+              <div class="w-1/2 md:w-1/3 px-3 mb-6">
                 <h4 class="text-white font-bold mb-4">Contact</h4>
                 <ul class="footer-menu mb-3">
                   <li><a href="#" class="text-white hover:text-yellow">+48 222 19 70 77</a></li>
@@ -414,7 +416,8 @@
     </svg>
 
   </button>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 </body>
 
 </html>

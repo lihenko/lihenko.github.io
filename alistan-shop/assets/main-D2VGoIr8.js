@@ -8250,3 +8250,18 @@ F.bind(".alistan-video a", {
     autoplay: 1
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const input = document.querySelector("#phone-field");
+  if (!input) return;
+  window.intlTelInput(input, {
+    initialCountry: "auto",
+    separateDialCode: true,
+    hiddenInput: "full_phone",
+    formatOnDisplay: true,
+    nationalMode: false,
+    geoIpLookup: function(callback) {
+      fetch("https://ipapi.co/json").then((res) => res.json()).then((data) => callback(data.country_code)).catch(() => callback("us"));
+    },
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+  });
+});
