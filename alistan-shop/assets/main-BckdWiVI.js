@@ -8250,6 +8250,14 @@ F.bind(".alistan-video a", {
     autoplay: 1
   }
 });
+F.bind(".fancybox-video", {
+  Thumbs: false,
+  Toolbar: true,
+  closeButton: "top",
+  Youtube: {
+    autoplay: 1
+  }
+});
 document.addEventListener("DOMContentLoaded", function() {
   const input = document.querySelector("#phone-field");
   if (!input) return;
@@ -8263,5 +8271,14 @@ document.addEventListener("DOMContentLoaded", function() {
       fetch("https://ipapi.co/json").then((res) => res.json()).then((data) => callback(data.country_code)).catch(() => callback("us"));
     },
     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const countryInput = document.querySelector("#user-country");
+  if (!countryInput) return;
+  fetch("https://ipapi.co/json").then((res) => res.json()).then((data) => {
+    countryInput.value = data.country_name || "";
+  }).catch(() => {
+    countryInput.value = "";
   });
 });
