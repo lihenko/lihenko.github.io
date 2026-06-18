@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СТО EG Автосервіс</title>
+  <meta name="description" content="Демо-сайт для СТО: сучасний адаптивний лендинг з фото-заглушками, послугами, перевагами та контактами." />
+  <style>
+    :root {
+      --bg: #0d1114;
+      --bg-soft: #12181d;
+      --bg-card: #171f26;
+      --line: rgba(255, 255, 255, 0.09);
+      --text: #f4f7f8;
+      --muted: #9daab5;
+      --accent: #ff8a1f;
+      --accent-2: #35c2ff;
+      --success: #3be080;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --container: 1180px;
+      --font-head: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255, 138, 31, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(53, 194, 255, 0.16), transparent 22%),
+        linear-gradient(180deg, #0b0f12 0%, #0d1114 100%);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--container));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(13, 17, 20, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar__inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand__mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent) 0%, #ffb15a 100%);
+      color: #1d1206;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(255, 138, 31, 0.25);
+      flex: none;
+    }
+
+    .brand__text {
+      min-width: 0;
+    }
+
+    .brand__name {
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .brand__tag {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav a {
+      transition: color 0.2s ease;
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 28px 0 18px;
+    }
+
+    .hero__grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(23, 31, 38, 0.92);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero__content {
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__content::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -120px auto;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 138, 31, 0.16), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow strong {
+      color: var(--success);
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-head);
+      line-height: 1.05;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.7rem);
+      max-width: 11ch;
+    }
+
+    .hero__lead {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.45vw, 1.12rem);
+      line-height: 1.7;
+      max-width: 58ch;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn--primary {
+      background: linear-gradient(135deg, var(--accent) 0%, #ffb15a 100%);
+      color: #1d1206;
+    }
+
+    .btn--ghost {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+    }
+
+    .stat__value {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin: 0 0 6px;
+    }
+
+    .stat__label {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .hero__aside {
+      display: grid;
+      gap: 14px;
+    }
+
+    .mapcard {
+      min-height: 260px;
+      padding: 20px;
+      background:
+        linear-gradient(135deg, rgba(53, 194, 255, 0.14), transparent 45%),
+        linear-gradient(180deg, rgba(18, 24, 29, 0.88), rgba(18, 24, 29, 0.98));
+    }
+
+    .mapcard__fake {
+      height: 100%;
+      min-height: 220px;
+      border-radius: 22px;
+      border: 1px dashed rgba(255, 255, 255, 0.18);
+      background:
+        radial-gradient(circle at 22% 20%, rgba(53, 194, 255, 0.18), transparent 18%),
+        radial-gradient(circle at 65% 50%, rgba(255, 138, 31, 0.22), transparent 16%),
+        linear-gradient(135deg, #dfe8ef 0%, #cdd7df 100%);
+      color: #1b2430;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .mapcard__fake span {
+      display: block;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(27, 36, 48, 0.8);
+    }
+
+    .mapcard__fake small {
+      display: block;
+      margin-top: 8px;
+      color: rgba(27, 36, 48, 0.7);
+      line-height: 1.5;
+    }
+
+    .info {
+      padding: 24px;
+    }
+
+    .info__row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .info__row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .info__label {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .info__value {
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .section {
+      padding: 24px 0 0;
+    }
+
+    .section__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section__title {
+      font-size: clamp(1.5rem, 2.4vw, 2.3rem);
+    }
+
+    .section__sub {
+      color: var(--muted);
+      max-width: 56ch;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .service {
+      padding: 20px;
+      border-radius: var(--radius-lg);
+      background: rgba(23, 31, 38, 0.9);
+      border: 1px solid var(--line);
+      min-height: 166px;
+    }
+
+    .service__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 138, 31, 0.12);
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+    }
+
+    .service h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .gallery img {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .shot {
+      position: relative;
+      min-height: 240px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
+        linear-gradient(135deg, rgba(255, 138, 31, 0.12), rgba(53, 194, 255, 0.08));
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 18px;
+    }
+
+    .shot::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.16), transparent 18%),
+        radial-gradient(circle at 80% 25%, rgba(255, 255, 255, 0.08), transparent 14%);
+      pointer-events: none;
+    }
+
+    .shot__label {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(13, 17, 20, 0.72);
+      border: 1px solid var(--line);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .shot__label em {
+      color: var(--muted);
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .shot--wide {
+      grid-column: span 7;
+      min-height: 320px;
+    }
+
+    .shot--tall {
+      grid-column: span 5;
+      min-height: 320px;
+    }
+
+    .shot--small {
+      grid-column: span 4;
+      min-height: 240px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .about__box {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      background: rgba(23, 31, 38, 0.9);
+    }
+
+    .about__box p {
+      color: var(--muted);
+      line-height: 1.75;
+      margin: 14px 0 0;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .check {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .check span {
+      width: 24px;
+      height: 24px;
+      flex: none;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(59, 224, 128, 0.14);
+      color: var(--success);
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      padding-bottom: 34px;
+    }
+
+    .contact__card {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      background: rgba(23, 31, 38, 0.95);
+      border: 1px solid var(--line);
+    }
+
+    .contact__list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact__item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .contact__item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .contact__icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: rgba(53, 194, 255, 0.12);
+      color: var(--accent-2);
+      font-size: 0.92rem;
+      margin-top: 1px;
+    }
+
+    .contact__label {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 4px;
+    }
+
+    .contact__value {
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .footer {
+      padding: 18px 0 34px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      .hero__grid,
+      .about,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .shot--wide,
+      .shot--tall,
+      .shot--small {
+        grid-column: span 6;
+      }
+
+      .nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar__inner {
+        min-height: 68px;
+      }
+
+      .hero {
+        padding-top: 18px;
+      }
+
+      .hero__content,
+      .info,
+      .about__box,
+      .contact__card,
+      .service {
+        padding: 20px;
+      }
+
+      .stats,
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .shot--wide,
+      .shot--tall,
+      .shot--small {
+        grid-column: auto;
+        min-height: 220px;
+      }
+
+      .info__row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .section__head {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <div class="brand__mark">EG</div>
+        <div class="brand__text">
+          <p class="brand__name">СТО EG Автосервіс</p>
+          <p class="brand__tag">Демонстраційний лендинг для автосервісу</p>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Головна навігація">
+        <a href="#about">Про нас</a>
+        <a href="#services">Послуги</a>
+        <a href="#gallery">Фото</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <article class="panel hero__content">
+            <div class="eyebrow"><strong>●</strong> Відкрите СТО • діагностика • ремонт • обслуговування</div>
+            <h1>Надійний сервіс для вашого авто</h1>
+            <p class="hero__lead">
+              Сучасний демо-сайт для СТО: швидко показує довіру, послуги, фото робіт і контакти.
+              Тут залишені окремі місця під твої власні фото, логотипи та текстові блоки.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Записатись на сервіс</a>
+              <a class="btn btn--ghost" href="#gallery">Дивитись роботи</a>
+            </div>
+
+            <div class="stats" aria-label="Ключові показники">
+              <div class="stat">
+                <p class="stat__value">10+ років</p>
+                <p class="stat__label">досвіду в ремонті та обслуговуванні авто</p>
+              </div>
+              <div class="stat">
+                <p class="stat__value">24/7</p>
+                <p class="stat__label">прийом заявок через сайт і месенджери</p>
+              </div>
+              <div class="stat">
+                <p class="stat__value">Швидко</p>
+                <p class="stat__label">діагностика, консультація і попередній розрахунок</p>
+              </div>
+            </div>
+          </article>
+
+          <aside class="hero__aside">
+            <div class="panel mapcard">
+              <div class="mapcard__fake">
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.859081865292!2d34.575037740197764!3d48.5933969932814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbd7406c4cd1db%3A0x1bcc295893bb754c!2z0KHQotCeIEVHINCQ0LLRgtC-0YHQtdGA0LLRltGB!5e0!3m2!1sen!2sua!4v1781774559277!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            </div>
+
+            <div class="panel info">
+              <div class="info__row">
+                <div class="info__label">Адреса</div>
+                <div class="info__value">м. Кам’янське, Дніпропетровська обл. <br />вул. Єлизаветівське шосе, 17а</div>
+              </div>
+              <div class="info__row">
+                <div class="info__label">Телефон</div>
+                <div class="info__value"><a href="tel:+380977350203">097 735 0203</a></div>
+              </div>
+              <div class="info__row">
+                <div class="info__label">Графік</div>
+                <div class="info__value">Пн–Пт: 9:00–18:00 <br />Сб–Нд: за домовленістю</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Про сервіс</h2>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="about__box">
+            <h3>Переваги</h3>
+            <div class="checklist">
+              <div class="check"><span>✓</span> Діагностика та ремонт підвіски, гальмівної системи, двигуна і електрики</div>
+              <div class="check"><span>✓</span> Фотозвіт по роботах і прозора комунікація з клієнтом</div>
+              <div class="check"><span>✓</span> Акуратний сучасний дизайн для довіри та конверсії</div>
+            </div>
+          </div>
+
+          <div class="about__box">
+            <h3>Кузовні роботи</h3>
+            <div class="checklist">
+              <div class="check"><span>✓</span> Можна додати кнопку запису в Telegram або Viber</div>
+              <div class="check"><span>✓</span> Можна вивести Google Maps, рейтинг і відгуки</div>
+              <div class="check"><span>✓</span> Можна замінити кольори під ваш бренд</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Послуги</h2>
+        </div>
+
+        <div class="services">
+          <article class="service">
+            <div class="service__icon">⚙</div>
+            <h3>Діагностика</h3>
+            <p>Комп’ютерна перевірка, пошук помилок, виявлення несправностей і первинна оцінка вартості.</p>
+          </article>
+          <article class="service">
+            <div class="service__icon">🛞</div>
+            <h3>Ходова частина</h3>
+            <p>Амортизатори, важелі, втулки, підшипники, гальма і все, що впливає на безпеку руху.</p>
+          </article>
+          <article class="service">
+            <div class="service__icon">🔋</div>
+            <h3>Електрика</h3>
+            <p>Проводка, датчики, генератор, стартер, запобіжники, освітлення та електронні блоки.</p>
+          </article>
+          <article class="service">
+            <div class="service__icon">🛠</div>
+            <h3>Обслуговування</h3>
+            <p>Заміна рідин, фільтрів, технічне обслуговування і профілактика для щоденної експлуатації.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Фото робіт</h2>
+        </div>
+
+        <div class="gallery">
+          <div class="shot shot--wide">
+            <img src="540101045_17848638387551341_3584228366663753924_n.jpg" alt="СТО">
+          </div>
+          <div class="shot shot--tall">
+            <img src="541588236_17848638405551341_3133689541598045461_n.jpg" alt="">
+          </div>
+          <div class="shot shot--small">
+            <img src="540692372_17848645899551341_8417970534538647905_n.jpg" alt="">
+          </div>
+          <div class="shot shot--small">
+            <img src="540325770_17848648596551341_6202952857125032902_n.jpg" alt="">
+          </div>
+          <div class="shot shot--small">
+            <img src="540494302_17848645236551341_4894986083015692581_n.jpg" alt="">
+          </div>
+          <div class="shot shot--small">
+            <img src="542958719_17849840487551341_583296076339092551_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Контакти</h2>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card">
+            <h3>Зв’яжіться з нами</h3>
+            <div class="contact__list">
+              <div class="contact__item">
+                <div class="contact__icon">☎</div>
+                <div>
+                  <div class="contact__label">Телефон</div>
+                  <p class="contact__value"><a href="tel:+380977350203">+38 (097) 735-02-03</a></p>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon">⌂</div>
+                <div>
+                  <div class="contact__label">Адреса</div>
+                  <p class="contact__value">Кам’янське, Дніпропетровська область, Єлизаветівське шосе, 17а</p>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon">✉</div>
+                <div>
+                  <div class="contact__label">Email / Messenger</div>
+                  <p class="contact__value">Залиш місце під пошту, Telegram або Viber</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__card">
+            <h3>Що можна додати далі</h3>
+            <div class="checklist">
+              <div class="check"><span>✓</span> Форма запису на сервіс</div>
+              <div class="check"><span>✓</span> Google Maps iframe</div>
+              <div class="check"><span>✓</span> Відгуки клієнтів</div>
+              <div class="check"><span>✓</span> Блок “до / після”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Demo landing page for СТО EG Автосервіс • HTML + CSS • Mobile + Desktop
+    </div>
+  </footer>
+</body>
+</html>
