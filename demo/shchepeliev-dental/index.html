@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стоматологія Дмитра Щепелєва | Камʼянське</title>
+  <meta name="description" content="Стоматологічна клініка Дмитра Щепелєва у Камʼянському. Лікування, профілактика, естетична стоматологія. Комфорт і турбота про ваш усміх." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Tokens ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:      #F0EDE8;
+      --ink-dim:  #B8B2AA;
+      --bg:       #0D1B18;
+      --surface:  #0F2218;
+      --card:     #142B1E;
+      --accent:   #6DC8A0;
+      --accent-2: #4BAA82;
+      --gold:     #6DC8A0;
+      --radius:   12px;
+      --radius-lg:20px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ─── Typography ─── */
+    .serif { font-family: 'Cormorant Garamond', serif; }
+
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; line-height: 1.15; text-wrap: balance; }
+
+    h1 { font-size: clamp(2.4rem, 6vw, 5rem); font-weight: 700; }
+    h2 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 600; }
+    h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 600; }
+
+    p { max-width: 65ch; color: var(--ink-dim); }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Layout utilities ─── */
+    .container {
+      width: min(1160px, 100% - 2rem);
+      margin-inline: auto;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ─── Eyebrow label ─── */
+    .eyebrow {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ─── Divider ─── */
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.25rem 0 1.75rem;
+    }
+
+    /* ─── NAV ─── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 0;
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+
+    .nav.scrolled {
+      background: rgba(13, 27, 42, 0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink-dim);
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover { color: var(--ink); }
+
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #0a1f14 !important;
+      font-weight: 600;
+      font-size: 0.82rem;
+      padding: 0.55rem 1.25rem;
+      border-radius: 50px;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .btn-nav:hover { background: var(--accent-2); transform: translateY(-1px); }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+
+    .burger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--ink);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: var(--bg);
+      padding: 6rem 2rem 2rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--ink);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 1rem;
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 1.4rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--ink);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 0 4rem;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(109,200,160,0.08) 0%, transparent 70%),
+                  radial-gradient(ellipse 60% 80% at 20% 80%, rgba(75,170,130,0.05) 0%, transparent 60%);
+    }
+
+    .hero-tooth {
+      position: absolute;
+      right: -4%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: clamp(260px, 45vw, 620px);
+      opacity: 0.06;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(109,200,160,0.1);
+      border: 1px solid rgba(109,200,160,0.2);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 { color: var(--ink); margin-bottom: 1.25rem; }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--ink-dim);
+      max-width: 52ch;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #0a1f14;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(109,200,160,0.25);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--ink);
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 50px;
+      border: 1px solid rgba(240,237,232,0.18);
+      transition: border-color var(--transition), background var(--transition);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(240,237,232,0.4);
+      background: rgba(240,237,232,0.05);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .stat-num span { color: var(--accent); }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--ink-dim);
+      margin-top: 0.25rem;
+    }
+
+    /* ─── SECTION SHARED ─── */
+    section { padding: 6rem 0; }
+
+    .section-head { margin-bottom: 3.5rem; }
+
+    /* ─── ABOUT ─── */
+    .about { background: var(--surface); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-photo {
+      position: relative;
+    }
+
+    .photo-placeholder {
+      aspect-ratio: 3/4;
+      border-radius: var(--radius-lg);
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: var(--ink-dim);
+      font-size: 0.85rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo-placeholder svg {
+      opacity: 0.3;
+    }
+
+    .photo-placeholder img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-badge-wrap {
+      position: absolute;
+      bottom: -1rem;
+      right: -1rem;
+    }
+
+    .photo-badge {
+      background: var(--gold);
+      color: #0a1f14;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+
+    .photo-badge small {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      opacity: 0.7;
+      margin-top: 0.2rem;
+    }
+
+    .about-text h2 { margin-bottom: 0.5rem; }
+
+    .about-text p { margin-bottom: 1.25rem; }
+
+    .cert-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    .cert-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--ink-dim);
+    }
+
+    .cert-list li::before {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 0.4rem;
+    }
+
+    /* ─── SERVICES ─── */
+    .service-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(109,200,160,0.2);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(109,200,160,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--accent);
+    }
+
+    .service-card h3 { margin-bottom: 0.6rem; }
+
+    .service-card p { font-size: 0.9rem; max-width: none; }
+
+    /* ─── GALLERY ─── */
+    .gallery-section { background: var(--surface); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      aspect-ratio: 3/4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      color: var(--ink-dim);
+      font-size: 0.8rem;
+      overflow: hidden;
+    }
+
+    .gallery-item.tall {
+      grid-row: span 2;
+      grid-column: span 2;
+      aspect-ratio: 570/753;
+    }
+
+    .gallery-item img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    /* ─── PROCESS ─── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      counter-reset: steps;
+    }
+
+    .step {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+      counter-increment: steps;
+    }
+
+    .step::before {
+      content: counter(steps, decimal-leading-zero);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(109,200,160,0.12);
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      line-height: 1;
+    }
+
+    .step h3 { margin-bottom: 0.5rem; }
+    .step p { font-size: 0.9rem; max-width: none; }
+
+    /* ─── CONTACT ─── */
+    .contact-section { background: var(--surface); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info h2 { margin-bottom: 0.5rem; }
+
+    .contact-info > p { margin-bottom: 2rem; }
+
+    .contact-details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-details li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: rgba(109,200,160,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      color: var(--ink-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .contact-value {
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-top: 0.2rem;
+    }
+
+    .contact-form-wrap {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+
+    .contact-form-wrap h3 { margin-bottom: 1.75rem; }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink-dim);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      transition: border-color var(--transition);
+      outline: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(184,178,170,0.5);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-group select option { background: var(--surface); }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--accent);
+      color: #0a1f14;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.9rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .btn-submit:hover {
+      background: var(--accent-2);
+      transform: translateY(-1px);
+    }
+
+    /* ─── SCHEDULE ─── */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      font-size: 0.88rem;
+    }
+
+    .schedule-table td {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      color: var(--ink-dim);
+    }
+
+    .schedule-table td:last-child {
+      text-align: right;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #081218;
+      padding: 3rem 0 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .footer-logo span { color: var(--accent); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--ink-dim);
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-nav a {
+      font-size: 0.85rem;
+      color: var(--ink-dim);
+      transition: color var(--transition);
+    }
+
+    .footer-nav a:hover { color: var(--ink); }
+
+    /* ─── Animations ─── */
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .hero-tooth { display: none; }
+    }
+
+    @media (max-width: 680px) {
+      section { padding: 4rem 0; }
+      .nav-links { display: none; }
+      .burger { display: flex; }
+      .hero { padding: 7rem 0 3rem; }
+      .hero-stats { gap: 1.5rem; }
+      .gallery-item.tall { grid-row: auto; }
+      .photo-badge-wrap { display: none; }
+      .faq-question { font-size: 1rem; }
+      .team-photo { aspect-ratio: 4/3; }
+    }
+
+    /* ─── TEAM ─── */
+    .team-section { background: var(--surface); }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .team-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+    .team-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(109,200,160,0.2);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.25);
+    }
+    .team-photo {
+      aspect-ratio: 3/2;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      color: var(--ink-dim);
+      font-size: 0.8rem;
+      position: relative;
+    }
+    .team-photo img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .team-photo svg { opacity: 0.25; }
+    .team-role-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(109,200,160,0.15);
+      border: 1px solid rgba(109,200,160,0.25);
+      color: var(--accent-2);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 50px;
+    }
+    .team-info { padding: 1.5rem; }
+    .team-info h3 { font-size: 1.3rem; margin-bottom: 0.25rem; }
+    .team-specialty {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .team-info p { font-size: 0.88rem; max-width: none; line-height: 1.6; }
+    .team-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--ink-dim);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 1.25rem;
+      width: 100%;
+    }
+    .team-phone svg { color: var(--accent); flex-shrink: 0; }
+
+    /* ─── FAQ ─── */
+    .faq-section { background: var(--bg); }
+    .faq-wrap { max-width: 760px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      color: var(--ink);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+      transition: color var(--transition);
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      transition: transform var(--transition), background var(--transition), border-color var(--transition);
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: rgba(109,200,160,0.1);
+      border-color: rgba(109,200,160,0.3);
+    }
+    .faq-answer {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+    .faq-item.open .faq-answer { grid-template-rows: 1fr; }
+    .faq-answer-inner { overflow: hidden; }
+    .faq-answer-inner p {
+      padding-bottom: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      max-width: none;
+      color: var(--ink-dim);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">Стоматологія<br><span>Дмитра Щепелєва</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Про лікаря</a></li>
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#gallery">Клініка</a></li>
+        <li><a href="#contact">Контакти</a></li>
+        <li><a href="#contact" class="btn-nav">Записатись</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE MENU ─── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="#about" class="mobile-link">Про лікаря</a>
+    <a href="#services" class="mobile-link">Послуги</a>
+    <a href="#team" class="mobile-link">Команда</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#gallery" class="mobile-link">Клініка</a>
+    <a href="#contact" class="mobile-link">Контакти</a>
+    <a href="#contact" class="btn-primary" style="justify-content:center;margin-top:1rem;">Записатись на прийом</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+
+    <!-- Decorative tooth SVG -->
+    <svg class="hero-tooth" viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M200 20 C100 20, 30 80, 30 160 C30 220, 50 260, 70 300 C90 340, 100 380, 120 440 C130 470, 160 480, 180 460 C195 445, 200 400, 200 380 C200 400, 205 445, 220 460 C240 480, 270 470, 280 440 C300 380, 310 340, 330 300 C350 260, 370 220, 370 160 C370 80, 300 20, 200 20Z" fill="white"/>
+    </svg>
+
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="6"/></svg>
+          Камʼянське · Дніпропетровська область
+        </div>
+        <h1>Здорова усмішка<br>для <em>всієї родини</em></h1>
+        <p class="hero-lead">Стоматологічна клініка Дмитра Щепелєва. Сучасне обладнання, делікатний підхід і широкий спектр послуг — від профілактики до естетичної стоматології.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Записатись на прийом
+          </a>
+          <a href="#services" class="btn-ghost">Наші послуги →</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">10<span>+</span></div>
+            <div class="stat-label">Років досвіду</div>
+          </div>
+          <div>
+            <div class="stat-num">2000<span>+</span></div>
+            <div class="stat-label">Задоволених пацієнтів</div>
+          </div>
+          <div>
+            <div class="stat-num">15<span>+</span></div>
+            <div class="stat-label">Видів послуг</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-placeholder">
+            <img src="485602617_1191198542706998_7283554009222523778_n.jpg" alt="">
+          </div>
+          <div class="photo-badge-wrap">
+            <div class="photo-badge">
+              Головний лікар
+              <small>Дмитро Щепелев</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="eyebrow">Про лікаря</span>
+          <h2>Дмитро Щепелев, головний лікар</h2>
+          <div class="divider"></div>
+          <p>Лікар-стоматолог вищої категорії з понад 10-річним досвідом роботи. Постійно вдосконалює свої знання, проходячи навчання у провідних стоматологічних клініках України та Європи.</p>
+          <p>Дмитро переконаний: кожен пацієнт заслуговує на індивідуальний підхід і максимальний комфорт. Саме тому в клініці використовуються найсучасніші технології та матеріали.</p>
+          <ul class="cert-list">
+            <li>Лікар-стоматолог загальної практики, хірург, ортопед</li>
+            <li>Спеціаліст з естетичної та мікростоматології</li>
+            <li>Регулярне підвищення кваліфікації та участь у міжнародних конференціях</li>
+            <li>Безболісне лікування — головний пріоритет</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Послуги</span>
+        <h2>Все, що потрібно<br>для здоровʼя ваших зубів</h2>
+      </div>
+      <div class="grid-3">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Профілактика та гігієна</h3>
+          <p>Професійне чищення, Air Flow, полірування та покриття фтором. Регулярні огляди й своєчасне виявлення проблем.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Лікування карієсу</h3>
+          <p>Безболісне лікування карієсу будь-якої складності. Сучасні пломбувальні матеріали, що імітують природний колір зуба.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>Естетична стоматологія</h3>
+          <p>Відбілювання, вініри, художня реставрація. Перетворюємо ваш усміх на справжній козир.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Лікування каналів</h3>
+          <p>Ендодонтичне лікування з використанням ротаційних інструментів та апексалокаторів. Зуб зберігається максимально.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Протезування</h3>
+          <p>Коронки, мости, знімні та незнімні протези. Індивідуальний підбір конструкції під ваші потреби та бюджет.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <h3>Хірургія та видалення</h3>
+          <p>Безпечне та атравматичне видалення зубів, лікування ясен, хірургічні маніпуляції будь-якої складності.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Дитяча стоматологія</h3>
+          <p>Лагідний підхід до маленьких пацієнтів. Лікування молочних і постійних зубів, профілактика, навчання гігієні.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41"/><path d="M4.93 4.93l1.41 1.41"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M20 12h2"/><path d="M2 12h2"/></svg>
+          </div>
+          <h3>Рентгенодіагностика</h3>
+          <p>Цифровий рентген із мінімальним рівнем опромінення. Точна діагностика — основа правильного лікування.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+          </div>
+          <h3>Відбілювання зубів</h3>
+          <p>Професійне відбілювання системою Beyond або домашні капи. Досягаємо результату до 8 тонів за одне відвідування.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Клініка</span>
+        <h2>Сучасне середовище<br>для комфортного лікування</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall reveal">
+            <img src="545427236_18175235668342899_8553593780601299811_n.jpg" alt="">
+        </div>
+        <div class="gallery-item reveal">
+            <img src="549018417_18175692979342899_8466541641849246110_n.jpg" alt="">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="579890754_18183540781342899_7765415072342916992_n.jpg" alt="">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="633523309_18193426717342899_3747392681733546565_n.jpg" alt="">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="713303939_18205127410342899_3025103920880338961_n.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ─── -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Як це відбувається</span>
+        <h2>Ваш перший візит<br>крок за кроком</h2>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <h3>Запис на прийом</h3>
+          <p>Залиште заявку онлайн або зателефонуйте. Ми підберемо зручний для вас час.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Консультація та огляд</h3>
+          <p>Лікар проводить детальний огляд, за потреби — рентгенодіагностику. Ніяких прихованих доплат.</p>
+        </div>
+        <div class="step reveal">
+          <h3>План лікування</h3>
+          <p>Ви отримуєте зрозумілий план із вартістю. Вирішуєте самі, коли й що робити.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Лікування</h3>
+          <p>Комфортне та безболісне лікування з анестезією. Ви в надійних руках.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEAM ─── -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Наша команда</span>
+        <h2>Лікарі, яким<br>довіряють пацієнти</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="611631797_18189356812342899_1280921351574377335_n.jpg" alt="">
+            <div class="team-role-tag">Засновник</div>
+          </div>
+          <div class="team-info">
+            <h3>Дмитро Щепелев</h3>
+            <div class="team-specialty">Лікар-стоматолог</div>
+            <p>Засновник клініки, стоматолог вищої категорії. Спеціалізується на хірургічній та ортопедичній стоматології, естетичних реставраціях. Понад 10 років практики.</p>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="588253980_18184666810342899_5635079189916350393_n.jpg" alt="">
+            <div class="team-role-tag">Лікар-стоматолог</div>
+          </div>
+          <div class="team-info">
+            <h3>Lorem Ipsum</h3>
+            <div class="team-specialty">Лікар-стоматолог · Терапевт</div>
+            <p>Досвідчений фахівець у галузі терапевтичної стоматології. Уважний до кожного пацієнта, вміє знайти підхід навіть до тих, хто боїться стоматолога.</p>
+            <div class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (096) 555 55 55
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="583403498_18183881500342899_2231530136896467822_n.jpg" alt="">
+            <div class="team-role-tag">Лікар-стоматолог</div>
+          </div>
+          <div class="team-info">
+            <h3>Lorem Ipsum</h3>
+            <div class="team-specialty">Лікар-стоматолог · Терапевт</div>
+            <p>Досвідчений фахівець у галузі терапевтичної стоматології. Уважний до кожного пацієнта, вміє знайти підхід навіть до тих, хто боїться стоматолога.</p>
+            <div class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (096) 555 55 55
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="474991767_18153668896342899_706762201247670574_n.jpg" alt="">
+            <div class="team-role-tag">Лікар-стоматолог</div>
+          </div>
+          <div class="team-info">
+            <h3>Lorem Ipsum</h3>
+            <div class="team-specialty">Лікар-стоматолог · Терапевт</div>
+            <p>Досвідчений фахівець у галузі терапевтичної стоматології. Уважний до кожного пацієнта, вміє знайти підхід навіть до тих, хто боїться стоматолога.</p>
+            <div class="team-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (096) 555 55 55
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-head reveal" style="text-align:center;">
+        <span class="eyebrow">Часті запитання</span>
+        <h2>Відповіді на найпоширеніші<br>запитання пацієнтів</h2>
+      </div>
+      <div class="faq-wrap">
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Чи боляче лікувати зуби у вашій клініці?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Ні. Ми використовуємо сучасні анестетики та перевірені протоколи знеболення, які роблять лікування комфортним навіть для найчутливіших пацієнтів. Якщо ви відчуваєте дискомфорт під час процедури — скажіть лікарю, і він скоригує анестезію.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Як записатись на прийом?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Залиште заявку через форму на цій сторінці або зателефонуйте за номером (096) 50-50-888. Ми передзвонимо й узгодимо зручний для вас час. Запис можливий на будь-який день тижня, крім неділі.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Чи приймаєте ви дітей?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Так, ми раді маленьким пацієнтам. Лікарі мають досвід роботи з дітьми різного віку та знають, як налагодити контакт і зробити перший візит до стоматолога приємним. Рекомендуємо привести дитину на профілактичний огляд вже з появою перших зубів.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Скільки коштує первинна консультація?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Первинна консультація та огляд проводяться безкоштовно. Після огляду лікар складає індивідуальний план лікування з чіткою вартістю кожного етапу — ніяких прихованих доплат.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Які методи оплати ви приймаєте?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Ми приймаємо готівку та оплату карткою. За потреби можливе розбиття вартості на кілька візитів. Уточнити деталі можна під час консультації або за телефоном.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Як довго триває лікування карієсу?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Залежно від глибини ураження — від 30 хвилин до 1,5 години. Простий карієс лікується за один візит. Якщо зачеплений нерв або потрібне лікування каналів — може знадобитись кілька відвідувань. Лікар визначить обсяг роботи на першому огляді.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Чи є у вас цифровий рентген? Чи це безпечно?
+            <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Так, у клініці встановлено цифровий рентген-апарат. Доза опромінення при цифровому знімку у 10–15 разів менша, ніж при плівковому. Процедура абсолютно безпечна і займає кілька секунд.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Контакти</span>
+          <h2>Запишіться<br>на прийом</h2>
+          <div class="divider"></div>
+          <p>Ми раді вітати вас у нашій клініці. Залиште заявку або зателефонуйте — відповімо якнайшвидше.</p>
+
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Адреса</div>
+                <div class="contact-value">вул. Харківська, 1, Камʼянське<br>Дніпропетровська обл., 51900</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Телефон</div>
+                <div class="contact-value">+38 (0XX) XXX-XX-XX</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">info@shchepeliev-dental.ua</div>
+              </div>
+            </li>
+          </ul>
+
+          <table class="schedule-table">
+            <tr><td>Понеділок — Пʼятниця</td><td>09:00 – 19:00</td></tr>
+            <tr><td>Субота</td><td>09:00 – 14:00</td></tr>
+            <tr><td>Неділя</td><td>Вихідний</td></tr>
+          </table>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <h3>Залишити заявку</h3>
+          <div class="form-group">
+            <label for="name">Ваше імʼя</label>
+            <input type="text" id="name" placeholder="Іван Петренко" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефону</label>
+            <input type="tel" id="phone" placeholder="+38 (0__) ___-__-__" />
+          </div>
+          <div class="form-group">
+            <label for="service">Послуга</label>
+            <select id="service">
+              <option value="">Оберіть послугу</option>
+              <option>Консультація та огляд</option>
+              <option>Профілактика та гігієна</option>
+              <option>Лікування карієсу</option>
+              <option>Естетична стоматологія</option>
+              <option>Протезування</option>
+              <option>Хірургія та видалення</option>
+              <option>Дитяча стоматологія</option>
+              <option>Відбілювання зубів</option>
+              <option>Інше</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Коментар (необовʼязково)</label>
+            <textarea id="message" placeholder="Розкажіть, що вас турбує…"></textarea>
+          </div>
+          <button class="btn-submit" type="button">Надіслати заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Стоматологія<br><span>Дмитра Щепелєва</span></div>
+          <p style="font-size:0.82rem;color:var(--ink-dim);margin-top:0.75rem;max-width:28ch;">Камʼянське, вул. Харківська, 1</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">Про лікаря</a>
+          <a href="#services">Послуги</a>
+          <a href="#team">Команда</a>
+          <a href="#faq">FAQ</a>
+          <a href="#gallery">Клініка</a>
+          <a href="#contact">Контакти</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2025 Стоматологія Дмитра Щепелєва. Всі права захищені.</p>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS ─── -->
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Burger
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    burger.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    document.querySelectorAll('.mobile-link, .mobile-menu .btn-primary').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Form submit mock
+    document.querySelector('.btn-submit').addEventListener('click', function() {
+      const name = document.getElementById('name').value.trim();
+      if (!name) { alert('Будь ласка, вкажіть ваше імʼя.'); return; }
+      const phone = document.getElementById('phone').value.trim();
+      if (!phone) { alert('Будь ласка, вкажіть номер телефону.'); return; }
+      this.textContent = 'Заявку надіслано ✓';
+      this.style.background = 'var(--gold)';
+      this.disabled = true;
+    });
+  </script>
+</body>
+</html>
